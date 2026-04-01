@@ -28,6 +28,7 @@
 - 在不同媒介和不同阶段下，给 Agent 一个更准确的协议、rubric 和最小知识包，而不是把整个仓库都塞进上下文。
 - 在多个可行方案之间做比较，避免一上来就被单一路径绑死。
 - 用 `rewrite_report`、`quality_gate_report`、`boundary_map`、`scope_correction` 去查问题、缩边界、做复查。
+- 用 `research_background_map` 和 `story_memory_checkpoint` 处理宽理论问题、长篇连续性压缩和安全续写。
 - 把剧本继续桥接到角色声纹、品牌表达、多语种视觉语言和 screen-to-video brief。
 - 把 writers' room、多智能体协作、subagent 阵容、handoff 纪律做成显式设计，而不是“多开几个 agent 试试”。
 
@@ -73,11 +74,20 @@
 
 ## 它和普通剧本仓库最不一样的地方
 
-- `route-first`：不是靠关键词猜，而是按 `intent x medium x stage x output x constraints` 选路
+- `route-first`：主 route 先由 `intent x medium x stage x output` 锚定，再由 `constraints` 做 tie-break 和加载控制
 - `research-first`：知识沉淀在版本化资产里，而不是散在聊天记录里
 - `bounded-loading`：尽量只加载最小有效知识包，避免 context 腐化
 - `challenge-friendly`：反驳、反例、field report、专业质疑都被当成升级输入
 - `multi-surface`：不只管“写文本”，也管审查、协作、项目表面层和下游桥接
+
+## 如果你是从另一个 Agent / 工作流里调用它
+
+- 先从 [`SKILL.md`](./SKILL.md) 看根总控契约。
+- 再从 [`references/supported-outputs.md`](./references/supported-outputs.md) 里选最小可用输出，不要自己发明一类含糊产物。
+- 用 [`references/router-matrix.json`](./references/router-matrix.json) 和 [`references/routing-policy.md`](./references/routing-policy.md) 看 route 和 constraint signals。
+- 如果用户问的是“如何创作剧本”这类宽问题，用 `research_background_map`，不要硬塞成某个具体写作产物。
+- 如果真正问题是“下次还能安全继续写”或“要把当前状态交接给别人”，优先用 `story_memory_checkpoint`，不要扩大上下文包。
+- 如果真正问题是长期项目该怎么分真源、运行态、packet、review / export 面，优先用 `project_surface_map`。
 
 ## 按你现在的角色开始
 
@@ -92,6 +102,18 @@
 - 先看 [架构说明](./docs/architecture-zh.md)
 - 再看 [内容模型](./docs/content-model-zh.md)
 - 然后看 [路由策略](./references/routing-policy.md) 和 [router matrix](./references/router-matrix.json)
+- 再看 [支持的输出契约](./references/supported-outputs.md) 和 [上下文加载策略](./docs/context-loading-policy-zh.md)
+
+### 如果你的问题本身很宽、偏理论或偏背景研究
+
+- 先看 [如何创作剧本研究总览](./docs/how-to-create-a-screenplay-research-zh.md)
+- 再看 [research background 协议](./knowledge/20-workflows/wp-research-background-map.md)
+- 再决定下一步该往哪个更窄的 output route 收敛
+
+### 如果你需要暂停、续写或把长篇状态交接出去
+
+- 先看 [story memory checkpoint 协议](./knowledge/20-workflows/wp-story-memory-checkpoint.md)
+- 如果问题其实是长期项目表面层设计，再看 [project surface 架构](./docs/project-surface-architecture-zh.md)
 
 ### 如果你想提问题、提反驳、改仓库
 
@@ -144,6 +166,12 @@ ln -s /absolute/path/to/how-to-make-script ~/.config/opencode/skills/how-to-make
 按你的本地扩展机制把仓库挂进可识别的 skills 目录即可。
 </details>
 
+<details>
+<summary>OpenClaw</summary>
+
+把仓库链接或克隆到 OpenClaw 当前配置会扫描的 skills 目录，并让入口仍然指向仓库根目录下的 `SKILL.md`。
+</details>
+
 ### 3. 本地校验仓库健康
 
 <details>
@@ -151,6 +179,8 @@ ln -s /absolute/path/to/how-to-make-script ~/.config/opencode/skills/how-to-make
 
 ```bash
 python3 scripts/validate_assets.py
+python3 scripts/check_semantic_consistency.py
+python3 scripts/check_background_bundles.py
 python3 scripts/check_routes.py
 python3 scripts/check_route_overlaps.py
 python3 scripts/check_subagent_registries.py
@@ -181,11 +211,14 @@ flowchart LR
 | 模块 | 当前规模 |
 | --- | --- |
 | 根 skill | [`SKILL.md`](./SKILL.md) 负责总控路由和加载纪律 |
-| 子 skill | [`skills/`](./skills) 下 `27` 个能力型目录 |
-| 知识资产 | [`knowledge/`](./knowledge) 下 `138` 份 Markdown |
-| 示例材料 | [`examples/`](./examples) 下 `22` 份示例 / fixture / reference pack |
-| 校验脚本 | [`scripts/`](./scripts) 下 `12` 个 Python 脚本 |
-| 测试模块 | [`tests/`](./tests) 下 `10` 个测试文件 |
+| 公共输出契约 | [`references/supported-outputs.md`](./references/supported-outputs.md) 中 `30` 个可路由输出 |
+| skill 目录 | [`skills/`](./skills) 下 `29` 个能力型目录 |
+| 结构化资产 | `97` 个 atom + `28` 个 protocol + `27` 个 rubric |
+| route fixtures | [`examples/agent/fixtures.json`](./examples/agent/fixtures.json) 中 `91` 条 |
+| 知识资产 | [`knowledge/`](./knowledge) 下 `165` 份 Markdown |
+| 示例材料 | [`examples/`](./examples) 下 `24` 份示例 / fixture / reference pack |
+| 校验脚本 | [`scripts/`](./scripts) 下 `14` 个 Python 脚本 |
+| 测试模块 | [`tests/`](./tests) 下 `12` 个测试文件 |
 
 ## 核心能力面
 
@@ -201,6 +234,12 @@ flowchart LR
 - 改稿诊断
 - 质量门槛与定向复查
 - route failure、boundary map、scope correction
+
+### 研究与连续性
+
+- 宽问题理论支撑
+- 可恢复的 story-memory checkpoint
+- bounded loading 和 research bundle
 
 ### 表达与下游桥接
 
@@ -221,7 +260,7 @@ flowchart LR
 - 会检查 route overlap，避免 skill 边界越来越糊
 - narrative / commercial / interactive 都有样例和 fixture
 - community surface 有专项检查，避免 issue / discussion 入口失效
-- `.obsidian/` 这类本地噪音被明确禁止进入 index 和历史
+- `.obsidian/`、`.omx/`、`.codex/`、`.claude/`、`.opencode/` 等本地工具痕迹被明确禁止进入 index 和历史
 - 人类反驳不是噪音，而是后续 rubric、fixture、scope correction 的来源
 
 ## 按目标找文档
@@ -274,6 +313,7 @@ flowchart LR
 当前重点覆盖：
 
 - narrative / commercial / interactive
+- 宽问题 research layer / continuity checkpoint
 - voice / visual-language / screen-to-video
 - team orchestration / subagent casting / dispatch / project surface
 - adaptive quality gating / human-in-the-loop 社区反馈

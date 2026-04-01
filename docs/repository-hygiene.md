@@ -2,37 +2,33 @@
 
 ## Forbidden Workspace State
 
-The repository treats `.obsidian/` as local editor state, not project source.
+The repository treats local editor and agent-tool state as workstation noise, not project source.
 
 Rules:
-- `.obsidian/` must stay ignored.
-- `.obsidian/` must never be tracked in the current index.
-- `.obsidian/` must never exist anywhere in published Git history.
+- local-tool state paths such as `.obsidian/`, `.omx/`, `.codex/`, `.claude/`, `.claude-code/`, `.opencode/`, `.openclaw/`, `.gemini/`, `.gemini-cli/`, `.aider/`, `.cursor/`, `.continue/`, `.roo/`, `.windsurf/`, and `.avante/` must stay ignored
+- forbidden local-tool paths must never be tracked in the current index.
+- forbidden local-tool paths must never exist anywhere in published Git history.
 
-## Current Verified State
+## Current Policy
 
-At bootstrap time for this repository:
-- `.obsidian/` exists locally;
-- `.gitignore` excludes it;
-- the repository has no commits yet;
-- the repository has no remote yet;
-- there is no pushed history to rewrite.
+This repository is already published.
+That means hygiene is not only about future ignores; it also includes history auditing and CI enforcement.
 
-## If `.obsidian/` Is Staged But Not Yet Pushed
+## If A Forbidden Path Is Staged But Not Yet Pushed
 
 ```bash
-git rm -r --cached .obsidian
+git rm -r --cached <path>
 git commit --amend --no-edit
 ```
 
 If the accidental commit is not the latest one, rewrite the local branch history before pushing.
 
-## If `.obsidian/` Has Already Been Pushed
+## If A Forbidden Path Has Already Been Pushed
 
 Rewrite the branch history and force-push the cleaned branch before publication:
 
 ```bash
-git filter-repo --path .obsidian --invert-paths
+git filter-repo --path <path> --invert-paths
 git push --force-with-lease origin <branch>
 ```
 
@@ -48,4 +44,3 @@ The repository enforces this with:
 - [`scripts/check_forbidden_paths.py`](../scripts/check_forbidden_paths.py)
 - unit tests
 - CI with full-history checkout
-

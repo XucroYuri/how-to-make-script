@@ -52,6 +52,7 @@
 - Route a request to the right protocol, rubric, and minimal knowledge bundle instead of stuffing the whole repo into context.
 - Compare multiple viable creative directions without pretending there is one universal method.
 - Diagnose drafts with `rewrite_report`, `quality_gate_report`, `boundary_map`, or `scope_correction`.
+- Handle broad screenplay theory and long-form continuity with `research_background_map` and `story_memory_checkpoint`.
 - Bridge screenplay work into voice calibration, multilingual visual language, and screen-to-video handoff.
 - Design multi-agent or writers' room style workflows with explicit casts, dispatch plans, and handoff contracts.
 
@@ -97,11 +98,20 @@ Full example chain:
 
 ## Why It Is Different
 
-- `route-first`: requests resolve through `intent x medium x stage x output x constraints`, not keyword vibes.
+- `route-first`: the primary route is anchored by `intent x medium x stage x output`, then `constraints` refine tie-breaks and loading.
 - `research-first`: stable knowledge lives in versioned assets, not hidden chat memory.
 - `bounded-loading`: agents load the smallest useful bundle instead of the whole repository.
 - `challenge-friendly`: counterexamples, objections, and field reports are first-class improvement inputs.
 - `multi-surface`: the repo covers writing artifacts, review artifacts, team orchestration, project surfaces, and downstream handoff layers.
+
+## If You Are Calling This From Another Agent
+
+- Start at [`SKILL.md`](./SKILL.md) for the root orchestration contract.
+- Use [`references/supported-outputs.md`](./references/supported-outputs.md) to choose the smallest public output instead of inventing a blended artifact.
+- Use [`references/router-matrix.json`](./references/router-matrix.json) and [`references/routing-policy.md`](./references/routing-policy.md) to understand route selection and constraint signals.
+- Use `research_background_map` for broad “how to create a screenplay” or theory-support requests.
+- Use `story_memory_checkpoint` when the real need is resumable continuity or handoff-safe state, not a broader context bundle.
+- Use `project_surface_map` when the real need is long-running workflow design, source-of-truth separation, or packet/export governance.
 
 ## Start With The Path That Fits You
 
@@ -116,6 +126,18 @@ Full example chain:
 - Start with [Architecture](./docs/architecture.md)
 - Then read [Content Model](./docs/content-model.md)
 - Then inspect [Routing Policy](./references/routing-policy.md) and [Router Matrix](./references/router-matrix.json)
+- Then inspect [Supported Outputs](./references/supported-outputs.md) and [Context Loading Policy](./docs/context-loading-policy.md)
+
+### If your question is broad or theory-heavy
+
+- Start with [How To Create A Screenplay Research](./docs/how-to-create-a-screenplay-research.md)
+- Then inspect [Research Background Workflow](./knowledge/20-workflows/wp-research-background-map.md)
+- Then narrow into the next output route instead of staying in survey mode
+
+### If you need to pause, resume, or hand off long-form work
+
+- Start with [Story Memory Checkpoint Workflow](./knowledge/20-workflows/wp-story-memory-checkpoint.md)
+- Then inspect [Project Surface Architecture](./docs/project-surface-architecture.md) if the problem is really long-horizon workflow design
 
 ### If you want to challenge or improve the repo
 
@@ -168,6 +190,12 @@ ln -s /absolute/path/to/how-to-make-script ~/.config/opencode/skills/how-to-make
 Install as a local extension or clone it under a shared skills directory recognized by your setup.
 </details>
 
+<details>
+<summary>OpenClaw</summary>
+
+Link or clone the repository into the skill directory your OpenClaw setup resolves, then point the runtime at the repo root so `SKILL.md` stays the entrypoint.
+</details>
+
 ### 3. Verify repository health
 
 <details>
@@ -175,6 +203,8 @@ Install as a local extension or clone it under a shared skills directory recogni
 
 ```bash
 python3 scripts/validate_assets.py
+python3 scripts/check_semantic_consistency.py
+python3 scripts/check_background_bundles.py
 python3 scripts/check_routes.py
 python3 scripts/check_route_overlaps.py
 python3 scripts/check_subagent_registries.py
@@ -205,11 +235,14 @@ flowchart LR
 | Surface | Current scope |
 | --- | --- |
 | Root skill | [`SKILL.md`](./SKILL.md) orchestrates routing, loading, and output discipline |
-| Sub-skills | `27` workflow-focused skill folders in [`skills/`](./skills) |
-| Knowledge base | `138` Markdown assets in [`knowledge/`](./knowledge) |
-| Examples | `22` example files across golden flows, fixtures, and reference packs |
-| Validation tooling | `12` Python scripts in [`scripts/`](./scripts) |
-| Test coverage | `10` test modules in [`tests/`](./tests) |
+| Public output contracts | `30` routeable outputs in [`references/supported-outputs.md`](./references/supported-outputs.md) |
+| Skill folders | `29` skill folders in [`skills/`](./skills) |
+| Structured assets | `97` atoms + `28` protocols + `27` rubrics |
+| Route fixtures | `91` fixtures in [`examples/agent/fixtures.json`](./examples/agent/fixtures.json) |
+| Knowledge base | `165` Markdown files in [`knowledge/`](./knowledge) |
+| Examples | `24` example files across golden flows, fixtures, and reference packs |
+| Validation tooling | `14` Python scripts in [`scripts/`](./scripts) |
+| Test coverage | `12` test modules in [`tests/`](./tests) |
 
 ## Capability Surface
 
@@ -225,6 +258,12 @@ flowchart LR
 - rewrite diagnosis
 - quality gates and targeted recheck
 - route failures, boundary maps, and scope correction
+
+### Research and continuity
+
+- broad screenplay theory and background maps
+- resumable story-memory checkpoints
+- bounded loading and route-aware research bundles
 
 ### Expression and downstream translation
 
@@ -245,7 +284,7 @@ flowchart LR
 - Routes are tested for correct output contracts and overlap risk.
 - Fixtures exercise narrative, commercial, interactive, and systems workflows.
 - Community surfaces are checked so issue / discussion routing does not silently rot.
-- Forbidden local workspace leakage such as `.obsidian/` is blocked in both index and history checks.
+- Forbidden local workspace leakage such as `.obsidian/`, `.omx/`, `.codex/`, `.claude/`, `.opencode/`, and related tool traces is blocked in both index and history checks.
 - Human disagreement is treated as a source of regression tests, rubrics, and scope corrections.
 
 ## Docs By Goal
@@ -298,6 +337,7 @@ The repository is already usable as a research-first, agent-ready screenplay mon
 Current emphasis:
 
 - narrative, commercial, and interactive screenplay work
+- broad research support and resumable continuity checkpoints
 - voice, visual-language, and screen-to-video layers
 - team orchestration, subagent casting, dispatch design, and project surfaces
 - adaptive quality gating and human-in-the-loop community iteration
