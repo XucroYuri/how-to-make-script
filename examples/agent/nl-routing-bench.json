@@ -1,0 +1,384 @@
+[
+  {
+    "id": "nl-001",
+    "query": "我想写一个关于赛博朋克城市的故事",
+    "expected_classification": {
+      "intent": "discover",
+      "medium": "AMBIGUOUS",
+      "stage": "ideation",
+      "output": "premise"
+    },
+    "expected_behavior": "should_ask_clarification",
+    "clarification_target": "medium",
+    "notes": "可能是 feature_film, episodic, game_narrative, branching_interactive — 需要问用户"
+  },
+  {
+    "id": "nl-002",
+    "query": "这段15秒抖音广告开头太平了",
+    "expected_classification": {
+      "intent": "diagnose",
+      "medium": "shortform_video",
+      "stage": "rewrite",
+      "output": "rewrite_report"
+    },
+    "expected_behavior": "should_route",
+    "expected_route": {
+      "skill_id": "skill.commercial-script",
+      "protocol_id": "wp.commercial-script"
+    },
+    "notes": "明确的商业内容 + 短视频平台 + 诊断意图"
+  },
+  {
+    "id": "nl-003",
+    "query": "帮我写个剧本",
+    "expected_classification": {
+      "intent": "AMBIGUOUS",
+      "medium": "AMBIGUOUS",
+      "stage": "AMBIGUOUS",
+      "output": "AMBIGUOUS"
+    },
+    "expected_behavior": "should_ask_clarification",
+    "clarification_target": "all",
+    "notes": "信息严重不足，需要问至少 medium 和 stage"
+  },
+  {
+    "id": "nl-004",
+    "query": "把这部电影的第三幕重写一下，节奏太拖了",
+    "expected_classification": {
+      "intent": "diagnose",
+      "medium": "feature_film",
+      "stage": "rewrite",
+      "output": "rewrite_report"
+    },
+    "expected_behavior": "should_route",
+    "expected_route": {
+      "skill_id": "skill.rewrite-doctor",
+      "protocol_id": "wp.rewrite-doctor"
+    },
+    "notes": "明确的诊断意图 + 电影 + 重写阶段"
+  },
+  {
+    "id": "nl-005",
+    "query": "我有一个关于外卖骑手的想法，想做短剧也行想做电影也行",
+    "expected_classification": {
+      "intent": "discover",
+      "medium": "AMBIGUOUS",
+      "stage": "ideation",
+      "output": "premise"
+    },
+    "expected_behavior": "should_ask_clarification",
+    "clarification_target": "medium",
+    "notes": "短剧和电影都可以走 idea-discovery，但应该先收敛媒介"
+  },
+  {
+    "id": "nl-006",
+    "query": "这个品牌片脚本里品牌出现得太突兀了",
+    "expected_classification": {
+      "intent": "diagnose",
+      "medium": "branded_film",
+      "stage": "rewrite",
+      "output": "commercial_script"
+    },
+    "expected_behavior": "should_route",
+    "expected_route": {
+      "skill_id": "skill.commercial-script",
+      "protocol_id": "wp.commercial-script"
+    },
+    "notes": "branded_film + rewrite + 商业脚本"
+  },
+  {
+    "id": "nl-007",
+    "query": "我想把这部动画电影改编成游戏剧情，但不知道该保留什么",
+    "expected_classification": {
+      "intent": "adapt",
+      "medium": "game_narrative",
+      "stage": "adaptation",
+      "output": "AMBIGUOUS"
+    },
+    "expected_behavior": "should_route_or_ask",
+    "expected_route": {
+      "skill_id": "skill.genre-adaptation"
+    },
+    "notes": "可以走 genre-adaptation 的 outline，但也可能需要先做 boundary_map"
+  },
+  {
+    "id": "nl-008",
+    "query": "给我看看这段对白为什么听起来所有人都像一个说话方式",
+    "expected_classification": {
+      "intent": "diagnose",
+      "medium": "AMBIGUOUS",
+      "stage": "dialogue",
+      "output": "AMBIGUOUS"
+    },
+    "expected_behavior": "should_ask_clarification_or_route_adjunct",
+    "notes": "可能是 voice_style_guide 或 dialogue_polish — 取决于媒介和输出需要"
+  },
+  {
+    "id": "nl-009",
+    "query": "帮我的短剧做一个分集大纲",
+    "expected_classification": {
+      "intent": "design",
+      "medium": "short_drama",
+      "stage": "outline",
+      "output": "outline"
+    },
+    "expected_behavior": "should_route",
+    "expected_route": {
+      "skill_id": "skill.structure-beat",
+      "protocol_id": "wp.structure-beat-outline"
+    },
+    "notes": "明确的短剧 + 大纲"
+  },
+  {
+    "id": "nl-010",
+    "query": "我想做一个互动故事，让玩家在道德困境里做选择",
+    "expected_classification": {
+      "intent": "discover",
+      "medium": "branching_interactive",
+      "stage": "ideation",
+      "output": "premise"
+    },
+    "expected_behavior": "should_route",
+    "expected_route": {
+      "skill_id": "skill.idea-discovery",
+      "protocol_id": "wp.idea-discovery"
+    },
+    "notes": "互动 + 创意发现阶段"
+  },
+  {
+    "id": "nl-011",
+    "query": "这个悬疑剧的观众是谁？他们想看什么？",
+    "expected_classification": {
+      "intent": "discover",
+      "medium": "episodic",
+      "stage": "premise",
+      "output": "audience_fit_note"
+    },
+    "expected_behavior": "should_route",
+    "expected_route": {
+      "skill_id": "skill.audience-insight",
+      "protocol_id": "wp.audience-fit-note"
+    },
+    "notes": "明确的受众分析请求"
+  },
+  {
+    "id": "nl-012",
+    "query": "我不认同'三幕结构一定最好'这个说法，帮我看看到底什么情况下成立",
+    "expected_classification": {
+      "intent": "diagnose",
+      "medium": "AMBIGUOUS",
+      "stage": "structure",
+      "output": "scope_correction"
+    },
+    "expected_behavior": "should_route_or_ask",
+    "expected_route": {
+      "skill_id": "skill.scope-correction"
+    },
+    "notes": "scope_correction 路由明确，但 medium 未指定"
+  },
+  {
+    "id": "nl-013",
+    "query": "我写了一个动画长片的开头场景，但感觉没有抓力",
+    "expected_classification": {
+      "intent": "diagnose",
+      "medium": "animation",
+      "stage": "scene",
+      "output": "rewrite_report"
+    },
+    "expected_behavior": "should_route",
+    "expected_route": {
+      "skill_id": "skill.scene-writing",
+      "protocol_id": "wp.scene-writing"
+    },
+    "notes": "明确的动画 + 场景 + 诊断。scene-writing 接受 draft intent but also handles diagnosis through rewrite-doctor. 这里 stage=scene 所以走 scene-writing"
+  },
+  {
+    "id": "nl-014",
+    "query": "我想比较一下线性叙事和伪互动叙事这两种做法",
+    "expected_classification": {
+      "intent": "design",
+      "medium": "AMBIGUOUS",
+      "stage": "structure",
+      "output": "path_options"
+    },
+    "expected_behavior": "should_route",
+    "expected_route": {
+      "skill_id": "skill.path-exploration",
+      "protocol_id": "wp.path-options"
+    },
+    "notes": "path_options 路由明确，medium 模糊但 path-exploration 支持 all media"
+  },
+  {
+    "id": "nl-015",
+    "query": "给这条30秒跑鞋广告的镜头和旁白做个韩语视觉包，方便和首尔团队对接",
+    "expected_classification": {
+      "intent": "design",
+      "medium": "commercial",
+      "stage": "scene",
+      "output": "visual_language_pack"
+    },
+    "expected_behavior": "should_route",
+    "expected_route": {
+      "skill_id": "skill.visual-language",
+      "protocol_id": "wp.visual-language-pack"
+    },
+    "notes": "明确的视觉语言包请求"
+  },
+  {
+    "id": "nl-016",
+    "query": "帮我组织一个三人编剧小组来开发这部剧",
+    "expected_classification": {
+      "intent": "design",
+      "medium": "AMBIGUOUS",
+      "stage": "ideation",
+      "output": "team_workflow_blueprint"
+    },
+    "expected_behavior": "should_route",
+    "expected_route": {
+      "skill_id": "skill.team-orchestration",
+      "protocol_id": "wp.team-workflow-blueprint"
+    },
+    "notes": "团队协作请求明确"
+  },
+  {
+    "id": "nl-017",
+    "query": "This short video ad for a coffee brand feels too generic, make it sharper",
+    "expected_classification": {
+      "intent": "polish",
+      "medium": "shortform_video",
+      "stage": "rewrite",
+      "output": "commercial_script"
+    },
+    "expected_behavior": "should_route",
+    "expected_route": {
+      "skill_id": "skill.commercial-script",
+      "protocol_id": "wp.commercial-script"
+    },
+    "notes": "英文输入 + 明确的短视频广告打磨"
+  },
+  {
+    "id": "nl-018",
+    "query": "我该加载哪些素材来写好这场戏？",
+    "expected_classification": {
+      "intent": "design",
+      "medium": "AMBIGUOUS",
+      "stage": "AMBIGUOUS",
+      "output": "context_loading_plan"
+    },
+    "expected_behavior": "should_route_or_ask",
+    "expected_route": {
+      "skill_id": "skill.context-governor",
+      "protocol_id": "wp.context-loading-plan"
+    },
+    "notes": "context_loading_plan 路由明确，但需要更多场景信息"
+  },
+  {
+    "id": "nl-019",
+    "query": "先别写，帮我检查一下这部动画长片的质量，用质量门禁报告",
+    "expected_classification": {
+      "intent": "diagnose",
+      "medium": "animation",
+      "stage": "rewrite",
+      "output": "quality_gate_report"
+    },
+    "expected_behavior": "should_route",
+    "expected_route": {
+      "skill_id": "skill.quality-gating",
+      "protocol_id": "wp.quality-gate-report"
+    },
+    "notes": "明确的质量门禁请求"
+  },
+  {
+    "id": "nl-020",
+    "query": "我的游戏剧情里玩家总说选择是假的，帮我看看为什么",
+    "expected_classification": {
+      "intent": "diagnose",
+      "medium": "game_narrative",
+      "stage": "structure",
+      "output": "pattern_reference_pack"
+    },
+    "expected_behavior": "should_route",
+    "expected_route": {
+      "skill_id": "skill.pattern-reference",
+      "protocol_id": "wp.pattern-reference-pack"
+    },
+    "notes": "模式参照请求 — 诊断假选择问题"
+  },
+  {
+    "id": "nl-021",
+    "query": "这段洗发水广告旁白太硬了，但我也不能做成假高级",
+    "expected_classification": {
+      "intent": "design",
+      "medium": "commercial",
+      "stage": "scene",
+      "output": "voice_style_guide"
+    },
+    "expected_behavior": "should_route",
+    "expected_route": {
+      "skill_id": "skill.voice-style-calibration",
+      "protocol_id": "wp.voice-style-guide"
+    },
+    "notes": "明确的语音风格校准请求"
+  },
+  {
+    "id": "nl-022",
+    "query": "不知道这个项目文件该怎么组织，什么是可以改的什么是自动生成的",
+    "expected_classification": {
+      "intent": "design",
+      "medium": "AMBIGUOUS",
+      "stage": "ideation",
+      "output": "project_surface_map"
+    },
+    "expected_behavior": "should_route",
+    "expected_route": {
+      "skill_id": "skill.project-surface-design",
+      "protocol_id": "wp.project-surface-map"
+    },
+    "notes": "项目表面映射请求明确"
+  },
+  {
+    "id": "nl-023",
+    "query": "我要写个关于家庭暴力的电影，但不知道哪些能写哪些不能碰",
+    "expected_classification": {
+      "intent": "design",
+      "medium": "feature_film",
+      "stage": "structure",
+      "output": "boundary_map"
+    },
+    "expected_behavior": "should_route",
+    "expected_route": {
+      "skill_id": "skill.boundary-mapping",
+      "protocol_id": "wp.boundary-map"
+    },
+    "notes": "明确的边界映射请求 — 敏感题材需要先划界"
+  },
+  {
+    "id": "nl-024",
+    "query": "我想学写剧本但不知道从哪里开始",
+    "expected_classification": {
+      "intent": "discover",
+      "medium": "AMBIGUOUS",
+      "stage": "ideation",
+      "output": "learning_path"
+    },
+    "expected_behavior": "should_ask_clarification",
+    "clarification_target": "medium",
+    "notes": "学习路径请求，但媒介未指定"
+  },
+  {
+    "id": "nl-025",
+    "query": "这个短剧的 premise 不够抓人，但我不想直接扔掉，帮我把范围收窄看哪里还能救",
+    "expected_classification": {
+      "intent": "design",
+      "medium": "short_drama",
+      "stage": "premise",
+      "output": "scope_correction"
+    },
+    "expected_behavior": "should_route",
+    "expected_route": {
+      "skill_id": "skill.scope-correction",
+      "protocol_id": "wp.scope-correction"
+    },
+    "notes": "范围修正请求 — 明确不想翻转只想收窄"
+  }
+]
