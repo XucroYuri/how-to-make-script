@@ -6,7 +6,7 @@
   "supports": {
     "intents": ["design", "draft", "diagnose", "adapt"],
     "mediums": ["feature_film", "episodic", "short_drama", "animation", "game_narrative", "branching_interactive"],
-    "stages": ["structure", "outline", "scene", "rewrite", "adaptation"],
+    "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
     "outputs": ["story_memory_checkpoint"]
   },
   "protocol_id": "wp.story-memory-checkpoint",

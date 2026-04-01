@@ -214,7 +214,7 @@ flowchart LR
 | 公共输出契约 | [`references/supported-outputs.md`](./references/supported-outputs.md) 中 `30` 个可路由输出 |
 | skill 目录 | [`skills/`](./skills) 下 `29` 个能力型目录 |
 | 结构化资产 | `97` 个 atom + `28` 个 protocol + `27` 个 rubric |
-| route fixtures | [`examples/agent/fixtures.json`](./examples/agent/fixtures.json) 中 `91` 条 |
+| route fixtures | [`examples/agent/fixtures.json`](./examples/agent/fixtures.json) 中 `93` 条 |
 | 知识资产 | [`knowledge/`](./knowledge) 下 `165` 份 Markdown |
 | 示例材料 | [`examples/`](./examples) 下 `24` 份示例 / fixture / reference pack |
 | 校验脚本 | [`scripts/`](./scripts) 下 `14` 个 Python 脚本 |
@@ -260,7 +260,7 @@ flowchart LR
 - 会检查 route overlap，避免 skill 边界越来越糊
 - narrative / commercial / interactive 都有样例和 fixture
 - community surface 有专项检查，避免 issue / discussion 入口失效
-- `.obsidian/`、`.omx/`、`.codex/`、`.claude/`、`.opencode/` 等本地工具痕迹被明确禁止进入 index 和历史
+- 本地工具痕迹被明确禁止进入 index 和历史；以 [`.gitignore`](./.gitignore) 和 [`scripts/check_forbidden_paths.py`](./scripts/check_forbidden_paths.py) 里的 canonical denylist 为准
 - 人类反驳不是噪音，而是后续 rubric、fixture、scope correction 的来源
 
 ## 按目标找文档

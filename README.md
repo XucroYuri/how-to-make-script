@@ -238,7 +238,7 @@ flowchart LR
 | Public output contracts | `30` routeable outputs in [`references/supported-outputs.md`](./references/supported-outputs.md) |
 | Skill folders | `29` skill folders in [`skills/`](./skills) |
 | Structured assets | `97` atoms + `28` protocols + `27` rubrics |
-| Route fixtures | `91` fixtures in [`examples/agent/fixtures.json`](./examples/agent/fixtures.json) |
+| Route fixtures | `93` fixtures in [`examples/agent/fixtures.json`](./examples/agent/fixtures.json) |
 | Knowledge base | `165` Markdown files in [`knowledge/`](./knowledge) |
 | Examples | `24` example files across golden flows, fixtures, and reference packs |
 | Validation tooling | `14` Python scripts in [`scripts/`](./scripts) |
@@ -284,7 +284,7 @@ flowchart LR
 - Routes are tested for correct output contracts and overlap risk.
 - Fixtures exercise narrative, commercial, interactive, and systems workflows.
 - Community surfaces are checked so issue / discussion routing does not silently rot.
-- Forbidden local workspace leakage such as `.obsidian/`, `.omx/`, `.codex/`, `.claude/`, `.opencode/`, and related tool traces is blocked in both index and history checks.
+- Forbidden local workspace leakage is blocked in both index and history checks; the canonical denylist lives in [`.gitignore`](./.gitignore) and [`scripts/check_forbidden_paths.py`](./scripts/check_forbidden_paths.py).
 - Human disagreement is treated as a source of regression tests, rubrics, and scope corrections.
 
 ## Docs By Goal

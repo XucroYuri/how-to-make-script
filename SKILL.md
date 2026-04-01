@@ -42,8 +42,7 @@ This is the root orchestrator. It does not carry all theory inline. It resolves 
 - Prefer `expert_subagent_cast` when the user asks which experts, roles, subagents, or reference-persona lenses should participate in a screenplay task.
 - Prefer `subagent_dispatch_plan` when the user asks how those subagents should be scheduled, layered, reviewed, or merged.
 - Prefer `project_surface_map` when the user asks how a long-running screenplay project should separate source-of-truth assets, runtime state, packet assembly, review surfaces, export surfaces, or phase entrypoints.
-- Prefer `research_background_map` when the user asks broad questions such as “how to create a screenplay,” asks for theory support, asks for the repo’s background rationale, or needs a many-angle screenplay research baseline before choosing a narrower route.
-- Prefer a `survey_pack` anchored in the screenplay-creation research layer when the user explicitly asks broad questions such as “how to create a screenplay,” asks for theory support, or asks for a many-angle research baseline rather than one immediate artifact.
+- Prefer `research_background_map` when the user asks broad questions such as “how to create a screenplay,” asks for theory support, asks for the repo’s background rationale, or needs a many-angle screenplay research baseline before choosing a narrower route. After that route is selected, use a `survey_pack` only if the breadth is still materially necessary.
 
 ## Boundary Rule
 Treat constraints in two classes:
