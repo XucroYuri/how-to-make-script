@@ -342,9 +342,25 @@ Current emphasis:
 - team orchestration, subagent casting, dispatch design, and project surfaces
 - adaptive quality gating and human-in-the-loop community iteration
 
-Next major direction:
+Main development gaps still open:
 
-- stronger runtime planning and live execution layers on top of the existing knowledge and routing system
+- blueprint-quality collaboration design is ahead of live runtime execution;
+- bounded loading is strong at the policy layer but still under-enforced at the bundle-planner layer;
+- route coverage is broad, but adversarial fixture depth is still uneven across nearby outputs;
+- knowledge breadth is ahead of genre / case-study / stage-specific depth in several areas;
+- community intake exists, but discussion-to-asset conversion is still too manual.
+
+Next-stage roadmap:
+
+- executable runtime planning and resumable orchestration
+- harder router / retrieval governance and richer registry validation
+- deeper genre / medium / case-study / dialogue-character knowledge layers
+- stronger quality presets, cross-artifact checks, and regression depth
+- more operational human-in-the-loop conversion loops and bilingual maturity
+
+Detailed TODO list:
+
+- [Roadmap](./docs/roadmap.md)
 
 ## Standards And Metadata
 

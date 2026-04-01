@@ -318,9 +318,25 @@ flowchart LR
 - team orchestration / subagent casting / dispatch / project surface
 - adaptive quality gating / human-in-the-loop 社区反馈
 
-下一阶段最重要的方向：
+当前还明显没补齐的地方：
 
-- 在现有 knowledge + routing + review 层之上，继续往更强的 runtime planning / live execution 推进
+- 协作 blueprint 已经很多，但 live runtime execution 还没落成；
+- bounded loading 在规则层很强，但 bundle planner 层还不够硬；
+- route 覆盖面很大，但相邻输出之间的对抗性 fixture 还不够深；
+- 知识面已经广了，但 genre / case study / stage-specific depth 仍然有不少空位；
+- 社区入口已经有了，但 discussion → asset 的转化链仍偏人工。
+
+下一阶段开发方向：
+
+- 可执行 runtime planning 与可恢复 orchestration
+- 更硬的 router / retrieval 治理和更完整的 registry 校验
+- 更深的 genre / medium / case-study / dialogue-character 知识层
+- 更强的 quality preset、跨工件一致性检查和回归深度
+- 更成熟的人类反馈转资产机制和双语成熟度
+
+高细粒度 TODO：
+
+- [Roadmap](./docs/roadmap-zh.md)
 
 ## 仓库标准与元信息
 
