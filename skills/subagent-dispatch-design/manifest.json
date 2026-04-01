@@ -4,13 +4,52 @@
   "description": "Design multi-level dispatch plans for screenplay subagents with bounded loading, handoffs, reviews, and human gates.",
   "entrypoint": "skills/subagent-dispatch-design/SKILL.md",
   "supports": {
-    "intents": ["discover", "design", "adapt", "diagnose"],
-    "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-    "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
-    "outputs": ["subagent_dispatch_plan"]
+    "intents": [
+      "discover",
+      "design",
+      "adapt",
+      "diagnose"
+    ],
+    "mediums": [
+      "feature_film",
+      "episodic",
+      "short_drama",
+      "animation",
+      "commercial",
+      "branded_film",
+      "shortform_video",
+      "game_narrative",
+      "branching_interactive"
+    ],
+    "stages": [
+      "ideation",
+      "premise",
+      "character",
+      "structure",
+      "outline",
+      "scene",
+      "dialogue",
+      "rewrite",
+      "adaptation"
+    ],
+    "outputs": [
+      "subagent_dispatch_plan"
+    ]
   },
   "protocol_id": "wp.subagent-dispatch-plan",
-  "rubric_ids": ["rb.subagent-dispatch-plan"],
-  "linked_atoms": ["ka.subagent-context-budgeting", "ka.convergence-owner-discipline", "ka.two-stage-review-loop", "ka.handoff-packet-discipline", "ka.parallel-lane-governance", "ka.team-topology-selection"],
-  "fallback_behavior": "If the user only needs a team mode or cast, return to team_workflow_blueprint or expert_subagent_cast. If the work is effectively single-threaded, keep one owner plus one review gate."
+  "rubric_ids": [
+    "rb.subagent-dispatch-plan"
+  ],
+  "linked_atoms": [
+    "ka.subagent-context-budgeting",
+    "ka.convergence-owner-discipline",
+    "ka.two-stage-review-loop",
+    "ka.handoff-packet-discipline",
+    "ka.parallel-lane-governance",
+    "ka.team-topology-selection"
+  ],
+  "fallback_behavior": "If the user only needs a team mode or cast, return to team_workflow_blueprint or expert_subagent_cast. If the work is effectively single-threaded, keep one owner plus one review gate.",
+  "default_loading_mode": "focus_pack",
+  "adjunct_bundles": {},
+  "fallback_to_skill_id": "skill.expert-subagent-casting"
 }

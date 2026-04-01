@@ -4,8 +4,17 @@
   "type": "workflow_protocol",
   "title": "自适应质检报告协议",
   "goal": "针对任意剧本相关 artifact 输出一份 quality_gate_report，按 target contract 选择适配的检查 lenses，分离 hard fail 与 weighted weakness，并给出 correction ladder 与 recheck plan。",
-  "input_contract": ["artifact under review", "target contract or inferred artifact family", "medium", "scope mode", "constraints", "optional prior findings or diffs"],
-  "output_contract": ["quality_gate_report"],
+  "input_contract": [
+    "artifact under review",
+    "target contract or inferred artifact family",
+    "medium",
+    "scope mode",
+    "constraints",
+    "optional prior findings or diffs"
+  ],
+  "output_contract": [
+    "quality_gate_report"
+  ],
   "preconditions": [
     "存在可审查的 artifact，或至少存在一个可明确界定的 target contract",
     "用户的核心需求是审查、预检、复查、验收或 quality gate，而不是纯生成",
@@ -31,7 +40,9 @@
     "lens 选择理由清楚，且没有无端扩大为固定全量审查",
     "用户能据此决定是继续修改、局部复查，还是回退上游阶段"
   ],
-  "rubrics": ["rb.quality-gate-report"],
+  "rubrics": [
+    "rb.quality-gate-report"
+  ],
   "linked_atoms": [
     "ka.contract-first-quality-gating",
     "ka.adaptive-quality-lens-selection",
@@ -39,7 +50,10 @@
     "ka.metrics-handoff-compression",
     "ka.hard-gate-soft-score-separation",
     "ka.targeted-recheck-loop"
-  ]
+  ],
+  "budget_class": "M",
+  "mandatory_atom_count": 6,
+  "expansion_allowed": true
 }
 ---
 # 自适应质检报告协议

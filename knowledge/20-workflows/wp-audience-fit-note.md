@@ -4,8 +4,16 @@
   "type": "workflow_protocol",
   "title": "受众匹配说明协议",
   "goal": "把模糊的目标观众描述收敛成一个可执行的 audience_fit_note，用于修正 premise、结构、场景或改稿方向。",
-  "input_contract": ["project concept", "draft summary", "target audience guess", "platform context", "none"],
-  "output_contract": ["audience_fit_note"],
+  "input_contract": [
+    "project concept",
+    "draft summary",
+    "target audience guess",
+    "platform context",
+    "none"
+  ],
+  "output_contract": [
+    "audience_fit_note"
+  ],
   "preconditions": [
     "至少知道目标媒介或发布场景",
     "允许从模糊 audience 假设出发"
@@ -24,8 +32,18 @@
     "能清楚说明谁在看、为什么看、为什么会流失",
     "修改建议已经具体到能改变结构、场景或信息密度"
   ],
-  "rubrics": ["rb.audience-fit"],
-  "linked_atoms": ["ka.audience-need-state", "ka.platform-attention-economy", "ka.commissioning-fit", "ka.pacing-rhythm"]
+  "rubrics": [
+    "rb.audience-fit"
+  ],
+  "linked_atoms": [
+    "ka.audience-need-state",
+    "ka.platform-attention-economy",
+    "ka.commissioning-fit",
+    "ka.pacing-rhythm"
+  ],
+  "budget_class": "M",
+  "mandatory_atom_count": 4,
+  "expansion_allowed": true
 }
 ---
 # 受众匹配说明协议

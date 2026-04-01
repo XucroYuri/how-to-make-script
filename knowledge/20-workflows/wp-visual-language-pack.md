@@ -4,8 +4,16 @@
   "type": "workflow_protocol",
   "title": "多语种视觉语言包协议",
   "goal": "输出一份 task-specific 的 visual_language_pack，帮助剧本 Agent 或人类协作者在目标语言里更准确地表达镜头、灯光、动作、音频和文化美学锚点。",
-  "input_contract": ["scene goal", "medium and stage", "target collaboration language", "aesthetic target", "production or model context"],
-  "output_contract": ["visual_language_pack"],
+  "input_contract": [
+    "scene goal",
+    "medium and stage",
+    "target collaboration language",
+    "aesthetic target",
+    "production or model context"
+  ],
+  "output_contract": [
+    "visual_language_pack"
+  ],
   "preconditions": [
     "知道当前视觉语言包服务的任务类型",
     "知道目标语种、协作语境或至少知道需要 hybrid wording",
@@ -29,8 +37,18 @@
     "术语选择能明确改变下游镜头或表达决策",
     "输出包含误用警报和适用边界，而不是只有好看的词"
   ],
-  "rubrics": ["rb.visual-language-pack"],
-  "linked_atoms": ["ka.multilingual-visual-vocabulary", "ka.cultural-aesthetic-registers", "ka.prompt-delegation-levels", "ka.register-adaptation"]
+  "rubrics": [
+    "rb.visual-language-pack"
+  ],
+  "linked_atoms": [
+    "ka.multilingual-visual-vocabulary",
+    "ka.cultural-aesthetic-registers",
+    "ka.prompt-delegation-levels",
+    "ka.register-adaptation"
+  ],
+  "budget_class": "M",
+  "mandatory_atom_count": 4,
+  "expansion_allowed": true
 }
 ---
 # 多语种视觉语言包协议

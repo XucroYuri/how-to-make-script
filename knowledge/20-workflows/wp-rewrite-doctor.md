@@ -23,7 +23,10 @@
     "报告已包含层级诊断、优先级和具体动作"
   ],
   "rubrics": ["rb.rewrite-report"],
-  "linked_atoms": ["ka.rewrite-diagnosis", "ka.causality-chain", "ka.scene-function", "ka.dialogue-subtext", "ka.feedback-subjectivity-management"]
+  "linked_atoms": ["ka.rewrite-diagnosis", "ka.causality-chain", "ka.scene-function", "ka.dialogue-subtext", "ka.feedback-subjectivity-management"],
+  "budget_class": "M",
+  "mandatory_atom_count": 5,
+  "expansion_allowed": true
 }
 ---
 # 改稿诊断协议

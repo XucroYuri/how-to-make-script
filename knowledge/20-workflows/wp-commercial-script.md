@@ -4,8 +4,15 @@
   "type": "workflow_protocol",
   "title": "商业脚本协议",
   "goal": "输出以单一核心信息为中心的 commercial script。",
-  "input_contract": ["product brief", "campaign goal", "audience insight", "platform constraint"],
-  "output_contract": ["commercial_script"],
+  "input_contract": [
+    "product brief",
+    "campaign goal",
+    "audience insight",
+    "platform constraint"
+  ],
+  "output_contract": [
+    "commercial_script"
+  ],
   "preconditions": [
     "已知核心卖点或品牌任务"
   ],
@@ -22,8 +29,18 @@
   "stop_conditions": [
     "脚本具备明确核心信息、记忆点和 CTA"
   ],
-  "rubrics": ["rb.commercial-script"],
-  "linked_atoms": ["ka.medium-commercial", "ka.medium-branded-film", "ka.medium-shortform-video", "ka.scene-function"]
+  "rubrics": [
+    "rb.commercial-script"
+  ],
+  "linked_atoms": [
+    "ka.medium-commercial",
+    "ka.medium-branded-film",
+    "ka.medium-shortform-video",
+    "ka.scene-function"
+  ],
+  "budget_class": "M",
+  "mandatory_atom_count": 4,
+  "expansion_allowed": true
 }
 ---
 # 商业脚本协议

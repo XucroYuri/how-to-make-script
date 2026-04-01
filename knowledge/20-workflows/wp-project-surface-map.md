@@ -32,7 +32,10 @@
     "surface map 能支撑长期推进，而不是只解释一次性操作"
   ],
   "rubrics": ["rb.project-surface-map"],
-  "linked_atoms": ["ka.source-of-truth-runtime-split", "ka.canonical-packet-assembly", "ka.phase-entrypoint-handoff", "ka.command-artifact-mapping", "ka.subagent-context-budgeting", "ka.script-as-coordination-artifact", "ka.archive-literacy", "ka.story-memory-checkpoint"]
+  "linked_atoms": ["ka.source-of-truth-runtime-split", "ka.canonical-packet-assembly", "ka.phase-entrypoint-handoff", "ka.command-artifact-mapping", "ka.subagent-context-budgeting", "ka.script-as-coordination-artifact", "ka.archive-literacy", "ka.story-memory-checkpoint"],
+  "budget_class": "L",
+  "mandatory_atom_count": 8,
+  "expansion_allowed": true
 }
 ---
 # 项目工作流表面图协议

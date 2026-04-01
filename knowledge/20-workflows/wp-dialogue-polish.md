@@ -4,8 +4,13 @@
   "type": "workflow_protocol",
   "title": "对白打磨协议",
   "goal": "提高对白的角色声音、潜台词、信息效率和戏剧张力。",
-  "input_contract": ["scene_draft", "dialogue excerpt"],
-  "output_contract": ["dialogue_polish"],
+  "input_contract": [
+    "scene_draft",
+    "dialogue excerpt"
+  ],
+  "output_contract": [
+    "dialogue_polish"
+  ],
   "preconditions": [
     "已知说话双方的目标和关系"
   ],
@@ -24,8 +29,17 @@
     "角色声音可区分",
     "信息揭示服务冲突"
   ],
-  "rubrics": ["rb.dialogue"],
-  "linked_atoms": ["ka.dialogue-subtext", "ka.exposition-control", "ka.conflict-pressure"]
+  "rubrics": [
+    "rb.dialogue"
+  ],
+  "linked_atoms": [
+    "ka.dialogue-subtext",
+    "ka.exposition-control",
+    "ka.conflict-pressure"
+  ],
+  "budget_class": "S",
+  "mandatory_atom_count": 3,
+  "expansion_allowed": true
 }
 ---
 # 对白打磨协议

@@ -4,8 +4,19 @@
   "type": "workflow_protocol",
   "title": "专家 Subagent 阵容协议",
   "goal": "根据项目媒介、阶段、创作压力和 team mode，输出一份 expert_subagent_cast，明确哪些功能型 subagent、流程节点和参考 persona 应进场，各自拥有哪些权责、上下文预算和退出条件。",
-  "input_contract": ["project brief", "medium", "stage", "primary output need", "constraints", "optional team mode", "human availability", "optional preferred craft lineage"],
-  "output_contract": ["expert_subagent_cast"],
+  "input_contract": [
+    "project brief",
+    "medium",
+    "stage",
+    "primary output need",
+    "constraints",
+    "optional team mode",
+    "human availability",
+    "optional preferred craft lineage"
+  ],
+  "output_contract": [
+    "expert_subagent_cast"
+  ],
   "preconditions": [
     "已知当前项目的主要媒介与开发阶段",
     "用户确实需要具体的 subagent 阵容，而不是只要高层 team mode",
@@ -29,8 +40,20 @@
     "每个 subagent 都有清楚 mandate、authority 和 context budget",
     "阵容既丰富又克制，没有滑向全员上场或 persona 主导"
   ],
-  "rubrics": ["rb.expert-subagent-cast"],
-  "linked_atoms": ["ka.subagent-cast-composition", "ka.process-node-specialization", "ka.reference-persona-governance", "ka.subagent-context-budgeting", "ka.convergence-owner-discipline", "ka.team-topology-selection"]
+  "rubrics": [
+    "rb.expert-subagent-cast"
+  ],
+  "linked_atoms": [
+    "ka.subagent-cast-composition",
+    "ka.process-node-specialization",
+    "ka.reference-persona-governance",
+    "ka.subagent-context-budgeting",
+    "ka.convergence-owner-discipline",
+    "ka.team-topology-selection"
+  ],
+  "budget_class": "M",
+  "mandatory_atom_count": 6,
+  "expansion_allowed": true
 }
 ---
 # 专家 Subagent 阵容协议

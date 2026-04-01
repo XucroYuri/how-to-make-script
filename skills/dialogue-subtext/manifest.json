@@ -4,13 +4,38 @@
   "description": "Polish dialogue for voice separation, subtext, and strategic conflict.",
   "entrypoint": "skills/dialogue-subtext/SKILL.md",
   "supports": {
-    "intents": ["polish"],
-    "mediums": ["feature_film", "episodic", "short_drama", "animation"],
-    "stages": ["dialogue"],
-    "outputs": ["dialogue_polish"]
+    "intents": [
+      "polish"
+    ],
+    "mediums": [
+      "feature_film",
+      "episodic",
+      "short_drama",
+      "animation"
+    ],
+    "stages": [
+      "dialogue"
+    ],
+    "outputs": [
+      "dialogue_polish"
+    ]
   },
   "protocol_id": "wp.dialogue-polish",
-  "rubric_ids": ["rb.dialogue"],
-  "linked_atoms": ["ka.dialogue-subtext", "ka.exposition-control", "ka.conflict-pressure"],
-  "fallback_behavior": "Send the request back to scene-writing if the real problem is weak scene conflict."
+  "rubric_ids": [
+    "rb.dialogue"
+  ],
+  "linked_atoms": [
+    "ka.dialogue-subtext",
+    "ka.exposition-control",
+    "ka.conflict-pressure"
+  ],
+  "fallback_behavior": "Send the request back to scene-writing if the real problem is weak scene conflict.",
+  "default_loading_mode": "focus_pack",
+  "adjunct_bundles": {
+    "expression-lens": {
+      "trigger": "voice_target",
+      "mode": "smallest_adjunct"
+    }
+  },
+  "fallback_to_skill_id": null
 }

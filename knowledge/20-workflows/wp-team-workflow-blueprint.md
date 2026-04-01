@@ -4,8 +4,17 @@
   "type": "workflow_protocol",
   "title": "团队工作流蓝图协议",
   "goal": "根据项目媒介、开发阶段、协作约束和风险结构，输出一份 team_workflow_blueprint，明确采用哪种 team mode、有哪些角色、如何分 lane、如何交接、何时让人类拍板。",
-  "input_contract": ["project brief", "medium", "stage", "commissioning context", "constraints", "human availability or approval chain"],
-  "output_contract": ["team_workflow_blueprint"],
+  "input_contract": [
+    "project brief",
+    "medium",
+    "stage",
+    "commissioning context",
+    "constraints",
+    "human availability or approval chain"
+  ],
+  "output_contract": [
+    "team_workflow_blueprint"
+  ],
   "preconditions": [
     "已知目标媒介或主要开发容器",
     "至少知道当前任务处于哪个创作阶段",
@@ -30,8 +39,20 @@
     "主要失败模式和升级条件已明确",
     "蓝图既能支持并行协作，也能避免把项目锁死在唯一组织形态"
   ],
-  "rubrics": ["rb.team-workflow-blueprint"],
-  "linked_atoms": ["ka.team-topology-selection", "ka.handoff-contract-discipline", "ka.human-checkpoint-gates", "ka.room-artifact-ladder", "ka.parallel-lane-governance", "ka.dissent-preservation-loop"]
+  "rubrics": [
+    "rb.team-workflow-blueprint"
+  ],
+  "linked_atoms": [
+    "ka.team-topology-selection",
+    "ka.handoff-contract-discipline",
+    "ka.human-checkpoint-gates",
+    "ka.room-artifact-ladder",
+    "ka.parallel-lane-governance",
+    "ka.dissent-preservation-loop"
+  ],
+  "budget_class": "M",
+  "mandatory_atom_count": 6,
+  "expansion_allowed": true
 }
 ---
 # 团队工作流蓝图协议

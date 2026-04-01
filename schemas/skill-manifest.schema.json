@@ -30,6 +30,19 @@
     "protocol_id": {"type": "string"},
     "rubric_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}},
     "linked_atoms": {"type": "array", "minItems": 1, "items": {"type": "string"}},
-    "fallback_behavior": {"type": "string"}
+    "fallback_behavior": {"type": "string"},
+    "default_loading_mode": {"type": "string", "enum": ["route_kernel", "focus_pack", "compare_pack", "teaching_pack", "survey_pack"]},
+    "adjunct_bundles": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["trigger"],
+        "properties": {
+          "trigger": {"type": "string"},
+          "mode": {"type": "string", "enum": ["smallest_adjunct", "full_adjunct"]}
+        }
+      }
+    },
+    "fallback_to_skill_id": {"type": "string", "nullable": true}
   }
 }

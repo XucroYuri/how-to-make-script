@@ -4,8 +4,16 @@
   "type": "workflow_protocol",
   "title": "范围修正协议",
   "goal": "当一条规则、路由、rubric 或知识说法被挑战时，输出一份 scope_correction，而不是只做二元否定或教条防守。",
-  "input_contract": ["challenged claim", "counterexample", "failure context", "current file or route", "none"],
-  "output_contract": ["scope_correction"],
+  "input_contract": [
+    "challenged claim",
+    "counterexample",
+    "failure context",
+    "current file or route",
+    "none"
+  ],
+  "output_contract": [
+    "scope_correction"
+  ],
   "preconditions": [
     "用户已经指出一个可定位的 claim、route、rubric 或规则",
     "至少存在一个失败上下文、反例或适用范围争议"
@@ -26,8 +34,18 @@
     "至少写明一个失效条件和一个适用边界",
     "明确说明后续哪些资产需要跟进更新"
   ],
-  "rubrics": ["rb.scope-correction"],
-  "linked_atoms": ["ka.scope-correction", "ka.false-universal-warning", "ka.creative-pluralism", "ka.boundary-first-guidance"]
+  "rubrics": [
+    "rb.scope-correction"
+  ],
+  "linked_atoms": [
+    "ka.scope-correction",
+    "ka.false-universal-warning",
+    "ka.creative-pluralism",
+    "ka.boundary-first-guidance"
+  ],
+  "budget_class": "M",
+  "mandatory_atom_count": 4,
+  "expansion_allowed": true
 }
 ---
 # 范围修正协议

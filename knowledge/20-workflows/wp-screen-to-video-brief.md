@@ -4,8 +4,17 @@
   "type": "workflow_protocol",
   "title": "剧本到视频生成桥接协议",
   "goal": "把 scene、广告段落或适配片段桥接成 screen_to_video_brief，在不丢失戏剧意图的前提下，为 Sora、Seedance 或通用视频生成链路提供更可执行的视觉 brief。",
-  "input_contract": ["scene draft or scene card", "target runtime", "prompt runtime or platform", "visual target", "invariants and hard boundaries", "source excerpt or source spans"],
-  "output_contract": ["screen_to_video_brief"],
+  "input_contract": [
+    "scene draft or scene card",
+    "target runtime",
+    "prompt runtime or platform",
+    "visual target",
+    "invariants and hard boundaries",
+    "source excerpt or source spans"
+  ],
+  "output_contract": [
+    "screen_to_video_brief"
+  ],
   "preconditions": [
     "已知要桥接的场景或片段",
     "已知目标时长、clip 粒度或至少知道需要单 clip 还是 clip chain",
@@ -31,8 +40,21 @@
     "每个 clip 都只有清楚的主动作和主镜头逻辑",
     "输出没有把 screenplay、shot list 和 runtime manual 混成一份文件"
   ],
-  "rubrics": ["rb.screen-to-video-brief"],
-  "linked_atoms": ["ka.screenplay-to-video-boundary", "ka.video-generation-shot-economy", "ka.prompt-delegation-levels", "ka.multilingual-visual-vocabulary", "ka.source-span-traceability", "ka.long-script-batch-planning", "ka.visible-asset-grounding"]
+  "rubrics": [
+    "rb.screen-to-video-brief"
+  ],
+  "linked_atoms": [
+    "ka.screenplay-to-video-boundary",
+    "ka.video-generation-shot-economy",
+    "ka.prompt-delegation-levels",
+    "ka.multilingual-visual-vocabulary",
+    "ka.source-span-traceability",
+    "ka.long-script-batch-planning",
+    "ka.visible-asset-grounding"
+  ],
+  "budget_class": "L",
+  "mandatory_atom_count": 7,
+  "expansion_allowed": true
 }
 ---
 # 剧本到视频生成桥接协议

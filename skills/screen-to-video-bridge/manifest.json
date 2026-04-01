@@ -4,13 +4,44 @@
   "description": "Bridge screenplay material into bounded video-generation or previz briefs without collapsing dramatic intent into prompt soup.",
   "entrypoint": "skills/screen-to-video-bridge/SKILL.md",
   "supports": {
-    "intents": ["design", "adapt", "diagnose"],
-    "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video"],
-    "stages": ["scene", "rewrite", "adaptation"],
-    "outputs": ["screen_to_video_brief"]
+    "intents": [
+      "design",
+      "adapt",
+      "diagnose"
+    ],
+    "mediums": [
+      "feature_film",
+      "episodic",
+      "short_drama",
+      "animation",
+      "commercial",
+      "branded_film",
+      "shortform_video"
+    ],
+    "stages": [
+      "scene",
+      "rewrite",
+      "adaptation"
+    ],
+    "outputs": [
+      "screen_to_video_brief"
+    ]
   },
   "protocol_id": "wp.screen-to-video-brief",
-  "rubric_ids": ["rb.screen-to-video-brief"],
-  "linked_atoms": ["ka.screenplay-to-video-boundary", "ka.video-generation-shot-economy", "ka.prompt-delegation-levels", "ka.multilingual-visual-vocabulary", "ka.source-span-traceability", "ka.long-script-batch-planning", "ka.visible-asset-grounding"],
-  "fallback_behavior": "If the request is still about screenplay writing rather than bridge construction, stay on the original route and attach bridge notes only when downstream execution really needs them."
+  "rubric_ids": [
+    "rb.screen-to-video-brief"
+  ],
+  "linked_atoms": [
+    "ka.screenplay-to-video-boundary",
+    "ka.video-generation-shot-economy",
+    "ka.prompt-delegation-levels",
+    "ka.multilingual-visual-vocabulary",
+    "ka.source-span-traceability",
+    "ka.long-script-batch-planning",
+    "ka.visible-asset-grounding"
+  ],
+  "fallback_behavior": "If the request is still about screenplay writing rather than bridge construction, stay on the original route and attach bridge notes only when downstream execution really needs them.",
+  "default_loading_mode": "focus_pack",
+  "adjunct_bundles": {},
+  "fallback_to_skill_id": "skill.visual-language"
 }

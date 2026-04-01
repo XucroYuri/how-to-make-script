@@ -4,13 +4,48 @@
   "description": "Design or draft conversion-oriented scripts for ads, branded films, and shortform media.",
   "entrypoint": "skills/commercial-script/SKILL.md",
   "supports": {
-    "intents": ["design", "draft", "polish"],
-    "mediums": ["commercial", "branded_film", "shortform_video"],
-    "stages": ["premise", "structure", "outline", "scene", "rewrite"],
-    "outputs": ["commercial_script"]
+    "intents": [
+      "design",
+      "draft",
+      "polish"
+    ],
+    "mediums": [
+      "commercial",
+      "branded_film",
+      "shortform_video"
+    ],
+    "stages": [
+      "premise",
+      "structure",
+      "outline",
+      "scene",
+      "rewrite"
+    ],
+    "outputs": [
+      "commercial_script"
+    ]
   },
   "protocol_id": "wp.commercial-script",
-  "rubric_ids": ["rb.commercial-script"],
-  "linked_atoms": ["ka.medium-commercial", "ka.medium-branded-film", "ka.medium-shortform-video", "ka.scene-function"],
-  "fallback_behavior": "Collapse the brief to one primary message and one support message if the message stack is too broad."
+  "rubric_ids": [
+    "rb.commercial-script"
+  ],
+  "linked_atoms": [
+    "ka.medium-commercial",
+    "ka.medium-branded-film",
+    "ka.medium-shortform-video",
+    "ka.scene-function"
+  ],
+  "fallback_behavior": "Collapse the brief to one primary message and one support message if the message stack is too broad.",
+  "default_loading_mode": "focus_pack",
+  "adjunct_bundles": {
+    "expression-lens": {
+      "trigger": "voice_target",
+      "mode": "smallest_adjunct"
+    },
+    "reality-lens": {
+      "trigger": "platform",
+      "mode": "smallest_adjunct"
+    }
+  },
+  "fallback_to_skill_id": null
 }
