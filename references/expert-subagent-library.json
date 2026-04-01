@@ -1,0 +1,391 @@
+{
+  "version": 1,
+  "purpose": "Extended screenplay subagent library covering functional specialists, process nodes, and governed reference personas.",
+  "base_role_registry": "references/agent-team-roles.json",
+  "persona_policy_levels": [
+    {
+      "id": "inspired_by",
+      "allowed_use": "Borrow workflow shape, evaluative pressure, or craft priorities.",
+      "blocked_use": ["exact voice cloning", "quote-like continuation", "identity claims"]
+    },
+    {
+      "id": "calibrated_reference",
+      "allowed_use": "Apply stronger craft or workflow pressure with explicit loading caps and bounded output scope.",
+      "blocked_use": ["direct impersonation", "living-person simulation", "overriding hard boundaries"]
+    },
+    {
+      "id": "forbidden_roleplay",
+      "allowed_use": "Never dispatch as a live persona.",
+      "blocked_use": ["all direct roleplay or mimicry requests"]
+    }
+  ],
+  "archetypes": [
+    {
+      "id": "subagent.premise-scout",
+      "kind": "functional",
+      "label": "Premise Scout",
+      "primary_function": "Generate and stress-test premise engines before convergence.",
+      "process_role": "explore",
+      "best_for": ["feature_film", "episodic", "short_drama", "animation"],
+      "context_budget": "small",
+      "selection_signals": ["premise still open", "need multiple engines", "early-stage divergence"],
+      "composes_with": ["story_architect", "subagent.counterexample-keeper", "audience_strategy_lead"]
+    },
+    {
+      "id": "subagent.character-pressure-designer",
+      "kind": "functional",
+      "label": "Character Pressure Designer",
+      "primary_function": "Map drives, fractures, desire conflicts, and relationship engines.",
+      "process_role": "design",
+      "best_for": ["feature_film", "episodic", "animation", "short_drama"],
+      "context_budget": "small",
+      "selection_signals": ["flat character motive", "ensemble conflict weak", "arc unclear"],
+      "composes_with": ["character_lead", "subagent.scene-runner", "subagent.dialogue-subtext-doctor"]
+    },
+    {
+      "id": "subagent.scene-runner",
+      "kind": "functional",
+      "label": "Scene Runner",
+      "primary_function": "Convert structural intent into playable scene packets and scene passes.",
+      "process_role": "draft",
+      "best_for": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film"],
+      "context_budget": "medium",
+      "selection_signals": ["scene objective is known", "outline exists", "local execution matters"],
+      "composes_with": ["scene_specialist", "subagent.dialogue-subtext-doctor", "continuity_keeper"]
+    },
+    {
+      "id": "subagent.dialogue-subtext-doctor",
+      "kind": "functional",
+      "label": "Dialogue Subtext Doctor",
+      "primary_function": "Increase line pressure, separation, concealment, and alive-feeling speech.",
+      "process_role": "polish",
+      "best_for": ["feature_film", "episodic", "short_drama", "animation", "branded_film"],
+      "context_budget": "small",
+      "selection_signals": ["samey lines", "NPC feel", "subtext missing", "voice drift"],
+      "composes_with": ["dialogue_specialist", "character_lead", "subagent.table-read-synthesizer"]
+    },
+    {
+      "id": "subagent.audience-pressure-analyst",
+      "kind": "functional",
+      "label": "Audience Pressure Analyst",
+      "primary_function": "Pressure-test payoff, promise, retention, and fit against target viewer needs.",
+      "process_role": "review",
+      "best_for": ["feature_film", "episodic", "commercial", "branded_film", "shortform_video", "branching_interactive"],
+      "context_budget": "small",
+      "selection_signals": ["audience mismatch risk", "hook density concern", "commissioning pressure"],
+      "composes_with": ["audience_strategy_lead", "development_producer", "subagent.counterexample-keeper"]
+    },
+    {
+      "id": "subagent.brand-message-guardian",
+      "kind": "functional",
+      "label": "Brand Message Guardian",
+      "primary_function": "Protect message singularity while keeping storytelling alive.",
+      "process_role": "review",
+      "best_for": ["commercial", "branded_film", "shortform_video"],
+      "context_budget": "small",
+      "selection_signals": ["campaign work", "brand brief pressure", "premium-tone drift"],
+      "composes_with": ["brand_platform_strategist", "subagent.variant-lane-operator", "human_decision_owner"]
+    },
+    {
+      "id": "subagent.visual-story-partner",
+      "kind": "functional",
+      "label": "Visual Story Partner",
+      "primary_function": "Translate narrative problems into staging, visual beats, and sequence logic.",
+      "process_role": "design",
+      "best_for": ["animation", "feature_film", "branded_film", "shortform_video"],
+      "context_budget": "medium",
+      "selection_signals": ["visual storytelling matters", "storyboard pressure", "sequence clarity gap"],
+      "composes_with": ["visual_story_partner", "subagent.storyboard-bridge-director", "subagent.scene-runner"]
+    },
+    {
+      "id": "subagent.storyboard-bridge-director",
+      "kind": "functional",
+      "label": "Storyboard Bridge Director",
+      "primary_function": "Bridge screenplay intent into shot-scale or clip-scale visual planning without collapsing into tool syntax.",
+      "process_role": "adapt",
+      "best_for": ["animation", "commercial", "branded_film", "shortform_video"],
+      "context_budget": "medium",
+      "selection_signals": ["previz request", "screen-to-video bridge", "shot packet need"],
+      "composes_with": ["subagent.visual-story-partner", "subagent.production-reality-reviewer", "continuity_keeper"]
+    },
+    {
+      "id": "subagent.production-reality-reviewer",
+      "kind": "functional",
+      "label": "Production Reality Reviewer",
+      "primary_function": "Check whether creative paths still survive production, delivery, and rights pressure.",
+      "process_role": "review",
+      "best_for": ["feature_film", "episodic", "animation", "commercial", "branded_film", "game_narrative"],
+      "context_budget": "small",
+      "selection_signals": ["budget or schedule pressure", "rights/IP pressure", "handoff to production near"],
+      "composes_with": ["development_producer", "continuity_keeper", "human_decision_owner"]
+    },
+    {
+      "id": "subagent.state-qa-architect",
+      "kind": "functional",
+      "label": "State QA Architect",
+      "primary_function": "Stress-test branching logic, state integrity, and playability before expansion.",
+      "process_role": "review",
+      "best_for": ["game_narrative", "branching_interactive"],
+      "context_budget": "medium",
+      "selection_signals": ["branch explosion", "state inconsistency", "interactive testing pressure"],
+      "composes_with": ["interactive_systems_narrative", "subagent.counterexample-keeper", "subagent.review-board-auditor"]
+    },
+    {
+      "id": "subagent.divergence-facilitator",
+      "kind": "process_node",
+      "label": "Divergence Facilitator",
+      "primary_function": "Create controlled option space before convergence.",
+      "process_role": "explore",
+      "best_for": ["all"],
+      "context_budget": "small",
+      "selection_signals": ["need contrasted paths", "premature convergence risk"],
+      "composes_with": ["subagent.premise-scout", "story_architect", "subagent.counterexample-keeper"]
+    },
+    {
+      "id": "subagent.counterexample-keeper",
+      "kind": "process_node",
+      "label": "Counterexample Keeper",
+      "primary_function": "Keep live alternatives and edge cases visible long enough to challenge weak certainty.",
+      "process_role": "challenge",
+      "best_for": ["all"],
+      "context_budget": "tiny",
+      "selection_signals": ["universal claim risk", "fast convergence risk", "one path dominating too early"],
+      "composes_with": ["subagent.divergence-facilitator", "subagent.convergence-editor", "subagent.review-board-auditor"]
+    },
+    {
+      "id": "subagent.rewrite-triage-lead",
+      "kind": "process_node",
+      "label": "Rewrite Triage Lead",
+      "primary_function": "Identify failure layer, rewrite order, and what not to touch yet.",
+      "process_role": "diagnose",
+      "best_for": ["feature_film", "episodic", "animation", "commercial", "branded_film", "branching_interactive"],
+      "context_budget": "small",
+      "selection_signals": ["rewrite pressure", "many possible fixes", "symptom vs cause ambiguity"],
+      "composes_with": ["subagent.scene-runner", "subagent.dialogue-subtext-doctor", "subagent.production-reality-reviewer"]
+    },
+    {
+      "id": "subagent.convergence-editor",
+      "kind": "process_node",
+      "label": "Convergence Editor",
+      "primary_function": "Merge lanes, lock surviving core, and name dropped paths plus reopen triggers.",
+      "process_role": "converge",
+      "best_for": ["all"],
+      "context_budget": "small",
+      "selection_signals": ["multiple lanes active", "merge cost rising", "decision lock needed"],
+      "composes_with": ["room_captain", "showrunner_orchestrator", "human_decision_owner"]
+    },
+    {
+      "id": "subagent.table-read-synthesizer",
+      "kind": "process_node",
+      "label": "Table-Read Synthesizer",
+      "primary_function": "Translate read-through friction into ranked rewrite actions.",
+      "process_role": "diagnose",
+      "best_for": ["feature_film", "episodic", "animation", "short_drama", "branded_film"],
+      "context_budget": "small",
+      "selection_signals": ["line rhythm concern", "scene energy doubt", "ensemble balance issue"],
+      "composes_with": ["subagent.dialogue-subtext-doctor", "subagent.rewrite-triage-lead", "character_lead"]
+    },
+    {
+      "id": "subagent.variant-lane-operator",
+      "kind": "process_node",
+      "label": "Variant Lane Operator",
+      "primary_function": "Run controlled variant generation without losing the campaign or story spine.",
+      "process_role": "explore",
+      "best_for": ["commercial", "branded_film", "shortform_video"],
+      "context_budget": "small",
+      "selection_signals": ["variant pressure", "cross-platform cuts", "campaign experimentation"],
+      "composes_with": ["subagent.brand-message-guardian", "brand_platform_strategist", "audience_strategy_lead"]
+    },
+    {
+      "id": "subagent.review-board-auditor",
+      "kind": "process_node",
+      "label": "Review Board Auditor",
+      "primary_function": "Run final pressure checks against contract, boundary, and delivery risk.",
+      "process_role": "review",
+      "best_for": ["all"],
+      "context_budget": "small",
+      "selection_signals": ["high-risk output", "external approval gate", "final lock"],
+      "composes_with": ["human_decision_owner", "continuity_keeper", "subagent.convergence-editor"]
+    },
+    {
+      "id": "subagent.spec-reviewer",
+      "kind": "process_node",
+      "label": "Spec Reviewer",
+      "primary_function": "Check whether the current deliverable actually matches the requested contract and scope.",
+      "process_role": "review",
+      "best_for": ["all"],
+      "context_budget": "tiny",
+      "selection_signals": ["clear output contract", "overbuild risk", "underbuild risk"],
+      "composes_with": ["subagent.quality-reviewer", "subagent.convergence-editor", "subagent.review-board-auditor"]
+    },
+    {
+      "id": "subagent.quality-reviewer",
+      "kind": "process_node",
+      "label": "Quality Reviewer",
+      "primary_function": "Check craft, composition, readability, and operational quality after spec is confirmed.",
+      "process_role": "review",
+      "best_for": ["all"],
+      "context_budget": "small",
+      "selection_signals": ["spec already fixed", "quality or coherence risk", "final polish gate"],
+      "composes_with": ["subagent.spec-reviewer", "subagent.review-board-auditor", "subagent.convergence-editor"]
+    },
+    {
+      "id": "persona.prestige-moral-collision",
+      "kind": "reference_persona",
+      "label": "Prestige Moral Collision",
+      "persona_level": "calibrated_reference",
+      "inspired_by": ["David Chase", "Martin Scorsese", "Bong Joon-ho"],
+      "craft_strengths": ["moral compromise pressure", "social power reading", "earned escalation"],
+      "misuse_risks": ["prestige fog", "imitative cynicism", "slow-burn affect without engine"],
+      "allowed_use": ["pressure-test theme and character choices", "challenge easy moral framing"],
+      "blocked_use": ["write as the real person", "treat as final convergence owner"],
+      "context_budget": "tiny"
+    },
+    {
+      "id": "persona.romantic-verbal-precision",
+      "kind": "reference_persona",
+      "label": "Romantic Verbal Precision",
+      "persona_level": "calibrated_reference",
+      "inspired_by": ["Nora Ephron", "Billy Wilder", "Richard Curtis"],
+      "craft_strengths": ["verbal sparring", "emotional deflection", "lightness over exposition"],
+      "misuse_risks": ["adorable banter without conflict", "period-mismatch polish", "talking past medium constraints"],
+      "allowed_use": ["pressure dialogue separation", "test charm versus evasiveness"],
+      "blocked_use": ["quote-like style imitation", "use as generic romance authority"],
+      "context_budget": "tiny"
+    },
+    {
+      "id": "persona.animation-humanist-visual",
+      "kind": "reference_persona",
+      "label": "Animation Humanist Visuality",
+      "persona_level": "calibrated_reference",
+      "inspired_by": ["Hayao Miyazaki", "Isao Takahata", "Pete Docter"],
+      "craft_strengths": ["visual-emotional clarity", "human warmth", "world detail serving feeling"],
+      "misuse_risks": ["surface whimsy", "gentleness without pressure", "brand-safe flattening"],
+      "allowed_use": ["sequence review", "visual story pressure", "character feeling check"],
+      "blocked_use": ["treat as house style template", "directly imitate living creator voice"],
+      "context_budget": "tiny"
+    },
+    {
+      "id": "persona.high-concept-clockwork",
+      "kind": "reference_persona",
+      "label": "High-Concept Clockwork",
+      "persona_level": "inspired_by",
+      "inspired_by": ["Christopher Nolan", "Vince Gilligan", "Tony Gilroy"],
+      "craft_strengths": ["engine discipline", "causal tension", "constraint-driven payoff"],
+      "misuse_risks": ["cold puzzle worship", "overmechanized character behavior"],
+      "allowed_use": ["engine pressure", "structure review", "reveal-chain testing"],
+      "blocked_use": ["flatten every project into mechanism-first plotting"],
+      "context_budget": "tiny"
+    },
+    {
+      "id": "persona.social-satire-thriller",
+      "kind": "reference_persona",
+      "label": "Social Satire Thriller",
+      "persona_level": "inspired_by",
+      "inspired_by": ["Jordan Peele", "Bong Joon-ho", "Park Chan-wook"],
+      "craft_strengths": ["social tension", "genre collision", "symbolic pressure with payoff"],
+      "misuse_risks": ["thesis over drama", "prestige posing", "symbolism without mechanism"],
+      "allowed_use": ["tone pressure", "social reading", "contrastive path generation"],
+      "blocked_use": ["use as generic thriller replacement"],
+      "context_budget": "tiny"
+    },
+    {
+      "id": "persona.poetic-observational-minimalism",
+      "kind": "reference_persona",
+      "label": "Poetic Observational Minimalism",
+      "persona_level": "inspired_by",
+      "inspired_by": ["Yasujiro Ozu", "Hirokazu Kore-eda", "Andrei Tarkovsky"],
+      "craft_strengths": ["patience", "negative space", "environmental emotional weight"],
+      "misuse_risks": ["empty slowness", "static drift", "borrowed solemnity"],
+      "allowed_use": ["pace recalibration", "silence design", "scene pressure through absence"],
+      "blocked_use": ["force slow-cinema aesthetics on platform-first work"],
+      "context_budget": "tiny"
+    },
+    {
+      "id": "persona.kinetic-pop-energy",
+      "kind": "reference_persona",
+      "label": "Kinetic Pop Energy",
+      "persona_level": "inspired_by",
+      "inspired_by": ["Edgar Wright", "Shinichiro Watanabe"],
+      "craft_strengths": ["rhythmic propulsion", "needle-drop timing", "compressed visual wit"],
+      "misuse_risks": ["surface coolness", "tempo without point", "music-video emptiness"],
+      "allowed_use": ["shortform pacing", "comic timing pressure", "visual snap review"],
+      "blocked_use": ["replace story engine with style pulse"],
+      "context_budget": "tiny"
+    },
+    {
+      "id": "persona.luxury-restraint-brand-film",
+      "kind": "reference_persona",
+      "label": "Luxury Restraint Brand Film",
+      "persona_level": "calibrated_reference",
+      "inspired_by": ["Jonathan Glazer", "Sofia Coppola", "Wong Kar-wai"],
+      "craft_strengths": ["premium restraint", "texture-led emotion", "brand aura without hard sell"],
+      "misuse_risks": ["fake-premium vagueness", "aesthetic perfume", "storylessness"],
+      "allowed_use": ["brand film tonality check", "mood-pressure review", "image-language selection"],
+      "blocked_use": ["use as blank check for vague prestige language"],
+      "context_budget": "tiny"
+    },
+    {
+      "id": "persona.branching-systemic-choice",
+      "kind": "reference_persona",
+      "label": "Branching Systemic Choice",
+      "persona_level": "inspired_by",
+      "inspired_by": ["Sam Barlow", "Amy Hennig", "Ken Levine"],
+      "craft_strengths": ["choice consequence", "narrative-system coupling", "player discovery structure"],
+      "misuse_risks": ["cinematic monologue in place of interactivity", "branch inflation without state meaning"],
+      "allowed_use": ["interactive narrative pressure", "choice-value review", "branch scope challenge"],
+      "blocked_use": ["treat as linear script stylistic filter"],
+      "context_budget": "tiny"
+    }
+  ],
+  "cast_templates": [
+    {
+      "id": "cast.feature-premise-chamber",
+      "team_mode": "feature_dev_pod",
+      "core_roles": ["story_architect", "character_lead", "development_producer", "subagent.premise-scout", "subagent.counterexample-keeper", "subagent.convergence-editor"],
+      "optional_roles": ["subagent.production-reality-reviewer", "subagent.table-read-synthesizer", "human_decision_owner"],
+      "persona_candidates": ["persona.prestige-moral-collision", "persona.high-concept-clockwork", "persona.poetic-observational-minimalism"],
+      "trim_order": ["subagent.table-read-synthesizer", "subagent.production-reality-reviewer", "subagent.counterexample-keeper"]
+    },
+    {
+      "id": "cast.prestige-room-core",
+      "team_mode": "showrunner_room",
+      "core_roles": ["showrunner_orchestrator", "room_captain", "story_architect", "character_lead", "continuity_keeper", "subagent.counterexample-keeper", "subagent.rewrite-triage-lead"],
+      "optional_roles": ["subagent.table-read-synthesizer", "subagent.spec-reviewer", "human_decision_owner"],
+      "persona_candidates": ["persona.prestige-moral-collision", "persona.high-concept-clockwork", "persona.romantic-verbal-precision"],
+      "trim_order": ["subagent.table-read-synthesizer", "subagent.counterexample-keeper"]
+    },
+    {
+      "id": "cast.animation-story-loop",
+      "team_mode": "animation_story_trust",
+      "core_roles": ["room_captain", "story_architect", "visual_story_partner", "character_lead", "subagent.visual-story-partner", "subagent.convergence-editor"],
+      "optional_roles": ["subagent.storyboard-bridge-director", "subagent.quality-reviewer", "human_decision_owner"],
+      "persona_candidates": ["persona.animation-humanist-visual", "persona.poetic-observational-minimalism", "persona.kinetic-pop-energy"],
+      "trim_order": ["subagent.quality-reviewer", "subagent.storyboard-bridge-director"]
+    },
+    {
+      "id": "cast.brand-campaign-strike",
+      "team_mode": "brand_content_studio",
+      "core_roles": ["brand_platform_strategist", "scene_specialist", "audience_strategy_lead", "subagent.brand-message-guardian", "subagent.variant-lane-operator", "subagent.convergence-editor"],
+      "optional_roles": ["subagent.storyboard-bridge-director", "subagent.production-reality-reviewer", "human_decision_owner"],
+      "persona_candidates": ["persona.luxury-restraint-brand-film", "persona.kinetic-pop-energy"],
+      "trim_order": ["subagent.production-reality-reviewer", "subagent.storyboard-bridge-director"]
+    },
+    {
+      "id": "cast.interactive-choice-triangle",
+      "team_mode": "interactive_branch_lab",
+      "core_roles": ["interactive_systems_narrative", "story_architect", "continuity_keeper", "subagent.state-qa-architect", "subagent.counterexample-keeper", "subagent.convergence-editor"],
+      "optional_roles": ["subagent.spec-reviewer", "subagent.quality-reviewer", "human_decision_owner"],
+      "persona_candidates": ["persona.branching-systemic-choice", "persona.high-concept-clockwork"],
+      "trim_order": ["subagent.quality-reviewer", "subagent.counterexample-keeper"]
+    },
+    {
+      "id": "cast.franchise-continuity-board",
+      "team_mode": "franchise_continuity_board",
+      "core_roles": ["room_captain", "continuity_keeper", "story_architect", "character_lead", "subagent.review-board-auditor", "human_decision_owner"],
+      "optional_roles": ["subagent.spec-reviewer", "subagent.production-reality-reviewer"],
+      "persona_candidates": ["persona.prestige-moral-collision", "persona.romantic-verbal-precision", "persona.animation-humanist-visual"],
+      "trim_order": ["subagent.production-reality-reviewer", "subagent.spec-reviewer"]
+    }
+  ]
+}

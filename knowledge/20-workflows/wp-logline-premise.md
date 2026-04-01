@@ -11,6 +11,7 @@
   ],
   "steps": [
     "锁定主角、目标、主要阻力、 stakes。",
+    "检查当前句子是在暴露故事发动机，还是只是在贩卖题材气味与设定新奇感。",
     "判断题材钩子是否真正进入冲突，而非仅作装饰。",
     "生成 1 句 logline 和 1 段 premise。",
     "用 rubric 清理空泛、高概念噪声和重复信息。"
@@ -24,7 +25,7 @@
     "premise 能明确后续结构开发方向"
   ],
   "rubrics": ["rb.logline"],
-  "linked_atoms": ["ka.story-goal", "ka.conflict-pressure", "ka.causality-chain"]
+  "linked_atoms": ["ka.story-goal", "ka.conflict-pressure", "ka.causality-chain", "ka.false-logline-warning"]
 }
 ---
 # Logline / Premise 协议
@@ -34,6 +35,7 @@
 logline 和 premise 在开发流程里不是宣传语，而是判断工具。一个好的 logline 能让你很快看出：这个故事有没有主角、有没有动作方向、有没有足够的冲突压力、有没有可持续展开的空间。
 
 如果一条 logline 听起来“很有气质”“很有世界观”，但听不出谁在做什么、为什么必须做，那它还不是开发级 logline，只是概念气氛。
+这里还要额外警惕一种常见误判：句子已经足够顺，作者和 Agent 就误以为开发工作已经完成。其实很多所谓 logline 只是漂亮的题材陈述，还不是故事发动机。
 
 ## TODOs：待回答问题
 

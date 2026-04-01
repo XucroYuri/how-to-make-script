@@ -1,0 +1,16 @@
+{
+  "id": "skill.team-orchestration",
+  "name": "team-orchestration",
+  "description": "Design multi-agent or human-agent screenplay collaboration blueprints with explicit modes, handoffs, and human review gates.",
+  "entrypoint": "skills/team-orchestration/SKILL.md",
+  "supports": {
+    "intents": ["discover", "design", "adapt", "diagnose"],
+    "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
+    "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+    "outputs": ["team_workflow_blueprint"]
+  },
+  "protocol_id": "wp.team-workflow-blueprint",
+  "rubric_ids": ["rb.team-workflow-blueprint"],
+  "linked_atoms": ["ka.team-topology-selection", "ka.handoff-packet-discipline", "ka.feature-development-pod", "ka.showrunner-room-cadence", "ka.animation-story-trust-loop", "ka.brand-content-studio-loop", "ka.interactive-branch-lab", "ka.handoff-contract-discipline", "ka.human-checkpoint-gates", "ka.parallel-lane-governance", "ka.room-artifact-ladder", "ka.dissent-preservation-loop"],
+  "fallback_behavior": "If the user only needs a single deliverable, return to the primary screenplay route and optionally attach a lightweight team recommendation."
+}

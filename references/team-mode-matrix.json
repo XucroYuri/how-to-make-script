@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "purpose": "Machine-readable registry for screenplay team modes, topologies, handoff packets, and review gates.",
+  "expert_subagent_registry": "references/expert-subagent-library.json",
+  "dispatch_topology_registry": "references/subagent-topology-matrix.json",
+  "mode_profile_registry": "references/team-workflow-modes.json",
+  "handoff_packet_fields": [
+    "route_id",
+    "output_contract",
+    "working_hypothesis",
+    "locked_facts",
+    "loaded_bundle_ids",
+    "open_questions",
+    "rejected_alternatives",
+    "confidence",
+    "stop_condition",
+    "recommended_next_agent",
+    "needs_human_review"
+  ],
+  "topologies": [
+    {
+      "id": "supervisor_tree",
+      "use_when": "One orchestrator must delegate to specialists and synthesize final direction.",
+      "strength": "Clear ownership and review cadence.",
+      "risk": "Can bottleneck if every decision escalates upward."
+    },
+    {
+      "id": "swarm_parallel",
+      "use_when": "Exploration benefits from multiple independent specialist lanes.",
+      "strength": "Fast divergence and comparative coverage.",
+      "risk": "Can create noise if synthesis is weak."
+    },
+    {
+      "id": "handoff_chain",
+      "use_when": "Work is sequential and each stage has a clear upstream/downstream contract.",
+      "strength": "Tight state transfer and process clarity.",
+      "risk": "Late-stage errors can propagate if earlier packets are wrong."
+    },
+    {
+      "id": "review_board",
+      "use_when": "High-risk or high-cost work needs explicit approval gates.",
+      "strength": "Protects against silent drift and irreversible mistakes.",
+      "risk": "Can stall iteration if overused."
+    },
+    {
+      "id": "hybrid_room",
+      "use_when": "The task needs parallel exploration followed by supervised convergence and review.",
+      "strength": "Balances speed and control.",
+      "risk": "Needs strict phase boundaries."
+    }
+  ],
+  "modes": [
+    {
+      "id": "feature_dev_pod",
+      "profile_id": "feature_development_pod",
+      "real_world_analog": "feature film development chain",
+      "recommended_topology": "hybrid_room",
+      "best_for": ["feature_film", "adaptation-heavy feature rewrite", "high-stakes pitch and rewrite"],
+      "roles": ["showrunner_orchestrator", "story_architect", "market_and_commissioning_strategist", "script_doctor", "continuity_reviewer"],
+      "recommended_cast_templates": ["cast.feature-premise-chamber"],
+      "recommended_dispatch_topologies": ["orchestrator_specialist_ring", "fresh_task_review_loop"],
+      "parallel_lanes": ["premise/structure alternatives", "market-fit and commissioning pressure", "rewrite-risk mapping"],
+      "synthesis_nodes": ["page-one mandate", "rewrite lock", "pre-production handoff"],
+      "human_review_points": ["rights/IP mandate", "producer-director rewrite approval", "final development brief sign-off"],
+      "artifact_chain": ["premise", "treatment", "outline", "rewrite_report", "development_brief"]
+    },
+    {
+      "id": "showrunner_room",
+      "profile_id": "showrunner_room",
+      "real_world_analog": "TV writers' room",
+      "recommended_topology": "supervisor_tree",
+      "best_for": ["episodic", "season-engine work", "ensemble and multi-episode planning"],
+      "roles": ["showrunner_orchestrator", "season_arc_designer", "episode_breaker", "character_voice_editor", "production_reality_reviewer"],
+      "recommended_cast_templates": ["cast.prestige-room-core"],
+      "recommended_dispatch_topologies": ["writers_room_tree", "debate_then_merge_board"],
+      "parallel_lanes": ["season arc", "episode beats", "character continuity"],
+      "synthesis_nodes": ["room break", "season-engine check", "episode handoff"],
+      "human_review_points": ["showrunner approval", "network/platform note pass", "production rewrite approval"],
+      "artifact_chain": ["premise", "beat_sheet", "outline", "scene_card", "dialogue_polish"]
+    },
+    {
+      "id": "animation_story_trust",
+      "profile_id": "animation_story_trust",
+      "real_world_analog": "animation story department",
+      "recommended_topology": "hybrid_room",
+      "best_for": ["animation", "visual storytelling iteration", "director-led story refinement"],
+      "roles": ["director_orchestrator", "story_logic_designer", "visual_story_lane", "character_voice_editor", "production_feasibility_reviewer"],
+      "recommended_cast_templates": ["cast.animation-story-loop"],
+      "recommended_dispatch_topologies": ["dual_track_story_visual", "debate_then_merge_board"],
+      "parallel_lanes": ["story logic", "visual storytelling", "feasibility"],
+      "synthesis_nodes": ["story reel review", "director story pitch", "production handoff"],
+      "human_review_points": ["director approval", "story trust review", "production feasibility gate"],
+      "artifact_chain": ["premise", "outline", "scene_card", "voice_style_guide", "rewrite_report"]
+    },
+    {
+      "id": "brand_content_studio",
+      "profile_id": "campaign_strike_team",
+      "real_world_analog": "agency plus production partner branded-content team",
+      "recommended_topology": "hybrid_room",
+      "best_for": ["commercial", "branded_film", "shortform_video", "campaign-linked scripts"],
+      "roles": ["creative_director_orchestrator", "story_lane", "brand_guardian", "distribution_strategist", "conversion_reviewer"],
+      "recommended_cast_templates": ["cast.brand-campaign-strike"],
+      "recommended_dispatch_topologies": ["variant_strike_grid", "orchestrator_specialist_ring"],
+      "parallel_lanes": ["creative concept", "brand fit", "platform/distribution fit"],
+      "synthesis_nodes": ["brand-story merge", "platform cutdown plan", "final review board"],
+      "human_review_points": ["client approval", "brand-safety gate", "campaign deployment approval"],
+      "artifact_chain": ["audience_fit_note", "development_brief", "commercial_script", "voice_style_guide"]
+    },
+    {
+      "id": "interactive_branch_lab",
+      "profile_id": "interactive_narrative_cell",
+      "real_world_analog": "interactive narrative plus systems plus QA loop",
+      "recommended_topology": "supervisor_tree",
+      "best_for": ["game_narrative", "branching_interactive", "stateful adaptation"],
+      "roles": ["narrative_director_orchestrator", "branch_designer", "state_system_designer", "voice_continuity_editor", "qa_path_reviewer"],
+      "recommended_cast_templates": ["cast.interactive-choice-triangle"],
+      "recommended_dispatch_topologies": ["branch_state_triangle", "fresh_task_review_loop"],
+      "parallel_lanes": ["branch design", "state logic", "test visibility"],
+      "synthesis_nodes": ["branch map review", "state consistency check", "playability gate"],
+      "human_review_points": ["narrative direction approval", "scope control gate", "final playability approval"],
+      "artifact_chain": ["premise", "interactive_branch_map", "outline", "voice_style_guide", "rewrite_report"]
+    },
+    {
+      "id": "franchise_continuity_board",
+      "profile_id": "franchise_continuity_board",
+      "real_world_analog": "franchise continuity and approval board",
+      "recommended_topology": "review_board",
+      "best_for": ["feature_film", "episodic", "animation", "game_narrative", "branching_interactive", "branded_film"],
+      "roles": ["room_captain", "continuity_keeper", "story_architect", "character_lead", "human_decision_owner"],
+      "recommended_cast_templates": ["cast.franchise-continuity-board"],
+      "recommended_dispatch_topologies": ["orchestrator_specialist_ring", "fresh_task_review_loop"],
+      "parallel_lanes": ["canon-anchor audit", "new-story fit", "voice/persona continuity"],
+      "synthesis_nodes": ["canon lock", "continuity risk merge", "adaptation approval"],
+      "human_review_points": ["canon approval", "character identity approval", "final adaptation sign-off"],
+      "artifact_chain": ["canon anchor sheet", "continuity risk register", "voice_style_guide", "adaptation board", "approval notes"]
+    }
+  ]
+}

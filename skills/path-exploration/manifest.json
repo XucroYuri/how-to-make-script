@@ -1,0 +1,16 @@
+{
+  "id": "skill.path-exploration",
+  "name": "path-exploration",
+  "description": "Generate multiple viable creative routes before convergence.",
+  "entrypoint": "skills/path-exploration/SKILL.md",
+  "supports": {
+    "intents": ["discover", "design"],
+    "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
+    "stages": ["ideation", "premise", "structure"],
+    "outputs": ["path_options"]
+  },
+  "protocol_id": "wp.path-options",
+  "rubric_ids": ["rb.path-options"],
+  "linked_atoms": ["ka.creative-pluralism", "ka.divergence-convergence-loop", "ka.false-universal-warning", "ka.boundary-first-guidance"],
+  "fallback_behavior": "If the brief is too vague to generate contrasted paths, first lock one core problem or invariant and then branch from that anchor."
+}

@@ -9,6 +9,8 @@ This repository uses a deliberate dual-track content model instead of trying to 
 
 The two tracks should align in intent, but they do not need to be sentence-by-sentence translations.
 
+This dual-track policy governs repository prose. It does not forbid task-specific outputs in other languages when the artifact itself is a multilingual visual-language pack or cross-language handoff asset.
+
 ## English Track
 
 English content should read like operational infrastructure for agents.
@@ -57,10 +59,10 @@ Avoid:
 - English and Chinese bodies may differ in phrasing density and examples.
 - If one track adds a materially new concept, the other track should at least reflect the capability, even if not with the same wording.
 - When conflict appears, preserve structured contract correctness first, then improve prose.
+- When a task-specific output introduces Japanese, Korean, Russian, Spanish, or hybrid wording, keep the surrounding contract language stable and explain why that language was selected.
 
 ## Practical Heuristic
 
 When editing:
 - ask “Would an agent know exactly what to do next?” for English;
 - ask “Would a working writer or script doctor actually say this?” for Chinese.
-

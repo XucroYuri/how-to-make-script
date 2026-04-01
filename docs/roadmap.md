@@ -4,6 +4,7 @@
 - Bootstrap repository metadata and community files.
 - Freeze taxonomy, routing, ID policy, and schema contracts.
 - Add the root skill and the first wave of thin sub-skills.
+- Establish discussion-first community intake so objections and field notes arrive before they are prematurely forced into issues.
 
 ## Phase 2
 - Expand foundational knowledge atoms across story, scene, dialogue, pacing, and rewrite craft.
@@ -19,7 +20,10 @@
 - Add more genre packs and medium-specific constraints.
 - Expand case studies and golden fixtures.
 - Increase fixture depth for audience-fit, development strategy, and writer training routes.
+- Add multilingual visual-language packs and screenplay-to-video bridge routes without turning the repo into a vendor-specific prompt catalog.
+- Expand team-mode blueprints, handoff contracts, and human-gate patterns across all major screenplay collaboration models.
 - Add richer lint rules for contradictory or underspecified asset links.
+- Grow the contributor ladder from issue reporters to discussion moderators, triage stewards, and field-note curators.
 
 ## Phase 4
 - Introduce optional generated indexes and registry publishing.

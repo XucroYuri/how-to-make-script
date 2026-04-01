@@ -1,0 +1,737 @@
+{
+  "version": 1,
+  "purpose": "A multi-axis scenario taxonomy for screenplay creation. It treats scenarios as factorized lenses, not a single canon.",
+  "classification_principles": [
+    "Use the smallest set of axes that explains the request well enough to route it.",
+    "No single axis is authoritative on its own.",
+    "Axes are lenses for routing and comparison, not a fixed truth table.",
+    "A scenario may combine multiple cards when the task is genuinely hybrid."
+  ],
+  "default_classification_order": [
+    "medium",
+    "production_context",
+    "participation_mode",
+    "business_goal",
+    "audience_need_state",
+    "narrative_engine",
+    "emotional_contract",
+    "format_pressure",
+    "genre_pressure",
+    "source_relation",
+    "collaboration_mode",
+    "risk_profile"
+  ],
+  "axes": [
+    {
+      "id": "medium",
+      "label": "Medium",
+      "purpose": "What container the script must serve.",
+      "values": [
+        "feature_film",
+        "episodic",
+        "short_drama",
+        "animation",
+        "commercial",
+        "branded_film",
+        "shortform_video",
+        "game_narrative",
+        "branching_interactive",
+        "hybrid"
+      ]
+    },
+    {
+      "id": "format_pressure",
+      "label": "Format Pressure",
+      "purpose": "What shape the deliverable must take.",
+      "values": [
+        "logline",
+        "premise",
+        "synopsis",
+        "treatment",
+        "beat_sheet",
+        "outline",
+        "scene_card",
+        "scene_draft",
+        "dialogue_polish",
+        "rewrite_report",
+        "commercial_script",
+        "interactive_branch_map",
+        "audience_fit_note",
+        "development_brief",
+        "learning_path",
+        "path_options",
+        "boundary_map",
+        "scope_correction",
+        "pattern_reference_pack",
+        "context_loading_plan",
+        "voice_style_guide",
+        "team_workflow_blueprint"
+      ]
+    },
+    {
+      "id": "audience_need_state",
+      "label": "Audience Need State",
+      "purpose": "What the audience wants to feel, solve, or receive.",
+      "values": [
+        "curiosity",
+        "catharsis",
+        "comfort",
+        "fear",
+        "aspiration",
+        "belonging",
+        "status",
+        "trust",
+        "agency",
+        "delight",
+        "conversion",
+        "learning"
+      ]
+    },
+    {
+      "id": "narrative_engine",
+      "label": "Narrative Engine",
+      "purpose": "What keeps the story moving.",
+      "values": [
+        "goal_obstacle",
+        "mystery_reveal",
+        "relationship_turn",
+        "procedural_loop",
+        "escalation_chain",
+        "choice_consequence",
+        "identity_reveal",
+        "ensemble_pressure",
+        "satirical_mirror",
+        "quest_loop"
+      ]
+    },
+    {
+      "id": "emotional_contract",
+      "label": "Emotional Contract",
+      "purpose": "What emotional promise the work is making.",
+      "values": [
+        "release",
+        "dread",
+        "warmth",
+        "awe",
+        "intimacy",
+        "power",
+        "fun",
+        "prestige",
+        "thrill",
+        "hope"
+      ]
+    },
+    {
+      "id": "production_context",
+      "label": "Production Context",
+      "purpose": "What industrial condition is shaping the script.",
+      "values": [
+        "spec",
+        "design",
+        "assignment",
+        "writers_room",
+        "rewrite",
+        "adaptation",
+        "brand_campaign",
+        "pilot_development",
+        "greenlight_pitch",
+        "proof_of_concept"
+      ]
+    },
+    {
+      "id": "participation_mode",
+      "label": "Participation Mode",
+      "purpose": "How the audience interacts with the content.",
+      "values": [
+        "linear_passive",
+        "branching_choice",
+        "stateful_progression",
+        "audience_vote",
+        "transmedia"
+      ]
+    },
+    {
+      "id": "business_goal",
+      "label": "Business Goal",
+      "purpose": "What the script is expected to help achieve.",
+      "values": [
+        "awards",
+        "retention",
+        "conversion",
+        "brand_lift",
+        "franchise_launch",
+        "platform_hold",
+        "fan_engagement",
+        "identity_preservation",
+        "learning",
+        "cost_efficiency"
+      ]
+    },
+    {
+      "id": "genre_pressure",
+      "label": "Genre Pressure",
+      "purpose": "What genre promise is most active.",
+      "values": [
+        "drama",
+        "comedy",
+        "romance",
+        "thriller",
+        "procedural",
+        "horror",
+        "family",
+        "satire",
+        "action",
+        "prestige"
+      ]
+    },
+    {
+      "id": "source_relation",
+      "label": "Source Relation",
+      "purpose": "How strongly the work is tied to existing source material.",
+      "values": [
+        "original",
+        "loose_inspiration",
+        "adaptation",
+        "remake",
+        "franchise_entry",
+        "localization"
+      ]
+    },
+    {
+      "id": "collaboration_mode",
+      "label": "Collaboration Mode",
+      "purpose": "How the work is being developed socially.",
+      "values": [
+        "solo",
+        "writer_director",
+        "writers_room",
+        "client_revision",
+        "committee_review"
+      ]
+    },
+    {
+      "id": "risk_profile",
+      "label": "Risk Profile",
+      "purpose": "How sensitive or constrained the scenario is.",
+      "values": [
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  ],
+  "scenario_cards": [
+    {
+      "id": "feature_film_original_launch",
+      "group": "narrative",
+      "signature": {
+        "medium": "feature_film",
+        "format_pressure": "premise",
+        "audience_need_state": ["curiosity", "catharsis"],
+        "narrative_engine": "goal_obstacle",
+        "emotional_contract": "release",
+        "production_context": "spec",
+        "participation_mode": "linear_passive",
+        "business_goal": "awards",
+        "genre_pressure": ["drama", "thriller"],
+        "source_relation": "original"
+      },
+      "when_to_use": "Original feature concepts that must hold attention over a long arc.",
+      "reference_fragment": "He keeps the fire map in his jacket and walks back into the warehouse after the city declares the collapse contained.",
+      "weak_fragment": "A man has a problem, learns something, and goes home changed.",
+      "why_strong": "It gives the protagonist a concrete object, a visible risk, and a pressure source outside the character.",
+      "why_weak": "It states theme without a dramatic mechanism that can carry scenes.",
+      "non_dogma_note": "A different route can still work if the project is a chamber piece or a mood-led film."
+    },
+    {
+      "id": "episodic_pilot_engine",
+      "group": "narrative",
+      "signature": {
+        "medium": "episodic",
+        "format_pressure": "outline",
+        "audience_need_state": ["curiosity", "belonging"],
+        "narrative_engine": "procedural_loop",
+        "emotional_contract": "trust",
+        "production_context": "pilot_development",
+        "participation_mode": "linear_passive",
+        "business_goal": "retention",
+        "genre_pressure": ["procedural", "drama"]
+      },
+      "when_to_use": "Series pilots and recurring-episode engines that need repeatable story motion.",
+      "reference_fragment": "Every Monday the mediator opens the rooftop clinic waiting list while the building's power fails again.",
+      "weak_fragment": "The show has interesting people who can have new problems every week.",
+      "why_strong": "It makes the series engine repeatable and shows the weekly pressure source.",
+      "why_weak": "It promises variety without specifying the system that generates episodes.",
+      "non_dogma_note": "Some series should be seasonal and cumulative rather than weekly and repeatable."
+    },
+    {
+      "id": "procedural_case_engine",
+      "group": "narrative",
+      "signature": {
+        "medium": "episodic",
+        "format_pressure": "beat_sheet",
+        "audience_need_state": ["curiosity", "trust"],
+        "narrative_engine": "procedural_loop",
+        "emotional_contract": "clarity",
+        "production_context": "writers_room",
+        "participation_mode": "linear_passive",
+        "business_goal": "platform_hold",
+        "genre_pressure": ["procedural", "drama"]
+      },
+      "when_to_use": "Case-of-the-week stories where each episode must close cleanly but still feed the series.",
+      "reference_fragment": "The body is solved by dawn, but the final clue points to a clerk who never appears on camera.",
+      "weak_fragment": "There is a mystery and then the team solves it in a satisfying way.",
+      "why_strong": "The case has closure and a tail that keeps the audience returning.",
+      "why_weak": "It describes the effect instead of the mechanism.",
+      "non_dogma_note": "A procedural can still feel lyrical, political, or character-first."
+    },
+    {
+      "id": "short_drama_hook_sprint",
+      "group": "narrative",
+      "signature": {
+        "medium": "short_drama",
+        "format_pressure": "scene_draft",
+        "audience_need_state": ["delight", "curiosity"],
+        "narrative_engine": "escalation_chain",
+        "emotional_contract": "thrill",
+        "production_context": "assignment",
+        "participation_mode": "linear_passive",
+        "business_goal": "retention",
+        "genre_pressure": ["drama", "thriller"]
+      },
+      "when_to_use": "Short-form drama that must hook fast and escalate before the scroll resumes.",
+      "reference_fragment": "She reads the message, smiles once, deletes it, and opens the door anyway.",
+      "weak_fragment": "The episode slowly introduces the characters and eventually something surprising happens.",
+      "why_strong": "The hook arrives immediately and the action reverses the apparent emotional state.",
+      "why_weak": "It spends too long warming up for a format that punishes delay.",
+      "non_dogma_note": "Some short drama succeeds through atmosphere or repetition, not only twist density."
+    },
+    {
+      "id": "animation_world_rule",
+      "group": "narrative",
+      "signature": {
+        "medium": "animation",
+        "format_pressure": "premise",
+        "audience_need_state": ["wonder", "belonging"],
+        "narrative_engine": "identity_reveal",
+        "emotional_contract": "awe",
+        "production_context": "proof_of_concept",
+        "participation_mode": "linear_passive",
+        "business_goal": "franchise_launch",
+        "genre_pressure": ["family", "fantasy"]
+      },
+      "when_to_use": "Animated stories where the world rule must create both play and conflict.",
+      "reference_fragment": "By sunrise, any lie left in the village becomes a visible stain on the speaker's shadow.",
+      "weak_fragment": "The world is imaginative and full of colorful characters.",
+      "why_strong": "The rule creates visual storytelling and social pressure at the same time.",
+      "why_weak": "It describes style but not a dramatic system.",
+      "non_dogma_note": "Animation can also work by realism, restraint, or emotional intimacy."
+    },
+    {
+      "id": "thriller_reveal_chain",
+      "group": "narrative",
+      "signature": {
+        "medium": "feature_film",
+        "format_pressure": "outline",
+        "audience_need_state": ["fear", "curiosity"],
+        "narrative_engine": "mystery_reveal",
+        "emotional_contract": "thrill",
+        "production_context": "spec",
+        "participation_mode": "linear_passive",
+        "business_goal": "platform_hold",
+        "genre_pressure": ["thriller", "drama"]
+      },
+      "when_to_use": "Thrillers that must keep the audience making and revising hypotheses.",
+      "reference_fragment": "The key he stole at noon opens a room that no one in the building admits exists.",
+      "weak_fragment": "The story is tense and keeps you guessing until the end.",
+      "why_strong": "It gives the plot a tangible mystery object and a hidden space with consequences.",
+      "why_weak": "It names the effect but not the chain of reveals that produces it.",
+      "non_dogma_note": "Not every thriller should be puzzle-first; some are tension-first or character-first."
+    },
+    {
+      "id": "romance_recognition",
+      "group": "narrative",
+      "signature": {
+        "medium": "feature_film",
+        "format_pressure": "beat_sheet",
+        "audience_need_state": ["intimacy", "hope"],
+        "narrative_engine": "relationship_turn",
+        "emotional_contract": "warmth",
+        "production_context": "rewrite",
+        "participation_mode": "linear_passive",
+        "business_goal": "fan_engagement",
+        "genre_pressure": ["romance", "drama"]
+      },
+      "when_to_use": "Romance stories where mutual recognition, not just attraction, must drive the arc.",
+      "reference_fragment": "He corrects her joke in public, then repeats it exactly the way she meant it when the room empties.",
+      "weak_fragment": "They fall in love after a series of cute moments.",
+      "why_strong": "The scene turns from friction to recognition without losing character voice.",
+      "why_weak": "It compresses the entire relationship into a generic summary.",
+      "non_dogma_note": "Some romances work through slow burn, mismatch, or structural irony rather than direct recognition."
+    },
+    {
+      "id": "comedy_setup_payoff",
+      "group": "narrative",
+      "signature": {
+        "medium": "episodic",
+        "format_pressure": "scene_draft",
+        "audience_need_state": ["delight", "belonging"],
+        "narrative_engine": "satirical_mirror",
+        "emotional_contract": "fun",
+        "production_context": "writers_room",
+        "participation_mode": "linear_passive",
+        "business_goal": "retention",
+        "genre_pressure": ["comedy"]
+      },
+      "when_to_use": "Comedy scenes where setup and payoff must stay visible inside the same beat window.",
+      "reference_fragment": "He prints the apology memo, hands it to the wrong boss, and accidentally gets promoted for honesty.",
+      "weak_fragment": "The scene has jokes and everyone is funny.",
+      "why_strong": "The setup is concrete and the payoff reverses status in a readable way.",
+      "why_weak": "It describes tone, not comic mechanics.",
+      "non_dogma_note": "Comedy can also be deadpan, tragic, or character-bound instead of setup-payoff dominant."
+    },
+    {
+      "id": "prestige_ambiguity",
+      "group": "narrative",
+      "signature": {
+        "medium": "feature_film",
+        "format_pressure": "treatment",
+        "audience_need_state": ["reflection", "intimacy"],
+        "narrative_engine": "ensemble_pressure",
+        "emotional_contract": "prestige",
+        "production_context": "greenlight_pitch",
+        "participation_mode": "linear_passive",
+        "business_goal": "awards",
+        "genre_pressure": ["prestige", "drama"]
+      },
+      "when_to_use": "Prestige or author-driven drama where ambiguity is part of the payoff, not a defect.",
+      "reference_fragment": "At the dinner table nobody says the word 'war', but every plate is cleared by someone who no longer belongs there.",
+      "weak_fragment": "The story is subtle and meaningful, and the audience should think about it afterward.",
+      "why_strong": "It preserves ambiguity while still giving the scene a visible dramatic action.",
+      "why_weak": "It relies on prestige language without a concrete dramatic charge.",
+      "non_dogma_note": "Ambiguity works only when causality and pressure still remain legible."
+    },
+    {
+      "id": "commercial_single_message",
+      "group": "commercial",
+      "signature": {
+        "medium": "commercial",
+        "format_pressure": "commercial_script",
+        "audience_need_state": ["conversion", "trust"],
+        "narrative_engine": "goal_obstacle",
+        "emotional_contract": "power",
+        "production_context": "brand_campaign",
+        "participation_mode": "linear_passive",
+        "business_goal": "conversion",
+        "genre_pressure": ["drama"]
+      },
+      "when_to_use": "Ads that need one message, one behavior, and one visible reason to act now.",
+      "reference_fragment": "One sip, one switch: the commuter finishes his sentence without rubbing his eyes for the first time all day.",
+      "weak_fragment": "Our product has many great features and a friendly brand voice.",
+      "why_strong": "The product benefit is visible in a single action and the story remains message-dense.",
+      "why_weak": "It becomes a feature dump with no decisive behavioral outcome.",
+      "non_dogma_note": "Some campaigns need emotional brand building instead of immediate conversion."
+    },
+    {
+      "id": "branded_film_identity_story",
+      "group": "commercial",
+      "signature": {
+        "medium": "branded_film",
+        "format_pressure": "treatment",
+        "audience_need_state": ["aspiration", "trust"],
+        "narrative_engine": "relationship_turn",
+        "emotional_contract": "hope",
+        "production_context": "brand_campaign",
+        "participation_mode": "linear_passive",
+        "business_goal": "brand_lift",
+        "genre_pressure": ["drama", "prestige"]
+      },
+      "when_to_use": "Brand films that need identity and value to emerge through story, not slogan.",
+      "reference_fragment": "She drives through the flood tunnel not to escape the storm, but to arrive with the tools to rebuild the street.",
+      "weak_fragment": "The brand stands for resilience, innovation, and caring about people.",
+      "why_strong": "The brand value is dramatized through an action that reveals identity.",
+      "why_weak": "It announces the value without making it felt.",
+      "non_dogma_note": "A branded film can be quiet, funny, documentary-like, or highly stylized."
+    },
+    {
+      "id": "shortform_social_hook",
+      "group": "commercial",
+      "signature": {
+        "medium": "shortform_video",
+        "format_pressure": "scene_draft",
+        "audience_need_state": ["delight", "conversion"],
+        "narrative_engine": "escalation_chain",
+        "emotional_contract": "fun",
+        "production_context": "assignment",
+        "participation_mode": "linear_passive",
+        "business_goal": "conversion",
+        "genre_pressure": ["comedy", "drama"]
+      },
+      "when_to_use": "Vertical or short-form social scripts where the first second matters.",
+      "reference_fragment": "She holds the broken blender to camera, presses one button, and the kitchen goes quiet instead of loud.",
+      "weak_fragment": "Let me tell you about a product that could improve your routine.",
+      "why_strong": "The proof arrives before explanation and the visual beat is legible instantly.",
+      "why_weak": "It spends the hook budget on setup instead of payoff.",
+      "non_dogma_note": "Some short-form pieces win through intrigue or charisma rather than instant utility."
+    },
+    {
+      "id": "game_narrative_quest_loop",
+      "group": "interactive",
+      "signature": {
+        "medium": "game_narrative",
+        "format_pressure": "outline",
+        "audience_need_state": ["agency", "curiosity"],
+        "narrative_engine": "quest_loop",
+        "emotional_contract": "power",
+        "production_context": "proof_of_concept",
+        "participation_mode": "stateful_progression",
+        "business_goal": "fan_engagement",
+        "genre_pressure": ["action", "fantasy"]
+      },
+      "when_to_use": "Game narratives that need repeatable play loops and story consequences.",
+      "reference_fragment": "Each relic you return changes the camp, but each camp upgrade closes one road and opens another.",
+      "weak_fragment": "The player goes on quests and learns more about the world.",
+      "why_strong": "The quest loop changes state and creates tradeoffs, which keeps play meaningful.",
+      "why_weak": "It describes content without a system.",
+      "non_dogma_note": "Some games are built around exploration, survival, or social systems instead of quests."
+    },
+    {
+      "id": "branching_interactive_consequence",
+      "group": "interactive",
+      "signature": {
+        "medium": "branching_interactive",
+        "format_pressure": "interactive_branch_map",
+        "audience_need_state": ["agency", "trust"],
+        "narrative_engine": "choice_consequence",
+        "emotional_contract": "thrill",
+        "production_context": "writers_room",
+        "participation_mode": "branching_choice",
+        "business_goal": "retention",
+        "genre_pressure": ["thriller", "drama"]
+      },
+      "when_to_use": "Interactive stories where choices must alter state, not just dialogue flavor.",
+      "reference_fragment": "If she lies, the guard believes her; if she tells the truth, the guard remembers her face forever.",
+      "weak_fragment": "The player makes interesting choices and sees different scenes.",
+      "why_strong": "The choice changes future state and therefore future story pressure.",
+      "why_weak": "It gives variety without consequence.",
+      "non_dogma_note": "Branching can be shallow, deep, or mostly social; consequence design should match the actual product."
+    },
+    {
+      "id": "adaptation_translation",
+      "group": "meta",
+      "signature": {
+        "medium": "hybrid",
+        "format_pressure": "development_brief",
+        "audience_need_state": ["trust", "curiosity"],
+        "narrative_engine": "identity_reveal",
+        "emotional_contract": "clarity",
+        "production_context": "adaptation",
+        "participation_mode": "linear_passive",
+        "business_goal": "platform_hold",
+        "source_relation": "adaptation",
+        "genre_pressure": ["drama", "prestige"]
+      },
+      "when_to_use": "Adaptations that must preserve core conflict while changing container and audience contract.",
+      "reference_fragment": "The novel's secret is not the missing letter; it is who keeps rewriting the letter after each death.",
+      "weak_fragment": "We should keep the source material accurate and try to be faithful.",
+      "why_strong": "It identifies the core engine to preserve and the container logic to translate.",
+      "why_weak": "It praises fidelity without deciding what fidelity means.",
+      "non_dogma_note": "Some adaptations should be close, others should be radical; fidelity is a strategy, not a moral law."
+    },
+    {
+      "id": "rewrite_doctor_diagnosis",
+      "group": "meta",
+      "signature": {
+        "medium": "hybrid",
+        "format_pressure": "rewrite_report",
+        "audience_need_state": ["learning", "trust"],
+        "narrative_engine": "goal_obstacle",
+        "emotional_contract": "clarity",
+        "production_context": "rewrite",
+        "participation_mode": "linear_passive",
+        "business_goal": "cost_efficiency",
+        "genre_pressure": ["drama", "thriller"]
+      },
+      "when_to_use": "Diagnosis work where the first job is to identify the failing layer.",
+      "reference_fragment": "The first act is not weak because it is slow; it is weak because the protagonist has no decision that changes the board.",
+      "weak_fragment": "The draft is bad and needs to be improved.",
+      "why_strong": "The diagnosis names the layer, the symptom, and the missing function.",
+      "why_weak": "It evaluates without localizing the failure.",
+      "non_dogma_note": "A rewrite note can prioritize structure, character, tone, or dialogue depending on the actual failure layer."
+    },
+    {
+      "id": "dialogue_voice_pass",
+      "group": "meta",
+      "signature": {
+        "medium": "hybrid",
+        "format_pressure": "dialogue_polish",
+        "audience_need_state": ["intimacy", "trust"],
+        "narrative_engine": "relationship_turn",
+        "emotional_contract": "warmth",
+        "production_context": "rewrite",
+        "participation_mode": "linear_passive",
+        "business_goal": "learning",
+        "genre_pressure": ["drama", "comedy"]
+      },
+      "when_to_use": "Dialogue passes where voice, subtext, and power dynamics need to separate cleanly.",
+      "reference_fragment": "A: You came late. B: I came when it mattered. A: That is not the same thing, and you know it.",
+      "weak_fragment": "A: I am upset. B: I understand that you are upset.",
+      "why_strong": "The exchange has asymmetry, subtext, and immediate relational pressure.",
+      "why_weak": "It says the emotion instead of making it audible.",
+      "non_dogma_note": "Some scenes should be sparse and some should be talky; voice quality matters more than line count."
+    },
+    {
+      "id": "audience_fit_analysis",
+      "group": "meta",
+      "signature": {
+        "medium": "hybrid",
+        "format_pressure": "audience_fit_note",
+        "audience_need_state": ["trust", "belonging"],
+        "narrative_engine": "goal_obstacle",
+        "emotional_contract": "clarity",
+        "production_context": "greenlight_pitch",
+        "participation_mode": "linear_passive",
+        "business_goal": "platform_hold",
+        "risk_profile": "medium"
+      },
+      "when_to_use": "When the question is not what to write, but who this is for and whether it matches the ask.",
+      "reference_fragment": "This version serves urban streaming viewers who want suspense plus emotional release, but it risks losing audiences who need broader catharsis.",
+      "weak_fragment": "The audience will probably like this because it is good.",
+      "why_strong": "It names the audience segment, the need state, and the fit risk.",
+      "why_weak": "It uses taste language instead of an evidence-backed fit statement.",
+      "non_dogma_note": "Audience fit is a useful lens, not a command to flatten ambition into the safest possible output."
+    },
+    {
+      "id": "development_brief_alignment",
+      "group": "meta",
+      "signature": {
+        "medium": "hybrid",
+        "format_pressure": "development_brief",
+        "audience_need_state": ["trust", "learning"],
+        "narrative_engine": "ensemble_pressure",
+        "emotional_contract": "clarity",
+        "production_context": "assignment",
+        "participation_mode": "linear_passive",
+        "business_goal": "franchise_launch",
+        "risk_profile": "medium"
+      },
+      "when_to_use": "When the problem is development strategy, not line-level execution.",
+      "reference_fragment": "The project should keep the core conflict, move the reveal earlier, and reserve the deepest twist for the second-quarter restart.",
+      "weak_fragment": "We should make the project stronger and more marketable.",
+      "why_strong": "It connects creative direction to production and release logic.",
+      "why_weak": "It sounds strategic but does not make the next decision easier.",
+      "non_dogma_note": "A development brief should sharpen choices, not pre-solve every creative detail."
+    },
+    {
+      "id": "writer_learning_path",
+      "group": "meta",
+      "signature": {
+        "medium": "hybrid",
+        "format_pressure": "learning_path",
+        "audience_need_state": ["learning", "belonging"],
+        "narrative_engine": "procedural_loop",
+        "emotional_contract": "hope",
+        "production_context": "solo",
+        "participation_mode": "linear_passive",
+        "business_goal": "learning",
+        "risk_profile": "low"
+      },
+      "when_to_use": "When the user needs a growth path rather than a single answer.",
+      "reference_fragment": "Week 1 writes loglines, week 2 writes scene functions, week 3 rewrites two scenes for different audience need states.",
+      "weak_fragment": "Practice writing every day and read good scripts.",
+      "why_strong": "It turns improvement into staged, testable practice.",
+      "why_weak": "It gives advice without a learning loop.",
+      "non_dogma_note": "Learning paths should adapt to the writer's current gap, not impose a generic curriculum."
+    },
+    {
+      "id": "team_workflow_architecture",
+      "group": "meta",
+      "signature": {
+        "medium": "hybrid",
+        "format_pressure": "team_workflow_blueprint",
+        "audience_need_state": ["learning", "trust"],
+        "narrative_engine": "procedural_loop",
+        "emotional_contract": "clarity",
+        "production_context": "design",
+        "participation_mode": "linear_passive",
+        "business_goal": "cost_efficiency",
+        "risk_profile": "medium"
+      },
+      "when_to_use": "When the real problem is how a screenplay task should be organized across specialists, handoffs, and review gates.",
+      "reference_fragment": "Run season-arc, episode-break, and continuity lanes in parallel, then force all three back through a showrunner synthesis gate before script drafting.",
+      "weak_fragment": "Use multiple agents to make the work faster.",
+      "why_strong": "It specifies roles, cadence, and gate logic rather than treating parallelism as a virtue by itself.",
+      "why_weak": "It confuses concurrency with a usable workflow architecture.",
+      "non_dogma_note": "Some screenplay tasks are still better handled by one focused route; team mode is for genuine collaboration pressure, not for every request."
+    },
+    {
+      "id": "voice_style_calibration",
+      "group": "meta",
+      "signature": {
+        "medium": "hybrid",
+        "format_pressure": "voice_style_guide",
+        "audience_need_state": ["intimacy", "trust"],
+        "narrative_engine": "relationship_turn",
+        "emotional_contract": "intimacy",
+        "production_context": "rewrite",
+        "participation_mode": "linear_passive",
+        "business_goal": "identity_preservation",
+        "risk_profile": "medium"
+      },
+      "when_to_use": "When a draft needs explicit voice anchors before scene, dialogue, commercial, or continuity work can proceed safely.",
+      "reference_fragment": "He jokes early, but the joke always covers status anxiety; the guide should preserve that move without forcing the exact wording.",
+      "weak_fragment": "Make him sound more natural, sarcastic, and human.",
+      "why_strong": "It defines voice through behavior, pressure, and repeatable drift checks instead of vague adjectives.",
+      "why_weak": "It names a tone without giving the agent any usable constraint or continuity anchor.",
+      "non_dogma_note": "A voice guide should reduce drift, not freeze every future line into the same pattern."
+    },
+    {
+      "id": "path_options_divergence",
+      "group": "meta",
+      "signature": {
+        "medium": "hybrid",
+        "format_pressure": "path_options",
+        "audience_need_state": ["learning", "curiosity"],
+        "narrative_engine": "choice_consequence",
+        "emotional_contract": "clarity",
+        "production_context": "design",
+        "participation_mode": "linear_passive",
+        "business_goal": "cost_efficiency",
+        "risk_profile": "low"
+      },
+      "when_to_use": "When the right answer is not one route but several materially different bets.",
+      "reference_fragment": "Path A centers the relationship, Path B centers the mystery, Path C centers the social system; each wins by a different promise.",
+      "weak_fragment": "Here are three versions of the same idea with different wording.",
+      "why_strong": "It compares genuinely different bets instead of packaging the same one three ways.",
+      "why_weak": "It manufactures variety without changing the underlying tradeoff.",
+      "non_dogma_note": "Some tasks should converge fast; path options are a tool for uncertainty, not a requirement everywhere."
+    },
+    {
+      "id": "boundary_map_and_scope_correction",
+      "group": "meta",
+      "signature": {
+        "medium": "hybrid",
+        "format_pressure": "boundary_map",
+        "audience_need_state": ["trust", "learning"],
+        "narrative_engine": "goal_obstacle",
+        "emotional_contract": "clarity",
+        "production_context": "committee_review",
+        "participation_mode": "linear_passive",
+        "business_goal": "cost_efficiency",
+        "risk_profile": "high"
+      },
+      "when_to_use": "When the task is to separate hard-no zones, soft-risk zones, and a narrowed surviving core.",
+      "reference_fragment": "The rule is not wrong; it is too broad. In festival dramas it survives, in brand work it does not, and the safe zone sits between them.",
+      "weak_fragment": "This rule is good in some cases and bad in others.",
+      "why_strong": "It gives an explicit boundary map and preserves a surviving core instead of treating the disagreement as all-or-nothing.",
+      "why_weak": "It stays vague about what survives and where it breaks.",
+      "non_dogma_note": "Boundary mapping and scope correction should protect creative room, not erase it."
+    }
+  ],
+  "usage_notes": [
+    "Treat the axes as a stack, not as a ranking of truth.",
+    "Use the scenario cards as reference patterns, not mandatory templates.",
+    "If a request is hybrid, keep both dominant scenarios visible until the route genuinely collapses.",
+    "If a rule is challenged, ask whether it needs a boundary map, a scope correction, or a path split before you rewrite it."
+  ]
+}

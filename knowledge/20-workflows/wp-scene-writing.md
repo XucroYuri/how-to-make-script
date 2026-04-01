@@ -11,6 +11,7 @@
   ],
   "steps": [
     "写明本场的主功能、冲突方和变化点。",
+    "如果这是开场戏，先决定它最主要承担的开场工作，而不是默认同时完成所有工作。",
     "设计进入、冲突升级和离开点。",
     "按媒介调整篇幅、动作密度与镜头可执行性。",
     "输出 scene card 或 scene draft，并检查是否真的改变局面。"
@@ -24,7 +25,7 @@
     "场景结束后的局面已不同于开始"
   ],
   "rubrics": ["rb.scene-draft"],
-  "linked_atoms": ["ka.scene-function", "ka.conflict-pressure", "ka.exposition-control", "ka.medium-animation"]
+  "linked_atoms": ["ka.scene-function", "ka.conflict-pressure", "ka.exposition-control", "ka.opening-job-selection", "ka.medium-animation"]
 }
 ---
 # 场景写作协议
@@ -32,6 +33,7 @@
 场景是结构的执行单元。每场戏都必须让某个系统状态发生变化。
 
 这个协议适合处理“我知道这场戏大概要干什么，但不知道怎么把它写成立”的阶段。它要求你先明确本场功能，再考虑怎么进入、怎么升级、怎么离开，而不是先铺陈台词和氛围。
+如果当前场景是项目开场，还要额外问一层：这一段最主要的开场工作是什么。否则很容易一上来就想把人物、世界、冲突、主题、基调全部装进第一页。
 
 如果一场戏删掉以后，人物关系、信息状态、行动条件都没什么变化，那它通常不是“写得还不够好”，而是从功能上就还没有被设计出来。
 

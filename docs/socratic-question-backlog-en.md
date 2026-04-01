@@ -106,3 +106,44 @@ Use it before expanding `knowledge/`, `skills/`, `rubrics/`, or routing rules. E
 - [ ] Which TODOs should only close after tests, links, and routing coverage are updated?
 - [ ] Which items should be promoted into the roadmap as planned expansions?
 
+## Pluralism, Boundaries, And Premature Convergence
+
+- [ ] Which current rules are really local success patterns that are over-claimed as universals?
+- [ ] Which request types should return multiple viable paths instead of one collapsed recommendation?
+- [ ] Which questions are better answered with a boundary map than with a binary rule?
+- [ ] Which constraints are soft enough to defer during ideation, and which remain hard boundaries even in exploration?
+- [ ] Where is the repository still confusing market orthodoxy or prestige taste with actual creative necessity?
+- [ ] Which workflows still converge too early and therefore hide productive creative variation?
+- [ ] Which fixtures should prove that more than one route can be valid under different constraint sets?
+
+## Epistemic Pluralism
+
+- [ ] Which claims are written like universal truths but should actually remain bounded heuristics?
+- [ ] Which routes are being collapsed too early when multiple valid paths still exist?
+- [ ] Which assumptions are historical artifacts rather than timeless screenplay laws?
+- [ ] Which tradeoffs should be shown explicitly instead of hidden behind a single “best” route?
+- [ ] Which false universals most often masquerade as professional common sense?
+
+## Boundary Design
+
+- [ ] Which constraints are hard boundaries that must stay visible in exploration?
+- [ ] Which constraints are soft and can be suspended until review?
+- [ ] Where exactly should the exploration-to-review handoff happen?
+- [ ] Which safety, privacy, non-consent, or abuse boundaries can never be relaxed?
+- [ ] Which constraints actually protect output quality rather than suppress creativity?
+
+## Divergence And Convergence
+
+- [ ] Which workflows need an explicit divergence stage before convergence begins?
+- [ ] Which protocols close too early and should keep multiple candidate paths alive longer?
+- [ ] Which outputs should preserve more than one viable version until final selection?
+- [ ] What is the signal that more divergence is no longer adding information?
+- [ ] Which stop conditions should force convergence and handoff?
+
+## Historical Contingency
+
+- [ ] Which rules only hold under specific media, market, or industrial conditions?
+- [ ] Which classic screenplay patterns should be labeled as historical patterns, not eternal laws?
+- [ ] Which industry practices should be downgraded to case notes because the environment changed?
+- [ ] How should the repo mark the validity window of a method that only works in a certain era?
+- [ ] Which “correct” habits are really yesterday’s local optimum?

@@ -8,9 +8,11 @@ description: Use when the user needs beats, sequences, or a full outline.
 Use this skill to expand a premise into a causally connected outline.
 
 ## Workflow
-1. Map turning points and escalation.
-2. Check cause-and-effect links.
-3. Output beat sheet, outline, or treatment at the requested depth.
+1. Choose the structure family that matches the project's actual engine.
+2. Choose the beat carrier that best exposes that engine.
+3. Map turning points and escalation.
+4. Check cause-and-effect links.
+5. Output beat sheet, outline, or treatment at the requested depth.
 
 ## Output Contract
 - `beat_sheet`: a turning-point sequence with escalation.
@@ -22,4 +24,6 @@ Use this skill to expand a premise into a causally connected outline.
 - `wp.structure-beat-outline`
 - `ka.causality-chain`
 - `ka.pacing-rhythm`
+- `ka.structure-family-selection`
+- `ka.beat-carrier-selection`
 - `rb.outline`

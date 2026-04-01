@@ -16,7 +16,8 @@
     "区分必须重构、建议改进和可观察风险。"
   ],
   "fallbacks": [
-    "若文本过少，只输出风险预判，不伪造定论。"
+    "若文本过少，只输出风险预判，不伪造定论。",
+    "若用户需要的是 multi-lens quality gate、preflight、acceptance 或 recheck，返回 quality_gate_report。"
   ],
   "stop_conditions": [
     "报告已包含层级诊断、优先级和具体动作"

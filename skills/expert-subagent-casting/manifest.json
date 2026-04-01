@@ -1,0 +1,16 @@
+{
+  "id": "skill.expert-subagent-casting",
+  "name": "expert-subagent-casting",
+  "description": "Design a bounded cast of screenplay subagents, including functional specialists, process nodes, and governed reference-persona lenses.",
+  "entrypoint": "skills/expert-subagent-casting/SKILL.md",
+  "supports": {
+    "intents": ["discover", "design", "adapt"],
+    "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
+    "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+    "outputs": ["expert_subagent_cast"]
+  },
+  "protocol_id": "wp.expert-subagent-cast",
+  "rubric_ids": ["rb.expert-subagent-cast"],
+  "linked_atoms": ["ka.subagent-cast-composition", "ka.process-node-specialization", "ka.reference-persona-governance", "ka.subagent-context-budgeting", "ka.convergence-owner-discipline", "ka.team-topology-selection"],
+  "fallback_behavior": "If the user only needs a high-level team mode, return to team_workflow_blueprint. If the user only needs one screenplay artifact, keep the main route and attach a lightweight cast note."
+}

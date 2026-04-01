@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "purpose": "Machine-readable topology and dispatch-pattern registry for screenplay-oriented subagent systems.",
+  "packet_fields": [
+    "route_id",
+    "output_contract",
+    "working_hypothesis",
+    "locked_facts",
+    "loaded_bundle_ids",
+    "open_questions",
+    "rejected_alternatives",
+    "confidence",
+    "stop_condition",
+    "recommended_next_agent",
+    "needs_human_review"
+  ],
+  "topologies": [
+    {
+      "id": "orchestrator_specialist_ring",
+      "use_when": "One owner must keep the route stable while a small specialist ring handles bounded tasks.",
+      "layers": ["route_owner", "specialist_ring", "merge_gate"],
+      "merge_owner": "single_owner",
+      "parallel_lanes": 2,
+      "context_rule": "Owner holds truth packet; specialists receive only task packets.",
+      "failure_modes": ["owner bottleneck", "specialists drift without truth packet"]
+    },
+    {
+      "id": "writers_room_tree",
+      "use_when": "A room-like system needs one captain plus multiple nested specialty lanes.",
+      "layers": ["showrunner_or_captain", "lane_leads", "room_members", "review_gate"],
+      "merge_owner": "captain_or_showrunner",
+      "parallel_lanes": 4,
+      "context_rule": "Only lane leads see merged lane state; room members stay packet-scoped.",
+      "failure_modes": ["captain overload", "room notes drown engine"]
+    },
+    {
+      "id": "debate_then_merge_board",
+      "use_when": "The system must preserve disagreement before final synthesis.",
+      "layers": ["owner", "opposed_lenses", "merge_board"],
+      "merge_owner": "owner_plus_board",
+      "parallel_lanes": 3,
+      "context_rule": "Each lens gets the same frozen packet; only merge board sees all outputs together.",
+      "failure_modes": ["debate theater", "no final lock", "lens overfitting"]
+    },
+    {
+      "id": "dual_track_story_visual",
+      "use_when": "Story and visual lanes must co-evolve without collapsing into one another.",
+      "layers": ["owner", "story_lane", "visual_lane", "sync_gate"],
+      "merge_owner": "owner",
+      "parallel_lanes": 2,
+      "context_rule": "Shared truth packet is frozen; each lane gets only one adjunct bundle beyond it.",
+      "failure_modes": ["beautiful but empty visuals", "narrative ignores staging reality"]
+    },
+    {
+      "id": "variant_strike_grid",
+      "use_when": "One message spine must produce multiple platform or campaign variants.",
+      "layers": ["message_owner", "variant_lanes", "performance_or_brand_gate"],
+      "merge_owner": "message_owner",
+      "parallel_lanes": 4,
+      "context_rule": "Every lane inherits the same message memo and locked constraints, nothing more.",
+      "failure_modes": ["variant bloat", "message singularity lost", "platform trends override spine"]
+    },
+    {
+      "id": "branch_state_triangle",
+      "use_when": "Narrative, state logic, and QA must stay coupled in interactive work.",
+      "layers": ["narrative_owner", "branch_lane", "state_lane", "qa_lane", "playability_gate"],
+      "merge_owner": "narrative_owner",
+      "parallel_lanes": 3,
+      "context_rule": "Shared branch truth packet plus lane-specific packets only.",
+      "failure_modes": ["state drift", "film pacing assumptions", "branch explosion"]
+    },
+    {
+      "id": "fresh_task_review_loop",
+      "use_when": "A task has a clear contract and should be implemented with spec review first, quality review second.",
+      "layers": ["implementer", "spec_reviewer", "quality_reviewer", "final_owner"],
+      "merge_owner": "final_owner",
+      "parallel_lanes": 1,
+      "context_rule": "Implementer receives task packet; spec reviewer receives packet plus contract; quality reviewer receives approved artifact only after spec pass.",
+      "failure_modes": ["wrong problem solved beautifully", "review order collapsed", "self-review treated as final review"]
+    }
+  ],
+  "phase_patterns": [
+    {
+      "id": "explore_lock_review",
+      "phase_order": ["divergence", "challenge", "convergence", "review"],
+      "best_for": ["feature_film", "episodic", "animation"],
+      "use_when": "The task needs contrasted options before a lock."
+    },
+    {
+      "id": "draft_then_two_stage_review",
+      "phase_order": ["implement", "spec_review", "quality_review", "final_lock"],
+      "best_for": ["all"],
+      "use_when": "The task has a specific output contract and overbuild risk."
+    },
+    {
+      "id": "story_visual_sync_loop",
+      "phase_order": ["story_pass", "visual_pass", "sync_merge", "director_or_owner_gate"],
+      "best_for": ["animation", "branded_film", "shortform_video"],
+      "use_when": "Narrative and visual reasoning must evolve together."
+    },
+    {
+      "id": "campaign_variant_cycle",
+      "phase_order": ["message_lock", "variant_generation", "brand_gate", "performance_rewrite"],
+      "best_for": ["commercial", "branded_film", "shortform_video"],
+      "use_when": "The job needs controlled variation under one core message."
+    },
+    {
+      "id": "branch_state_qa_cycle",
+      "phase_order": ["branch_design", "state_model", "qa_probe", "scope_lock"],
+      "best_for": ["game_narrative", "branching_interactive"],
+      "use_when": "Interactive logic must be tested before narrative scale expands."
+    }
+  ],
+  "dispatch_rules": [
+    "Route first, then team mode, then cast, then topology.",
+    "Do not let reference personas become default merge owners.",
+    "Keep one explicit convergence owner whenever more than one lane exists.",
+    "If context budgets start widening without changing the answer, collapse the topology.",
+    "Prefer fresh_task_review_loop for repo asset implementation or any task where contract drift is expensive."
+  ]
+}

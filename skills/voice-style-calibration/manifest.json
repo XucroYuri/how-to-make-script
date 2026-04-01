@@ -1,0 +1,16 @@
+{
+  "id": "skill.voice-style-calibration",
+  "name": "voice-style-calibration",
+  "description": "Calibrate character, IP, brand, or interactive voice into a reusable style guide without turning it into a rigid template.",
+  "entrypoint": "skills/voice-style-calibration/SKILL.md",
+  "supports": {
+    "intents": ["design", "diagnose", "adapt"],
+    "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
+    "stages": ["character", "scene", "dialogue", "rewrite", "adaptation"],
+    "outputs": ["voice_style_guide"]
+  },
+  "protocol_id": "wp.voice-style-guide",
+  "rubric_ids": ["rb.voice-style-guide"],
+  "linked_atoms": ["ka.character-voice-consistency", "ka.ip-voice-continuity", "ka.register-adaptation", "ka.embodied-text-pressure", "ka.dialogue-subtext"],
+  "fallback_behavior": "If the user actually wants a finished draft, return to the primary drafting route and load this guide as an expression-lens adjunct."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "skill.context-governor",
+  "name": "context-governor",
+  "description": "Plan bounded context loading for screenplay generation without sacrificing relevant reference quality.",
+  "entrypoint": "skills/context-governor/SKILL.md",
+  "supports": {
+    "intents": ["discover", "design", "diagnose", "adapt"],
+    "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
+    "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+    "outputs": ["context_loading_plan"]
+  },
+  "protocol_id": "wp.context-loading-plan",
+  "rubric_ids": ["rb.context-loading-plan"],
+  "linked_atoms": ["ka.bounded-context-loading", "ka.reference-expansion-balance", "ka.context-corrosion-signals", "ka.scenario-factorization"],
+  "fallback_behavior": "If route certainty is still low, ask for the smallest missing distinction before expanding the bundle."
+}

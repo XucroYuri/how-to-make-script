@@ -1,0 +1,66 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#F6F0E8"/>
+  <rect x="56" y="56" width="1168" height="608" rx="32" fill="#FFF9F2" stroke="#1A2D3A" stroke-width="4"/>
+  <rect x="90" y="96" width="316" height="188" rx="24" fill="#1A2D3A"/>
+  <text x="120" y="152" fill="#FFF9F2" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="700">how-to-make-script</text>
+  <text x="120" y="196" fill="#A7E0D9" font-family="Helvetica, Arial, sans-serif" font-size="16">Research-first screenplay knowledge system</text>
+  <text x="120" y="226" fill="#A7E0D9" font-family="Helvetica, Arial, sans-serif" font-size="16">and agent skill library</text>
+  <rect x="120" y="246" width="106" height="24" rx="12" fill="#A7E0D9"/>
+  <text x="136" y="263" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="700">ROUTE-FIRST</text>
+  <rect x="234" y="246" width="130" height="24" rx="12" fill="#FFB38A"/>
+  <text x="249" y="263" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="700">HUMAN-IN-THE-LOOP</text>
+
+  <rect x="90" y="314" width="250" height="110" rx="20" fill="#FFF9F2" stroke="#1A2D3A" stroke-width="3"/>
+  <text x="116" y="350" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">What it does</text>
+  <text x="116" y="382" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="14">Write, diagnose, review, adapt,</text>
+  <text x="116" y="406" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="14">orchestrate, and pressure-test</text>
+  <text x="116" y="430" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="14">screenplay work across media.</text>
+
+  <rect x="90" y="448" width="250" height="168" rx="20" fill="#FFF9F2" stroke="#1A2D3A" stroke-width="3"/>
+  <text x="116" y="484" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">What makes it different</text>
+  <text x="116" y="516" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="14">• Explicit routes, not prompt soup</text>
+  <text x="116" y="542" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="14">• Contestable heuristics, not one truth</text>
+  <text x="116" y="568" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="14">• Bounded loading, not context bloat</text>
+  <text x="116" y="594" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="14">• Reviewable assets, not hidden lore</text>
+
+  <rect x="444" y="104" width="732" height="512" rx="28" fill="#F0E7DB"/>
+  <text x="482" y="150" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700">Route → Knowledge → Artifact → Quality Gate → Community Feedback</text>
+
+  <rect x="486" y="198" width="148" height="84" rx="18" fill="#FFF9F2" stroke="#1A2D3A" stroke-width="3"/>
+  <text x="524" y="232" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Request</text>
+  <text x="512" y="256" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13">intent × medium</text>
+  <text x="520" y="276" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13">stage × output</text>
+
+  <rect x="668" y="198" width="148" height="84" rx="18" fill="#A7E0D9" stroke="#1A2D3A" stroke-width="3"/>
+  <text x="714" y="232" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Route</text>
+  <text x="690" y="256" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13">protocol + rubric</text>
+  <text x="700" y="276" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13">minimal bundle</text>
+
+  <rect x="850" y="198" width="148" height="84" rx="18" fill="#FFB38A" stroke="#1A2D3A" stroke-width="3"/>
+  <text x="892" y="232" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Artifact</text>
+  <text x="878" y="256" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13">draft / map / guide</text>
+  <text x="878" y="276" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13">plan / report / pack</text>
+
+  <rect x="1032" y="198" width="102" height="84" rx="18" fill="#FFF9F2" stroke="#1A2D3A" stroke-width="3"/>
+  <text x="1058" y="232" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Gate</text>
+  <text x="1048" y="258" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13">review</text>
+  <text x="1046" y="278" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13">recheck</text>
+
+  <path d="M634 240H668" stroke="#1A2D3A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M816 240H850" stroke="#1A2D3A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M998 240H1032" stroke="#1A2D3A" stroke-width="4" stroke-linecap="round"/>
+
+  <rect x="486" y="338" width="300" height="112" rx="20" fill="#FFF9F2" stroke="#1A2D3A" stroke-width="3"/>
+  <text x="516" y="374" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Core asset families</text>
+  <text x="516" y="404" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="14">knowledge atoms · workflow protocols</text>
+  <text x="516" y="428" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="14">evaluation rubrics · example fixtures</text>
+
+  <rect x="826" y="338" width="308" height="112" rx="20" fill="#FFF9F2" stroke="#1A2D3A" stroke-width="3"/>
+  <text x="856" y="374" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Current coverage</text>
+  <text x="856" y="404" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="14">narrative · commercial · interactive</text>
+  <text x="856" y="428" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="14">voice · video bridge · team · quality gate</text>
+
+  <rect x="486" y="490" width="648" height="92" rx="20" fill="#1A2D3A"/>
+  <text x="516" y="528" fill="#FFF9F2" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Built for humans and agents at the same time</text>
+  <text x="516" y="556" fill="#A7E0D9" font-family="Helvetica, Arial, sans-serif" font-size="14">Learn the craft, route the task, pressure-test the output, keep the disagreement, improve the system.</text>
+</svg>

@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "purpose": "Role registry for screenplay-oriented human, agent, and hybrid collaboration teams.",
+  "roles": [
+    {
+      "id": "room_captain",
+      "label": "Room Captain",
+      "execution_type": "agent_or_human",
+      "preferred_tier": "THOROUGH",
+      "purpose": "Own the current truth packet, lane merge, and cadence discipline.",
+      "inputs": ["active brief", "locked facts", "open questions", "lane outputs"],
+      "outputs": ["room packet", "merge decisions", "next handoff packets"],
+      "handoff_rule": "Never delegate without an artifact contract and a merge time.",
+      "anti_patterns": ["acts like a generic manager", "merges without reading conflicts"]
+    },
+    {
+      "id": "showrunner_orchestrator",
+      "label": "Showrunner Orchestrator",
+      "execution_type": "human_or_hybrid",
+      "preferred_tier": "THOROUGH",
+      "purpose": "Hold overall series or franchise intent and final voice on major story direction.",
+      "inputs": ["season engine", "room notes", "network or platform notes"],
+      "outputs": ["season decisions", "greenlight or rewrite calls"],
+      "handoff_rule": "Use when final authority cannot be fully distributed.",
+      "anti_patterns": ["reopens every decision at every meeting", "delegates final voice away"]
+    },
+    {
+      "id": "story_architect",
+      "label": "Story Architect",
+      "execution_type": "agent_or_human",
+      "preferred_tier": "THOROUGH",
+      "purpose": "Design engine, causal structure, and convergence logic.",
+      "inputs": ["premise slate", "research notes", "boundary map"],
+      "outputs": ["engine memo", "beat ladder", "outline logic"],
+      "handoff_rule": "Must declare what is fixed, what is variable, and what still needs challenge.",
+      "anti_patterns": ["confuses structure with scene prose", "locks choices without tradeoff notes"]
+    },
+    {
+      "id": "character_lead",
+      "label": "Character Lead",
+      "execution_type": "agent_or_human",
+      "preferred_tier": "STANDARD",
+      "purpose": "Guard character drives, relationship engines, and transformation logic.",
+      "inputs": ["character briefs", "scene packets", "voice guides"],
+      "outputs": ["character pressure notes", "relationship maps", "arc risks"],
+      "handoff_rule": "Return both strongest path and character-break warning.",
+      "anti_patterns": ["protects flat traits instead of dynamic behavior", "ignores ensemble pressure"]
+    },
+    {
+      "id": "continuity_keeper",
+      "label": "Continuity Keeper",
+      "execution_type": "agent_or_human",
+      "preferred_tier": "STANDARD",
+      "purpose": "Protect canon, voice continuity, world rules, and persistent state.",
+      "inputs": ["canon anchors", "state tables", "drafts"],
+      "outputs": ["risk register", "continuity notes", "approval or escalation flags"],
+      "handoff_rule": "Escalate deep identity breaks before downstream drafting expands them.",
+      "anti_patterns": ["treats continuity as quote mimicry", "becomes anti-innovation police"]
+    },
+    {
+      "id": "audience_strategy_lead",
+      "label": "Audience Strategy Lead",
+      "execution_type": "agent_or_human",
+      "preferred_tier": "STANDARD",
+      "purpose": "Connect story choices to audience need state, retention logic, and commissioning context.",
+      "inputs": ["audience fit notes", "platform data", "campaign or release assumptions"],
+      "outputs": ["fit warnings", "retention hypotheses", "priority shifts"],
+      "handoff_rule": "Return clear audience payoffs and mismatch risks, not generic market talk.",
+      "anti_patterns": ["turns all creative questions into trend-following", "forgets medium constraints"]
+    },
+    {
+      "id": "development_producer",
+      "label": "Development Producer",
+      "execution_type": "agent_or_human",
+      "preferred_tier": "STANDARD",
+      "purpose": "Translate creative plans into development sequence, resource pressure, and gate timing.",
+      "inputs": ["development brief", "room packet", "approval chain"],
+      "outputs": ["sequence plan", "risk priorities", "gate schedule"],
+      "handoff_rule": "Always say what should be done now, later, and not yet.",
+      "anti_patterns": ["becomes pure admin", "ignores creative dependencies"]
+    },
+    {
+      "id": "scene_specialist",
+      "label": "Scene Specialist",
+      "execution_type": "agent_or_human",
+      "preferred_tier": "STANDARD",
+      "purpose": "Turn approved structure into playable scene cards and drafts.",
+      "inputs": ["scene packet", "voice guide", "boundary map"],
+      "outputs": ["scene card", "scene draft", "scene-level risks"],
+      "handoff_rule": "Draft only against a locked scene objective and current truth packet.",
+      "anti_patterns": ["writes around structural ambiguity", "defaults to neutral prose"]
+    },
+    {
+      "id": "dialogue_specialist",
+      "label": "Dialogue Specialist",
+      "execution_type": "agent_or_human",
+      "preferred_tier": "STANDARD",
+      "purpose": "Shape subtext, voice separation, rhythm, and line-level pressure.",
+      "inputs": ["dialogue excerpt", "voice guide", "scene objective"],
+      "outputs": ["dialogue polish", "voice drift warnings"],
+      "handoff_rule": "Flag scene-level weakness instead of polishing dead conflict.",
+      "anti_patterns": ["beautifies exposition", "mistakes catchphrases for voice"]
+    },
+    {
+      "id": "visual_story_partner",
+      "label": "Visual Story Partner",
+      "execution_type": "agent_or_human",
+      "preferred_tier": "STANDARD",
+      "purpose": "Translate story problems into sequence staging, reel logic, and visual story beats.",
+      "inputs": ["story packet", "sequence problems", "world research"],
+      "outputs": ["visual beat notes", "sequence alternatives", "reel review prompts"],
+      "handoff_rule": "Return sequence logic, not just image ideas.",
+      "anti_patterns": ["treats storyboard flair as story solution", "ignores narrative function"]
+    },
+    {
+      "id": "interactive_systems_narrative",
+      "label": "Interactive Systems Narrative",
+      "execution_type": "agent_or_human",
+      "preferred_tier": "THOROUGH",
+      "purpose": "Bridge branch logic, state design, quest flow, and narrative clarity.",
+      "inputs": ["branch map", "state tables", "quest goals", "implementation notes"],
+      "outputs": ["state-aware narrative packets", "system risks", "playability checks"],
+      "handoff_rule": "Always return both story intent and system implications.",
+      "anti_patterns": ["writes as if pacing were linear film pacing", "ignores player affordances"]
+    },
+    {
+      "id": "brand_platform_strategist",
+      "label": "Brand Platform Strategist",
+      "execution_type": "agent_or_human",
+      "preferred_tier": "STANDARD",
+      "purpose": "Guard message singularity, platform fit, and variant strategy for campaigns.",
+      "inputs": ["brand brief", "platform assumptions", "test results"],
+      "outputs": ["message memo", "platform variant constraints", "performance notes"],
+      "handoff_rule": "Keep one core message even when variants multiply.",
+      "anti_patterns": ["chases every platform trend", "lets variation erase the brand spine"]
+    },
+    {
+      "id": "human_decision_owner",
+      "label": "Human Decision Owner",
+      "execution_type": "human",
+      "preferred_tier": "HUMAN",
+      "purpose": "Hold veto or approval authority at defined checkpoints where artistic, legal, client, or production risk is highest.",
+      "inputs": ["checkpoint packet", "risks", "primary recommendation", "kept alternatives"],
+      "outputs": ["approve", "reject", "scope correction", "boundary update"],
+      "handoff_rule": "Review only at declared gates and against declared questions.",
+      "anti_patterns": ["acts as ever-present vague approver", "reopens solved decisions without new evidence"]
+    }
+  ]
+}

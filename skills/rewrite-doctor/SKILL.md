@@ -5,12 +5,14 @@ description: Use when the user needs a script doctor style diagnosis and rewrite
 
 # Rewrite Doctor
 
-Use this skill when the request is diagnostic rather than generative.
+Use this skill when the request is diagnostic rather than generative and the main need is rewrite prioritization inside story/text layers.
 
 ## Workflow
 1. Locate the failure layer.
 2. Distinguish root causes from symptoms.
 3. Return prioritized, actionable rewrite moves.
+
+If the user instead needs a structured audit, preflight, acceptance gate, or recheck across non-story artifacts, prefer `quality_gate_report`.
 
 ## Output Contract
 - A diagnosis that separates concept, structure, scene, and line-level problems.

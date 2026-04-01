@@ -1,0 +1,190 @@
+{
+  "version": 1,
+  "governance": {
+    "base_rule": "Run the target artifact's native rubric or closest contract gate first. Use the lens matrix as an adaptive overlay, not as a replacement for route-specific evaluation."
+  },
+  "lenses": {
+    "contract_fit": {
+      "question": "Does the artifact actually satisfy the requested contract, scope, and medium promise?",
+      "use_when": ["wrong-object risk", "underspecified artifact family", "preflight", "recheck"],
+      "common_hard_fail": ["contract breach", "scope drift", "wrong deliverable shape"]
+    },
+    "mechanics_pressure": {
+      "question": "Does the dramatic, persuasive, or interactive engine actually generate pressure and movement?",
+      "use_when": ["narrative development", "commercial message chain", "interactive choice structure"],
+      "common_hard_fail": ["no operative engine", "fake choice", "message without proof"]
+    },
+    "continuity_invariants": {
+      "question": "Do state, causality, continuity anchors, and non-drifting invariants still hold?",
+      "use_when": ["scene chains", "interactive systems", "screen-to-video bridges", "IP continuity"],
+      "common_hard_fail": ["state contradiction", "broken invariant", "unclear continuity carrier"]
+    },
+    "expression_integrity": {
+      "question": "Does the language, voice, register, and role expression feel correct for the artifact and its owners?",
+      "use_when": ["dialogue", "voice guide", "brand tone", "character/IP continuity"],
+      "common_hard_fail": ["same-voice drift", "writerly substitution", "brand or IP voice break"]
+    },
+    "operational_feasibility": {
+      "question": "Can the artifact actually be executed, generated, staged, played, or operated downstream without hidden failure?",
+      "use_when": ["screen_to_video", "interactive map", "commercial delivery", "team workflows", "project surfaces"],
+      "common_hard_fail": ["unexecutable action", "branch explosion", "runtime ambiguity", "handoff impossible in practice"]
+    },
+    "delivery_handoff": {
+      "question": "Is the artifact usable by the next human or tool, with clear packet, formatting, and checkpoint surfaces?",
+      "use_when": ["handoff-heavy pipelines", "team workflows", "subagent plans", "project surface maps", "delivery review"],
+      "common_hard_fail": ["missing handoff surface", "format prevents relay", "review/export surface collapsed into editable truth"]
+    },
+    "boundary_risk": {
+      "question": "Are hard boundaries, platform risks, rights issues, client limits, or release constraints being violated or hidden?",
+      "use_when": ["final acceptance", "brand/platform work", "sensitive adaptation", "high-risk delivery"],
+      "common_hard_fail": ["hard boundary breach", "client or platform veto risk", "rights-sensitive ambiguity"]
+    }
+  },
+  "scope_modes": {
+    "full_audit": {
+      "description": "Run the default bundle for the artifact family plus any explicitly requested risk lens."
+    },
+    "lens_targeted": {
+      "description": "Run only the named or inferred priority lenses plus contract_fit."
+    },
+    "range_limited": {
+      "description": "Audit a bounded region, scene subset, branch subset, or affected packet surface only."
+    },
+    "recheck": {
+      "description": "Re-run affected lenses after changes and add one adjacent lens for side-effect checking."
+    }
+  },
+  "bundles": [
+    {
+      "id": "bundle.narrative-development",
+      "target_outputs": ["logline", "premise", "synopsis", "treatment", "beat_sheet", "outline", "rewrite_report"],
+      "mediums": ["feature_film", "episodic", "short_drama", "animation"],
+      "required_lenses": ["contract_fit", "mechanics_pressure"],
+      "optional_lenses": ["continuity_invariants", "expression_integrity", "operational_feasibility", "boundary_risk"],
+      "default_weights": {
+        "contract_fit": 0.25,
+        "mechanics_pressure": 0.4,
+        "continuity_invariants": 0.15,
+        "expression_integrity": 0.1,
+        "operational_feasibility": 0.05,
+        "boundary_risk": 0.05
+      }
+    },
+    {
+      "id": "bundle.narrative-scene-dialogue",
+      "target_outputs": ["scene_card", "scene_draft", "dialogue_polish"],
+      "mediums": ["feature_film", "episodic", "short_drama", "animation"],
+      "required_lenses": ["contract_fit", "mechanics_pressure", "continuity_invariants"],
+      "optional_lenses": ["expression_integrity", "operational_feasibility", "boundary_risk"],
+      "default_weights": {
+        "contract_fit": 0.2,
+        "mechanics_pressure": 0.3,
+        "continuity_invariants": 0.2,
+        "expression_integrity": 0.2,
+        "operational_feasibility": 0.07,
+        "boundary_risk": 0.03
+      }
+    },
+    {
+      "id": "bundle.commercial-brand",
+      "target_outputs": ["commercial_script", "audience_fit_note", "development_brief"],
+      "mediums": ["commercial", "branded_film", "shortform_video"],
+      "required_lenses": ["contract_fit", "mechanics_pressure", "operational_feasibility"],
+      "optional_lenses": ["expression_integrity", "delivery_handoff", "boundary_risk"],
+      "default_weights": {
+        "contract_fit": 0.25,
+        "mechanics_pressure": 0.25,
+        "operational_feasibility": 0.2,
+        "expression_integrity": 0.1,
+        "delivery_handoff": 0.1,
+        "boundary_risk": 0.1
+      }
+    },
+    {
+      "id": "bundle.interactive",
+      "target_outputs": ["interactive_branch_map", "outline", "premise"],
+      "mediums": ["game_narrative", "branching_interactive"],
+      "required_lenses": ["contract_fit", "mechanics_pressure", "continuity_invariants", "operational_feasibility"],
+      "optional_lenses": ["delivery_handoff", "boundary_risk"],
+      "default_weights": {
+        "contract_fit": 0.2,
+        "mechanics_pressure": 0.25,
+        "continuity_invariants": 0.25,
+        "operational_feasibility": 0.2,
+        "delivery_handoff": 0.05,
+        "boundary_risk": 0.05
+      }
+    },
+    {
+      "id": "bundle.voice-expression",
+      "target_outputs": ["voice_style_guide", "dialogue_polish"],
+      "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
+      "required_lenses": ["contract_fit", "expression_integrity"],
+      "optional_lenses": ["continuity_invariants", "mechanics_pressure", "boundary_risk"],
+      "default_weights": {
+        "contract_fit": 0.25,
+        "expression_integrity": 0.45,
+        "continuity_invariants": 0.15,
+        "mechanics_pressure": 0.1,
+        "boundary_risk": 0.05
+      }
+    },
+    {
+      "id": "bundle.visual-language",
+      "target_outputs": ["visual_language_pack"],
+      "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video"],
+      "required_lenses": ["contract_fit", "expression_integrity", "delivery_handoff"],
+      "optional_lenses": ["operational_feasibility", "boundary_risk"],
+      "default_weights": {
+        "contract_fit": 0.25,
+        "expression_integrity": 0.3,
+        "delivery_handoff": 0.25,
+        "operational_feasibility": 0.15,
+        "boundary_risk": 0.05
+      }
+    },
+    {
+      "id": "bundle.screen-to-video",
+      "target_outputs": ["screen_to_video_brief"],
+      "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video"],
+      "required_lenses": ["contract_fit", "continuity_invariants", "operational_feasibility"],
+      "optional_lenses": ["delivery_handoff", "boundary_risk", "expression_integrity"],
+      "default_weights": {
+        "contract_fit": 0.25,
+        "continuity_invariants": 0.2,
+        "operational_feasibility": 0.3,
+        "delivery_handoff": 0.15,
+        "boundary_risk": 0.05,
+        "expression_integrity": 0.05
+      }
+    },
+    {
+      "id": "bundle.team-governance",
+      "target_outputs": ["team_workflow_blueprint", "expert_subagent_cast", "subagent_dispatch_plan"],
+      "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
+      "required_lenses": ["contract_fit", "operational_feasibility", "delivery_handoff"],
+      "optional_lenses": ["boundary_risk", "continuity_invariants"],
+      "default_weights": {
+        "contract_fit": 0.25,
+        "operational_feasibility": 0.25,
+        "delivery_handoff": 0.3,
+        "boundary_risk": 0.1,
+        "continuity_invariants": 0.1
+      }
+    },
+    {
+      "id": "bundle.project-surface",
+      "target_outputs": ["project_surface_map"],
+      "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
+      "required_lenses": ["contract_fit", "operational_feasibility", "delivery_handoff"],
+      "optional_lenses": ["continuity_invariants", "boundary_risk"],
+      "default_weights": {
+        "contract_fit": 0.25,
+        "operational_feasibility": 0.3,
+        "delivery_handoff": 0.3,
+        "continuity_invariants": 0.1,
+        "boundary_risk": 0.05
+      }
+    }
+  ]
+}

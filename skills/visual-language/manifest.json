@@ -1,0 +1,17 @@
+{
+  "id": "skill.visual-language",
+  "name": "visual-language",
+  "description": "Return multilingual visual language packs for screenplay-adjacent shot, lighting, action, and aesthetic communication.",
+  "entrypoint": "skills/visual-language/SKILL.md",
+  "supports": {
+    "intents": ["discover", "design", "adapt"],
+    "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
+    "stages": ["scene", "dialogue", "adaptation"],
+    "outputs": ["visual_language_pack"]
+  },
+  "protocol_id": "wp.visual-language-pack",
+  "rubric_ids": ["rb.visual-language-pack"],
+  "linked_atoms": ["ka.multilingual-visual-vocabulary", "ka.cultural-aesthetic-registers", "ka.prompt-delegation-levels", "ka.register-adaptation"],
+  "fallback_behavior": "If the user really needs a video-generation-ready bridge instead of a vocabulary pack, switch to the screen-to-video bridge route."
+}
+

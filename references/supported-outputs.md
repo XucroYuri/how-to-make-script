@@ -10,8 +10,21 @@
 - `scene_draft`: draft scene text or scene plan.
 - `dialogue_polish`: dialogue rewrite with subtext and voice checks.
 - `rewrite_report`: diagnostic report with failure modes and rewrite priorities.
+- `quality_gate_report`: adaptive audit report with selected quality lenses, hard fails, weighted weaknesses, correction ladder, and recheck scope.
 - `commercial_script`: ad / branded / shortform selling script.
 - `interactive_branch_map`: branching path structure with player choices and state consequences.
 - `audience_fit_note`: audience-segment note with need state, expected payoff, and fit risks.
 - `development_brief`: commissioning-aware strategy brief mapping creative direction to industry constraints.
 - `learning_path`: staged screenwriter development plan with milestones, practice loops, and feedback cadence.
+- `path_options`: contrasted creative routes with tradeoffs, fit notes, and convergence triggers.
+- `boundary_map`: explicit hard-boundary vs soft-constraint map with exploration and review zones.
+- `scope_correction`: narrowed claim note preserving the surviving core, failure context, and downstream update implications.
+- `pattern_reference_pack`: scenario-specific reference pack with strong synthetic sample, weak contrast, mechanism analysis, and non-dogma note.
+- `context_loading_plan`: bounded loading plan with route anchor, loading mode, expansion triggers, and stop conditions.
+- `voice_style_guide`: reusable expression guide with voice anchors, register guardrails, variability budget, and drift warnings.
+- `visual_language_pack`: task-specific multilingual visual-language guide with selected film terms, hybrid anchors, prompt-ready phrases, and misuse warnings.
+- `screen_to_video_brief`: bounded bridge brief that translates screenplay material into clip-scale visual execution constraints without replacing the screenplay.
+- `team_workflow_blueprint`: multi-agent or hybrid-team collaboration blueprint with mode selection, roles, handoffs, review cadence, and human gates.
+- `expert_subagent_cast`: bounded subagent roster with functional roles, process nodes, governed persona lenses, authority map, and trim order.
+- `subagent_dispatch_plan`: multi-level dispatch plan with topology, phase ladder, packet rules, context budgets, review loops, and collapse triggers.
+- `project_surface_map`: long-running project surface design showing canonical source, runtime state, packet assembly, phase entrypoints, review surfaces, export surfaces, and edit/sync rules.
