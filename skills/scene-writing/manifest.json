@@ -1,0 +1,16 @@
+{
+  "id": "skill.scene-writing",
+  "name": "scene-writing",
+  "description": "Draft or design scenes with clear function, conflict, and change.",
+  "entrypoint": "skills/scene-writing/SKILL.md",
+  "supports": {
+    "intents": ["draft"],
+    "mediums": ["feature_film", "episodic", "short_drama", "animation"],
+    "stages": ["scene"],
+    "outputs": ["scene_card", "scene_draft"]
+  },
+  "protocol_id": "wp.scene-writing",
+  "rubric_ids": ["rb.scene-draft"],
+  "linked_atoms": ["ka.scene-function", "ka.conflict-pressure", "ka.exposition-control"],
+  "fallback_behavior": "Merge, delete, or redesign the scene if it does not change the situation."
+}

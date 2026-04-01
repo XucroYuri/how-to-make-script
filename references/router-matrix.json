@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "routes": [
+    {
+      "intent": ["discover"],
+      "medium": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
+      "stage": ["ideation"],
+      "output": ["premise"],
+      "skill_id": "skill.idea-discovery",
+      "protocol_id": "wp.idea-discovery",
+      "rubric_id": "rb.logline"
+    },
+    {
+      "intent": ["design"],
+      "medium": ["game_narrative", "branching_interactive"],
+      "stage": ["premise"],
+      "output": ["premise"],
+      "skill_id": "skill.idea-discovery",
+      "protocol_id": "wp.idea-discovery",
+      "rubric_id": "rb.logline"
+    },
+    {
+      "intent": ["design", "draft"],
+      "medium": ["feature_film", "episodic", "short_drama", "animation"],
+      "stage": ["premise"],
+      "output": ["logline", "premise"],
+      "skill_id": "skill.logline-premise",
+      "protocol_id": "wp.logline-premise",
+      "rubric_id": "rb.logline"
+    },
+    {
+      "intent": ["design", "draft"],
+      "medium": ["feature_film", "episodic", "short_drama", "animation"],
+      "stage": ["character"],
+      "output": ["premise", "synopsis"],
+      "skill_id": "skill.character-world",
+      "protocol_id": "wp.character-world",
+      "rubric_id": "rb.outline"
+    },
+    {
+      "intent": ["design", "draft"],
+      "medium": ["feature_film", "episodic", "short_drama", "animation"],
+      "stage": ["structure", "outline"],
+      "output": ["beat_sheet", "outline", "treatment"],
+      "skill_id": "skill.structure-beat",
+      "protocol_id": "wp.structure-beat-outline",
+      "rubric_id": "rb.outline"
+    },
+    {
+      "intent": ["draft"],
+      "medium": ["feature_film", "episodic", "short_drama", "animation"],
+      "stage": ["scene"],
+      "output": ["scene_card", "scene_draft"],
+      "skill_id": "skill.scene-writing",
+      "protocol_id": "wp.scene-writing",
+      "rubric_id": "rb.scene-draft"
+    },
+    {
+      "intent": ["polish"],
+      "medium": ["feature_film", "episodic", "short_drama", "animation"],
+      "stage": ["dialogue"],
+      "output": ["dialogue_polish"],
+      "skill_id": "skill.dialogue-subtext",
+      "protocol_id": "wp.dialogue-polish",
+      "rubric_id": "rb.dialogue"
+    },
+    {
+      "intent": ["diagnose", "polish"],
+      "medium": ["feature_film", "episodic", "short_drama", "animation"],
+      "stage": ["rewrite"],
+      "output": ["rewrite_report"],
+      "skill_id": "skill.rewrite-doctor",
+      "protocol_id": "wp.rewrite-doctor",
+      "rubric_id": "rb.rewrite-report"
+    },
+    {
+      "intent": ["design", "draft", "polish"],
+      "medium": ["commercial", "branded_film", "shortform_video"],
+      "stage": ["premise", "structure", "outline", "scene", "rewrite"],
+      "output": ["commercial_script"],
+      "skill_id": "skill.commercial-script",
+      "protocol_id": "wp.commercial-script",
+      "rubric_id": "rb.commercial-script"
+    },
+    {
+      "intent": ["design", "draft", "adapt"],
+      "medium": ["game_narrative", "branching_interactive"],
+      "stage": ["structure", "outline", "adaptation"],
+      "output": ["interactive_branch_map"],
+      "skill_id": "skill.interactive-branching",
+      "protocol_id": "wp.interactive-branch-map",
+      "rubric_id": "rb.interactive-branch-map"
+    },
+    {
+      "intent": ["adapt"],
+      "medium": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
+      "stage": ["adaptation"],
+      "output": ["premise", "treatment", "outline", "scene_draft"],
+      "skill_id": "skill.genre-adaptation",
+      "protocol_id": "wp.genre-adaptation",
+      "rubric_id": "rb.outline"
+    },
+    {
+      "intent": ["discover", "design", "diagnose"],
+      "medium": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
+      "stage": ["premise", "structure", "rewrite", "adaptation"],
+      "output": ["audience_fit_note"],
+      "skill_id": "skill.audience-insight",
+      "protocol_id": "wp.audience-fit-note",
+      "rubric_id": "rb.audience-fit"
+    },
+    {
+      "intent": ["design", "adapt", "diagnose"],
+      "medium": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
+      "stage": ["premise", "structure", "outline", "rewrite", "adaptation"],
+      "output": ["development_brief"],
+      "skill_id": "skill.development-strategy",
+      "protocol_id": "wp.development-brief",
+      "rubric_id": "rb.development-brief"
+    },
+    {
+      "intent": ["discover", "design"],
+      "medium": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
+      "stage": ["ideation", "premise", "rewrite", "adaptation"],
+      "output": ["learning_path"],
+      "skill_id": "skill.writer-development",
+      "protocol_id": "wp.writer-development-path",
+      "rubric_id": "rb.learning-path"
+    }
+  ]
+}

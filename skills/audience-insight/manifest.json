@@ -1,0 +1,16 @@
+{
+  "id": "skill.audience-insight",
+  "name": "audience-insight",
+  "description": "Produce audience-fit notes that connect audience need state to script decisions.",
+  "entrypoint": "skills/audience-insight/SKILL.md",
+  "supports": {
+    "intents": ["discover", "design", "diagnose"],
+    "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
+    "stages": ["premise", "structure", "rewrite", "adaptation"],
+    "outputs": ["audience_fit_note"]
+  },
+  "protocol_id": "wp.audience-fit-note",
+  "rubric_ids": ["rb.audience-fit"],
+  "linked_atoms": ["ka.audience-need-state", "ka.platform-attention-economy", "ka.commissioning-fit"],
+  "fallback_behavior": "If the audience is underspecified, infer one primary segment and one adjacent segment, then report confidence and risk."
+}

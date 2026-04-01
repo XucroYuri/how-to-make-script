@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "title",
+    "applies_to",
+    "dimensions",
+    "scoring_bands",
+    "hard_fail_rules",
+    "rewrite_actions"
+  ],
+  "properties": {
+    "id": {"type": "string"},
+    "type": {"const": "evaluation_rubric"},
+    "title": {"type": "string"},
+    "applies_to": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "dimensions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "question"],
+        "properties": {
+          "name": {"type": "string"},
+          "question": {"type": "string"}
+        }
+      }
+    },
+    "scoring_bands": {
+      "type": "object",
+      "required": ["excellent", "workable", "weak"],
+      "properties": {
+        "excellent": {"type": "string"},
+        "workable": {"type": "string"},
+        "weak": {"type": "string"}
+      }
+    },
+    "hard_fail_rules": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "rewrite_actions": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+  }
+}
+

@@ -1,0 +1,16 @@
+{
+  "id": "skill.character-world",
+  "name": "character-world",
+  "description": "Turn character ideas and world rules into pressure-bearing development material.",
+  "entrypoint": "skills/character-world/SKILL.md",
+  "supports": {
+    "intents": ["design", "draft"],
+    "mediums": ["feature_film", "episodic", "short_drama", "animation"],
+    "stages": ["character"],
+    "outputs": ["premise", "synopsis"]
+  },
+  "protocol_id": "wp.character-world",
+  "rubric_ids": ["rb.outline"],
+  "linked_atoms": ["ka.character-arc", "ka.theme-pressure", "ka.exposition-control"],
+  "fallback_behavior": "Reduce the world to only the rules that create pressure on the protagonist."
+}

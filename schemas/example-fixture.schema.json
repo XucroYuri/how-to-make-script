@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "query",
+    "intent",
+    "medium",
+    "stage",
+    "output",
+    "constraints",
+    "expected_route",
+    "key_checks"
+  ],
+  "properties": {
+    "id": {"type": "string"},
+    "type": {"const": "example_fixture"},
+    "query": {"type": "string"},
+    "intent": {"type": "string"},
+    "medium": {"type": "string"},
+    "stage": {"type": "string"},
+    "output": {"type": "string"},
+    "constraints": {"type": "object"},
+    "expected_route": {
+      "type": "object",
+      "required": ["skill_id", "protocol_id", "rubric_id"],
+      "properties": {
+        "skill_id": {"type": "string"},
+        "protocol_id": {"type": "string"},
+        "rubric_id": {"type": "string"}
+      }
+    },
+    "key_checks": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+  }
+}
+

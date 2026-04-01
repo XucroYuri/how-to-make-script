@@ -1,0 +1,30 @@
+[
+  {
+    "label": "feature_logline",
+    "query": "把这个关于失忆救援队长的想法压成电影 logline。",
+    "expected_route": {
+      "skill_id": "skill.logline-premise",
+      "protocol_id": "wp.logline-premise",
+      "rubric_id": "rb.logline"
+    }
+  },
+  {
+    "label": "shortform_ad",
+    "query": "为一款新耳机写 15 秒竖屏广告脚本，突出降噪卖点。",
+    "expected_route": {
+      "skill_id": "skill.commercial-script",
+      "protocol_id": "wp.commercial-script",
+      "rubric_id": "rb.commercial-script"
+    }
+  },
+  {
+    "label": "branching_map",
+    "query": "把这个校园悬疑故事做成三分支互动地图。",
+    "expected_route": {
+      "skill_id": "skill.interactive-branching",
+      "protocol_id": "wp.interactive-branch-map",
+      "rubric_id": "rb.interactive-branch-map"
+    }
+  }
+]
+

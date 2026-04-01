@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "title",
+    "goal",
+    "input_contract",
+    "output_contract",
+    "preconditions",
+    "steps",
+    "fallbacks",
+    "stop_conditions",
+    "rubrics",
+    "linked_atoms"
+  ],
+  "properties": {
+    "id": {"type": "string"},
+    "type": {"const": "workflow_protocol"},
+    "title": {"type": "string"},
+    "goal": {"type": "string"},
+    "input_contract": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "output_contract": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "preconditions": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "steps": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "fallbacks": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "stop_conditions": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "rubrics": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "linked_atoms": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+  }
+}
+

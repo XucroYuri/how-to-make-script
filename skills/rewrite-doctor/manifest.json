@@ -1,0 +1,16 @@
+{
+  "id": "skill.rewrite-doctor",
+  "name": "rewrite-doctor",
+  "description": "Diagnose screenplay problems and prioritize rewrite actions by leverage.",
+  "entrypoint": "skills/rewrite-doctor/SKILL.md",
+  "supports": {
+    "intents": ["diagnose", "polish"],
+    "mediums": ["feature_film", "episodic", "short_drama", "animation"],
+    "stages": ["rewrite"],
+    "outputs": ["rewrite_report"]
+  },
+  "protocol_id": "wp.rewrite-doctor",
+  "rubric_ids": ["rb.rewrite-report"],
+  "linked_atoms": ["ka.rewrite-diagnosis", "ka.causality-chain", "ka.scene-function", "ka.dialogue-subtext"],
+  "fallback_behavior": "Report uncertainty and return only the highest-confidence risks if the sample is too small."
+}

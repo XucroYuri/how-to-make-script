@@ -1,0 +1,16 @@
+{
+  "id": "skill.genre-adaptation",
+  "name": "genre-adaptation",
+  "description": "Retune a story engine for a target genre or medium without breaking the core.",
+  "entrypoint": "skills/genre-adaptation/SKILL.md",
+  "supports": {
+    "intents": ["adapt"],
+    "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
+    "stages": ["adaptation"],
+    "outputs": ["premise", "treatment", "outline", "scene_draft"]
+  },
+  "protocol_id": "wp.genre-adaptation",
+  "rubric_ids": ["rb.outline"],
+  "linked_atoms": ["ka.genre-thriller", "ka.genre-romance", "ka.genre-comedy", "ka.medium-feature-film", "ka.medium-commercial", "ka.medium-branching-interactive"],
+  "fallback_behavior": "Reduce adaptation scope and preserve the core conflict first if the target promise breaks the engine."
+}

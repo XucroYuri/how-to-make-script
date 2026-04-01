@@ -1,0 +1,48 @@
+name: ci
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.11"]
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Validate assets
+        run: python scripts/validate_assets.py
+
+      - name: Check routes
+        run: python scripts/check_routes.py
+
+      - name: Check links
+        run: python scripts/check_links.py
+
+      - name: Check forbidden paths
+        run: python scripts/check_forbidden_paths.py
+
+      - name: Check question todos
+        run: python scripts/check_question_todos.py
+
+      - name: Run fixture suite
+        run: python scripts/run_fixture_suite.py
+
+      - name: Generate index
+        run: python scripts/generate_index.py > /dev/null

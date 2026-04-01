@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "title",
+    "kind",
+    "summary",
+    "mediums",
+    "stages",
+    "problem",
+    "decision_rules",
+    "anti_patterns",
+    "prompt_primitives",
+    "evaluation_checks",
+    "links",
+    "source_status"
+  ],
+  "properties": {
+    "id": {"type": "string"},
+    "type": {"const": "knowledge_atom"},
+    "title": {"type": "string"},
+    "kind": {"type": "string"},
+    "summary": {"type": "string"},
+    "mediums": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"]
+      }
+    },
+    "stages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"]
+      }
+    },
+    "problem": {"type": "string"},
+    "decision_rules": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "anti_patterns": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "prompt_primitives": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "evaluation_checks": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "links": {"type": "array", "items": {"type": "string"}},
+    "source_status": {"type": "string", "enum": ["synthesized", "derived", "curated"]}
+  }
+}
+

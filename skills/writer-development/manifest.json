@@ -1,0 +1,16 @@
+{
+  "id": "skill.writer-development",
+  "name": "writer-development",
+  "description": "Create screenwriter learning paths linked to concrete craft and production outcomes.",
+  "entrypoint": "skills/writer-development/SKILL.md",
+  "supports": {
+    "intents": ["discover", "design"],
+    "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
+    "stages": ["ideation", "premise", "rewrite", "adaptation"],
+    "outputs": ["learning_path"]
+  },
+  "protocol_id": "wp.writer-development-path",
+  "rubric_ids": ["rb.learning-path"],
+  "linked_atoms": ["ka.writer-development-loop", "ka.screenwriting-history-shift", "ka.audience-need-state"],
+  "fallback_behavior": "If writer maturity is unknown, start with a diagnostic sprint and branch into novice, intermediate, or advanced tracks."
+}

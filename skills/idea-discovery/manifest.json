@@ -1,0 +1,16 @@
+{
+  "id": "skill.idea-discovery",
+  "name": "idea-discovery",
+  "description": "Turn raw ideas into a workable script premise with clear pressure and stakes.",
+  "entrypoint": "skills/idea-discovery/SKILL.md",
+  "supports": {
+    "intents": ["discover", "design"],
+    "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
+    "stages": ["ideation", "premise"],
+    "outputs": ["premise"]
+  },
+  "protocol_id": "wp.idea-discovery",
+  "rubric_ids": ["rb.logline"],
+  "linked_atoms": ["ka.story-goal", "ka.conflict-pressure", "ka.theme-pressure"],
+  "fallback_behavior": "When medium is unclear, narrow the idea to one premise before branching into medium-specific development."
+}

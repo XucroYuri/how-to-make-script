@@ -1,0 +1,16 @@
+{
+  "id": "skill.structure-beat",
+  "name": "structure-beat",
+  "description": "Build beat sheets, outlines, and treatments with strong causality and escalation.",
+  "entrypoint": "skills/structure-beat/SKILL.md",
+  "supports": {
+    "intents": ["design", "draft"],
+    "mediums": ["feature_film", "episodic", "short_drama", "animation"],
+    "stages": ["structure", "outline"],
+    "outputs": ["beat_sheet", "outline", "treatment"]
+  },
+  "protocol_id": "wp.structure-beat-outline",
+  "rubric_ids": ["rb.outline"],
+  "linked_atoms": ["ka.story-goal", "ka.causality-chain", "ka.pacing-rhythm"],
+  "fallback_behavior": "Return to conflict escalation instead of adding filler events if the middle sags."
+}

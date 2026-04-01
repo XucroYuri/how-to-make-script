@@ -1,0 +1,16 @@
+{
+  "id": "skill.interactive-branching",
+  "name": "interactive-branching",
+  "description": "Design meaningful choices, state tracking, and convergence for interactive narrative.",
+  "entrypoint": "skills/interactive-branching/SKILL.md",
+  "supports": {
+    "intents": ["design", "draft", "adapt"],
+    "mediums": ["game_narrative", "branching_interactive"],
+    "stages": ["structure", "outline", "adaptation"],
+    "outputs": ["interactive_branch_map"]
+  },
+  "protocol_id": "wp.interactive-branch-map",
+  "rubric_ids": ["rb.interactive-branch-map"],
+  "linked_atoms": ["ka.medium-game-narrative", "ka.medium-branching-interactive", "ka.causality-chain", "ka.theme-pressure"],
+  "fallback_behavior": "Reduce branch count and increase state significance if branches multiply without meaning."
+}
