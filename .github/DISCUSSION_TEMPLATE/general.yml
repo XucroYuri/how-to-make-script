@@ -1,0 +1,45 @@
+title: "[Challenge] "
+labels:
+  - discussion-first
+  - type:challenge
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use General when you have a real disagreement, but the correct repository change is not scoped enough for an issue yet.
+
+        Strong, specific disagreement is high-value input here.
+  - type: input
+    id: target
+    attributes:
+      label: What are you challenging? / 你在挑战什么
+      placeholder: A claim, route, rubric, workflow, taxonomy branch, or maintainer assumption
+    validations:
+      required: true
+  - type: textarea
+    id: objection
+    attributes:
+      label: Strongest version of the objection / 最强版本的反驳
+      description: State the disagreement as clearly as possible.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Counterexample, evidence, or field intuition / 反例、证据或现场判断
+      description: One concrete case is better than a vague general complaint.
+    validations:
+      required: true
+  - type: textarea
+    id: likely_change
+    attributes:
+      label: If this is right, what might need to change? / 如果你是对的，仓库可能该改哪层
+      description: Asset, docs, governance, route, rubric, or simply scope.
+  - type: checkboxes
+    attributes:
+      label: Before posting / 发帖前确认
+      options:
+        - label: I am challenging the claim or output, not attacking a person.
+          required: true
+        - label: I included at least one example, failure context, or concrete scenario.
+          required: true

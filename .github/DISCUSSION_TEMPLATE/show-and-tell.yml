@@ -1,0 +1,57 @@
+title: "[Field Note] "
+labels:
+  - discussion-first
+  - type:field-report
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use Show and tell for real-world cases: writers' room stories, production constraints, commissioning feedback, audience response, or teaching outcomes.
+
+        We especially want concrete "we tried this and here is what happened" reports.
+  - type: dropdown
+    id: field_context
+    attributes:
+      label: Field context / 一线场景
+      options:
+        - Screenwriting practice / 编剧创作
+        - Writers' room / 编剧室
+        - Development or commissioning / 开发与委制
+        - Production / 制作
+        - Brand or commercial work / 品牌或商业内容
+        - Audience testing or release / 受众反馈或发行
+        - Teaching or training / 教学或训练
+        - Tooling or agent workflow / 工具或 Agent 工作流
+    validations:
+      required: true
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened? / 实际发生了什么
+      description: Describe the pattern, surprise, or failure mode.
+    validations:
+      required: true
+  - type: textarea
+    id: takeaway
+    attributes:
+      label: What should the repo learn from it? / 仓库应该学到什么
+      description: Which claim, route, rubric, or boundary might need to change?
+    validations:
+      required: true
+  - type: textarea
+    id: boundary
+    attributes:
+      label: Where does this apply, and where might it not? / 适用边界是什么
+  - type: input
+    id: artifact
+    attributes:
+      label: Optional supporting artifact / 可选补充材料
+      description: Link a public note, example, or discussion if useful.
+  - type: checkboxes
+    attributes:
+      label: Before posting / 发帖前确认
+      options:
+        - label: This comes from real use, observation, or practice rather than pure abstraction.
+          required: true
+        - label: I explained what repository lesson might be extracted from the report.
+          required: true

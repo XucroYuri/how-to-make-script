@@ -1,0 +1,67 @@
+name: Scope Correction / 范围修正
+description: Narrow an overbroad claim instead of treating it as fully right or fully wrong.
+title: "[Scope Correction]: "
+labels:
+  - needs-triage
+  - type:challenge
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form when a repository claim is directionally useful but scoped too broadly.
+
+        The goal is to preserve the useful core, name where it breaks, and narrow it into a more honest rule.
+  - type: input
+    id: target
+    attributes:
+      label: Challenged claim or file / 被挑战的说法或文件
+      description: Name the exact file, rule, route, or rubric statement.
+      placeholder: e.g. ka.story-goal, rb.outline, docs/epistemic-stance.md
+    validations:
+      required: true
+  - type: textarea
+    id: surviving_core
+    attributes:
+      label: What still survives / 还有什么核心仍然成立
+      description: Do not skip this. If nothing survives, say that explicitly.
+      placeholder: Which part is still useful under some conditions?
+    validations:
+      required: true
+  - type: textarea
+    id: failure_context
+    attributes:
+      label: Where it breaks / 它在什么条件下会坏
+      description: Use one concrete counterexample, medium, audience, platform, or production context.
+      placeholder: Explain the boundary condition that breaks the current claim.
+    validations:
+      required: true
+  - type: textarea
+    id: narrower_rule
+    attributes:
+      label: Proposed narrower rule / 建议缩窄成什么
+      description: Rewrite the claim with clearer scope if you can.
+      placeholder: In X conditions this holds; in Y conditions it fails.
+  - type: dropdown
+    id: downstream_change
+    attributes:
+      label: What else should change / 还应该连带改什么
+      options:
+        - docs only
+        - knowledge_atom
+        - workflow_protocol
+        - evaluation_rubric
+        - example_fixture
+        - multiple assets
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submit checks / 提交前确认
+      options:
+        - label: I identified the exact claim instead of describing the problem vaguely.
+          required: true
+        - label: I explained both what survives and what fails.
+          required: true
+        - label: I included at least one concrete context or counterexample.
+          required: true

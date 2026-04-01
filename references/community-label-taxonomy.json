@@ -1,0 +1,130 @@
+{
+  "labels": [
+    {
+      "name": "needs-triage",
+      "color": "d93f0b",
+      "description": "Needs initial maintainer classification",
+      "group": "queue"
+    },
+    {
+      "name": "type:challenge",
+      "color": "b60205",
+      "description": "Theory rebuttal or rule challenge",
+      "group": "type"
+    },
+    {
+      "name": "type:route",
+      "color": "1d76db",
+      "description": "Routing or output-contract failure",
+      "group": "type"
+    },
+    {
+      "name": "type:field-report",
+      "color": "0e8a16",
+      "description": "Professional field evidence from practice",
+      "group": "type"
+    },
+    {
+      "name": "type:learning",
+      "color": "5319e7",
+      "description": "Learning or onboarding friction",
+      "group": "type"
+    },
+    {
+      "name": "type:community",
+      "color": "fbca04",
+      "description": "Community process or governance change",
+      "group": "type"
+    },
+    {
+      "name": "status:needs-evidence",
+      "color": "e4e669",
+      "description": "Valid direction but more evidence required",
+      "group": "status"
+    },
+    {
+      "name": "status:reproducing",
+      "color": "c2e0c6",
+      "description": "Maintainers are reproducing or pressure-testing the report",
+      "group": "status"
+    },
+    {
+      "name": "status:routed",
+      "color": "bfdadc",
+      "description": "Feedback mapped to a target asset type",
+      "group": "status"
+    },
+    {
+      "name": "status:encoded",
+      "color": "1f883d",
+      "description": "Feedback has been absorbed into repository assets",
+      "group": "status"
+    },
+    {
+      "name": "status:deferred",
+      "color": "d4c5f9",
+      "description": "Valid but postponed due to scope or timing",
+      "group": "status"
+    },
+    {
+      "name": "kind:counterexample",
+      "color": "ff8182",
+      "description": "Concrete example that breaks a claim, route, or rubric",
+      "group": "kind"
+    },
+    {
+      "name": "kind:scope-correction",
+      "color": "f9d0c4",
+      "description": "Claim survives but needs narrower scope",
+      "group": "kind"
+    },
+    {
+      "name": "kind:boundary-mismatch",
+      "color": "c5def5",
+      "description": "Soft constraints and hard boundaries were confused",
+      "group": "kind"
+    },
+    {
+      "name": "kind:premature-convergence",
+      "color": "fef2c0",
+      "description": "Multiple viable paths were collapsed too early",
+      "group": "kind"
+    },
+    {
+      "name": "discussion-first",
+      "color": "bfd4f2",
+      "description": "Keep this in Discussions until the change is scoped enough for an issue",
+      "group": "routing"
+    },
+    {
+      "name": "needs-counterexample",
+      "color": "fbca04",
+      "description": "Actionable direction, but a concrete counterexample is still missing",
+      "group": "next-step"
+    },
+    {
+      "name": "needs-route-reproduction",
+      "color": "1d76db",
+      "description": "Need a more reproducible route-failure example before changing routing",
+      "group": "next-step"
+    },
+    {
+      "name": "needs-practitioner-input",
+      "color": "0e8a16",
+      "description": "Waiting for input from working screenwriters or adjacent professionals",
+      "group": "next-step"
+    },
+    {
+      "name": "needs-second-field-report",
+      "color": "5319e7",
+      "description": "One field report exists, but a second case would raise confidence",
+      "group": "next-step"
+    },
+    {
+      "name": "needs-maintainer-decision",
+      "color": "0052cc",
+      "description": "Requires repository-owner judgment on scope, policy, or trade-off",
+      "group": "next-step"
+    }
+  ]
+}

@@ -1,11 +1,20 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Questions and Open Interpretation / 问答与开放讨论
-    url: https://github.com/XucroYuri/how-to-make-script/discussions
-    about: Use Discussions for open-ended interpretation, brainstorming, or questions that are not yet concrete issues.
-  - name: Community Feedback Playbook / 社区反馈说明
-    url: https://github.com/XucroYuri/how-to-make-script/blob/main/docs/community-feedback-loop-zh.md
-    about: Read how this repository turns objections, counterexamples, and field reports into concrete assets.
+  - name: Q&A / 问答澄清
+    url: https://github.com/XucroYuri/how-to-make-script/discussions/categories/q-a
+    about: Ask clarifying questions about claims, routes, docs, or contribution paths before opening an issue.
+  - name: Open Challenge / 开放反驳
+    url: https://github.com/XucroYuri/how-to-make-script/discussions/categories/general
+    about: Start here when you have a broad disagreement, professional objection, or interpretation debate that is not issue-shaped yet.
+  - name: Rival Paths / 替代路径
+    url: https://github.com/XucroYuri/how-to-make-script/discussions/categories/ideas
+    about: Propose missing workflows, rival routes, or better community processes before turning them into scoped issues.
+  - name: Field Notes / 一线案例
+    url: https://github.com/XucroYuri/how-to-make-script/discussions/categories/show-and-tell
+    about: Share real-world writing, development, production, or audience cases that should inform the repository.
+  - name: Community Operations / 社区运营说明
+    url: https://github.com/XucroYuri/how-to-make-script/blob/main/docs/community-operations-zh.md
+    about: Read how the repository wants to turn questions, objections, and evidence into human-in-the-loop iteration.
   - name: Security or Abuse / 安全与滥用
     url: https://github.com/XucroYuri/how-to-make-script/security/advisories/new
     about: Use GitHub private vulnerability reporting for security issues. If the private form is not visible yet, do not file a public issue.

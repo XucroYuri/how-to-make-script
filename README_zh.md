@@ -1,158 +1,299 @@
-[English](./README.md)
+[English landing](./README.md)
+
+<p align="center">
+  <img src="./docs/assets/readme-hero.svg" alt="how-to-make-script hero" width="100%" />
+</p>
 
 # how-to-make-script
 
-`how-to-make-script` 是一个“研究库优先”的开源 Agent Skill Monorepo，用来把“如何创作剧本”这件事拆成可持续累积、可精确调用、可机器校验、可长期升级的知识资产系统。
+这不是提示词模板仓库，而是一套给编剧、策划、剧本医生、内容团队和 Agent builder 用的剧本研发基础设施。
 
-它同时面向两类对象：
-- 人类创作者：系统学习剧本创作知识、方法、判断规则、改稿逻辑；
-- LLM / Agent：在不同媒介、不同阶段、不同目标产物下调用最小必要知识包完成创作任务。
+它试图把“怎么写剧本”这件事拆成四层能长期积累的东西：
 
-当前版本额外加入了“现实世界 grounding”能力，避免产出只在纸面上成立，却和真实需求脱节。核心会显式考虑：
-- 受众细分与需求状态；
-- 行业委托场景与商业模型；
-- 平台分发与档期逻辑；
-- 编剧能力成熟度与训练路径；
-- 编剧实践的历史演进与当下约束。
+- 能持续沉淀的知识资产
+- 能解释为什么这样做的工作流协议
+- 能做预检、验收、复查的质量标准
+- 能按场景选路的 Agent Skill 能力层
 
-这不是把一堆“提示词模板”堆在一起的仓库。它更像一套剧本研发基础设施：上层是 skill 和协议，底层是可复用的知识原子、评估标准、路由规则和样例夹具。人来读，可以系统学习；Agent 来调，可以按契约拿料，不用每次从一大坨说明文里硬猜。
+`screenwriting` `agent skill` `workflow protocol` `quality gate` `human-in-the-loop`
 
-它也明确是一个 `human-in-the-loop` 项目：
-- 不把 issue 区当报错回收站，而把它当知识修正入口；
-- 不把质疑当添乱，而把高质量反驳当升级信号；
-- 不追求“大家都说好”，而追求“有人指出哪里不对、为什么不对、该怎么修”。
+[先看案例](#30-秒看懂它怎么工作) • [按角色找入口](#按你现在的角色开始) • [安装成-skill](#快速开始) • [去提反驳或问题](https://github.com/XucroYuri/how-to-make-script/discussions)
 
-## V1 的定位
+> 这个仓库不追求“唯一真理式剧本教学”。
+> 它更像一个开放的剧本研发底座：把创作、诊断、审查、协作、交付桥接都做成可调用、可争论、可升级的系统。
 
-V1 不先做 Web App，也不先做重型数据库，而是先把基础设施打稳：
-- 剧本创作知识本体与 taxonomy；
-- 高细粒度 `knowledge_atom`；
-- 可编排的 `workflow_protocol`；
-- 可自检的 `evaluation_rubric`；
-- 总控 skill 与薄编排子 skill；
-- 示例、fixture、校验脚本、测试与 CI。
+## 这个仓库能直接帮你做什么
 
-## 首批重点深挖
+- 把模糊点子压成 `logline`、`premise`、`beat_sheet`、`outline`、`scene_draft`、`commercial_script` 这类具体产物。
+- 在不同媒介和不同阶段下，给 Agent 一个更准确的协议、rubric 和最小知识包，而不是把整个仓库都塞进上下文。
+- 在多个可行方案之间做比较，避免一上来就被单一路径绑死。
+- 用 `rewrite_report`、`quality_gate_report`、`boundary_map`、`scope_correction` 去查问题、缩边界、做复查。
+- 把剧本继续桥接到角色声纹、品牌表达、多语种视觉语言和 screen-to-video brief。
+- 把 writers' room、多智能体协作、subagent 阵容、handoff 纪律做成显式设计，而不是“多开几个 agent 试试”。
 
-仓库整体 taxonomy 覆盖全谱系，但首轮高密度沉淀优先三大簇：
-- 叙事剧本
-- 商业 / 品牌脚本
-- 互动 / 分支叙事
+## 30 秒看懂它怎么工作
 
-对应的人类工作场景也很明确：
-- 编剧或策划先用它把 premise、人物关系、结构、场景功能、对白策略拆清楚；
-- 剧本医生用它定位概念病、结构病、场景病、对白病分别出在哪里；
-- Agent 用它根据 `intent x medium x stage x output x constraints` 走最短路径，而不是每次都重新“理解一下你想要什么”。
-- 当任务涉及市场定位、开发策略或编剧培养时，Agent 会额外调用现实维度镜头，不再只给纯 craft 建议。
-
-## 仓库结构
+**你给它的请求**
 
 ```text
-how-to-make-script/
-├── SKILL.md
-├── knowledge/
-├── schemas/
-├── skills/
-├── references/
-├── examples/
-├── scripts/
-└── tests/
+把这个想法做成电影 premise、beat sheet 和一场关键 scene draft：
+“一个多年逃避父亲死亡真相的女记者，被迫回到矿区家乡调查旧案。”
 ```
 
-## 四类一等资产
+**系统会做的事**
 
-- `knowledge_atom`：最小知识单元，表达单一理论、技巧、规则、失败模式或创作策略。
-- `workflow_protocol`：把知识单元编排成稳定工作流。
-- `evaluation_rubric`：把“好不好”变成可执行的质量判断。
-- `example_fixture`：把“理论可调用”变成“行为可验证”。
+- 先判断这是 narrative / feature / development + drafting 的组合问题
+- 再装配对应 protocol、rubric 和最小知识包
+- 最后产出 premise、beat、scene，并视需要追加 quality gate
 
-这四层的关系可以理解成：
-- `knowledge_atom` 负责回答“这里到底在讲哪一个专业判断点”；
-- `workflow_protocol` 负责回答“先做什么，再做什么”；
-- `evaluation_rubric` 负责回答“现在这版到底行不行、差在哪”；
-- `example_fixture` 负责回答“这套东西是不是能被稳定调用，而不是看心情发挥”。
+**产物片段**
 
-新加入的三类现实向目标产物：
-- `audience_fit_note`：受众匹配说明，回答“给谁看、为什么会看、哪里不匹配”；
-- `development_brief`：开发策略简报，回答“在什么行业语境里怎么推进最稳”；
-- `learning_path`：编剧成长路径，回答“当前能力到目标能力应该怎么练”。
+> 一名多年逃离矿区家乡的女记者，为了阻止矿难周年前被掩埋的真相再次沉没，不得不回到父亲死去的井口调查旧案，却在越接近真相时越发现自己当年选择沉默也参与了这场掩盖。
 
-## 中文内容怎么写
+完整示例入口：
 
-这个仓库的中文内容不是英文说明的逐句翻译版，而是偏向剧本专业人员阅读体验的版本。它会优先追求三件事：
-- 术语像行业里会说的话，不写翻译腔；
-- 解释落到创作动作上，不停留在空泛理念；
-- 复杂概念尽量说人话，但不牺牲专业判断力。
+- [golden request](./examples/golden/feature-drama/request.md)
+- [golden artifact](./examples/golden/feature-drama/artifact.md)
+- [quick route examples](./examples/agent/quickstart.json)
 
-如果你是编剧、策划、导演、文学策划、短剧开发、品牌内容负责人或剧本医生，中文正文应该更接近你实际会拿来讨论和返修的语言层级。
+## 它适合谁，不适合谁
 
-## 快速验证
+| 适合的人 | 你会得到什么 |
+| --- | --- |
+| 编剧 / 策划 / 剧本开发 | 不只是“写点东西”，而是可复用的开发和诊断结构 |
+| 剧本医生 / 审稿人 / 教学者 | 更明确的 failure mode、rubric 和对照参考 |
+| Agent builder / workflow designer | 显式路由、bounded loading、可复用 contract、可校验 registry |
+| 想做多智能体创作流程的人 | 团队模式、专家 cast、dispatch、handoff、surface 设计 |
 
-```bash
-python3 scripts/validate_assets.py
-python3 scripts/check_routes.py
-python3 scripts/check_forbidden_paths.py
-python3 scripts/check_question_todos.py
-python3 scripts/run_fixture_suite.py
-python3 -m unittest discover -s tests -v
-```
+| 不太适合的人 | 原因 |
+| --- | --- |
+| 只想要一条万能提示词的人 | 这个仓库更偏系统化资产，不偏捷径 |
+| 想找唯一标准答案的人 | 剧本创作不是稳定单解问题 |
+| 只想看一个成品 UI 的人 | 这是 repo-first 的知识系统，不是在线产品 |
 
-## 安装为 Skill
+## 它和普通剧本仓库最不一样的地方
 
-### Codex
+- `route-first`：不是靠关键词猜，而是按 `intent x medium x stage x output x constraints` 选路
+- `research-first`：知识沉淀在版本化资产里，而不是散在聊天记录里
+- `bounded-loading`：尽量只加载最小有效知识包，避免 context 腐化
+- `challenge-friendly`：反驳、反例、field report、专业质疑都被当成升级输入
+- `multi-surface`：不只管“写文本”，也管审查、协作、项目表面层和下游桥接
 
-在 `~/.codex/config.toml` 中加入：
+## 按你现在的角色开始
+
+### 如果你是编剧、策划或审稿人
+
+- 先看 [叙事参考包](./examples/reference-packs/narrative-pattern-pack.md)
+- 再看 [自适应质检](./docs/adaptive-quality-checking-zh.md)
+- 然后浏览 [支持的输出契约](./references/supported-outputs.md)
+
+### 如果你是 Agent / 工作流开发者
+
+- 先看 [架构说明](./docs/architecture.md)
+- 再看 [内容模型](./docs/content-model.md)
+- 然后看 [路由策略](./references/routing-policy.md) 和 [router matrix](./references/router-matrix.json)
+
+### 如果你想提问题、提反驳、改仓库
+
+- 先看 [社区运营策略](./docs/community-operations-zh.md)
+- 再看 [贡献说明](./CONTRIBUTING.md)
+- 然后去 [Discussions](https://github.com/XucroYuri/how-to-make-script/discussions) 选合适入口
+
+## 快速开始
+
+### 1. 先看真实例子
+
+- [feature drama golden request](./examples/golden/feature-drama/request.md)
+- [feature drama golden artifact](./examples/golden/feature-drama/artifact.md)
+- [叙事参考包](./examples/reference-packs/narrative-pattern-pack.md)
+- [商业参考包](./examples/reference-packs/commercial-pattern-pack.md)
+
+### 2. 安装成 Skill
+
+<details>
+<summary>Codex</summary>
 
 ```toml
 [[skills.config]]
 path = "/absolute/path/to/how-to-make-script"
 enabled = true
 ```
+</details>
 
-### Claude Code
+<details>
+<summary>Claude Code</summary>
 
 ```bash
 mkdir -p ~/.claude/skills
 ln -s /absolute/path/to/how-to-make-script ~/.claude/skills/how-to-make-script
 ```
+</details>
 
-### OpenCode
+<details>
+<summary>OpenCode</summary>
 
 ```bash
 mkdir -p ~/.config/opencode/skills
 ln -s /absolute/path/to/how-to-make-script ~/.config/opencode/skills/how-to-make-script
 ```
+</details>
 
-## 关键原则
-- 路由必须显式基于 `intent x medium x stage x output x constraints`。
-- 当现实维度会改变结论时，必须加载 audience / industry / history / writer-development / platform 相关镜头。
-- 子 skill 必须是薄编排层，不复制知识正文。
-- 已发布 ID 不可重命名，只能废弃或 supersede。
-- 新理论、新媒介、新案例优先采用追加式扩展。
-- `.obsidian/` 属于禁止进入 Git 的本地工作区状态，当前索引和历史都不允许包含它。
-- 英文层优先服务 Agent 调度与执行，中文层优先服务专业创作者阅读与判断。
+<details>
+<summary>Gemini CLI</summary>
 
-## 推荐先读
+按你的本地扩展机制把仓库挂进可识别的 skills 目录即可。
+</details>
+
+### 3. 本地校验仓库健康
+
+<details>
+<summary>运行校验命令</summary>
+
+```bash
+python3 scripts/validate_assets.py
+python3 scripts/check_routes.py
+python3 scripts/check_route_overlaps.py
+python3 scripts/check_subagent_registries.py
+python3 scripts/check_community_surfaces.py
+python3 scripts/check_links.py
+python3 scripts/check_forbidden_paths.py
+python3 scripts/check_question_todos.py
+python3 scripts/run_fixture_suite.py
+python3 -m unittest discover -s tests -v
+```
+</details>
+
+## 这个系统怎么跑起来
+
+```mermaid
+flowchart LR
+    A["用户请求"] --> B["路由<br/>intent × medium × stage × output × constraints"]
+    B --> C["最小知识包<br/>protocol + rubric + linked atoms"]
+    C --> D["生成目标产物"]
+    D --> E["审查层<br/>self-check / quality gate / recheck"]
+    E --> F["人类反馈<br/>issue / discussion / counterexample"]
+    F --> G["沉淀资产<br/>atom / protocol / rubric / fixture / docs"]
+    G --> B
+```
+
+## 仓库当前规模一眼看懂
+
+| 模块 | 当前规模 |
+| --- | --- |
+| 根 skill | [`SKILL.md`](./SKILL.md) 负责总控路由和加载纪律 |
+| 子 skill | [`skills/`](./skills) 下 `27` 个能力型目录 |
+| 知识资产 | [`knowledge/`](./knowledge) 下 `138` 份 Markdown |
+| 示例材料 | [`examples/`](./examples) 下 `22` 份示例 / fixture / reference pack |
+| 校验脚本 | [`scripts/`](./scripts) 下 `12` 个 Python 脚本 |
+| 测试模块 | [`tests/`](./tests) 下 `10` 个测试文件 |
+
+## 核心能力面
+
+### 创作与开发
+
+- 叙事剧本
+- 商业 / 品牌脚本
+- 互动 / 分支叙事
+- premise / beat / outline / scene / rewrite
+
+### 诊断与纠偏
+
+- 改稿诊断
+- 质量门槛与定向复查
+- route failure、boundary map、scope correction
+
+### 表达与下游桥接
+
+- 角色 / IP / 品牌表达校准
+- 多语种视觉语言
+- 剧本到视频执行桥接
+
+### 团队与系统
+
+- writers' room / multi-agent 蓝图
+- 专家 subagent cast
+- dispatch / handoff 设计
+- project surface 架构
+
+## 它靠什么保证质量
+
+- schema、registry、route、fixture 都有脚本校验
+- 会检查 route overlap，避免 skill 边界越来越糊
+- narrative / commercial / interactive 都有样例和 fixture
+- community surface 有专项检查，避免 issue / discussion 入口失效
+- `.obsidian/` 这类本地噪音被明确禁止进入 index 和历史
+- 人类反驳不是噪音，而是后续 rubric、fixture、scope correction 的来源
+
+## 按目标找文档
+
+### 面向编剧 / 策划
+
+- [场景图谱](./docs/scenario-atlas-zh.md)
+- [自适应质检架构](./docs/adaptive-quality-checking-zh.md)
+- [参考包目录](./examples/reference-packs)
+- [表达风格参考包](./examples/reference-packs/voice-pattern-pack.md)
+
+### 面向 Agent builder
+
 - [架构说明](./docs/architecture.md)
 - [内容模型](./docs/content-model.md)
-- [现实镜头说明](./docs/reality-lenses-zh.md)
-- [现实世界来源地图](./docs/source-map-real-world.md)
-- [社区反馈回路](./docs/community-feedback-loop-zh.md)
-- [社区分诊机制](./docs/community-triage-loop.md)
-- [路线图](./docs/roadmap.md)
-- [双语写作策略](./docs/bilingual-authoring.md)
-- [苏格拉底式问题总表](./docs/socratic-question-backlog.md)
-- [仓库治理](./docs/repository-hygiene.md)
-- [taxonomy 说明](./references/taxonomy.md)
-- [路由策略](./references/routing-policy.md)
+- [上下文加载策略](./docs/context-loading-policy-zh.md)
+- [项目表面层架构](./docs/project-surface-architecture-zh.md)
+- [多智能体剧本架构](./docs/multi-agent-screenplay-architecture-zh.md)
 
-## 社区协作方式
+### 面向贡献者
 
-如果你想真正帮助这个仓库变强，最有价值的往往不是一句“不错”，而是下面这些具体反馈：
-- “这个判断在真实项目里会失效。”
-- “这个 route 选错协议了。”
-- “这个 rubric 没抓到真正的专业失败点。”
-- “这个行业 / 受众假设已经过时或过宽。”
-- “这个学习路径看起来对，但实际教不会。”
+- [贡献说明](./CONTRIBUTING.md)
+- [社区运营策略](./docs/community-operations-zh.md)
+- [支持入口梯度](./SUPPORT.md)
+- [Roadmap](./docs/roadmap.md)
+- [Changelog](./CHANGELOG.md)
 
-欢迎你直接开 issue 来反驳、举反例、给一线经验、指出漏判。这个项目希望把这种质疑变成默认协作方式，而不是例外。
+## 社区协作
+
+这个项目希望形成的不是“点赞型社区”，而是“高质量反驳型社区”。
+
+优先使用合适入口：
+
+- [Discussions](https://github.com/XucroYuri/how-to-make-script/discussions)：问题澄清、开放反驳、替代路径、field note
+- [Issue Forms](./.github/ISSUE_TEMPLATE)：已经能指出具体文件、具体 claim、具体 route、具体 rubric 的情况
+- [Support](./SUPPORT.md)：看支持入口梯度
+- [Security](./SECURITY.md)：处理私密安全问题
+
+适合先做的第一批贡献：
+
+- 挑一条你觉得过宽的判断，指出它在哪种场景会失效
+- 补一个真实案例或反例，让某条 guidance 需要缩边界
+- 改一个示例、一个 rubric 解释、一个文档入口
+- 复现一次 route mismatch，并把它沉淀成 fixture
+
+## 当前状态
+
+这个仓库已经不是空骨架，而是一套可工作的 research-first screenplay monorepo。
+
+当前重点覆盖：
+
+- narrative / commercial / interactive
+- voice / visual-language / screen-to-video
+- team orchestration / subagent casting / dispatch / project surface
+- adaptive quality gating / human-in-the-loop 社区反馈
+
+下一阶段最重要的方向：
+
+- 在现有 knowledge + routing + review 层之上，继续往更强的 runtime planning / live execution 推进
+
+## 仓库标准与元信息
+
+- [Contributing](./CONTRIBUTING.md)
+- [Code of Conduct](./CODE_OF_CONDUCT.md)
+- [Support](./SUPPORT.md)
+- [Security](./SECURITY.md)
+- [Citation](./CITATION.cff)
+- [License](./LICENSE)
+
+## 为什么值得 Star / Watch
+
+如果这个仓库对你有用，Star 或 Watch 不只是支持表达，它会直接带来两件实际价值：
+
+- 让更多编剧、研究者、Agent builder 发现这套系统
+- 让更多反例、实战案例、专业质疑进入仓库，推动知识体系升级

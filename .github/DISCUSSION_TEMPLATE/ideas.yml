@@ -1,0 +1,56 @@
+title: "[Rival Path] "
+labels:
+  - discussion-first
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use Ideas for missing workflows, rival paths, new media families, community-process improvements, or any expansion that is still being shaped.
+
+        This is the place for "the repo is missing a path" before the path is fully specified.
+  - type: dropdown
+    id: idea_type
+    attributes:
+      label: Idea type / 想法类型
+      options:
+        - Missing workflow / 缺失 workflow
+        - Missing medium or genre path / 缺失媒介或类型路径
+        - Better route or loading rule / 更好的路由或加载规则
+        - Better community process / 更好的社区流程
+        - Better rubric or fixture strategy / 更好的 rubric 或 fixture 策略
+        - Better team or human-in-the-loop mode / 更好的团队协作或 human-in-the-loop 方式
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is missing or weak? / 现在缺了什么或哪里太弱
+    validations:
+      required: true
+  - type: textarea
+    id: alternative
+    attributes:
+      label: Proposed path / 你建议的替代路径
+      description: Explain the new path or structure in plain language.
+    validations:
+      required: true
+  - type: textarea
+    id: why_better
+    attributes:
+      label: Why is this path better? / 为什么这条路更好
+      description: Focus on what failure, blind spot, or hidden assumption it fixes.
+    validations:
+      required: true
+  - type: textarea
+    id: smallest_next_step
+    attributes:
+      label: Smallest next step / 最小下一步
+      description: One experiment, doc, fixture, or asset that would pressure-test the idea.
+  - type: checkboxes
+    attributes:
+      label: Before posting / 发帖前确认
+      options:
+        - label: I am proposing an alternative path, not only saying "this feels wrong."
+          required: true
+        - label: This is still exploratory enough that a Discussion is the right starting surface.
+          required: true

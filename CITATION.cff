@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: how-to-make-script
+message: If you use this repository in research, teaching, or tooling, please cite it using the metadata below.
+type: software
+version: 0.1.0
+date-released: 2026-04-01
+authors:
+  - family-names: XucroYuri
+repository-code: https://github.com/XucroYuri/how-to-make-script
+url: https://github.com/XucroYuri/how-to-make-script
+license: MIT
+abstract: Research-first screenplay knowledge system and agent skill monorepo for writing, diagnosing, reviewing, and orchestrating scripts across film, TV, ads, and interactive narrative.
+keywords:
+  - screenwriting
+  - screenplay
+  - storytelling
+  - ai-agents
+  - multi-agent-systems

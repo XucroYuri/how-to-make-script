@@ -17,5 +17,13 @@ classifiers = [
   "Topic :: Text Processing :: Markup :: Markdown"
 ]
 
+[project.urls]
+Homepage = "https://github.com/XucroYuri/how-to-make-script"
+Documentation = "https://github.com/XucroYuri/how-to-make-script#readme"
+Repository = "https://github.com/XucroYuri/how-to-make-script"
+Issues = "https://github.com/XucroYuri/how-to-make-script/issues"
+Discussions = "https://github.com/XucroYuri/how-to-make-script/discussions"
+Changelog = "https://github.com/XucroYuri/how-to-make-script/blob/main/CHANGELOG.md"
+
 [tool.unittest]
 test_dir = "tests"

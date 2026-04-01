@@ -28,6 +28,7 @@ body:
         - Too broad / 过宽
         - Too narrow / 过窄
         - Missing boundary / 缺少边界
+        - Needs scope correction / 需要范围修正
         - Missing counterexample / 缺少反例
         - Outdated assumption / 假设过时
     validations:

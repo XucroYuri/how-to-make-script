@@ -19,4 +19,4 @@
 Project maintainers may edit, remove, or reject contributions that violate this code of conduct. Repeated or severe violations may lead to a temporary or permanent ban from project spaces.
 
 ## Reporting
-Report issues privately through the process in [SECURITY.md](SECURITY.md) when safety or abuse is involved. For community conduct issues, open a confidential maintainer contact request through the repository issue tracker or email alias documented in the repository settings.
+Report issues privately through the process in [SECURITY.md](SECURITY.md) when safety or abuse is involved. For community conduct issues that should not live in a public thread, follow the routing in [SUPPORT.md](SUPPORT.md) and request private maintainer follow-up without posting sensitive details.

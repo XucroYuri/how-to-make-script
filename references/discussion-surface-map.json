@@ -1,0 +1,53 @@
+{
+  "base_url": "https://github.com/XucroYuri/how-to-make-script/discussions/categories",
+  "categories": [
+    {
+      "slug": "q-a",
+      "name": "Q&A",
+      "purpose": "Questions and clarification before the repo change is concrete",
+      "form_expected": true,
+      "contact_link_expected": true,
+      "answerable": true
+    },
+    {
+      "slug": "general",
+      "name": "General",
+      "purpose": "Open challenge, disagreement, and interpretive debate",
+      "form_expected": true,
+      "contact_link_expected": true,
+      "answerable": false
+    },
+    {
+      "slug": "ideas",
+      "name": "Ideas",
+      "purpose": "Rival paths, missing workflows, and proposed expansions",
+      "form_expected": true,
+      "contact_link_expected": true,
+      "answerable": false
+    },
+    {
+      "slug": "show-and-tell",
+      "name": "Show and tell",
+      "purpose": "Field notes, case studies, usage reports, and demonstrations",
+      "form_expected": true,
+      "contact_link_expected": true,
+      "answerable": false
+    },
+    {
+      "slug": "polls",
+      "name": "Polls",
+      "purpose": "Gauge community preference when multiple viable paths exist",
+      "form_expected": false,
+      "contact_link_expected": false,
+      "answerable": false
+    },
+    {
+      "slug": "announcements",
+      "name": "Announcements",
+      "purpose": "Maintainer summaries, process updates, and pinned invitations to participate",
+      "form_expected": false,
+      "contact_link_expected": false,
+      "answerable": false
+    }
+  ]
+}

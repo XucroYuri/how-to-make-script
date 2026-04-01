@@ -1,0 +1,50 @@
+title: "[Q&A] "
+labels:
+  - discussion-first
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use Q&A when you are still trying to understand a claim, route, or asset before turning it into an issue.
+
+        Questions are welcome here, especially if they help expose ambiguity, hidden assumptions, or missing documentation.
+  - type: dropdown
+    id: question_type
+    attributes:
+      label: What kind of question is this? / 这是什么问题
+      options:
+        - Understanding a claim or theory / 理解某条理论或判断
+        - Choosing the right route or output / 判断应该走哪条 route
+        - Understanding an asset or document / 搞清楚某个资产或文档
+        - Learning order or training path / 学习顺序或训练路径
+        - Community process or contribution path / 社区流程或参与方式
+    validations:
+      required: true
+  - type: input
+    id: target
+    attributes:
+      label: What file, claim, or route are you looking at? / 你在看哪条说法或哪个文件
+      placeholder: e.g. ka.character-voice-consistency, README community loop, route to voice_style_guide
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question / 你的问题
+      description: Ask the sharpest version of the question.
+      placeholder: What is unclear, contradictory, or hard to apply?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: What context led you here? / 你是在什么场景下遇到这个问题
+      description: Learning, writing, production, tooling, review, etc.
+  - type: checkboxes
+    attributes:
+      label: Before posting / 发帖前确认
+      options:
+        - label: I searched the README, CONTRIBUTING guide, and relevant docs first.
+          required: true
+        - label: I am still clarifying the problem, so a Discussion is more suitable than an Issue right now.
+          required: true
