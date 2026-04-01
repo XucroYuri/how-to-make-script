@@ -6,6 +6,9 @@
   "goal": "输出一份 story_memory_checkpoint，把当前故事推进所需的最小状态压缩成可续写、可交接、可检查的 continuity-safe 包，而不是重新搬运全文。",
   "input_contract": ["current draft span or outline span", "medium", "current phase", "active continuity concerns", "handoff or resume reason", "constraints"],
   "output_contract": ["story_memory_checkpoint"],
+  "budget_class": "M",
+  "mandatory_atom_count": 5,
+  "expansion_allowed": true,
   "preconditions": [
     "任务具有长篇、分集、多轮改稿、多协作者或跨会话继续写作的压力",
     "至少能识别一个当前阶段边界、handoff 场景或恢复写作场景"
