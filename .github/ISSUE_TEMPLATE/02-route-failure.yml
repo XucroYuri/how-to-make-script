@@ -1,0 +1,61 @@
+name: Route Failure / 路由失败
+description: Report when the repository or skill system chooses the wrong protocol, output contract, or constraint interpretation.
+title: "[Route Failure]: "
+labels:
+  - needs-triage
+  - type:route
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when a request was routed incorrectly, the output contract was wrong, or the loaded context missed the real task.
+  - type: input
+    id: request
+    attributes:
+      label: Original request / 原始请求
+      placeholder: Paste the request or summarize it precisely.
+    validations:
+      required: true
+  - type: input
+    id: observed_route
+    attributes:
+      label: Observed route / 实际走到的 route
+      placeholder: e.g. skill.logline-premise + wp.logline-premise + rb.logline
+    validations:
+      required: true
+  - type: input
+    id: expected_route
+    attributes:
+      label: Expected route / 你认为应该走的 route
+      placeholder: e.g. skill.audience-insight + wp.audience-fit-note + rb.audience-fit
+    validations:
+      required: true
+  - type: textarea
+    id: why_wrong
+    attributes:
+      label: Why this route is wrong / 为什么这个路由是错的
+      description: Explain the mismatch between task intent and selected protocol/output.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction details / 复现细节
+      description: Include constraints that mattered.
+      placeholder: medium, stage, output, audience, platform, business model, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: fixture_idea
+    attributes:
+      label: Suggested fixture or regression test / 建议补什么 fixture
+      description: If possible, suggest a new fixture shape.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submit checks / 提交前确认
+      options:
+        - label: I included both the observed and expected route.
+          required: true
+        - label: I explained which constraint should have changed the route.
+          required: true

@@ -1,0 +1,58 @@
+name: Learning Friction / 学习与使用摩擦
+description: Report where the repository sounds correct but fails to teach, onboard, or guide real users.
+title: "[Learning Friction]: "
+labels:
+  - needs-triage
+  - type:learning
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when the repository is theoretically strong but practically hard to learn, apply, or teach from.
+  - type: dropdown
+    id: user_type
+    attributes:
+      label: Who experienced the friction? / 谁遇到了这个摩擦
+      options:
+        - novice writer
+        - intermediate writer
+        - professional screenwriter
+        - teacher or mentor
+        - agent or tool builder
+        - other
+    validations:
+      required: true
+  - type: input
+    id: touchpoint
+    attributes:
+      label: Where did the friction happen? / 摩擦发生在哪
+      placeholder: e.g. README, wp.character-world, routing policy, question backlog
+    validations:
+      required: true
+  - type: textarea
+    id: friction
+    attributes:
+      label: What was hard or unclear? / 到底哪里卡住了
+      description: Describe the actual breakdown, not just “too complex.”
+    validations:
+      required: true
+  - type: textarea
+    id: consequence
+    attributes:
+      label: What bad outcome did it create? / 造成了什么后果
+      placeholder: Wrong asset added, abandoned workflow, misunderstood theory, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: suggested_improvement
+    attributes:
+      label: What would have helped? / 你希望怎样改会更有用
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submit checks / 提交前确认
+      options:
+        - label: I described a real friction point, not only a preference.
+          required: true
+        - label: I explained the concrete consequence of the friction.
+          required: true

@@ -1,0 +1,64 @@
+name: Field Evidence / 一线现场反馈
+description: Add professional evidence from real writing, development, production, platform, brand, or audience work.
+title: "[Field Evidence]: "
+labels:
+  - needs-triage
+  - type:field-report
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form when you have real-world evidence that should sharpen, challenge, or qualify the repository.
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Evidence domain / 反馈领域
+      options:
+        - screenwriting training / 编剧训练
+        - development or commissioning / 开发与委制
+        - production / 制作
+        - brand or commercial / 品牌与商业内容
+        - audience behavior / 受众行为
+        - platform distribution / 平台分发
+        - writers' room / 编剧室
+        - interactive narrative / 互动叙事
+    validations:
+      required: true
+  - type: textarea
+    id: observation
+    attributes:
+      label: What happened in practice? / 现场实际发生了什么
+      description: Describe the pattern, failure, or lesson.
+    validations:
+      required: true
+  - type: textarea
+    id: implication
+    attributes:
+      label: What repository claim should this affect? / 这应该影响仓库的哪个判断
+      description: Name the asset, rule, or route if you can.
+    validations:
+      required: true
+  - type: textarea
+    id: boundary
+    attributes:
+      label: Scope and boundary / 适用范围与边界
+      description: Where does this evidence apply, and where might it not apply?
+  - type: dropdown
+    id: confidence
+    attributes:
+      label: Confidence / 置信度
+      options:
+        - high
+        - medium
+        - low
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submit checks / 提交前确认
+      options:
+        - label: This comes from real practice, not only abstract opinion.
+          required: true
+        - label: I explained what claim, route, or rubric this should change.
+          required: true

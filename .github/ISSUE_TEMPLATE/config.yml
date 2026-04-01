@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and Open Interpretation / 问答与开放讨论
+    url: https://github.com/XucroYuri/how-to-make-script/discussions
+    about: Use Discussions for open-ended interpretation, brainstorming, or questions that are not yet concrete issues.
+  - name: Community Feedback Playbook / 社区反馈说明
+    url: https://github.com/XucroYuri/how-to-make-script/blob/main/docs/community-feedback-loop-zh.md
+    about: Read how this repository turns objections, counterexamples, and field reports into concrete assets.
+  - name: Security or Abuse / 安全与滥用
+    url: https://github.com/XucroYuri/how-to-make-script/security/policy
+    about: Report security issues, abuse, or unsafe behavior through the security channel, not public issues.

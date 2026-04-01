@@ -1,0 +1,53 @@
+name: Community Process / 社区流程改进
+description: Improve how the repository handles feedback, triage, review, and human-in-the-loop collaboration.
+title: "[Community Process]: "
+labels:
+  - needs-triage
+  - type:community
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for suggestions about issue handling, review norms, triage flow, governance, or feedback culture.
+  - type: dropdown
+    id: process_area
+    attributes:
+      label: Process area / 流程范围
+      options:
+        - issue intake
+        - triage
+        - review norms
+        - governance
+        - contributor onboarding
+        - evidence standards
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: current_problem
+    attributes:
+      label: Current problem / 目前的问题
+      description: Describe the process failure clearly.
+    validations:
+      required: true
+  - type: textarea
+    id: desired_change
+    attributes:
+      label: Desired change / 你希望改成什么
+      description: Explain what behavior the repository should encourage instead.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Why this will help / 为什么这样会更好
+      description: Include examples from other communities or this repository if possible.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submit checks / 提交前确认
+      options:
+        - label: This is about process or governance, not a regular content bug.
+          required: true
+        - label: I described the behavior the project should encourage.
+          required: true

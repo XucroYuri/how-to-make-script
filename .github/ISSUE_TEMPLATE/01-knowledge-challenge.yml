@@ -1,0 +1,79 @@
+name: Knowledge Challenge / 知识挑战
+description: Challenge a claim, theory, rubric, or knowledge boundary in the repository.
+title: "[Challenge]: "
+labels:
+  - needs-triage
+  - type:challenge
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form when you think the repository is wrong, too broad, too weak, too naive, or missing an important boundary.
+
+        The goal is not politeness theater. The goal is a precise challenge that can improve the repo.
+  - type: input
+    id: target
+    attributes:
+      label: What exactly are you challenging? / 你在挑战什么
+      description: Name the file, claim, route, rubric, or rule.
+      placeholder: e.g. rb.logline hard-fail rule, ka.story-goal, docs/reality-lenses.md
+    validations:
+      required: true
+  - type: dropdown
+    id: challenge_type
+    attributes:
+      label: Challenge type / 质疑类型
+      options:
+        - Wrong in practice / 在实践中错误
+        - Too broad / 过宽
+        - Too narrow / 过窄
+        - Missing boundary / 缺少边界
+        - Missing counterexample / 缺少反例
+        - Outdated assumption / 假设过时
+    validations:
+      required: true
+  - type: textarea
+    id: objection
+    attributes:
+      label: Your objection / 你的反驳
+      description: State the strongest version of the disagreement.
+      placeholder: Explain why the current claim breaks.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or counterexample / 证据或反例
+      description: Use project examples, production cases, audience behavior, or source links.
+      placeholder: One concrete example is better than ten vague opinions.
+    validations:
+      required: true
+  - type: dropdown
+    id: asset_target
+    attributes:
+      label: What should change if you are right? / 如果你是对的，应该改哪层
+      options:
+        - knowledge_atom
+        - workflow_protocol
+        - evaluation_rubric
+        - example_fixture
+        - docs
+        - governance
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_fix
+    attributes:
+      label: Proposed correction / 你建议怎么修
+      description: Narrow the change if you can.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submit checks / 提交前确认
+      options:
+        - label: I identified the exact claim or file I am challenging.
+          required: true
+        - label: I included at least one concrete example, field case, or source.
+          required: true
+        - label: I am challenging the idea or output, not attacking a person.
+          required: true
