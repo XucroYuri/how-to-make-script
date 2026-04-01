@@ -71,7 +71,7 @@
 - 除非用户明确要更广的 survey，否则最多再加一个相邻比较包。
 - 写作类问题优先采用“一个强例子 + 一个弱对照”，不要用很多相似例子堆量。
 - 处理边界问题时，优先用 `boundary_map` 或 `scope_correction`，不要先去加载一大堆通用 craft 文档。
-- 处理场景问题时，优先看 [`docs/scenario-atlas.md`](../docs/scenario-atlas.md) 和 [`references/scenario-taxonomy.json`](../references/scenario-taxonomy.json)，再决定要不要继续加样本。
+- 处理场景问题时，优先看 [`docs/scenario-atlas-zh.md`](../docs/scenario-atlas-zh.md) 和 [`references/scenario-taxonomy.json`](../references/scenario-taxonomy.json)，再决定要不要继续加样本。
 - 处理受众 / 策略问题时，先加载现实镜头，再考虑扩展到更广的 craft。
 - 处理角色声纹 / 语言风格问题时，先加载最小表达镜头，不要直接上大包参考样本。
 - 处理协作机制问题时，先加载最小 team-mode bundle，不要直接把多智能体框架比较全塞进来。
