@@ -15,6 +15,20 @@ from scripts.lib import repo_root
 
 FORBIDDEN_PATTERNS = [
     ".obsidian/",
+    ".omx/",
+    ".codex/",
+    ".claude/",
+    ".claude-code/",
+    ".opencode/",
+    ".openclaw/",
+    ".gemini/",
+    ".gemini-cli/",
+    ".aider/",
+    ".cursor/",
+    ".continue/",
+    ".roo/",
+    ".windsurf/",
+    ".avante/",
 ]
 
 
@@ -53,9 +67,11 @@ def check_forbidden_paths(root: Path) -> Dict[str, Any]:
                 )
 
     ignored = git_lines(root, "status", "--short", "--ignored")
-    for line in ignored:
-        if line.startswith("!! ") and line[3:].strip().startswith(".obsidian"):
-            warnings.append(".obsidian/ is present locally but ignored, which is expected")
+    ignored_paths = [line[3:].strip().replace("\\", "/") for line in ignored if line.startswith("!! ")]
+    for pattern in FORBIDDEN_PATTERNS:
+        prefix = pattern.rstrip("/")
+        if any(path == prefix or path.startswith(pattern) for path in ignored_paths):
+            warnings.append(f"{pattern} is present locally but ignored, which is expected")
 
     return {
         "errors": errors,
@@ -75,4 +91,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

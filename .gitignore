@@ -1,6 +1,21 @@
 .DS_Store
+
+# Local editor / agent workspace state
 .obsidian/
 .omx/
+.codex/
+.claude/
+.claude-code/
+.opencode/
+.openclaw/
+.gemini/
+.gemini-cli/
+.aider/
+.cursor/
+.continue/
+.roo/
+.windsurf/
+.avante/
 __pycache__/
 *.py[cod]
 *.egg-info/

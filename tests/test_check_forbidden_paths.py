@@ -12,8 +12,10 @@ class CheckForbiddenPathsTest(unittest.TestCase):
         report = check_forbidden_paths(ROOT)
         self.assertFalse(report["errors"], report["errors"])
         self.assertIn(".obsidian/", report["forbidden_patterns"])
+        self.assertIn(".omx/", report["forbidden_patterns"])
+        self.assertIn(".codex/", report["forbidden_patterns"])
+        self.assertIn(".claude/", report["forbidden_patterns"])
 
 
 if __name__ == "__main__":
     unittest.main()
-
