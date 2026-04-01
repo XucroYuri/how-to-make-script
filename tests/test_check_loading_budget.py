@@ -7,7 +7,7 @@ class CheckLoadingBudgetTest(unittest.TestCase):
     def test_loading_budgets_declared(self):
         report = check_loading_budget(Path(__file__).resolve().parents[1])
         self.assertEqual(report["errors"], [])
-        self.assertEqual(report["protocol_count"], 26)
+        self.assertEqual(report["protocol_count"], 28)
 
         # Budget distribution should cover S, M, L
         dist = report["budget_distribution"]

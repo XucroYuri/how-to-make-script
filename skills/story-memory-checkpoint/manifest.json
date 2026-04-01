@@ -11,6 +11,9 @@
   },
   "protocol_id": "wp.story-memory-checkpoint",
   "rubric_ids": ["rb.story-memory-checkpoint"],
+  "default_loading_mode": "focus_pack",
   "linked_atoms": ["ka.story-memory-checkpoint", "ka.dual-track-rhythm", "ka.serial-arc-budgeting", "ka.room-artifact-ladder", "ka.script-as-coordination-artifact"],
+  "adjunct_bundles": {},
+  "fallback_to_skill_id": null,
   "fallback_behavior": "If the user actually needs project surface design, return project_surface_map; if the real need is bundle control, return context_loading_plan."
 }
