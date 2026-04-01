@@ -88,9 +88,9 @@
 
 ## 相关文档
 
-- [社区 triage 循环](./community-triage-loop.md)
+- [社区 triage 循环](./community-triage-loop-zh.md)
 - [社区运营策略](./community-operations-zh.md)
 - [苏格拉底式问题总表](./socratic-question-backlog.md)
-- [内容模型](./content-model.md)
+- [内容模型](./content-model-zh.md)
 - [认识论姿态](./epistemic-stance-zh.md)
 - [Community Feedback Loop](./community-feedback-loop.md)

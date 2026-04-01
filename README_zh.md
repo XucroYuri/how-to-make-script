@@ -89,8 +89,8 @@
 
 ### 如果你是 Agent / 工作流开发者
 
-- 先看 [架构说明](./docs/architecture.md)
-- 再看 [内容模型](./docs/content-model.md)
+- 先看 [架构说明](./docs/architecture-zh.md)
+- 再看 [内容模型](./docs/content-model-zh.md)
 - 然后看 [路由策略](./references/routing-policy.md) 和 [router matrix](./references/router-matrix.json)
 
 ### 如果你想提问题、提反驳、改仓库
@@ -235,8 +235,8 @@ flowchart LR
 
 ### 面向 Agent builder
 
-- [架构说明](./docs/architecture.md)
-- [内容模型](./docs/content-model.md)
+- [架构说明](./docs/architecture-zh.md)
+- [内容模型](./docs/content-model-zh.md)
 - [上下文加载策略](./docs/context-loading-policy-zh.md)
 - [项目表面层架构](./docs/project-surface-architecture-zh.md)
 - [多智能体剧本架构](./docs/multi-agent-screenplay-architecture-zh.md)
@@ -246,7 +246,7 @@ flowchart LR
 - [贡献说明](./CONTRIBUTING.md)
 - [社区运营策略](./docs/community-operations-zh.md)
 - [支持入口梯度](./SUPPORT.md)
-- [Roadmap](./docs/roadmap.md)
+- [Roadmap](./docs/roadmap-zh.md)
 - [Changelog](./CHANGELOG.md)
 
 ## 社区协作
