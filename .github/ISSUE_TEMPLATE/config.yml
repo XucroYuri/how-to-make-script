@@ -7,5 +7,5 @@ contact_links:
     url: https://github.com/XucroYuri/how-to-make-script/blob/main/docs/community-feedback-loop-zh.md
     about: Read how this repository turns objections, counterexamples, and field reports into concrete assets.
   - name: Security or Abuse / 安全与滥用
-    url: https://github.com/XucroYuri/how-to-make-script/security/policy
-    about: Report security issues, abuse, or unsafe behavior through the security channel, not public issues.
+    url: https://github.com/XucroYuri/how-to-make-script/security/advisories/new
+    about: Use GitHub private vulnerability reporting for security issues. If the private form is not visible yet, do not file a public issue.
