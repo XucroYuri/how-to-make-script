@@ -11,6 +11,6 @@
   },
   "protocol_id": "wp.scene-writing",
   "rubric_ids": ["rb.scene-draft"],
-  "linked_atoms": ["ka.scene-function", "ka.conflict-pressure", "ka.exposition-control"],
+  "linked_atoms": ["ka.scene-function", "ka.conflict-pressure", "ka.exposition-control", "ka.opening-job-selection", "ka.medium-animation"],
   "fallback_behavior": "Merge, delete, or redesign the scene if it does not change the situation."
 }

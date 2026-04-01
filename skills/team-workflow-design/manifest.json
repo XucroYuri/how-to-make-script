@@ -1,0 +1,17 @@
+{
+  "id": "skill.team-workflow-design",
+  "name": "team-workflow-design",
+  "description": "Design human, agent, or hybrid screenplay collaboration workflows with explicit modes, roles, handoffs, and checkpoints.",
+  "entrypoint": "skills/team-workflow-design/SKILL.md",
+  "surface": "internal",
+  "supports": {
+    "intents": ["discover", "design", "diagnose", "adapt"],
+    "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
+    "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+    "outputs": ["team_workflow_blueprint"]
+  },
+  "protocol_id": "wp.team-workflow-blueprint",
+  "rubric_ids": ["rb.team-workflow-blueprint"],
+  "linked_atoms": ["ka.team-topology-selection", "ka.handoff-contract-discipline", "ka.human-checkpoint-gates", "ka.room-artifact-ladder", "ka.parallel-lane-governance", "ka.dissent-preservation-loop"],
+  "fallback_behavior": "If the user only needs a single artifact, return to the primary screenplay route and add team notes only when collaboration constraints materially change execution."
+}

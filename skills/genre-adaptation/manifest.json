@@ -10,7 +10,7 @@
     "outputs": ["premise", "treatment", "outline", "scene_draft"]
   },
   "protocol_id": "wp.genre-adaptation",
-  "rubric_ids": ["rb.outline"],
+  "rubric_ids": ["rb.adaptation"],
   "linked_atoms": ["ka.genre-thriller", "ka.genre-romance", "ka.genre-comedy", "ka.medium-feature-film", "ka.medium-commercial", "ka.medium-branching-interactive"],
   "fallback_behavior": "Reduce adaptation scope and preserve the core conflict first if the target promise breaks the engine."
 }

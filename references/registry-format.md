@@ -7,6 +7,7 @@
 - supported `medium`
 - supported `stage`
 - supported `output`
+- optional `constraint_signals` used for route explanation and tie-breaking
 - `skill_id`
 - `protocol_id`
 - `rubric_id`
@@ -16,9 +17,9 @@
 Each skill directory contains a `manifest.json` that declares:
 - stable skill `id`
 - entrypoint path
+- optional `surface` (`public` or `internal`)
 - supported intents, media, stages, outputs
 - primary protocol
 - linked rubrics
 - linked atoms
 - fallback behavior
-

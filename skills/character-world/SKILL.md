@@ -8,9 +8,11 @@ description: Use when the user needs stronger characters, relationships, or worl
 Use this skill to make roles and world constraints dramatically useful.
 
 ## Workflow
-1. Define desire, fear, contradiction, and false belief.
-2. Turn worldbuilding into pressure rules.
-3. Clarify rival forces and key relationships.
+1. Build the character from desire, fear, value order, and contradiction.
+2. Pair major capabilities with limits, costs, or misuse risks.
+3. Describe triggered behavior patterns, not just static traits.
+4. Turn worldbuilding into pressure rules.
+5. Clarify rival forces and key relationships.
 
 ## Output Contract
 - A character-pressure summary that shows what the protagonist wants, fears, and misreads.
@@ -21,4 +23,7 @@ Use this skill to make roles and world constraints dramatically useful.
 - `wp.character-world`
 - `ka.character-arc`
 - `ka.theme-pressure`
+- `ka.character-drive-quartet`
+- `ka.capability-friction-balance`
+- `ka.triggered-behavior-profile`
 - `rb.outline`

@@ -23,7 +23,7 @@
     "适配版仍保有核心引擎",
     "目标类型或媒介承诺已被满足"
   ],
-  "rubrics": ["rb.outline"],
+  "rubrics": ["rb.adaptation"],
   "linked_atoms": ["ka.genre-thriller", "ka.genre-romance", "ka.genre-comedy", "ka.medium-feature-film", "ka.medium-commercial", "ka.medium-branching-interactive"]
 }
 ---

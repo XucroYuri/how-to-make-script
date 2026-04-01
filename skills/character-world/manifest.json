@@ -10,7 +10,7 @@
     "outputs": ["premise", "synopsis"]
   },
   "protocol_id": "wp.character-world",
-  "rubric_ids": ["rb.outline"],
-  "linked_atoms": ["ka.character-arc", "ka.theme-pressure", "ka.exposition-control"],
+  "rubric_ids": ["rb.character-world"],
+  "linked_atoms": ["ka.character-arc", "ka.theme-pressure", "ka.exposition-control", "ka.character-drive-quartet", "ka.capability-friction-balance", "ka.triggered-behavior-profile"],
   "fallback_behavior": "Reduce the world to only the rules that create pressure on the protagonist."
 }

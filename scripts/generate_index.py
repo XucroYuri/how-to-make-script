@@ -39,6 +39,7 @@ def build_index(root: Path) -> Dict[str, Any]:
             "protocol_id": manifest["protocol_id"],
         }
         for manifest in manifests
+        if manifest.get("surface", "public") == "public"
     ]
 
     return {

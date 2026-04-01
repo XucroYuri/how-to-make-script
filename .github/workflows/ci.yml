@@ -4,6 +4,7 @@ on:
   push:
     branches: ["main"]
   pull_request:
+  workflow_dispatch:
 
 jobs:
   verify:
@@ -31,6 +32,18 @@ jobs:
 
       - name: Check routes
         run: python scripts/check_routes.py
+
+      - name: Check route overlaps
+        run: python scripts/check_route_overlaps.py
+
+      - name: Check semantic consistency
+        run: python scripts/check_semantic_consistency.py
+
+      - name: Check subagent registries
+        run: python scripts/check_subagent_registries.py
+
+      - name: Check community surfaces
+        run: python scripts/check_community_surfaces.py
 
       - name: Check links
         run: python scripts/check_links.py

@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "aliases": {
+    "audience": {
+      "canonical": "audience_segment",
+      "note": "Legacy shorthand in fixtures; prefer the canonical family in new assets."
+    },
+    "length": {
+      "canonical": "duration",
+      "note": "Broad time or size shorthand; new assets should prefer duration."
+    },
+    "duration_seconds": {
+      "canonical": "duration",
+      "note": "Granular runtime detail under the duration family."
+    },
+    "episode_minutes": {
+      "canonical": "duration",
+      "note": "Episode runtime detail under the duration family."
+    },
+    "episodes": {
+      "canonical": "format",
+      "note": "Series or package shape detail under the format family."
+    },
+    "acts": {
+      "canonical": "format",
+      "note": "Structure-size detail under the format family."
+    },
+    "branches": {
+      "canonical": "format",
+      "note": "Interactive package shape detail under the format family."
+    },
+    "branching_depth": {
+      "canonical": "format",
+      "note": "Interactive package shape detail under the format family."
+    },
+    "campaign": {
+      "canonical": "campaign_goal",
+      "note": "Legacy campaign shorthand; prefer campaign_goal."
+    },
+    "goal": {
+      "canonical": "campaign_goal",
+      "note": "Ambiguous short label; prefer campaign_goal in new assets."
+    },
+    "comparison": {
+      "canonical": "comparison_mode",
+      "note": "Legacy comparison label; prefer comparison_mode."
+    },
+    "focus": {
+      "canonical": "creative_problem",
+      "note": "Narrow creative focus should resolve to creative_problem."
+    },
+    "pain": {
+      "canonical": "failure_layer",
+      "note": "Observed symptom or pain should resolve to failure_layer."
+    },
+    "target_genre": {
+      "canonical": "genre",
+      "note": "Target genre should use the same canonical family as source genre."
+    }
+  },
+  "detail_keys": {
+    "brand_value": {
+      "family": "campaign_goal",
+      "note": "Brand promise detail nested under campaign direction."
+    },
+    "choice_focus": {
+      "family": "creative_problem",
+      "note": "Interactive emphasis detail; not a top-level route family."
+    },
+    "challenge_type": {
+      "family": "creative_problem",
+      "note": "Specific challenged-claim subtype nested under the broader creative problem."
+    },
+    "quest_type": {
+      "family": "format",
+      "note": "Interactive content-shape detail under format."
+    }
+  }
+}

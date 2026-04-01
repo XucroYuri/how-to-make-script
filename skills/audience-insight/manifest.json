@@ -11,6 +11,6 @@
   },
   "protocol_id": "wp.audience-fit-note",
   "rubric_ids": ["rb.audience-fit"],
-  "linked_atoms": ["ka.audience-need-state", "ka.platform-attention-economy", "ka.commissioning-fit"],
+  "linked_atoms": ["ka.audience-need-state", "ka.platform-attention-economy", "ka.commissioning-fit", "ka.pacing-rhythm"],
   "fallback_behavior": "If the audience is underspecified, infer one primary segment and one adjacent segment, then report confidence and risk."
 }
