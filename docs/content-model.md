@@ -52,11 +52,13 @@ Real-world grounding outputs are first-class contracts:
 - `audience_fit_note`
 - `development_brief`
 - `learning_path`
+- `research_background_map`
 - `path_options`
 - `boundary_map`
 - `scope_correction`
 - `pattern_reference_pack`
 - `context_loading_plan`
+- `story_memory_checkpoint`
 - `voice_style_guide`
 - `visual_language_pack`
 - `screen_to_video_brief`
@@ -76,6 +78,11 @@ The new expert-cast contract makes it possible to select bounded specialist suba
 The new dispatch-plan contract makes scheduling, handoffs, review ordering, and context budgets explicit instead of leaving “orchestration” as invisible prompt lore.
 The new project-surface contract makes canonical truth, runtime mirrors, packet assembly, review surfaces, and export surfaces explicit instead of leaving long-horizon project design to hidden repo habits.
 The new quality-gate contract makes adaptive, lens-based self-checking explicit so the repo can audit text, bridges, governance artifacts, and recheck scopes without flattening everything into one rewrite note.
+The new research-background contract makes broad screenplay theory, method-history, and background-support requests first-class instead of leaving them as loose documentation and loading heuristics.
+The new story-memory-checkpoint contract makes resumable continuity compression explicit, so long-form writing can preserve state without defaulting to full-context reloads.
+
+Registry-backed background bundles live in `references/` rather than `knowledge/`.
+They are not a fifth core asset type; they are machine-checkable doc bundles that map broad research surfaces to callable atoms, outputs, and loading rules.
 
 ## Asset Rules
 - Every asset has a stable `id`.
@@ -115,3 +122,6 @@ For the current reality-grounding layer, pair this file with:
 - [`docs/progressive-disclosure-policy.md`](./progressive-disclosure-policy.md)
 - [`docs/private-reference-distillation-policy.md`](./private-reference-distillation-policy.md)
 - [`docs/source-map-screenplay-methods.md`](./source-map-screenplay-methods.md)
+- [`docs/how-to-create-a-screenplay-research.md`](./how-to-create-a-screenplay-research.md)
+- [`docs/how-to-create-a-screenplay-research-zh.md`](./how-to-create-a-screenplay-research-zh.md)
+- [`docs/source-map-screenplay-creation-research.md`](./source-map-screenplay-creation-research.md)

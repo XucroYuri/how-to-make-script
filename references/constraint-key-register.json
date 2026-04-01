@@ -49,6 +49,14 @@
       "canonical": "creative_problem",
       "note": "Narrow creative focus should resolve to creative_problem."
     },
+    "theory_scope": {
+      "canonical": "research_scope",
+      "note": "Broad theory or background-study focus should resolve to research_scope."
+    },
+    "background_focus": {
+      "canonical": "research_scope",
+      "note": "Background-research shorthand; prefer research_scope in new assets."
+    },
     "pain": {
       "canonical": "failure_layer",
       "note": "Observed symptom or pain should resolve to failure_layer."
@@ -70,6 +78,10 @@
     "challenge_type": {
       "family": "creative_problem",
       "note": "Specific challenged-claim subtype nested under the broader creative problem."
+    },
+    "research_lens": {
+      "family": "research_scope",
+      "note": "Specific theory/background lens nested under research_scope."
     },
     "quest_type": {
       "family": "format",

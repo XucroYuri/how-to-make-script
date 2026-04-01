@@ -28,7 +28,7 @@ Use `references/context-loading-modes.md` as the operational menu. In short:
 - `focus_pack` for one task, one route, one rubric;
 - `compare_pack` when the user wants alternatives, why-not analysis, or boundary work;
 - `teaching_pack` when the user wants explanation, examples, or learning support;
-- `survey_pack` only when the user explicitly wants a broad survey.
+- `survey_pack` only when the user explicitly wants a broad survey, and anchor it on one declared background bundle first.
 
 ## Expansion Triggers
 
@@ -40,6 +40,7 @@ Expand only when a new layer can still change the answer:
 - the task needs voice calibration, register control, continuity protection, or stronger lived-in expression;
 - the task needs team-mode selection, handoff design, or review-gate design;
 - the user explicitly asks for teaching, comparison, or a broader survey.
+- the task is a broad theory or background-support request that needs a declared research bundle instead of ad hoc expansion.
 
 ## Stop Conditions
 
@@ -67,6 +68,8 @@ Treat the load as too large or too small if you see any of these symptoms:
 - For writing guidance, prefer one strong example plus one weak contrast over many similar examples.
 - For boundary questions, prefer `boundary_map` or `scope_correction` before loading more general craft material.
 - For scenario questions, prefer `docs/scenario-atlas.md` and `references/scenario-taxonomy.json` before loading many examples.
+- For broad theory/support questions, prefer one background bundle from `references/background-bundles.json` before loading multiple adjacent docs.
+- For pause/resume, room-handoff, or long-form continuity pressure, prefer `story_memory_checkpoint` before widening the bundle around the same draft.
 - For fit or strategy questions, prefer the relevant reality-lens atoms before broad craft expansion.
 - For voice or liveness questions, prefer the smallest expression-lens bundle before loading large reference packs.
 - For collaboration-design questions, prefer the smallest team-mode bundle before loading broad framework comparisons.

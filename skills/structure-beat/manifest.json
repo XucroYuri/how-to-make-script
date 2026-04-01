@@ -11,6 +11,6 @@
   },
   "protocol_id": "wp.structure-beat-outline",
   "rubric_ids": ["rb.outline"],
-  "linked_atoms": ["ka.story-goal", "ka.causality-chain", "ka.pacing-rhythm", "ka.structure-family-selection", "ka.beat-carrier-selection", "ka.medium-feature-film", "ka.medium-episode", "ka.medium-short-drama"],
+  "linked_atoms": ["ka.story-goal", "ka.causality-chain", "ka.pacing-rhythm", "ka.structure-family-selection", "ka.beat-carrier-selection", "ka.dual-track-rhythm", "ka.serial-arc-budgeting", "ka.medium-feature-film", "ka.medium-episode", "ka.medium-short-drama"],
   "fallback_behavior": "Return to conflict escalation instead of adding filler events if the middle sags."
 }

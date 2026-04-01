@@ -11,6 +11,6 @@
   },
   "protocol_id": "wp.project-surface-map",
   "rubric_ids": ["rb.project-surface-map"],
-  "linked_atoms": ["ka.source-of-truth-runtime-split", "ka.canonical-packet-assembly", "ka.phase-entrypoint-handoff", "ka.command-artifact-mapping", "ka.subagent-context-budgeting"],
+  "linked_atoms": ["ka.source-of-truth-runtime-split", "ka.canonical-packet-assembly", "ka.phase-entrypoint-handoff", "ka.command-artifact-mapping", "ka.subagent-context-budgeting", "ka.script-as-coordination-artifact", "ka.archive-literacy", "ka.story-memory-checkpoint"],
   "fallback_behavior": "If the user only needs one artifact or one team mode, keep the main route and attach a lightweight surface note instead of switching to project_surface_map."
 }

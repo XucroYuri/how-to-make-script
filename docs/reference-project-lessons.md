@@ -71,14 +71,37 @@ What this repo should not absorb directly:
 - platform- or market-specific compliance assumptions as repo-wide law;
 - a short-drama command surface as the default for all screenplay work.
 
+## Reference 4: Shanyin Screenwriting Master
+
+Source:
+- [Shanyin-ai/shanyin-screenwriting-master](https://github.com/Shanyin-ai/shanyin-screenwriting-master)
+
+High-value lessons:
+- separate format-specific process logic instead of pretending ultrashort, short, feature, and series work all scale from the same prompt shape;
+- track outer plot rhythm and inner emotional rhythm as related but distinct waves;
+- use memory checkpoints to preserve long-form continuity without defaulting to full-context reload;
+- lock series container variables and arc budgets before spending major turns, reveals, and relationship jumps.
+
+What this repo should absorb:
+- a first-class continuity-compression surface rather than ad hoc “reload the whole draft” behavior;
+- stronger serial-container and arc-budget logic in structure planning;
+- explicit dual-track rhythm language for diagnosing why a draft feels busy but emotionally static, or intimate but dramatically stalled.
+
+What this repo should not absorb directly:
+- one giant integrated screenplay prompt as the main source of truth;
+- hidden internal self-check loops that are not observable as protocols, rubrics, or artifacts;
+- opaque packaged surfaces whose editable source and machine-facing bundle can drift out of sync.
+
 ## Local Design Changes Motivated By These Repos
 
 The repo now treats these as explicit design needs:
 - `project_surface_map` as a first-class output;
+- `story_memory_checkpoint` as a first-class long-horizon continuity output;
 - source-of-truth vs runtime-state separation;
 - canonical packet assembly;
 - explicit phase entrypoints and handoffs;
 - review and export surfaces as named workflow surfaces.
+- format-aware structure scaling, dual-track rhythm, and serial arc budgeting instead of one universal outline heuristic.
 
 ## Non-Dogma Rule
 

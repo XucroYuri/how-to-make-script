@@ -11,6 +11,6 @@
   },
   "protocol_id": "wp.rewrite-doctor",
   "rubric_ids": ["rb.rewrite-report"],
-  "linked_atoms": ["ka.rewrite-diagnosis", "ka.causality-chain", "ka.scene-function", "ka.dialogue-subtext"],
+  "linked_atoms": ["ka.rewrite-diagnosis", "ka.causality-chain", "ka.scene-function", "ka.dialogue-subtext", "ka.feedback-subjectivity-management"],
   "fallback_behavior": "Report uncertainty and return only the highest-confidence risks if the sample is too small."
 }

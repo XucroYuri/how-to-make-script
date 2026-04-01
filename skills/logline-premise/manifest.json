@@ -11,6 +11,6 @@
   },
   "protocol_id": "wp.logline-premise",
   "rubric_ids": ["rb.logline"],
-  "linked_atoms": ["ka.story-goal", "ka.conflict-pressure", "ka.causality-chain", "ka.false-logline-warning"],
+  "linked_atoms": ["ka.story-goal", "ka.conflict-pressure", "ka.causality-chain", "ka.false-logline-warning", "ka.viewer-inference-guidance"],
   "fallback_behavior": "Fall back to idea discovery before compressing if the concept is still fuzzy."
 }

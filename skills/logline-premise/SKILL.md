@@ -24,4 +24,5 @@ Use this skill when the story engine exists but needs compression and clarity.
 - `ka.story-goal`
 - `ka.conflict-pressure`
 - `ka.false-logline-warning`
+- `ka.viewer-inference-guidance`
 - `rb.logline`

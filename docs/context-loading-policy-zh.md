@@ -33,7 +33,7 @@
 - `focus_pack` 是单任务、单路由、单 rubric 的执行包；
 - `compare_pack` 用于备选方案、为什么不这样写、边界判断；
 - `teaching_pack` 用于解释、示例和学习；
-- `survey_pack` 只在用户明确要“全景式梳理”时才用。
+- `survey_pack` 只在用户明确要“全景式梳理”时才用，而且要先锚定一个明确的 background bundle。
 
 ## 扩展触发
 
@@ -45,6 +45,7 @@
 - 任务明确需要风格校准、语域控制、IP 声纹延续或更强的活人感；
 - 任务明确需要 team mode 选择、handoff 设计或 review gate 设计；
 - 用户明确要求教学、比较或广泛综述。
+- 任务本质上是宽问题的理论支撑，需要一个声明过的 research/background bundle 来防止随手乱扩。
 
 ## 停止条件
 
@@ -72,6 +73,8 @@
 - 写作类问题优先采用“一个强例子 + 一个弱对照”，不要用很多相似例子堆量。
 - 处理边界问题时，优先用 `boundary_map` 或 `scope_correction`，不要先去加载一大堆通用 craft 文档。
 - 处理场景问题时，优先看 [`docs/scenario-atlas-zh.md`](../docs/scenario-atlas-zh.md) 和 [`references/scenario-taxonomy.json`](../references/scenario-taxonomy.json)，再决定要不要继续加样本。
+- 处理宽理论 / 背景支持问题时，优先从 [`references/background-bundles.json`](../references/background-bundles.json) 选一个背景包，再决定要不要继续扩展到相邻文档。
+- 处理暂停续写、room handoff、长篇连续性保护这类问题时，优先考虑 `story_memory_checkpoint`，而不是直接把同一批材料越拉越宽。
 - 处理受众 / 策略问题时，先加载现实镜头，再考虑扩展到更广的 craft。
 - 处理角色声纹 / 语言风格问题时，先加载最小表达镜头，不要直接上大包参考样本。
 - 处理协作机制问题时，先加载最小 team-mode bundle，不要直接把多智能体框架比较全塞进来。

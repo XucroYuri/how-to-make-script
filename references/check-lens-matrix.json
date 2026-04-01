@@ -173,6 +173,20 @@
       }
     },
     {
+      "id": "bundle.story-memory",
+      "target_outputs": ["story_memory_checkpoint"],
+      "mediums": ["feature_film", "episodic", "short_drama", "animation", "game_narrative", "branching_interactive"],
+      "required_lenses": ["contract_fit", "continuity_invariants", "delivery_handoff"],
+      "optional_lenses": ["operational_feasibility", "boundary_risk"],
+      "default_weights": {
+        "contract_fit": 0.25,
+        "continuity_invariants": 0.3,
+        "delivery_handoff": 0.25,
+        "operational_feasibility": 0.15,
+        "boundary_risk": 0.05
+      }
+    },
+    {
       "id": "bundle.project-surface",
       "target_outputs": ["project_surface_map"],
       "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
