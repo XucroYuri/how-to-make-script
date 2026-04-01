@@ -254,7 +254,7 @@
     {
       "intent": ["design", "draft", "diagnose", "adapt"],
       "medium": ["feature_film", "episodic", "short_drama", "animation", "game_narrative", "branching_interactive"],
-      "stage": ["structure", "outline", "scene", "rewrite", "adaptation"],
+      "stage": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
       "output": ["story_memory_checkpoint"],
       "constraint_signals": ["phase_focus", "continuity_invariants", "traceability_level", "context_budget"],
       "skill_id": "skill.story-memory-checkpoint",
@@ -274,7 +274,7 @@
     {
       "intent": ["discover", "design", "diagnose"],
       "medium": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-      "stage": ["ideation", "premise", "structure", "rewrite", "adaptation"],
+      "stage": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
       "output": ["research_background_map"],
       "constraint_signals": ["research_scope", "reference_depth", "route_certainty"],
       "skill_id": "skill.research-background",

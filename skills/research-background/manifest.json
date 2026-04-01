@@ -6,7 +6,7 @@
   "supports": {
     "intents": ["discover", "design", "diagnose"],
     "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-    "stages": ["ideation", "premise", "structure", "rewrite", "adaptation"],
+    "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
     "outputs": ["research_background_map"]
   },
   "protocol_id": "wp.research-background-map",

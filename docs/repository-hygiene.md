@@ -5,7 +5,7 @@
 The repository treats local editor and agent-tool state as workstation noise, not project source.
 
 Rules:
-- local-tool state paths such as `.obsidian/`, `.omx/`, `.codex/`, `.claude/`, `.claude-code/`, `.opencode/`, `.openclaw/`, `.gemini/`, `.gemini-cli/`, `.aider/`, `.cursor/`, `.continue/`, `.roo/`, `.windsurf/`, and `.avante/` must stay ignored
+- local-tool state paths from the canonical denylist in `.gitignore` and `scripts/check_forbidden_paths.py` must stay ignored
 - forbidden local-tool paths must never be tracked in the current index.
 - forbidden local-tool paths must never exist anywhere in published Git history.
 
