@@ -252,6 +252,16 @@
       "rubric_id": "rb.subagent-dispatch-plan"
     },
     {
+      "intent": ["design", "draft", "diagnose", "adapt"],
+      "medium": ["feature_film", "episodic", "short_drama", "animation", "game_narrative", "branching_interactive"],
+      "stage": ["structure", "outline", "scene", "rewrite", "adaptation"],
+      "output": ["story_memory_checkpoint"],
+      "constraint_signals": ["phase_focus", "continuity_invariants", "traceability_level", "context_budget"],
+      "skill_id": "skill.story-memory-checkpoint",
+      "protocol_id": "wp.story-memory-checkpoint",
+      "rubric_id": "rb.story-memory-checkpoint"
+    },
+    {
       "intent": ["discover", "design", "adapt"],
       "medium": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
       "stage": ["ideation", "premise", "structure", "outline", "rewrite", "adaptation"],
@@ -260,6 +270,16 @@
       "skill_id": "skill.project-surface-design",
       "protocol_id": "wp.project-surface-map",
       "rubric_id": "rb.project-surface-map"
+    },
+    {
+      "intent": ["discover", "design", "diagnose"],
+      "medium": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
+      "stage": ["ideation", "premise", "structure", "rewrite", "adaptation"],
+      "output": ["research_background_map"],
+      "constraint_signals": ["research_scope", "reference_depth", "route_certainty"],
+      "skill_id": "skill.research-background",
+      "protocol_id": "wp.research-background-map",
+      "rubric_id": "rb.research-background-map"
     },
     {
       "intent": ["design", "diagnose", "polish", "adapt"],

@@ -29,7 +29,9 @@ The route key is operationally anchored by `intent x medium x stage x output`.
 - Prefer `pattern_reference_pack` for teaching/comparison and not as the default drafting route.
 - Prefer `boundary_map` or `scope_correction` over broad craft expansion when the real question is constraint logic or claim narrowing.
 - Prefer `quality_gate_report` for explicit self-check, structured audit, preflight, acceptance review, stage-specific checking, targeted recheck, or non-story artifact review instead of stretching `rewrite_report` to cover every quality problem.
+- Prefer `research_background_map` for broad screenplay-theory, method-history, background-support, or agent-design requests instead of forcing those asks through a craft or artifact route.
 - Prefer `voice_style_guide` for explicit voice, style, IP continuity, or "make it feel alive" requests instead of smearing style advice across the main draft by default.
+- Prefer `story_memory_checkpoint` for explicit resume-later, room handoff, continuity compression, or long-form state-carry requests instead of reloading full drafts or season packets.
 - Prefer `visual_language_pack` for explicit multilingual shot language, culture-specific visual vocabulary, or cross-language visual handoff requests.
 - Prefer `screen_to_video_brief` for explicit screenplay-to-video-generation or previz bridge requests instead of overloading scene or commercial drafting routes.
 - For scene, dialogue, commercial, or adaptation drafting, keep the primary route and add the smallest expression-lens bundle only when the request or draft clearly needs it.
@@ -41,6 +43,7 @@ The route key is operationally anchored by `intent x medium x stage x output`.
 - For normal screenplay outputs, load team assets only when collaboration structure changes the next decision materially.
 - For normal screenplay outputs, load expert-subagent and topology assets only when concrete cast selection or dispatch design changes the next decision materially.
 - For normal screenplay outputs, load project-surface assets only when surface design changes the next decision materially by reducing wrong-edit risk, runtime drift, or handoff ambiguity.
+- For normal screenplay outputs, prefer a bounded `story_memory_checkpoint` over broad context expansion when the real problem is resumable continuity rather than missing theory.
 - For normal screenplay outputs, load quality-gating assets only when a preflight or targeted audit would materially change the next decision.
 
 ## Loading Policy

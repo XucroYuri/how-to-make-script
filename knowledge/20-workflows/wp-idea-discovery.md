@@ -25,7 +25,7 @@
     "下一步最适合进入 logline、character 或 commercial 开发"
   ],
   "rubrics": ["rb.logline"],
-  "linked_atoms": ["ka.story-goal", "ka.conflict-pressure", "ka.theme-pressure"]
+  "linked_atoms": ["ka.story-goal", "ka.conflict-pressure", "ka.theme-pressure", "ka.screenplay-lens-stacking"]
 }
 ---
 # 创意发现协议

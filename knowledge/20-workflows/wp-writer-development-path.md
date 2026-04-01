@@ -25,7 +25,7 @@
     "下一轮训练的优先级已经清楚，不再停留在泛化建议"
   ],
   "rubrics": ["rb.learning-path"],
-  "linked_atoms": ["ka.writer-development-loop", "ka.screenwriting-history-shift", "ka.scene-function", "ka.rewrite-diagnosis"]
+  "linked_atoms": ["ka.writer-development-loop", "ka.screenwriting-history-shift", "ka.scene-function", "ka.rewrite-diagnosis", "ka.screenwriting-deliberate-practice", "ka.archive-literacy"]
 }
 ---
 # 编剧成长路径协议

@@ -1,0 +1,16 @@
+{
+  "id": "skill.story-memory-checkpoint",
+  "name": "story-memory-checkpoint",
+  "description": "Compress long-form screenplay state into a resumable, handoff-safe memory checkpoint instead of reloading the full draft.",
+  "entrypoint": "skills/story-memory-checkpoint/SKILL.md",
+  "supports": {
+    "intents": ["design", "draft", "diagnose", "adapt"],
+    "mediums": ["feature_film", "episodic", "short_drama", "animation", "game_narrative", "branching_interactive"],
+    "stages": ["structure", "outline", "scene", "rewrite", "adaptation"],
+    "outputs": ["story_memory_checkpoint"]
+  },
+  "protocol_id": "wp.story-memory-checkpoint",
+  "rubric_ids": ["rb.story-memory-checkpoint"],
+  "linked_atoms": ["ka.story-memory-checkpoint", "ka.dual-track-rhythm", "ka.serial-arc-budgeting", "ka.room-artifact-ladder", "ka.script-as-coordination-artifact"],
+  "fallback_behavior": "If the user actually needs project surface design, return project_surface_map; if the real need is bundle control, return context_loading_plan."
+}

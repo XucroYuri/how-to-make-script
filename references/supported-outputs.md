@@ -16,11 +16,13 @@
 - `audience_fit_note`: audience-segment note with need state, expected payoff, and fit risks.
 - `development_brief`: commissioning-aware strategy brief mapping creative direction to industry constraints.
 - `learning_path`: staged screenwriter development plan with milestones, practice loops, and feedback cadence.
+- `research_background_map`: bounded research map for broad screenplay questions, with lens stack, stable findings, source clusters, callable assets, and recommended next routes.
 - `path_options`: contrasted creative routes with tradeoffs, fit notes, and convergence triggers.
 - `boundary_map`: explicit hard-boundary vs soft-constraint map with exploration and review zones.
 - `scope_correction`: narrowed claim note preserving the surviving core, failure context, and downstream update implications.
 - `pattern_reference_pack`: scenario-specific reference pack with strong synthetic sample, weak contrast, mechanism analysis, and non-dogma note.
 - `context_loading_plan`: bounded loading plan with route anchor, loading mode, expansion triggers, and stop conditions.
+- `story_memory_checkpoint`: resumable continuity packet with current state, unresolved promises, invariants, dual-track rhythm, and next safe entrypoint.
 - `voice_style_guide`: reusable expression guide with voice anchors, register guardrails, variability budget, and drift warnings.
 - `visual_language_pack`: task-specific multilingual visual-language guide with selected film terms, hybrid anchors, prompt-ready phrases, and misuse warnings.
 - `screen_to_video_brief`: bounded bridge brief that translates screenplay material into clip-scale visual execution constraints without replacing the screenplay.

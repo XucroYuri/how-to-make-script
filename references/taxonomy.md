@@ -47,11 +47,13 @@
 - `audience_fit_note`
 - `development_brief`
 - `learning_path`
+- `research_background_map`
 - `path_options`
 - `boundary_map`
 - `scope_correction`
 - `pattern_reference_pack`
 - `context_loading_plan`
+- `story_memory_checkpoint`
 - `voice_style_guide`
 - `visual_language_pack`
 - `screen_to_video_brief`
@@ -78,6 +80,7 @@
 - `deliverable_mode`
 - `budget_band`
 - `writer_maturity`
+- `research_scope`
 - `failure_layer`
 - `reference_bar`
 - `creative_problem`

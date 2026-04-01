@@ -34,6 +34,7 @@ This is the root orchestrator. It does not carry all theory inline. It resolves 
 - Prefer `scope_correction` when the user challenges a rule, route, or rubric and the right response is to narrow its scope rather than replace it wholesale.
 - Prefer `pattern_reference_pack` when the user asks for strong/weak screenplay examples, success-pattern comparisons, or "why this works better than that" guidance.
 - Prefer `context_loading_plan` when the user asks how the skill should load context, balance reference breadth, or avoid context corruption.
+- Prefer `story_memory_checkpoint` when the user asks to pause and resume long-form work, compress current story state, preserve continuity across sessions, or hand current state to another human or agent without reloading the whole draft.
 - Prefer `voice_style_guide` when the user asks for language-style calibration, character/IP voice continuity, or stronger "alive" expression before drafting.
 - Prefer `visual_language_pack` when the user asks for multilingual shot language, cross-language visual vocabulary, or culture-specific film-language calibration.
 - Prefer `screen_to_video_brief` when the user asks to bridge screenplay material into a video-generation or previz-ready visual brief.
@@ -41,6 +42,8 @@ This is the root orchestrator. It does not carry all theory inline. It resolves 
 - Prefer `expert_subagent_cast` when the user asks which experts, roles, subagents, or reference-persona lenses should participate in a screenplay task.
 - Prefer `subagent_dispatch_plan` when the user asks how those subagents should be scheduled, layered, reviewed, or merged.
 - Prefer `project_surface_map` when the user asks how a long-running screenplay project should separate source-of-truth assets, runtime state, packet assembly, review surfaces, export surfaces, or phase entrypoints.
+- Prefer `research_background_map` when the user asks broad questions such as “how to create a screenplay,” asks for theory support, asks for the repo’s background rationale, or needs a many-angle screenplay research baseline before choosing a narrower route.
+- Prefer a `survey_pack` anchored in the screenplay-creation research layer when the user explicitly asks broad questions such as “how to create a screenplay,” asks for theory support, or asks for a many-angle research baseline rather than one immediate artifact.
 
 ## Boundary Rule
 Treat constraints in two classes:
@@ -102,6 +105,15 @@ Load project-surface assets only when one of these is true:
 
 When the primary output is still a normal screenplay artifact, keep the original route and load project-surface assets only if surface design would materially change handoff safety, review discipline, or runtime drift risk.
 
+## Continuity-Checkpoint Loading Rule
+Load story-memory-checkpoint assets only when one of these is true:
+- the requested output is `story_memory_checkpoint`;
+- constraints include `phase_focus`, `continuity_invariants`, `traceability_level`, or `context_budget` in a resume or handoff context;
+- the user explicitly asks to compress current story state, preserve unresolved lines, or resume later without reloading a large packet;
+- broad reloading would otherwise be used only as a continuity crutch rather than because the user truly needs a wider survey.
+
+When the primary output is still a normal screenplay artifact, keep the original route and add a checkpoint only if resumable continuity materially changes the next decision.
+
 ## Quality-Gating Loading Rule
 Load quality-gating assets only when one of these is true:
 - the requested output is `quality_gate_report`;
@@ -111,13 +123,22 @@ Load quality-gating assets only when one of these is true:
 
 When the primary output is still a normal screenplay artifact, keep the original route and add the smallest quality-gating bundle only if a preflight or targeted check would materially change the next decision.
 
+## Research-Bundle Loading Rule
+Load research-background assets only when one of these is true:
+- the requested output is `research_background_map`;
+- constraints include `research_scope`, `reference_depth`, or `route_certainty` for an explicitly broad question;
+- the user explicitly asks for theory support, background rationale, or a many-angle screenplay-creation research baseline;
+- a broad survey would otherwise expand without one declared background anchor.
+
+When the primary output is still a normal screenplay artifact, do not auto-load research bundles just because they exist. Exit the bundle as soon as the user’s next need becomes a narrower route.
+
 ## Context Loading Ladder
 After route selection, choose one loading mode from [`references/context-loading-modes.md`](references/context-loading-modes.md):
 - `route_kernel`: route anchor only.
 - `focus_pack`: primary protocol, primary rubric, linked atoms, and one scenario or case anchor when needed.
 - `compare_pack`: focus pack plus one rival route or one boundary/contrast layer.
 - `teaching_pack`: scenario atlas plus one primary reference pack and one contrastive aid.
-- `survey_pack`: only for explicit broad mapping requests.
+- `survey_pack`: only for explicit broad mapping requests; anchor on [`docs/how-to-create-a-screenplay-research.md`](docs/how-to-create-a-screenplay-research.md) and [`docs/source-map-screenplay-creation-research.md`](docs/source-map-screenplay-creation-research.md) before adding narrower craft or medium packs.
 
 Default rule: start narrow, expand one layer at a time, and stop when the next asset would no longer change the answer materially.
 
@@ -134,7 +155,7 @@ Stop expansion when one of these is true:
    - `medium`: feature_film, episodic, short_drama, animation, commercial, branded_film, shortform_video, game_narrative, branching_interactive
    - `stage`: ideation, premise, character, structure, outline, scene, dialogue, rewrite, adaptation
    - `output`: one of the public contracts in [`references/supported-outputs.md`](references/supported-outputs.md)
-   - `constraints`: genre, tone, format, duration, audience segment, audience need state, platform, release window, commissioning context, business model, campaign goal, source medium, draft stage, participation mode, rating, budget, interactivity, franchise/IP limits, writer maturity, reference bar, creative problem, scenario family, loading mode, reference depth, comparison mode, route certainty, hard boundaries, soft constraints, voice target, language register, aesthetic register, IP continuity, experiential depth, visual vocab locale, prompt runtime, shot granularity, aspect ratio, reference asset mode, continuity invariants, audio mode, text mode, team mode, coordination model, parallelism budget, human gate level, artifact chain, subagent family, persona policy, selection strategy, dispatch topology, convergence owner, context budget, project horizon, phase focus, truth surface policy, runtime surface policy, packet strategy, traceability level, edit policy, target contract, audit scope, check depth, lens focus, recheck mode, acceptance bar
+    - `constraints`: genre, tone, format, duration, audience segment, audience need state, platform, release window, commissioning context, business model, campaign goal, source medium, draft stage, participation mode, rating, budget, interactivity, franchise/IP limits, writer maturity, research scope, reference bar, creative problem, scenario family, loading mode, reference depth, comparison mode, route certainty, hard boundaries, soft constraints, voice target, language register, aesthetic register, IP continuity, experiential depth, visual vocab locale, prompt runtime, shot granularity, aspect ratio, reference asset mode, continuity invariants, audio mode, text mode, team mode, coordination model, parallelism budget, human gate level, artifact chain, subagent family, persona policy, selection strategy, dispatch topology, convergence owner, context budget, project horizon, phase focus, truth surface policy, runtime surface policy, packet strategy, traceability level, edit policy, target contract, audit scope, check depth, lens focus, recheck mode, acceptance bar
 2. Look up the preferred route in [`references/router-matrix.json`](references/router-matrix.json).
    - Use declared `constraint_signals` to explain why the route is appropriate and to break ties between otherwise-equal adjacent routes.
 3. Choose the loading mode.
@@ -160,7 +181,9 @@ Stop expansion when one of these is true:
 - For expert-cast outputs, return core cast, optional cast, process nodes, persona lenses, authority map, context budgets, and trim order rather than a maximalist wishlist.
 - For subagent-dispatch outputs, return control-plane order, topology, phase ladder, packet flow, review loops, human gates, and collapse triggers rather than generic orchestration slogans.
 - For project-surface outputs, return canonical sources, runtime surfaces, packet layers, phase entrypoints, sync rules, edit permissions, review surfaces, export surfaces, and drift risks rather than abstract architecture prose.
+- For story-memory outputs, return current state, unresolved promises, invariants, dual-track rhythm, and next safe entrypoint rather than a broad story recap.
 - For quality-gate outputs, return target contract, scope mode, selected lenses, hard fails, weighted weaknesses, correction ladder, open contradictions, and recheck logic rather than one blended review paragraph.
+- For broad screenplay-theory or research-background requests, return the lens decomposition first, then the strongest stable inferences, then the most relevant callable atoms rather than collapsing the answer into one method summary.
 
 ## What This Skill Should Prevent
 - loading unrelated theory just because it exists in the repo;
@@ -173,6 +196,7 @@ Stop expansion when one of these is true:
 - replacing one overbroad rule with its mirror-image overbroad rule after a challenge.
 - presenting memorized or quote-like script passages as if they were the repository's own reference patterns.
 - expanding context because assets exist, rather than because they change the next decision.
+- reloading full drafts, season packets, or room notes when a bounded continuity checkpoint would preserve the needed state.
 - flattening all checking into one generic rewrite note, even when the artifact under review is operational, governance-oriented, or contract-heavy.
 - running the same fixed audit stack for every medium, artifact family, and delivery surface.
 - defaulting every character, IP, or brand to the same neutral authorial language.
@@ -201,11 +225,13 @@ Stop expansion when one of these is true:
 - `audience_fit_note`
 - `development_brief`
 - `learning_path`
+- `research_background_map`
 - `path_options`
 - `boundary_map`
 - `scope_correction`
 - `pattern_reference_pack`
 - `context_loading_plan`
+- `story_memory_checkpoint`
 - `voice_style_guide`
 - `visual_language_pack`
 - `screen_to_video_brief`
@@ -232,6 +258,7 @@ Stop expansion when one of these is true:
 - [`skills/audience-insight/SKILL.md`](skills/audience-insight/SKILL.md)
 - [`skills/development-strategy/SKILL.md`](skills/development-strategy/SKILL.md)
 - [`skills/writer-development/SKILL.md`](skills/writer-development/SKILL.md)
+- [`skills/research-background/SKILL.md`](skills/research-background/SKILL.md)
 - [`skills/context-governor/SKILL.md`](skills/context-governor/SKILL.md)
 - [`skills/voice-style-calibration/SKILL.md`](skills/voice-style-calibration/SKILL.md)
 - [`skills/visual-language/SKILL.md`](skills/visual-language/SKILL.md)
@@ -250,12 +277,14 @@ Stop expansion when one of these is true:
 - [`skills/subagent-dispatch-design/SKILL.md`](skills/subagent-dispatch-design/SKILL.md)
 
 ### Long-Horizon Governance
+- [`skills/story-memory-checkpoint/SKILL.md`](skills/story-memory-checkpoint/SKILL.md)
 - [`skills/project-surface-design/SKILL.md`](skills/project-surface-design/SKILL.md)
 
 ## Primary References
 ### Core Route Contracts
 - [`references/taxonomy.md`](references/taxonomy.md)
 - [`references/routing-policy.md`](references/routing-policy.md)
+- [`references/background-bundles.json`](references/background-bundles.json)
 - [`references/constraint-key-register.json`](references/constraint-key-register.json)
 - [`references/id-policy.md`](references/id-policy.md)
 - [`docs/content-model.md`](docs/content-model.md)

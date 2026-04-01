@@ -23,4 +23,5 @@ If the user instead needs a structured audit, preflight, acceptance gate, or rec
 - `wp.rewrite-doctor`
 - `ka.rewrite-diagnosis`
 - `ka.causality-chain`
+- `ka.feedback-subjectivity-management`
 - `rb.rewrite-report`

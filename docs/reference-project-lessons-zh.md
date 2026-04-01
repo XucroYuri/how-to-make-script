@@ -67,14 +67,37 @@
 - 把平台或市场的合规逻辑误写成仓库的普适真理；
 - 让短剧命令界面成为所有剧本创作的默认入口。
 
+## 参考项目 4：Shanyin Screenwriting Master
+
+来源：
+- [Shanyin-ai/shanyin-screenwriting-master](https://github.com/Shanyin-ai/shanyin-screenwriting-master)
+
+最有价值的设计点：
+- 明确把超短、短篇、长片、剧集拆成不同容器，而不是假设同一条 prompt 线性放大就够用；
+- 把外部剧情推进和内部情绪推进当成两条相关但不同的节奏线来看；
+- 用记忆检查点维护长篇连续性，而不是默认每次都重载全文；
+- 在连续容器里先锁时长、集数和弧光预算，再决定 reveal 和关系跃迁怎么花。
+
+值得仓库吸收的：
+- 把 continuity compression 做成一等输出，而不是临时摘要；
+- 在结构协议里补强连续容器和弧光预算逻辑；
+- 用双轨节奏来诊断“外面很忙、里面没动”或“情绪很浓、外部没推”的病型。
+
+不该直接照搬的：
+- 把一整套巨型集成 prompt 当成主真源；
+- 把不可见的内部自检当成可以替代 protocol / rubric / artifact 的机制；
+- 使用容易漂移的打包表面，而不保留清晰的可编辑源资产。
+
 ## 这轮对本仓库的直接推动
 
-基于这三个项目，仓库现在进一步承认并补强了这些点：
+基于这四个项目，仓库现在进一步承认并补强了这些点：
 - `project_surface_map` 作为一等输出；
+- `story_memory_checkpoint` 作为一等的长线连续性输出；
 - source-of-truth 和 runtime-state 的明确分层；
 - canonical packet 的组装和可追溯性；
 - planning / drafting / review / export 的阶段入口意识；
 - review 和 export surface 作为显式工作流层，而不是正文附带说明。
+- 不同容器的结构放大逻辑、双轨节奏和连续剧弧光预算。
 
 ## 非教条原则
 

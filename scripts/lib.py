@@ -86,6 +86,10 @@ def load_router_matrix(root: Path) -> Dict[str, Any]:
     return load_json(root / ROOT_DIR_NAMES["references"] / "router-matrix.json")
 
 
+def load_background_bundles(root: Path) -> Dict[str, Any]:
+    return load_json(root / ROOT_DIR_NAMES["references"] / "background-bundles.json")
+
+
 def load_schemas(root: Path) -> Dict[str, Dict[str, Any]]:
     schemas: Dict[str, Dict[str, Any]] = {}
     for path in sorted((root / ROOT_DIR_NAMES["schemas"]).glob("*.json")):
@@ -120,6 +124,9 @@ def validate_schema(instance: Any, schema: Dict[str, Any], path: str = "$") -> L
     elif expected_type == "string":
         if not isinstance(instance, str):
             return [f"{path}: expected string"]
+    elif expected_type == "integer":
+        if not isinstance(instance, int):
+            return [f"{path}: expected integer"]
     elif expected_type is None:
         pass
     else:
@@ -143,4 +150,3 @@ def collect_asset_index(root: Path) -> Tuple[Dict[str, Dict[str, Any]], List[Dic
 
 def relative_path(root: Path, path: str | Path) -> str:
     return str(Path(path).resolve().relative_to(root.resolve()))
-

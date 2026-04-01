@@ -12,10 +12,11 @@ class GenerateIndexTest(unittest.TestCase):
         index = build_index(ROOT)
         self.assertIn("assets", index)
         self.assertIn("skills", index)
+        self.assertIn("background_bundles", index)
         self.assertGreaterEqual(len(index["assets"]["knowledge_atom"]), 20)
         self.assertGreaterEqual(len(index["skills"]), 10)
+        self.assertGreaterEqual(len(index["background_bundles"]), 1)
 
 
 if __name__ == "__main__":
     unittest.main()
-

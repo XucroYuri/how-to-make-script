@@ -22,4 +22,6 @@ Use this skill to turn broad learning goals into a disciplined screenwriter lear
 - `wp.writer-development-path`
 - `ka.writer-development-loop`
 - `ka.screenwriting-history-shift`
+- `ka.screenwriting-deliberate-practice`
+- `ka.archive-literacy`
 - `rb.learning-path`

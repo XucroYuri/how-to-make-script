@@ -26,4 +26,5 @@ Use this skill to make roles and world constraints dramatically useful.
 - `ka.character-drive-quartet`
 - `ka.capability-friction-balance`
 - `ka.triggered-behavior-profile`
-- `rb.outline`
+- `ka.viewer-inference-guidance`
+- `rb.character-world`

@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "required": ["version", "bundles"],
+  "properties": {
+    "version": {"type": "string"},
+    "bundles": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "summary",
+          "scope_tags",
+          "docs",
+          "linked_atoms",
+          "primary_outputs",
+          "preferred_loading_modes",
+          "constraint_families",
+          "when_to_load",
+          "stop_rules"
+        ],
+        "properties": {
+          "id": {"type": "string"},
+          "title": {"type": "string"},
+          "summary": {"type": "string"},
+          "scope_tags": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "docs": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "linked_atoms": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "primary_outputs": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "preferred_loading_modes": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "constraint_families": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "when_to_load": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "stop_rules": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+        }
+      }
+    }
+  }
+}

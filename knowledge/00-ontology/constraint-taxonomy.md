@@ -85,7 +85,7 @@
 
 ## Quality Gate Constraints
 
-- `target_contract`：这次到底在审什么 artifact，例如 `scene_draft`、`commercial_script`、`interactive_branch_map`、`voice_style_guide`、`project_surface_map`。
+- `target_contract`：这次到底在审什么 artifact，例如 `scene_draft`、`commercial_script`、`interactive_branch_map`、`voice_style_guide`、`story_memory_checkpoint`、`project_surface_map`。
 - `audit_scope`：是 full audit、lens-targeted、range-limited，还是 recheck。
 - `check_depth`：是 preflight、development-room、delivery-ready，还是 acceptance 级检查。
 - `lens_focus`：这次是否明确指定要优先看哪些 lenses，例如 continuity、voice、delivery、boundary。
@@ -110,6 +110,7 @@
 - 用户问“这次具体该让哪些 subagent / 专家 / 流程节点 / 名家参考 persona 进场”，就该优先切到 `expert_subagent_cast`。
 - 用户问“这些 subagent 应该怎么调度、怎么 review、怎么合并、怎么控制上下文”，就该优先切到 `subagent_dispatch_plan`。
 - 用户问“这个项目里哪些是真源、哪些只是运行时镜像、planning / review / export 分别在哪些 surface 上发生”，就该优先切到 `project_surface_map`。
+- 用户问“先把当前故事状态压成一个以后能继续写、能 handoff、又不用重新加载全文的检查点”，就该优先切到 `story_memory_checkpoint`。
 - 用户问“帮我做自检 / 预检 / 复查 / 验收 / stage-specific audit”，或者正在审的对象本身不是纯故事文本，就该优先切到 `quality_gate_report`。
 - 用户仍然要正常产物，但任务明显跨多个 specialist lane 和审查 gate，就保持主 route，同时追加 team lens。
 - 用户仍然要正常产物，但如果表面层混乱已经会直接导致误改、漂移或错误 handoff，就保持主 route，同时追加 project-surface lens。

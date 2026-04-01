@@ -39,6 +39,9 @@ jobs:
       - name: Check semantic consistency
         run: python scripts/check_semantic_consistency.py
 
+      - name: Check background bundles
+        run: python scripts/check_background_bundles.py
+
       - name: Check subagent registries
         run: python scripts/check_subagent_registries.py
 

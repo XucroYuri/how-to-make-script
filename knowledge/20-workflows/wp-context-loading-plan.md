@@ -13,7 +13,9 @@
   "steps": [
     "先锁定 primary route 和当前 route certainty，避免在未分类前扩容。",
     "在 `route_kernel`、`focus_pack`、`compare_pack`、`teaching_pack`、`survey_pack` 中选一个 loading mode。",
-    "列出 mandatory bundle：一个 primary protocol、一个 primary rubric、必要 linked atoms，以及最多一个场景分类入口。",
+    "如果当前请求属于宽理论或背景支持问题，先从 background bundle registry 里选一个 research anchor。",
+    "如果连续性压力是主要扩容原因，优先评估是否应该产出 story_memory_checkpoint，而不是继续扩大 bundle。",
+    "列出 mandatory bundle：一个 primary protocol、一个 primary rubric、必要 linked atoms，以及在需要时最多一个背景包或场景分类入口。",
     "列出 optional expansion queue，并说明每一项只有在什么 trigger 下才值得加载。",
     "写明 explicit stop conditions 和 context-corrosion checks，防止 bundle 无限膨胀。"
   ],
@@ -27,16 +29,17 @@
     "至少写出两个 context-corrosion signals 或 stop rules"
   ],
   "rubrics": ["rb.context-loading-plan"],
-  "linked_atoms": ["ka.bounded-context-loading", "ka.reference-expansion-balance", "ka.context-corrosion-signals", "ka.scenario-factorization"]
+  "linked_atoms": ["ka.bounded-context-loading", "ka.reference-expansion-balance", "ka.context-corrosion-signals", "ka.scenario-factorization", "ka.story-memory-checkpoint"]
 }
 ---
 # 上下文加载计划协议
 
 这个协议的核心，不是把加载策略写得多复杂，而是把“为什么现在只加载这些”和“为什么现在不该再加更多”都说清楚。
 
-对当前仓库来说，最大的系统风险不是知识不够，而是加载没有分级。只要没有 loading plan，Agent 很容易在 route 已经够清楚的情况下继续加 scenario atlas、reference pack、reality lens、邻近 protocol，最后把自己拖进 summary 模式。
+对当前仓库来说，最大的系统风险不是知识不够，而是加载没有分级。只要没有 loading plan，Agent 很容易在 route 已经够清楚的情况下继续加 scenario atlas、reference pack、reality lens、background docs、邻近 protocol，最后把自己拖进 summary 模式。
 
 所以这个协议其实是在保护生成质量。它把“路由”“扩容”“停止”三个动作分开，让 Agent 有机会保持一个专业但不僵化的 balance。
+当问题只是“下次继续写时别丢状态”，最好的答案经常不是再加载五份相邻资产，而是先产出一个可恢复的检查点。
 
 ## TODOs：待回答问题
 

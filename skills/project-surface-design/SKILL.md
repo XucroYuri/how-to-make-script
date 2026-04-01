@@ -10,7 +10,7 @@ Use this skill when the user asks how a screenplay project should persist state,
 ## Workflow
 1. Identify the medium, phase pressure, and collaboration shape.
 2. Separate canonical source from runtime state.
-3. Define entrypoints, handoffs, packet assembly, review surfaces, and export surfaces.
+3. Define entrypoints, handoffs, packet assembly, review surfaces, export surfaces, and checkpoint surfaces when long-horizon continuity matters.
 4. State sync rules and human-edit policy explicitly.
 5. Return a map that can support long-running work without silent drift.
 
@@ -18,6 +18,7 @@ Use this skill when the user asks how a screenplay project should persist state,
 - `project_surface_map`: source-of-truth artifacts, runtime surfaces, phase entrypoints, canonical packet layers, review surfaces, export surfaces, sync rules, drift risks, and future runtime hooks.
 - Keep the map medium-aware. A short-drama production line is not the same as a feature development workspace.
 - Prefer explicit human-edit policy over silent assumptions.
+- If resumable continuity matters, place checkpoint surfaces explicitly instead of leaving them as implicit notes.
 
 ## References
 - `wp.project-surface-map`
@@ -25,4 +26,7 @@ Use this skill when the user asks how a screenplay project should persist state,
 - `ka.canonical-packet-assembly`
 - `ka.phase-entrypoint-handoff`
 - `ka.command-artifact-mapping`
+- `ka.script-as-coordination-artifact`
+- `ka.archive-literacy`
+- `ka.story-memory-checkpoint`
 - `rb.project-surface-map`

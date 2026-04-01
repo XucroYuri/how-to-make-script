@@ -15,6 +15,8 @@ Structured assets in this repository are machine-checked. Narrative explanation 
 
 从中文使用者角度看，这一层最重要的价值不是“分类整齐”，而是降低后续扩写时的混乱成本。剧本知识一旦不分层，很快就会出现三种常见问题：同一概念在不同文件里反复改写、流程协议和理论正文互相污染、以及新加内容不知道该挂在哪个层级。这个 ontology 的作用，就是先把“概念层”“流程层”“评分层”“案例层”分开，再允许每一层持续生长。
 
+对于“如何创作剧本”这种宽问题，当前仓库额外使用 `references/background-bundles.json` + `docs/` 层承载研究综述和来源地图，而不急着把所有研究都压成新的 core asset type。这一层的用途，是先提供机器可检查、可路由、可持续扩写的背景包，再把其中稳定、可验证、可局部加载的部分继续沉淀成 atom、protocol 或 rubric。
+
 ## TODOs：待回答问题
 
 - [ ] 现有 ontology 是否还缺少一个专门容纳“反模式 / 误诊 / 反例”的层级，而不只是把它们散落在各个 atom 中？

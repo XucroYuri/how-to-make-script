@@ -41,6 +41,22 @@ Inference:
 - screenplay-agent systems benefit from stage-to-artifact mapping and explicit review/compliance/export surfaces;
 - short-drama and other production-line media deserve clearer workflow surfaces instead of being flattened into a generic screenplay route.
 
+## 4. Shanyin Screenwriting Master
+
+Source:
+- [Shanyin-ai/shanyin-screenwriting-master](https://github.com/Shanyin-ai/shanyin-screenwriting-master)
+
+Observed signals:
+- The repository ships a README plus a packaged `.skill` archive whose extracted references split guidance into `core-methodology`, `format-ultrashort`, `format-short`, `format-feature`, and `format-series`.
+- The extracted materials repeatedly distinguish external plot rhythm from internal emotional rhythm, use “memory checkpoints” to carry long-form state, and ask series work to lock runtime/container parameters before allocating major turns.
+- The integrated public-facing markdown surface is much larger and more overloaded than the bounded parts that are actually most transferable.
+
+Inference:
+- screenplay-agent systems benefit from a typed continuity-compression artifact rather than broad draft reload;
+- serial and shortform structure design should explicitly lock the container before spending arc budget;
+- the most valuable ideas inside a large creative prompt often live at the level of artifact logic, not prompt length;
+- repos should separate editable source surfaces from packaged delivery surfaces so the latter do not become opaque truth.
+
 ## Adoption Rule
 
 The repository should only absorb:

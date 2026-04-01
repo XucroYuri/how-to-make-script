@@ -1,0 +1,55 @@
+{
+  "version": "1",
+  "bundles": [
+    {
+      "id": "bg.screenplay-creation-core",
+      "title": "How To Create a Screenplay",
+      "summary": "Callable research background bundle for broad screenplay-creation questions, theory-support requests, and agent-skill design work.",
+      "scope_tags": [
+        "creation_foundations",
+        "viewer_cognition",
+        "development_workflow",
+        "deliberate_practice",
+        "feedback_interpretation",
+        "archive_literacy",
+        "industry_context"
+      ],
+      "docs": [
+        "docs/how-to-create-a-screenplay-research.md",
+        "docs/how-to-create-a-screenplay-research-zh.md",
+        "docs/source-map-screenplay-creation-research.md"
+      ],
+      "linked_atoms": [
+        "ka.screenplay-lens-stacking",
+        "ka.viewer-inference-guidance",
+        "ka.script-as-coordination-artifact",
+        "ka.screenwriting-deliberate-practice",
+        "ka.feedback-subjectivity-management",
+        "ka.archive-literacy"
+      ],
+      "primary_outputs": [
+        "research_background_map",
+        "context_loading_plan"
+      ],
+      "preferred_loading_modes": [
+        "survey_pack",
+        "teaching_pack"
+      ],
+      "constraint_families": [
+        "research_scope",
+        "reference_depth",
+        "route_certainty"
+      ],
+      "when_to_load": [
+        "User asks broad questions such as 'how to create a screenplay' and wants theory support rather than one immediate screenplay artifact.",
+        "User is designing or auditing the screenplay Agent Skill and needs a bounded background bundle before choosing narrower routes.",
+        "A survey_pack would otherwise expand blindly without a single declared research anchor."
+      ],
+      "stop_rules": [
+        "Do not auto-load this bundle for narrow drafting, polishing, or rewrite requests that already have a stable primary route.",
+        "Do not expand beyond this bundle unless the next asset changes the next decision materially.",
+        "If the user's real need becomes a concrete artifact, exit the bundle and route to the narrower workflow."
+      ]
+    }
+  ]
+}

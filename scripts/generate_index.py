@@ -9,7 +9,7 @@ import sys
 if __package__ in (None, ""):
     sys.path.append(str(Path(__file__).resolve().parents[1]))
 
-from scripts.lib import collect_asset_index, relative_path, repo_root
+from scripts.lib import collect_asset_index, load_background_bundles, relative_path, repo_root
 
 
 def build_index(root: Path) -> Dict[str, Any]:
@@ -42,9 +42,21 @@ def build_index(root: Path) -> Dict[str, Any]:
         if manifest.get("surface", "public") == "public"
     ]
 
+    bundle_registry = load_background_bundles(root)
+    background_bundles = [
+        {
+            "id": bundle["id"],
+            "title": bundle["title"],
+            "docs": bundle["docs"],
+            "primary_outputs": bundle["primary_outputs"],
+        }
+        for bundle in bundle_registry.get("bundles", [])
+    ]
+
     return {
         "assets": asset_index,
         "skills": skills,
+        "background_bundles": background_bundles,
         "fixtures": [
             {
                 "id": fixture["id"],

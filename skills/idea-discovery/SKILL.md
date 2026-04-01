@@ -21,4 +21,5 @@ Use this skill to convert vague inspiration into a workable premise.
 - `wp.idea-discovery`
 - `ka.story-goal`
 - `ka.conflict-pressure`
+- `ka.screenplay-lens-stacking`
 - `rb.logline`
