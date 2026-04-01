@@ -1,0 +1,17 @@
+.DS_Store
+.obsidian/
+.omx/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.coverage
+.coverage.*
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+dist/
+build/
+.generated/
+coverage.xml
