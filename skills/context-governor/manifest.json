@@ -11,6 +11,9 @@
   },
   "protocol_id": "wp.context-loading-plan",
   "rubric_ids": ["rb.context-loading-plan"],
+  "default_loading_mode": "focus_pack",
   "linked_atoms": ["ka.bounded-context-loading", "ka.reference-expansion-balance", "ka.context-corrosion-signals", "ka.scenario-factorization", "ka.story-memory-checkpoint"],
+  "adjunct_bundles": {},
+  "fallback_to_skill_id": null,
   "fallback_behavior": "If route certainty is still low, ask for the smallest missing distinction before expanding the bundle."
 }

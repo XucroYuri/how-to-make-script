@@ -4,8 +4,16 @@
   "type": "workflow_protocol",
   "title": "多路径方案协议",
   "goal": "在还不该过早收敛的阶段，为同一 brief 输出多条真正不同且可比较的 path_options。",
-  "input_contract": ["brief", "concept fragment", "current direction", "known constraints", "none"],
-  "output_contract": ["path_options"],
+  "input_contract": [
+    "brief",
+    "concept fragment",
+    "current direction",
+    "known constraints",
+    "none"
+  ],
+  "output_contract": [
+    "path_options"
+  ],
   "preconditions": [
     "用户处于 discover 或 design 阶段，且仍需要探索多个 viable path",
     "至少存在一个可描述的核心 brief、问题或创作目标"
@@ -24,8 +32,18 @@
     "窄问题至少有 2 条、宽问题至少有 3 条路径具有清楚差异和 tradeoff",
     "收敛条件足够明确，后续可以转入单路径开发"
   ],
-  "rubrics": ["rb.path-options"],
-  "linked_atoms": ["ka.creative-pluralism", "ka.divergence-convergence-loop", "ka.false-universal-warning", "ka.boundary-first-guidance"]
+  "rubrics": [
+    "rb.path-options"
+  ],
+  "linked_atoms": [
+    "ka.creative-pluralism",
+    "ka.divergence-convergence-loop",
+    "ka.false-universal-warning",
+    "ka.boundary-first-guidance"
+  ],
+  "budget_class": "M",
+  "mandatory_atom_count": 4,
+  "expansion_allowed": true
 }
 ---
 # 多路径方案协议

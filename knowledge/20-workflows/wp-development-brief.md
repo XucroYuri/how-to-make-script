@@ -4,8 +4,16 @@
   "type": "workflow_protocol",
   "title": "开发策略简报协议",
   "goal": "在真实委制、平台、发行和业务约束下，为项目产出一个 development_brief，明确创作优先级与开发顺序。",
-  "input_contract": ["concept", "current draft", "commissioning context", "platform/release assumptions", "business objective"],
-  "output_contract": ["development_brief"],
+  "input_contract": [
+    "concept",
+    "current draft",
+    "commissioning context",
+    "platform/release assumptions",
+    "business objective"
+  ],
+  "output_contract": [
+    "development_brief"
+  ],
   "preconditions": [
     "项目至少已有一个概念或草稿方向",
     "允许把现实约束与创作方向一起纳入判断"
@@ -24,8 +32,18 @@
     "brief 已说明当前项目最该解决的开发问题",
     "创作建议已经与平台、业务、交付现实对齐"
   ],
-  "rubrics": ["rb.development-brief"],
-  "linked_atoms": ["ka.commissioning-fit", "ka.platform-attention-economy", "ka.audience-need-state", "ka.screenwriting-history-shift"]
+  "rubrics": [
+    "rb.development-brief"
+  ],
+  "linked_atoms": [
+    "ka.commissioning-fit",
+    "ka.platform-attention-economy",
+    "ka.audience-need-state",
+    "ka.screenwriting-history-shift"
+  ],
+  "budget_class": "M",
+  "mandatory_atom_count": 4,
+  "expansion_allowed": true
 }
 ---
 # 开发策略简报协议

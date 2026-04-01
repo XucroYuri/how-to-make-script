@@ -11,6 +11,14 @@
   },
   "protocol_id": "wp.idea-discovery",
   "rubric_ids": ["rb.logline"],
+  "default_loading_mode": "focus_pack",
   "linked_atoms": ["ka.story-goal", "ka.conflict-pressure", "ka.theme-pressure", "ka.screenplay-lens-stacking"],
+  "adjunct_bundles": {
+    "reality-lens": {
+      "trigger": "audience_segment",
+      "mode": "smallest_adjunct"
+    }
+  },
+  "fallback_to_skill_id": null,
   "fallback_behavior": "When medium is unclear, narrow the idea to one premise before branching into medium-specific development."
 }

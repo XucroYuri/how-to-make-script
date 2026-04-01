@@ -4,8 +4,14 @@
   "type": "workflow_protocol",
   "title": "互动分支地图协议",
   "goal": "输出可收束、可追踪、具备选择意义的 interactive branch map。",
-  "input_contract": ["story concept", "choice premise", "state variables"],
-  "output_contract": ["interactive_branch_map"],
+  "input_contract": [
+    "story concept",
+    "choice premise",
+    "state variables"
+  ],
+  "output_contract": [
+    "interactive_branch_map"
+  ],
   "preconditions": [
     "用户希望设计选择与后果"
   ],
@@ -24,8 +30,18 @@
     "状态变量可追踪",
     "结构具备收束策略"
   ],
-  "rubrics": ["rb.interactive-branch-map"],
-  "linked_atoms": ["ka.medium-game-narrative", "ka.medium-branching-interactive", "ka.causality-chain", "ka.theme-pressure"]
+  "rubrics": [
+    "rb.interactive-branch-map"
+  ],
+  "linked_atoms": [
+    "ka.medium-game-narrative",
+    "ka.medium-branching-interactive",
+    "ka.causality-chain",
+    "ka.theme-pressure"
+  ],
+  "budget_class": "M",
+  "mandatory_atom_count": 4,
+  "expansion_allowed": true
 }
 ---
 # 互动分支地图协议

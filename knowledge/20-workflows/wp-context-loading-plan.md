@@ -29,7 +29,10 @@
     "至少写出两个 context-corrosion signals 或 stop rules"
   ],
   "rubrics": ["rb.context-loading-plan"],
-  "linked_atoms": ["ka.bounded-context-loading", "ka.reference-expansion-balance", "ka.context-corrosion-signals", "ka.scenario-factorization", "ka.story-memory-checkpoint"]
+  "linked_atoms": ["ka.bounded-context-loading", "ka.reference-expansion-balance", "ka.context-corrosion-signals", "ka.scenario-factorization", "ka.story-memory-checkpoint"],
+  "budget_class": "M",
+  "mandatory_atom_count": 5,
+  "expansion_allowed": true
 }
 ---
 # 上下文加载计划协议

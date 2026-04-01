@@ -36,6 +36,7 @@ def match_route(
     ):
         return False
 
+    # required_constraint_signals: all must be present in fixture constraints
     required = route.get("required_constraint_signals", [])
     if required:
         constraints = normalized_constraint_keys(register, fixture)
@@ -70,7 +71,11 @@ def check_routes(root: Path) -> Dict[str, Any]:
             top_score = scored[0][0]
             top = [route for score, route in scored if score == top_score]
             if len(top) > 1:
-                errors.append(f"{fixture['id']}: multiple routes matched")
+                # Ambiguity: multiple routes with equal scores — report as ambiguity
+                route_ids = [r["skill_id"] for r in top]
+                errors.append(
+                    f"{fixture['id']}: ambiguous — multiple routes matched with equal score: {route_ids}"
+                )
                 continue
             match = top[0]
         else:

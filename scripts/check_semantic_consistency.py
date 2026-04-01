@@ -23,10 +23,28 @@ def parse_root_outputs(skill_text: str) -> Set[str]:
     return set(OUTPUT_RE.findall(skill_text[start:end]))
 
 
-def parse_root_subskills(skill_text: str) -> Set[str]:
-    start = skill_text.index("## Sub-Skills")
-    end = skill_text.index("## Primary References")
-    return {path for _, path in SUBSKILL_RE.findall(skill_text[start:end])}
+def parse_root_subskills(skill_text: str, root: Path | None = None) -> Set[str]:
+    # Sub-skills may be inline in SKILL.md or in references/skill-directory.md
+    directory_path = root / "references" / "skill-directory.md" if root else None
+    if directory_path and directory_path.exists():
+        dir_text = directory_path.read_text(encoding="utf-8")
+        raw = {path for _, path in SUBSKILL_RE.findall(dir_text)}
+        # Normalize relative paths like ../skills/foo/SKILL.md -> skills/foo/SKILL.md
+        normalized = set()
+        for p in raw:
+            parts = Path(p).as_posix()
+            while parts.startswith("../"):
+                parts = parts[3:]
+            normalized.add(parts)
+        return normalized
+    # Fallback: parse from SKILL.md directly
+    if "## Sub-Skills" in skill_text:
+        start = skill_text.index("## Sub-Skills")
+        end = skill_text.find("\n## ", start + 1)
+        if end == -1:
+            end = len(skill_text)
+        return {path for _, path in SUBSKILL_RE.findall(skill_text[start:end])}
+    return set()
 
 
 def parse_supported_outputs(path: Path) -> Set[str]:
@@ -59,7 +77,7 @@ def check_semantic_consistency(root: Path) -> Dict[str, Any]:
     constraint_register = load_json(root / "references" / "constraint-key-register.json")
 
     root_outputs = parse_root_outputs(skill_text)
-    root_subskills = parse_root_subskills(skill_text)
+    root_subskills = parse_root_subskills(skill_text, root)
     supported_outputs = parse_supported_outputs(supported_outputs_path)
     taxonomy_outputs = parse_taxonomy_section(taxonomy_path, "Outputs")
     taxonomy_constraints = parse_constraint_families(taxonomy_path)

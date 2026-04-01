@@ -4,13 +4,44 @@
   "description": "Narrow overbroad screenplay claims into scoped, challengeable guidance.",
   "entrypoint": "skills/scope-correction/SKILL.md",
   "supports": {
-    "intents": ["design", "diagnose", "adapt"],
-    "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-    "stages": ["premise", "structure", "rewrite", "adaptation"],
-    "outputs": ["scope_correction"]
+    "intents": [
+      "design",
+      "diagnose",
+      "adapt"
+    ],
+    "mediums": [
+      "feature_film",
+      "episodic",
+      "short_drama",
+      "animation",
+      "commercial",
+      "branded_film",
+      "shortform_video",
+      "game_narrative",
+      "branching_interactive"
+    ],
+    "stages": [
+      "premise",
+      "structure",
+      "rewrite",
+      "adaptation"
+    ],
+    "outputs": [
+      "scope_correction"
+    ]
   },
   "protocol_id": "wp.scope-correction",
-  "rubric_ids": ["rb.scope-correction"],
-  "linked_atoms": ["ka.scope-correction", "ka.false-universal-warning", "ka.creative-pluralism", "ka.boundary-first-guidance"],
-  "fallback_behavior": "If the challenged claim is too vague, first identify the exact statement and one concrete failure context before attempting to narrow it."
+  "rubric_ids": [
+    "rb.scope-correction"
+  ],
+  "linked_atoms": [
+    "ka.scope-correction",
+    "ka.false-universal-warning",
+    "ka.creative-pluralism",
+    "ka.boundary-first-guidance"
+  ],
+  "fallback_behavior": "If the challenged claim is too vague, first identify the exact statement and one concrete failure context before attempting to narrow it.",
+  "default_loading_mode": "focus_pack",
+  "adjunct_bundles": {},
+  "fallback_to_skill_id": null
 }

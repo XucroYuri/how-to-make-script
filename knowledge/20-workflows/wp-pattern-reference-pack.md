@@ -4,8 +4,16 @@
   "type": "workflow_protocol",
   "title": "范式参考包协议",
   "goal": "针对一个明确的剧本创作问题，返回一份 pattern_reference_pack，给出场景分类、强样本、失败对照、成功/失败机制解释和非教条使用说明。",
-  "input_contract": ["creative problem", "medium", "stage", "constraints", "none"],
-  "output_contract": ["pattern_reference_pack"],
+  "input_contract": [
+    "creative problem",
+    "medium",
+    "stage",
+    "constraints",
+    "none"
+  ],
+  "output_contract": [
+    "pattern_reference_pack"
+  ],
   "preconditions": [
     "用户需要参考范式、成功样本、失败对照或比较性教学",
     "至少可以锁定一个创作问题、媒介或阶段"
@@ -26,8 +34,18 @@
     "至少写明一个适用条件和一个失效边界",
     "明确声明样本是参考而非唯一模板"
   ],
-  "rubrics": ["rb.pattern-reference-pack"],
-  "linked_atoms": ["ka.reference-pattern-usage", "ka.scenario-factorization", "ka.creative-pluralism", "ka.false-universal-warning"]
+  "rubrics": [
+    "rb.pattern-reference-pack"
+  ],
+  "linked_atoms": [
+    "ka.reference-pattern-usage",
+    "ka.scenario-factorization",
+    "ka.creative-pluralism",
+    "ka.false-universal-warning"
+  ],
+  "budget_class": "M",
+  "mandatory_atom_count": 4,
+  "expansion_allowed": true
 }
 ---
 # 范式参考包协议

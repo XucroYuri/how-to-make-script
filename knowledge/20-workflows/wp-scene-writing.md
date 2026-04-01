@@ -4,8 +4,15 @@
   "type": "workflow_protocol",
   "title": "场景写作协议",
   "goal": "把 outline 转成具备明确功能和变化的 scene card 或 scene draft。",
-  "input_contract": ["outline", "beat_sheet", "scene goal"],
-  "output_contract": ["scene_card", "scene_draft"],
+  "input_contract": [
+    "outline",
+    "beat_sheet",
+    "scene goal"
+  ],
+  "output_contract": [
+    "scene_card",
+    "scene_draft"
+  ],
   "preconditions": [
     "大纲中已有场景前后关系"
   ],
@@ -24,8 +31,19 @@
     "场景功能明确",
     "场景结束后的局面已不同于开始"
   ],
-  "rubrics": ["rb.scene-draft"],
-  "linked_atoms": ["ka.scene-function", "ka.conflict-pressure", "ka.exposition-control", "ka.opening-job-selection", "ka.medium-animation"]
+  "rubrics": [
+    "rb.scene-draft"
+  ],
+  "linked_atoms": [
+    "ka.scene-function",
+    "ka.conflict-pressure",
+    "ka.exposition-control",
+    "ka.opening-job-selection",
+    "ka.medium-animation"
+  ],
+  "budget_class": "M",
+  "mandatory_atom_count": 5,
+  "expansion_allowed": true
 }
 ---
 # 场景写作协议

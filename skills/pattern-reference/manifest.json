@@ -4,13 +4,48 @@
   "description": "Return scenario-specific screenplay reference packs with contrastive success and failure samples.",
   "entrypoint": "skills/pattern-reference/SKILL.md",
   "supports": {
-    "intents": ["discover", "design", "diagnose", "adapt"],
-    "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-    "stages": ["ideation", "premise", "structure", "scene", "dialogue", "rewrite", "adaptation"],
-    "outputs": ["pattern_reference_pack"]
+    "intents": [
+      "discover",
+      "design",
+      "diagnose",
+      "adapt"
+    ],
+    "mediums": [
+      "feature_film",
+      "episodic",
+      "short_drama",
+      "animation",
+      "commercial",
+      "branded_film",
+      "shortform_video",
+      "game_narrative",
+      "branching_interactive"
+    ],
+    "stages": [
+      "ideation",
+      "premise",
+      "structure",
+      "scene",
+      "dialogue",
+      "rewrite",
+      "adaptation"
+    ],
+    "outputs": [
+      "pattern_reference_pack"
+    ]
   },
   "protocol_id": "wp.pattern-reference-pack",
-  "rubric_ids": ["rb.pattern-reference-pack"],
-  "linked_atoms": ["ka.reference-pattern-usage", "ka.scenario-factorization", "ka.creative-pluralism", "ka.false-universal-warning"],
-  "fallback_behavior": "If the request is too broad, first lock the smallest creative problem that actually needs a reference pack before selecting examples."
+  "rubric_ids": [
+    "rb.pattern-reference-pack"
+  ],
+  "linked_atoms": [
+    "ka.reference-pattern-usage",
+    "ka.scenario-factorization",
+    "ka.creative-pluralism",
+    "ka.false-universal-warning"
+  ],
+  "fallback_behavior": "If the request is too broad, first lock the smallest creative problem that actually needs a reference pack before selecting examples.",
+  "default_loading_mode": "teaching_pack",
+  "adjunct_bundles": {},
+  "fallback_to_skill_id": null
 }

@@ -4,8 +4,18 @@
   "type": "workflow_protocol",
   "title": "类型适配协议",
   "goal": "在不破坏核心叙事引擎的前提下，把项目适配到目标类型或媒介。",
-  "input_contract": ["existing premise", "existing outline", "target genre", "target medium"],
-  "output_contract": ["premise", "treatment", "outline", "scene_draft"],
+  "input_contract": [
+    "existing premise",
+    "existing outline",
+    "target genre",
+    "target medium"
+  ],
+  "output_contract": [
+    "premise",
+    "treatment",
+    "outline",
+    "scene_draft"
+  ],
   "preconditions": [
     "已有可被改造的故事材料"
   ],
@@ -23,8 +33,20 @@
     "适配版仍保有核心引擎",
     "目标类型或媒介承诺已被满足"
   ],
-  "rubrics": ["rb.adaptation"],
-  "linked_atoms": ["ka.genre-thriller", "ka.genre-romance", "ka.genre-comedy", "ka.medium-feature-film", "ka.medium-commercial", "ka.medium-branching-interactive"]
+  "rubrics": [
+    "rb.adaptation"
+  ],
+  "linked_atoms": [
+    "ka.genre-thriller",
+    "ka.genre-romance",
+    "ka.genre-comedy",
+    "ka.medium-feature-film",
+    "ka.medium-commercial",
+    "ka.medium-branching-interactive"
+  ],
+  "budget_class": "M",
+  "mandatory_atom_count": 6,
+  "expansion_allowed": true
 }
 ---
 # 类型适配协议

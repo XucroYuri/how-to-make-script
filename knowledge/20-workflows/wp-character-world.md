@@ -25,7 +25,10 @@
     "结构设计所需的关键关系已清楚"
   ],
   "rubrics": ["rb.character-world"],
-  "linked_atoms": ["ka.character-arc", "ka.theme-pressure", "ka.exposition-control", "ka.character-drive-quartet", "ka.capability-friction-balance", "ka.triggered-behavior-profile", "ka.viewer-inference-guidance"]
+  "linked_atoms": ["ka.character-arc", "ka.theme-pressure", "ka.exposition-control", "ka.character-drive-quartet", "ka.capability-friction-balance", "ka.triggered-behavior-profile", "ka.viewer-inference-guidance"],
+  "budget_class": "L",
+  "mandatory_atom_count": 7,
+  "expansion_allowed": true
 }
 ---
 # 角色与世界观协议

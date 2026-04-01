@@ -4,13 +4,41 @@
   "description": "Draft or design scenes with clear function, conflict, and change.",
   "entrypoint": "skills/scene-writing/SKILL.md",
   "supports": {
-    "intents": ["draft"],
-    "mediums": ["feature_film", "episodic", "short_drama", "animation"],
-    "stages": ["scene"],
-    "outputs": ["scene_card", "scene_draft"]
+    "intents": [
+      "draft"
+    ],
+    "mediums": [
+      "feature_film",
+      "episodic",
+      "short_drama",
+      "animation"
+    ],
+    "stages": [
+      "scene"
+    ],
+    "outputs": [
+      "scene_card",
+      "scene_draft"
+    ]
   },
   "protocol_id": "wp.scene-writing",
-  "rubric_ids": ["rb.scene-draft"],
-  "linked_atoms": ["ka.scene-function", "ka.conflict-pressure", "ka.exposition-control", "ka.opening-job-selection", "ka.medium-animation"],
-  "fallback_behavior": "Merge, delete, or redesign the scene if it does not change the situation."
+  "rubric_ids": [
+    "rb.scene-draft"
+  ],
+  "linked_atoms": [
+    "ka.scene-function",
+    "ka.conflict-pressure",
+    "ka.exposition-control",
+    "ka.opening-job-selection",
+    "ka.medium-animation"
+  ],
+  "fallback_behavior": "Merge, delete, or redesign the scene if it does not change the situation.",
+  "default_loading_mode": "focus_pack",
+  "adjunct_bundles": {
+    "expression-lens": {
+      "trigger": "voice_target",
+      "mode": "smallest_adjunct"
+    }
+  },
+  "fallback_to_skill_id": null
 }

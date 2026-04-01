@@ -4,13 +4,41 @@
   "description": "Run adaptive screenplay quality gates, targeted audits, preflight checks, and rechecks across different artifact families.",
   "entrypoint": "skills/quality-gating/SKILL.md",
   "supports": {
-    "intents": ["design", "diagnose", "polish", "adapt"],
-    "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-    "stages": ["premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
-    "outputs": ["quality_gate_report"]
+    "intents": [
+      "design",
+      "diagnose",
+      "polish",
+      "adapt"
+    ],
+    "mediums": [
+      "feature_film",
+      "episodic",
+      "short_drama",
+      "animation",
+      "commercial",
+      "branded_film",
+      "shortform_video",
+      "game_narrative",
+      "branching_interactive"
+    ],
+    "stages": [
+      "premise",
+      "character",
+      "structure",
+      "outline",
+      "scene",
+      "dialogue",
+      "rewrite",
+      "adaptation"
+    ],
+    "outputs": [
+      "quality_gate_report"
+    ]
   },
   "protocol_id": "wp.quality-gate-report",
-  "rubric_ids": ["rb.quality-gate-report"],
+  "rubric_ids": [
+    "rb.quality-gate-report"
+  ],
   "linked_atoms": [
     "ka.contract-first-quality-gating",
     "ka.adaptive-quality-lens-selection",
@@ -19,5 +47,8 @@
     "ka.hard-gate-soft-score-separation",
     "ka.targeted-recheck-loop"
   ],
-  "fallback_behavior": "If the user mainly needs story-layer rewrite prioritization, route back to rewrite_report instead of forcing a multi-lens quality gate."
+  "fallback_behavior": "If the user mainly needs story-layer rewrite prioritization, route back to rewrite_report instead of forcing a multi-lens quality gate.",
+  "default_loading_mode": "focus_pack",
+  "adjunct_bundles": {},
+  "fallback_to_skill_id": "skill.rewrite-doctor"
 }

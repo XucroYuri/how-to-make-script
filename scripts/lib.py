@@ -99,6 +99,8 @@ def load_schemas(root: Path) -> Dict[str, Dict[str, Any]]:
 
 def validate_schema(instance: Any, schema: Dict[str, Any], path: str = "$") -> List[str]:
     errors: List[str] = []
+    if instance is None and schema.get("nullable"):
+        return errors
     expected_type = schema.get("type")
 
     if expected_type == "object":
@@ -125,8 +127,14 @@ def validate_schema(instance: Any, schema: Dict[str, Any], path: str = "$") -> L
         if not isinstance(instance, str):
             return [f"{path}: expected string"]
     elif expected_type == "integer":
-        if not isinstance(instance, int):
+        if not isinstance(instance, int) or isinstance(instance, bool):
             return [f"{path}: expected integer"]
+        minimum = schema.get("minimum")
+        if minimum is not None and instance < minimum:
+            errors.append(f"{path}: expected at least {minimum}")
+    elif expected_type == "boolean":
+        if not isinstance(instance, bool):
+            return [f"{path}: expected boolean"]
     elif expected_type is None:
         pass
     else:

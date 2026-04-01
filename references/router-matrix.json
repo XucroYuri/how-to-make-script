@@ -7,6 +7,7 @@
       "stage": ["ideation"],
       "output": ["premise"],
       "constraint_signals": ["genre", "tone", "format", "duration", "creative_problem"],
+      "required_constraint_signals": [],
       "skill_id": "skill.idea-discovery",
       "protocol_id": "wp.idea-discovery",
       "rubric_id": "rb.logline"
@@ -17,6 +18,7 @@
       "stage": ["premise"],
       "output": ["premise"],
       "constraint_signals": ["participation_mode", "creative_problem"],
+      "required_constraint_signals": [],
       "skill_id": "skill.idea-discovery",
       "protocol_id": "wp.idea-discovery",
       "rubric_id": "rb.logline"
@@ -27,6 +29,7 @@
       "stage": ["premise"],
       "output": ["logline", "premise"],
       "constraint_signals": ["genre", "tone", "reference_bar"],
+      "required_constraint_signals": [],
       "skill_id": "skill.logline-premise",
       "protocol_id": "wp.logline-premise",
       "rubric_id": "rb.logline"
@@ -37,6 +40,7 @@
       "stage": ["character"],
       "output": ["premise", "synopsis"],
       "constraint_signals": ["genre", "tone", "format"],
+      "required_constraint_signals": [],
       "skill_id": "skill.character-world",
       "protocol_id": "wp.character-world",
       "rubric_id": "rb.character-world"
@@ -47,6 +51,7 @@
       "stage": ["structure", "outline"],
       "output": ["beat_sheet", "outline", "treatment"],
       "constraint_signals": ["format", "duration", "genre"],
+      "required_constraint_signals": [],
       "skill_id": "skill.structure-beat",
       "protocol_id": "wp.structure-beat-outline",
       "rubric_id": "rb.outline"
@@ -57,6 +62,7 @@
       "stage": ["scene"],
       "output": ["scene_card", "scene_draft"],
       "constraint_signals": ["tone", "voice_target", "experiential_depth"],
+      "required_constraint_signals": [],
       "skill_id": "skill.scene-writing",
       "protocol_id": "wp.scene-writing",
       "rubric_id": "rb.scene-draft"
@@ -67,6 +73,7 @@
       "stage": ["dialogue"],
       "output": ["dialogue_polish"],
       "constraint_signals": ["voice_target", "language_register", "tone"],
+      "required_constraint_signals": [],
       "skill_id": "skill.dialogue-subtext",
       "protocol_id": "wp.dialogue-polish",
       "rubric_id": "rb.dialogue"
@@ -77,6 +84,7 @@
       "stage": ["rewrite"],
       "output": ["rewrite_report"],
       "constraint_signals": ["draft_stage", "failure_layer"],
+      "required_constraint_signals": [],
       "skill_id": "skill.rewrite-doctor",
       "protocol_id": "wp.rewrite-doctor",
       "rubric_id": "rb.rewrite-report"
@@ -87,6 +95,7 @@
       "stage": ["premise", "structure", "outline", "scene", "rewrite"],
       "output": ["commercial_script"],
       "constraint_signals": ["platform", "campaign_goal", "duration", "tone"],
+      "required_constraint_signals": [],
       "skill_id": "skill.commercial-script",
       "protocol_id": "wp.commercial-script",
       "rubric_id": "rb.commercial-script"
@@ -97,6 +106,7 @@
       "stage": ["structure", "outline", "adaptation"],
       "output": ["interactive_branch_map"],
       "constraint_signals": ["participation_mode", "format", "creative_problem"],
+      "required_constraint_signals": [],
       "skill_id": "skill.interactive-branching",
       "protocol_id": "wp.interactive-branch-map",
       "rubric_id": "rb.interactive-branch-map"
@@ -107,6 +117,7 @@
       "stage": ["adaptation"],
       "output": ["premise", "treatment", "outline", "scene_draft"],
       "constraint_signals": ["source_medium", "genre", "tone"],
+      "required_constraint_signals": [],
       "skill_id": "skill.genre-adaptation",
       "protocol_id": "wp.genre-adaptation",
       "rubric_id": "rb.adaptation"
@@ -117,6 +128,7 @@
       "stage": ["premise", "structure", "rewrite", "adaptation"],
       "output": ["audience_fit_note"],
       "constraint_signals": ["audience_segment", "audience_need_state", "platform", "business_model"],
+      "required_constraint_signals": [],
       "skill_id": "skill.audience-insight",
       "protocol_id": "wp.audience-fit-note",
       "rubric_id": "rb.audience-fit"
@@ -127,6 +139,7 @@
       "stage": ["premise", "structure", "outline", "rewrite", "adaptation"],
       "output": ["development_brief"],
       "constraint_signals": ["commissioning_context", "business_model", "release_window", "platform", "reference_bar"],
+      "required_constraint_signals": [],
       "skill_id": "skill.development-strategy",
       "protocol_id": "wp.development-brief",
       "rubric_id": "rb.development-brief"
@@ -137,6 +150,7 @@
       "stage": ["ideation", "premise", "rewrite", "adaptation"],
       "output": ["learning_path"],
       "constraint_signals": ["writer_maturity", "reference_bar", "failure_layer"],
+      "required_constraint_signals": [],
       "skill_id": "skill.writer-development",
       "protocol_id": "wp.writer-development-path",
       "rubric_id": "rb.learning-path"
@@ -147,6 +161,7 @@
       "stage": ["ideation", "premise", "structure"],
       "output": ["path_options"],
       "constraint_signals": ["creative_problem", "comparison_mode", "hard_boundaries", "soft_constraints"],
+      "required_constraint_signals": [],
       "skill_id": "skill.path-exploration",
       "protocol_id": "wp.path-options",
       "rubric_id": "rb.path-options"
@@ -157,6 +172,7 @@
       "stage": ["structure", "rewrite", "adaptation"],
       "output": ["boundary_map"],
       "constraint_signals": ["hard_boundaries", "soft_constraints", "platform", "commissioning_context"],
+      "required_constraint_signals": [],
       "skill_id": "skill.boundary-mapping",
       "protocol_id": "wp.boundary-map",
       "rubric_id": "rb.boundary-map"
@@ -167,6 +183,7 @@
       "stage": ["premise", "structure", "rewrite", "adaptation"],
       "output": ["scope_correction"],
       "constraint_signals": ["creative_problem", "route_certainty", "hard_boundaries", "soft_constraints"],
+      "required_constraint_signals": [],
       "skill_id": "skill.scope-correction",
       "protocol_id": "wp.scope-correction",
       "rubric_id": "rb.scope-correction"
@@ -177,6 +194,7 @@
       "stage": ["ideation", "premise", "structure", "scene", "dialogue", "rewrite", "adaptation"],
       "output": ["pattern_reference_pack"],
       "constraint_signals": ["scenario_family", "creative_problem", "comparison_mode", "genre"],
+      "required_constraint_signals": [],
       "skill_id": "skill.pattern-reference",
       "protocol_id": "wp.pattern-reference-pack",
       "rubric_id": "rb.pattern-reference-pack"
@@ -187,6 +205,7 @@
       "stage": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
       "output": ["context_loading_plan"],
       "constraint_signals": ["loading_mode", "reference_depth", "route_certainty"],
+      "required_constraint_signals": [],
       "skill_id": "skill.context-governor",
       "protocol_id": "wp.context-loading-plan",
       "rubric_id": "rb.context-loading-plan"
@@ -197,6 +216,7 @@
       "stage": ["character", "scene", "dialogue", "rewrite", "adaptation"],
       "output": ["voice_style_guide"],
       "constraint_signals": ["voice_target", "language_register", "ip_continuity", "experiential_depth"],
+      "required_constraint_signals": [],
       "skill_id": "skill.voice-style-calibration",
       "protocol_id": "wp.voice-style-guide",
       "rubric_id": "rb.voice-style-guide"
@@ -207,6 +227,7 @@
       "stage": ["scene", "dialogue", "adaptation"],
       "output": ["visual_language_pack"],
       "constraint_signals": ["visual_vocab_locale", "aesthetic_register", "prompt_runtime"],
+      "required_constraint_signals": [],
       "skill_id": "skill.visual-language",
       "protocol_id": "wp.visual-language-pack",
       "rubric_id": "rb.visual-language-pack"
@@ -217,6 +238,7 @@
       "stage": ["scene", "rewrite", "adaptation"],
       "output": ["screen_to_video_brief"],
       "constraint_signals": ["prompt_runtime", "shot_granularity", "continuity_invariants", "reference_asset_mode", "traceability_level"],
+      "required_constraint_signals": [],
       "skill_id": "skill.screen-to-video-bridge",
       "protocol_id": "wp.screen-to-video-brief",
       "rubric_id": "rb.screen-to-video-brief"
@@ -227,6 +249,7 @@
       "stage": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
       "output": ["team_workflow_blueprint"],
       "constraint_signals": ["team_mode", "coordination_model", "human_gate_level", "artifact_chain", "parallelism_budget"],
+      "required_constraint_signals": [],
       "skill_id": "skill.team-orchestration",
       "protocol_id": "wp.team-workflow-blueprint",
       "rubric_id": "rb.team-workflow-blueprint"
@@ -237,6 +260,7 @@
       "stage": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
       "output": ["expert_subagent_cast"],
       "constraint_signals": ["subagent_family", "persona_policy", "selection_strategy", "context_budget", "team_mode"],
+      "required_constraint_signals": [],
       "skill_id": "skill.expert-subagent-casting",
       "protocol_id": "wp.expert-subagent-cast",
       "rubric_id": "rb.expert-subagent-cast"
@@ -247,6 +271,7 @@
       "stage": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
       "output": ["subagent_dispatch_plan"],
       "constraint_signals": ["dispatch_topology", "convergence_owner", "context_budget", "team_mode", "parallelism_budget"],
+      "required_constraint_signals": [],
       "skill_id": "skill.subagent-dispatch-design",
       "protocol_id": "wp.subagent-dispatch-plan",
       "rubric_id": "rb.subagent-dispatch-plan"
@@ -257,6 +282,7 @@
       "stage": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
       "output": ["story_memory_checkpoint"],
       "constraint_signals": ["phase_focus", "continuity_invariants", "traceability_level", "context_budget"],
+      "required_constraint_signals": [],
       "skill_id": "skill.story-memory-checkpoint",
       "protocol_id": "wp.story-memory-checkpoint",
       "rubric_id": "rb.story-memory-checkpoint"
@@ -267,6 +293,7 @@
       "stage": ["ideation", "premise", "structure", "outline", "rewrite", "adaptation"],
       "output": ["project_surface_map"],
       "constraint_signals": ["project_horizon", "phase_focus", "truth_surface_policy", "runtime_surface_policy", "packet_strategy", "traceability_level", "edit_policy"],
+      "required_constraint_signals": [],
       "skill_id": "skill.project-surface-design",
       "protocol_id": "wp.project-surface-map",
       "rubric_id": "rb.project-surface-map"
@@ -277,6 +304,7 @@
       "stage": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
       "output": ["research_background_map"],
       "constraint_signals": ["research_scope", "reference_depth", "route_certainty"],
+      "required_constraint_signals": [],
       "skill_id": "skill.research-background",
       "protocol_id": "wp.research-background-map",
       "rubric_id": "rb.research-background-map"
@@ -287,6 +315,7 @@
       "stage": ["premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
       "output": ["quality_gate_report"],
       "constraint_signals": ["target_contract", "audit_scope", "check_depth", "lens_focus", "recheck_mode", "acceptance_bar"],
+      "required_constraint_signals": [],
       "skill_id": "skill.quality-gating",
       "protocol_id": "wp.quality-gate-report",
       "rubric_id": "rb.quality-gate-report"

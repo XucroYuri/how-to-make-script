@@ -4,8 +4,16 @@
   "type": "workflow_protocol",
   "title": "边界地图协议",
   "goal": "为一个创作任务明确 hard-no、soft-risk、bold-safe 和 defer-to-review 区域，防止把所有约束写成同一等级。",
-  "input_contract": ["brief", "draft", "known constraints", "risk concern", "delivery context"],
-  "output_contract": ["boundary_map"],
+  "input_contract": [
+    "brief",
+    "draft",
+    "known constraints",
+    "risk concern",
+    "delivery context"
+  ],
+  "output_contract": [
+    "boundary_map"
+  ],
   "preconditions": [
     "用户需要判断当前任务中哪些边界不可跨越、哪些约束可暂缓、哪些区域可大胆探索",
     "至少存在一个明确的问题、任务或待判断方向"
@@ -24,8 +32,18 @@
     "边界等级清楚，不再混淆 hard 和 soft",
     "后续 exploration 与 review 的分工清楚"
   ],
-  "rubrics": ["rb.boundary-map"],
-  "linked_atoms": ["ka.boundary-first-guidance", "ka.exploration-review-separation", "ka.platform-attention-economy", "ka.commissioning-fit"]
+  "rubrics": [
+    "rb.boundary-map"
+  ],
+  "linked_atoms": [
+    "ka.boundary-first-guidance",
+    "ka.exploration-review-separation",
+    "ka.platform-attention-economy",
+    "ka.commissioning-fit"
+  ],
+  "budget_class": "M",
+  "mandatory_atom_count": 4,
+  "expansion_allowed": true
 }
 ---
 # 边界地图协议

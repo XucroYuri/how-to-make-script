@@ -4,13 +4,45 @@
   "description": "Build commissioning-aware development briefs for screenplay projects.",
   "entrypoint": "skills/development-strategy/SKILL.md",
   "supports": {
-    "intents": ["design", "adapt", "diagnose"],
-    "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-    "stages": ["premise", "structure", "outline", "rewrite", "adaptation"],
-    "outputs": ["development_brief"]
+    "intents": [
+      "design",
+      "adapt",
+      "diagnose"
+    ],
+    "mediums": [
+      "feature_film",
+      "episodic",
+      "short_drama",
+      "animation",
+      "commercial",
+      "branded_film",
+      "shortform_video",
+      "game_narrative",
+      "branching_interactive"
+    ],
+    "stages": [
+      "premise",
+      "structure",
+      "outline",
+      "rewrite",
+      "adaptation"
+    ],
+    "outputs": [
+      "development_brief"
+    ]
   },
   "protocol_id": "wp.development-brief",
-  "rubric_ids": ["rb.development-brief"],
-  "linked_atoms": ["ka.commissioning-fit", "ka.platform-attention-economy", "ka.audience-need-state", "ka.screenwriting-history-shift"],
-  "fallback_behavior": "If commissioning inputs are incomplete, provide a baseline strategy plus one alternative for a different release logic."
+  "rubric_ids": [
+    "rb.development-brief"
+  ],
+  "linked_atoms": [
+    "ka.commissioning-fit",
+    "ka.platform-attention-economy",
+    "ka.audience-need-state",
+    "ka.screenwriting-history-shift"
+  ],
+  "fallback_behavior": "If commissioning inputs are incomplete, provide a baseline strategy plus one alternative for a different release logic.",
+  "default_loading_mode": "focus_pack",
+  "adjunct_bundles": {},
+  "fallback_to_skill_id": "skill.audience-insight"
 }

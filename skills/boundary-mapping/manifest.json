@@ -4,13 +4,43 @@
   "description": "Map hard boundaries, soft constraints, and review gates for screenplay work.",
   "entrypoint": "skills/boundary-mapping/SKILL.md",
   "supports": {
-    "intents": ["design", "diagnose", "adapt"],
-    "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-    "stages": ["structure", "rewrite", "adaptation"],
-    "outputs": ["boundary_map"]
+    "intents": [
+      "design",
+      "diagnose",
+      "adapt"
+    ],
+    "mediums": [
+      "feature_film",
+      "episodic",
+      "short_drama",
+      "animation",
+      "commercial",
+      "branded_film",
+      "shortform_video",
+      "game_narrative",
+      "branching_interactive"
+    ],
+    "stages": [
+      "structure",
+      "rewrite",
+      "adaptation"
+    ],
+    "outputs": [
+      "boundary_map"
+    ]
   },
   "protocol_id": "wp.boundary-map",
-  "rubric_ids": ["rb.boundary-map"],
-  "linked_atoms": ["ka.boundary-first-guidance", "ka.exploration-review-separation", "ka.platform-attention-economy", "ka.commissioning-fit"],
-  "fallback_behavior": "If the user mixes every constraint together, first separate persistent hard boundaries from phase-specific soft constraints before recommending action."
+  "rubric_ids": [
+    "rb.boundary-map"
+  ],
+  "linked_atoms": [
+    "ka.boundary-first-guidance",
+    "ka.exploration-review-separation",
+    "ka.platform-attention-economy",
+    "ka.commissioning-fit"
+  ],
+  "fallback_behavior": "If the user mixes every constraint together, first separate persistent hard boundaries from phase-specific soft constraints before recommending action.",
+  "default_loading_mode": "compare_pack",
+  "adjunct_bundles": {},
+  "fallback_to_skill_id": null
 }

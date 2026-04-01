@@ -27,7 +27,10 @@
     "目标媒介需要的大纲粒度已达到"
   ],
   "rubrics": ["rb.outline"],
-  "linked_atoms": ["ka.story-goal", "ka.causality-chain", "ka.pacing-rhythm", "ka.structure-family-selection", "ka.beat-carrier-selection", "ka.dual-track-rhythm", "ka.serial-arc-budgeting", "ka.medium-feature-film", "ka.medium-episode", "ka.medium-short-drama"]
+  "linked_atoms": ["ka.story-goal", "ka.causality-chain", "ka.pacing-rhythm", "ka.structure-family-selection", "ka.beat-carrier-selection", "ka.dual-track-rhythm", "ka.serial-arc-budgeting", "ka.medium-feature-film", "ka.medium-episode", "ka.medium-short-drama"],
+  "budget_class": "L",
+  "mandatory_atom_count": 10,
+  "expansion_allowed": true
 }
 ---
 # 结构 / Beat / 大纲协议

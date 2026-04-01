@@ -4,8 +4,17 @@
   "type": "workflow_protocol",
   "title": "表达风格校准协议",
   "goal": "在正式写 scene、dialogue、commercial 或 adaptation 产物前，先产出一份 voice_style_guide，明确角色 / IP / 品牌 / 交互角色的表达锚点、可变区间和漂移警报。",
-  "input_contract": ["character brief", "scene goal", "dialogue excerpt", "ip note", "brand persona", "medium and stage"],
-  "output_contract": ["voice_style_guide"],
+  "input_contract": [
+    "character brief",
+    "scene goal",
+    "dialogue excerpt",
+    "ip note",
+    "brand persona",
+    "medium and stage"
+  ],
+  "output_contract": [
+    "voice_style_guide"
+  ],
   "preconditions": [
     "已知目标媒介",
     "至少知道角色、IP、品牌人格或目标说话主体中的一个",
@@ -30,8 +39,19 @@
     "guide 已写清可变区间和失真红线",
     "guide 仍然保留创意空间，而不是把文本锁死成固定腔调"
   ],
-  "rubrics": ["rb.voice-style-guide"],
-  "linked_atoms": ["ka.character-voice-consistency", "ka.ip-voice-continuity", "ka.register-adaptation", "ka.embodied-text-pressure", "ka.dialogue-subtext"]
+  "rubrics": [
+    "rb.voice-style-guide"
+  ],
+  "linked_atoms": [
+    "ka.character-voice-consistency",
+    "ka.ip-voice-continuity",
+    "ka.register-adaptation",
+    "ka.embodied-text-pressure",
+    "ka.dialogue-subtext"
+  ],
+  "budget_class": "M",
+  "mandatory_atom_count": 5,
+  "expansion_allowed": true
 }
 ---
 # 表达风格校准协议

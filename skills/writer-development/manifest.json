@@ -11,6 +11,9 @@
   },
   "protocol_id": "wp.writer-development-path",
   "rubric_ids": ["rb.learning-path"],
+  "default_loading_mode": "focus_pack",
   "linked_atoms": ["ka.writer-development-loop", "ka.screenwriting-history-shift", "ka.audience-need-state", "ka.scene-function", "ka.rewrite-diagnosis", "ka.screenwriting-deliberate-practice", "ka.archive-literacy"],
+  "adjunct_bundles": {},
+  "fallback_to_skill_id": null,
   "fallback_behavior": "If writer maturity is unknown, start with a diagnostic sprint and branch into novice, intermediate, or advanced tracks."
 }

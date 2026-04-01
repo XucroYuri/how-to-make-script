@@ -25,7 +25,10 @@
     "premise 能明确后续结构开发方向"
   ],
   "rubrics": ["rb.logline"],
-  "linked_atoms": ["ka.story-goal", "ka.conflict-pressure", "ka.causality-chain", "ka.false-logline-warning", "ka.viewer-inference-guidance"]
+  "linked_atoms": ["ka.story-goal", "ka.conflict-pressure", "ka.causality-chain", "ka.false-logline-warning", "ka.viewer-inference-guidance"],
+  "budget_class": "M",
+  "mandatory_atom_count": 5,
+  "expansion_allowed": true
 }
 ---
 # Logline / Premise 协议

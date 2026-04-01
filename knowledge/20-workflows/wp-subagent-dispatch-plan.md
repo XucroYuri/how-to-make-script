@@ -4,8 +4,19 @@
   "type": "workflow_protocol",
   "title": "Subagent 调度计划协议",
   "goal": "根据当前项目和所选阵容，输出一份 subagent_dispatch_plan，明确多层级调度结构、phase ladder、dispatch topology、handoff packet、review loop、human gates 和 context budget。",
-  "input_contract": ["project brief", "medium", "stage", "selected output or workflow", "constraints", "optional team mode", "optional expert cast", "human gate assumptions"],
-  "output_contract": ["subagent_dispatch_plan"],
+  "input_contract": [
+    "project brief",
+    "medium",
+    "stage",
+    "selected output or workflow",
+    "constraints",
+    "optional team mode",
+    "optional expert cast",
+    "human gate assumptions"
+  ],
+  "output_contract": [
+    "subagent_dispatch_plan"
+  ],
   "preconditions": [
     "已知主路由或至少已知当前主要产物",
     "任务确实需要说明如何调度 subagent，而不只是说明谁在场",
@@ -29,8 +40,20 @@
     "系统知道何时扩容、何时裁剪、何时切换模式",
     "没有任何关键节点默认共享全量上下文"
   ],
-  "rubrics": ["rb.subagent-dispatch-plan"],
-  "linked_atoms": ["ka.subagent-context-budgeting", "ka.convergence-owner-discipline", "ka.two-stage-review-loop", "ka.handoff-packet-discipline", "ka.parallel-lane-governance", "ka.team-topology-selection"]
+  "rubrics": [
+    "rb.subagent-dispatch-plan"
+  ],
+  "linked_atoms": [
+    "ka.subagent-context-budgeting",
+    "ka.convergence-owner-discipline",
+    "ka.two-stage-review-loop",
+    "ka.handoff-packet-discipline",
+    "ka.parallel-lane-governance",
+    "ka.team-topology-selection"
+  ],
+  "budget_class": "M",
+  "mandatory_atom_count": 6,
+  "expansion_allowed": true
 }
 ---
 # Subagent 调度计划协议

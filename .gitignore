@@ -2,6 +2,7 @@
 
 # Local editor / agent workspace state
 .obsidian/
+.claude/
 .omx/
 .codex/
 .claude/
