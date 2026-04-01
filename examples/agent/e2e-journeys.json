@@ -1,0 +1,162 @@
+[
+  {
+    "id": "e2e.narrative-film",
+    "name": "Feature Film Ideation to Scene Draft",
+    "description": "End-to-end creation chain: raw idea -> premise -> character -> outline -> scene draft",
+    "steps": [
+      {
+        "step": 1,
+        "query": "我有一个关于退役消防员重返火场的想法",
+        "expected_route": {
+          "intent": "discover",
+          "medium": "feature_film",
+          "stage": "ideation",
+          "output": "premise",
+          "skill_id": "skill.idea-discovery",
+          "protocol_id": "wp.idea-discovery",
+          "rubric_id": "rb.logline"
+        },
+        "handoff": {
+          "locked_facts": ["protagonist = retired firefighter", "core pressure = return to fire"],
+          "open_questions": ["specific stakes", "genre"]
+        }
+      },
+      {
+        "step": 2,
+        "query": "基于上一步的 premise，帮我把核心冲突做清晰",
+        "expected_route": {
+          "intent": "design",
+          "medium": "feature_film",
+          "stage": "premise",
+          "output": "logline",
+          "skill_id": "skill.logline-premise",
+          "protocol_id": "wp.logline-premise",
+          "rubric_id": "rb.logline"
+        },
+        "handoff": {
+          "locked_facts": ["logline with clear conflict"],
+          "open_questions": ["character flaw"]
+        }
+      },
+      {
+        "step": 3,
+        "query": "设计主角的内心裂痕和外部压力",
+        "expected_route": {
+          "intent": "design",
+          "medium": "feature_film",
+          "stage": "character",
+          "output": "synopsis",
+          "skill_id": "skill.character-world",
+          "protocol_id": "wp.character-world",
+          "rubric_id": "rb.character-world"
+        },
+        "handoff": {
+          "locked_facts": ["character arc", "world rules"],
+          "open_questions": ["structure"]
+        }
+      },
+      {
+        "step": 4,
+        "query": "做成 beat sheet",
+        "expected_route": {
+          "intent": "design",
+          "medium": "feature_film",
+          "stage": "structure",
+          "output": "beat_sheet",
+          "skill_id": "skill.structure-beat",
+          "protocol_id": "wp.structure-beat-outline",
+          "rubric_id": "rb.outline"
+        },
+        "handoff": {
+          "locked_facts": ["beat escalation pattern", "ending closure"],
+          "open_questions": ["specific scenes"]
+        }
+      },
+      {
+        "step": 5,
+        "query": "写主角重返火场那场戏",
+        "expected_route": {
+          "intent": "draft",
+          "medium": "feature_film",
+          "stage": "scene",
+          "output": "scene_draft",
+          "skill_id": "skill.scene-writing",
+          "protocol_id": "wp.scene-writing",
+          "rubric_id": "rb.scene-draft"
+        },
+        "handoff": {
+          "locked_facts": ["scene function", "conflict", "change point"],
+          "open_questions": []
+        }
+      }
+    ],
+    "key_checks": [
+      "each step should carry forward locked facts from previous step",
+      "no information should be lost between protocol transitions",
+      "final scene_draft should be traceable to the original premise"
+    ]
+  },
+  {
+    "id": "e2e.commercial-video",
+    "name": "Short Video Commercial Brief to Script",
+    "description": "End-to-end commercial chain: idea -> audience fit -> commercial script",
+    "steps": [
+      {
+        "step": 1,
+        "query": "帮我把这款跑鞋的卖点收束成一个广告 premise",
+        "expected_route": {
+          "intent": "discover",
+          "medium": "commercial",
+          "stage": "ideation",
+          "output": "premise",
+          "skill_id": "skill.idea-discovery",
+          "protocol_id": "wp.idea-discovery",
+          "rubric_id": "rb.logline"
+        },
+        "handoff": {
+          "locked_facts": ["product = running shoes", "core message"],
+          "open_questions": ["target audience", "platform"]
+        }
+      },
+      {
+        "step": 2,
+        "query": "先判断一下这个 premise 对都市年轻跑者是否成立",
+        "expected_route": {
+          "intent": "design",
+          "medium": "shortform_video",
+          "stage": "premise",
+          "output": "audience_fit_note",
+          "skill_id": "skill.audience-insight",
+          "protocol_id": "wp.audience-fit-note",
+          "rubric_id": "rb.audience-fit"
+        },
+        "handoff": {
+          "locked_facts": ["audience = urban young runners", "need state"],
+          "open_questions": ["script"]
+        }
+      },
+      {
+        "step": 3,
+        "query": "基于 audience fit 写 15 秒抖音脚本",
+        "expected_route": {
+          "intent": "draft",
+          "medium": "shortform_video",
+          "stage": "scene",
+          "output": "commercial_script",
+          "skill_id": "skill.commercial-script",
+          "protocol_id": "wp.commercial-script",
+          "rubric_id": "rb.commercial-script"
+        },
+        "handoff": {
+          "locked_facts": ["single message", "hook timing", "cta"],
+          "open_questions": []
+        }
+      }
+    ],
+    "key_checks": [
+      "audience fit should inform script tone",
+      "commercial script should reflect audience need state",
+      "handoff between insight and script should preserve audience constraints"
+    ]
+  }
+]
