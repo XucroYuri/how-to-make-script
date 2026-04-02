@@ -1,66 +1,94 @@
 <svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
   <rect width="1280" height="720" fill="#F6F0E8"/>
-  <rect x="56" y="56" width="1168" height="608" rx="32" fill="#FFF9F2" stroke="#1A2D3A" stroke-width="4"/>
-  <rect x="90" y="96" width="316" height="188" rx="24" fill="#1A2D3A"/>
-  <text x="120" y="152" fill="#FFF9F2" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="700">how-to-make-script</text>
-  <text x="120" y="196" fill="#A7E0D9" font-family="Helvetica, Arial, sans-serif" font-size="16">Research-first screenplay knowledge system</text>
-  <text x="120" y="226" fill="#A7E0D9" font-family="Helvetica, Arial, sans-serif" font-size="16">and agent skill library</text>
-  <rect x="120" y="246" width="106" height="24" rx="12" fill="#A7E0D9"/>
-  <text x="136" y="263" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="700">ROUTE-FIRST</text>
-  <rect x="234" y="246" width="130" height="24" rx="12" fill="#FFB38A"/>
-  <text x="249" y="263" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="700">HUMAN-IN-THE-LOOP</text>
 
-  <rect x="90" y="314" width="250" height="110" rx="20" fill="#FFF9F2" stroke="#1A2D3A" stroke-width="3"/>
-  <text x="116" y="350" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">What it does</text>
-  <text x="116" y="382" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="14">Write, diagnose, review, adapt,</text>
-  <text x="116" y="406" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="14">orchestrate, and pressure-test</text>
-  <text x="116" y="430" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="14">screenplay work across media.</text>
+  <!-- Outer frame -->
+  <rect x="40" y="32" width="1200" height="656" rx="32" fill="#FFF9F2" stroke="#1A2D3A" stroke-width="3"/>
 
-  <rect x="90" y="448" width="250" height="168" rx="20" fill="#FFF9F2" stroke="#1A2D3A" stroke-width="3"/>
-  <text x="116" y="484" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">What makes it different</text>
-  <text x="116" y="516" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="14">• Explicit routes, not prompt soup</text>
-  <text x="116" y="542" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="14">• Contestable heuristics, not one truth</text>
-  <text x="116" y="568" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="14">• Bounded loading, not context bloat</text>
-  <text x="116" y="594" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="14">• Reviewable assets, not hidden lore</text>
+  <!-- Header bar -->
+  <rect x="72" y="56" width="1136" height="72" rx="18" fill="#1A2D3A"/>
+  <text x="104" y="98" fill="#FFF9F2" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700">how-to-make-script</text>
+  <text x="364" y="90" fill="#A7E0D9" font-family="Helvetica, Arial, sans-serif" font-size="14">Research-first screenplay knowledge system &amp; agent skill library</text>
+  <rect x="870" y="74" width="320" height="34" rx="17" fill="#A7E0D9"/>
+  <text x="1030" y="96" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Sync → Route → Load → Generate → Check</text>
 
-  <rect x="444" y="104" width="732" height="512" rx="28" fill="#F0E7DB"/>
-  <text x="482" y="150" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700">Route → Knowledge → Artifact → Quality Gate → Community Feedback</text>
+  <!-- Pipeline title -->
+  <text x="640" y="152" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Agent Execution Pipeline</text>
 
-  <rect x="486" y="198" width="148" height="84" rx="18" fill="#FFF9F2" stroke="#1A2D3A" stroke-width="3"/>
-  <text x="524" y="232" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Request</text>
-  <text x="512" y="256" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13">intent × medium</text>
-  <text x="520" y="276" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13">stage × output</text>
+  <!-- ===== Row 1: Steps 1–3 ===== -->
 
-  <rect x="668" y="198" width="148" height="84" rx="18" fill="#A7E0D9" stroke="#1A2D3A" stroke-width="3"/>
-  <text x="714" y="232" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Route</text>
-  <text x="690" y="256" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13">protocol + rubric</text>
-  <text x="700" y="276" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13">minimal bundle</text>
+  <!-- Step 1: Preflight Sync -->
+  <rect x="170" y="170" width="280" height="130" rx="20" fill="#A7E0D9" stroke="#1A2D3A" stroke-width="2.5"/>
+  <text x="310" y="205" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle">① Preflight Sync</text>
+  <text x="310" y="232" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle">Check upstream commit SHA</text>
+  <text x="310" y="252" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle">Download changed assets only</text>
+  <text x="310" y="272" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle">Degrade gracefully if unreachable</text>
+  <text x="310" y="293" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-style="italic">SKILL.md · router-matrix · lens triggers</text>
 
-  <rect x="850" y="198" width="148" height="84" rx="18" fill="#FFB38A" stroke="#1A2D3A" stroke-width="3"/>
-  <text x="892" y="232" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Artifact</text>
-  <text x="878" y="256" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13">draft / map / guide</text>
-  <text x="878" y="276" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13">plan / report / pack</text>
+  <!-- Arrow 1→2 -->
+  <line x1="450" y1="235" x2="496" y2="235" stroke="#1A2D3A" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="494,229 506,235 494,241" fill="#1A2D3A"/>
 
-  <rect x="1032" y="198" width="102" height="84" rx="18" fill="#FFF9F2" stroke="#1A2D3A" stroke-width="3"/>
-  <text x="1058" y="232" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Gate</text>
-  <text x="1048" y="258" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13">review</text>
-  <text x="1046" y="278" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13">recheck</text>
+  <!-- Step 2: Classify -->
+  <rect x="500" y="170" width="280" height="130" rx="20" fill="#FFF9F2" stroke="#1A2D3A" stroke-width="2.5"/>
+  <text x="640" y="205" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle">② Classify</text>
+  <text x="640" y="232" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle">intent × medium × stage</text>
+  <text x="640" y="252" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle">× output × constraints</text>
+  <text x="640" y="272" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle">Boundary: hard vs soft</text>
+  <text x="640" y="293" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-style="italic">Ask only what changes the route</text>
 
-  <path d="M634 240H668" stroke="#1A2D3A" stroke-width="4" stroke-linecap="round"/>
-  <path d="M816 240H850" stroke="#1A2D3A" stroke-width="4" stroke-linecap="round"/>
-  <path d="M998 240H1032" stroke="#1A2D3A" stroke-width="4" stroke-linecap="round"/>
+  <!-- Arrow 2→3 -->
+  <line x1="780" y1="235" x2="826" y2="235" stroke="#1A2D3A" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="824,229 836,235 824,241" fill="#1A2D3A"/>
 
-  <rect x="486" y="338" width="300" height="112" rx="20" fill="#FFF9F2" stroke="#1A2D3A" stroke-width="3"/>
-  <text x="516" y="374" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Core asset families</text>
-  <text x="516" y="404" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="14">knowledge atoms · workflow protocols</text>
-  <text x="516" y="428" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="14">evaluation rubrics · example fixtures</text>
+  <!-- Step 3: Route -->
+  <rect x="830" y="170" width="280" height="130" rx="20" fill="#FFB38A" stroke="#1A2D3A" stroke-width="2.5"/>
+  <text x="970" y="205" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle">③ Route</text>
+  <text x="970" y="232" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle">Look up router-matrix.json</text>
+  <text x="970" y="252" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle">Select protocol + rubric + atoms</text>
+  <text x="970" y="272" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle">Heuristic tie-breaking</text>
+  <text x="970" y="293" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-style="italic">Prefer smallest satisfying protocol</text>
 
-  <rect x="826" y="338" width="308" height="112" rx="20" fill="#FFF9F2" stroke="#1A2D3A" stroke-width="3"/>
-  <text x="856" y="374" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Current coverage</text>
-  <text x="856" y="404" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="14">narrative · commercial · interactive</text>
-  <text x="856" y="428" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="14">voice · video bridge · team · quality gate</text>
+  <!-- Turn arrow: Row 1 → Row 2 -->
+  <path d="M970 300 L970 338 L310 338 L310 372" stroke="#1A2D3A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <polygon points="305,370 310,380 315,370" fill="#1A2D3A"/>
 
-  <rect x="486" y="490" width="648" height="92" rx="20" fill="#1A2D3A"/>
-  <text x="516" y="528" fill="#FFF9F2" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Built for humans and agents at the same time</text>
-  <text x="516" y="556" fill="#A7E0D9" font-family="Helvetica, Arial, sans-serif" font-size="14">Learn the craft, route the task, pressure-test the output, keep the disagreement, improve the system.</text>
+  <!-- ===== Row 2: Steps 4–6 ===== -->
+
+  <!-- Step 4: Context Load -->
+  <rect x="170" y="380" width="280" height="130" rx="20" fill="#FFF9F2" stroke="#1A2D3A" stroke-width="2.5"/>
+  <text x="310" y="415" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle">④ Context Load</text>
+  <text x="310" y="442" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle">kernel → focus → compare</text>
+  <text x="310" y="462" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle">→ teaching → survey</text>
+  <text x="310" y="482" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle">Expand one layer at a time</text>
+  <text x="310" y="503" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-style="italic">Stop when next asset adds no value</text>
+
+  <!-- Arrow 4→5 -->
+  <line x1="450" y1="445" x2="496" y2="445" stroke="#1A2D3A" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="494,439 506,445 494,451" fill="#1A2D3A"/>
+
+  <!-- Step 5: Generate -->
+  <rect x="500" y="380" width="280" height="130" rx="20" fill="#A7E0D9" stroke="#1A2D3A" stroke-width="2.5"/>
+  <text x="640" y="415" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle">⑤ Generate</text>
+  <text x="640" y="442" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle">Produce requested artifact</text>
+  <text x="640" y="462" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle">Follow protocol + rubric</text>
+  <text x="640" y="482" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle">Output per contract spec</text>
+  <text x="640" y="503" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-style="italic">30+ contracts across 9 media types</text>
+
+  <!-- Arrow 5→6 -->
+  <line x1="780" y1="445" x2="826" y2="445" stroke="#1A2D3A" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="824,439 836,445 824,451" fill="#1A2D3A"/>
+
+  <!-- Step 6: Self-Check -->
+  <rect x="830" y="380" width="280" height="130" rx="20" fill="#FFB38A" stroke="#1A2D3A" stroke-width="2.5"/>
+  <text x="970" y="415" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle">⑥ Self-Check</text>
+  <text x="970" y="442" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle">Rubric-based quality gate</text>
+  <text x="970" y="462" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle">Hard fail / weakness / pass</text>
+  <text x="970" y="482" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle">Attach revision note</text>
+  <text x="970" y="503" fill="#1A2D3A" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-style="italic">Never skip · Always attach</text>
+
+  <!-- Bottom bar -->
+  <rect x="72" y="548" width="1136" height="72" rx="18" fill="#1A2D3A"/>
+  <text x="640" y="580" fill="#FFF9F2" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle">Built for humans and agents simultaneously</text>
+  <text x="640" y="604" fill="#A7E0D9" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle">Explicit routes · Bounded loading · Contestable heuristics · Reviewable assets · No hidden lore</text>
 </svg>

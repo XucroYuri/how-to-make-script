@@ -1,0 +1,94 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#F6F0E8"/>
+
+  <!-- Outer frame -->
+  <rect x="40" y="32" width="1200" height="656" rx="32" fill="#FFF9F2" stroke="#1A2D3A" stroke-width="3"/>
+
+  <!-- Header bar -->
+  <rect x="72" y="56" width="1136" height="72" rx="18" fill="#1A2D3A"/>
+  <text x="104" y="98" fill="#FFF9F2" font-family="system-ui, sans-serif" font-size="24" font-weight="700">how-to-make-script</text>
+  <text x="364" y="90" fill="#A7E0D9" font-family="system-ui, sans-serif" font-size="14">研究优先的剧本知识系统与 Agent 技能库</text>
+  <rect x="870" y="74" width="320" height="34" rx="17" fill="#A7E0D9"/>
+  <text x="1030" y="96" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">同步 → 路由 → 加载 → 生成 → 检查</text>
+
+  <!-- Pipeline title -->
+  <text x="640" y="152" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Agent 执行管线</text>
+
+  <!-- ===== Row 1: Steps 1–3 ===== -->
+
+  <!-- Step 1: Preflight Sync -->
+  <rect x="170" y="170" width="280" height="130" rx="20" fill="#A7E0D9" stroke="#1A2D3A" stroke-width="2.5"/>
+  <text x="310" y="205" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="17" font-weight="700" text-anchor="middle">① 预检同步</text>
+  <text x="310" y="232" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">检查上游提交 SHA</text>
+  <text x="310" y="252" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">仅下载变更资产</text>
+  <text x="310" y="272" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">不可达时优雅降级</text>
+  <text x="310" y="293" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" font-style="italic">SKILL.md · 路由矩阵 · 镜头触发器</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="450" y1="235" x2="496" y2="235" stroke="#1A2D3A" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="494,229 506,235 494,241" fill="#1A2D3A"/>
+
+  <!-- Step 2: Classify -->
+  <rect x="500" y="170" width="280" height="130" rx="20" fill="#FFF9F2" stroke="#1A2D3A" stroke-width="2.5"/>
+  <text x="640" y="205" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="17" font-weight="700" text-anchor="middle">② 请求分类</text>
+  <text x="640" y="232" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">意图 × 媒介 × 阶段</text>
+  <text x="640" y="252" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">× 产出 × 约束</text>
+  <text x="640" y="272" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">边界分类：硬性 vs 软性</text>
+  <text x="640" y="293" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" font-style="italic">仅询问影响路由的缺失信息</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="780" y1="235" x2="826" y2="235" stroke="#1A2D3A" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="824,229 836,235 824,241" fill="#1A2D3A"/>
+
+  <!-- Step 3: Route -->
+  <rect x="830" y="170" width="280" height="130" rx="20" fill="#FFB38A" stroke="#1A2D3A" stroke-width="2.5"/>
+  <text x="970" y="205" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="17" font-weight="700" text-anchor="middle">③ 路由匹配</text>
+  <text x="970" y="232" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">查找 router-matrix.json</text>
+  <text x="970" y="252" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">选择协议 + 量规 + 知识原子</text>
+  <text x="970" y="272" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">启发式优先级判定</text>
+  <text x="970" y="293" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" font-style="italic">优先最小满足协议</text>
+
+  <!-- Turn arrow: Row 1 → Row 2 -->
+  <path d="M970 300 L970 338 L310 338 L310 372" stroke="#1A2D3A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <polygon points="305,370 310,380 315,370" fill="#1A2D3A"/>
+
+  <!-- ===== Row 2: Steps 4–6 ===== -->
+
+  <!-- Step 4: Context Load -->
+  <rect x="170" y="380" width="280" height="130" rx="20" fill="#FFF9F2" stroke="#1A2D3A" stroke-width="2.5"/>
+  <text x="310" y="415" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="17" font-weight="700" text-anchor="middle">④ 上下文加载</text>
+  <text x="310" y="442" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">核心 → 聚焦 → 对比</text>
+  <text x="310" y="462" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">→ 教学 → 概览</text>
+  <text x="310" y="482" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">每次仅扩展一层</text>
+  <text x="310" y="503" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" font-style="italic">下一资产不再改变结论时停止</text>
+
+  <!-- Arrow 4→5 -->
+  <line x1="450" y1="445" x2="496" y2="445" stroke="#1A2D3A" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="494,439 506,445 494,451" fill="#1A2D3A"/>
+
+  <!-- Step 5: Generate -->
+  <rect x="500" y="380" width="280" height="130" rx="20" fill="#A7E0D9" stroke="#1A2D3A" stroke-width="2.5"/>
+  <text x="640" y="415" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="17" font-weight="700" text-anchor="middle">⑤ 生成制品</text>
+  <text x="640" y="442" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">按合约产出制品</text>
+  <text x="640" y="462" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">遵循协议与量规</text>
+  <text x="640" y="482" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">按合约规格输出</text>
+  <text x="640" y="503" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" font-style="italic">覆盖 9 种媒介 30+ 产出合约</text>
+
+  <!-- Arrow 5→6 -->
+  <line x1="780" y1="445" x2="826" y2="445" stroke="#1A2D3A" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="824,439 836,445 824,451" fill="#1A2D3A"/>
+
+  <!-- Step 6: Self-Check -->
+  <rect x="830" y="380" width="280" height="130" rx="20" fill="#FFB38A" stroke="#1A2D3A" stroke-width="2.5"/>
+  <text x="970" y="415" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="17" font-weight="700" text-anchor="middle">⑥ 自检门控</text>
+  <text x="970" y="442" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">基于量规的质量门控</text>
+  <text x="970" y="462" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">硬性失败 / 弱点 / 通过</text>
+  <text x="970" y="482" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">附带修订说明</text>
+  <text x="970" y="503" fill="#1A2D3A" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" font-style="italic">不可跳过 · 始终附带</text>
+
+  <!-- Bottom bar -->
+  <rect x="72" y="548" width="1136" height="72" rx="18" fill="#1A2D3A"/>
+  <text x="640" y="580" fill="#FFF9F2" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">为人类与 Agent 同时构建</text>
+  <text x="640" y="604" fill="#A7E0D9" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">显式路由 · 有界加载 · 可争议启发式 · 可审阅资产 · 无隐藏知识</text>
+</svg>
