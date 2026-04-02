@@ -7,11 +7,12 @@
 ## 治理规则
 
 1. 一个公开概念尽量只有一个主名称。
-2. 旧叫法可以保留，但必须通过明确的 alias 或 detail-key register 保留。
-3. `public` skill surface 必须能被路由，也必须能从 root skill 找到。
-4. 内部辅助 skill 可以存在，但必须声明 `surface: internal`。
-5. skill manifest 至少要覆盖它对应 primary protocol 需要的 atoms。
-6. 输出契约必须在这些层保持一致：
+2. 公开 prose 的命名应遵守 [`docs/canonical-term-policy-zh.md`](./canonical-term-policy-zh.md) 和 [`references/canonical-term-register.json`](../references/canonical-term-register.json)。
+3. 旧叫法可以保留，但必须通过明确的 alias 或 detail-key register 保留。
+4. `public` skill surface 必须能被路由，也必须能从 root skill 找到。
+5. 内部辅助 skill 可以存在，但必须声明 `surface: internal`。
+6. skill manifest 至少要覆盖它对应 primary protocol 需要的 atoms。
+7. 输出契约必须在这些层保持一致：
    - `SKILL.md`
    - [`references/supported-outputs.md`](../references/supported-outputs.md)
    - golden artifact 需要固定 Markdown 交付形状时，对齐 [`references/output-format-contracts.md`](../references/output-format-contracts.md)
@@ -19,7 +20,7 @@
    - `workflow_protocol.output_contract`
    - 被路由的 skill manifest
    - fixtures
-7. route 的说法必须诚实。
+8. route 的说法必须诚实。
    - 如果 `constraints` 只影响 loading，就不要假装它已经决定了 route。
    - 如果 `constraints` 真在做 route signal / tie-break，就要明确声明出来。
 
@@ -51,6 +52,7 @@
 ## 验证
 
 这层治理现在由这些脚本保障：
+- [`scripts/check_canonical_terms.py`](../scripts/check_canonical_terms.py)
 - [`scripts/check_semantic_consistency.py`](../scripts/check_semantic_consistency.py)
 - [`scripts/check_routes.py`](../scripts/check_routes.py)
 - [`scripts/check_route_overlaps.py`](../scripts/check_route_overlaps.py)

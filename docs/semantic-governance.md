@@ -7,11 +7,12 @@ The goal of this policy is simple: the same concept should not silently mean dif
 ## Governance Rules
 
 1. One public concept should have one primary name.
-2. Legacy shorthand can survive, but only through an explicit alias or detail-key register.
-3. Public skill surfaces must be routeable and visible from the root skill.
-4. Internal helper skills may exist, but they must be marked `surface: internal`.
-5. A skill manifest must at least cover the atoms required by its primary protocol.
-6. Output contracts must stay aligned across:
+2. Public prose naming should follow [`docs/canonical-term-policy.md`](./canonical-term-policy.md) and [`references/canonical-term-register.json`](../references/canonical-term-register.json).
+3. Legacy shorthand can survive, but only through an explicit alias or detail-key register.
+4. Public skill surfaces must be routeable and visible from the root skill.
+5. Internal helper skills may exist, but they must be marked `surface: internal`.
+6. A skill manifest must at least cover the atoms required by its primary protocol.
+7. Output contracts must stay aligned across:
    - `SKILL.md`
    - [`references/supported-outputs.md`](../references/supported-outputs.md)
    - [`references/output-format-contracts.md`](../references/output-format-contracts.md) when a golden artifact is meant to demonstrate a concrete Markdown delivery shape
@@ -19,7 +20,7 @@ The goal of this policy is simple: the same concept should not silently mean dif
    - `workflow_protocol.output_contract`
    - routed skill manifests
    - fixtures
-7. Route claims must stay honest.
+8. Route claims must stay honest.
    - If constraints only affect loading, say so.
    - If constraints are used as route signals or tie-breakers, declare them.
 
@@ -51,6 +52,7 @@ These signals do not turn the router into a fuzzy keyword engine. They exist for
 ## Validation
 
 Semantic governance is enforced by:
+- [`scripts/check_canonical_terms.py`](../scripts/check_canonical_terms.py)
 - [`scripts/check_semantic_consistency.py`](../scripts/check_semantic_consistency.py)
 - [`scripts/check_routes.py`](../scripts/check_routes.py)
 - [`scripts/check_route_overlaps.py`](../scripts/check_route_overlaps.py)

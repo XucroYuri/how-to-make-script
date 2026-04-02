@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="./docs/assets/readme-hero.svg" alt="how-to-make-script pipeline" width="100%" />
-</p>
-
 <h1 align="center">How to Make Script</h1>
 
 <p align="center">
@@ -135,12 +131,22 @@ Full example chain:
 
 ### 2. Install as a skill
 
+Clone the latest version from GitHub first, then point your tool at that local checkout:
+
+```bash
+git clone https://github.com/XucroYuri/how-to-make-script.git ~/.local/share/how-to-make-script
+# Later updates:
+git -C ~/.local/share/how-to-make-script pull --ff-only
+```
+
 <details>
 <summary>Codex</summary>
 
+Use the absolute path of the cloned repository, for example `/Users/<you>/.local/share/how-to-make-script`.
+
 ```toml
 [[skills.config]]
-path = "/absolute/path/to/how-to-make-script"
+path = "/Users/<you>/.local/share/how-to-make-script"
 enabled = true
 ```
 </details>
@@ -150,7 +156,7 @@ enabled = true
 
 ```bash
 mkdir -p ~/.claude/skills
-ln -s /absolute/path/to/how-to-make-script ~/.claude/skills/how-to-make-script
+ln -sfn ~/.local/share/how-to-make-script ~/.claude/skills/how-to-make-script
 ```
 </details>
 
@@ -159,20 +165,20 @@ ln -s /absolute/path/to/how-to-make-script ~/.claude/skills/how-to-make-script
 
 ```bash
 mkdir -p ~/.config/opencode/skills
-ln -s /absolute/path/to/how-to-make-script ~/.config/opencode/skills/how-to-make-script
+ln -sfn ~/.local/share/how-to-make-script ~/.config/opencode/skills/how-to-make-script
 ```
 </details>
 
 <details>
 <summary>Gemini CLI</summary>
 
-Install as a local extension or clone it under a shared skills directory recognized by your setup.
+Clone `https://github.com/XucroYuri/how-to-make-script.git` into any shared skills directory your Gemini CLI setup recognizes, then register that local checkout as the extension root.
 </details>
 
 <details>
 <summary>OpenClaw</summary>
 
-Link or clone the repository into the skill directory your OpenClaw setup resolves, then point the runtime at the repo root so `SKILL.md` stays the entrypoint.
+Clone `https://github.com/XucroYuri/how-to-make-script.git` into the skills directory your OpenClaw setup scans, or symlink `~/.local/share/how-to-make-script` into that directory, then keep the runtime entrypoint at the repo root so `SKILL.md` stays the entrypoint.
 </details>
 
 ### 3. Verify repository health
@@ -190,6 +196,7 @@ python3 scripts/check_subagent_registries.py
 python3 scripts/check_community_surfaces.py
 python3 scripts/check_links.py
 python3 scripts/check_forbidden_paths.py
+python3 scripts/check_canonical_terms.py
 python3 scripts/check_question_todos.py
 python3 scripts/check_golden_artifact_formats.py
 python3 scripts/run_fixture_suite.py
@@ -198,6 +205,12 @@ python3 -m unittest discover -s tests -v
 </details>
 
 ## How The System Works
+
+The diagram below is the high-level architecture view of the repository's routing and improvement loop.
+
+<p align="center">
+  <img src="./docs/assets/readme-hero.svg" alt="how-to-make-script architecture overview" width="100%" />
+</p>
 
 ```mermaid
 flowchart LR
@@ -260,14 +273,14 @@ flowchart LR
 | Surface | Scope |
 | --- | --- |
 | Root skill | [`SKILL.md`](./SKILL.md) — routing, loading, and output discipline |
-| Output contracts | `30` routeable outputs in [`supported-outputs.md`](./references/supported-outputs.md) |
+| Output contracts | `31` routeable outputs in [`supported-outputs.md`](./references/supported-outputs.md) |
 | Skill folders | `29` folders in [`skills/`](./skills) |
-| Structured assets | `97` atoms + `28` protocols + `27` rubrics |
-| Route fixtures | `93` fixtures in [`fixtures.json`](./examples/agent/fixtures.json) |
-| Knowledge base | `165` Markdown files in [`knowledge/`](./knowledge) |
-| Examples | `24` files across golden flows, fixtures, and reference packs |
-| Validation | `14` scripts in [`scripts/`](./scripts) |
-| Tests | `12` modules in [`tests/`](./tests) |
+| Structured assets | `69` atoms + `28` protocols + `28` rubrics |
+| Route fixtures | `95` fixtures in [`fixtures.json`](./examples/agent/fixtures.json) |
+| Knowledge base | `168` Markdown files in [`knowledge/`](./knowledge) |
+| Examples | `38` files across golden flows, fixtures, and reference packs |
+| Validation | `18` scripts in [`scripts/`](./scripts) |
+| Tests | `17` modules in [`tests/`](./tests) |
 
 ## Capability Surface
 
@@ -299,7 +312,7 @@ flowchart LR
 - [Scenario Atlas](./docs/scenario-atlas.md)
 - [Adaptive Quality Checking](./docs/adaptive-quality-checking.md)
 - [Pattern Reference Packs](./examples/reference-packs)
-- [Voice Pattern Pack](./examples/reference-packs/voice-pattern-pack.md)
+- [Character Voice Reference Pack](./examples/reference-packs/character-voice-reference-pack.md)
 
 **For agent builders**
 
@@ -312,6 +325,7 @@ flowchart LR
 **For contributors**
 
 - [Contributing Guide](./CONTRIBUTING.md)
+- [Canonical Term Policy](./docs/canonical-term-policy.md)
 - [Community Operations](./docs/community-operations.md)
 - [Support Ladder](./SUPPORT.md)
 - [Roadmap](./docs/roadmap.md)
