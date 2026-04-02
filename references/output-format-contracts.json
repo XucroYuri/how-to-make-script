@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "contracts": [
+    {
+      "output": "beat_sheet",
+      "title_includes": "Beat Sheet",
+      "required_sections": [
+        {"heading": "Story Engine", "min_items": 3},
+        {"heading": "Beat List", "min_items": 4}
+      ]
+    },
+    {
+      "output": "commercial_script",
+      "title_includes": "Commercial Script",
+      "required_sections": [
+        {"heading": "Core Message", "min_items": 3},
+        {"heading": "Shot Flow", "min_items": 4},
+        {"heading": "CTA", "min_items": 1}
+      ]
+    },
+    {
+      "output": "interactive_branch_map",
+      "title_includes": "Interactive Branch Map",
+      "required_sections": [
+        {"heading": "Player Goal", "min_items": 1},
+        {"heading": "State Variables", "min_items": 2},
+        {"heading": "Branches", "min_items": 3},
+        {"heading": "Convergence Plan", "min_items": 1}
+      ]
+    },
+    {
+      "output": "scene_draft",
+      "title_includes": "Scene Draft",
+      "required_sections": [
+        {"heading": "Scene Objective", "min_items": 3},
+        {"heading": "Script Blocks", "min_items": 6}
+      ],
+      "script_block_contract": {
+        "script_section": "Script Blocks",
+        "min_scenes": 1,
+        "min_dialogue_beats": 2,
+        "scene_labels": ["Scene", "Purpose", "Action"],
+        "av_labels": ["VFX", "SFX", "BGM"],
+        "beat_requires_performance": true
+      }
+    },
+    {
+      "output": "screenplay_draft",
+      "title_includes": "Screenplay Draft",
+      "required_sections": [
+        {"heading": "Story Engine", "min_items": 3},
+        {"heading": "Script Blocks", "min_items": 12}
+      ],
+      "script_block_contract": {
+        "script_section": "Script Blocks",
+        "min_scenes": 2,
+        "min_dialogue_beats": 4,
+        "scene_labels": ["Scene", "Purpose", "Action"],
+        "av_labels": ["VFX", "SFX", "BGM"],
+        "beat_requires_performance": true
+      }
+    }
+  ]
+}

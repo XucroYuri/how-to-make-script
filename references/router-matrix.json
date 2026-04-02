@@ -68,6 +68,17 @@
       "rubric_id": "rb.scene-draft"
     },
     {
+      "intent": ["draft"],
+      "medium": ["feature_film", "episodic", "short_drama", "animation"],
+      "stage": ["scene"],
+      "output": ["screenplay_draft"],
+      "constraint_signals": ["tone", "voice_target", "experiential_depth"],
+      "required_constraint_signals": [],
+      "skill_id": "skill.scene-writing",
+      "protocol_id": "wp.scene-writing",
+      "rubric_id": "rb.screenplay-draft"
+    },
+    {
       "intent": ["polish"],
       "medium": ["feature_film", "episodic", "short_drama", "animation"],
       "stage": ["dialogue"],

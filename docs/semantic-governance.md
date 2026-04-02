@@ -14,6 +14,7 @@ The goal of this policy is simple: the same concept should not silently mean dif
 6. Output contracts must stay aligned across:
    - `SKILL.md`
    - [`references/supported-outputs.md`](../references/supported-outputs.md)
+   - [`references/output-format-contracts.md`](../references/output-format-contracts.md) when a golden artifact is meant to demonstrate a concrete Markdown delivery shape
    - [`references/taxonomy.md`](../references/taxonomy.md)
    - `workflow_protocol.output_contract`
    - routed skill manifests
@@ -53,5 +54,6 @@ Semantic governance is enforced by:
 - [`scripts/check_semantic_consistency.py`](../scripts/check_semantic_consistency.py)
 - [`scripts/check_routes.py`](../scripts/check_routes.py)
 - [`scripts/check_route_overlaps.py`](../scripts/check_route_overlaps.py)
+- [`scripts/check_golden_artifact_formats.py`](../scripts/check_golden_artifact_formats.py)
 
 The point is not taxonomy perfection. The point is to stop undetected drift before the repo starts telling the agent conflicting stories about what it is supposed to do.

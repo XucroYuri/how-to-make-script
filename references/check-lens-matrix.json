@@ -72,15 +72,15 @@
     },
     {
       "id": "bundle.narrative-scene-dialogue",
-      "target_outputs": ["scene_card", "scene_draft", "dialogue_polish"],
+      "target_outputs": ["scene_card", "scene_draft", "screenplay_draft", "dialogue_polish"],
       "mediums": ["feature_film", "episodic", "short_drama", "animation"],
-      "required_lenses": ["contract_fit", "mechanics_pressure", "continuity_invariants"],
-      "optional_lenses": ["expression_integrity", "operational_feasibility", "boundary_risk"],
+      "required_lenses": ["contract_fit", "mechanics_pressure", "continuity_invariants", "expression_integrity"],
+      "optional_lenses": ["operational_feasibility", "boundary_risk"],
       "default_weights": {
         "contract_fit": 0.2,
-        "mechanics_pressure": 0.3,
+        "mechanics_pressure": 0.25,
         "continuity_invariants": 0.2,
-        "expression_integrity": 0.2,
+        "expression_integrity": 0.25,
         "operational_feasibility": 0.07,
         "boundary_risk": 0.03
       }

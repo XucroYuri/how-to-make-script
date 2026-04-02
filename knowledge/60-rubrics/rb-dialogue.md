@@ -3,7 +3,7 @@
   "id": "rb.dialogue",
   "type": "evaluation_rubric",
   "title": "Dialogue Rubric",
-  "applies_to": ["dialogue_polish", "scene_draft"],
+  "applies_to": ["dialogue_polish", "scene_draft", "screenplay_draft"],
   "dimensions": [
     {"name": "voice", "question": "角色声音是否可区分"},
     {"name": "subtext", "question": "对白是否包含潜台词与策略"},
@@ -18,12 +18,14 @@
     "所有人物口吻高度同质",
     "重要信息全靠直接解释",
     "对白与场景冲突脱节",
+    "存在裸对白回合：对白没有 inline performance，也没有紧邻动作拍点承载",
     "中文输出存在三个以上机械语症：四字词语堆砌、情绪标签句、解释性过渡句、对仗式对白、语域错位、完整句病"
   ],
   "rewrite_actions": [
     "区分角色策略与说话习惯",
     "压缩解释性句子",
-    "让对白回到当前目标对抗"
+    "让对白回到当前目标对抗",
+    "把表演拍点和停顿补回对白回合"
   ]
 }
 ---

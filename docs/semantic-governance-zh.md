@@ -14,6 +14,7 @@
 6. 输出契约必须在这些层保持一致：
    - `SKILL.md`
    - [`references/supported-outputs.md`](../references/supported-outputs.md)
+   - golden artifact 需要固定 Markdown 交付形状时，对齐 [`references/output-format-contracts.md`](../references/output-format-contracts.md)
    - [`references/taxonomy.md`](../references/taxonomy.md)
    - `workflow_protocol.output_contract`
    - 被路由的 skill manifest
@@ -53,5 +54,6 @@
 - [`scripts/check_semantic_consistency.py`](../scripts/check_semantic_consistency.py)
 - [`scripts/check_routes.py`](../scripts/check_routes.py)
 - [`scripts/check_route_overlaps.py`](../scripts/check_route_overlaps.py)
+- [`scripts/check_golden_artifact_formats.py`](../scripts/check_golden_artifact_formats.py)
 
 目标不是追求“概念完美”，而是防止仓库在不知不觉中开始对 Agent 讲互相矛盾的话。

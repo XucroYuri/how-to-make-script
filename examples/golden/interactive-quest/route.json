@@ -1,6 +1,6 @@
 {
   "skill_id": "skill.interactive-branching",
   "protocol_id": "wp.interactive-branch-map",
-  "rubric_id": "rb.interactive-branch-map"
+  "rubric_id": "rb.interactive-branch-map",
+  "output": "interactive_branch_map"
 }
-

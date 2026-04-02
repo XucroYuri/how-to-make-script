@@ -55,7 +55,7 @@
 **Request**
 
 ```text
-Turn this idea into a feature-film premise, a beat sheet, and one key scene draft:
+Turn this idea into a feature-film beat sheet:
 "A journalist who has spent years avoiding the truth behind her father's death
 is forced back to her mining hometown to investigate an old case."
 ```
@@ -64,13 +64,18 @@ is forced back to her mining hometown to investigate an old case."
 
 | Layer | Selection |
 | --- | --- |
-| Skill | [`skill.logline-premise`](./skills/logline-premise/SKILL.md) |
-| Protocol | [`wp.logline-premise`](./knowledge/20-workflows/wp-logline-premise.md) + downstream scene drafting |
-| Review | premise / beat / scene rubrics + optional [`quality_gate_report`](./knowledge/20-workflows/wp-quality-gate-report.md) |
+| Skill | [`skill.structure-beat`](./skills/structure-beat/SKILL.md) |
+| Protocol | [`wp.structure-beat-outline`](./knowledge/20-workflows/wp-structure-beat-outline.md) |
+| Review | [`rb.outline`](./knowledge/60-rubrics/rb-outline.md) + optional [`quality_gate_report`](./knowledge/20-workflows/wp-quality-gate-report.md) |
 
 **Artifact excerpt**
 
-> A journalist who fled her mining hometown years ago must return to stop a buried disaster from disappearing forever, only to discover that her own silence helped keep the truth underground.
+```text
+## Beat List
+- Opening imbalance: She avoids every mining story that crosses her desk.
+- Lock-in: A fragment from her father's case file forces her back home.
+- Midpoint turn: She learns her own silence helped protect the cover-up.
+```
 
 Full example chain:
 
@@ -186,6 +191,7 @@ python3 scripts/check_community_surfaces.py
 python3 scripts/check_links.py
 python3 scripts/check_forbidden_paths.py
 python3 scripts/check_question_todos.py
+python3 scripts/check_golden_artifact_formats.py
 python3 scripts/run_fixture_suite.py
 python3 -m unittest discover -s tests -v
 ```
@@ -209,6 +215,7 @@ flowchart LR
 
 - Start at [`SKILL.md`](./SKILL.md) for the root orchestration contract.
 - Use [`references/supported-outputs.md`](./references/supported-outputs.md) to choose the smallest appropriate output instead of inventing a blended artifact.
+- Use [`references/output-format-contracts.md`](./references/output-format-contracts.md) when you need the minimum Markdown handoff shape for golden artifacts.
 - Use [`references/router-matrix.json`](./references/router-matrix.json) and [`references/routing-policy.md`](./references/routing-policy.md) to understand route selection and constraint signals.
 - Use `research_background_map` for broad "how to create a screenplay" or theory-support requests.
 - Use `story_memory_checkpoint` when the real need is resumable continuity or handoff-safe state.
