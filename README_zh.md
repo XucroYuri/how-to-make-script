@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="./docs/assets/readme-hero-zh.svg" alt="how-to-make-script 管线" width="100%" />
-</p>
-
 <h1 align="center">How to Make Script（如何写剧本）</h1>
 
 <p align="center">
@@ -99,7 +95,7 @@
 - 在多个可行方案之间做比较，避免一开始就被限定在单一方案中
 - 用 `rewrite_report`、`quality_gate_report`、`boundary_map`、`scope_correction` 排查问题、限定边界、做复查
 - 用 `research_background_map` 和 `story_memory_checkpoint` 处理宏观理论问题、长篇连续性压缩和安全续写
-- 对接角色声纹、品牌表达、多语种视觉语言和 screen-to-video brief
+- 对接角色声音、品牌表达、多语种视觉语言和 screen-to-video brief
 - 把 writers' room、多智能体协作、subagent 阵容、handoff 规范做成明确的设计
 
 ## 它适合谁
@@ -134,12 +130,22 @@
 
 ### 2. 安装成 Skill
 
+先从 GitHub 拉取最新版本到本机，再把这个本地仓库接入你的 skill 目录或配置：
+
+```bash
+git clone https://github.com/XucroYuri/how-to-make-script.git ~/.local/share/how-to-make-script
+# 后续更新：
+git -C ~/.local/share/how-to-make-script pull --ff-only
+```
+
 <details>
 <summary>Codex</summary>
 
+把配置里的路径替换成你刚刚克隆下来的仓库绝对路径，例如 `/Users/<you>/.local/share/how-to-make-script`。
+
 ```toml
 [[skills.config]]
-path = "/absolute/path/to/how-to-make-script"
+path = "/Users/<you>/.local/share/how-to-make-script"
 enabled = true
 ```
 </details>
@@ -149,7 +155,7 @@ enabled = true
 
 ```bash
 mkdir -p ~/.claude/skills
-ln -s /absolute/path/to/how-to-make-script ~/.claude/skills/how-to-make-script
+ln -sfn ~/.local/share/how-to-make-script ~/.claude/skills/how-to-make-script
 ```
 </details>
 
@@ -158,20 +164,20 @@ ln -s /absolute/path/to/how-to-make-script ~/.claude/skills/how-to-make-script
 
 ```bash
 mkdir -p ~/.config/opencode/skills
-ln -s /absolute/path/to/how-to-make-script ~/.config/opencode/skills/how-to-make-script
+ln -sfn ~/.local/share/how-to-make-script ~/.config/opencode/skills/how-to-make-script
 ```
 </details>
 
 <details>
 <summary>Gemini CLI</summary>
 
-按你的本地扩展机制把仓库挂进可识别的 skills 目录即可。
+把 `https://github.com/XucroYuri/how-to-make-script.git` 克隆到 Gemini CLI 当前可识别的共享 skills 目录里，再把这个本地仓库注册成扩展根目录即可。
 </details>
 
 <details>
 <summary>OpenClaw</summary>
 
-把仓库链接或克隆到 OpenClaw 当前配置会扫描的 skills 目录，并让入口仍然指向仓库根目录下的 `SKILL.md`。
+把 `https://github.com/XucroYuri/how-to-make-script.git` 克隆到 OpenClaw 当前配置会扫描的 skills 目录，或者把 `~/.local/share/how-to-make-script` 软链进去，并让入口仍然指向仓库根目录下的 `SKILL.md`。
 </details>
 
 ### 3. 本地校验仓库健康
@@ -189,6 +195,7 @@ python3 scripts/check_subagent_registries.py
 python3 scripts/check_community_surfaces.py
 python3 scripts/check_links.py
 python3 scripts/check_forbidden_paths.py
+python3 scripts/check_canonical_terms.py
 python3 scripts/check_question_todos.py
 python3 scripts/check_golden_artifact_formats.py
 python3 scripts/run_fixture_suite.py
@@ -197,6 +204,12 @@ python3 -m unittest discover -s tests -v
 </details>
 
 ## 系统运行流程
+
+下面这张图是仓库路由和持续改进闭环的架构总览。
+
+<p align="center">
+  <img src="./docs/assets/readme-hero-zh.svg" alt="how-to-make-script 架构总览" width="100%" />
+</p>
 
 ```mermaid
 flowchart LR
@@ -259,14 +272,14 @@ flowchart LR
 | 模块 | 规模 |
 | --- | --- |
 | 根 skill | [`SKILL.md`](./SKILL.md) — 总控路由和加载策略 |
-| 公共输出契约 | `30` 个可路由输出（[`supported-outputs.md`](./references/supported-outputs.md)） |
+| 公共输出契约 | `31` 个可路由输出（[`supported-outputs.md`](./references/supported-outputs.md)） |
 | skill 目录 | `29` 个能力型目录（[`skills/`](./skills)） |
-| 结构化资产 | `97` 个 atom + `28` 个 protocol + `27` 个 rubric |
-| route fixtures | `93` 条（[`fixtures.json`](./examples/agent/fixtures.json)） |
-| 知识资产 | `165` 份 Markdown（[`knowledge/`](./knowledge)） |
-| 示例材料 | `24` 份示例 / fixture / reference pack |
-| 校验脚本 | `14` 个 Python 脚本（[`scripts/`](./scripts)） |
-| 测试模块 | `12` 个测试文件（[`tests/`](./tests)） |
+| 结构化资产 | `69` 个 atom + `28` 个 protocol + `28` 个 rubric |
+| route fixtures | `95` 条（[`fixtures.json`](./examples/agent/fixtures.json)） |
+| 知识资产 | `168` 份 Markdown（[`knowledge/`](./knowledge)） |
+| 示例材料 | `38` 份示例 / fixture / reference pack |
+| 校验脚本 | `18` 个 Python 脚本（[`scripts/`](./scripts)） |
+| 测试模块 | `17` 个测试文件（[`tests/`](./tests)） |
 
 ## 核心功能
 
@@ -298,7 +311,7 @@ flowchart LR
 - [场景图谱](./docs/scenario-atlas-zh.md)
 - [自适应质检架构](./docs/adaptive-quality-checking-zh.md)
 - [参考包目录](./examples/reference-packs)
-- [表达风格参考包](./examples/reference-packs/voice-pattern-pack.md)
+- [角色声音参考包](./examples/reference-packs/character-voice-reference-pack.md)
 
 **面向 Agent builder**
 
@@ -311,6 +324,7 @@ flowchart LR
 **面向贡献者**
 
 - [贡献说明](./CONTRIBUTING.md)
+- [Canonical 术语治理策略](./docs/canonical-term-policy-zh.md)
 - [社区运营策略](./docs/community-operations-zh.md)
 - [支持入口梯度](./SUPPORT.md)
 - [Roadmap](./docs/roadmap-zh.md)
@@ -338,7 +352,7 @@ flowchart LR
 
 这个仓库是一套可运行的 research-first screenplay monorepo。
 
-**当前重点：** 叙事 / 商业 / 互动剧本；研究和连续性层；声纹/视觉/视频层；团队编排和项目视图；自适应质量把关和人机协作迭代。
+**当前重点：** 叙事 / 商业 / 互动剧本；研究和连续性层；表达/视觉/视频层；团队编排和项目视图；自适应质量把关和人机协作迭代。
 
 **还明显不足的地方：**
 

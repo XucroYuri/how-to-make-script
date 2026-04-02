@@ -1,6 +1,6 @@
-# Voice Pattern Pack
+# Character Voice Reference Pack
 
-This pack uses original synthetic fragments to teach voice calibration.
+This pack uses original synthetic fragments to teach character-voice calibration.
 They are reference paths, not mandatory templates.
 
 ## 1. Suppressed Anger In A Family Drama

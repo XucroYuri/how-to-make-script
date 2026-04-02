@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "scan_globs": [
+    "README.md",
+    "README_zh.md",
+    "docs/**/*.md",
+    "knowledge/**/*.md",
+    "skills/**/*.md",
+    "references/**/*.md",
+    "references/**/*.json",
+    "examples/**/*.md",
+    "examples/**/*.json"
+  ],
+  "exclude_globs": [
+    "docs/canonical-term-policy.md",
+    "docs/canonical-term-policy-zh.md",
+    "docs/roadmap*.md",
+    "docs/agent-skill-review-*.md",
+    "references/canonical-term-register.json"
+  ],
+  "concepts": {
+    "character_voice": {
+      "canonical_en": "character voice",
+      "canonical_zh": "角色声音",
+      "allowed_zh_contextual": [
+        {
+          "term": "角色口吻",
+          "when": "Use only for dialogue-level rhythm, line differentiation, or samey-voice diagnosis."
+        },
+        {
+          "term": "说话方式",
+          "when": "Use only in plain-language onboarding or user-query paraphrase."
+        }
+      ],
+      "disallowed": ["声纹", "voiceprint", "voice print"]
+    },
+    "voice_style_guide": {
+      "canonical_id": "voice_style_guide",
+      "canonical_display_en": "Voice Style Guide",
+      "canonical_display_zh": "表达风格指南",
+      "allowed_zh_contextual": [
+        {
+          "term": "表达风格校准协议",
+          "when": "Allowed only as the workflow protocol title for wp.voice-style-guide."
+        }
+      ],
+      "disallowed": []
+    },
+    "expression_lens": {
+      "canonical_en": "expression lens",
+      "canonical_zh": "表达校准包",
+      "allowed_zh_contextual": [
+        {
+          "term": "expression lens",
+          "when": "Allowed when the English internal term is necessary for cross-reference."
+        }
+      ],
+      "disallowed": ["表达镜头"]
+    },
+    "voice_reference_pack": {
+      "canonical_en": "Character Voice Reference Pack",
+      "canonical_zh": "角色声音参考包",
+      "allowed_zh_contextual": [
+        {
+          "term": "表达风格参考包",
+          "when": "Treat as a legacy alias only if migration is blocked."
+        }
+      ],
+      "disallowed": ["Voice Pattern Pack"]
+    },
+    "lived_in_expression": {
+      "canonical_en": "lived-in expression",
+      "canonical_zh": "活人感",
+      "allowed_zh_contextual": [
+        {
+          "term": "鲜活的人物在场感",
+          "when": "Use only as an explanatory gloss when a softer phrasing helps."
+        }
+      ],
+      "disallowed": []
+    }
+  },
+  "forbidden_terms": [
+    {
+      "term": "声纹",
+      "case_sensitive": true,
+      "reason": "Biometric-sounding wording that reads as voiceprint jargon instead of screenplay craft."
+    },
+    {
+      "term": "voiceprint",
+      "case_sensitive": false,
+      "reason": "Biometric wording, not the repository's writing-craft concept."
+    },
+    {
+      "term": "voice print",
+      "case_sensitive": false,
+      "reason": "Biometric wording, not the repository's writing-craft concept."
+    },
+    {
+      "term": "表达镜头",
+      "case_sensitive": true,
+      "reason": "Conflicts with actual cinematography vocabulary and reads unnatural in Chinese prose."
+    },
+    {
+      "term": "Voice Pattern Pack",
+      "case_sensitive": false,
+      "reason": "Overstates surface patterning and underspecifies the broader character-voice concept."
+    }
+  ]
+}
