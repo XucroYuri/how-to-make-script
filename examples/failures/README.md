@@ -33,6 +33,10 @@ Each failure case follows this structure:
 
 - `premise_drift` — output lost the original premise's pressure source
 - `voice_collapse` — all characters sounded the same
+- `missing_parenthetical` — dialogue was delivered without any playable performance carrier
+- `av_cue_omission` — needed `VFX` / `SFX` / `BGM` signals were dropped or scattered into freeform notes
+- `mechanical_language_contamination` — writerly / LLM phrasing polluted downstream drafting stages
+- `cross_artifact_naturalness_drift` — upstream and downstream artifacts broke naturalness consistency
 - `false_structure` — structure looked correct but lacked dramatic escalation
 - `audience_mismatch` — technically correct but missed the target audience
 - `context_overload` — too much loaded context diluted the output quality
