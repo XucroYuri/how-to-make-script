@@ -2,7 +2,7 @@
   <img src="./docs/assets/readme-hero-zh.svg" alt="how-to-make-script 管线" width="100%" />
 </p>
 
-<h1 align="center">how-to-make-script</h1>
+<h1 align="center">How to Make Script（如何写剧本）</h1>
 
 <p align="center">
   开源剧本研发基础设施，面向编剧与 Agent。<br/>

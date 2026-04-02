@@ -2,7 +2,7 @@
   <img src="./docs/assets/readme-hero.svg" alt="how-to-make-script pipeline" width="100%" />
 </p>
 
-<h1 align="center">how-to-make-script</h1>
+<h1 align="center">How to Make Script</h1>
 
 <p align="center">
   Open-source screenwriting knowledge infrastructure for writers and agents.<br/>
