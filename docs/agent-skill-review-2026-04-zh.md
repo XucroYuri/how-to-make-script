@@ -47,7 +47,7 @@ fixtures 里混杂了 canonical family、旧 alias、以及一些更窄的 detai
 - 新增 constraint-key register 管理 alias 和允许存在的 detail key；
 - CI 开始阻止未知 key 静默扩散。
 
-### 5. 渐进式披露之前更多是“感觉上有”，但还不够显式
+### 5. 渐进式披露之前更多是”感觉上有”，但还不够明确
 
 仓库已经有很多高级输出，但升级梯度主要还停留在隐式理解。
 
@@ -57,7 +57,7 @@ fixtures 里混杂了 canonical family、旧 alias、以及一些更窄的 detai
 
 ## 当前残余风险
 
-- 现在 `constraint_signals` 已存在，但 route 仍主要是 output-anchored。这对当前 matrix 是合理的，但后续新增 route 时必须保持诚实。
+- 现在 `constraint_signals` 已存在，但 route 仍然以输出为主要锚点。这对当前 matrix 是合理的，但后续新增 route 时必须保持诚实。
 - 仓库本身已经很大了。后续质量更依赖治理纪律，而不是继续无上限加内容。
 - pattern packs、team mode、project surface 这些层仍然很容易被滥用成“大而全的聪明回答”。
 

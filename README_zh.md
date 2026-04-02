@@ -8,29 +8,29 @@
 
 这不是提示词模板仓库，而是一套给编剧、策划、剧本医生、内容团队和 Agent builder 用的剧本研发基础设施。
 
-它试图把“怎么写剧本”这件事拆成四层能长期积累的东西：
+它把”怎么写剧本”这件事拆成四个可以持续积累的层次：
 
-- 能持续沉淀的知识资产
-- 能解释为什么这样做的工作流协议
-- 能做预检、验收、复查的质量标准
-- 能按场景选路的 Agent Skill 能力层
+- 持续积累的知识资产
+- 能解释”为什么这样做”的工作流协议
+- 覆盖预检、验收、复查的质量标准
+- 按场景自动选择路径的 Agent Skill 能力层
 
 `screenwriting` `agent skill` `workflow protocol` `quality gate` `human-in-the-loop`
 
-[先看案例](#30-秒看懂它怎么工作) • [按角色找入口](#按你现在的角色开始) • [安装成-skill](#快速开始) • [去提反驳或问题](https://github.com/XucroYuri/how-to-make-script/discussions)
+[先看案例](#30-秒看懂它怎么工作) • [按角色找入口](#根据你的角色选择入口) • [安装成-skill](#快速开始) • [去提反驳或问题](https://github.com/XucroYuri/how-to-make-script/discussions)
 
-> 这个仓库不追求“唯一真理式剧本教学”。
-> 它更像一个开放的剧本研发底座：把创作、诊断、审查、协作、交付桥接都做成可调用、可争论、可升级的系统。
+> 这个仓库不追求”唯一真理式剧本教学”。
+> 它更像一个开放的剧本研发基础：把创作、诊断、审查、协作、交付衔接都做成可调用、可争论、可升级的系统。
 
 ## 这个仓库能直接帮你做什么
 
-- 把模糊点子压成 `logline`、`premise`、`beat_sheet`、`outline`、`scene_draft`、`commercial_script` 这类具体产物。
-- 在不同媒介和不同阶段下，给 Agent 一个更准确的协议、rubric 和最小知识包，而不是把整个仓库都塞进上下文。
-- 在多个可行方案之间做比较，避免一上来就被单一路径绑死。
-- 用 `rewrite_report`、`quality_gate_report`、`boundary_map`、`scope_correction` 去查问题、缩边界、做复查。
-- 用 `research_background_map` 和 `story_memory_checkpoint` 处理宽理论问题、长篇连续性压缩和安全续写。
-- 把剧本继续桥接到角色声纹、品牌表达、多语种视觉语言和 screen-to-video brief。
-- 把 writers' room、多智能体协作、subagent 阵容、handoff 纪律做成显式设计，而不是“多开几个 agent 试试”。
+- 把模糊的想法提炼为 `logline`、`premise`、`beat_sheet`、`outline`、`scene_draft`、`commercial_script` 等具体输出物。
+- 在不同媒介和不同阶段下，为 Agent 提供更精确的协议、评分标准和最小知识包，而不是把整个仓库都塞进上下文。
+- 在多个可行方案之间做比较，避免一开始就被限定在单一方案中。
+- 用 `rewrite_report`、`quality_gate_report`、`boundary_map`、`scope_correction` 来排查问题、限定边界、做复查。
+- 用 `research_background_map` 和 `story_memory_checkpoint` 处理宏观理论问题、长篇连续性压缩和安全续写。
+- 把剧本继续对接到角色声纹、品牌表达、多语种视觉语言和 screen-to-video brief。
+- 把 writers' room、多智能体协作、subagent 阵容、handoff 纪律做成明确的设计，而不是”多开几个 agent 试试”。
 
 ## 30 秒看懂它怎么工作
 
@@ -44,8 +44,8 @@
 **系统会做的事**
 
 - 先判断这是 narrative / feature / development + drafting 的组合问题
-- 再装配对应 protocol、rubric 和最小知识包
-- 最后产出 premise、beat、scene，并视需要追加 quality gate
+- 再加载对应的 protocol、rubric 和最小知识包
+- 最后输出 premise、beat、scene，并根据需要追加 quality gate
 
 **产物片段**
 
@@ -61,35 +61,35 @@
 
 | 适合的人 | 你会得到什么 |
 | --- | --- |
-| 编剧 / 策划 / 剧本开发 | 不只是“写点东西”，而是可复用的开发和诊断结构 |
-| 剧本医生 / 审稿人 / 教学者 | 更明确的 failure mode、rubric 和对照参考 |
-| Agent builder / workflow designer | 显式路由、bounded loading、可复用 contract、可校验 registry |
+| 编剧 / 策划 / 剧本开发 | 不只是”写点东西”，而是可复用的开发和诊断方法 |
+| 剧本医生 / 审稿人 / 教学者 | 更明确的常见失败模式、评分标准和对照参考 |
+| Agent builder / workflow designer | 明确的路由机制、bounded loading、可复用 contract、可校验 registry |
 | 想做多智能体创作流程的人 | 团队模式、专家 cast、dispatch、handoff、surface 设计 |
 
 | 不太适合的人 | 原因 |
 | --- | --- |
-| 只想要一条万能提示词的人 | 这个仓库更偏系统化资产，不偏捷径 |
-| 想找唯一标准答案的人 | 剧本创作不是稳定单解问题 |
-| 只想看一个成品 UI 的人 | 这是 repo-first 的知识系统，不是在线产品 |
+| 只想要一条万能提示词的人 | 这个仓库偏系统化的方法论，不提供捷径 |
+| 想找唯一标准答案的人 | 剧本创作没有唯一正确答案 |
+| 只想看一个成品 UI 的人 | 这是一个知识系统仓库，不是在线产品 |
 
-## 它和普通剧本仓库最不一样的地方
+## 它和普通剧本仓库最大的区别
 
-- `route-first`：主 route 先由 `intent x medium x stage x output` 锚定，再由 `constraints` 做 tie-break 和加载控制
-- `research-first`：知识沉淀在版本化资产里，而不是散在聊天记录里
-- `bounded-loading`：尽量只加载最小有效知识包，避免 context 腐化
-- `challenge-friendly`：反驳、反例、field report、专业质疑都被当成升级输入
-- `multi-surface`：不只管“写文本”，也管审查、协作、项目表面层和下游桥接
+- `route-first`：主 route 先由 `intent x medium x stage x output` 确定，再由 `constraints` 做优先级判定和加载控制
+- `research-first`：知识积累在版本化资产里，而不是散在聊天记录里
+- `bounded-loading`：尽量只加载最小有效知识包，避免上下文退化
+- `challenge-friendly`：反驳、反例、field report、专业质疑都被当作改进系统的输入
+- `multi-surface`：不只管”写文本”，也管审查、协作、项目视图和下游对接
 
 ## 如果你是从另一个 Agent / 工作流里调用它
 
-- 先从 [`SKILL.md`](./SKILL.md) 看根总控契约。
-- 再从 [`references/supported-outputs.md`](./references/supported-outputs.md) 里选最小可用输出，不要自己发明一类含糊产物。
-- 用 [`references/router-matrix.json`](./references/router-matrix.json) 和 [`references/routing-policy.md`](./references/routing-policy.md) 看 route 和 constraint signals。
-- 如果用户问的是“如何创作剧本”这类宽问题，用 `research_background_map`，不要硬塞成某个具体写作产物。
-- 如果真正问题是“下次还能安全继续写”或“要把当前状态交接给别人”，优先用 `story_memory_checkpoint`，不要扩大上下文包。
-- 如果真正问题是长期项目该怎么分真源、运行态、packet、review / export 面，优先用 `project_surface_map`。
+- 先从 [`SKILL.md`](./SKILL.md) 看核心控制契约。
+- 再从 [`references/supported-outputs.md`](./references/supported-outputs.md) 里选择最小可用输出，不要自己发明模糊的输出类型。
+- 用 [`references/router-matrix.json`](./references/router-matrix.json) 和 [`references/routing-policy.md`](./references/routing-policy.md) 查看 route 和 constraint 信号。
+- 如果用户问的是”如何创作剧本”这类宽泛问题，使用 `research_background_map`，不要硬塞成某个具体的写作产物。
+- 如果实际需求是”下次还能安全续写”或”要把当前状态交接给别人”，优先使用 `story_memory_checkpoint`，不要扩大上下文包。
+- 如果实际需求是长期项目如何划分单一来源、运行状态、数据包、review / export 方面，优先使用 `project_surface_map`。
 
-## 按你现在的角色开始
+## 根据你的角色选择入口
 
 ### 如果你是编剧、策划或审稿人
 
@@ -104,16 +104,16 @@
 - 然后看 [路由策略](./references/routing-policy.md) 和 [router matrix](./references/router-matrix.json)
 - 再看 [支持的输出契约](./references/supported-outputs.md) 和 [上下文加载策略](./docs/context-loading-policy-zh.md)
 
-### 如果你的问题本身很宽、偏理论或偏背景研究
+### 如果你的问题比较宏观、偏理论或偏背景研究
 
 - 先看 [如何创作剧本研究总览](./docs/how-to-create-a-screenplay-research-zh.md)
 - 再看 [research background 协议](./knowledge/20-workflows/wp-research-background-map.md)
-- 再决定下一步该往哪个更窄的 output route 收敛
+- 再决定下一步该往哪个更具体的 output route 收敛
 
-### 如果你需要暂停、续写或把长篇状态交接出去
+### 如果你需要暂停写作、续写或交接长篇状态
 
 - 先看 [story memory checkpoint 协议](./knowledge/20-workflows/wp-story-memory-checkpoint.md)
-- 如果问题其实是长期项目表面层设计，再看 [project surface 架构](./docs/project-surface-architecture-zh.md)
+- 如果问题其实是长期项目视图设计，再看 [project surface 架构](./docs/project-surface-architecture-zh.md)
 
 ### 如果你想提问题、提反驳、改仓库
 
@@ -206,7 +206,7 @@ flowchart LR
     G --> B
 ```
 
-## 仓库当前规模一眼看懂
+## 仓库当前规模概览
 
 | 模块 | 当前规模 |
 | --- | --- |
@@ -220,7 +220,7 @@ flowchart LR
 | 校验脚本 | [`scripts/`](./scripts) 下 `14` 个 Python 脚本 |
 | 测试模块 | [`tests/`](./tests) 下 `12` 个测试文件 |
 
-## 核心能力面
+## 核心功能
 
 ### 创作与开发
 
@@ -233,37 +233,37 @@ flowchart LR
 
 - 改稿诊断
 - 质量门槛与定向复查
-- route failure、boundary map、scope correction
+- route failure、boundary map、scope correction（路由失败、边界映射、范围纠正）
 
 ### 研究与连续性
 
-- 宽问题理论支撑
+- 宏观问题理论支撑
 - 可恢复的 story-memory checkpoint
-- bounded loading 和 research bundle
+- bounded loading（受限加载）和 research bundle（研究资源包）
 
-### 表达与下游桥接
+### 表达与下游对接
 
-- 角色 / IP / 品牌表达校准
+- 角色 / IP / 品牌表达风格校准
 - 多语种视觉语言
 - 剧本到视频执行桥接
 
 ### 团队与系统
 
 - writers' room / multi-agent 蓝图
-- 专家 subagent cast
+- 专家 subagent 阵容
 - dispatch / handoff 设计
 - project surface 架构
 
 ## 它靠什么保证质量
 
 - schema、registry、route、fixture 都有脚本校验
-- 会检查 route overlap，避免 skill 边界越来越糊
+- 会检查 route overlap，避免 skill 边界逐渐模糊
 - narrative / commercial / interactive 都有样例和 fixture
 - community surface 有专项检查，避免 issue / discussion 入口失效
 - 本地工具痕迹被明确禁止进入 index 和历史；以 [`.gitignore`](./.gitignore) 和 [`scripts/check_forbidden_paths.py`](./scripts/check_forbidden_paths.py) 里的 canonical denylist 为准
 - 人类反驳不是噪音，而是后续 rubric、fixture、scope correction 的来源
 
-## 按目标找文档
+## 按目标查找文档
 
 ### 面向编剧 / 策划
 
@@ -277,7 +277,7 @@ flowchart LR
 - [架构说明](./docs/architecture-zh.md)
 - [内容模型](./docs/content-model-zh.md)
 - [上下文加载策略](./docs/context-loading-policy-zh.md)
-- [项目表面层架构](./docs/project-surface-architecture-zh.md)
+- [项目视图架构](./docs/project-surface-architecture-zh.md)
 - [多智能体剧本架构](./docs/multi-agent-screenplay-architecture-zh.md)
 
 ### 面向贡献者
@@ -290,49 +290,49 @@ flowchart LR
 
 ## 社区协作
 
-这个项目希望形成的不是“点赞型社区”，而是“高质量反驳型社区”。
+这个项目希望形成的不是”点赞型社区”，而是”高质量反驳型社区”。
 
-优先使用合适入口：
+优先选择合适的入口：
 
 - [Discussions](https://github.com/XucroYuri/how-to-make-script/discussions)：问题澄清、开放反驳、替代路径、field note
-- [Issue Forms](./.github/ISSUE_TEMPLATE)：已经能指出具体文件、具体 claim、具体 route、具体 rubric 的情况
+- [Issue Forms](./.github/ISSUE_TEMPLATE)：能指出具体文件、具体结论、具体 route、具体 rubric 的情况
 - [Support](./SUPPORT.md)：看支持入口梯度
 - [Security](./SECURITY.md)：处理私密安全问题
 
 适合先做的第一批贡献：
 
-- 挑一条你觉得过宽的判断，指出它在哪种场景会失效
-- 补一个真实案例或反例，让某条 guidance 需要缩边界
-- 改一个示例、一个 rubric 解释、一个文档入口
-- 复现一次 route mismatch，并把它沉淀成 fixture
+- 挑一条你觉得适用范围过宽的判断，指出它在什么场景下会失效
+- 补充一个真实案例或反例，让某条指导原则需要缩小适用范围
+- 改进一个示例、一个 rubric 解释、一个文档入口
+- 复现一次 route mismatch，并将它记录为 fixture
 
 ## 当前状态
 
-这个仓库已经不是空骨架，而是一套可工作的 research-first screenplay monorepo。
+这个仓库已经不是空壳，而是一套可运行的 research-first screenplay monorepo。
 
 当前重点覆盖：
 
 - narrative / commercial / interactive
-- 宽问题 research layer / continuity checkpoint
+- 宏观问题 research layer / continuity checkpoint
 - voice / visual-language / screen-to-video
 - team orchestration / subagent casting / dispatch / project surface
 - adaptive quality gating / human-in-the-loop 社区反馈
 
-当前还明显没补齐的地方：
+当前还明显不足的地方：
 
-- 协作 blueprint 已经很多，但 live runtime execution 还没落成；
-- bounded loading 在规则层很强，但 bundle planner 层还不够硬；
-- route 覆盖面很大，但相邻输出之间的对抗性 fixture 还不够深；
-- 知识面已经广了，但 genre / case study / stage-specific depth 仍然有不少空位；
-- 社区入口已经有了，但 discussion → asset 的转化链仍偏人工。
+- 协作 blueprint 已经很多，但实时 runtime execution 还未实现；
+- bounded loading 在规则层面很强，但 bundle planner 层还不够完善；
+- route 覆盖范围很大，但相邻输出之间的对抗性 fixture 还不够深入；
+- 知识范围已经比较广，但 genre / case study / stage-specific depth 仍然有不少空白；
+- 社区入口已经有了，但 discussion → asset 的转化链仍然依赖人工。
 
 下一阶段开发方向：
 
-- 可执行 runtime planning 与可恢复 orchestration
-- 更硬的 router / retrieval 治理和更完整的 registry 校验
-- 更深的 genre / medium / case-study / dialogue-character 知识层
+- 可执行 runtime planning 与可恢复的 orchestration
+- 更严格的 router / retrieval 治理和更完整的 registry 校验
+- 更深入的 genre / medium / case-study / dialogue-character 知识层
 - 更强的 quality preset、跨工件一致性检查和回归深度
-- 更成熟的人类反馈转资产机制和双语成熟度
+- 更成熟的人类反馈转资产机制和双语文档完善度
 
 高细粒度 TODO：
 
@@ -349,7 +349,7 @@ flowchart LR
 
 ## 为什么值得 Star / Watch
 
-如果这个仓库对你有用，Star 或 Watch 不只是支持表达，它会直接带来两件实际价值：
+如果这个仓库对你有用，Star 或 Watch 不只是表达支持，它还能带来两方面的实际价值：
 
 - 让更多编剧、研究者、Agent builder 发现这套系统
 - 让更多反例、实战案例、专业质疑进入仓库，推动知识体系升级

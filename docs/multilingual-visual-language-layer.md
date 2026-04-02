@@ -1,6 +1,6 @@
 # Multilingual Visual Language Layer
 
-This repository now treats multilingual visual language as a screenplay-adjacent capability, not as a generic prompt-engineering stunt.
+This repository now treats multilingual visual language as a screenplay-adjacent capability, not as a gimmick.
 
 The value is straightforward:
 - screenwriting increasingly sits next to previz, video generation, global collaboration, and prompt-mediated production;

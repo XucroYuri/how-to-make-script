@@ -8,7 +8,7 @@
 - [Narcooo/inkos](https://github.com/Narcooo/inkos)
 
 最有价值的设计点：
-- 把长期控制文档和运行时产物拆开；
+- 把长期控制文档和运行时输出物拆开；
 - 先编译输入，再进入写作，而不是把一坨 prompt 直接塞给模型；
 - 让 runtime trace 可检查；
 - 规则不是平铺成一段说明，而是有层级、有覆盖关系；
@@ -31,14 +31,14 @@
 
 最有价值的设计点：
 - planning 和 drafting 分成不同入口；
-- 资产成熟后再显式 handoff 给正文 Agent；
-- `src/` 真源和 `data/` 运行态 / 派生层明确分开；
+- 资产成熟后再明确 handoff 给正文 Agent；
+- `src/` 权威来源和 `data/` 运行状态 / 派生层明确分开；
 - 通过 canonical packet 组装上下文，而不是让上下文装配变成黑箱；
 - 给用户看当前到底加载了什么，提升可调试性和信任。
 
 值得仓库吸收的：
 - 更清楚的阶段入口；
-- 更严格的真源 / 运行态分层；
+- 更严格的权威来源 / 运行状态分层；
 - 更明确的 planning -> drafting handoff 门槛。
 
 不该直接照搬的：
@@ -52,9 +52,9 @@
 - [0xsline/short-drama](https://github.com/0xsline/short-drama)
 
 最有价值的设计点：
-- domain workflow 一旦把“阶段 -> 产物”写清楚，生产力会明显更强；
+- domain workflow 一旦把”阶段 -> 输出物”写清楚，生产力会明显更强；
 - quality、自检、合规、导出都应该有独立表面；
-- 海外模式、格式切换、市场转换最好显式化；
+- 海外模式、格式切换、市场转换最好明确化；
 - 短剧生产线需要更强的节奏、钩子、卡点、审查与批量推进意识。
 
 值得仓库吸收的：
@@ -84,7 +84,7 @@
 - 用双轨节奏来诊断“外面很忙、里面没动”或“情绪很浓、外部没推”的病型。
 
 不该直接照搬的：
-- 把一整套巨型集成 prompt 当成主真源；
+- 把一整套巨型集成 prompt 当成主权威来源；
 - 把不可见的内部自检当成可以替代 protocol / rubric / artifact 的机制；
 - 使用容易漂移的打包表面，而不保留清晰的可编辑源资产。
 
@@ -96,7 +96,7 @@
 - source-of-truth 和 runtime-state 的明确分层；
 - canonical packet 的组装和可追溯性；
 - planning / drafting / review / export 的阶段入口意识；
-- review 和 export surface 作为显式工作流层，而不是正文附带说明。
+- review 和 export surface 作为明确工作流层，而不是正文附带说明。
 - 不同容器的结构放大逻辑、双轨节奏和连续剧弧光预算。
 
 ## 非教条原则

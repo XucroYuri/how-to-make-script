@@ -75,7 +75,7 @@
 仓库吸收方式：
 
 - 在 bridge 层强调 source traceability、visible asset grounding 和容器边界诚实；
-- 不把 storyboard 或 clip 层细节误写成 screenplay 层的唯一真源。
+- 不把 storyboard 或 clip 层细节误写成 screenplay 层的单一权威来源。
 
 ## 采用规则
 

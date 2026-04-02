@@ -77,11 +77,11 @@ Relevant research signals include:
 - boundary attention and memory: transitions and event boundaries are high-information, high-memory moments;
 - causal integration: delayed exposition works only if the later causal stitch still becomes recoverable;
 - interpretive framing: early framing shifts how the same later material is understood;
-- transportation and absorption: over-explicit scaffolding can reduce immersion even when it increases overt clarity.
+- transportation and absorption: overly explicit scaffolding can reduce immersion even when it increases overt clarity.
 
 Repo implication:
 
-- scene turns, act thresholds, openings, and payoffs should be treated as inference-management surfaces, not only plot checkpoints.
+- scene turns, act thresholds, openings, and payoffs should be treated as inference-management points, not only plot checkpoints.
 
 ## 4. Screenwriting skill is deliberate practice, not theory accumulation
 

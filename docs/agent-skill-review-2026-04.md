@@ -5,7 +5,7 @@
 This review looked at the repository as an executable agent system rather than only as a knowledge library.
 
 Review goals:
-- logical closure between root claims and actual implementation;
+- logical consistency between root claims and actual implementation;
 - route reliability across diverse screenplay scenarios;
 - progressive disclosure instead of permanent maximal loading;
 - semantic drift control across docs, manifests, workflows, routes, and fixtures;
@@ -28,7 +28,7 @@ Several skill manifests no longer covered the atoms required by their own workfl
 
 Fix:
 - aligned manifests with protocol-linked atoms;
-- added semantic consistency checks so this drift now fails CI instead of becoming silent behavior mismatch.
+- added semantic consistency checks so this drift now fails CI instead of becoming undetected behavior mismatch.
 
 ### 3. Public vs internal surfaces were not explicit
 

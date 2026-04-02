@@ -68,4 +68,4 @@ If a route has escalated too far:
 - keep one adjacent lens at most;
 - report why the larger surface was unnecessary.
 
-Progressive disclosure is therefore not a UI nicety. It is a quality-control mechanism against context bloat, orchestration theater, and avoidable user friction.
+Progressive disclosure is therefore not a UI nicety. It is a quality-control mechanism against context bloat, performative orchestration, and avoidable user friction.

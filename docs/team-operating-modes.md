@@ -63,7 +63,7 @@ Best for:
 Operating shape:
 - small core pod: story architect, development producer, continuity or research support, human decision owner;
 - short artifact ladder from premise slate to beat ladder to outline to scene packet;
-- explicit dissent retention because the team is small enough to converge too fast by accident.
+- deliberate dissent retention because the team is small enough to converge too fast by accident.
 
 Why this mode exists:
 - small trusted teams are often faster for features, but only if they still preserve counterexamples and checkpoint discipline.

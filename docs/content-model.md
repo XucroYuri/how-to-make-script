@@ -68,17 +68,17 @@ Real-world grounding outputs are first-class contracts:
 - `project_surface_map`
 - `quality_gate_report`
 
-These contracts exist so agents can explicitly reason about audience demand, commissioning context, and writer capability growth, instead of burying those concerns in generic prose.
-They also let the repo express plural routes, boundary logic, claim-narrowing behavior, contrastive reference teaching, and bounded loading control directly, instead of pretending every good answer collapses to one canonical artifact.
+These contracts exist so agents can directly reason about audience demand, commissioning context, and writer capability growth, instead of burying those concerns in generic prose.
+They also let the repo express plural routes, boundary logic, claim-narrowing behavior, contrastive reference teaching, and bounded loading control directly, rather than defaulting to one canonical artifact for every answer.
 The newest expression contract makes voice, register, continuity, and "alive" text quality explicit without forcing all drafting requests through a style-template workflow.
 The new visual-language contract makes cross-lingual shot vocabulary and culture-bound visual anchors explicit without forcing every screenplay request into multilingual mode.
 The new screen-to-video bridge contract makes downstream visual translation explicit without confusing screenplay writing with vendor prompt syntax.
 The new team contract makes multi-agent and human-agent screenplay collaboration explicit without pretending that one workflow fits every medium or production setting.
 The new expert-cast contract makes it possible to select bounded specialist subagents and reference-persona lenses without turning every route into a bloated permanent team.
-The new dispatch-plan contract makes scheduling, handoffs, review ordering, and context budgets explicit instead of leaving “orchestration” as invisible prompt lore.
-The new project-surface contract makes canonical truth, runtime mirrors, packet assembly, review surfaces, and export surfaces explicit instead of leaving long-horizon project design to hidden repo habits.
+The new dispatch-plan contract makes scheduling, handoffs, review ordering, and context budgets explicit rather than leaving orchestration as invisible prompt lore.
+The new project-surface contract makes canonical truth, runtime mirrors, packet assembly, review surfaces, and export surfaces explicit rather than leaving long-horizon project design to hidden repo habits.
 The new quality-gate contract makes adaptive, lens-based self-checking explicit so the repo can audit text, bridges, governance artifacts, and recheck scopes without flattening everything into one rewrite note.
-The new research-background contract makes broad screenplay theory, method-history, and background-support requests first-class instead of leaving them as loose documentation and loading heuristics.
+The new research-background contract makes broad screenplay theory, method-history, and background-support requests first-class rather than leaving them as loose documentation and loading heuristics.
 The new story-memory-checkpoint contract makes resumable continuity compression explicit, so long-form writing can preserve state without defaulting to full-context reloads.
 
 Registry-backed background bundles live in `references/` rather than `knowledge/`.

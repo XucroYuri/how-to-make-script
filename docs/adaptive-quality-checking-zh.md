@@ -7,7 +7,7 @@
 特定定位的 checker workflow 往往在自己的应用场景里很强。真正值得吸收的，不是它固定有几层，而是它背后的方法：
 - 不做泛泛点评，而做分层检查；
 - 每层检查都尽量保持视角独立；
-- 层间只传压缩 metrics，不把 findings 全文一路堆下去；
+- 层间只传提炼后的 metrics，不把 findings 全文一路堆下去；
 - 硬门槛和软评分分开；
 - 修改后有明确复查路径。
 
@@ -19,13 +19,13 @@
 - team workflow / subagent dispatch；
 - project surface map。
 
-这些 artifact 的失败机制根本不同。
+这些输出物的失败机制根本不同。
 
 ## 当前抽象方式
 
 仓库新增了 `quality_gate_report`，把质检逻辑改成：
 1. 先锁定 target contract；
-2. 先过这个 artifact 自己的原生 rubric 或最接近的 contract gate；
+2. 先过当前输出物自身的原生 rubric 或最接近的 contract gate；
 3. 再从 [`references/check-lens-matrix.json`](../references/check-lens-matrix.json) 里选择最小有效 lens stack；
 4. 每个 lens 在 bounded brief 下独立检查；
 5. 分离 hard fail 和 weighted weakness；
@@ -52,7 +52,7 @@
 - `range_limited`
 - `recheck`
 
-也就是说，系统会优先做“最小必要复查”，而不是把复查变成另一个沉重工作流。
+也就是说，系统会优先做”最小必要复查”，而不是把复查变成另一个沉重的工作流。
 
 ## 和 rewrite_report 的边界
 
@@ -62,17 +62,17 @@
 - 这份交付物在当前 contract 下有没有过关；
 - 哪些是 hard fail，哪些只是弱项；
 - 哪些 lens 必须再审；
-- 非故事型 artifact 是否具备可交接、可落地、可验收性。
+- 非故事型输出物是否具备可交接、可落地、可验收性。
 
 它的默认次序是：
-- 先跑当前 artifact 的原生 rubric；
+- 先跑当前输出物的原生 rubric；
 - 再叠加共享 lens matrix。
 
 简化说：
 - 要改稿优先级，用 `rewrite_report`；
 - 要做自检、预检、复查、验收、跨 artifact 质检，用 `quality_gate_report`。
 
-## 关联资产
+## 关联文件
 
 - [`wp.quality-gate-report`](../knowledge/20-workflows/wp-quality-gate-report.md)
 - [`rb.quality-gate-report`](../knowledge/60-rubrics/rb-quality-gate-report.md)

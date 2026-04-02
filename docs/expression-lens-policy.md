@@ -2,9 +2,9 @@
 
 The repository now treats language style and "alive" character expression as a first-class layer, but not as a universal route.
 
-That distinction matters. If every request loads voice and style assets by default, the repo will drift back toward context stuffing and generic style talk. If style is never made explicit, the agent will keep producing competent but bloodless drafts.
+That distinction matters. If every request loads voice and style assets by default, the repo will drift back toward context stuffing and generic style talk. If style is never made explicit, the agent will keep producing competent but lifeless drafts.
 
-The right middle path is:
+The right balance is:
 - add an explicit `voice_style_guide` output for direct calibration requests;
 - allow normal drafting routes to load a small expression lens only when the request or draft actually needs it.
 

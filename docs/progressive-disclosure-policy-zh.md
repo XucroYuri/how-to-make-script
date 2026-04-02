@@ -6,7 +6,7 @@
 
 ## 披露梯度
 
-### Level 1. 核心剧本产物
+### Level 1. 核心剧本输出物
 - `logline`
 - `premise`
 - `synopsis`
@@ -19,7 +19,7 @@
 - `commercial_script`
 - `interactive_branch_map`
 
-当用户只是要下一个创作产物时，先停在这里。
+当用户只是要下一个创作输出物时，先停在这里。
 
 ### Level 2. 适配与校准镜头
 - `audience_fit_note`
@@ -29,7 +29,7 @@
 - `visual_language_pack`
 - `screen_to_video_brief`
 
-只有当下一步决策真的依赖受众、行业、作者成长、角色声纹、多语种视觉沟通、下游视觉桥接约束时，才往上升。
+只有当下一步决策真的依赖受众、行业、作者成长、角色声纹、多语种视觉沟通、下游视觉衔接约束时，才往上升。
 
 ### Level 3. 发散与诊断表面
 - `rewrite_report`
@@ -52,7 +52,7 @@
 ### Level 5. 长周期项目治理层
 - `project_surface_map`
 
-只有当问题已经不是“下一稿怎么写”，而是“哪里是真源、哪里是 runtime、handoff 和 export 怎么分层”时，才升到这一层。
+只有当问题已经不是”下一稿怎么写”，而是”哪里是单一来源、哪里是运行状态、handoff 和 export 怎么分层”时，才升到这一层。
 
 ## 升级规则
 
