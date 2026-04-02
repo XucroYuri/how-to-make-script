@@ -1,6 +1,6 @@
 {
   "skill_id": "skill.structure-beat",
   "protocol_id": "wp.structure-beat-outline",
-  "rubric_id": "rb.outline"
+  "rubric_id": "rb.outline",
+  "output": "beat_sheet"
 }
-

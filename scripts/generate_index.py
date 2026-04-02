@@ -108,6 +108,7 @@ ADJUNCT_TRIGGERS: Dict[str, Dict[str, str]] = {
 
 EXPRESSION_LENS_ATOMS: Dict[str, List[str]] = {
     "scene_draft":        ["ka.character-voice-consistency", "ka.embodied-text-pressure", "ka.dialogue-subtext"],
+    "screenplay_draft":   ["ka.character-voice-consistency", "ka.embodied-text-pressure", "ka.dialogue-subtext", "ka.cinematic-prose-register"],
     "dialogue_polish":    ["ka.character-voice-consistency", "ka.embodied-text-pressure", "ka.dialogue-subtext"],
     "commercial_script":  ["ka.register-adaptation", "ka.embodied-text-pressure"],
     "adaptation":         ["ka.ip-voice-continuity", "ka.character-voice-consistency", "ka.register-adaptation"],

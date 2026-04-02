@@ -3,26 +3,32 @@
   "id": "rb.scene-draft",
   "type": "evaluation_rubric",
   "title": "Scene Draft Rubric",
-  "applies_to": ["scene_card", "scene_draft"],
+  "applies_to": ["scene_card", "scene_draft", "screenplay_draft"],
   "dimensions": [
     {"name": "function", "question": "场景功能是否明确"},
     {"name": "change", "question": "局面是否发生变化"},
-    {"name": "conflict", "question": "冲突是否具体可见"}
+    {"name": "conflict", "question": "冲突是否具体可见"},
+    {"name": "performance_coupling", "question": "对白是否都挂在可执行的表演承载上，而不是裸对白"},
+    {"name": "expression_integrity", "question": "文本是否避免机械语症、作者腔和假高级感"}
   ],
   "scoring_bands": {
-    "excellent": "功能明确，冲突具体，场景结束后局面发生明显变化。",
-    "workable": "有清晰目的，但变化或冲突力度仍可增强。",
-    "weak": "像解释性填充，删掉影响很小。"
+    "excellent": "功能明确，冲突具体，表演承载可执行，场景结束后局面发生明显变化，文本没有机械语污染。",
+    "workable": "有清晰目的，但变化、冲突力度、表演承载或自然度仍可增强。",
+    "weak": "像解释性填充，或对白脱离表演承载，删掉影响很小。"
   },
   "hard_fail_rules": [
     "场景结束前后局面无差别",
     "没有明确冲突方",
-    "功能无法一句话概括"
+    "功能无法一句话概括",
+    "存在裸对白回合：对白没有 inline performance，也没有紧邻动作拍点承载",
+    "中文输出存在三个以上机械语症：四字词语堆砌、情绪标签句、解释性过渡句、对仗式对白、语域错位、完整句病"
   ],
   "rewrite_actions": [
     "明确主功能",
     "增加选择压力",
-    "删除或合并无变化段落"
+    "删除或合并无变化段落",
+    "给对白补表演承载或把表演信息前移到动作拍点",
+    "把作者总结句改写成具身动作、回避、停顿和空间行为"
   ]
 }
 ---
@@ -31,6 +37,7 @@
 用于判断一场戏是否值得存在。
 
 很多场景初稿的问题，不是文字不顺，而是功能没立住。这个 rubric 本质上是在问：这场戏结束以后，局面到底哪儿变了？如果回答不出来，继续润色字句的收益通常很低。
+现在它还会追问另一层：你的对白到底有没有挂到表演和动作上，还是只剩几句看起来通顺、但演员和镜头都接不住的裸句子。
 
 ## 场景描述示例
 

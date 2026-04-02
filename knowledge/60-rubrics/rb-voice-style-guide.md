@@ -3,7 +3,7 @@
   "id": "rb.voice-style-guide",
   "type": "evaluation_rubric",
   "title": "Voice Style Guide Rubric",
-  "applies_to": ["voice_style_guide", "dialogue_polish", "scene_draft", "commercial_script"],
+  "applies_to": ["voice_style_guide", "dialogue_polish", "scene_draft", "screenplay_draft", "commercial_script"],
   "dimensions": [
     {"name": "identity_fidelity", "question": "是否写出了角色 / IP / 品牌人格真正稳定的表达锚点"},
     {"name": "lived_pressure", "question": "是否把处境压力、身体感和关系风险转进了语言机制"},

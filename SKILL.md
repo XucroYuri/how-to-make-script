@@ -239,6 +239,7 @@ Stop expansion when one of these is true:
 - `outline`
 - `scene_card`
 - `scene_draft`
+- `screenplay_draft`
 - `dialogue_polish`
 - `rewrite_report`
 - `commercial_script`

@@ -55,7 +55,7 @@
 **你给它的请求**
 
 ```text
-把这个想法做成电影 premise、beat sheet 和一场关键 scene draft：
+把这个想法做成电影 beat sheet：
 "一个多年逃避父亲死亡真相的女记者，被迫回到矿区家乡调查旧案。"
 ```
 
@@ -63,13 +63,18 @@
 
 | 层 | 选择 |
 | --- | --- |
-| 技能 | [`skill.logline-premise`](./skills/logline-premise/SKILL.md) |
-| 协议 | [`wp.logline-premise`](./knowledge/20-workflows/wp-logline-premise.md) + 下游场景草稿 |
-| 审查 | premise / beat / scene 评分标准 + 可选 [`quality_gate_report`](./knowledge/20-workflows/wp-quality-gate-report.md) |
+| 技能 | [`skill.structure-beat`](./skills/structure-beat/SKILL.md) |
+| 协议 | [`wp.structure-beat-outline`](./knowledge/20-workflows/wp-structure-beat-outline.md) |
+| 审查 | [`rb.outline`](./knowledge/60-rubrics/rb-outline.md) + 可选 [`quality_gate_report`](./knowledge/20-workflows/wp-quality-gate-report.md) |
 
 **产物片段**
 
-> 一名多年逃离矿区家乡的女记者，为了阻止矿难周年前被掩埋的真相再次沉没，不得不回到父亲死去的井口调查旧案，却在越接近真相时越发现自己当年选择沉默也参与了这场掩盖。
+```text
+## Beat List
+- Opening imbalance: 她在外地做调查记者，却始终回避任何与矿区有关的报道。
+- Lock-in: 一页父亲旧案残档逼她回乡。
+- Midpoint turn: 她发现自己当年的沉默也是掩盖的一部分。
+```
 
 完整示例入口：
 
@@ -185,6 +190,7 @@ python3 scripts/check_community_surfaces.py
 python3 scripts/check_links.py
 python3 scripts/check_forbidden_paths.py
 python3 scripts/check_question_todos.py
+python3 scripts/check_golden_artifact_formats.py
 python3 scripts/run_fixture_suite.py
 python3 -m unittest discover -s tests -v
 ```
@@ -208,6 +214,7 @@ flowchart LR
 
 - 先从 [`SKILL.md`](./SKILL.md) 看核心控制契约
 - 用 [`references/supported-outputs.md`](./references/supported-outputs.md) 选择最小可用输出，不要自己发明模糊的输出类型
+- 需要看 golden 示例的最小 Markdown 交付形状时，用 [`references/output-format-contracts.md`](./references/output-format-contracts.md)
 - 用 [`references/router-matrix.json`](./references/router-matrix.json) 和 [`references/routing-policy.md`](./references/routing-policy.md) 查看 route 和 constraint 信号
 - 用户问"如何创作剧本"等宽泛问题时，使用 `research_background_map`，不要硬塞成某个具体写作产物
 - 实际需求是"下次还能安全续写"或"要交接当前状态"时，优先使用 `story_memory_checkpoint`，不要扩大上下文包

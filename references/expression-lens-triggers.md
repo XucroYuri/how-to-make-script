@@ -13,7 +13,7 @@ Prefer `voice_style_guide` when the user explicitly asks for:
 
 ## Adjunct Triggers
 
-Keep the primary route unchanged, but load the expression lens when the request stays in `scene_draft`, `dialogue_polish`, `commercial_script`, or adaptation outputs and one of these is true:
+Keep the primary route unchanged, but load the expression lens when the request stays in `scene_draft`, `screenplay_draft`, `dialogue_polish`, `commercial_script`, or adaptation outputs and one of these is true:
 - constraints include `voice_target`;
 - constraints include `language_register`;
 - constraints include `ip_continuity`;
@@ -23,12 +23,12 @@ Keep the primary route unchanged, but load the expression lens when the request 
 
 ## Minimal Lens Bundles
 
-- `scene_draft` or `dialogue_polish`
+- `scene_draft`, `screenplay_draft`, or `dialogue_polish`
   - `ka.character-voice-consistency`
   - `ka.embodied-text-pressure`
   - `ka.dialogue-subtext`
   - `ka.verbal-rhythm`
-  - `ka.cinematic-prose-register` (scene_draft only)
+  - `ka.cinematic-prose-register` (`scene_draft` and `screenplay_draft` only)
 - `commercial_script`
   - `ka.register-adaptation`
   - `ka.embodied-text-pressure`

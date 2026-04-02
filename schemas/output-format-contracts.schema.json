@@ -1,0 +1,68 @@
+{
+  "type": "object",
+  "required": [
+    "version",
+    "contracts"
+  ],
+  "properties": {
+    "version": {"type": "integer", "minimum": 1},
+    "contracts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "output",
+          "title_includes",
+          "required_sections"
+        ],
+        "properties": {
+          "output": {"type": "string"},
+          "title_includes": {"type": "string"},
+          "required_sections": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "heading",
+                "min_items"
+              ],
+              "properties": {
+                "heading": {"type": "string"},
+                "min_items": {"type": "integer", "minimum": 0}
+              }
+            }
+          },
+          "script_block_contract": {
+            "type": "object",
+            "required": [
+              "script_section",
+              "min_scenes",
+              "min_dialogue_beats",
+              "scene_labels",
+              "av_labels",
+              "beat_requires_performance"
+            ],
+            "properties": {
+              "script_section": {"type": "string"},
+              "min_scenes": {"type": "integer", "minimum": 1},
+              "min_dialogue_beats": {"type": "integer", "minimum": 0},
+              "scene_labels": {
+                "type": "array",
+                "minItems": 1,
+                "items": {"type": "string"}
+              },
+              "av_labels": {
+                "type": "array",
+                "minItems": 1,
+                "items": {"type": "string"}
+              },
+              "beat_requires_performance": {"type": "boolean"}
+            }
+          }
+        }
+      }
+    }
+  }
+}

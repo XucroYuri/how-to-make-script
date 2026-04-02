@@ -1,0 +1,6 @@
+{
+  "skill_id": "skill.scene-writing",
+  "protocol_id": "wp.scene-writing",
+  "rubric_id": "rb.scene-draft",
+  "output": "scene_draft"
+}

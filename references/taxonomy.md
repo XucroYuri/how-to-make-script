@@ -39,6 +39,7 @@
 - `outline`
 - `scene_card`
 - `scene_draft`
+- `screenplay_draft`
 - `dialogue_polish`
 - `rewrite_report`
 - `quality_gate_report`

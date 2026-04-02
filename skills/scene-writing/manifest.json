@@ -18,7 +18,8 @@
     ],
     "outputs": [
       "scene_card",
-      "scene_draft"
+      "scene_draft",
+      "screenplay_draft"
     ]
   },
   "protocol_id": "wp.scene-writing",
@@ -29,10 +30,11 @@
     "ka.scene-function",
     "ka.conflict-pressure",
     "ka.exposition-control",
-    "ka.opening-job-selection",
-    "ka.medium-animation"
+    "ka.character-voice-consistency",
+    "ka.embodied-text-pressure",
+    "ka.cinematic-prose-register"
   ],
-  "fallback_behavior": "Merge, delete, or redesign the scene if it does not change the situation.",
+  "fallback_behavior": "Merge, delete, or redesign the scene if it does not change the situation, or rebuild the beat carriers if the draft slips into bare dialogue or writerly prose.",
   "default_loading_mode": "focus_pack",
   "adjunct_bundles": {
     "expression-lens": {

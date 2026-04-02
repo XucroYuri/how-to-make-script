@@ -1,5 +1,7 @@
 # Supported Outputs
 
+Use [`references/output-format-contracts.md`](./output-format-contracts.md) for the current machine-checked Markdown handoff shape of golden example artifacts.
+
 - `logline`: one-sentence story engine with protagonist, goal, obstacle, and stakes.
 - `premise`: compact concept statement with audience and tonal promise.
 - `synopsis`: paragraph-level story summary.
@@ -7,7 +9,8 @@
 - `beat_sheet`: structured turning-point sequence.
 - `outline`: ordered list of scenes or sequences.
 - `scene_card`: compact scene purpose and content card.
-- `scene_draft`: draft scene text or scene plan.
+- `scene_draft`: scene-level screenplay draft with labeled beats, performance carriers, and optional AV cues.
+- `screenplay_draft`: multi-scene screenplay draft with labeled scene blocks, dialogue-performance coupling, and handoff-safe AV notation.
 - `dialogue_polish`: dialogue rewrite with subtext and voice checks.
 - `rewrite_report`: diagnostic report with failure modes and rewrite priorities.
 - `quality_gate_report`: adaptive audit report with selected quality lenses, hard fails, weighted weaknesses, correction ladder, and recheck scope.
