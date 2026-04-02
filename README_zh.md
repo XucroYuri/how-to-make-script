@@ -6,7 +6,7 @@
 
 <p align="center">
   开源剧本研发基础设施，面向编剧与 Agent。<br/>
-  路由、生成、审查、编排——覆盖叙事、商业和互动剧本。
+  路由分派、内容生成、质量审查、流程编排——覆盖叙事、商业和互动剧本。
 </p>
 
 <p align="center">
@@ -34,7 +34,7 @@
   <code>编剧</code>
   <code>Agent 技能</code>
   <code>工作流协议</code>
-  <code>质量门控</code>
+  <code>质量把关</code>
   <code>人机协作</code>
 </p>
 
@@ -46,7 +46,7 @@
 </p>
 
 > 这不是提示词模板仓库，不是唯一真理式教学，也不是 UI-first 产品。
-> 它是一套可持续积累的剧本研发基础设施：可路由的知识资产、清晰的协议合约、可复用的审查逻辑、社区驱动的纠偏闭环。
+> 它是一套可持续积累的剧本研发基础设施：按需匹配的知识资产、清晰的工作流合约、可复用的审查逻辑、社区驱动的纠偏闭环。
 
 ---
 
@@ -65,7 +65,7 @@
 | --- | --- |
 | 技能 | [`skill.logline-premise`](./skills/logline-premise/SKILL.md) |
 | 协议 | [`wp.logline-premise`](./knowledge/20-workflows/wp-logline-premise.md) + 下游场景草稿 |
-| 审查 | premise / beat / scene 量规 + 可选 [`quality_gate_report`](./knowledge/20-workflows/wp-quality-gate-report.md) |
+| 审查 | premise / beat / scene 评分标准 + 可选 [`quality_gate_report`](./knowledge/20-workflows/wp-quality-gate-report.md) |
 
 **产物片段**
 
@@ -95,7 +95,7 @@
 - 用 `rewrite_report`、`quality_gate_report`、`boundary_map`、`scope_correction` 排查问题、限定边界、做复查
 - 用 `research_background_map` 和 `story_memory_checkpoint` 处理宏观理论问题、长篇连续性压缩和安全续写
 - 对接角色声纹、品牌表达、多语种视觉语言和 screen-to-video brief
-- 把 writers' room、多智能体协作、subagent 阵容、handoff 纪律做成明确的设计
+- 把 writers' room、多智能体协作、subagent 阵容、handoff 规范做成明确的设计
 
 ## 它适合谁
 
@@ -196,9 +196,9 @@ python3 -m unittest discover -s tests -v
 flowchart LR
     S["预检同步<br/>检查上游 SHA"] --> A["用户请求"]
     A --> B["分类 & 路由<br/>意图 × 媒介 × 阶段 × 产出"]
-    B --> C["加载知识包<br/>协议 + 量规 + 原子"]
-    C --> D["生成制品"]
-    D --> E["自检门控<br/>基于量规的质量门控"]
+    B --> C["加载知识包<br/>工作流 + 评分标准 + 知识点"]
+    C --> D["生成成果"]
+    D --> E["质量自检<br/>按评分标准把关"]
     E --> F["人类反馈"]
     F --> G["改进资产"]
     G -.->|"下次运行"| S
@@ -251,7 +251,7 @@ flowchart LR
 
 | 模块 | 规模 |
 | --- | --- |
-| 根 skill | [`SKILL.md`](./SKILL.md) — 总控路由和加载纪律 |
+| 根 skill | [`SKILL.md`](./SKILL.md) — 总控路由和加载策略 |
 | 公共输出契约 | `30` 个可路由输出（[`supported-outputs.md`](./references/supported-outputs.md)） |
 | skill 目录 | `29` 个能力型目录（[`skills/`](./skills)） |
 | 结构化资产 | `97` 个 atom + `28` 个 protocol + `27` 个 rubric |
@@ -265,9 +265,9 @@ flowchart LR
 
 **创作与开发** — 叙事剧本、商业/品牌脚本、互动/分支叙事、premise 到 rewrite 全阶段
 
-**诊断与纠偏** — 改稿诊断、质量门控、定向复查、路由失败排查、边界映射、范围纠正
+**诊断与纠偏** — 改稿诊断、质量把关、定向复查、路由失败排查、边界映射、范围纠正
 
-**研究与连续性** — 宏观理论支撑、可恢复的 story-memory checkpoint、有界加载、研究资源包
+**研究与连续性** — 宏观理论支撑、可恢复的 story-memory checkpoint、按需加载、研究资源包
 
 **表达与下游对接** — 角色/IP/品牌表达风格校准、多语种视觉语言、剧本到视频执行桥接
 
@@ -331,7 +331,7 @@ flowchart LR
 
 这个仓库是一套可运行的 research-first screenplay monorepo。
 
-**当前重点：** 叙事 / 商业 / 互动剧本；研究和连续性层；声纹/视觉/视频层；团队编排和项目视图；自适应质量门控和人机协作迭代。
+**当前重点：** 叙事 / 商业 / 互动剧本；研究和连续性层；声纹/视觉/视频层；团队编排和项目视图；自适应质量把关和人机协作迭代。
 
 **还明显不足的地方：**
 
