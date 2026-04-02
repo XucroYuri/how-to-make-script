@@ -9,7 +9,7 @@ The current skill design is strong in three places:
 - the repo already separates route packs, scenario taxonomies, boundary tools, and pattern reference packs;
 - the content model favors bounded assets over one giant prompt.
 
-The main risk is overload, not lack of knowledge. If every nearby asset is loaded whenever a request feels difficult, the model will start repeating the repo instead of using it. That causes context corrosion, weaker decision quality, and slower creative movement.
+The main risk is overload, not lack of knowledge. If every nearby asset is loaded whenever a request feels difficult, the model will start repeating the repo instead of using it. That causes context degradation, weaker decision quality, and slower creative progress.
 
 The policy below is designed to keep the repo broad enough for creative extension and narrow enough for reliable execution.
 

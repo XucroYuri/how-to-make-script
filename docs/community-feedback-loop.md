@@ -21,7 +21,7 @@ Useful feedback includes:
 
 ## Where To Start
 
-Choose the lightest surface that fits the current state of the idea:
+Choose the lightest channel that fits the current state of the idea:
 
 - start in `Q&A` when the contributor is still clarifying a claim or route;
 - start in `General` when the disagreement is real but still broad or exploratory;
@@ -59,7 +59,7 @@ Common resolution patterns beyond asset updates include:
 
 ## Operating Rhythm
 
-- Within 72 hours, a maintainer should classify the thread or redirect it to a better surface.
+- Within 72 hours, a maintainer should classify the thread or redirect it to a better channel.
 - Within 7 days, the thread should either have a `status:*` label, a request for missing evidence, or a clear conversion step.
 - Weekly triage should focus on `needs-triage`, `needs-practitioner-input`, and `needs-counterexample`.
 - Monthly digests should highlight which objections actually changed the repo.

@@ -1,6 +1,6 @@
 # Community Triage Loop
 
-This playbook is for maintainers and agents who need to turn community input into repository change without flattening dissent.
+This playbook is for maintainers and agents who need to turn community input into repository change while preserving dissent.
 
 It assumes screenplay guidance is heuristic, bounded, contestable, and historically situated. Triage should therefore preserve viable rival paths when they exist, not force everything toward a single truth too early.
 
@@ -35,7 +35,7 @@ It assumes screenplay guidance is heuristic, bounded, contestable, and historica
 - If the issue is duplicated, merge it but keep the useful counterexample and link back.
 - If the issue is blocked, explain what evidence would unblock it.
 
-## Surface Conversion Rules
+## Channel Conversion Rules
 
 - Convert an issue to a discussion when the change target is still broad, comparative, or exploratory.
 - Convert a discussion to an issue when the target asset, route, rubric, or governance rule becomes concrete.
@@ -56,7 +56,7 @@ See the full registry in [`../references/community-label-taxonomy.json`](../refe
 
 ## Response Cadence
 
-- Within 72 hours: classify the thread or move it to a better surface.
+- Within 72 hours: classify the thread or move it to a better channel.
 - Within 7 days: add the relevant `status:*` label or request the missing evidence explicitly.
 - Weekly: review stalled threads and decide whether they should be converted, encoded, deferred, or closed with note.
 - Monthly: review which objection patterns keep recurring and should become fixtures, docs, or governance updates.

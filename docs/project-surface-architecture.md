@@ -76,10 +76,10 @@ Artifacts prepared for downstream humans or tools:
 
 ## Design Rule
 
-Do not let project surfaces become implicit.
+Project surfaces should stay explicit, not implicit.
 
 If the repo eventually grows a runtime planner, it should not invent these layers later.
-It should inherit them from the project-surface design layer already defined here.
+It should inherit them from the project-surface layer defined here.
 
 ## Linked Contracts
 

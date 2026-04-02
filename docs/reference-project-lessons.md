@@ -90,7 +90,7 @@ What this repo should absorb:
 What this repo should not absorb directly:
 - one giant integrated screenplay prompt as the main source of truth;
 - hidden internal self-check loops that are not observable as protocols, rubrics, or artifacts;
-- opaque packaged surfaces whose editable source and machine-facing bundle can drift out of sync.
+- opaque packaged outputs whose editable source and machine-facing bundle can drift out of sync.
 
 ## Local Design Changes Motivated By These Repos
 

@@ -7,7 +7,7 @@
 ## 治理规则
 
 1. 一个公开概念尽量只有一个主名称。
-2. 旧叫法可以保留，但必须通过显式 alias 或 detail-key register 保留。
+2. 旧叫法可以保留，但必须通过明确的 alias 或 detail-key register 保留。
 3. `public` skill surface 必须能被路由，也必须能从 root skill 找到。
 4. 内部辅助 skill 可以存在，但必须声明 `surface: internal`。
 5. skill manifest 至少要覆盖它对应 primary protocol 需要的 atoms。
@@ -20,7 +20,7 @@
    - fixtures
 7. route 的说法必须诚实。
    - 如果 `constraints` 只影响 loading，就不要假装它已经决定了 route。
-   - 如果 `constraints` 真在做 route signal / tie-break，就要显式声明出来。
+   - 如果 `constraints` 真在做 route signal / tie-break，就要明确声明出来。
 
 ## Constraint Key 策略
 
@@ -40,7 +40,7 @@
 - 当相邻 route 未来开始接近时，提供 tie-break 依据；
 - 让 loading 判断可追踪，而不是黑箱。
 
-它不是为了把 router 重新做成关键词糊猜器。
+它不是为了把 router 重新做成关键词猜测器。
 
 ## Surface 策略
 
@@ -49,7 +49,7 @@
 
 ## 验证
 
-这层治理现在由这些脚本兜底：
+这层治理现在由这些脚本保障：
 - [`scripts/check_semantic_consistency.py`](../scripts/check_semantic_consistency.py)
 - [`scripts/check_routes.py`](../scripts/check_routes.py)
 - [`scripts/check_route_overlaps.py`](../scripts/check_route_overlaps.py)

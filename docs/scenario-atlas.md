@@ -1,8 +1,8 @@
 # Scenario Atlas
 
-This atlas classifies screenplay creation situations by factor, not by genre slogan.
+This atlas classifies screenplay creation situations by factor, not by genre label.
 
-The goal is operational: help an agent decide what kind of screenplay problem it is facing, what route is appropriate, and which reference pattern is worth comparing against. These are routing lenses and comparison lenses. They are not a fixed canon.
+The goal is operational: help an agent decide what kind of screenplay problem it is facing, what route is appropriate, and which reference pattern is worth comparing against. They work as routing and comparison lenses, not as a fixed canon.
 
 Machine-readable registry: [`references/scenario-taxonomy.json`](../references/scenario-taxonomy.json)
 
@@ -222,9 +222,9 @@ Machine-readable registry: [`references/scenario-taxonomy.json`](../references/s
 
 ### 22. Boundary Map and Scope Correction
 - Signature: `hybrid + boundary_map + goal_obstacle + clarity + committee_review`
-- Use when: the task is to separate hard-no zones, soft-risk zones, and a narrowed surviving core.
+- Use when: the task is to separate hard-no zones, soft-risk zones, and a narrowed remaining valid core.
 - Strong fragment: `The rule is not wrong; it is too broad. In festival dramas it survives, in brand work it does not, and the safe zone sits between them.`
-- Why this works: it gives an explicit boundary map and preserves a surviving core.
+- Why this works: it gives an explicit boundary map and preserves what still holds.
 - Weak fragment: `This rule is good in some cases and bad in others.`
 - Why the weaker version fails: it stays vague about what survives and where it breaks.
 - Non-dogma note: boundary mapping and scope correction should protect creative room, not erase it.

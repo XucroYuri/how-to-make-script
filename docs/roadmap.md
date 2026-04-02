@@ -4,7 +4,7 @@
 
 The repository is past the bootstrap stage. It already has:
 
-- a root skill with explicit routing and bounded-loading rules;
+- a root skill with clear routing and bounded-loading rules;
 - a multi-asset knowledge model;
 - broad coverage across narrative, commercial, and interactive screenplay work;
 - review artifacts, research-background artifacts, continuity artifacts, and team-orchestration artifacts;
@@ -16,9 +16,9 @@ The repository is past the bootstrap stage. It already has:
 - The repo can describe multi-agent screenplay teams, but it still cannot instantiate a live runtime planner that turns blueprints into bounded execution.
 - Bounded loading is well documented, but bundle selection and expansion control are still only partly machine-enforced.
 - Registry validation is uneven: some registries have schema/checkers, others still rely on convention and review discipline.
-- Route coverage is broad, but adversarial fixture depth is still thinner than the number of near-neighbor outputs now living in the system.
-- Knowledge breadth is strong, but several genre, medium, case-study, and dialogue/character research surfaces are still shallow.
-- Community intake exists, but the path from discussion → triage → asset / fixture / rubric change is still more manual than it should be.
+- Route coverage is broad, but edge-case fixture depth is still thin compared to the number of similar outputs now in the system.
+- Knowledge breadth is strong, but several genre, medium, case-study, and dialogue/character knowledge areas are still shallow.
+- Community intake exists, but the path from discussion to triage to asset change still relies too much on manual effort.
 - Bilingual entrypoints are much better, but parity is still incomplete at the deeper documentation layer.
 
 ## Next-Stage Phases
@@ -30,7 +30,7 @@ The repository is past the bootstrap stage. It already has:
 - [ ] Add a resumable runtime ledger format so long-running screenplay jobs can pause, resume, and branch safely.
 - [ ] Add bounded context-budget accounting to runtime planning so every expansion step has a stated reason and stop condition.
 - [ ] Add a dry-run mode that simulates lane sequencing and handoff order before any live multi-agent execution.
-- [ ] Add explicit human-gate insertion points for approval, challenge, scope correction, and final sign-off.
+- [ ] Add clear human-gate insertion points for approval, challenge, scope correction, and final sign-off.
 - [ ] Add runtime failure policies for dead-end routes, handoff loss, contradiction discovery, and over-budget context expansion.
 - [ ] Add end-to-end fixtures for at least one feature pod, one showrunner room, and one branded-content flow.
 
@@ -70,7 +70,7 @@ The repository is past the bootstrap stage. It already has:
 ### Phase 9: Human-In-The-Loop Community Operations
 
 - [ ] Operationalize the existing discussion-to-asset workflow with clearer ownership, timing, and handoff expectations.
-- [ ] Turn the existing triage categories into a more explicit maintainer decision tree for claim narrowing, route fixes, fixture additions, and governance changes.
+- [ ] Turn the existing triage categories into a clearer maintainer decision tree for claim narrowing, route fixes, fixture additions, and governance changes.
 - [ ] Add contributor-facing templates for field notes, failed routes, successful overrides, and practitioner disagreement reports where current intake is still too free-form.
 - [ ] Add periodic backlog review rituals that convert high-signal discussions into roadmap items or closed-scope decisions.
 - [ ] Add intake metrics: how many discussions became fixtures, how many route bugs became tests, and how many objections narrowed claims.
@@ -91,7 +91,7 @@ The repository is past the bootstrap stage. It already has:
 
 ## Maintainer Rule
 
-The next stage should increase discrimination power, runtime executability, and regression resistance.
+The next stage should increase routing precision, runtime executability, and regression resistance.
 
 It should not:
 

@@ -2,7 +2,7 @@
 
 This repository now treats screenplay creation as a possible **team problem**, not only a routing problem.
 
-That does not mean every request should become a multi-agent run. It means the repo now has a formal place to describe when screenplay work should be handled by:
+That does not mean every request should become a multi-agent run. It means the repo now has a designated place to describe when screenplay work should be handled by:
 - one orchestrator plus specialists;
 - parallel exploration lanes;
 - bounded handoffs;
@@ -15,7 +15,7 @@ The repository does **not** adopt one universal “writer super-agent” model.
 Public multi-agent systems and real-world screenplay teams both point the other way:
 - use a central orchestrator when ownership and synthesis matter;
 - use specialists when different decisions need different bundles;
-- use handoffs instead of full-context dumping;
+- use handoffs instead of full-context sharing;
 - use human intervention at the costly or ambiguous gates.
 
 ## New Layer

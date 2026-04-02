@@ -115,7 +115,7 @@
 - 哪些 persona lens 值得上，哪些不值得；
 - 哪种 topology 最合适；
 - 谁是 merge owner；
-- packet 怎么传；
+- 数据包怎么传；
 - 哪些地方必须 human-in-the-loop；
 - 什么时候该扩容，什么时候该收缩。
 

@@ -1,6 +1,6 @@
 # Community Operations
 
-This repository does not want a quiet issue tracker. It wants a high-signal disagreement machine.
+This repository does not want a quiet issue tracker. It wants a high-signal feedback engine.
 
 The goal is not to collect praise. The goal is to turn objections, counterexamples, and field evidence into better screenplay knowledge, better routing, and better human-in-the-loop habits.
 
@@ -11,9 +11,9 @@ The goal is not to collect praise. The goal is to turn objections, counterexampl
 - Convert repeated objections into assets, fixtures, or governance changes instead of re-litigating them forever.
 - Make it easy for non-code contributors to improve the project without pretending they need to submit code first.
 
-## Feedback Surface Ladder
+## Feedback Channel Ladder
 
-Use the lightest surface that still fits the problem:
+Use the lightest channel that still fits the problem:
 
 1. `Q&A` discussion:
    Use when the person is still trying to understand a claim, route, or asset before challenging it.
@@ -35,9 +35,9 @@ This follows GitHub's own recommendation: use Discussions for brainstorming and 
 These are targets, not hard promises:
 
 - Within 72 hours:
-  add a `type:*` label or `discussion-first`, and decide whether the surface is correct.
+  add a `type:*` label or `discussion-first`, and decide whether the channel is correct.
 - Within 7 days:
-  add a `status:*` label, request missing evidence, or convert the thread to a better surface.
+  add a `status:*` label, request missing evidence, or move the thread to a better channel.
 - Weekly:
   review open `needs-triage`, `needs-practitioner-input`, and `needs-counterexample` threads.
 - Monthly:

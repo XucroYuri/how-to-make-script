@@ -44,7 +44,7 @@
 </p>
 
 > Not a prompt dump. Not a single-method gospel. Not a UI-first product.
-> This repository is durable creative infrastructure for screenplay work: routeable knowledge, explicit workflow contracts, reusable review logic, and community-driven correction loops.
+> This repository is durable creative infrastructure for screenplay work: routable knowledge, clear workflow contracts, reusable review logic, and community-driven correction loops.
 
 ## What This Repo Helps You Do
 
@@ -54,7 +54,7 @@
 - Diagnose drafts with `rewrite_report`, `quality_gate_report`, `boundary_map`, or `scope_correction`.
 - Handle broad screenplay theory and long-form continuity with `research_background_map` and `story_memory_checkpoint`.
 - Bridge screenplay work into voice calibration, multilingual visual language, and screen-to-video handoff.
-- Design multi-agent or writers' room style workflows with explicit casts, dispatch plans, and handoff contracts.
+- Design multi-agent or writers' room style workflows with well-defined casts, dispatch plans, and handoff contracts.
 
 ## 60-Second Example
 
@@ -107,7 +107,7 @@ Full example chain:
 ## If You Are Calling This From Another Agent
 
 - Start at [`SKILL.md`](./SKILL.md) for the root orchestration contract.
-- Use [`references/supported-outputs.md`](./references/supported-outputs.md) to choose the smallest public output instead of inventing a blended artifact.
+- Use [`references/supported-outputs.md`](./references/supported-outputs.md) to choose the smallest appropriate output instead of inventing a blended artifact.
 - Use [`references/router-matrix.json`](./references/router-matrix.json) and [`references/routing-policy.md`](./references/routing-policy.md) to understand route selection and constraint signals.
 - Use `research_background_map` for broad “how to create a screenplay” or theory-support requests.
 - Use `story_memory_checkpoint` when the real need is resumable continuity or handoff-safe state, not a broader context bundle.
@@ -283,7 +283,7 @@ flowchart LR
 - Schemas and registries are validated before claims of completeness.
 - Routes are tested for correct output contracts and overlap risk.
 - Fixtures exercise narrative, commercial, interactive, and systems workflows.
-- Community surfaces are checked so issue / discussion routing does not silently rot.
+- Community surfaces are checked so issue and discussion routing does not become stale.
 - Forbidden local workspace leakage is blocked in both index and history checks; the canonical denylist lives in [`.gitignore`](./.gitignore) and [`scripts/check_forbidden_paths.py`](./scripts/check_forbidden_paths.py).
 - Human disagreement is treated as a source of regression tests, rubrics, and scope corrections.
 
@@ -344,19 +344,19 @@ Current emphasis:
 
 Main development gaps still open:
 
-- blueprint-quality collaboration design is ahead of live runtime execution;
-- bounded loading is strong at the policy layer but still under-enforced at the bundle-planner layer;
-- route coverage is broad, but adversarial fixture depth is still uneven across nearby outputs;
-- knowledge breadth is ahead of genre / case-study / stage-specific depth in several areas;
-- community intake exists, but discussion-to-asset conversion is still too manual.
+- collaboration blueprints are mature, but live runtime execution is not yet implemented;
+- bounded loading is well documented, but bundle-planner enforcement is still incomplete;
+- route coverage is broad, but edge-case fixture depth is still uneven across similar outputs;
+- knowledge coverage is broad, but genre-specific, case-study, and stage-level depth is still thin in several areas;
+- community intake exists, but turning discussions into assets still relies too much on manual effort.
 
 Next-stage roadmap:
 
 - executable runtime planning and resumable orchestration
-- harder router / retrieval governance and richer registry validation
-- deeper genre / medium / case-study / dialogue-character knowledge layers
+- stricter router and retrieval governance and richer registry validation
+- deeper genre, medium, case-study, and dialogue-character knowledge layers
 - stronger quality presets, cross-artifact checks, and regression depth
-- more operational human-in-the-loop conversion loops and bilingual maturity
+- more systematic human-in-the-loop conversion workflows and bilingual maturity
 
 Detailed TODO list:
 

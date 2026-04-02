@@ -112,7 +112,7 @@ The architecture is still very extensible because new knowledge is mostly additi
 - new pattern packs can be created for new problem families;
 - new protocols and rubrics can be introduced as long as they stay routeable.
 
-The only real constraint is governance: extension should add discrimination power, not just add more text.
+The only real constraint is governance: extension should add routing precision, not just add more text.
 
 ## Short List Of Priorities
 

@@ -8,7 +8,7 @@
 
 1. 这个项目到底更像作者中心、showrunner 中心、品牌战役中心、系统设计中心，还是 continuity 中心？
 2. 当前最该集中锁定的是什么，最适合并行跑的又是什么？
-3. 在进入成稿前，哪些中间产物绝不能跳过？
+3. 在进入成稿前，哪些中间成果绝不能跳过？
 4. 哪些判断必须保留给人类，而不能完全交给 Agent？
 
 ## 模式 1：Showrunner Room
@@ -19,7 +19,7 @@
 
 核心形态：
 - 有一个明确的最终拍板者；
-- 有 room captain 维护当前 truth packet；
+- 有 room captain 维护当前 truth 上下文包；
 - 可以分 season engine、episode break、character threads、notes intake 几条 lane；
 - 但 season lock、episode break lock、production rewrite 这几个 gate 必须非常明确。
 
@@ -42,7 +42,7 @@
 核心形态：
 - 核心团队不一定大，但 peer review 很强；
 - 研究、reel、sequence note、世界观校准互相联动；
-- review 不是等成稿后才做，而是跟着 sequence 和 story packet 一起走。
+- review 不是等成稿后才做，而是跟着 sequence 和 story 上下文包一起走。
 
 为什么要有这个模式：
 - Disney 的 Story Trust 文化本质上就是“高密度反馈 + 世界研究 + 反复 sequence 级校正”；
@@ -61,11 +61,11 @@
 核心形态：
 - 团队更小，更像 writer-director-producer pod；
 - 重点不是 room 规模，而是 artifact ladder 和外部 checkpoint；
-- 必须显式保留 dissent，不然小团队会过快达成“假一致”。
+- 必须明确保留 dissent，不然小团队会过快达成”假一致”。
 
 为什么要有这个模式：
 - 电影开发常常不适合大 room，但也不能没有开发节律和外部反馈；
-- 对 Agent 来说，这种模式意味着更少 lane、更硬 gate、更清晰的 owner。
+- 对 Agent 来说，这种模式意味着更少 lane、更严格的 gate、更清晰的 owner。
 
 来源：
 - [WGA 2023 MBA summary](https://www.wga.org/contracts/contracts/mba/summary-of-the-2023-wga-mba)
@@ -123,9 +123,9 @@
 - 品牌人格或 lore 风险极高的项目。
 
 核心形态：
-- continuity keeper 必须显式存在；
+- continuity keeper 必须明确存在；
 - canon anchor、voice guide、risk register 先于大规模 drafting；
-- 创新不是不能做，但必须明确写出“改了哪个锚点，为什么能改”。
+- 创新不是不能做，但必须明确写出”改了哪个关键设定，为什么能改”。
 
 为什么要有这个模式：
 - 在系列世界里，continuity 不是返工阶段顺手查查，而是前置的决策机制。

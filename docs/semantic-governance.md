@@ -40,7 +40,7 @@ Use the register when:
 These signals do not turn the router into a fuzzy keyword engine. They exist for three narrower jobs:
 - explain why a route is appropriate;
 - disambiguate near-equal adjacent routes when overlaps appear later;
-- make loading decisions traceable instead of magical.
+- make loading decisions traceable instead of opaque.
 
 ## Surface Policy
 
@@ -54,4 +54,4 @@ Semantic governance is enforced by:
 - [`scripts/check_routes.py`](../scripts/check_routes.py)
 - [`scripts/check_route_overlaps.py`](../scripts/check_route_overlaps.py)
 
-The point is not taxonomy perfection. The point is to stop silent drift before the repo starts telling the agent conflicting stories about what it is supposed to do.
+The point is not taxonomy perfection. The point is to stop undetected drift before the repo starts telling the agent conflicting stories about what it is supposed to do.

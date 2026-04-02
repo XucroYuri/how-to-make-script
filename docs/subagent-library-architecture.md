@@ -15,7 +15,7 @@ The intended order is:
 
 That order matters.
 
-If the system chooses cast or topology before route, it will overfit on organizational theater.
+If the system chooses cast or topology before route, it will waste effort on organizational overhead.
 If it chooses team mode but never chooses a cast, collaboration stays too abstract.
 If it chooses a cast but never defines dispatch, the system becomes a pile of specialists with no merge discipline.
 
