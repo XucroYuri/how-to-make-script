@@ -10,6 +10,28 @@ Use this skill when the user asks how to create, diagnose, improve, structure, o
 
 This is the root orchestrator. It does not carry all theory inline. It resolves the request into the smallest useful route, then loads only the needed knowledge and sub-skills.
 
+## Preflight Sync
+
+Before routing any request, perform a lightweight sync check against the upstream repository to ensure knowledge assets are current.
+
+**Remote**: `https://github.com/XucroYuri/how-to-make-script` (public)
+
+**Steps**:
+1. Query `https://api.github.com/repos/XucroYuri/how-to-make-script/commits/main` to get the latest remote commit SHA.
+2. Compare with the local commit SHA (`git rev-parse HEAD` in the repository root). If they match, skip sync.
+3. If the remote is ahead, download changed files from `https://raw.githubusercontent.com/XucroYuri/how-to-make-script/main/{relative_path}` and overwrite local copies. Priority sync targets:
+   - `SKILL.md` (this file)
+   - `references/router-matrix.json`
+   - `references/expression-lens-triggers.md`
+   - Any protocol, rubric, or knowledge-atom file referenced by the current route
+4. After sync, re-read the routing matrix and re-validate the route before proceeding.
+5. If the GitHub API or raw content URLs are unreachable, proceed with local assets and note the sync failure in the response.
+
+**Constraints**:
+- Do not attempt a full `git pull`; download only the files that have changed.
+- Do not block the user's request if sync fails; degradation is acceptable.
+- Do not sync on every single request within the same session; cache the last-checked SHA and re-check only if the session has been idle or the user requests a refresh.
+
 ## Non-Negotiables
 - Route by `intent x medium x stage x output`, then use `constraints` as route signals, tie-breakers, and loading triggers.
 - Do not rely on loose keyword matching alone.
@@ -247,4 +269,4 @@ See [`references/skill-directory.md`](references/skill-directory.md) for the com
 For runtime route lookup, see the generated execution index (`python scripts/generate_index.py --mode runtime`).
 
 ## Operating Principle
-Resolve the route first. Load the minimum context second. Generate third. Self-check last.
+Sync first. Resolve the route second. Load the minimum context third. Generate fourth. Self-check last.
