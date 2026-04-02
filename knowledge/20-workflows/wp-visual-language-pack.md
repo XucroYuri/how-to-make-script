@@ -3,7 +3,7 @@
   "id": "wp.visual-language-pack",
   "type": "workflow_protocol",
   "title": "多语种视觉语言包协议",
-  "goal": "输出一份 task-specific 的 visual_language_pack，帮助剧本 Agent 或人类协作者在目标语言里更准确地表达镜头、灯光、动作、音频和文化美学锚点。",
+  "goal": "输出一份 task-specific 的 visual_language_pack，帮助剧本 Agent 或人类协作者在目标语言里更准确地描述镜头、灯光、动作、音频和文化美学锚点。",
   "input_contract": [
     "scene goal",
     "medium and stage",
@@ -63,6 +63,6 @@
 ## TODOs：待回答问题
 
 - [ ] `visual_language_pack` 是否应该进一步拆成 crew-facing 和 model-facing 两种输出变体？
-- [ ] 当用户既要语种迁移，又要品牌语体或 IP 声纹连续性时，这份包应该如何与 `voice_style_guide` 配合？
+- [ ] 当用户既要语种迁移，又要品牌语体或 IP 角色声音连续性时，这份包应该如何与 `voice_style_guide` 配合？
 - [ ] 如果项目本身不是视频生成而是传统拍摄，这份包是否应输出更偏人类协作的版本？
 - [ ] 哪些任务需要按语种提供不同的“禁忌词”清单，以避免误导生成模型或协作方？

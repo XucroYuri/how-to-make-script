@@ -13,7 +13,7 @@
 - `scenario taxonomy` 和场景图谱把“剧本问题到底是什么”先拆开了，避免一上来就落入题材口号。
 - `path_options`、`boundary_map`、`scope_correction`、`pattern_reference_pack` 这几个输出，把发散、边界、范围修正和范式参考都明确了。
 - `context_loading_plan` 和 loading modes 让“到底该加载多少”第一次变成了可执行机制。
-- `voice_style_guide` 和表达镜头触发规则，让”角色声纹 / IP 一致性 / 活人感”第一次变成了可明确调用的能力，而不是散落在对白建议里的附带话术。
+- `voice_style_guide` 和表达校准包触发规则，让”角色声音 / IP 一致性 / 活人感”第一次变成了可明确调用的能力，而不是散落在对白建议里的附带话术。
 - `team_workflow_blueprint` 和 team-mode matrix 让“应该怎么组织多智能体 / writers' room / 审查链”第一次变成正式能力，而不是只靠临时发挥。
 - 社区反馈回路和苏格拉底式问题总表，让“质疑”和“反例”变成系统输入，而不是情绪噪音。
 - 仓库内的 [`docs/shared/agent-tiers.md`](./shared/agent-tiers.md) 已经补上，tier 规则不再依赖缺失文件。

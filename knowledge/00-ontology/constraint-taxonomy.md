@@ -103,7 +103,7 @@
 - 用户要“先搞清楚这个项目在平台委制语境里该怎么开发”，就该切到 `development_brief`。
 - 用户问“我从广告文案转叙事编剧应该怎么练”，就该切到 `learning_path`。
 - 用户说“先别写，先把角色 / IP / 品牌的说话方式锁住”，就该优先切到 `voice_style_guide`。
-- 用户仍然要 `scene_draft` 或 `dialogue_polish`，但明确要求“别像作者腔 / 要有活人感 / 要守住 IP 声纹”，就保持原 route，同时追加表达镜头。
+- 用户仍然要 `scene_draft` 或 `dialogue_polish`，但明确要求“别像作者腔 / 要有活人感 / 要守住 IP 角色声音”，就保持原 route，同时追加表达校准包。
 - 用户说“先别直接写生成 brief，先给我一套日语 / 韩语 / 俄语 / 西语 / 中文镜头词和视觉表达包”，就该切到 `visual_language_pack`。
 - 用户说“把这场戏桥接成一个给 Sora / Seedance / previz 用的可执行 brief”，就该切到 `screen_to_video_brief`。
 - 用户问“这个项目应该怎么组织 writers' room / agent team / review board”，就该优先切到 `team_workflow_blueprint`。
