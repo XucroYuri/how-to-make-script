@@ -22,8 +22,11 @@
   <a href="./CONTRIBUTING.md">
     <img src="https://img.shields.io/badge/PRs-welcome-16a34a" alt="PRs welcome" />
   </a>
+  <a href="./README.md">
+    <img src="https://img.shields.io/badge/English-1A2D3A" alt="English" />
+  </a>
   <a href="./README_zh.md">
-    <img src="https://img.shields.io/badge/language-English%20%2B%20%E4%B8%AD%E6%96%87-f97316" alt="Bilingual" />
+    <img src="https://img.shields.io/badge/%E4%B8%AD%E6%96%87-f97316" alt="中文" />
   </a>
 </p>
 
