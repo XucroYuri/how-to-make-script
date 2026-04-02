@@ -1,5 +1,3 @@
-[中文专业版](./README_zh.md)
-
 <p align="center">
   <img src="./docs/assets/readme-hero.svg" alt="how-to-make-script pipeline" width="100%" />
 </p>

@@ -1,5 +1,3 @@
-[English landing](./README.md)
-
 <p align="center">
   <img src="./docs/assets/readme-hero-zh.svg" alt="how-to-make-script 管线" width="100%" />
 </p>
