@@ -63,7 +63,7 @@ Fix:
 
 ## Review Result
 
-The design is now materially stronger as a durable agent system:
+The design is now significantly stronger as a durable agent system:
 - more honest about how routing really works;
 - stricter about semantic consistency;
 - clearer about when advanced layers should or should not activate;

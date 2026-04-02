@@ -213,7 +213,7 @@ Machine-readable registry: [`references/scenario-taxonomy.json`](../references/s
 
 ### 21. Path Options Divergence
 - Signature: `hybrid + path_options + choice_consequence + learning + design`
-- Use when: the right answer is several materially different bets.
+- Use when: the right answer is several genuinely different bets.
 - Strong fragment: `Path A centers the relationship, Path B centers the mystery, Path C centers the social system; each wins by a different promise.`
 - Why this works: it compares different bets instead of packaging the same one three ways.
 - Weak fragment: `Here are three versions of the same idea with different wording.`

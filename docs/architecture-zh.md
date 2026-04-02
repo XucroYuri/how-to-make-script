@@ -26,38 +26,17 @@
 
 这些 lens 只在它们会改变路由选择或输出质量时才加载。
 
-编排层现在也带有明确的团队协作规则：
+编排层包含五个扩展领域的有边界加载规则：
 
-- 普通剧本请求默认仍应保持单路由；
-- 只有当团队结构会实质改变下一步决策时，才加载多智能体或混合团队逻辑；
-- 专家角色之间应交换有边界的交接包，而不是共享整份上下文。
+**团队协作。** 普通剧本请求默认仍应保持单路由；只有当团队结构会实质改变下一步决策时，才加载多智能体或混合团队逻辑；专家角色之间应交换有边界的交接包，而不是共享整份上下文。
 
-编排层现在也带有明确的 subagent library 规则：
+**Subagent library。** `team_workflow_blueprint` 负责选择协作形态；`expert_subagent_cast` 负责选择受限的专家 roster；`subagent_dispatch_plan` 负责选择实时调度与 review 结构；reference persona 只是有边界的 lens，不应替代 route logic 或 convergence ownership。
 
-- `team_workflow_blueprint` 负责选择协作形态；
-- `expert_subagent_cast` 负责选择受限的专家 roster；
-- `subagent_dispatch_plan` 负责选择实时调度与 review 结构；
-- reference persona 只是有边界的 lens，不应替代 route logic 或 convergence ownership。
+**Project surface。** `project_surface_map` 负责定义权威来源放在哪里；runtime mirror、cache、trace 默认都应是派生层；packet assembly 应该可审查，而不是隐藏流程；review surface 和 export surface 应该被明确命名，而不是与可编辑内容混在一起。
 
-编排层现在也带有明确的 project surface 规则：
+**Quality gating。** `quality_gate_report` 选择的是一组 lens stack，而不是一份通用检查清单；hard gate 要和加权弱点拆开；优先做 targeted recheck，而不是自动全量重审；专用 checker 逻辑可以启发设计，但不应直接变成整个仓库的通用规则。
 
-- `project_surface_map` 负责定义权威来源放在哪里；
-- runtime mirror、cache、trace 默认都应是派生层；
-- packet assembly 应该可审查，而不是隐藏流程；
-- review surface 和 export surface 应该被明确命名，而不是与可编辑内容混在一起。
-
-编排层现在也带有明确的 quality gating 规则：
-
-- `quality_gate_report` 选择的是一组 lens stack，而不是一份通用检查清单；
-- hard gate 要和加权弱点拆开；
-- 优先做 targeted recheck，而不是自动全量重审；
-- 专用 checker 逻辑可以启发设计，但不应直接变成整个仓库的通用规则。
-
-编排层现在也带有明确的视觉转译规则：
-
-- multilingual visual-language 资产只应在跨语言镜头/调度沟通确实影响答案质量时加载；
-- screenplay-to-video 转译层资产要保持 vendor-neutral，并且以 clip 为边界；
-- 下游模型或工具选择应发生在转译层构建之后，而不是混进 screenplay routing。
+**视觉转译。** multilingual visual-language 资产只应在跨语言镜头/调度沟通确实影响答案质量时加载；screenplay-to-video 转译层资产要保持 vendor-neutral，并且以 clip 为边界；下游模型或工具选择应发生在转译层构建之后，而不是混进 screenplay routing。
 
 仓库还带有明确的 anti-dogma 立场：
 

@@ -91,7 +91,7 @@ The scenario atlas is now a strong factorization layer, but it can still bloat i
 
 8. Keep team modes explicit and bounded.
    - Team mode should activate when workflow structure changes the next decision.
-   - It should not turn ordinary writing requests into performative multi-agent theater.
+   - It should not turn ordinary writing requests into multi-agent theater.
 
 ## Balanced Retrieval Rule
 

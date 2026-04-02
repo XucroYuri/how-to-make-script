@@ -57,7 +57,7 @@ Avoid:
 
 - IDs, schema fields, and route contracts stay language-stable.
 - English and Chinese bodies may differ in phrasing density and examples.
-- If one track adds a materially new concept, the other track should at least reflect the capability, even if not with the same wording.
+- If one track adds a substantially new concept, the other track should at least reflect the capability, even if not with the same wording.
 - When conflict appears, preserve structured contract correctness first, then improve prose.
 - When a task-specific output introduces Japanese, Korean, Russian, Spanish, or hybrid wording, keep the surrounding contract language stable and explain why that language was selected.
 

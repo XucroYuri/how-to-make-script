@@ -24,33 +24,17 @@ The orchestration layer now carries a bounded reality-grounding rule:
 
 These lenses are loaded only when they change route choice or output quality.
 
-The orchestration layer now also includes a clear team-collaboration rule:
-- ordinary screenplay requests should still stay single-route by default;
-- multi-agent or hybrid-team logic should load only when team structure changes the next decision materially;
-- specialist roles should exchange bounded handoff packets instead of full shared context.
+The orchestration layer includes bounded loading rules for five extension domains:
 
-The orchestration layer now also includes a clear subagent-library rule:
-- `team_workflow_blueprint` chooses the collaboration shape;
-- `expert_subagent_cast` chooses the bounded specialist roster;
-- `subagent_dispatch_plan` chooses the live scheduling and review structure;
-- reference personas remain bounded lenses instead of replacing route logic or convergence ownership.
+**Team collaboration.** Ordinary screenplay requests should still stay single-route by default; multi-agent or hybrid-team logic should load only when team structure changes the next decision materially; specialist roles should exchange bounded handoff packets instead of full shared context.
 
-The orchestration layer now also includes a clear project-surface rule:
-- `project_surface_map` chooses where canonical truth lives;
-- runtime mirrors, caches, and traces stay derived by default;
-- packet assembly stays inspectable instead of invisible;
-- review and export surfaces stay named instead of being mixed into editing truth.
+**Subagent library.** `team_workflow_blueprint` chooses the collaboration shape; `expert_subagent_cast` chooses the bounded specialist roster; `subagent_dispatch_plan` chooses the live scheduling and review structure; reference personas remain bounded lenses instead of replacing route logic or convergence ownership.
 
-The orchestration layer now also includes a clear quality-gating rule:
-- `quality_gate_report` chooses a lens stack rather than a universal checklist;
-- hard gates are separated from weighted weaknesses;
-- targeted recheck is preferred over automatic full re-audit;
-- specialized checker logic can inform the design without becoming repo-wide law.
+**Project surface.** `project_surface_map` chooses where canonical truth lives; runtime mirrors, caches, and traces stay derived by default; packet assembly stays inspectable instead of invisible; review and export surfaces stay named instead of being mixed into editing truth.
 
-The orchestration layer now also includes a clear visual-translation rule:
-- multilingual visual-language assets should load only when cross-language shot/staging communication changes answer quality materially;
-- screenplay-to-video bridge assets should stay vendor-neutral and clip-bounded;
-- downstream model or tool choice should sit after bridge construction, not inside screenplay routing.
+**Quality gating.** `quality_gate_report` chooses a lens stack rather than a universal checklist; hard gates are separated from weighted weaknesses; targeted recheck is preferred over automatic full re-audit; specialized checker logic can inform the design without becoming repo-wide law.
+
+**Visual translation.** Multilingual visual-language assets should load only when cross-language shot/staging communication changes answer quality materially; screenplay-to-video bridge assets should stay vendor-neutral and clip-bounded; downstream model or tool choice should sit after bridge construction, not inside screenplay routing.
 
 The repository also applies a clear anti-dogma stance:
 - screenplay guidance is heuristic, not absolute;

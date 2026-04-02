@@ -88,7 +88,7 @@ These are targets, not guarantees:
 - Within 72 hours:
   classify new issues or discussions with a `type:*` label or `discussion-first`.
 - Within 7 days:
-  add a `status:*` label, request missing evidence, or move the thread to a better surface.
+  add a `status:*` label, request missing evidence, or move the thread to a better channel.
 - Weekly:
   review open `needs-triage`, `needs-practitioner-input`, and `needs-counterexample` threads.
 - Monthly:

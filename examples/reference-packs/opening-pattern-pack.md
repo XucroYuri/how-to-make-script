@@ -1,6 +1,6 @@
 # Opening Pattern Pack
 
-This pack is a teaching surface, not a law.
+This pack is a teaching resource, not a law.
 Use it to compare what an opening is *doing*, not just how flashy it looks.
 
 All fragments below are synthetic and original.
