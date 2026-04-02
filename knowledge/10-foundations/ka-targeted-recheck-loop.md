@@ -36,7 +36,7 @@
 
 复查的目标不是再证明一遍系统很认真，而是最快确认“这次改动是否真的修到了该修的层，而且有没有带来新副作用”。
 
-这要求复查默认是 range-limited 的。你修的是对白声纹，就优先回查 `expression_integrity`，再补一个最容易被牵连的 `contract_fit` 或 `continuity_invariants`；你改的是 branch map 收束逻辑，就回查 `mechanics_pressure` 和 `continuity_invariants`；只有当主 contract 被改了，才升级成 full audit。
+这要求复查默认是 range-limited 的。你修的是对白口吻，就优先回查 `expression_integrity`，再补一个最容易被牵连的 `contract_fit` 或 `continuity_invariants`；你改的是 branch map 收束逻辑，就回查 `mechanics_pressure` 和 `continuity_invariants`；只有当主 contract 被改了，才升级成 full audit。
 
 这样质检层才不会变成另一个拖慢开发的重型流程。
 

@@ -42,7 +42,7 @@
 - 用户明确要 alternatives、counterexample、为什么更好；
 - 草稿已经暴露出路由错配、失败环节或边界混淆；
 - 任务涉及受众适配、委制适配、学习路径、现实约束等现实维度；
-- 任务明确需要风格校准、语域控制、IP 声纹延续或更强的活人感；
+- 任务明确需要风格校准、语域控制、IP 角色声音延续或更强的活人感；
 - 任务明确需要 team mode 选择、handoff 设计或 review gate 设计；
 - 用户明确要求教学、比较或广泛综述。
 - 任务本质上是宽问题的理论支撑，需要一个声明过的 research/background bundle 来防止随手乱扩。
@@ -76,7 +76,7 @@
 - 处理宽理论 / 背景支持问题时，优先从 [`references/background-bundles.json`](../references/background-bundles.json) 选一个背景包，再决定要不要继续扩展到相邻文档。
 - 处理暂停续写、room handoff、长篇连续性保护这类问题时，优先考虑 `story_memory_checkpoint`，而不是直接把同一批材料越拉越宽。
 - 处理受众 / 策略问题时，先加载与现实相关的 lens，再考虑扩展到更广的 craft。
-- 处理角色声纹 / 语言风格问题时，先加载最小的 expression lens，不要直接上大包参考样本。
+- 处理角色声音 / 语言风格问题时，先加载最小的表达校准包，不要直接上大包参考样本。
 - 处理协作机制问题时，先加载最小的 team-mode bundle，不要直接把多智能体框架的对比内容全部塞进来。
 
 ## 回退规则

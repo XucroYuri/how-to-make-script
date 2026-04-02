@@ -21,7 +21,7 @@
 
 当用户只是要下一个创作输出物时，先停在这里。
 
-### Level 2. 适配与校准镜头
+### Level 2. 适配与校准层
 - `audience_fit_note`
 - `development_brief`
 - `learning_path`
@@ -29,7 +29,7 @@
 - `visual_language_pack`
 - `screen_to_video_brief`
 
-只有当下一步决策真的依赖受众、行业、作者成长、角色声纹、多语种视觉沟通、下游视觉衔接约束时，才往上升。
+只有当下一步决策真的依赖受众、行业、作者成长、角色声音、多语种视觉沟通、下游视觉衔接约束时，才往上升。
 
 ### Level 3. 发散与诊断表面
 - `rewrite_report`
