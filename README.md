@@ -118,7 +118,6 @@ Full example chain:
 | People who want one absolute method | The design assumes screenplay work is plural, unstable, and context-bound |
 | People who only want a polished app UI | This is a repo-first knowledge and skill system, not a hosted product |
 
----
 
 ## Quick Start
 
