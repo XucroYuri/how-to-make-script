@@ -1,90 +1,73 @@
 # Adaptive Quality Checking
 
-This repository now treats screenplay self-checking as an adaptive system rather than a single universal checklist.
+Different artifacts fail in different ways. A screenplay's bad scene is not the same kind of problem as a bad voice guide or a bad production brief. This page explains how quality checks adapt to what you are reviewing, instead of running the same checklist for everything.
 
-## Why This Layer Exists
+## The Core Idea
 
-Specialized checker workflows can be extremely strong inside a narrow domain.
-Their most transferable strengths are:
-- layered checking instead of vague “overall feedback”;
-- bounded review perspectives instead of one bloated critic voice;
-- compact handoff metrics instead of full-context chaining;
-- hard gates separated from weighted scoring;
-- explicit recheck logic after revisions.
+A good quality check does not apply a universal checklist. It picks the right critique lenses for the artifact in front of it.
 
-What does not transfer cleanly is a fixed linear stage stack for every artifact.
+Here is the general flow:
 
-This repo covers:
-- narrative artifacts;
-- commercial and branded scripts;
-- interactive structures;
-- voice guides;
-- visual-language packs;
-- screen-to-video briefs;
-- team and subagent governance artifacts;
-- project-surface design.
+```mermaid
+flowchart LR
+    A["Lock the contract<br/>What is this artifact supposed to be?"]
+    B["Find the native rubric<br/>What does 'good' look like for this type?"]
+    C["Select critique lenses<br/>From shared lens library"]
+    D["Run each lens<br/>Separate hard fails from weaknesses"]
+    E["Build correction ladder<br/>What to fix and in what order"]
+    F["Plan recheck<br/>What must be re-audited after changes"]
 
-Those artifacts do not fail in the same way, so they should not be checked through one frozen pipeline.
+    A --> B --> C --> D --> E --> F
+```
 
-## Core Design
+The shared lens library contains reusable critique perspectives. You do not have to use all of them for every review. Pick the ones that match the artifact and the risk profile.
 
-The repo now uses `quality_gate_report` as a generic audit output.
+## The Lens Library
 
-Its logic is:
-1. lock the target contract first;
-2. apply the target artifact's native rubric or closest contract gate;
-3. select a small lens stack from [`references/check-lens-matrix.json`](../references/check-lens-matrix.json);
-4. run each lens with bounded context;
-5. separate hard fails from weighted weaknesses;
-6. synthesize a correction ladder;
-7. define a limited recheck plan when appropriate.
+These seven lenses are the current reusable vocabulary for shaping an audit:
 
-## Lens Set
+| Lens | What it checks |
+|---|---|
+| `contract_fit` | Does the artifact match its stated contract, format, and scope? |
+| `mechanics_pressure` | Does the craft hold up under scene-level execution pressure? |
+| `continuity_invariants` | Are the non-negotiable throughlines intact? |
+| `expression_integrity` | Is the voice, tone, and register consistent? |
+| `operational_feasibility` | Can this be produced, shot, or delivered as described? |
+| `delivery_handoff` | Is this ready to hand off to the next stage (writer, director, production)? |
+| `boundary_risk` | Does the artifact cross any hard boundary (brand, compliance, platform policy)? |
 
-The current reusable lenses are:
-- `contract_fit`
-- `mechanics_pressure`
-- `continuity_invariants`
-- `expression_integrity`
-- `operational_feasibility`
-- `delivery_handoff`
-- `boundary_risk`
+Not every review needs all seven. Choose the minimum set that covers the risk.
 
-These are not mandatory in every case.
-They are a reusable vocabulary for selecting the right audit surface.
+## Scope Modes: How Deep to Go
 
-## Scope Modes
+Four scope levels prevent the review from being heavier than it needs to be:
 
-The repo currently supports four review scopes:
-- `full_audit`
-- `lens_targeted`
-- `range_limited`
-- `recheck`
+- **full_audit** -- every relevant lens, full depth. Use for delivery-grade artifacts.
+- **lens_targeted** -- run specific lenses only. Use when you know the risk area.
+- **range_limited** -- check a bounded portion of the artifact (e.g., first three scenes).
+- **recheck** -- verify that specific issues from a prior review have been resolved.
 
-That prevents the quality layer from becoming unnecessarily heavy.
+## Quality Gate vs. Rewrite Report
 
-## Boundary With Rewrite Report
+These two outputs serve different jobs. Use the right one.
 
-`rewrite_report` still exists and remains useful.
+**Use `rewrite_report` when the job is:**
+- Identify which craft layer is failing (structure, dialogue, pacing, etc.)
+- Prioritize rewrite moves inside story and text development
+- Tell the team what to revise first and why
 
-Use `rewrite_report` when the main job is:
-- identify the failing craft layer;
-- prioritize rewrite moves inside story/text development;
-- tell the team what to rewrite first.
+**Use `quality_gate_report` when the job is:**
+- Run a structured audit before delivery or handoff
+- Preflight non-story artifacts (voice guides, production briefs, team plans, project surfaces)
+- Run a targeted recheck after changes
+- Separate hard gate failures (must-fix) from weighted weaknesses (should-fix)
 
-Use `quality_gate_report` when the main job is:
-- run a structured audit;
-- preflight an artifact before handoff or delivery;
-- inspect non-story artifacts such as voice guides, screen-to-video briefs, team plans, or project surfaces;
-- run targeted recheck after changes;
-- separate hard gate failure from weighted weakness.
+**The intended stack:**
+1. Start with the artifact's native rubric (the one built for that output type).
+2. Supplement with shared lenses from the lens library.
 
-The intended stack is:
-- route-native rubric first;
-- shared lens matrix second.
+## Related Assets
 
-## Linked Assets
-
-- [`wp.quality-gate-report`](../knowledge/20-workflows/wp-quality-gate-report.md)
-- [`rb.quality-gate-report`](../knowledge/60-rubrics/rb-quality-gate-report.md)
-- [`references/check-lens-matrix.json`](../references/check-lens-matrix.json)
+- Workflow: [wp.quality-gate-report](../knowledge/20-workflows/wp-quality-gate-report.md)
+- Rubric: [rb.quality-gate-report](../knowledge/60-rubrics/rb-quality-gate-report.md)
+- Lens definitions: [references/check-lens-matrix.json](../references/check-lens-matrix.json)

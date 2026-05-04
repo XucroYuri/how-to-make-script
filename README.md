@@ -252,7 +252,6 @@ The system is designed so that every step is auditable. You can see which route 
 - Use [`references/router-matrix.json`](./references/router-matrix.json) and [`references/routing-policy.md`](./references/routing-policy.md) to understand route selection and constraint signals.
 - Use `research_background_map` for broad "how to create a screenplay" or theory-support requests.
 - Use `story_memory_checkpoint` when the real need is resumable continuity or handoff-safe state.
-- Use `project_surface_map` when the real need is long-running workflow design or packet/export governance.
 
 ---
 

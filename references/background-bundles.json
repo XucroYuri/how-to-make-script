@@ -16,8 +16,7 @@
       ],
       "docs": [
         "docs/how-to-create-a-screenplay-research.md",
-        "docs/how-to-create-a-screenplay-research-zh.md",
-        "docs/source-map-screenplay-creation-research.md"
+        "docs/how-to-create-a-screenplay-research-zh.md"
       ],
       "linked_atoms": [
         "ka.screenplay-lens-stacking",
@@ -28,8 +27,7 @@
         "ka.archive-literacy"
       ],
       "primary_outputs": [
-        "research_background_map",
-        "context_loading_plan"
+        "research_background_map"
       ],
       "preferred_loading_modes": [
         "survey_pack",

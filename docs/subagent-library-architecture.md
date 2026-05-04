@@ -1,133 +1,99 @@
 # Subagent Library Architecture
 
-This repository now has a dedicated subagent-library layer for screenplay work.
+This repository has a layer of specialist subagents for screenplay work. The goal is not more agents. It is better specialization under bounded loading -- use the right number of specialists, not all of them.
 
-The design goal is not “more agents.” It is better specialization under bounded loading.
+## The Layer Order
 
-## Layer Order
+The four layers must be chosen in order. Each one narrows the next.
 
-The intended order is:
+```mermaid
+flowchart LR
+    R[1. Route<br/>What is the screenplay problem?]
+    T[2. Team Mode<br/>Should this be a team effort?]
+    C[3. Expert Cast<br/>Which specialists are needed?]
+    D[4. Dispatch Topology<br/>How do they run and merge?]
 
-1. `route`
-2. `team mode`
-3. `expert cast`
-4. `dispatch topology`
+    R --> T --> C --> D
+```
 
-That order matters.
+**Why this order matters:**
+- Choosing cast or topology before route means organizing before knowing what the problem is
+- Choosing team mode but not cast means collaborating without knowing who is in the room
+- Choosing cast but not topology means having specialists with no plan for how they work together
 
-If the system chooses cast or topology before route, it will waste effort on organizational overhead.
-If it chooses team mode but never chooses a cast, collaboration stays too abstract.
-If it chooses a cast but never defines dispatch, the system becomes a pile of specialists with no merge discipline.
+## Three Kinds of Subagents
 
-## Three Kinds Of Subagents
+### 1. Functional
 
-### Functional
+These own a screenplay craft problem. They are the subject-matter specialists.
 
-These own a screenplay craft problem.
+Examples: premise pressure, structure and engine, character pressure, scene execution, dialogue and subtext, brand message control, branch/state logic, visual story translation.
 
-Examples:
-- premise pressure
-- structure and engine
-- character pressure
-- scene execution
-- dialogue and subtext
-- brand message control
-- branch/state logic
-- visual story translation
+### 2. Process Node
 
-### Process Node
+These own a workflow position rather than a craft niche. They manage how work moves through the pipeline.
 
-These own a workflow position rather than a craft niche.
+Examples: divergence (explore alternatives), counterexample retention (keep what the primary path rejected), rewrite triage, convergence (synthesize lanes), review, table-read synthesis.
 
-Examples:
-- divergence
-- counterexample retention
-- rewrite triage
-- convergence
-- review
-- table-read synthesis
+### 3. Reference Persona
 
-### Reference Persona
+These are bounded decision lenses inspired by real creators or studios. They add craft pressure from a recognizable school of practice.
 
-These are bounded decision lenses inspired by real creators, studios, or public craft lineages.
+Current personas: prestige moral collision, romantic verbal precision, animation humanist visuality, high-concept clockwork, social satire thriller, luxury restraint brand film, systemic choice design.
 
-They are useful when the work needs extra pressure from a recognizable school of practice:
-- prestige moral collision
-- romantic verbal precision
-- animation humanist visuality
-- high-concept clockwork
-- social satire thriller
-- luxury restraint brand film
-- systemic choice design
+**Important constraint:** Personas are not final authority. They inform decisions; they do not override protocol, rubric, or hard boundaries.
 
-They are not final authority.
+## Persona Governance Levels
 
-## Persona Governance
+| Level | What it means |
+|---|---|
+| `inspired_by` | Borrow workflow shape, craft pressure, or evaluative bias |
+| `calibrated_reference` | Allow tighter pressure on decisions or expression, with explicit loading caps and blocked-use rules |
+| `forbidden_roleplay` | Never dispatch as a live persona. Covers direct impersonation, quote-like continuation, or identity claims the repo should not make |
 
-The repo uses three levels:
+**Governing principle:** Borrow decision style. Do not pretend authorship. Do not let persona override protocol, rubric, or hard boundary.
 
-- `inspired_by`
-  Borrow workflow shape, craft pressure, or evaluative bias.
-- `calibrated_reference`
-  Allow tighter pressure on decisions or expression, but with explicit loading caps and blocked-use rules.
-- `forbidden_roleplay`
-  Never dispatch as a live persona. This covers direct impersonation, quote-like continuation, or identity claims the repo should not make.
+## Dispatch Topologies
 
-The governing principle is:
+These define how specialists work together, share state, and merge their outputs:
 
-- borrow decision style;
-- do not pretend authorship;
-- do not let persona override protocol, rubric, or hard boundary.
+| Topology | Best for |
+|---|---|
+| `orchestrator_specialist_ring` | One central agent delegates to specialists, collects results, synthesizes |
+| `writers_room_tree` | A showrunner delegates to lane leads, who delegate further, with upward synthesis |
+| `debate_then_merge_board` | Multiple agents argue positions, then a merge agent synthesizes |
+| `dual_track_story_visual` | Story and visual tracks run in parallel with periodic cross-sync |
+| `variant_strike_grid` | Many variants are generated in parallel, then filtered and merged |
+| `branch_state_triangle` | Narrative, state logic, and QA run as three distinct lanes under a narrative director |
+| `fresh_task_review_loop` | One implementer, one spec reviewer, one quality reviewer, one convergence owner |
 
-## Dispatch Topology Layer
+`fresh_task_review_loop` is the direct integration point with subagent-driven development. Use it when "solving the wrong problem beautifully" is a real risk.
 
-The repo now treats topology as its own machine-readable layer.
+## What a Good Run Looks Like
 
-Typical topologies:
-- `orchestrator_specialist_ring`
-- `writers_room_tree`
-- `debate_then_merge_board`
-- `dual_track_story_visual`
-- `variant_strike_grid`
-- `branch_state_triangle`
-- `fresh_task_review_loop`
-
-`fresh_task_review_loop` is the direct integration point with the subagent-driven-development idea:
-- one implementer or lane owner;
-- one spec reviewer;
-- one quality reviewer;
-- one convergence owner or final reviewer.
-
-This is useful for repo asset development and for screenplay tasks where “solve the wrong problem beautifully” is a real risk.
+For a hard screenplay task, you should be able to answer:
+- Which mode this resembles
+- Which cast is minimally necessary
+- Which persona lenses are worth loading
+- Which topology should run
+- Who merges the outputs
+- What packet flows between lanes
+- Where a human should intervene
+- How the system shrinks again when complexity stops paying off
 
 ## Scaling Rule
 
-The library should grow by composition, not by one-off special snowflakes.
-
-That means:
-- keep the top-level router stable;
-- attach new archetypes under the cast layer;
-- attach new scheduling shapes under the topology layer;
-- reserve new outputs for genuinely new contracts, not new vibes.
-
-## What A Good Run Looks Like
-
-For a hard screenplay task, the repo should be able to answer:
-
-- which mode this resembles;
-- which cast is minimally necessary;
-- which persona lenses are worth loading;
-- which topology should run;
-- who merges;
-- what packet flows between lanes;
-- where a human should intervene;
-- how the system shrinks again when complexity stops paying off.
+The library grows by composition, not by one-off additions:
+- Keep the top-level router stable
+- Attach new archetypes under the cast layer
+- Attach new scheduling shapes under the topology layer
+- Reserve new outputs for genuinely new contracts, not new vibes
 
 ## Key Files
 
-- [`references/expert-subagent-library.json`](../references/expert-subagent-library.json)
-- [`references/subagent-topology-matrix.json`](../references/subagent-topology-matrix.json)
-- [`references/team-mode-matrix.json`](../references/team-mode-matrix.json)
-- [`references/agent-team-roles.json`](../references/agent-team-roles.json)
-- [`knowledge/20-workflows/wp-expert-subagent-cast.md`](../knowledge/20-workflows/wp-expert-subagent-cast.md)
-- [`knowledge/20-workflows/wp-subagent-dispatch-plan.md`](../knowledge/20-workflows/wp-subagent-dispatch-plan.md)
+- Cast definitions: [references/expert-subagent-library.json](../references/expert-subagent-library.json)
+- Topology matrix: [references/subagent-topology-matrix.json](../references/subagent-topology-matrix.json)
+- Team modes: [references/team-mode-matrix.json](../references/team-mode-matrix.json)
+- Agent roles: [references/agent-team-roles.json](../references/agent-team-roles.json)
+- Workflow: [wp.expert-subagent-cast](../knowledge/20-workflows/wp-expert-subagent-cast.md)
+- Workflow: [wp.subagent-dispatch-plan](../knowledge/20-workflows/wp-subagent-dispatch-plan.md)

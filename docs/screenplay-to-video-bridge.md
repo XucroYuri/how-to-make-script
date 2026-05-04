@@ -1,57 +1,76 @@
-# Screenplay To Video Bridge
+# Screenplay to Video Bridge
 
-This repository is still screenplay-first. It is not turning into a general video-generation toolbox.
+This repository is still screenplay-first. It is not becoming a general video-generation toolbox. But screenplay work increasingly travels downstream into previz, text-to-video generation, concept clips, ad prototypes, and visual proof-of-concept material. That creates a real translation problem.
 
-But screenplay work increasingly has to travel downstream into:
-- previz;
-- text-to-video generation;
-- concept clips;
-- ad prototypes;
-- visual proof-of-concept material.
+## The Problem in One Sentence
 
-That creates a real translation problem.
+A screenplay scene and a video-generation brief are not the same container. If you ignore this distinction, you either produce unusable visual briefs (too much dramatic context, not enough shot logic) or destroy the dramatic purpose of the scene (treating it like a generic prompt).
 
-## The Problem
+## What Each Side Carries
 
-A screenplay scene and a video-generation brief are not the same container.
+```mermaid
+flowchart LR
+    subgraph Screenplay["Screenplay Layer"]
+        SP1["Dramatic purpose"]
+        SP2["Character pressure"]
+        SP3["Narrative context"]
+        SP4["Scene function"]
+    end
 
-The screenplay carries:
-- dramatic purpose;
-- character pressure;
-- narrative context;
-- scene function.
+    subgraph Bridge["What the Bridge Preserves"]
+        B1["Dramatic function of source scene"]
+        B2["Minimum non-negotiable beats"]
+        B3["Bounded control level"]
+        B4["Explicit invariants & avoid rules"]
+        B5["Clear ownership boundary<br/>(screenplay vs visual container)"]
+    end
 
-The video-generation brief carries:
-- clip-scale action;
-- shot logic;
-- timing;
-- invariants;
-- avoid rules;
-- runtime-facing execution constraints.
+    subgraph VideoBrief["Video Brief Layer"]
+        VB1["Clip-scale action"]
+        VB2["Shot logic & timing"]
+        VB3["Invariants to preserve"]
+        VB4["Rules for what to avoid"]
+        VB5["Runtime execution constraints"]
+    end
 
-If the repo ignores this distinction, agents either overfit to screenplay logic and produce unusable visual briefs, or overfit to prompt-writing habits and destroy the dramatic purpose of the scene.
+    Screenplay --> Bridge
+    Bridge --> VideoBrief
+```
 
-## What The Bridge Must Preserve
+The bridge does not convert. It translates. It strips dramatic context down to actionable visual intent, then adds the structural containers that a video-generation system needs (timing, shot sequence, invariants).
 
-- the dramatic function of the source scene;
-- the minimum non-negotiable beat or action proof;
-- a bounded control level;
-- explicit invariants and avoid rules;
-- honesty about what belongs to the screenplay and what belongs to the downstream visual container.
+## What the Bridge Must Preserve
 
-## What The Bridge Must Avoid
+- The dramatic function of the source scene (what does this scene do for the story?)
+- The minimum non-negotiable beat or action proof (what must happen on screen?)
+- A bounded control level (how much detail is enough?)
+- Explicit invariants and avoid rules (what must stay, what must never happen?)
+- Honesty about what belongs to the screenplay and what belongs to the downstream visual container
 
-- copying whole scene text into a prompt-shaped blob;
-- treating a short clip like a whole dramatic scene;
-- adding every camera, sound, and aesthetic idea at once;
-- turning model CLI details into the main artifact.
+## What the Bridge Must Avoid
+
+- Copying whole scene text into a prompt-shaped blob
+- Treating a short clip like a whole dramatic scene
+- Adding every camera move, sound design, and aesthetic idea at once
+- Turning model CLI details into the main artifact (keep it vendor-neutral)
+
+## When to Use This Bridge
+
+Use `screen_to_video_brief` when you need to hand a screenplay scene to:
+- A text-to-video generation tool
+- A previz or storyboard artist
+- A concept clip production pipeline
+
+Do not use this bridge for:
+- Normal screenplay writing or revision
+- Purely textual story development
+- Any workflow that stays inside the script container
 
 ## Related Assets
 
-- `screen_to_video_brief`
-- `ka.screenplay-to-video-boundary`
-- `ka.video-generation-shot-economy`
-- `ka.prompt-delegation-levels`
-- `wp.screen-to-video-brief`
-- `rb.screen-to-video-brief`
-
+- Contract: `screen_to_video_brief`
+- Knowledge atom: `ka.screenplay-to-video-boundary`
+- Knowledge atom: `ka.video-generation-shot-economy`
+- Knowledge atom: `ka.prompt-delegation-levels`
+- Workflow: `wp.screen-to-video-brief`
+- Rubric: `rb.screen-to-video-brief`

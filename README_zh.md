@@ -272,7 +272,6 @@ flowchart LR
 - 用 [`references/router-matrix.json`](./references/router-matrix.json) 和 [`references/routing-policy.md`](./references/routing-policy.md) 查看 route 和 constraint 信号
 - 用户问「如何创作剧本」等宽泛问题时，使用 `research_background_map`，不要硬塞成某个具体写作产物
 - 实际需求是「下次还能安全续写」或「要交接当前状态」时，优先使用 `story_memory_checkpoint`，不要扩大上下文包
-- 实际需求是长期项目如何划分来源、运行状态、数据包时，优先使用 `project_surface_map`
 
 ---
 

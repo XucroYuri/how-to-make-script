@@ -54,9 +54,8 @@ It root SKILL.md loads this at runtime only when needed, not at entry.
 
 ### Loading And Comparison Controls
 - [`references/scenario-taxonomy.json`](scenario-taxonomy.json)
-- [`references/context-loading-modes.md`](context-loading-modes.md)
-- [`references/expression-lens-triggers.md`](expression-lens-triggers.md)
 - [`docs/context-loading-policy.md`](../docs/context-loading-policy.md)
+- [`references/expression-lens-triggers.md`](expression-lens-triggers.md)
 - [`docs/expression-lens-policy.md`](../docs/expression-lens-policy.md)
 - [`docs/adaptive-quality-checking.md`](../docs/adaptive-quality-checking.md)
 - [`docs/scenario-atlas.md`](../docs/scenario-atlas.md)

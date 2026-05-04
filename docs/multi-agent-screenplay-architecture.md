@@ -1,126 +1,85 @@
 # Multi-Agent Screenplay Architecture
 
-This repository now treats screenplay creation as a possible **team problem**, not only a routing problem.
-
-That does not mean every request should become a multi-agent run. It means the repo now has a designated place to describe when screenplay work should be handled by:
-- one orchestrator plus specialists;
-- parallel exploration lanes;
-- bounded handoffs;
-- explicit review boards;
-- human approval gates.
+Not every screenplay request needs multiple agents. But when it does, this repository has a structured way to decide how they collaborate -- instead of making it up on the fly.
 
 ## Design Position
 
-The repository does **not** adopt one universal “writer super-agent” model.
-Public multi-agent systems and real-world screenplay teams both point the other way:
-- use a central orchestrator when ownership and synthesis matter;
-- use specialists when different decisions need different bundles;
-- use handoffs instead of full-context sharing;
-- use human intervention at the costly or ambiguous gates.
+This repo does not use one universal "writer super-agent" model. Public multi-agent systems and real-world screenplay teams both point the same way:
+- Use a central orchestrator when ownership and synthesis matter
+- Use specialists when different decisions need different skill bundles
+- Use handoffs instead of full-context sharing
+- Use human intervention at the costly or ambiguous gates
 
-## New Layer
+## The Layer Stack
 
-The new layer sits above ordinary route selection:
+```mermaid
+flowchart TD
+    R[1. Route Selection<br/>What is the screenplay problem?]
+    T[2. Team Mode<br/>How should the team work?]
+    C[3. Expert Cast<br/>Which specialists enter?]
+    D[4. Dispatch Topology<br/>How do they run and merge?]
+    L["5. Specialist Lanes<br/>Each gets only their minimum bundle"]
+    H["6. Handoff Packets<br/>State flows between lanes"]
+    V["7. Review Boards & Humans<br/>High-risk decisions get human eyes"]
 
-1. Root route selection still decides the primary screenplay problem.
-2. Team-mode selection decides whether the work should run as a pod, room, trust loop, studio workflow, or branch lab.
-3. Expert-cast selection decides which functional specialists, process nodes, and persona lenses should actually enter.
-4. Dispatch-topology selection decides how those specialists run, merge, review, and shrink again.
-5. Specialist lanes get only the minimum bundle relevant to their job.
-6. Handoff packets carry state between lanes.
-7. Review boards and humans absorb the high-risk decisions.
+    R --> T --> C --> D --> L --> H --> V
+```
 
-## Default Team Modes
+## Team Modes
 
-### `feature_dev_pod`
-- Best for: feature development, adaptation-heavy rewrite, pitch-to-outline planning.
-- Shape: hybrid room.
-- Why: feature work needs strong synthesis, rewrite mandates, and producer/director alignment.
-
-### `showrunner_room`
-- Best for: season-engine work, episode breaking, room-based television development.
-- Shape: supervisor tree.
-- Why: the room can parallelize, but showrunner synthesis must remain central.
-
-### `animation_story_trust`
-- Best for: animation development where story and visual iteration must co-evolve.
-- Shape: hybrid room.
-- Why: story logic, visual storytelling, and production feasibility all need explicit loops.
-
-### `brand_content_studio`
-- Best for: commercial, branded film, and shortform campaign work.
-- Shape: hybrid room.
-- Why: creative, brand, and distribution concerns must run in parallel without collapsing into hard-sell copy.
-
-### `interactive_branch_lab`
-- Best for: game narrative and branching interactive design.
-- Shape: supervisor tree.
-- Why: narrative, state, and QA loops must stay distinct while a narrative director controls scope.
-
-### `franchise_continuity_board`
-- Best for: existing IP, canon-sensitive adaptation, persona continuity risk.
-- Shape: review board.
-- Why: canon anchors and identity risks need explicit guardianship before innovation expands.
+| Mode | Best for | Shape | Why |
+|---|---|---|---|
+| `feature_dev_pod` | Feature development, adaptation-heavy rewrite, pitch-to-outline planning | Hybrid room | Needs strong synthesis, rewrite mandates, producer/director alignment |
+| `showrunner_room` | Season-engine work, episode breaking, television development | Supervisor tree | Room can parallelize, but showrunner synthesis must remain central |
+| `animation_story_trust` | Animation where story and visual iteration co-evolve | Hybrid room | Story logic, visual storytelling, and production feasibility need explicit loops |
+| `brand_content_studio` | Commercial, branded film, shortform campaign work | Hybrid room | Creative, brand, and distribution concerns run in parallel without collapsing into hard sell |
+| `interactive_branch_lab` | Game narrative and branching interactive design | Supervisor tree | Narrative, state, and QA loops stay distinct while a narrative director controls scope |
+| `franchise_continuity_board` | Existing IP, canon-sensitive adaptation, persona continuity risk | Review board | Canon anchors and identity risks need explicit guardianship before innovation expands |
 
 ## Handoff Rule
 
-Every specialist should return a bounded handoff packet, not an essay dump.
+Every specialist returns a bounded handoff packet, not an essay dump. Minimum fields:
 
-Minimum fields:
-- `working_hypothesis`
-- `loaded_bundle_ids`
-- `open_questions`
-- `confidence`
-- `recommended_next_agent`
-- `needs_human_review`
-
-This is the team-level extension of bounded loading.
+- `working_hypothesis` -- what this lane concluded
+- `loaded_bundle_ids` -- what context was loaded to reach that conclusion
+- `open_questions` -- what remains unresolved
+- `confidence` -- how sure is this specialist?
+- `recommended_next_agent` -- who should receive this packet?
+- `needs_human_review` -- flag for human attention
 
 ## Subagent Rule
 
-Not every team-mode question needs a concrete subagent deployment.
+Not every team-mode question needs a concrete subagent deployment. Use these three outputs to choose the right level of detail:
 
-Use:
-- `team_workflow_blueprint` when the repo should choose the collaboration family;
-- `expert_subagent_cast` when the repo should choose the participating specialists;
-- `subagent_dispatch_plan` when the repo should specify live scheduling, review order, and merge logic.
+| Output | When to use |
+|---|---|
+| `team_workflow_blueprint` | Choose the collaboration family (the "who" and "how") |
+| `expert_subagent_cast` | Choose the participating specialists (the "who exactly") |
+| `subagent_dispatch_plan` | Specify live scheduling, review order, and merge logic (the "when exactly") |
 
 This keeps mode, cast, and topology from collapsing into one overstuffed answer.
 
-## Human-In-The-Loop Rule
+## Human-in-the-Loop Rule
 
-Human review should not be everywhere.
-It should appear at the points where the cost of silent drift is high:
-- IP continuity and franchise identity;
-- audience-fit disputes;
-- commissioning or brand-boundary conflict;
-- scope correction at major strategic claims;
-- final delivery approval.
+Human review should not be everywhere. It appears where silent drift is expensive:
+- IP continuity and franchise identity
+- Audience-fit disputes
+- Commissioning or brand-boundary conflicts
+- Scope correction at major strategic claims
+- Final delivery approval
 
-## Why This Fits The Repo
+## Why This Fits the Repo
 
 This design extends what already exists:
-- route-first orchestration remains intact;
-- bounded loading remains per role and per step;
-- anti-dogma outputs remain important because not all team modes converge the same way;
-- team mode becomes another explicit layer instead of an invisible assumption.
+- Route-first orchestration stays intact
+- Bounded loading remains per role and per step
+- Anti-dogma outputs remain important (not all team modes converge the same way)
+- Team mode becomes another explicit layer instead of an invisible assumption
 
 ## Public Sources Behind This Layer
 
-- WGA room and feature-development guidance:
-  [Showrunners’ Guide to 2023 MBA Writers’ Room Provisions](https://www.wga.org/contracts/contracts/mba/showrunners-guide-to-2023-mba-writers-room-provisions)
-  [Screenwriters Handbook](https://www.wga.org/members/employment-resources/screenwriters-handbook)
-- Animation workflow references:
-  [Disney Animation Story Artist](https://www.disneyanimation.com/team/story-artist/)
-  [Pixar - Pete Docter](https://www.pixar.com/docter)
-- Branded-content workflow references:
-  [Digitas branded content arm](https://www.digitas.com/en-us/pressroom/newfront-founder-digitas-unveils-branded-content-arm)
-- Interactive narrative workflow references:
-  [inklewriter](https://www.inklestudios.com/inklewriter/)
-  [ChoiceScript automated testing](https://www.choiceofgames.com/make-your-own-games/testing-choicescript-games-automatically/)
-- Multi-agent orchestration references:
-  [OpenAI Practical Guide to Building Agents](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf)
-  [LangGraph Supervisor](https://langchain-ai.github.io/langgraphjs/reference/modules/langgraph-supervisor.html)
-  [OpenAI Swarm](https://github.com/openai/swarm)
-  [CrewAI human-in-the-loop](https://docs.crewai.com/en/learn/human-in-the-loop)
-  [oh-my-openagent](https://github.com/code-yeongyu/oh-my-opencode)
+- WGA room guidance: [Showrunners' Guide to 2023 MBA Writers' Room Provisions](https://www.wga.org/contracts/contracts/mba/showrunners-guide-to-2023-mba-writers-room-provisions) and [Screenwriters Handbook](https://www.wga.org/members/employment-resources/screenwriters-handbook)
+- Animation workflows: [Disney Animation Story Artist](https://www.disneyanimation.com/team/story-artist/), [Pixar - Pete Docter](https://www.pixar.com/docter)
+- Branded content: [Digitas branded content arm](https://www.digitas.com/en-us/pressroom/newfront-founder-digitas-unveils-branded-content-arm)
+- Interactive narrative: [inklewriter](https://www.inklestudios.com/inklewriter/), [ChoiceScript testing](https://www.choiceofgames.com/make-your-own-games/testing-choicescript-games-automatically/)
+- Multi-agent orchestration: [OpenAI Practical Guide](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf), [LangGraph Supervisor](https://langchain-ai.github.io/langgraphjs/reference/modules/langgraph-supervisor.html), [OpenAI Swarm](https://github.com/openai/swarm), [CrewAI human-in-the-loop](https://docs.crewai.com/en/learn/human-in-the-loop), [oh-my-openagent](https://github.com/code-yeongyu/oh-my-opencode)

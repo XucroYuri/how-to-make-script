@@ -26,7 +26,7 @@
 
 ## 加载模式
 
-具体模式放在 [`references/context-loading-modes.md`](../references/context-loading-modes.md)。
+具体模式放在 [`docs/context-loading-policy.md`](./context-loading-policy.md)。
 
 简化来说：
 - `route_kernel` 是最小可路由包；

@@ -25,7 +25,6 @@ The route key is operationally anchored by `intent x medium x stage x output`.
 - When multiple routes are plausible, prefer the narrower route over the generic route.
 - Keep route claims honest: if constraints are only affecting loading, do not describe them as if they fully determined the route.
 - After route selection, choose a bounded loading mode before expanding into adjacent references.
-- Prefer `context_loading_plan` only for explicit loading-strategy, skill-design, or context-balance requests; do not use it as a generic detour before every answer.
 - Prefer `pattern_reference_pack` for teaching/comparison and not as the default drafting route.
 - Prefer `boundary_map` or `scope_correction` over broad craft expansion when the real question is constraint logic or claim narrowing.
 - Prefer `quality_gate_report` for explicit self-check, structured audit, preflight, acceptance review, stage-specific checking, targeted recheck, or non-story artifact review instead of stretching `rewrite_report` to cover every quality problem.
@@ -38,17 +37,14 @@ The route key is operationally anchored by `intent x medium x stage x output`.
 - For normal screenplay outputs, load multilingual visual-language assets only when downstream visual communication or cross-language execution would materially change the next decision.
 - Prefer `team_workflow_blueprint` for explicit multi-agent, writers' room, or collaboration-design requests instead of burying team logic inside a normal draft answer.
 - Prefer `expert_subagent_cast` for explicit “which experts / subagents / persona lenses should participate” requests instead of overloading team-workflow answers with giant role lists.
-- Prefer `subagent_dispatch_plan` for explicit “how should these subagents be staged, reviewed, merged, and human-gated” requests instead of burying dispatch design inside a team mode answer.
-- Prefer `project_surface_map` for explicit “what is editable truth, what is runtime state, where do packets come from, and where do review/export surfaces live” requests instead of overloading team or dispatch answers with storage architecture.
 - For normal screenplay outputs, load team assets only when collaboration structure changes the next decision materially.
-- For normal screenplay outputs, load expert-subagent and topology assets only when concrete cast selection or dispatch design changes the next decision materially.
-- For normal screenplay outputs, load project-surface assets only when surface design changes the next decision materially by reducing wrong-edit risk, runtime drift, or handoff ambiguity.
+- For normal screenplay outputs, load expert-subagent assets only when concrete cast selection or dispatch design changes the next decision materially.
 - For normal screenplay outputs, prefer a bounded `story_memory_checkpoint` over broad context expansion when the real problem is resumable continuity rather than missing theory.
 - For normal screenplay outputs, load quality-gating assets only when a preflight or targeted audit would materially change the next decision.
 
 ## Loading Policy
 
-Once a route is selected, use [`references/context-loading-modes.md`](./context-loading-modes.md) to decide how much additional context is justified.
+Once a route is selected, use [`docs/context-loading-policy.md`](../docs/context-loading-policy.md) to decide how much additional context is justified.
 
 Default rule:
 - start at `route_kernel`;
