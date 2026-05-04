@@ -23,11 +23,14 @@
     "stages": [
       "premise",
       "structure",
+      "scene",
+      "outline",
       "rewrite",
       "adaptation"
     ],
     "outputs": [
-      "audience_fit_note"
+      "audience_fit_note",
+      "audience_proxy_report"
     ]
   },
   "protocol_id": "wp.audience-fit-note",
@@ -38,7 +41,8 @@
     "ka.audience-need-state",
     "ka.platform-attention-economy",
     "ka.commissioning-fit",
-    "ka.pacing-rhythm"
+    "ka.pacing-rhythm",
+    "ka.audience-proxy-personas"
   ],
   "fallback_behavior": "If the audience is underspecified, infer one primary segment and one adjacent segment, then report confidence and risk.",
   "default_loading_mode": "focus_pack",

@@ -62,6 +62,7 @@
 - `expert_subagent_cast`
 - `subagent_dispatch_plan`
 - `project_surface_map`
+- `audience_proxy_report`
 
 ## Constraint Families
 - `audience_segment`
@@ -130,6 +131,9 @@
 - `recheck_mode`
 - `acceptance_bar`
 - `posture_mode`
+- `audience_proxy_mode`
+- `proxy_persona_set`
+- `anti_sycophancy_guard`
 - `rating`
 - `franchise_ip_limits`
 - `retention_window`

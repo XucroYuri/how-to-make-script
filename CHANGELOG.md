@@ -21,6 +21,14 @@
 - Added `## Posture-Adaptive Guidance` section to all 29 sub-skill `SKILL.md` files.
 - Each section provides tailored guidance for `lost` / `exploring` / `certain` certainty states, `discover` / `construct` / `generate` source modes, and relevant attention focus layers.
 
+**B1 — Audience Proxy Protocol (2026-05-05)**
+- Added workflow protocol `wp.audience-proxy-review`: multi-persona progressive scene reading with four default proxy personas (Core Viewer, Casual Viewer, Story Editor, Genre Veteran), per-agent viewer state model (patience, trust, hooked, open_questions, predictions, concerns), and Anti-Sycophancy Guard with forbidden diplomatic phrase list and mandatory honesty self-check.
+- Added evaluation rubric `rb.audience-experience`: five experience-layer dimensions (entry_pull, patience_curve, stakes_felt, promise_honesty, concern_resolution), hard-fail rules including Anti-Sycophancy Guard breach detection, and experience-grounded rewrite actions.
+- Added knowledge atom `ka.audience-proxy-personas`: framework atom encoding the four proxy personas, viewer state model, anti-sycophancy guard mechanism, and decision rules for persona selection and report honesty.
+- Registered new output contract `audience_proxy_report` in `references/supported-outputs.md`.
+- Added `Audience-Proxy Loading Rule` and `audience_proxy_report` route heuristic to root `SKILL.md`.
+- Added `audience_proxy_report` output pattern to root `SKILL.md` Output Pattern section.
+
 ## 0.1.0 - 2026-04-02
 - First public initialization release of the research-first screenplay agent skill monorepo.
 - Added the root orchestration skill, thin public sub-skills, runtime-oriented manifests, and routeable output contracts.

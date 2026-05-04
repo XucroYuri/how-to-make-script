@@ -33,3 +33,4 @@ Use [`references/output-format-contracts.md`](./output-format-contracts.md) for 
 - `expert_subagent_cast`: bounded subagent roster with functional roles, process nodes, governed persona lenses, authority map, and trim order.
 - `subagent_dispatch_plan`: multi-level dispatch plan with topology, phase ladder, packet rules, context budgets, review loops, and collapse triggers.
 - `project_surface_map`: long-running project surface design showing canonical source, runtime state, packet assembly, phase entrypoints, review surfaces, export surfaces, and edit/sync rules.
+- `audience_proxy_report`: multi-persona progressive viewing simulation report with per-agent state snapshots, consensus concerns, flow-risk points, and mapped rewrite priorities.

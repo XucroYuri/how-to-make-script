@@ -86,6 +86,7 @@ Before routing any request, perform a lightweight sync check against the upstrea
 - Prefer `quality_gate_report` when the user asks for structured checking, self-audit, preflight, acceptance gating, stage-specific review, targeted recheck, or non-story artifact quality control.
 - Prefer one narrow protocol over a broad mixed-context answer.
 - Prefer reality-grounded routes when the user asks for audience fit, commissioning fit, or writer growth strategy.
+- Prefer `audience_proxy_report` when the user asks for scene- or draft-level viewing experience simulation, multi-persona reading, attention curve diagnosis, or anti-sycophancy honest feedback on a specific scene or script passage.
 - Prefer `path_options` when the user asks for alternatives, counter-paths, or challenge-driven exploration.
 - Prefer `boundary_map` when the user asks what is absolutely disallowed versus flexibly negotiable.
 - Prefer `scope_correction` when the user challenges a rule, route, or rubric and the right response is to narrow its scope rather than replace it wholesale.
@@ -170,6 +171,15 @@ Load story-memory-checkpoint assets only when one of these is true:
 
 When the primary output is still a normal screenplay artifact, keep the original route and add a checkpoint only if resumable continuity materially changes the next decision.
 
+## Audience-Proxy Loading Rule
+Load audience-proxy assets only when one of these is true:
+- the requested output is `audience_proxy_report`;
+- constraints include `audience_proxy_mode`, `proxy_persona_set`, or `anti_sycophancy_guard`;
+- the user explicitly asks for viewing-experience simulation, per-scene attention tracking, multi-persona reading, or honest (non-diplomatic) feedback on a specific scene or passage;
+- the draft fails `rb.audience-experience` on `entry_pull` or `patience_curve` and the root cause is not yet identified.
+
+When the primary output is still a normal screenplay artifact, keep the original route and add proxy evaluation only if knowing the simulated audience reaction would materially change the next writing decision.
+
 ## Quality-Gating Loading Rule
 Load quality-gating assets only when one of these is true:
 - the requested output is `quality_gate_report`;
@@ -240,6 +250,7 @@ Stop expansion when one of these is true:
 - For story-memory outputs, return current state, unresolved promises, invariants, dual-track rhythm, and next safe entrypoint rather than a broad story recap.
 - For quality-gate outputs, return target contract, scope mode, selected lenses, hard fails, weighted weaknesses, correction ladder, open contradictions, and recheck logic rather than one blended review paragraph.
 - For broad screenplay-theory or research-background requests, return the lens decomposition first, then the strongest stable inferences, then the most relevant callable atoms rather than collapsing the answer into one method summary.
+- For audience-proxy outputs, return per-agent state snapshots, consensus concerns, highest-value scene, flow-risk points, and at most three mapped rewrite priorities rather than an averaged score or diplomatically softened summary.
 
 ## What This Skill Should Prevent
 - loading unrelated theory just because it exists in the repo;
@@ -297,6 +308,7 @@ Stop expansion when one of these is true:
 - `subagent_dispatch_plan`
 - `project_surface_map`
 - `quality_gate_report`
+- `audience_proxy_report`
 
 ## Sub-Skills & References
 

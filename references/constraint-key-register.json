@@ -80,6 +80,18 @@
     "attention_focus": {
       "canonical": "posture_mode",
       "note": "Creative attention axis detail; resolves under the posture_mode family."
+    },
+    "audience_proxy_mode": {
+      "canonical": "audience_proxy_mode",
+      "note": "Proxy evaluation mode; activates audience-proxy-review protocol."
+    },
+    "proxy_persona_set": {
+      "canonical": "proxy_persona_set",
+      "note": "Which proxy personas to activate (core_viewer, casual_viewer, story_editor, genre_veteran or custom)."
+    },
+    "anti_sycophancy_guard": {
+      "canonical": "anti_sycophancy_guard",
+      "note": "Enforces Anti-Sycophancy Guard in proxy evaluation; blocks diplomatic softening."
     }
   },
   "detail_keys": {

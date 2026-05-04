@@ -84,7 +84,7 @@ class LoadingBudgetPhaseTest(unittest.TestCase):
     def test_loading_budgets_declared(self):
         report = check_loading_budget(self.root)
         self.assertEqual(report["errors"], [])
-        self.assertEqual(report["protocol_count"], 28)
+        self.assertEqual(report["protocol_count"], 29)
 
 
 if __name__ == "__main__":
