@@ -37,7 +37,7 @@
 
 当一个请求横跨多个阶段时，最常见的失败模式不是方向错误，而是 Agent 试图在同一段上下文里完成所有工作，导致后段的产出被前段的噪声污染。这个协议的核心机制是段落间的交接合同：它强制 Agent 明确说清楚哪些内容必须带入下一段、哪些内容必须被搁置，而不是默认把整个上下文一起传递下去。
 
-计划一旦超过5段，它就不再是会话计划，而是项目计划。项目计划属于 `wp.project-surface-map` 的职责范围，不应在这里生成。跨越 `structure→scene` 或 `scene→rewrite` 边界时，必须在两段之间显式插入一次 `wp.story-memory-checkpoint`，以防故事状态在边界处静默漂移。
+计划一旦超过 5 段，它就不再是会话计划，而是项目计划。项目计划属于 `wp.project-surface-map` 的职责范围，不应在这里生成。跨越 `structure→scene` 或 `scene→rewrite` 边界时，必须在两段之间显式插入一次 `wp.story-memory-checkpoint`，以防故事状态在边界处静默漂移。
 
 ## TODOs：待回答问题
 

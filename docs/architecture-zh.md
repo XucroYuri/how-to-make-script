@@ -4,24 +4,24 @@
 
 这个仓库把可复用的剧本方法论拆成四层：
 
-1. `knowledge/` 用来存放可长期积累的理论与 craft 片段。
+1. `knowledge/` 存放可长期积累的理论与 craft 片段。
 2. `schemas/` 定义结构化内容的机器校验契约。
 3. `skills/` 为 agent 提供轻量编排入口。
 4. `scripts/` 和 `tests/` 保证仓库可以持续验证。
 
 这个仓库有明确立场：
 
-- 知识层才是 source of truth；
-- skill 负责路由与组合，不负责重写理论；
-- fixture 和测试用来约束路由稳定性；
+- 知识层才是 source of truth。
+- skill 负责路由与组合，不负责重写理论。
+- fixture 和测试用来约束路由稳定性。
 - 优先做增量扩展，而不是频繁重组已发布的 ID。
 
-编排层现在还带有一套有边界的现实锚定规则：
+编排层还带有一套有边界的现实锚定规则：
 
-- 受众视角；
-- 行业与委托视角；
-- 平台与发行视角；
-- 作者成长视角；
+- 受众视角。
+- 行业与委托视角。
+- 平台与发行视角。
+- 作者成长视角。
 - 历史演化视角。
 
 这些 lens 只在它们会改变路由选择或输出质量时才加载。
@@ -36,15 +36,15 @@
 
 **Quality gating。** `quality_gate_report` 选择的是一组 lens stack，而不是一份通用检查清单；hard gate 要和加权弱点拆开；优先做 targeted recheck，而不是自动全量重审；专用 checker 逻辑可以启发设计，但不应直接变成整个仓库的通用规则。
 
-**视觉转译。** multilingual visual-language 资产只应在跨语言镜头/调度沟通确实影响答案质量时加载；screenplay-to-video 转译层资产要保持 vendor-neutral，并且以 clip 为边界；下游模型或工具选择应发生在转译层构建之后，而不是混进 screenplay routing。
+**视觉转译。** multilingual visual-language 资产只应在跨语言镜头/调度沟通确实影响答案质量时加载；screenplay-to-video 转译层资产要保持 vendor-neutral，且以 clip 为边界；下游模型或工具选择应发生在转译层构建之后，而不是混进 screenplay routing。
 
 仓库还带有明确的 anti-dogma 立场：
 
-- 剧本指导是启发式的，不是绝对法则；
-- 在收敛前，可以并存多条有效路径；
-- hard boundary 和 soft constraint 不能混为一谈；
-- exploration 和 review 是两个阶段，不是一次混合动作；
-- 被挑战的 claim 应通过 scope correction 收窄，而不是在两个绝对口号之间摇摆；
+- 剧本指导是启发式的，不是绝对法则。
+- 在收敛前，可以并存多条有效路径。
+- hard boundary 和 soft constraint 不能混为一谈。
+- exploration 和 review 是两个阶段，不是一次混合动作。
+- 被挑战的 claim 应通过 scope correction 收窄，而不是在两个绝对口号之间摇摆。
 - reference pattern 应教会人对照式的成败逻辑，而不是偷偷变成新的 canon。
 
 这意味着 agent 默认不该读取整个仓库。它们应先进入一个 route，再加载一个 protocol、它链接的 atom，以及一个 rubric。
@@ -63,11 +63,11 @@
 
 单仓库可以让以下内容同步演进，避免不同仓库之间的版本漂移：
 
-- 共享 taxonomy；
-- routing 规则；
-- 相互链接的 knowledge atom；
-- 跨 skill fixture；
-- 验证工具；
+- 共享 taxonomy。
+- routing 规则。
+- 相互链接的 knowledge atom。
+- 跨 skill fixture。
+- 验证工具。
 - 开源文档。
 
 这也能避免 narrative、commercial 和 interactive 逻辑逐渐分裂成彼此隔离的 prompt silo。
@@ -95,11 +95,11 @@
 
 这个仓库应能通过不断追加以下内容而无限扩展：
 
-- 新 atom；
-- 新 protocol；
-- 新 rubric；
-- 新 fixture；
-- 新 skill；
+- 新 atom。
+- 新 protocol。
+- 新 rubric。
+- 新 fixture。
+- 新 skill。
 - 新 media 与 genre pack。
 
 同时又不破坏现有使用者。

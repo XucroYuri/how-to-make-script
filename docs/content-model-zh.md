@@ -1,6 +1,6 @@
 # 内容模型
 
-这是本仓库的知识架构 -- 可复用的剧本写作知识如何组织成文件，AI 助手如何加载它们，以及整个仓库在不依赖单一大脑记忆所有内容的情况下如何保持一致性。
+这是本仓库的知识架构——可复用的剧本写作知识如何组织成文件，AI 助手如何加载它们，以及整个仓库在不依赖单一大脑记忆所有内容的情况下如何保持一致性。
 
 模型由四种核心资产、一组输出契约和一个发现层组成。整体关系如下：
 
@@ -47,7 +47,7 @@ graph TD
 # Human-readable body
 ```
 
-JSON frontmatter 是面向机器的契约 -- 助手通过它查找、加载和关联资产。Markdown 正文是面向人类的说明。两者必须保持一致。
+JSON frontmatter 是面向机器的契约——助手通过它查找、加载和关联资产。Markdown 正文是面向人类的说明。两者必须保持一致。
 
 这种格式简洁实用：可在 GitHub 上直接阅读、人类易于编辑、对 Python 工具链依赖轻、助手可按需扫描 frontmatter 选择性加载。
 
@@ -71,7 +71,7 @@ atom 应足够具体，能驱动一次明确的判断；也应足够窄，避免
 
 ### example_fixture
 
-编码一个真实的用户请求以及它应走的 route。fixture 服务于回归检查 -- 它测试的是 route 选择能力，而不仅仅是内容生成。每个 fixture 必须声明其预期 route。
+编码一个真实的用户请求以及它应走的 route。fixture 服务于回归检查——它测试的是 route 选择能力，而不仅仅是内容生成。每个 fixture 必须声明其预期 route。
 
 ## 输出契约
 
@@ -85,20 +85,17 @@ atom 应足够具体，能驱动一次明确的判断；也应足够窄，避免
 - `boundary_map`
 - `scope_correction`
 - `pattern_reference_pack`
-- `context_loading_plan`
 - `story_memory_checkpoint`
 - `voice_style_guide`
 - `visual_language_pack`
 - `screen_to_video_brief`
 - `team_workflow_blueprint`
 - `expert_subagent_cast`
-- `subagent_dispatch_plan`
-- `project_surface_map`
 - `quality_gate_report`
 
 这些契约存在的目的，是让助手能明确推理受众需求、委托语境和作者成长，而不是把这些因素模糊处理。它们让仓库能够表达多路径并存、边界逻辑和对照式教学，而不是假装所有好答案都能压缩成一个规范工件。
 
-每个契约有各自的职责：expression 契约让 voice、register 和连续性成为明确的质量维度；visual-language 契约处理跨语言镜头词汇；screen-to-video 桥接层把剧本写作和下游制作语法分开；team 契约建模多智能体协作；expert-cast 契约允许有限范围的专家 subagent 而不膨胀成永久团队；dispatch-plan 契约让排期和交接清晰可见；project-surface 契约处理规范真值和运行时镜像；quality-gate 契约实现自适应自我审查；research-background 契约让广泛的剧作理论需求成为一等公民。
+每个契约有各自的职责：表达契约让 voice、register 和连续性成为明确的质量维度；视觉语言契约处理跨语言镜头词汇；屏幕到视频桥接层把剧本写作和下游制作语法分开；团队契约建模多智能体协作；专家阵容契约允许有限范围的专家 subagent 而不膨胀成永久团队；质量关卡契约实现自适应自我审查；研究背景契约让广泛的剧作理论需求成为一等公民。
 
 注册表驱动的背景包存放在 `references/` 目录而非 `knowledge/` 目录。它们不是第五种核心资产类型，而是机器可检查的文档包，将广泛的研究领域映射到可调用的 atom、输出和加载规则。
 
@@ -115,7 +112,7 @@ atom 应足够具体，能驱动一次明确的判断；也应足够窄，避免
 - 如果参考样本用于教学，应同时配一个失败对照和一个 non-dogma 注记，避免仓库把样本悄悄当成模板。
 - 如果请求很复杂，应明确决定要加载多少上下文，而不是无声地扩大内容包。
 
-内容模型优化的是有边界的加载、route 稳定性和可重复的输出行为。它也保留高质量分歧的空间 -- 仓库需要存放 rival path、待定边界和反例驱动的修正。
+内容模型优化的是有边界的加载、route 稳定性和可重复的输出行为。它也保留高质量分歧的空间——仓库需要存放 rival path、待定边界和反例驱动的修正。
 
 ## 发现层：问题积压表
 

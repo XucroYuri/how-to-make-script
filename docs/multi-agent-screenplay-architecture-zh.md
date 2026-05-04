@@ -1,21 +1,21 @@
 # 多智能体剧本架构
 
-当前仓库现在正式承认一件事：很多剧本问题不是”一个更聪明的 Agent”就能优雅解决的，而是需要像现实世界里的高水平团队一样，把不同判断层、不同输出层、不同审查层拆开协作。
+仓库现在正式承认一件事：很多剧本问题不是「一个更聪明的 Agent」就能优雅解决的，而是需要像现实世界里高水平团队一样，把不同判断层、不同输出层、不同审查层拆开协作。
 
 这并不意味着每个请求都要使用多智能体。它意味着仓库现在有了一套正式机制，来回答这些问题：
-- 什么时候应该是一个总控加多个 specialist；
-- 什么时候该平行发散，什么时候必须串行交接；
-- 交接时到底传什么、不传什么；
+- 什么时候应该是一个总控加多个 specialist。
+- 什么时候该平行发散，什么时候必须串行交接。
+- 交接时到底传什么、不传什么。
 - 哪些地方必须有人来做最后判断。
 
 ## 核心立场
 
-仓库不走“一个万能总编剧 Agent”路线。
+仓库不走「一个万能总编剧 Agent」路线。
 
 无论是公开的多智能体框架，还是现实中的影视开发流程，真正有效的模式都更像下面这样：
-- 有一个总控负责路线和收束；
-- specialist 只处理自己最该处理的问题；
-- 交接用 bounded handoff，而不是上下文堆砌；
+- 有一个总控负责路线和收束。
+- specialist 只处理自己最该处理的问题。
+- 交接用 bounded handoff，而不是上下文堆砌。
 - 人只在高成本、高争议、高风险节点介入。
 
 ## 新增的协作层
@@ -26,7 +26,7 @@
 2. 再判断当前任务是否需要 `team mode`。
 3. 若需要，就选择最合适的协作模式。
 4. 再决定这次具体要哪些 `expert_subagent_cast` 进场。
-5. 再决定这些 subagent 该按什么 `subagent_dispatch_plan` 运行。
+5. 再决定这些 subagent 该按什么调度拓扑运行。
 6. 给不同角色分配最小必要 bundle。
 7. 用 handoff packet 串联角色。
 8. 用 review board 和 human gate 把高风险决策收住。
@@ -69,16 +69,16 @@
 - `recommended_next_agent`
 - `needs_human_review`
 
-这其实就是 bounded loading 在团队层的延伸。
+这就是 bounded loading 在团队层的延伸。
 
 ## Cast 与 Dispatch 不是一回事
 
-很多系统会把”team mode””角色表””调度计划”混成一个大而全的方案。
+很多系统会把「team mode」「角色表」「调度计划」混成一个大而全的方案。
 
 仓库现在把它们拆开：
-- `team_workflow_blueprint` 回答“整体像哪种协作模式”；
-- `expert_subagent_cast` 回答“这次具体让谁进场”；
-- `subagent_dispatch_plan` 回答”这些 subagent 到底怎么跑、怎么 review、怎么 merge、什么时候该回退”。
+- `team_workflow_blueprint` 回答「整体像哪种协作模式」。
+- `expert_subagent_cast` 回答「这次具体让谁进场」。
+- 调度拓扑回答「这些 subagent 到底怎么跑、怎么 review、怎么 merge、什么时候该回退」。
 
 这样做的好处是：不会因为多智能体需求一来，就把所有组织问题都混成一团。
 
@@ -86,24 +86,24 @@
 
 不是哪里都放。
 
-应该只放在真正贵、真的容易漂、出事代价高的节点：
-- IP / franchise 连续性；
-- audience fit 争议；
-- brand / commissioning 边界冲突；
-- 关键 scope correction；
+只放在真正贵、容易漂、出事代价高的节点：
+- IP / franchise 连续性。
+- audience fit 争议。
+- brand / commissioning 边界冲突。
+- 关键 scope correction。
 - 最终交付批准。
 
 ## 为什么这层对仓库重要
 
-因为如果没有这层，仓库再多知识也还是会默认一个隐含前提：所有高水平创作都能被一个 route 加一个 protocol 解决。
+如果没有这层，仓库再多知识也还是会默认一个隐含前提：所有高水平创作都能被一个 route 加一个 protocol 解决。
 
 现实不是这样。
-高水平创作更像是一套被精心组织过的协作，而不是一段更长的 prompt。
+高水平创作更像是一套精心组织过的协作，而不是一段更长的 prompt。
 
 ## 参考来源
 
 - WGA writers' room 与 feature 开发资源：
-  [Showrunners’ Guide to 2023 MBA Writers’ Room Provisions](https://www.wga.org/contracts/contracts/mba/showrunners-guide-to-2023-mba-writers-room-provisions)
+  [Showrunners' Guide to 2023 MBA Writers' Room Provisions](https://www.wga.org/contracts/contracts/mba/showrunners-guide-to-2023-mba-writers-room-provisions)
   [Screenwriters Handbook](https://www.wga.org/members/employment-resources/screenwriters-handbook)
 - 动画开发：
   [Disney Animation Story Artist](https://www.disneyanimation.com/team/story-artist/)

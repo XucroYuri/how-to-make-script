@@ -58,7 +58,7 @@
 ---
 # Subagent 调度计划协议
 
-如果说 `expert_subagent_cast` 解决的是“谁进场”，那 `subagent_dispatch_plan` 解决的就是“这些 subagent 到底怎么跑”。这是多智能体系统最容易被口号化的部分，因为很多方案喜欢展示“很多专家同时参与”，却不展示谁合并、谁裁决、谁复核、谁决定什么时候停。
+如果说 `expert_subagent_cast` 解决的是”谁进场”，那 `subagent_dispatch_plan` 解决的就是”这些 subagent 到底怎么跑”。这是多智能体系统最容易被口号化的部分，因为很多方案喜欢展示”很多专家同时参与”，却不展示谁合并、谁裁决、谁复核、谁决定什么时候停。
 
 在这个仓库里，调度计划必须是可执行的。它不只是拓扑图，而是包括：
 - 哪一层是 control plane；
@@ -68,11 +68,11 @@
 - 哪些节点必须交给人类；
 - 哪些情况下要缩回更保守的模式。
 
-真正的高水平调度，不是让所有人都说上话，而是让每个人在对的时间、拿着对的上下文、说对的问题。
+真正的高水平调度不是让所有人都说上话，而是让每个人在对的时间、拿着对的上下文、说对的问题。
 
 ## TODOs：待回答问题
 
-- [ ] `subagent_dispatch_plan` 是否需要区分“repo 开发型调度”和“剧本创作型调度”两大类？
+- [ ] `subagent_dispatch_plan` 是否需要区分”repo 开发型调度”和”剧本创作型调度”两大类？
 - [ ] 哪些 topology 最适合长周期 feature development，哪些更适合高频短周期品牌内容？
 - [ ] handoff packet 是否应针对 persona lane、functional lane、review lane 采用不同字段集？
 - [ ] 调度计划是否应该显式给出 token / latency / merge-cost 预算？

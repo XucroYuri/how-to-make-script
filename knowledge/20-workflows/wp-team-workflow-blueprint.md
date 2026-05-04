@@ -57,16 +57,16 @@
 ---
 # 团队工作流蓝图协议
 
-如果说 `development_brief` 解决的是“项目怎么推进”，那 `team_workflow_blueprint` 解决的就是“谁和谁怎么一起推进”。它不只是列角色名，而是把团队真正会卡住的地方提前显式化：谁拍板、谁发散、谁守边界、谁做合并、谁来背 review 节点。
+`development_brief` 解决的是”项目怎么推进”，`team_workflow_blueprint` 解决的是”谁和谁怎么一起推进”。它不只是列角色名，而是把团队真正会卡住的地方提前显式化：谁拍板、谁发散、谁守边界、谁做合并、谁来背 review 节点。
 
-这个协议的重点不是追求一种“最先进”的组织方式，而是承认不同项目需要不同 team mode。有些项目要 writers' room，有些要 director-writer-producer pod，有些要 campaign strike team，有些要 interactive narrative cell。蓝图的工作，是先选对模式，再把协作成本降下来。
+这个协议的重点不是追求一种”最先进”的组织方式，而是承认不同项目需要不同 team mode。有些项目要 writers' room，有些要 director-writer-producer pod，有些要 campaign strike team，有些要 interactive narrative cell。蓝图的工作，是先选对模式，再把协作成本降下来。
 
-对 Agent Skill 来说，这也是把“多智能体”从口号变成约束的方法。没有角色、handoff、gate 和 artifact ladder，多 agent 只是多上下文噪音。
-如果 blueprint 已经选好了 mode，但还需要继续回答“这次具体让哪些专家和 persona 进场”以及“这些 subagent 怎么排班和 review”，就不该继续把所有细节塞回 blueprint，而该交给 `expert_subagent_cast` 和 `subagent_dispatch_plan`。
+对 Agent Skill 来说，这也是把”多智能体”从口号变成约束的方法。没有角色、handoff、gate 和 artifact ladder，多 agent 只是多上下文噪音。
+如果 blueprint 已经选好了 mode，但还需要回答”这次具体让哪些专家和 persona 进场”以及”这些 subagent 怎么排班和 review”，就不该继续把所有细节塞回 blueprint，而该交给 `expert_subagent_cast` 和 `subagent_dispatch_plan`。
 
 ## TODOs：待回答问题
 
-- [ ] `team_workflow_blueprint` 是否应该拆成“模式选择版”和“执行部署版”两个层级？
+- [ ] `team_workflow_blueprint` 是否应该拆成”模式选择版”和”执行部署版”两个层级？
 - [ ] 当用户希望同时运行 agent team 和真实 human team 时，蓝图是否需要双轨角色图？
 - [ ] blueprint 是否需要直接生成 meeting cadence / room agenda / async board 模板？
 - [ ] 哪些项目最值得提供 primary mode + backup mode，而不是只给一条主路线？

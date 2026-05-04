@@ -1,6 +1,6 @@
 # 语义治理
 
-仓库现在已经不是几份文档和几个 skill 的体量了。只要 root skill、router、manifest、workflow、fixture、docs 之间的概念开始各说各话，Agent 的执行质量就会明显下滑。
+仓库现在不是几份文档和几个 skill 的体量了。只要 root skill、router、manifest、workflow、fixture、docs 之间的概念开始各说各话，Agent 的执行质量就会明显下滑。
 
 这份规则的目标只有一个：同一个概念，在不同层里不能悄悄变成不同含义。
 
@@ -31,15 +31,15 @@
 历史 alias 和允许存在的 detail key 放在 [`docs/shared/constraint-key-register.json`](./constraint-key-register.json)。
 
 这个 register 的用途不是鼓励继续乱命名，而是给仓库一个可治理的兼容层：
-- 旧 fixture 还能活；
-- 更细的制作细节还能表达；
+- 旧 fixture 还能活。
+- 更细的制作细节还能表达。
 - 新增内容不会继续无限漂。
 
 ## Route Signal 策略
 
 `router-matrix` 里的 `constraint_signals` 只做三件事：
-- 解释为什么这个 route 合理；
-- 当相邻 route 未来开始接近时，提供 tie-break 依据；
+- 解释为什么这个 route 合理。
+- 当相邻 route 未来开始接近时，提供 tie-break 依据。
 - 让 loading 判断可追踪，而不是黑箱。
 
 它不是为了把 router 重新做成关键词猜测器。
@@ -58,4 +58,4 @@
 - [`scripts/check_route_overlaps.py`](../../scripts/check_route_overlaps.py)
 - [`scripts/check_golden_artifact_formats.py`](../../scripts/check_golden_artifact_formats.py)
 
-目标不是追求“概念完美”，而是防止仓库在不知不觉中开始对 Agent 讲互相矛盾的话。
+目标不是追求「概念完美」，而是防止仓库在不知不觉中开始对 Agent 讲互相矛盾的话。

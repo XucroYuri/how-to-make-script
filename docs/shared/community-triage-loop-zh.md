@@ -46,10 +46,10 @@
 
 默认标签与流转应保持可预期：
 
-- 用 `type:*` 标记这是什么类型的信号；
-- 用 `status:*` 标记维护者正在做什么；
-- 当真实模式是 counterexample、scope correction、boundary mismatch 或 premature convergence 时，用 `kind:*`；
-- 当讨论还太开放，不适合 issue 范围时，用 `discussion-first`；
+- 用 `type:*` 标记这是什么类型的信号。
+- 用 `status:*` 标记维护者正在做什么。
+- 当真实模式是 counterexample、scope correction、boundary mismatch 或 premature convergence 时，用 `kind:*`。
+- 当讨论还太开放，不适合 issue 范围时，用 `discussion-first`。
 - 当还缺下一步证据时，用 `needs-practitioner-input`、`needs-counterexample`、`needs-route-reproduction` 或 `needs-second-field-report`。
 
 完整标签注册表见 [`../.github/community-label-taxonomy.json`](../../.github/community-label-taxonomy.json)。
@@ -85,19 +85,19 @@
 
 ## 好的维护者回复长什么样
 
-- “这是一个有效的 route failure。请补一个 fixture。”
-- “这个反驳有价值，但我们需要一个 counterexample 才能编码。”
-- “你说得对，这条 rubric 漏掉了这个失败模式。我们会拆分规则。”
-- “这是平台特定场景，所以它应成为独立 protocol。”
-- “这条反馈是真实的，但我们还需要再收一份 field report 才能改治理。”
-- “这不是对原规则的彻底否定，而是一次 scope correction。”
-- “当前指导收敛得太早了，这里应保留多条 path option。”
+- 「这是一个有效的 route failure。请补一个 fixture。」
+- 「这个反驳有价值，但我们需要一个 counterexample 才能编码。」
+- 「你说得对，这条 rubric 漏掉了这个失败模式。我们会拆分规则。」
+- 「这是平台特定场景，所以它应成为独立 protocol。」
+- 「这条反馈是真实的，但我们还需要再收一份 field report 才能改治理。」
+- 「这不是对原规则的彻底否定，而是一次 scope correction。」
+- 「当前指导收敛得太早了，这里应保留多条 path option。」
 
 ## 相关文档
 
 - [社区反馈回路](./community-feedback-loop-zh.md)
 - [Community Feedback Loop](./community-feedback-loop.md)
 - [社区运营策略](./community-operations-zh.md)
-- [认识论姿态](../epistemic-stance-zh.md)
+- [认识论立场](../epistemic-stance-zh.md)
 - [探索与审查分离](../exploration-vs-review.md)
 - [内容模型](../content-model-zh.md)
