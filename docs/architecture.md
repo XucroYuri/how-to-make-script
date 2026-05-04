@@ -28,9 +28,9 @@ The orchestration layer includes bounded loading rules for five extension domain
 
 **Team collaboration.** Ordinary screenplay requests should still stay single-route by default; multi-agent or hybrid-team logic should load only when team structure changes the next decision materially; specialist roles should exchange bounded handoff packets instead of full shared context.
 
-**Subagent library.** `team_workflow_blueprint` chooses the collaboration shape; `expert_subagent_cast` chooses the bounded specialist roster; `subagent_dispatch_plan` chooses the live scheduling and review structure; reference personas remain bounded lenses instead of replacing route logic or convergence ownership.
+**Subagent library.** `team_workflow_blueprint` chooses the collaboration shape; `expert_subagent_cast` chooses the bounded specialist roster; reference personas remain bounded lenses instead of replacing route logic or convergence ownership. Internal dispatch and surface-management skills handle the live scheduling, review structure, and truth-source governance behind the scenes.
 
-**Project surface.** `project_surface_map` chooses where canonical truth lives; runtime mirrors, caches, and traces stay derived by default; packet assembly stays inspectable instead of invisible; review and export surfaces stay named instead of being mixed into editing truth.
+**Project surface.** Canonical truth, runtime mirrors, packet assembly, and review/export surfaces are managed by internal governance skills — agents and users interact with the public contract outputs, not the plumbing.
 
 **Quality gating.** `quality_gate_report` chooses a lens stack rather than a universal checklist; hard gates are separated from weighted weaknesses; targeted recheck is preferred over automatic full re-audit; specialized checker logic can inform the design without becoming repo-wide law.
 

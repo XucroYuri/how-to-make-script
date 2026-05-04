@@ -30,9 +30,9 @@
 
 **团队协作。** 普通剧本请求默认仍应保持单路由；只有当团队结构会实质改变下一步决策时，才加载多智能体或混合团队逻辑；专家角色之间应交换有边界的交接包，而不是共享整份上下文。
 
-**Subagent library。** `team_workflow_blueprint` 负责选择协作形态；`expert_subagent_cast` 负责选择受限的专家 roster；`subagent_dispatch_plan` 负责选择实时调度与 review 结构；reference persona 只是有边界的 lens，不应替代 route logic 或 convergence ownership。
+**Subagent library。** `team_workflow_blueprint` 负责选择协作形态；`expert_subagent_cast` 负责选择受限的专家 roster；reference persona 只是有边界的 lens，不应替代 route logic 或 convergence ownership。内部调度与表面管理技能在后台处理实时编排、review 结构和真源治理。
 
-**Project surface。** `project_surface_map` 负责定义权威来源放在哪里；runtime mirror、cache、trace 默认都应是派生层；packet assembly 应该可审查，而不是隐藏流程；review surface 和 export surface 应该被明确命名，而不是与可编辑内容混在一起。
+**Project surface。** 权威来源、runtime mirror、packet assembly 和 review/export surface 由内部治理技能管理——agent 和用户通过公开合同产出交互，而非接触底层管道。
 
 **Quality gating。** `quality_gate_report` 选择的是一组 lens stack，而不是一份通用检查清单；hard gate 要和加权弱点拆开；优先做 targeted recheck，而不是自动全量重审；专用 checker 逻辑可以启发设计，但不应直接变成整个仓库的通用规则。
 

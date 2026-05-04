@@ -137,9 +137,7 @@ Source:
 The repository should not model these modes as six isolated prompt templates.
 
 Mode selection is also not the same thing as cast selection.
-After choosing a mode, the repo may still need:
-- an `expert_subagent_cast` to decide which specialists and persona lenses actually enter;
-- a `subagent_dispatch_plan` to decide how those specialists are staged, reviewed, and merged.
+After choosing a mode, the repo may still need an `expert_subagent_cast` to decide which specialists and persona lenses actually enter. Internal dispatch skills handle staging, review scheduling, and merge coordination behind the scenes.
 
 Instead, use two orchestration patterns from agent systems:
 - manager-style orchestration when one room captain or showrunner agent should keep the final answer and call specialists as bounded tools;
