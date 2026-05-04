@@ -84,6 +84,8 @@
 | --- | --- |
 | **`route-first`** | 主路由由 `intent × medium × stage × output` 确定，`constraints` 做优先级判定和加载控制 |
 | **`posture-aware`** | 路由前先检测创作者的当前状态（来源模式/确定性模式/注意焦点），根据状态动态调整引导力度和知识加载优先级 |
+| **`audience-proxy`** | 多人格渐进式场景阅读，配备反谄媚守卫；模拟真实观众的耐心和关切，而非清单打分 |
+| **`emergence-first`** | 碰撞模板和主动条件配置协议为涌现式场景写作制造结构性压力，而不只是产出「正确」的场景 |
 | **`research-first`** | 知识积累在版本化资产里，而不是散在聊天记录里 |
 | **`bounded-loading`** | 只加载最小有效知识包；态势信号决定知识原子的加载优先顺序 |
 | **`challenge-friendly`** | 反驳、反例、field report、专业质疑都是改进系统的输入 |
@@ -94,6 +96,8 @@
 - 把模糊的想法提炼为 `logline`、`premise`、`beat_sheet`、`outline`、`scene_draft`、`commercial_script` 等具体输出物
 - 在不同媒介和阶段下，为 Agent 提供精确的协议、评分标准和最小知识包
 - 在多个可行方案之间做比较，避免一开始就被限定在单一方案中
+- 用 `audience_proxy_report` 从多视角受众代理获取诚实的场景体验反馈，替代外交化打分
+- 用碰撞模板和涌现条件配置协议，打破 LLM 默认的可预测场景输出
 - 用 `rewrite_report`、`quality_gate_report`、`boundary_map`、`scope_correction` 排查问题、限定边界、做复查
 - 用 `research_background_map` 和 `story_memory_checkpoint` 处理宏观理论问题、长篇连续性压缩和安全续写
 - 对接角色声音、品牌表达、多语种视觉语言和 screen-to-video brief

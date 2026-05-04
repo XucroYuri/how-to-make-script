@@ -85,6 +85,8 @@ Full example chain:
 | --- | --- |
 | **`route-first`** | Primary route anchored by `intent x medium x stage x output`; `constraints` refine tie-breaks and loading |
 | **`posture-aware`** | Detects the writer's current creative state (source mode, certainty, attention focus) before routing; adapts guidance intensity accordingly |
+| **`audience-proxy`** | Multi-persona progressive scene reading with anti-sycophancy guard; simulates real viewer patience and concern rather than checklist scoring |
+| **`emergence-first`** | Collision templates and active conditioning protocols create structural pressure for emergent scenes, not just correct ones |
 | **`research-first`** | Stable knowledge lives in versioned assets, not hidden chat memory |
 | **`bounded-loading`** | Agents load the smallest useful bundle instead of the whole repository; posture signals determine atom priority order |
 | **`challenge-friendly`** | Counterexamples, objections, and field reports are first-class improvement inputs |
@@ -95,6 +97,8 @@ Full example chain:
 - Turn a vague idea into concrete artifacts: `logline`, `premise`, `beat_sheet`, `outline`, `scene_draft`, `commercial_script`
 - Route each request to the right protocol, rubric, and minimal knowledge bundle
 - Compare multiple viable creative directions instead of locking into one method
+- Evaluate scene experience with `audience_proxy_report` — multi-persona honest feedback, not diplomatically softened scoring
+- Break predictable scene generation with collision templates and emergence conditioning
 - Diagnose drafts with `rewrite_report`, `quality_gate_report`, `boundary_map`, or `scope_correction`
 - Handle broad theory and long-form continuity with `research_background_map` and `story_memory_checkpoint`
 - Bridge into voice calibration, multilingual visual language, and screen-to-video handoff
