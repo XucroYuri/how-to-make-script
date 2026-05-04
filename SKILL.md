@@ -66,6 +66,7 @@ Before routing any request, perform a lightweight creative posture detection pas
 - Prefer `scope_correction` when the user challenges a rule, route, or rubric and the right response is to narrow its scope rather than replace it wholesale.
 - Prefer `audience_proxy_report` when the user asks for scene- or draft-level viewing experience simulation, multi-persona reading, attention curve diagnosis, or anti-sycophancy honest feedback on a specific scene or script passage.
 - Prefer `session_execution_plan` when the user's request spans two or more stages (e.g., "from logline to scene draft tonight"), needs multi-stage decomposition, explicit handoff contracts between stages, or the user asks for a session-level work plan rather than a single output.
+- Prefer subtractive editing (wp.subtractive-pass) when the user asks to cut, trim, remove redundancy, or "make it shorter/tighter" from an existing scene or screenplay draft.
 - Prefer `research_background_map` for broad theory or background requests; use a `survey_pack` only if breadth remains materially necessary after that route is selected.
 - Prefer one narrow protocol over a broad mixed-context answer.
 

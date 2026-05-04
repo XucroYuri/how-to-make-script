@@ -2143,5 +2143,29 @@
       "handoff contracts between segments must be explicit",
       "at least one checkpoint marker between structure→scene boundary"
     ]
+  },
+  {
+    "id": "fx.subtractive-pass-01",
+    "type": "example_fixture",
+    "query": "我写完这场戏了，但感觉台词太多，节奏拖。帮我做一次减法修改——把说出来的情感和没推动剧情的段落都删掉。",
+    "intent": "draft",
+    "medium": "feature_film",
+    "stage": "scene",
+    "output": "scene_draft",
+    "constraints": {
+      "edit_policy": "subtractive",
+      "draft_stage": "scene"
+    },
+    "expected_route": {
+      "skill_id": "skill.scene-writing",
+      "protocol_id": "wp.scene-writing",
+      "rubric_id": "rb.scene-draft"
+    },
+    "key_checks": [
+      "declarative dialogue lines should be removed or rewritten as action",
+      "stateless paragraphs that don't change any condition should be cut",
+      "remaining content must maintain narrative continuity",
+      "every surviving line should pass the 'if I could remove it I would' test"
+    ]
   }
 ]

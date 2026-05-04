@@ -33,7 +33,8 @@
     "若用户主要需要 story/text 的改稿优先级，而不是多镜头质检，返回 rewrite_report。",
     "若用户主要是在问边界或范围修正，返回 boundary_map 或 scope_correction。",
     "若用户只是在问该如何加载审查上下文，而不是直接出审查结果，返回 context_loading_plan。",
-    "若 artifact 太少，保守输出 preflight risk note，不伪装成完整 quality gate。"
+    "若 artifact 太少，保守输出 preflight risk note，不伪装成完整 quality gate。",
+    "若审查发现核心问题实质是观看体验退化（hook 流失、patience 崩塌）而非合同符合度，返回 context_loading_plan 指向 wp.audience-proxy-review 而非继续在本协议内展开观众维度——gate 查规则符合，代理查观看体验，两者不互相稀释。"
   ],
   "stop_conditions": [
     "报告已说明 contract、scope、selected lenses、hard fail、weighted weakness、correction ladder 和 recheck logic",

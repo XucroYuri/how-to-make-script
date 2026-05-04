@@ -277,12 +277,12 @@ flowchart LR
 | Surface | Scope |
 | --- | --- |
 | Root skill | [`SKILL.md`](./SKILL.md) — routing, loading, and output discipline |
-| Output contracts | `31` routeable outputs in [`supported-outputs.md`](./references/supported-outputs.md) |
+| Output contracts | `33` routeable outputs in [`supported-outputs.md`](./references/supported-outputs.md) |
 | Skill folders | `29` folders in [`skills/`](./skills) |
-| Structured assets | `69` atoms + `28` protocols + `28` rubrics |
-| Route fixtures | `95` fixtures in [`fixtures.json`](./examples/agent/fixtures.json) |
-| Knowledge base | `168` Markdown files in [`knowledge/`](./knowledge) |
-| Examples | `38` files across golden flows, fixtures, and reference packs |
+| Structured assets | `108` atoms + `33` protocols + `31` rubrics |
+| Route fixtures | `98` fixtures in [`fixtures.json`](./examples/agent/fixtures.json) |
+| Knowledge base | `185` Markdown files in [`knowledge/`](./knowledge) |
+| Examples | `39` files across golden flows, fixtures, and reference packs |
 | Validation | `18` scripts in [`scripts/`](./scripts) |
 | Tests | `17` modules in [`tests/`](./tests) |
 

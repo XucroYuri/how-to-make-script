@@ -56,6 +56,23 @@
 **C1 — Iterative draft pipeline**
 - Added `wp.iterative-draft-pipeline`: 6-step generate→audience-proxy-review→revise loop. Maximum 3 rounds; structural failure triggers outline-layer return rather than continued local patching. Links `wp.audience-proxy-review` and `rb.audience-experience` as evaluation layer.
 
+### Phase B2/B3 Redefined + Final Wave: High-Value Gaps (2026-05-05)
+
+**B2 — Light-touch fallback line**
+- Added referral edge to `wp.quality-gate-report` fallbacks: when audit core issue is audience experience degradation rather than contract compliance, output `context_loading_plan` pointing to `wp.audience-proxy-review` instead of expanding audience dimensions inside the quality gate.
+- B3 (`ka.scene-audience-contract`) skipped — already covered by existing audience-proxy, opening-job-selection, and scene-function atoms.
+
+**Final wave — Three high-value gaps**
+- Added `ka.cross-protocol-referral-edges`: heuristic atom encoding three canonical inter-protocol referral edges (quality-gate→audience-proxy, rewrite-doctor→quality-gate, scene-writing→session-execution-plan). Prevents protocol scope creep by making boundaries explicit.
+- Added `ka.setup-and-payoff`: craft atom with plant/reinforce/payoff tracking, cross-scene ledger primitive, three payoff types (direct/variant/implicit), and empty-plant detection rule. Counters LLM "setup amnesia" in long-form writing.
+- Added `wp.subtractive-pass` + `rb.subtractive-pass`: deletion-first revision protocol targeting LLM over-writing tendency. Three-layer deletion (declarative dialogue, stateless paragraphs, authorial transitions). Stop condition: any further deletion would break narrative continuity.
+- Added fixture `fx.subtractive-pass-01`.
+
+**Polish**
+- Removed stale `docs/posture-weighted-loading.md` (artifact of reverted Phase A2).
+- Removed temporary `scripts/remove_posture_relevance.py`.
+- Updated stale README counts (69→107 atoms, 28→33 protocols, 28→31 rubrics, 95→98 fixtures, 31→33 outputs).
+
 ### Phase D: Emergence Guidance Layer (2026-05-05, redesigned)
 
 **D1 — Emergence conditioner (redesigned from readiness check)**
