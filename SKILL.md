@@ -10,6 +10,30 @@ Use this skill when the user asks how to create, diagnose, improve, structure, o
 
 This is the root orchestrator. It does not carry all theory inline. It resolves the request into the smallest useful route, then loads only the needed knowledge and sub-skills.
 
+## Posture Sync
+
+Before routing any request, perform a lightweight creative posture detection pass using the three-axis model defined in `knowledge/10-foundations/ka-creative-posture-source.md`, `ka-creative-posture-certainty.md`, and `ka-creative-posture-focus.md`.
+
+**Three axes to detect:**
+1. **Source mode** — discover / construct / generate (weighted, can mix)
+2. **Certainty mode** — certain / exploring / lost (mutually exclusive)
+3. **Attention focus** — character / world / event / audience / language (primary + optional secondary)
+
+**Detection signals:**
+- Discover signals: 如果 / 试试 / 也许 / 感觉 / 好像 / 说不定 / 直觉上
+- Construct signals: 需要 / 应该 / 确保 / 规划 / 框架 / 设计 / 按照
+- Generate signals: 碰撞 / 让他们 / 看看会发生 / 放进去 / 不管结果
+- Lost signals: 卡住了 / 不知道从哪 / 脑子空 / 没有思路 / 写不下去 / 没感觉
+- Exploring signals: 也可以 / 或者 / 两个方向 / 哪个更好 / 不确定哪个
+
+**Posture influence on loading:**
+- `lost` certainty mode: suppress rubric hard-fail output; lead with one minimal executable action or nucleation question
+- `discover` source mode: load possibility-expanding atoms first; delay hard structural constraints
+- `construct` source mode: apply full protocol steps and rubric evaluation
+- Attention focus determines which atom category loads as primary
+
+**Constraint signal:** Store detected posture as `posture_mode` constraint for downstream route signals.
+
 ## Preflight Sync
 
 Before routing any request, perform a lightweight sync check against the upstream repository to ensure knowledge assets are current.
@@ -43,6 +67,17 @@ Before routing any request, perform a lightweight sync check against the upstrea
 - Do not collapse to one path when multiple viable options remain during `discover` and `design`.
 - Separate hard boundaries from soft constraints before recommending convergence.
 - Prefer scope correction over false certainty flips when a rule is challenged but not fully broken.
+
+## Posture-Adaptive Response Rules
+- When `posture_certainty = lost`: respond with one minimal executable action or one nucleation question only; do not apply rubric hard-fails; do not output rule checklists; use inviting rather than prescriptive language.
+- When `posture_certainty = exploring`: provide comparison with judgment criteria; do not force convergence to a single path; do not withhold valid alternatives.
+- When `posture_certainty = certain`: execute the most precise protocol step directly; do not add unnecessary alternative options.
+- When `posture_source = discover`: load possibility-expanding atoms first; prefer `path_options` and `idea-discovery` routes; avoid pushing hard structural constraints.
+- When `posture_source = construct`: load structural-constraint atoms first; apply full protocol and rubric.
+- When `posture_source = generate`: provide collision experiment conditions; do not predict or pre-plan outcomes; leave space for unexpected results.
+- When `posture_focus = character`: load character psychology atoms as primary; deprioritize structure-beat and world-building atoms.
+- When `posture_focus = audience`: load audience-experience atoms as primary; deprioritize internal world-consistency atoms.
+- When `posture_focus = language`: load dialogue and voice-calibration atoms as primary; deprioritize high-level structure atoms.
 
 ## Route Selection Heuristics
 - Prefer exact medium matches over generic narrative reuse.
@@ -176,7 +211,7 @@ Stop expansion when one of these is true:
    - `medium`: feature_film, episodic, short_drama, animation, commercial, branded_film, shortform_video, game_narrative, branching_interactive
    - `stage`: ideation, premise, character, structure, outline, scene, dialogue, rewrite, adaptation
    - `output`: one of the public contracts in [`references/supported-outputs.md`](references/supported-outputs.md)
-    - `constraints`: genre, tone, format, duration, audience segment, audience need state, platform, release window, commissioning context, business model, campaign goal, source medium, draft stage, participation mode, rating, budget, interactivity, franchise/IP limits, writer maturity, research scope, reference bar, creative problem, scenario family, loading mode, reference depth, comparison mode, route certainty, hard boundaries, soft constraints, voice target, language register, aesthetic register, IP continuity, experiential depth, visual vocab locale, prompt runtime, shot granularity, aspect ratio, reference asset mode, continuity invariants, audio mode, text mode, team mode, coordination model, parallelism budget, human gate level, artifact chain, subagent family, persona policy, selection strategy, dispatch topology, convergence owner, context budget, project horizon, phase focus, truth surface policy, runtime surface policy, packet strategy, traceability level, edit policy, target contract, audit scope, check depth, lens focus, recheck mode, acceptance bar
+    - `constraints`: genre, tone, format, duration, audience segment, audience need state, platform, release window, commissioning context, business model, campaign goal, source medium, draft stage, participation mode, rating, budget, interactivity, franchise/IP limits, writer maturity, research scope, reference bar, creative problem, scenario family, loading mode, reference depth, comparison mode, route certainty, hard boundaries, soft constraints, voice target, language register, aesthetic register, IP continuity, experiential depth, visual vocab locale, prompt runtime, shot granularity, aspect ratio, reference asset mode, continuity invariants, audio mode, text mode, team mode, coordination model, parallelism budget, human gate level, artifact chain, subagent family, persona policy, selection strategy, dispatch topology, convergence owner, context budget, project horizon, phase focus, truth surface policy, runtime surface policy, packet strategy, traceability level, edit policy, target contract, audit scope, check depth, lens focus, recheck mode, acceptance bar, posture mode (source: discover/construct/generate; certainty: certain/exploring/lost; focus: character/world/event/audience/language)
 2. Look up the preferred route in [`references/router-matrix.json`](references/router-matrix.json).
    - Use declared `constraint_signals` to explain why the route is appropriate and to break ties between otherwise-equal adjacent routes.
 3. Choose the loading mode.
@@ -270,4 +305,4 @@ See [`references/skill-directory.md`](references/skill-directory.md) for the com
 For runtime route lookup, see the generated execution index (`python scripts/generate_index.py --mode runtime`).
 
 ## Operating Principle
-Sync first. Resolve the route second. Load the minimum context third. Generate fourth. Self-check last.
+Posture-sync first. Repo-sync second. Resolve the route third. Load the minimum context fourth (posture-weighted). Generate fifth. Self-check last.

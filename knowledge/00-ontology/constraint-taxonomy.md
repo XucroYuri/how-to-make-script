@@ -92,6 +92,13 @@
 - `recheck_mode`：这是初检、修改后复查，还是只检查变更范围和邻接副作用。
 - `acceptance_bar`：当前质量门槛是可继续开发、可进下一工序、可对外提案，还是可直接交付。
 
+## Creative Posture Constraints
+
+- `posture_mode`：创作者当前的创作态势，涵盖三个独立轴的组合信号；用于调整知识加载顺序、响应策略和引导力度。在根技能 preflight 阶段检测，影响子技能的上下文加载。
+- `posture_source`（detail）：来源模式——`discover`（发现型，探索模糊感受）/ `construct`（建构型，主动设计结构）/ `generate`（生成型，设定条件等待涌现）。可加权混合，例如 `discover:0.7, construct:0.3`。
+- `posture_certainty`（detail）：确定性模式——`certain`（确信方向）/ `exploring`（主动比较多个方向）/ `lost`（创作断路，思路中断）。三者互斥，选一。
+- `posture_focus`（detail）：注意焦点——`character`（角色心理与关系）/ `world`（世界规则与一致性）/ `event`（情节序列与因果）/ `audience`（受众体验与留存）/ `language`（对白与声音）。允许主焦点 + 次焦点。
+
 ## Routing Rule
 
 当这些约束只影响表达细节时，不要切换协议；当它们会改变输出目标、优先级或加载知识包时，必须参与路由。

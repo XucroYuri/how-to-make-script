@@ -129,3 +129,10 @@
 - `lens_focus`
 - `recheck_mode`
 - `acceptance_bar`
+- `posture_mode`
+- `rating`
+- `franchise_ip_limits`
+- `retention_window`
+- `interaction_model`
+- `taste_floor`
+- `taste_ceiling`

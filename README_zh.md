@@ -83,8 +83,9 @@
 | 原则 | 具体做法 |
 | --- | --- |
 | **`route-first`** | 主路由由 `intent × medium × stage × output` 确定，`constraints` 做优先级判定和加载控制 |
+| **`posture-aware`** | 路由前先检测创作者的当前状态（来源模式/确定性模式/注意焦点），根据状态动态调整引导力度和知识加载优先级 |
 | **`research-first`** | 知识积累在版本化资产里，而不是散在聊天记录里 |
-| **`bounded-loading`** | 只加载最小有效知识包，避免上下文退化 |
+| **`bounded-loading`** | 只加载最小有效知识包；态势信号决定知识原子的加载优先顺序 |
 | **`challenge-friendly`** | 反驳、反例、field report、专业质疑都是改进系统的输入 |
 | **`multi-surface`** | 不只管"写文本"，也管审查、协作、项目视图和下游对接 |
 

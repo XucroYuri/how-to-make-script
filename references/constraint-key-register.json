@@ -64,6 +64,22 @@
     "target_genre": {
       "canonical": "genre",
       "note": "Target genre should use the same canonical family as source genre."
+    },
+    "posture": {
+      "canonical": "posture_mode",
+      "note": "Short form of creative posture signal; prefer posture_mode in new assets."
+    },
+    "source_mode": {
+      "canonical": "posture_mode",
+      "note": "Creative source axis detail; resolves under the posture_mode family."
+    },
+    "certainty_mode": {
+      "canonical": "posture_mode",
+      "note": "Creative certainty axis detail; resolves under the posture_mode family."
+    },
+    "attention_focus": {
+      "canonical": "posture_mode",
+      "note": "Creative attention axis detail; resolves under the posture_mode family."
     }
   },
   "detail_keys": {
@@ -86,6 +102,18 @@
     "quest_type": {
       "family": "format",
       "note": "Interactive content-shape detail under format."
+    },
+    "posture_source": {
+      "family": "posture_mode",
+      "note": "Source-axis value (discover, construct, generate) under posture_mode."
+    },
+    "posture_certainty": {
+      "family": "posture_mode",
+      "note": "Certainty-axis value (certain, exploring, lost) under posture_mode."
+    },
+    "posture_focus": {
+      "family": "posture_mode",
+      "note": "Attention-focus axis value (character, world, event, audience, language) under posture_mode."
     }
   }
 }

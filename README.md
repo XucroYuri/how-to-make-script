@@ -84,8 +84,9 @@ Full example chain:
 | Principle | How it works |
 | --- | --- |
 | **`route-first`** | Primary route anchored by `intent x medium x stage x output`; `constraints` refine tie-breaks and loading |
+| **`posture-aware`** | Detects the writer's current creative state (source mode, certainty, attention focus) before routing; adapts guidance intensity accordingly |
 | **`research-first`** | Stable knowledge lives in versioned assets, not hidden chat memory |
-| **`bounded-loading`** | Agents load the smallest useful bundle instead of the whole repository |
+| **`bounded-loading`** | Agents load the smallest useful bundle instead of the whole repository; posture signals determine atom priority order |
 | **`challenge-friendly`** | Counterexamples, objections, and field reports are first-class improvement inputs |
 | **`multi-surface`** | Covers writing artifacts, review, team orchestration, project surfaces, and downstream handoff |
 
