@@ -54,6 +54,15 @@ jobs:
       - name: Check forbidden paths
         run: python scripts/check_forbidden_paths.py
 
+      - name: Check canonical terms
+        run: python scripts/check_canonical_terms.py
+
+      - name: Check loading budget
+        run: python scripts/check_loading_budget.py
+
+      - name: Check NL routing
+        run: python scripts/check_nl_routing.py
+
       - name: Check question todos
         run: python scripts/check_question_todos.py
 
