@@ -134,6 +134,11 @@
 - `audience_proxy_mode`
 - `proxy_persona_set`
 - `anti_sycophancy_guard`
+- `iteration_mode`
+- `proxy_review_cycle`
+- `emergence_mode`
+- `collision_template`
+- `creative_pressure`
 - `rating`
 - `franchise_ip_limits`
 - `retention_window`
