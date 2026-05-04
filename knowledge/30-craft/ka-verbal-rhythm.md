@@ -50,26 +50,7 @@
     "ka.pacing-rhythm",
     "ka.embodied-text-pressure"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "high",
-      "generate": "medium"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "medium",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "primary",
-      "world": "low",
-      "event": "low",
-      "audience": "high",
-      "language": "primary"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 台词句际节奏

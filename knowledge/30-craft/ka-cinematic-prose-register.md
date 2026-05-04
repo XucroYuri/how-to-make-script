@@ -47,26 +47,7 @@
     "ka.scene-function",
     "ka.video-generation-shot-economy"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "high",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "medium",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "low",
-      "world": "medium",
-      "event": "low",
-      "audience": "medium",
-      "language": "primary"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 场景描述的影像语体

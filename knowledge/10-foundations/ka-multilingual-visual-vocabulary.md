@@ -49,26 +49,7 @@
     "ka.medium-animation",
     "ka.medium-shortform-video"
   ],
-  "source_status": "derived",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "high",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "medium",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "low",
-      "world": "medium",
-      "event": "low",
-      "audience": "medium",
-      "language": "high"
-    }
-  }
+  "source_status": "derived"
 }
 ---
 # 多语种影视术语映射

@@ -73,35 +73,11 @@ def validate_repository(root: Path) -> Dict[str, Any]:
     protocol_ids = {asset["id"] for asset in assets if asset["type"] == "workflow_protocol"}
     skill_ids = {manifest["id"] for manifest in manifests}
 
-    _posture_levels = {"primary", "high", "medium", "low", "suppress"}
-    _posture_source_keys = {"discover", "construct", "generate"}
-    _posture_certainty_keys = {"certain", "exploring", "lost"}
-    _posture_focus_keys = {"character", "world", "event", "audience", "language"}
-
     for asset in assets:
         if asset["type"] == "knowledge_atom":
             for linked_id in asset.get("links", []):
                 if linked_id not in asset_by_id:
                     errors.append(f"{relative_path(root, asset['_path'])}: unknown link id '{linked_id}'")
-            pr = asset.get("posture_relevance")
-            if pr is not None:
-                if not isinstance(pr, dict):
-                    errors.append(f"{relative_path(root, asset['_path'])}: posture_relevance must be an object")
-                else:
-                    for axis, valid_keys in (
-                        ("source", _posture_source_keys),
-                        ("certainty", _posture_certainty_keys),
-                        ("focus", _posture_focus_keys),
-                    ):
-                        axis_val = pr.get(axis, {})
-                        if not isinstance(axis_val, dict):
-                            errors.append(f"{relative_path(root, asset['_path'])}: posture_relevance.{axis} must be an object")
-                            continue
-                        for k, v in axis_val.items():
-                            if k not in valid_keys:
-                                errors.append(f"{relative_path(root, asset['_path'])}: posture_relevance.{axis} has unknown key '{k}'")
-                            if v not in _posture_levels:
-                                errors.append(f"{relative_path(root, asset['_path'])}: posture_relevance.{axis}.{k} has invalid value '{v}'")
         elif asset["type"] == "workflow_protocol":
             for rubric_id in asset["rubrics"]:
                 if rubric_id not in rubric_ids:

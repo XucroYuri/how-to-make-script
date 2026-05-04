@@ -40,26 +40,7 @@
     "ka.medium-commercial",
     "ka.pacing-rhythm"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "high",
-      "generate": "medium"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "medium",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "high",
-      "audience": "primary",
-      "language": "medium"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 短视频脚本媒介包

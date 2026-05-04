@@ -45,26 +45,7 @@
     "ka.character-voice-consistency",
     "ka.dialogue-subtext"
   ],
-  "source_status": "derived",
-  "posture_relevance": {
-    "source": {
-      "discover": "high",
-      "construct": "high",
-      "generate": "primary"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "high",
-      "lost": "medium"
-    },
-    "focus": {
-      "character": "primary",
-      "world": "low",
-      "event": "high",
-      "audience": "medium",
-      "language": "high"
-    }
-  }
+  "source_status": "derived"
 }
 ---
 # 触发式行为画像

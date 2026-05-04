@@ -50,26 +50,7 @@
     "ka.exploration-review-separation",
     "ka.rewrite-diagnosis"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "primary",
-      "construct": "high",
-      "generate": "high"
-    },
-    "certainty": {
-      "certain": "medium",
-      "exploring": "primary",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "medium",
-      "audience": "low",
-      "language": "low"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 发散-收敛循环

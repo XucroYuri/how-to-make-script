@@ -42,26 +42,7 @@
     "ka.commissioning-fit",
     "ka.boundary-first-guidance"
   ],
-  "source_status": "curated",
-  "posture_relevance": {
-    "source": {
-      "discover": "low",
-      "construct": "high",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "medium",
-      "lost": "suppress"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "low",
-      "audience": "low",
-      "language": "low"
-    }
-  }
+  "source_status": "curated"
 }
 ---
 # 电影开发小组模式

@@ -43,26 +43,7 @@
     "ka.story-goal",
     "ka.theme-pressure"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "high",
-      "construct": "high",
-      "generate": "primary"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "high",
-      "lost": "medium"
-    },
-    "focus": {
-      "character": "primary",
-      "world": "low",
-      "event": "high",
-      "audience": "medium",
-      "language": "low"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 人物弧光

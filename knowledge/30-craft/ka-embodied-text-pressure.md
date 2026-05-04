@@ -48,26 +48,7 @@
     "ka.scene-function",
     "ka.dialogue-subtext"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "primary",
-      "construct": "medium",
-      "generate": "high"
-    },
-    "certainty": {
-      "certain": "medium",
-      "exploring": "high",
-      "lost": "medium"
-    },
-    "focus": {
-      "character": "high",
-      "world": "low",
-      "event": "high",
-      "audience": "primary",
-      "language": "high"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 具身化文本压力

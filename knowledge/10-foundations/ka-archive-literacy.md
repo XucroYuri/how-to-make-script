@@ -51,26 +51,7 @@
     "ka.source-span-traceability",
     "ka.script-as-coordination-artifact"
   ],
-  "source_status": "curated",
-  "posture_relevance": {
-    "source": {
-      "discover": "high",
-      "construct": "medium",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "medium",
-      "exploring": "high",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "low",
-      "world": "high",
-      "event": "medium",
-      "audience": "low",
-      "language": "low"
-    }
-  }
+  "source_status": "curated"
 }
 ---
 # 编剧档案素养

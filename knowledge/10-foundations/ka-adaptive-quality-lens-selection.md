@@ -52,26 +52,7 @@
     "ka.scenario-factorization",
     "ka.reference-expansion-balance"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "low",
-      "construct": "primary",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "primary",
-      "exploring": "medium",
-      "lost": "suppress"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "medium",
-      "audience": "primary",
-      "language": "low"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 自适应质检镜头选择

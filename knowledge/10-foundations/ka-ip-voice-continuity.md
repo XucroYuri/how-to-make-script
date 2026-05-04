@@ -49,26 +49,7 @@
     "ka.character-arc",
     "ka.creative-pluralism"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "low",
-      "construct": "high",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "medium",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "primary",
-      "world": "low",
-      "event": "low",
-      "audience": "medium",
-      "language": "primary"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # IP 角色声音延续

@@ -52,26 +52,7 @@
     "ka.screenwriting-history-shift",
     "ka.archive-literacy"
   ],
-  "source_status": "curated",
-  "posture_relevance": {
-    "source": {
-      "discover": "high",
-      "construct": "medium",
-      "generate": "medium"
-    },
-    "certainty": {
-      "certain": "medium",
-      "exploring": "high",
-      "lost": "high"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "low",
-      "audience": "low",
-      "language": "low"
-    }
-  }
+  "source_status": "curated"
 }
 ---
 # 编剧的刻意训练

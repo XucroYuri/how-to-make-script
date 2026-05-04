@@ -45,26 +45,7 @@
     "ka.scene-function",
     "ka.dialogue-subtext"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "high",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "medium",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "medium",
-      "world": "medium",
-      "event": "high",
-      "audience": "primary",
-      "language": "high"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 信息揭示控制

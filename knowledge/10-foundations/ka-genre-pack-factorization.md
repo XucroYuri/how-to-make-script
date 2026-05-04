@@ -45,26 +45,7 @@
     "ka.creative-pluralism",
     "ka.false-universal-warning"
   ],
-  "source_status": "derived",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "high",
-      "generate": "medium"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "high",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "medium",
-      "world": "medium",
-      "event": "high",
-      "audience": "high",
-      "language": "low"
-    }
-  }
+  "source_status": "derived"
 }
 ---
 # 类型包因子化

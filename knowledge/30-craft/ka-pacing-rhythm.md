@@ -45,26 +45,7 @@
     "ka.medium-short-drama",
     "ka.medium-shortform-video"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "high",
-      "generate": "medium"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "high",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "medium",
-      "world": "low",
-      "event": "primary",
-      "audience": "primary",
-      "language": "medium"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 节奏与韵律

@@ -41,26 +41,7 @@
     "ka.character-arc",
     "ka.pacing-rhythm"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "high",
-      "construct": "high",
-      "generate": "medium"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "high",
-      "lost": "medium"
-    },
-    "focus": {
-      "character": "high",
-      "world": "medium",
-      "event": "primary",
-      "audience": "high",
-      "language": "low"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 电影长片媒介包

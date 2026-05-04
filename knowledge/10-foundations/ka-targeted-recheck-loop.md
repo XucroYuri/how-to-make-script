@@ -51,26 +51,7 @@
     "ka.review-lens-isolation",
     "ka.command-artifact-mapping"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "low",
-      "construct": "primary",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "primary",
-      "exploring": "medium",
-      "lost": "suppress"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "low",
-      "audience": "medium",
-      "language": "low"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 定向复查回路

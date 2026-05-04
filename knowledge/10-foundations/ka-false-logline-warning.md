@@ -46,26 +46,7 @@
     "ka.conflict-pressure",
     "ka.reference-expansion-balance"
   ],
-  "source_status": "derived",
-  "posture_relevance": {
-    "source": {
-      "discover": "high",
-      "construct": "medium",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "medium",
-      "exploring": "high",
-      "lost": "medium"
-    },
-    "focus": {
-      "character": "medium",
-      "world": "low",
-      "event": "high",
-      "audience": "medium",
-      "language": "low"
-    }
-  }
+  "source_status": "derived"
 }
 ---
 # 伪 Logline 预警

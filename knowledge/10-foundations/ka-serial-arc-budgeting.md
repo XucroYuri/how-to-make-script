@@ -44,26 +44,7 @@
     "ka.medium-short-drama",
     "ka.causality-chain"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "low",
-      "construct": "primary",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "primary",
-      "exploring": "medium",
-      "lost": "suppress"
-    },
-    "focus": {
-      "character": "medium",
-      "world": "low",
-      "event": "primary",
-      "audience": "high",
-      "language": "low"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 连续剧弧光预算

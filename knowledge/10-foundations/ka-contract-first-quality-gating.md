@@ -52,26 +52,7 @@
     "ka.scenario-factorization",
     "ka.boundary-first-guidance"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "low",
-      "construct": "primary",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "primary",
-      "exploring": "medium",
-      "lost": "suppress"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "low",
-      "audience": "low",
-      "language": "low"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 契约优先的质检逻辑

@@ -43,26 +43,7 @@
     "ka.exposition-control",
     "ka.conflict-pressure"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "high",
-      "generate": "high"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "high",
-      "lost": "medium"
-    },
-    "focus": {
-      "character": "high",
-      "world": "medium",
-      "event": "primary",
-      "audience": "primary",
-      "language": "medium"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 惊悚类型机制

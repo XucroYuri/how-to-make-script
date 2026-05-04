@@ -58,26 +58,7 @@
     "ka.opening-job-selection",
     "ka.platform-attention-economy"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "low",
-      "construct": "medium",
-      "generate": "high"
-    },
-    "certainty": {
-      "certain": "primary",
-      "exploring": "high",
-      "lost": "suppress"
-    },
-    "focus": {
-      "character": "medium",
-      "world": "low",
-      "event": "high",
-      "audience": "primary",
-      "language": "medium"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 受众代理人格系统

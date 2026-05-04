@@ -45,26 +45,7 @@
     "ka.theme-pressure",
     "ka.creative-pluralism"
   ],
-  "source_status": "derived",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "primary",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "primary",
-      "exploring": "high",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "primary",
-      "audience": "medium",
-      "language": "low"
-    }
-  }
+  "source_status": "derived"
 }
 ---
 # 结构族选择

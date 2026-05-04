@@ -39,26 +39,7 @@
     "ka.scene-function",
     "ka.exposition-control"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "high",
-      "generate": "medium"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "high",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "medium",
-      "world": "high",
-      "event": "medium",
-      "audience": "high",
-      "language": "low"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 动画剧本媒介包

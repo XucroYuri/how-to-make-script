@@ -51,26 +51,7 @@
     "ka.platform-attention-economy",
     "ka.medium-shortform-video"
   ],
-  "source_status": "derived",
-  "posture_relevance": {
-    "source": {
-      "discover": "high",
-      "construct": "high",
-      "generate": "medium"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "high",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "medium",
-      "world": "low",
-      "event": "medium",
-      "audience": "primary",
-      "language": "low"
-    }
-  }
+  "source_status": "derived"
 }
 ---
 # 受众需求状态

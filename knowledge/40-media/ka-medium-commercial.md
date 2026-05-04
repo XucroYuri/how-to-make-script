@@ -40,26 +40,7 @@
     "ka.scene-function",
     "ka.pacing-rhythm"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "low",
-      "construct": "primary",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "primary",
-      "exploring": "medium",
-      "lost": "suppress"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "medium",
-      "audience": "primary",
-      "language": "medium"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 广告脚本媒介包

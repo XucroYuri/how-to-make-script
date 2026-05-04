@@ -44,26 +44,7 @@
     "ka.scene-function",
     "ka.reactive-comedy-loop"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "high",
-      "construct": "medium",
-      "generate": "primary"
-    },
-    "certainty": {
-      "certain": "medium",
-      "exploring": "high",
-      "lost": "medium"
-    },
-    "focus": {
-      "character": "primary",
-      "world": "low",
-      "event": "high",
-      "audience": "primary",
-      "language": "high"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 喜剧类型机制

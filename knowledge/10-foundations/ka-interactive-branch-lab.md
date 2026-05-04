@@ -44,26 +44,7 @@
     "ka.scenario-factorization",
     "ka.boundary-first-guidance"
   ],
-  "source_status": "curated",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "high",
-      "generate": "high"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "high",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "high",
-      "audience": "medium",
-      "language": "low"
-    }
-  }
+  "source_status": "curated"
 }
 ---
 # 互动分支实验室

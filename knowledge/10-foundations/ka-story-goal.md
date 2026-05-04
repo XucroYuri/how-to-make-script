@@ -45,26 +45,7 @@
     "ka.causality-chain",
     "ka.character-arc"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "primary",
-      "construct": "high",
-      "generate": "high"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "high",
-      "lost": "primary"
-    },
-    "focus": {
-      "character": "high",
-      "world": "low",
-      "event": "primary",
-      "audience": "high",
-      "language": "low"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 故事目标

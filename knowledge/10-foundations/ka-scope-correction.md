@@ -49,26 +49,7 @@
     "ka.boundary-first-guidance",
     "ka.exploration-review-separation"
   ],
-  "source_status": "derived",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "high",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "high",
-      "lost": "medium"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "medium",
-      "audience": "low",
-      "language": "low"
-    }
-  }
+  "source_status": "derived"
 }
 ---
 # 范围修正

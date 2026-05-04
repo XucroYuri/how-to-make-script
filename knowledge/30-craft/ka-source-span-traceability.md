@@ -45,26 +45,7 @@
     "ka.video-generation-shot-economy",
     "ka.source-of-truth-runtime-split"
   ],
-  "source_status": "derived",
-  "posture_relevance": {
-    "source": {
-      "discover": "low",
-      "construct": "high",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "medium",
-      "lost": "suppress"
-    },
-    "focus": {
-      "character": "low",
-      "world": "high",
-      "event": "medium",
-      "audience": "low",
-      "language": "low"
-    }
-  }
+  "source_status": "derived"
 }
 ---
 # 源片段可追溯性

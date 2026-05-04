@@ -50,26 +50,7 @@
     "ka.scope-correction",
     "ka.divergence-convergence-loop"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "high",
-      "construct": "medium",
-      "generate": "medium"
-    },
-    "certainty": {
-      "certain": "medium",
-      "exploring": "high",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "low",
-      "audience": "low",
-      "language": "low"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 异议保留循环

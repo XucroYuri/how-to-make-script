@@ -58,26 +58,7 @@
     "ka.scope-correction",
     "ka.boundary-first-guidance"
   ],
-  "source_status": "derived",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "high",
-      "generate": "medium"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "high",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "low",
-      "world": "medium",
-      "event": "high",
-      "audience": "medium",
-      "language": "low"
-    }
-  }
+  "source_status": "derived"
 }
 ---
 # 场景因子化

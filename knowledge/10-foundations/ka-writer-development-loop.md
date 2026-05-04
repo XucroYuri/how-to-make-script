@@ -51,26 +51,7 @@
     "ka.rewrite-diagnosis",
     "ka.screenwriting-history-shift"
   ],
-  "source_status": "derived",
-  "posture_relevance": {
-    "source": {
-      "discover": "high",
-      "construct": "medium",
-      "generate": "medium"
-    },
-    "certainty": {
-      "certain": "medium",
-      "exploring": "high",
-      "lost": "high"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "low",
-      "audience": "low",
-      "language": "low"
-    }
-  }
+  "source_status": "derived"
 }
 ---
 # 编剧成长循环

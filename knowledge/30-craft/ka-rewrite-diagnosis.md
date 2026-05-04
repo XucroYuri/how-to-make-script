@@ -44,26 +44,7 @@
     "ka.scene-function",
     "ka.dialogue-subtext"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "low",
-      "construct": "primary",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "primary",
-      "exploring": "high",
-      "lost": "suppress"
-    },
-    "focus": {
-      "character": "high",
-      "world": "medium",
-      "event": "high",
-      "audience": "high",
-      "language": "high"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 改稿诊断

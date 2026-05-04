@@ -52,26 +52,7 @@
     "ka.medium-commercial",
     "ka.medium-short-drama"
   ],
-  "source_status": "derived",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "high",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "high",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "medium",
-      "audience": "primary",
-      "language": "low"
-    }
-  }
+  "source_status": "derived"
 }
 ---
 # 平台注意力经济

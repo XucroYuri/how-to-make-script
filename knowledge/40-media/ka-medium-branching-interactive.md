@@ -39,26 +39,7 @@
     "ka.medium-game-narrative",
     "ka.causality-chain"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "high",
-      "generate": "high"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "high",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "medium",
-      "world": "medium",
-      "event": "primary",
-      "audience": "high",
-      "language": "low"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 分支互动叙事媒介包

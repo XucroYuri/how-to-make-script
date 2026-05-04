@@ -50,26 +50,7 @@
     "ka.room-artifact-ladder",
     "ka.source-span-traceability"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "low",
-      "construct": "high",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "medium",
-      "lost": "suppress"
-    },
-    "focus": {
-      "character": "medium",
-      "world": "medium",
-      "event": "medium",
-      "audience": "low",
-      "language": "low"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 故事记忆检查点

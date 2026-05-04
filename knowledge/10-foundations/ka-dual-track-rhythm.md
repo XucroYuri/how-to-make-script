@@ -46,26 +46,7 @@
     "ka.scene-function",
     "ka.character-drive-quartet"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "low",
-      "construct": "high",
-      "generate": "medium"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "medium",
-      "lost": "suppress"
-    },
-    "focus": {
-      "character": "medium",
-      "world": "low",
-      "event": "primary",
-      "audience": "high",
-      "language": "low"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 双轨节奏

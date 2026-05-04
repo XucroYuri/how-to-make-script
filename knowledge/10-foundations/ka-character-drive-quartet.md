@@ -44,26 +44,7 @@
     "ka.conflict-pressure",
     "ka.theme-pressure"
   ],
-  "source_status": "derived",
-  "posture_relevance": {
-    "source": {
-      "discover": "high",
-      "construct": "high",
-      "generate": "primary"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "high",
-      "lost": "medium"
-    },
-    "focus": {
-      "character": "primary",
-      "world": "low",
-      "event": "medium",
-      "audience": "low",
-      "language": "low"
-    }
-  }
+  "source_status": "derived"
 }
 ---
 # 角色驱动四联体

@@ -50,26 +50,7 @@
     "ka.character-arc",
     "ka.triggered-behavior-profile"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "high",
-      "generate": "medium"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "medium",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "primary",
-      "world": "low",
-      "event": "low",
-      "audience": "medium",
-      "language": "high"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 角色声音一致性

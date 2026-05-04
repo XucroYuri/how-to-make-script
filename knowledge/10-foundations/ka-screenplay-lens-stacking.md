@@ -53,26 +53,7 @@
     "ka.viewer-inference-guidance",
     "ka.screenwriting-deliberate-practice"
   ],
-  "source_status": "curated",
-  "posture_relevance": {
-    "source": {
-      "discover": "low",
-      "construct": "primary",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "primary",
-      "exploring": "medium",
-      "lost": "suppress"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "low",
-      "audience": "primary",
-      "language": "low"
-    }
-  }
+  "source_status": "curated"
 }
 ---
 # 剧本问题的多镜头拆解

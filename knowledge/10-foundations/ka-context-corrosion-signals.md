@@ -51,26 +51,7 @@
     "ka.reference-expansion-balance",
     "ka.scope-correction"
   ],
-  "source_status": "derived",
-  "posture_relevance": {
-    "source": {
-      "discover": "low",
-      "construct": "high",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "medium",
-      "lost": "suppress"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "low",
-      "audience": "low",
-      "language": "low"
-    }
-  }
+  "source_status": "derived"
 }
 ---
 # 上下文腐化信号

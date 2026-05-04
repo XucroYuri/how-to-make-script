@@ -43,26 +43,7 @@
     "ka.scene-function",
     "ka.boundary-first-guidance"
   ],
-  "source_status": "curated",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "high",
-      "generate": "medium"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "medium",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "medium",
-      "audience": "low",
-      "language": "low"
-    }
-  }
+  "source_status": "curated"
 }
 ---
 # 动画 Story Trust 循环

@@ -52,26 +52,7 @@
     "ka.medium-episode",
     "ka.medium-feature-film"
   ],
-  "source_status": "derived",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "high",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "high",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "low",
-      "audience": "primary",
-      "language": "low"
-    }
-  }
+  "source_status": "derived"
 }
 ---
 # 委制适配

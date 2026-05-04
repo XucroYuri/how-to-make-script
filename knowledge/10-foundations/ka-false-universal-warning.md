@@ -49,26 +49,7 @@
     "ka.commissioning-fit",
     "ka.audience-need-state"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "high",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "high",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "medium",
-      "audience": "medium",
-      "language": "low"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 伪普遍规律预警

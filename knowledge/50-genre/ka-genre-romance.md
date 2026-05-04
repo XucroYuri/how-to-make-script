@@ -43,26 +43,7 @@
     "ka.character-arc",
     "ka.theme-pressure"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "primary",
-      "construct": "medium",
-      "generate": "high"
-    },
-    "certainty": {
-      "certain": "medium",
-      "exploring": "high",
-      "lost": "medium"
-    },
-    "focus": {
-      "character": "primary",
-      "world": "low",
-      "event": "high",
-      "audience": "primary",
-      "language": "high"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 爱情类型机制

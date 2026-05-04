@@ -47,26 +47,7 @@
     "ka.scene-function",
     "ka.dialogue-subtext"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "high",
-      "generate": "high"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "high",
-      "lost": "medium"
-    },
-    "focus": {
-      "character": "high",
-      "world": "low",
-      "event": "primary",
-      "audience": "high",
-      "language": "medium"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 冲突压力

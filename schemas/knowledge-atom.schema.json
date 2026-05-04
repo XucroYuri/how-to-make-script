@@ -44,38 +44,7 @@
     "prompt_primitives": {"type": "array", "minItems": 1, "items": {"type": "string"}},
     "evaluation_checks": {"type": "array", "minItems": 1, "items": {"type": "string"}},
     "links": {"type": "array", "items": {"type": "string"}},
-    "source_status": {"type": "string", "enum": ["synthesized", "derived", "curated"]},
-    "posture_relevance": {
-      "type": "object",
-      "properties": {
-        "source": {
-          "type": "object",
-          "properties": {
-            "discover": {"type": "string", "enum": ["primary", "high", "medium", "low", "suppress"]},
-            "construct": {"type": "string", "enum": ["primary", "high", "medium", "low", "suppress"]},
-            "generate": {"type": "string", "enum": ["primary", "high", "medium", "low", "suppress"]}
-          }
-        },
-        "certainty": {
-          "type": "object",
-          "properties": {
-            "certain":   {"type": "string", "enum": ["primary", "high", "medium", "low", "suppress"]},
-            "exploring": {"type": "string", "enum": ["primary", "high", "medium", "low", "suppress"]},
-            "lost":      {"type": "string", "enum": ["primary", "high", "medium", "low", "suppress"]}
-          }
-        },
-        "focus": {
-          "type": "object",
-          "properties": {
-            "character": {"type": "string", "enum": ["primary", "high", "medium", "low", "suppress"]},
-            "world":     {"type": "string", "enum": ["primary", "high", "medium", "low", "suppress"]},
-            "event":     {"type": "string", "enum": ["primary", "high", "medium", "low", "suppress"]},
-            "audience":  {"type": "string", "enum": ["primary", "high", "medium", "low", "suppress"]},
-            "language":  {"type": "string", "enum": ["primary", "high", "medium", "low", "suppress"]}
-          }
-        }
-      }
-    }
+    "source_status": {"type": "string", "enum": ["synthesized", "derived", "curated"]}
   }
 }
 

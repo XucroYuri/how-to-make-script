@@ -44,26 +44,7 @@
     "ka.audience-need-state",
     "ka.commissioning-fit"
   ],
-  "source_status": "curated",
-  "posture_relevance": {
-    "source": {
-      "discover": "low",
-      "construct": "high",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "medium",
-      "lost": "suppress"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "low",
-      "audience": "medium",
-      "language": "low"
-    }
-  }
+  "source_status": "curated"
 }
 ---
 # 品牌内容工作室循环

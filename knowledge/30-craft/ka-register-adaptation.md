@@ -49,26 +49,7 @@
     "ka.medium-shortform-video",
     "ka.dialogue-subtext"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "high",
-      "generate": "medium"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "medium",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "high",
-      "world": "medium",
-      "event": "low",
-      "audience": "high",
-      "language": "primary"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 语体与语域适配

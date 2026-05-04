@@ -43,26 +43,7 @@
     "ka.causality-chain",
     "ka.pacing-rhythm"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "primary",
-      "generate": "medium"
-    },
-    "certainty": {
-      "certain": "primary",
-      "exploring": "high",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "high",
-      "world": "medium",
-      "event": "primary",
-      "audience": "high",
-      "language": "medium"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 场景功能

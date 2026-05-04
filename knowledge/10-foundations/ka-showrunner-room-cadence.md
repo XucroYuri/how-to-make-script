@@ -43,26 +43,7 @@
     "ka.audience-need-state",
     "ka.conflict-pressure"
   ],
-  "source_status": "curated",
-  "posture_relevance": {
-    "source": {
-      "discover": "low",
-      "construct": "high",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "medium",
-      "lost": "suppress"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "medium",
-      "audience": "low",
-      "language": "low"
-    }
-  }
+  "source_status": "curated"
 }
 ---
 # Showrunner 房间节奏

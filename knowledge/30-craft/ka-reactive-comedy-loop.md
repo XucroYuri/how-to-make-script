@@ -45,26 +45,7 @@
     "ka.scene-function",
     "ka.triggered-behavior-profile"
   ],
-  "source_status": "derived",
-  "posture_relevance": {
-    "source": {
-      "discover": "high",
-      "construct": "medium",
-      "generate": "primary"
-    },
-    "certainty": {
-      "certain": "medium",
-      "exploring": "high",
-      "lost": "medium"
-    },
-    "focus": {
-      "character": "primary",
-      "world": "low",
-      "event": "high",
-      "audience": "primary",
-      "language": "high"
-    }
-  }
+  "source_status": "derived"
 }
 ---
 # 反应式喜剧回路

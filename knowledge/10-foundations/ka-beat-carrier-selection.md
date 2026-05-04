@@ -44,26 +44,7 @@
     "ka.causality-chain",
     "ka.command-artifact-mapping"
   ],
-  "source_status": "derived",
-  "posture_relevance": {
-    "source": {
-      "discover": "low",
-      "construct": "primary",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "primary",
-      "exploring": "medium",
-      "lost": "suppress"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "primary",
-      "audience": "medium",
-      "language": "low"
-    }
-  }
+  "source_status": "derived"
 }
 ---
 # Beat 载体选择

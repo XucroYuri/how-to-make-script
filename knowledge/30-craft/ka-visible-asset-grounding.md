@@ -45,26 +45,7 @@
     "ka.screenplay-to-video-boundary",
     "ka.multilingual-visual-vocabulary"
   ],
-  "source_status": "derived",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "high",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "medium",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "low",
-      "world": "high",
-      "event": "medium",
-      "audience": "medium",
-      "language": "low"
-    }
-  }
+  "source_status": "derived"
 }
 ---
 # 可见资产锚定

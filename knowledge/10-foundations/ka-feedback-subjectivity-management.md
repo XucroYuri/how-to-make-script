@@ -52,26 +52,7 @@
     "ka.targeted-recheck-loop",
     "ka.screenplay-lens-stacking"
   ],
-  "source_status": "curated",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "high",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "high",
-      "lost": "medium"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "low",
-      "audience": "high",
-      "language": "low"
-    }
-  }
+  "source_status": "curated"
 }
 ---
 # 反馈主观性管理

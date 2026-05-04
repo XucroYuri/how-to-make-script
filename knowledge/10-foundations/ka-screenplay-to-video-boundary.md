@@ -46,26 +46,7 @@
     "ka.prompt-delegation-levels",
     "ka.medium-shortform-video"
   ],
-  "source_status": "derived",
-  "posture_relevance": {
-    "source": {
-      "discover": "low",
-      "construct": "high",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "medium",
-      "lost": "suppress"
-    },
-    "focus": {
-      "character": "low",
-      "world": "medium",
-      "event": "low",
-      "audience": "low",
-      "language": "low"
-    }
-  }
+  "source_status": "derived"
 }
 ---
 # 剧本与视频生成 brief 的边界

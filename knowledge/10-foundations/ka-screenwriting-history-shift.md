@@ -51,26 +51,7 @@
     "ka.medium-short-drama",
     "ka.medium-branching-interactive"
   ],
-  "source_status": "curated",
-  "posture_relevance": {
-    "source": {
-      "discover": "high",
-      "construct": "medium",
-      "generate": "low"
-    },
-    "certainty": {
-      "certain": "medium",
-      "exploring": "high",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "low",
-      "world": "high",
-      "event": "medium",
-      "audience": "medium",
-      "language": "low"
-    }
-  }
+  "source_status": "curated"
 }
 ---
 # 剧本写作的历史变体

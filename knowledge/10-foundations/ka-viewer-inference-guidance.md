@@ -53,26 +53,7 @@
     "ka.scene-function",
     "ka.pacing-rhythm"
   ],
-  "source_status": "curated",
-  "posture_relevance": {
-    "source": {
-      "discover": "high",
-      "construct": "medium",
-      "generate": "medium"
-    },
-    "certainty": {
-      "certain": "medium",
-      "exploring": "high",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "medium",
-      "world": "low",
-      "event": "medium",
-      "audience": "primary",
-      "language": "low"
-    }
-  }
+  "source_status": "curated"
 }
 ---
 # 观众推理引导

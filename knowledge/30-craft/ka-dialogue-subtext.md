@@ -42,26 +42,7 @@
     "ka.conflict-pressure",
     "ka.exposition-control"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "high",
-      "construct": "high",
-      "generate": "primary"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "high",
-      "lost": "medium"
-    },
-    "focus": {
-      "character": "primary",
-      "world": "low",
-      "event": "medium",
-      "audience": "high",
-      "language": "primary"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 对白与潜台词

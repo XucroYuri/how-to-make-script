@@ -52,26 +52,7 @@
     "ka.false-universal-warning",
     "ka.scope-correction"
   ],
-  "source_status": "derived",
-  "posture_relevance": {
-    "source": {
-      "discover": "high",
-      "construct": "high",
-      "generate": "medium"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "high",
-      "lost": "medium"
-    },
-    "focus": {
-      "character": "medium",
-      "world": "medium",
-      "event": "high",
-      "audience": "high",
-      "language": "medium"
-    }
-  }
+  "source_status": "derived"
 }
 ---
 # 参考范式使用法

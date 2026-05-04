@@ -44,26 +44,7 @@
     "ka.story-goal",
     "ka.rewrite-diagnosis"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "primary",
-      "generate": "medium"
-    },
-    "certainty": {
-      "certain": "primary",
-      "exploring": "high",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "medium",
-      "world": "low",
-      "event": "primary",
-      "audience": "medium",
-      "language": "low"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 因果链

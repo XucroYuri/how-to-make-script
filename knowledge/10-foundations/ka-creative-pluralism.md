@@ -50,26 +50,7 @@
     "ka.audience-need-state",
     "ka.commissioning-fit"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "primary",
-      "construct": "medium",
-      "generate": "high"
-    },
-    "certainty": {
-      "certain": "medium",
-      "exploring": "primary",
-      "lost": "medium"
-    },
-    "focus": {
-      "character": "low",
-      "world": "low",
-      "event": "low",
-      "audience": "low",
-      "language": "low"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 创作多路径

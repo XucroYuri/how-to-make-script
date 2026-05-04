@@ -46,26 +46,7 @@
     "ka.exposition-control",
     "ka.platform-attention-economy"
   ],
-  "source_status": "derived",
-  "posture_relevance": {
-    "source": {
-      "discover": "medium",
-      "construct": "high",
-      "generate": "medium"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "high",
-      "lost": "primary"
-    },
-    "focus": {
-      "character": "high",
-      "world": "medium",
-      "event": "high",
-      "audience": "primary",
-      "language": "medium"
-    }
-  }
+  "source_status": "derived"
 }
 ---
 # 开场工作选择

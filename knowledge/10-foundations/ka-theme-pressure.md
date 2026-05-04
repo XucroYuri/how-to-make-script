@@ -45,26 +45,7 @@
     "ka.character-arc",
     "ka.conflict-pressure"
   ],
-  "source_status": "synthesized",
-  "posture_relevance": {
-    "source": {
-      "discover": "primary",
-      "construct": "high",
-      "generate": "high"
-    },
-    "certainty": {
-      "certain": "high",
-      "exploring": "high",
-      "lost": "medium"
-    },
-    "focus": {
-      "character": "high",
-      "world": "medium",
-      "event": "high",
-      "audience": "high",
-      "language": "medium"
-    }
-  }
+  "source_status": "synthesized"
 }
 ---
 # 主题压力

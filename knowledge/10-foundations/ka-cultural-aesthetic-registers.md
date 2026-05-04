@@ -49,26 +49,7 @@
     "ka.false-universal-warning",
     "ka.register-adaptation"
   ],
-  "source_status": "derived",
-  "posture_relevance": {
-    "source": {
-      "discover": "high",
-      "construct": "medium",
-      "generate": "medium"
-    },
-    "certainty": {
-      "certain": "medium",
-      "exploring": "high",
-      "lost": "low"
-    },
-    "focus": {
-      "character": "medium",
-      "world": "high",
-      "event": "low",
-      "audience": "high",
-      "language": "high"
-    }
-  }
+  "source_status": "derived"
 }
 ---
 # 文化美学语汇锚点
