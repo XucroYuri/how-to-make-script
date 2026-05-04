@@ -26,8 +26,12 @@ def parse_supported_outputs(path: Path) -> Set[str]:
     outputs: Set[str] = set()
     for line in path.read_text(encoding="utf-8").splitlines():
         line = line.strip()
+        # Old format: "- `output_name`: description"
         if line.startswith("- `") and "`:" in line:
             outputs.add(line.split("`", 2)[1])
+        # New format: "### `output_name`"
+        elif line.startswith("### `") and line.endswith("`"):
+            outputs.add(line[5:-1])
     return outputs
 
 

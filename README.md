@@ -79,50 +79,50 @@ Full example chain:
 - [Artifact](./examples/golden/feature-drama/artifact.md)
 - [Quick route examples](./examples/agent/quickstart.json)
 
-## What Makes It Different
+## Why This Approach Works
 
-| Principle | How it works |
-| --- | --- |
-| **`route-first`** | Primary route anchored by `intent x medium x stage x output`; `constraints` refine tie-breaks and loading |
-| **`posture-aware`** | Detects the writer's current creative state (source mode, certainty, attention focus) before routing; adapts guidance intensity accordingly |
-| **`audience-proxy`** | Multi-persona progressive scene reading with anti-sycophancy guard; simulates real viewer patience and concern rather than checklist scoring |
-| **`emergence-first`** | Collision templates and active conditioning protocols create structural pressure for emergent scenes, not just correct ones |
-| **`research-first`** | Stable knowledge lives in versioned assets, not hidden chat memory |
-| **`bounded-loading`** | Agents load the smallest useful bundle instead of the whole repository; posture signals determine atom priority order |
-| **`challenge-friendly`** | Counterexamples, objections, and field reports are first-class improvement inputs |
-| **`multi-surface`** | Covers writing artifacts, review, team orchestration, project surfaces, and downstream handoff |
+Screenwriting work isn't just "write a scene" or "give me feedback." It depends on where you are in the process, what kind of story you're telling, and what you actually need next. This repository understands that context matters.
 
-## What It Helps You Do
+When you ask for help, the system figures out what you actually need by looking at:
 
-- Turn a vague idea into concrete artifacts: `logline`, `premise`, `beat_sheet`, `outline`, `scene_draft`, `commercial_script`
-- Route each request to the right protocol, rubric, and minimal knowledge bundle
-- Compare multiple viable creative directions instead of locking into one method
-- Evaluate scene experience with `audience_proxy_report` — multi-persona honest feedback, not diplomatically softened scoring
-- Break predictable scene generation with collision templates and emergence conditioning
-- Diagnose drafts with `rewrite_report`, `quality_gate_report`, `boundary_map`, or `scope_correction`
-- Handle broad theory and long-form continuity with `research_background_map` and `story_memory_checkpoint`
-- Bridge into voice calibration, multilingual visual language, and screen-to-video handoff
-- Design multi-agent or writers' room workflows with defined casts, dispatch plans, and handoff contracts
+- **Your intent** — Are you discovering, structuring, drafting, or reviewing?
+- **Your medium** — Feature film, commercial, interactive, or something else?
+- **Where you are in the process** — Early ideation, mid-draft, or polishing?
+- **What output format makes sense** — A beat sheet? Scene cards? A rewrite diagnosis?
 
-## Who It Is For
+It loads just enough knowledge to help — not the entire library. Then it applies structured review so you get honest feedback, not softened praise. The process is designed to create the unexpected, structurally coherent scenes that emerge from creative pressure, not just correct-by-checklist results.
 
-**Good fit**
+And when you disagree or something feels off, you can challenge it. Your feedback becomes part of the next iteration.
 
-| Audience | What you get |
-| --- | --- |
-| Writers and story developers | Durable reference, structure, and self-check instead of loose prompt fragments |
-| Agent builders | Explicit routing, bounded loading, reusable contracts, and machine-readable registries |
-| Script reviewers and educators | Rubrics, failure contrasts, and challengeable heuristics instead of vague taste judgments |
-| Multi-agent workflow designers | Team modes, dispatch patterns, handoff packets, and role-aware orchestration |
+## Real Moments Where This Helps
 
-**Not the best fit**
+**You've got a vague idea.** You know the emotional core but haven't figured out the shape yet. You need help turning it into a logline, premise, or beat sheet — something concrete you can work with.
 
-| Audience | Why |
-| --- | --- |
-| People looking for one magic prompt | This repo optimizes for reusable systems, not shortcut prompt hacks |
-| People who want one absolute method | The design assumes screenplay work is plural, unstable, and context-bound |
-| People who only want a polished app UI | This is a repo-first knowledge and skill system, not a hosted product |
+**You've written a scene that feels flat.** You want honest feedback without the "it's good but maybe try..." dance. You want to know where the scene loses momentum and what to do about it.
 
+**You're staring at three different directions** for the next act and can't decide which one earns its keep. You need to see the tradeoffs clearly before committing.
+
+**You're building an agent workflow** and need explicit contracts: what gets passed between steps, where quality gates sit, and how handoffs stay clean when things change.
+
+**You're reviewing someone else's draft** and want structured rubrics instead of relying on taste alone. Or you're teaching and need clear criteria that students can apply to their own work.
+
+**You've got a sprawling story** and need to track continuity without losing the thread. Or you're switching between writing sessions and want a clean handoff point.
+
+## Who Will Find This Useful
+
+This repository is built for people who want reusable systems, not magic prompts.
+
+**Writers and story developers** — You get durable reference materials, clear structure, and self-check tools that survive beyond a single chat session. No more losing the thread when context resets.
+
+**Agent builders and workflow designers** — You get explicit routing logic, bounded knowledge loading, reusable contracts, and machine-readable registries. Everything is designed to compose cleanly.
+
+**Script reviewers and educators** — You get rubrics, failure contrasts, and challengeable heuristics. Review criteria are explicit and debatable, not hidden in taste judgments.
+
+**Multi-agent system designers** — You get team orchestration patterns, dispatch plans, handoff contracts, and role-aware coordination. Everything you need to design collaborative workflows.
+
+This may not be the best fit if you're looking for a single magic prompt that works for everything. The design assumes screenplay work is plural — there are many valid approaches, and context determines which one serves you. This is also a repository-first system, not a hosted UI product. You install it locally and work with the knowledge directly.
+
+---
 
 ## Quick Start
 
@@ -210,7 +210,7 @@ python3 -m unittest discover -s tests -v
 
 ## How The System Works
 
-The diagram below is the high-level architecture view of the repository's routing and improvement loop.
+The diagram below shows the flow from request to artifact to improvement. At each step, the system classifies what you need, loads the minimum useful knowledge, generates an artifact, and applies quality gates before offering it to you.
 
 <p align="center">
   <img src="./docs/assets/readme-hero.svg" alt="how-to-make-script architecture overview" width="100%" />
@@ -227,6 +227,22 @@ flowchart LR
     F --> G["Improve Assets"]
     G -.->|"next run"| S
 ```
+
+Here's what each step actually does:
+
+1. **Preflight sync** — Makes sure you're working against the latest committed knowledge, so nothing has drifted since the last validated state.
+
+2. **Classify the request** — The system parses your intent (discover? structure? draft? review?), medium, creative stage, and desired output. This determines the route.
+
+3. **Load a bounded bundle** — Instead of dumping the entire repository, it loads only the protocol, rubric, and atoms relevant to your route. This keeps responses focused and relevant.
+
+4. **Generate the artifact** — The protocol guides generation. The system writes to a defined output format with clear structure.
+
+5. **Self-check before you see it** — A rubric-based quality gate runs first. If something fails a hard check, the system flags it and recommends corrections.
+
+6. **Human feedback closes the loop** — Your disagreement, counterexample, or field note becomes an improvement signal. Assets evolve through use.
+
+The system is designed so that every step is auditable. You can see which route was chosen, which knowledge was loaded, and why. And you can challenge any of it.
 
 ## Calling From Another Agent
 
@@ -286,7 +302,9 @@ flowchart LR
 | Validation | `18` scripts in [`scripts/`](./scripts) |
 | Tests | `17` modules in [`tests/`](./tests) |
 
-## Capability Surface
+## What the System Covers
+
+The repository spans the full range of screenplay work, from first idea to final handoff.
 
 **Writing and development** — narrative screenwriting, commercial/branded scripting, interactive/branching narrative, premise through rewrite
 

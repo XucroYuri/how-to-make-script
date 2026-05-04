@@ -1,37 +1,189 @@
-# Supported Outputs
+# 支持的输出类型
 
-Use [`references/output-format-contracts.md`](./output-format-contracts.md) for the current machine-checked Markdown handoff shape of golden example artifacts.
+需要了解每种输出的 Markdown 格式要求？查看 [`references/output-format-contracts.md`](./output-format-contracts.md)。
 
-- `logline`: one-sentence story engine with protagonist, goal, obstacle, and stakes.
-- `premise`: compact concept statement with audience and tonal promise.
-- `synopsis`: paragraph-level story summary.
-- `treatment`: expanded prose presentation of the story.
-- `beat_sheet`: structured turning-point sequence.
-- `outline`: ordered list of scenes or sequences.
-- `scene_card`: compact scene purpose and content card.
-- `scene_draft`: scene-level screenplay draft with labeled beats, performance carriers, and optional AV cues.
-- `screenplay_draft`: multi-scene screenplay draft with labeled scene blocks, dialogue-performance coupling, and handoff-safe AV notation.
-- `dialogue_polish`: dialogue rewrite with subtext and voice checks.
-- `rewrite_report`: diagnostic report with failure modes and rewrite priorities.
-- `quality_gate_report`: adaptive audit report with selected quality lenses, hard fails, weighted weaknesses, correction ladder, and recheck scope.
-- `commercial_script`: ad / branded / shortform selling script.
-- `interactive_branch_map`: branching path structure with player choices and state consequences.
-- `audience_fit_note`: audience-segment note with need state, expected payoff, and fit risks.
-- `development_brief`: commissioning-aware strategy brief mapping creative direction to industry constraints.
-- `learning_path`: staged screenwriter development plan with milestones, practice loops, and feedback cadence.
-- `research_background_map`: bounded research map for broad screenplay questions, with lens stack, stable findings, source clusters, callable assets, and recommended next routes.
-- `path_options`: contrasted creative routes with tradeoffs, fit notes, and convergence triggers.
-- `boundary_map`: explicit hard-boundary vs soft-constraint map with exploration and review zones.
-- `scope_correction`: narrowed claim note preserving the surviving core, failure context, and downstream update implications.
-- `pattern_reference_pack`: scenario-specific reference pack with strong synthetic sample, weak contrast, mechanism analysis, and non-dogma note.
-- `context_loading_plan`: bounded loading plan with route anchor, loading mode, expansion triggers, and stop conditions.
-- `story_memory_checkpoint`: resumable continuity packet with current state, unresolved promises, invariants, dual-track rhythm, and next safe entrypoint.
-- `voice_style_guide`: reusable expression guide with voice anchors, register guardrails, variability budget, and drift warnings.
-- `visual_language_pack`: task-specific multilingual visual-language guide with selected film terms, hybrid anchors, prompt-ready phrases, and misuse warnings.
-- `screen_to_video_brief`: bounded bridge brief that translates screenplay material into clip-scale visual execution constraints without replacing the screenplay.
-- `team_workflow_blueprint`: multi-agent or hybrid-team collaboration blueprint with mode selection, roles, handoffs, review cadence, and human gates.
-- `expert_subagent_cast`: bounded subagent roster with functional roles, process nodes, governed persona lenses, authority map, and trim order.
-- `subagent_dispatch_plan`: multi-level dispatch plan with topology, phase ladder, packet rules, context budgets, review loops, and collapse triggers.
-- `project_surface_map`: long-running project surface design showing canonical source, runtime state, packet assembly, phase entrypoints, review surfaces, export surfaces, and edit/sync rules.
-- `audience_proxy_report`: multi-persona progressive viewing simulation report with per-agent state snapshots, consensus concerns, flow-risk points, and mapped rewrite priorities.
-- `session_execution_plan`: ordered multi-segment session plan with per-segment protocol assignments, stop conditions, handoff contracts, and checkpoint markers for cross-stage screenplay work that spans two or more output contracts.
+这里列出你可以请求的所有输出。按使用场景分组，这样你更容易找到适合当前阶段的那一个。
+
+---
+
+## 从一个想法开始
+
+### `logline`
+
+一句话故事引擎。包含主角、目标、障碍和利害关系。把它当作电梯演讲——30 秒内让人明白「这讲的是什么故事，为什么值得看」。如果你有模糊的想法但还没找到核心冲突，问这个最直接。
+
+### `premise`
+
+紧凑的概念陈述。清楚地说出「给谁看」和「调性承诺」。它比 logline 多一点氛围感和观众指向，但还不是故事本身。当你需要把概念卖给投资人、制作人，或者先跟团队对齐调性时，用这个。
+
+### `synopsis`
+
+段落级故事摘要。把整部作品的主干和情感走向写成一段连贯的文字。它不写对话，不写场景细节，但能让人读完后知道「发生了什么，为什么重要」。故事会上、快速分享、或你需要先看全貌时最常用。
+
+### `treatment`
+
+扩写版故事陈述。用散文体把人物、场景和情感更充分地展开。它已经接近「能读」的故事，但还保留了结构灵活性。适合给非编剧的伙伴（导演、制片、投资人）阅读，他们需要感受故事但不需要看分镜。
+
+---
+
+## 进入写作阶段
+
+### `beat_sheet`
+
+结构化转折点序列。把故事拆成关键节点（开端失衡、锁定、半场转折、高潮等），每个节点只写一句或两句，明确地标出情感或信息变化。当你卡在「这部分应该发生什么」时，用它来快速把大结构钉下来。
+
+### `outline`
+
+有序的场景或段落清单。按时间顺序把每个场景或段落的目的、内容要点写清楚。它比 beat sheet 更细，但还没到对话层面。适合在正式开写前先把「怎么把这个故事讲完」梳理一遍，避免中途发现结构缺块。
+
+### `scene_card`
+
+场景用途卡。记录单个场景的「目的、冲突、情感出口」。通常只有几句，但能快速验证「这个场景是不是必要的」。在拆分大纲或重写时，用它来逐个检查每个场景是否还在服务整体故事。
+
+---
+
+## 写出剧本草稿
+
+### `scene_draft`
+
+单场景剧本草稿。包含场景目标、带标签的动作和对话块、可选的视听提示。还没到正式分镜，但已经能演、能读。当你想先测试「这个场景在纸面上能不能成立」时，用这个输出最快。
+
+### `screenplay_draft`
+
+多场景剧本草稿。包含多个连续场景、场景目标、对话-表演耦合，以及交接安全的视听标注。它已经可以拿给演员或导演阅读。适合把一个完整段落或一个章节先写完，验证节奏和人物声音是否一致。
+
+### `dialogue_polish`
+
+对话改写。针对台词的「潜台词、人物声音、节奏」做优化。它不会重写整个场景结构，但会让已经存在的对话更自然、更有层次。当你觉得「台词听起来像说明书」时，扔给它改写。
+
+---
+
+## 审查与改进
+
+### `rewrite_report`
+
+诊断报告。列出失败模式、优先级重写项。它不会直接改写，但告诉你「哪里坏了、哪几处最该先动」。当你自己卡住、不知道从哪里下手改时，先让它给出诊断，再决定下一步动作。
+
+### `quality_gate_report`
+
+自适应审查报告。根据选定的质量维度（结构、人物、对话、节奏等）逐项打分，指出硬失败、加权弱点，并给出修正梯队和复查范围。当你需要正式的「这个稿子能不能过」判断时，用它来建立客观标准。
+
+### `audience_fit_note`
+
+观众匹配笔记。分析目标观众群体的需求状态、预期回报、适配风险。它不改写故事，但告诉你「这个故事放在这个群体面前会遇到什么摩擦」。适合在定稿前或转向新市场时，检查观众路径是否通畅。
+
+---
+
+## 商业与短形式
+
+### `commercial_script`
+
+广告 / 品牌 / 短形式销售脚本。包含核心信息、镜头流、行动号召（CTA）。它在极短时间内把「卖点」变成「可执行的画面序列」。品牌片、宣传片、短视频脚本都归这一类。
+
+---
+
+## 互动叙事
+
+### `interactive_branch_map`
+
+分支路径结构。定义玩家选择、状态变量、收敛计划。它不写具体的对话或画面，但把「互动叙事的骨架」先搭出来。做游戏叙事、互动短片、或任何需要玩家决策的叙事形式时，从这里开始。
+
+---
+
+## 开发策略与规划
+
+### `development_brief`
+
+开发简报。把创意方向映射到产业约束（预算、档期、平台、类型限制）。它不写故事本身，但告诉你「在这个限制下，故事应该怎么调整最有利」。接定制项目或商业开发时最需要。
+
+### `learning_path`
+
+编剧成长路径。分阶段的学习计划，包含里程碑、练习闭环、反馈节奏。它帮你把「想提升的技能」变成「可追踪的练习序列」。适合给自己或团队订一个季度或半年的成长计划。
+
+### `research_background_map`
+
+研究背景图。针对宽泛的剧本问题，搭建研究框架、稳定发现、资料簇、下一步路由。它帮你把「需要查的东西」变成「可调用、可验证的知识资产」。做时代剧、行业剧、专业背景剧本时尤其有用。
+
+### `path_options`
+
+路径选项对比。列出几种创意路线，标注各自的取舍、适配性、收敛触发点。当你面对多个可能的走向、不知道选哪条时，让它把每条路的「代价和回报」写清楚再决定。
+
+---
+
+## 边界与约束管理
+
+### `boundary_map`
+
+边界图。明确哪些是硬边界（不能碰）、哪些是软约束（可以谈），并区分探索区和审查区。它防止你在不该妥协的地方让步，也防止你在可以灵活的地方过度僵化。适合在创作初期就钉下来「什么不能动」。
+
+### `scope_correction`
+
+范围修正。把过大的声明收窄，同时保留存活的核心，记录失败语境和下游更新影响。它帮你从「这个故事太大了，做不完」回到「先把这个核做稳」。当你发现自己写偏或写散时，用它来重新锚定范围。
+
+---
+
+## 模式与参考
+
+### `pattern_reference_pack`
+
+模式参考包。包含强合成样本、弱对比、机制分析、非教条说明。它不给你「唯一正确答案」，而是给你「这个类型下常见且有效的做法」作为起点。适合在进入一个不熟悉的类型或结构时，先建立参考框架。
+
+---
+
+## 上下文加载与记忆
+
+### `context_loading_plan`
+
+上下文加载计划。定义路由锚点、加载模式、扩展触发、停止条件。它防止 Agent 或团队在处理长上下文时「一次加载太多、一次忘记太多」。大项目、多阶段协作时，用它来控制信息流。
+
+### `story_memory_checkpoint`
+
+故事记忆检查点。可恢复的连续性数据包，包含当前状态、未兑现的承诺、不变量、双轨节奏、下一个安全入口。当你需要暂停一个长项目、或切换到另一个 Agent 继续时，用它来保存「故事当前进行到哪里」。
+
+---
+
+## 风格与视觉语言
+
+### `voice_style_guide`
+
+声音风格指南。可复用的表达指南，包含声音锚点、语域护栏、可变性预算、漂移警告。它帮你把「这个人物 / 这部作品的声音感觉」固化成可重复、可检查的规则。长剧集、多作者协作、或需要保持一致风格时最有用。
+
+### `visual_language_pack`
+
+视觉语言包。针对特定任务的多语言视觉语言指南，包含选定的电影术语、混合锚点、提示-ready 短语、误用警告。它把「画面感觉」翻译成可执行的视觉描述，同时避免跨语言或跨文化时的误解。
+
+### `screen_to_video_brief`
+
+银幕到视频简报。把剧本素材翻译成片段级视觉执行约束的桥接简报。它不取代剧本，但告诉你「这个场景在镜头前应该怎么拍」。需要把文字稿转为可拍摄的视觉执行计划时，用这个。
+
+---
+
+## 团队与工作流
+
+### `team_workflow_blueprint`
+
+团队工作流蓝图。多 Agent 或混合团队协作蓝图，包含模式选择、角色分配、交接、手动闸门。它把「谁做什么、什么时候交接、谁来把关」写成可执行的协作协议。
+
+### `expert_subagent_cast`
+
+专家子代理阵容。定义功能角色、流程节点、受控人格镜头、权限图、修剪顺序。它帮你把「这个任务需要哪些专长」变成「可以调用的代理配置」。在复杂项目中，需要多个专长互补的代理协同工作时使用。
+
+### `subagent_dispatch_plan`
+
+子代理调度计划。多层调度计划，包含拓扑、阶段梯队、数据包规则、上下文预算、审查循环、塌缩触发。它把「多个代理怎么一起工作」变成「可追踪、可恢复的执行流」。
+
+### `project_surface_map`
+
+项目表面图。长期项目的表面设计，展示规范来源、运行时状态、数据包组装、阶段入口、审查面、导出面、编辑/同步规则。它是大项目的「总控面板」，让你知道「这个项目当前有哪些可操作的接口」。
+
+---
+
+## 观众模拟与会话规划
+
+### `audience_proxy_report`
+
+观众代理报告。多人格渐进观看模拟报告，包含每代理的状态快照、共识关注点、流畅性风险点、映射的重写优先级。它用模拟观众的视角告诉你「这个故事在不同人眼里是什么感觉」。定稿前或转向新观众群体时，用它来提前发现可能的摩擦点。
+
+### `session_execution_plan`
+
+会话执行计划。针对跨两个或更多输出合约的剧本工作，给出有序的多段会话计划，包含每段的协议分配、停止条件、交接合约、检查点标记。它帮你把「一个需要多个步骤的复杂任务」拆成「今天能做完一段、明天能继续」的可执行序列。

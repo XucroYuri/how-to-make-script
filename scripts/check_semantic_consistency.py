@@ -18,8 +18,17 @@ SUBSKILL_RE = re.compile(r"^- \[`([^`]+)`\]\(([^)]+)\)", re.MULTILINE)
 
 
 def parse_root_outputs(skill_text: str) -> Set[str]:
-    start = skill_text.index("## Default Output Contracts")
-    end = skill_text.index("## Sub-Skills")
+    # Support both old "## Default Output Contracts" and new "## The Deliverables I Can Produce" headers
+    for header in ("## Default Output Contracts", "## The Deliverables I Can Produce"):
+        try:
+            start = skill_text.index(header)
+            break
+        except ValueError:
+            continue
+    else:
+        return set()
+    # Find the next ## section as boundary
+    end = skill_text.index("\n##", start + len(header))
     return set(OUTPUT_RE.findall(skill_text[start:end]))
 
 
@@ -48,7 +57,16 @@ def parse_root_subskills(skill_text: str, root: Path | None = None) -> Set[str]:
 
 
 def parse_supported_outputs(path: Path) -> Set[str]:
-    return set(OUTPUT_RE.findall(path.read_text(encoding="utf-8")))
+    outputs: Set[str] = set()
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        # Old format: "- `output_name`: description"
+        if line.startswith("- `") and "`:" in line:
+            outputs.add(line.split("`", 2)[1])
+        # New format: "### `output_name`"
+        elif line.startswith("### `") and line.endswith("`"):
+            outputs.add(line[5:-1])
+    return outputs
 
 
 def parse_taxonomy_section(path: Path, heading: str) -> Set[str]:
