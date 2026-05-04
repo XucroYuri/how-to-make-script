@@ -5,8 +5,22 @@
   "title": "冲突压力",
   "kind": "principle",
   "summary": "冲突不是吵架，而是目标与阻力持续碰撞所形成的压力系统。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "structure", "outline", "scene", "dialogue"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "structure",
+    "outline",
+    "scene",
+    "dialogue"
+  ],
   "problem": "剧本里有事件和信息，但缺少足够的阻力与选择压力，导致平。",
   "decision_rules": [
     "优先设计能迫使角色选择的阻力，而不是装饰性难题。",
@@ -28,8 +42,31 @@
     "对抗是否改变了后续选择空间",
     "阻力是否强到迫使角色暴露本质"
   ],
-  "links": ["ka.story-goal", "ka.scene-function", "ka.dialogue-subtext"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.story-goal",
+    "ka.scene-function",
+    "ka.dialogue-subtext"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "high"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "medium"
+    },
+    "focus": {
+      "character": "high",
+      "world": "low",
+      "event": "primary",
+      "audience": "high",
+      "language": "medium"
+    }
+  }
 }
 ---
 # 冲突压力

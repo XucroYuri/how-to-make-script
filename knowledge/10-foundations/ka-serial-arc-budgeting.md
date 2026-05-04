@@ -5,8 +5,18 @@
   "title": "连续剧弧光预算",
   "kind": "heuristic",
   "summary": "分集或连续容器里，不是所有反转、揭示、关系跃迁都应该尽早打满；弧光、秘密和升级需要按容器长度做预算。",
-  "mediums": ["episodic", "short_drama", "branching_interactive", "game_narrative"],
-  "stages": ["premise", "structure", "outline", "rewrite"],
+  "mediums": [
+    "episodic",
+    "short_drama",
+    "branching_interactive",
+    "game_narrative"
+  ],
+  "stages": [
+    "premise",
+    "structure",
+    "outline",
+    "rewrite"
+  ],
   "problem": "连续项目经常要么前几集过度透支大招，后段乏力；要么把所有推进都留到后面，前段像铺垫堆积。",
   "decision_rules": [
     "先锁定容器参数，再做弧光预算：集数、单集时长、单元/连续属性、主线数量。",
@@ -29,8 +39,31 @@
     "长线升级是否有节奏地被分配，而不是前透支后塌陷",
     "本集闭环与系列推进是否形成预算上的互补关系"
   ],
-  "links": ["ka.medium-episode", "ka.medium-short-drama", "ka.causality-chain"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.medium-episode",
+    "ka.medium-short-drama",
+    "ka.causality-chain"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "primary",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "primary",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "medium",
+      "world": "low",
+      "event": "primary",
+      "audience": "high",
+      "language": "low"
+    }
+  }
 }
 ---
 # 连续剧弧光预算

@@ -5,8 +5,20 @@
   "title": "触发式行为画像",
   "kind": "technique",
   "summary": "与其堆性格形容词，不如描述角色在特定刺激下会怎样反应、怎样误判、怎样自保，这种触发式画像更适合进入场景和对白。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "game_narrative", "branching_interactive"],
-  "stages": ["character", "scene", "dialogue", "rewrite"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "character",
+    "scene",
+    "dialogue",
+    "rewrite"
+  ],
   "problem": "角色设定停留在标签层，无法稳定预测人物在具体情境下会说什么、做什么。",
   "decision_rules": [
     "优先描述刺激-反应对，而不是堆抽象形容词。",
@@ -28,8 +40,31 @@
     "是否覆盖了高压和失控情境",
     "能否帮助区分人物声音和行为逻辑"
   ],
-  "links": ["ka.character-drive-quartet", "ka.character-voice-consistency", "ka.dialogue-subtext"],
-  "source_status": "derived"
+  "links": [
+    "ka.character-drive-quartet",
+    "ka.character-voice-consistency",
+    "ka.dialogue-subtext"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "high",
+      "construct": "high",
+      "generate": "primary"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "medium"
+    },
+    "focus": {
+      "character": "primary",
+      "world": "low",
+      "event": "high",
+      "audience": "medium",
+      "language": "high"
+    }
+  }
 }
 ---
 # 触发式行为画像

@@ -5,8 +5,19 @@
   "title": "品牌内容工作室循环",
   "kind": "pattern",
   "summary": "品牌内容团队需要同时对创意、品牌人格、平台分发和文化进入点负责，不能只按纯叙事流程写脚本。",
-  "mediums": ["commercial", "branded_film", "shortform_video"],
-  "stages": ["ideation", "premise", "structure", "scene", "rewrite", "adaptation"],
+  "mediums": [
+    "commercial",
+    "branded_film",
+    "shortform_video"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "structure",
+    "scene",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "把品牌内容要么写成硬广，要么写成漂亮但无法服务 campaign 的短片。",
   "decision_rules": [
     "品牌模式至少要并行处理 creative lane、brand lane、distribution lane。",
@@ -28,8 +39,31 @@
     "品牌和平台约束是否前置而不是后补",
     "文本是否仍保有人类可感的生活纹理"
   ],
-  "links": ["ka.register-adaptation", "ka.audience-need-state", "ka.commissioning-fit"],
-  "source_status": "curated"
+  "links": [
+    "ka.register-adaptation",
+    "ka.audience-need-state",
+    "ka.commissioning-fit"
+  ],
+  "source_status": "curated",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "medium",
+      "language": "low"
+    }
+  }
 }
 ---
 # 品牌内容工作室循环

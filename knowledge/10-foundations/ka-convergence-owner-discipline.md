@@ -5,8 +5,28 @@
   "title": "收敛负责人纪律",
   "kind": "heuristic",
   "summary": "多智能体系统必须明确谁负责 merge、谁负责 veto、谁负责决定‘现在该停’；否则并行越强，结果越散。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "character",
+    "structure",
+    "outline",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "系统常常知道怎么开更多 lane，却没有清楚定义谁来结束分歧、锁定版本和决定下一步，从而让多智能体协作退化成永无止境的审稿会。",
   "decision_rules": [
     "每个多 lane 任务都必须显式指明 convergence owner 或 merge owner。",
@@ -28,8 +48,31 @@
     "分歧保留是否有退出条件，而不是永久挂起",
     "merge 结果是否同时记录 surviving core 与 dropped alternatives"
   ],
-  "links": ["ka.dissent-preservation-loop", "ka.team-topology-selection", "ka.two-stage-review-loop"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.dissent-preservation-loop",
+    "ka.team-topology-selection",
+    "ka.two-stage-review-loop"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 收敛负责人纪律

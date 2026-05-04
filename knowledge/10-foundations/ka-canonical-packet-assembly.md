@@ -5,8 +5,27 @@
   "title": "Canonical Packet 组装",
   "kind": "workflow_rule",
   "summary": "一次具体写作、审查或导出动作，不应直接读取一大坨上下文，而应先把当前有效真源、规则层、状态层与手工约束编译成可检查的 canonical packet。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "character",
+    "structure",
+    "outline",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "如果 packet 组装是隐式的，系统会不知道‘这次到底读了什么’，也无法稳定复查为什么某次生成或审查结果会偏掉。",
   "decision_rules": [
     "任何高价值动作都应先生成可检查的 canonical packet，再进入写作或 review。",
@@ -28,8 +47,31 @@
     "packet 是否避免了无边界上下文拼接",
     "packet 是否能支持 review、调试或追溯"
   ],
-  "links": ["ka.source-of-truth-runtime-split", "ka.subagent-context-budgeting", "ka.handoff-packet-discipline"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.source-of-truth-runtime-split",
+    "ka.subagent-context-budgeting",
+    "ka.handoff-packet-discipline"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # Canonical Packet 组装

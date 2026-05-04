@@ -5,8 +5,25 @@
   "title": "参考扩展平衡",
   "kind": "decision_heuristic",
   "summary": "找到更多参考并不等于一次性装入更多参考；更好的做法是按距离和价值排序，只追加最能改变当前判断的少量邻近参考。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "structure", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "structure",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "Agent 在想提高准确率时，很容易把 reference breadth 当成 reference quality，导致参考越来越多但真正可用的判断越来越少。",
   "decision_rules": [
     "优先追加与当前 medium、stage、creative problem 最近的参考，再考虑跨媒介对照。",
@@ -28,8 +45,31 @@
     "每次扩展是否有明确收益说明",
     "是否控制了跨媒介/跨类型的噪声"
   ],
-  "links": ["ka.bounded-context-loading", "ka.reference-pattern-usage", "ka.false-universal-warning"],
-  "source_status": "derived"
+  "links": [
+    "ka.bounded-context-loading",
+    "ka.reference-pattern-usage",
+    "ka.false-universal-warning"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "low",
+      "world": "medium",
+      "event": "medium",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 参考扩展平衡

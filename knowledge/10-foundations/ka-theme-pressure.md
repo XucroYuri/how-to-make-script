@@ -5,8 +5,21 @@
   "title": "主题压力",
   "kind": "principle",
   "summary": "主题应体现在选择与代价上，而不是作者代替角色发言。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "branded_film", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "structure", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "branded_film",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "structure",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "作品想表达很多，但主题像标语，无法进入戏剧行为。",
   "decision_rules": [
     "把主题翻译为角色必须回答的价值冲突。",
@@ -28,8 +41,30 @@
     "重要角色是否构成观点碰撞",
     "结尾是否通过行为而非解释完成主题表达"
   ],
-  "links": ["ka.character-arc", "ka.conflict-pressure"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.character-arc",
+    "ka.conflict-pressure"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "primary",
+      "construct": "high",
+      "generate": "high"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "medium"
+    },
+    "focus": {
+      "character": "high",
+      "world": "medium",
+      "event": "high",
+      "audience": "high",
+      "language": "medium"
+    }
+  }
 }
 ---
 # 主题压力

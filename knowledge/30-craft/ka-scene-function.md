@@ -5,8 +5,19 @@
   "title": "场景功能",
   "kind": "heuristic",
   "summary": "每场戏必须改变信息、关系、权力或行动条件中的至少一项。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film"],
-  "stages": ["outline", "scene", "rewrite"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film"
+  ],
+  "stages": [
+    "outline",
+    "scene",
+    "rewrite"
+  ],
   "problem": "单场戏有内容但无必要性，删掉也不伤筋骨。",
   "decision_rules": [
     "先写这场戏的功能，再写内容。",
@@ -28,8 +39,30 @@
     "功能是否可一句话说明",
     "是否能和邻近场景合并"
   ],
-  "links": ["ka.causality-chain", "ka.pacing-rhythm"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.causality-chain",
+    "ka.pacing-rhythm"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "primary",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "primary",
+      "exploring": "high",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "high",
+      "world": "medium",
+      "event": "primary",
+      "audience": "high",
+      "language": "medium"
+    }
+  }
 }
 ---
 # 场景功能

@@ -5,8 +5,28 @@
   "title": "阶段入口与显式交接",
   "kind": "workflow_rule",
   "summary": "长期创作系统应区分 planning、drafting、review、compliance、export 等 phase 的入口，并显式 handoff，而不是让一个通用入口对所有阶段一把梭。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "character",
+    "structure",
+    "outline",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "当所有阶段都靠一个模糊入口推进时，系统很难知道什么时候该先补资产，什么时候该先写正文，什么时候该先审查，最后会把 planning 和 drafting 混在一起。",
   "decision_rules": [
     "为不同 phase 提供不同 entrypoint，并写清它们的前置条件与交接条件。",
@@ -28,8 +48,31 @@
     "handoff 是否说明了前置门槛和禁 reopen 区",
     "系统是否避免了 planning 与 drafting 的职责混淆"
   ],
-  "links": ["ka.canonical-packet-assembly", "ka.team-topology-selection", "ka.two-stage-review-loop"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.canonical-packet-assembly",
+    "ka.team-topology-selection",
+    "ka.two-stage-review-loop"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 阶段入口与显式交接

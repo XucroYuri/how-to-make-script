@@ -5,8 +5,19 @@
   "title": "能力与阻力平衡",
   "kind": "heuristic",
   "summary": "角色能力不该单独存在；每种能力最好都伴随限制、成本、误用风险或会制造新问题的摩擦。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "game_narrative", "branching_interactive"],
-  "stages": ["character", "scene", "rewrite"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "character",
+    "scene",
+    "rewrite"
+  ],
   "problem": "角色看似有能力，但能力不是过强无代价，就是过弱无法推动剧情。",
   "decision_rules": [
     "每种显著能力都要回答它的代价、盲点或副作用。",
@@ -28,8 +39,31 @@
     "摩擦是否进入实际剧情压力",
     "角色是否不会因为能力设置而失去成长空间"
   ],
-  "links": ["ka.character-drive-quartet", "ka.conflict-pressure", "ka.character-arc"],
-  "source_status": "derived"
+  "links": [
+    "ka.character-drive-quartet",
+    "ka.conflict-pressure",
+    "ka.character-arc"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "primary",
+      "world": "low",
+      "event": "medium",
+      "audience": "medium",
+      "language": "low"
+    }
+  }
 }
 ---
 # 能力与阻力平衡

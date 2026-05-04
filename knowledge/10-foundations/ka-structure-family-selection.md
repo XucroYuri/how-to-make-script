@@ -5,8 +5,20 @@
   "title": "结构族选择",
   "kind": "framework",
   "summary": "结构不是先选模板再装剧情，而是先识别故事的推进引擎，再决定它更接近 quest、mystery、lie-to-truth、parallel-thread、loop 或其他结构族。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "structure", "outline", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "structure",
+    "outline",
+    "adaptation"
+  ],
   "problem": "项目被默认塞进单一结构模板，结果形式完整但推进逻辑和题材承诺并不匹配。",
   "decision_rules": [
     "先看故事主要靠什么推进：目标追逐、真相拼图、人物误判瓦解、群像并行、循环变体，还是分支选择。",
@@ -28,8 +40,31 @@
     "是否明确了主结构与副结构的边界",
     "模板语言是否没有覆盖掉真正的推进机制"
   ],
-  "links": ["ka.causality-chain", "ka.theme-pressure", "ka.creative-pluralism"],
-  "source_status": "derived"
+  "links": [
+    "ka.causality-chain",
+    "ka.theme-pressure",
+    "ka.creative-pluralism"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "primary",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "primary",
+      "exploring": "high",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "primary",
+      "audience": "medium",
+      "language": "low"
+    }
+  }
 }
 ---
 # 结构族选择

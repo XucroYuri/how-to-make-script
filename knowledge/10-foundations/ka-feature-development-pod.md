@@ -5,8 +5,17 @@
   "title": "电影开发小组模式",
   "kind": "pattern",
   "summary": "电影开发更像受控串行开发加阶段性评审，而不是持续开放式 writers' room。",
-  "mediums": ["feature_film"],
-  "stages": ["ideation", "premise", "structure", "outline", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "structure",
+    "outline",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "把电影开发误当成 TV room，会导致前期发散过多、角色责任混乱、rewrite mandate 不清。",
   "decision_rules": [
     "先锁概念、rights/mandate、开发目标，再进入 draft 与 rewrite lanes。",
@@ -28,8 +37,31 @@
     "rewrite mandate 是否明确",
     "高成本决策是否留给了合适的 review gate"
   ],
-  "links": ["ka.team-topology-selection", "ka.commissioning-fit", "ka.boundary-first-guidance"],
-  "source_status": "curated"
+  "links": [
+    "ka.team-topology-selection",
+    "ka.commissioning-fit",
+    "ka.boundary-first-guidance"
+  ],
+  "source_status": "curated",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 电影开发小组模式

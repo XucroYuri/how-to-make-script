@@ -5,8 +5,23 @@
   "title": "多语种影视术语映射",
   "kind": "heuristic",
   "summary": "跨语言影视表达不是简单翻译，而是根据协作对象、美学语境和术语稳定度，选择更能承载镜头、灯光、动作和氛围意图的工作语言。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["outline", "scene", "dialogue", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "outline",
+    "scene",
+    "dialogue",
+    "adaptation"
+  ],
   "problem": "Agent 或人类协作者会写剧情，但一进入跨语言镜头沟通、提示词转写或国际协作，就只会用松散形容词，导致镜头意图和制作判断失真。",
   "decision_rules": [
     "先判断当前语言承担的职能是 crew 沟通、模型提示、风格对齐，还是跨团队交付，再决定术语包。",
@@ -28,8 +43,32 @@
     "语言切换后是否减少了歧义，而不是增加了炫技噪音",
     "所选词汇是否服务于当前媒介与协作场景，而不是一本词典式堆砌"
   ],
-  "links": ["ka.register-adaptation", "ka.scenario-factorization", "ka.medium-animation", "ka.medium-shortform-video"],
-  "source_status": "derived"
+  "links": [
+    "ka.register-adaptation",
+    "ka.scenario-factorization",
+    "ka.medium-animation",
+    "ka.medium-shortform-video"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "low",
+      "world": "medium",
+      "event": "low",
+      "audience": "medium",
+      "language": "high"
+    }
+  }
 }
 ---
 # 多语种影视术语映射

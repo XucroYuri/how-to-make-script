@@ -5,8 +5,16 @@
   "title": "广告脚本媒介包",
   "kind": "medium_pack",
   "summary": "广告脚本要在极短时间内完成注意、理解、记忆和行动引导。",
-  "mediums": ["commercial"],
-  "stages": ["ideation", "premise", "structure", "scene", "rewrite"],
+  "mediums": [
+    "commercial"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "structure",
+    "scene",
+    "rewrite"
+  ],
   "problem": "脚本有戏但没有卖点，或者有卖点但没有观看驱动力。",
   "decision_rules": [
     "先锁定单一核心信息，再设计表达形式。",
@@ -28,8 +36,30 @@
     "品牌和剧情是否互相支撑",
     "是否存在明确行动指向"
   ],
-  "links": ["ka.scene-function", "ka.pacing-rhythm"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.scene-function",
+    "ka.pacing-rhythm"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "primary",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "primary",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "medium",
+      "audience": "primary",
+      "language": "medium"
+    }
+  }
 }
 ---
 # 广告脚本媒介包

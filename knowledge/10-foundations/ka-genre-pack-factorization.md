@@ -5,8 +5,20 @@
   "title": "类型包因子化",
   "kind": "framework",
   "summary": "类型知识不该只是大表格罗列，而应拆成核心承诺、关系压力、结构运动、动力学引擎和解构轴线等可复用因子。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "structure", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "structure",
+    "adaptation"
+  ],
   "problem": "类型文档越写越大，但真正可复用的判断维度越来越少。",
   "decision_rules": [
     "写类型包时先抽出它向观众承诺了什么，而不是先罗列理论名词。",
@@ -28,8 +40,31 @@
     "是否区分了承诺、压力和结构运动",
     "是否给未来扩展留下可追加的因子位"
   ],
-  "links": ["ka.scenario-factorization", "ka.creative-pluralism", "ka.false-universal-warning"],
-  "source_status": "derived"
+  "links": [
+    "ka.scenario-factorization",
+    "ka.creative-pluralism",
+    "ka.false-universal-warning"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "medium",
+      "world": "medium",
+      "event": "high",
+      "audience": "high",
+      "language": "low"
+    }
+  }
 }
 ---
 # 类型包因子化

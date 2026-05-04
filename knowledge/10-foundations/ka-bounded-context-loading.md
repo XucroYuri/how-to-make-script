@@ -5,8 +5,28 @@
   "title": "有界上下文加载",
   "kind": "framework",
   "summary": "Agent Skill 不应靠无限加上下文来换取正确率，而应先锁定 route，再按层级扩容到刚好足够解决当前问题的 bundle。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "character",
+    "structure",
+    "outline",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "没有加载边界的 Agent 很容易把相关知识、邻近知识和可选参考全部一次性装进上下文，导致 route 漂移、注意力稀释和生成质量下滑。",
   "decision_rules": [
     "先锁定 primary route，再决定需要什么加载模式，而不是边看边无限加料。",
@@ -28,8 +48,31 @@
     "加载出来的每项内容是否都能解释为什么值得进入上下文",
     "是否避免了无差别扩容"
   ],
-  "links": ["ka.scenario-factorization", "ka.reference-pattern-usage", "ka.creative-pluralism"],
-  "source_status": "derived"
+  "links": [
+    "ka.scenario-factorization",
+    "ka.reference-pattern-usage",
+    "ka.creative-pluralism"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 有界上下文加载

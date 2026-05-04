@@ -5,8 +5,16 @@
   "title": "电影长片媒介包",
   "kind": "medium_pack",
   "summary": "长片强调持续升级的主线、人物弧光完整性和大段情绪管理。",
-  "mediums": ["feature_film"],
-  "stages": ["premise", "structure", "outline", "scene", "rewrite"],
+  "mediums": [
+    "feature_film"
+  ],
+  "stages": [
+    "premise",
+    "structure",
+    "outline",
+    "scene",
+    "rewrite"
+  ],
   "problem": "把短片或短剧逻辑错误套进长片，导致中段塌陷或主题重复。",
   "decision_rules": [
     "确保中段不是填充，而是代价升级和认知推进。",
@@ -28,8 +36,31 @@
     "主线和弧光是否都闭合",
     "情绪波形是否有层次"
   ],
-  "links": ["ka.story-goal", "ka.character-arc", "ka.pacing-rhythm"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.story-goal",
+    "ka.character-arc",
+    "ka.pacing-rhythm"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "high",
+      "construct": "high",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "medium"
+    },
+    "focus": {
+      "character": "high",
+      "world": "medium",
+      "event": "primary",
+      "audience": "high",
+      "language": "low"
+    }
+  }
 }
 ---
 # 电影长片媒介包

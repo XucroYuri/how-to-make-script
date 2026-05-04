@@ -5,8 +5,22 @@
   "title": "视觉提示委任层级",
   "kind": "heuristic",
   "summary": "从氛围级委任到动作级编排，视觉生成或跨团队镜头 brief 需要按控制强度分层，而不是默认越细越好。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["scene", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "scene",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "Agent 在转写视觉 brief 时，要么控制太少，只剩氛围词；要么控制太多，变成冗长、互相打架的 shot soup。",
   "decision_rules": [
     "先判断当前任务需要的是氛围委任、动作控制、时间切分，还是精确编排，再决定提示层级。",
@@ -28,8 +42,32 @@
     "输出是否写清了固定项与可变项",
     "是否用更少但更有效的控制词替代了堆砌细节"
   ],
-  "links": ["ka.bounded-context-loading", "ka.reference-expansion-balance", "ka.scenario-factorization", "ka.multilingual-visual-vocabulary"],
-  "source_status": "derived"
+  "links": [
+    "ka.bounded-context-loading",
+    "ka.reference-expansion-balance",
+    "ka.scenario-factorization",
+    "ka.multilingual-visual-vocabulary"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 视觉提示委任层级

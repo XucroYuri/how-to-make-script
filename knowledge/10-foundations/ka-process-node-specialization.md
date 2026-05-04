@@ -5,8 +5,28 @@
   "title": "流程节点专门化",
   "kind": "heuristic",
   "summary": "多智能体系统里的很多关键节点不是 craft 专家，而是 process node，例如 divergence、counterexample、triage、merge、review。把它们和写作专家混成一类，会让流程能力隐身。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "character",
+    "structure",
+    "outline",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "仓库很容易只想着‘要哪些写作专家’，却忽略了真正决定流程质量的节点型角色，导致系统会写，但不会发散、不会保留反例、不会 triage、不会收束、不会审查。",
   "decision_rules": [
     "至少把功能型 subagent 和流程节点分成两层，不要混成一个大角色表。",
@@ -28,8 +48,32 @@
     "process-node 是否真的减少了 drift、返工或无效并行",
     "团队结构是否把写作能力和流程能力区分开来"
   ],
-  "links": ["ka.parallel-lane-governance", "ka.handoff-packet-discipline", "ka.two-stage-review-loop", "ka.subagent-cast-composition"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.parallel-lane-governance",
+    "ka.handoff-packet-discipline",
+    "ka.two-stage-review-loop",
+    "ka.subagent-cast-composition"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 流程节点专门化

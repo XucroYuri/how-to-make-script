@@ -5,8 +5,28 @@
   "title": "交接包纪律",
   "kind": "principle",
   "summary": "优秀的多智能体协作依赖小而准的 handoff packet，而不是把整段上下文原样甩给下一个角色。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "character",
+    "structure",
+    "outline",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "角色之间交接时上下文过量、目标不清、责任模糊，导致信息漂移和上下文腐化。",
   "decision_rules": [
     "handoff packet 只保留能改变下一步决策的状态，不保留整段历史复述。",
@@ -28,8 +48,31 @@
     "open questions 和 confidence 是否明确",
     "交接是否减少了漂移而不是扩大了漂移"
   ],
-  "links": ["ka.bounded-context-loading", "ka.context-corrosion-signals", "ka.team-topology-selection"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.bounded-context-loading",
+    "ka.context-corrosion-signals",
+    "ka.team-topology-selection"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 交接包纪律

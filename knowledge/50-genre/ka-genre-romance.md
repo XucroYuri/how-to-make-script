@@ -5,8 +5,19 @@
   "title": "爱情类型机制",
   "kind": "genre_pack",
   "summary": "爱情类型依赖情感吸引、关系阻力、价值互证和情绪兑现。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "branded_film"],
-  "stages": ["premise", "character", "scene", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "branded_film"
+  ],
+  "stages": [
+    "premise",
+    "character",
+    "scene",
+    "adaptation"
+  ],
   "problem": "人物在一起或分开都缺乏足够的必然性与情绪收益。",
   "decision_rules": [
     "让吸引与阻力同时成立。",
@@ -28,8 +39,30 @@
     "关系推进是否带来暴露与选择",
     "情绪高潮是否被前文支撑"
   ],
-  "links": ["ka.character-arc", "ka.theme-pressure"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.character-arc",
+    "ka.theme-pressure"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "primary",
+      "construct": "medium",
+      "generate": "high"
+    },
+    "certainty": {
+      "certain": "medium",
+      "exploring": "high",
+      "lost": "medium"
+    },
+    "focus": {
+      "character": "primary",
+      "world": "low",
+      "event": "high",
+      "audience": "primary",
+      "language": "high"
+    }
+  }
 }
 ---
 # 爱情类型机制

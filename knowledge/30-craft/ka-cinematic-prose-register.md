@@ -5,8 +5,19 @@
   "title": "场景描述的影像语体",
   "kind": "technique",
   "summary": "场景描述不是文学描写，而是摄影机能拍到的东西。用具体物理动作替代情绪渲染，用空间逻辑替代形容词堆叠。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video"],
-  "stages": ["scene", "rewrite"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video"
+  ],
+  "stages": [
+    "scene",
+    "rewrite"
+  ],
   "problem": "场景描述写得像小说散文，而不是摄影机能拍到的画面指令。",
   "decision_rules": [
     "每一行动作描述都过一遍'摄影机能拍到这个吗'的测试。",
@@ -31,8 +42,31 @@
     "情绪是否通过行为而非形容词传达",
     "空间描述是否服务于场景冲突"
   ],
-  "links": ["ka.register-adaptation", "ka.scene-function", "ka.video-generation-shot-economy"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.register-adaptation",
+    "ka.scene-function",
+    "ka.video-generation-shot-economy"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "low",
+      "world": "medium",
+      "event": "low",
+      "audience": "medium",
+      "language": "primary"
+    }
+  }
 }
 ---
 # 场景描述的影像语体

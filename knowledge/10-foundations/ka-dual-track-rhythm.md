@@ -5,8 +5,20 @@
   "title": "双轨节奏",
   "kind": "heuristic",
   "summary": "很多故事不是只有一条节奏线；外部事件推进和内部情绪/认知推进通常是两条相关但不重合的波形。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "game_narrative", "branching_interactive"],
-  "stages": ["structure", "outline", "scene", "rewrite"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "structure",
+    "outline",
+    "scene",
+    "rewrite"
+  ],
   "problem": "作者常把节奏理解成单一快慢表，结果要么外部情节很忙但人物内在停滞，要么情绪层很浓但故事外部没有推进力。",
   "decision_rules": [
     "把外部推进线和内部情绪/认知线分开看，再决定它们是同步、错位还是交替放大。",
@@ -29,8 +41,31 @@
     "关键段落是否明确知道自己主要承担哪一条节奏线",
     "整部作品的双轨波形是否形成互补，而不是互相掐死"
   ],
-  "links": ["ka.pacing-rhythm", "ka.scene-function", "ka.character-drive-quartet"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.pacing-rhythm",
+    "ka.scene-function",
+    "ka.character-drive-quartet"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "medium",
+      "world": "low",
+      "event": "primary",
+      "audience": "high",
+      "language": "low"
+    }
+  }
 }
 ---
 # 双轨节奏

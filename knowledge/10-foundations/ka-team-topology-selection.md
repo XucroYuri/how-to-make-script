@@ -5,8 +5,27 @@
   "title": "团队拓扑选择",
   "kind": "heuristic",
   "summary": "不同剧本项目需要不同协作拓扑，showrunner room、story trust、campaign strike team、interactive cell 和 continuity board 不能互相替代。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "character",
+    "structure",
+    "outline",
+    "scene",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "团队设计过于单一，导致要么决策过慢、要么并行失控、要么所有项目都被错误地套进同一种 room 模式。",
   "decision_rules": [
     "先判断项目真正需要的是集中决策、并行发散、跨部门耦合，还是 IP 连续性保护。",
@@ -28,8 +47,31 @@
     "并行 lanes 是否建立在清晰 handoff 上",
     "决策 owner 和 review gate 是否清楚"
   ],
-  "links": ["ka.commissioning-fit", "ka.scenario-factorization", "ka.parallel-lane-governance"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.commissioning-fit",
+    "ka.scenario-factorization",
+    "ka.parallel-lane-governance"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 团队拓扑选择

@@ -5,8 +5,20 @@
   "title": "故事目标",
   "kind": "principle",
   "summary": "每个故事都需要一个可追踪的目标向量，否则事件会堆叠但不会驱动叙事。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "structure", "outline"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "structure",
+    "outline"
+  ],
   "problem": "概念看起来有趣，但主角到底想完成什么、避免什么、证明什么并不清晰。",
   "decision_rules": [
     "先写主角正在追求的外部目标，再写无法回避的内部代价。",
@@ -28,8 +40,31 @@
     "前三个关键场景是否都在围绕目标推进或受阻",
     "结局是否真的回答了目标成败"
   ],
-  "links": ["ka.conflict-pressure", "ka.causality-chain", "ka.character-arc"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.conflict-pressure",
+    "ka.causality-chain",
+    "ka.character-arc"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "primary",
+      "construct": "high",
+      "generate": "high"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "primary"
+    },
+    "focus": {
+      "character": "high",
+      "world": "low",
+      "event": "primary",
+      "audience": "high",
+      "language": "low"
+    }
+  }
 }
 ---
 # 故事目标

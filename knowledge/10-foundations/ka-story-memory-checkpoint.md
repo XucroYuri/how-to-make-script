@@ -5,8 +5,21 @@
   "title": "故事记忆检查点",
   "kind": "artifact_heuristic",
   "summary": "长篇、分集或多协作者写作不该每次都重新加载全量上下文；应该把当前可继续推进所需的最小故事状态压成一个可续写、可交接、可检查的检查点。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "game_narrative", "branching_interactive"],
-  "stages": ["structure", "outline", "scene", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "structure",
+    "outline",
+    "scene",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "长期项目、跨会话创作或多 agent / 多人 handoff 时，协作者经常靠全量回读或模糊记忆恢复上下文，导致上下文过载、连续性漂移、伏笔遗失和重写成本膨胀。",
   "decision_rules": [
     "检查点要压缩状态，不要重抄全文。",
@@ -32,8 +45,31 @@
     "是否给出可执行的 next entrypoint，而不是只做回顾",
     "是否能在不重载全文的前提下支持 continuity-safe handoff"
   ],
-  "links": ["ka.script-as-coordination-artifact", "ka.room-artifact-ladder", "ka.source-span-traceability"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.script-as-coordination-artifact",
+    "ka.room-artifact-ladder",
+    "ka.source-span-traceability"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "medium",
+      "world": "medium",
+      "event": "medium",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 故事记忆检查点

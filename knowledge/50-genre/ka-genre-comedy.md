@@ -5,8 +5,19 @@
   "title": "喜剧类型机制",
   "kind": "genre_pack",
   "summary": "喜剧依赖预期与现实的错位、角色执念和升级后的后果显形。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial"],
-  "stages": ["premise", "scene", "dialogue", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial"
+  ],
+  "stages": [
+    "premise",
+    "scene",
+    "dialogue",
+    "adaptation"
+  ],
   "problem": "作品想搞笑，但桥段零散，人物行为缺乏稳定的喜剧逻辑。",
   "decision_rules": [
     "先定义角色执念或可被触发的反应模式，再设计笑料。",
@@ -28,8 +39,31 @@
     "段落是否具有升级",
     "对白是否有节奏和反差"
   ],
-  "links": ["ka.dialogue-subtext", "ka.scene-function", "ka.reactive-comedy-loop"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.dialogue-subtext",
+    "ka.scene-function",
+    "ka.reactive-comedy-loop"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "high",
+      "construct": "medium",
+      "generate": "primary"
+    },
+    "certainty": {
+      "certain": "medium",
+      "exploring": "high",
+      "lost": "medium"
+    },
+    "focus": {
+      "character": "primary",
+      "world": "low",
+      "event": "high",
+      "audience": "primary",
+      "language": "high"
+    }
+  }
 }
 ---
 # 喜剧类型机制

@@ -5,8 +5,24 @@
   "title": "IP 角色声音延续",
   "kind": "heuristic",
   "summary": "IP 延续不是复刻名台词，而是保住角色看世界的方式、价值取舍、表达禁区和可变化范围。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["character", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "character",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "续写、改编或跨媒介开发时，角色表面像原角色，深层却已经变成另一个人。",
   "decision_rules": [
     "先提炼不能丢的 voice anchors，例如价值排序、羞耻点、常见回避动作和思维路径。",
@@ -28,8 +44,31 @@
     "新场景里的语言变化是否仍在可接受的连续区间内",
     "是否明确写出了 drift risk 和不可越界点"
   ],
-  "links": ["ka.character-voice-consistency", "ka.character-arc", "ka.creative-pluralism"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.character-voice-consistency",
+    "ka.character-arc",
+    "ka.creative-pluralism"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "primary",
+      "world": "low",
+      "event": "low",
+      "audience": "medium",
+      "language": "primary"
+    }
+  }
 }
 ---
 # IP 角色声音延续

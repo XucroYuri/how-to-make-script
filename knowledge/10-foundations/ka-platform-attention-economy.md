@@ -5,8 +5,25 @@
   "title": "平台注意力经济",
   "kind": "principle",
   "summary": "剧本不是在真空中被阅读或观看，而是在不同平台的注意力竞争环境里争夺继续观看、继续点进、继续传播的机会。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "structure", "scene", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "structure",
+    "scene",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "内容本身并非没有看点，但在真实平台环境里开头太慢、信息太散、回报太晚，无法穿过注意力门槛。",
   "decision_rules": [
     "先定义作品要穿过的第一个注意力门槛，再决定开头压缩比。",
@@ -28,8 +45,33 @@
     "信息密度和回报节奏是否匹配观看环境",
     "压缩是否牺牲了真正必要的理解"
   ],
-  "links": ["ka.pacing-rhythm", "ka.audience-need-state", "ka.medium-shortform-video", "ka.medium-commercial", "ka.medium-short-drama"],
-  "source_status": "derived"
+  "links": [
+    "ka.pacing-rhythm",
+    "ka.audience-need-state",
+    "ka.medium-shortform-video",
+    "ka.medium-commercial",
+    "ka.medium-short-drama"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "medium",
+      "audience": "primary",
+      "language": "low"
+    }
+  }
 }
 ---
 # 平台注意力经济

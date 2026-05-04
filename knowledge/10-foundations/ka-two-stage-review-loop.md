@@ -5,8 +5,27 @@
   "title": "两阶段审查回路",
   "kind": "workflow_rule",
   "summary": "复杂 subagent 工作不应只有一个笼统 review。先做 spec compliance，再做 quality review，能显著降低‘做错方向但写得很漂亮’或‘方向对但实现很脏’的问题。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "character",
+    "structure",
+    "outline",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "多智能体协作里最常见的返工，不是完全不会做，而是 spec 没对齐就开始谈 quality，或者 quality 很强却根本没做对题。",
   "decision_rules": [
     "当任务有明确 contract 时，先过 spec compliance，再过 quality review。",
@@ -28,8 +47,31 @@
     "review loop 是否在发现问题后真正回流 implementer",
     "最终结果是否同时满足 contract 和质量要求"
   ],
-  "links": ["ka.process-node-specialization", "ka.convergence-owner-discipline", "ka.subagent-context-budgeting"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.process-node-specialization",
+    "ka.convergence-owner-discipline",
+    "ka.subagent-context-budgeting"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "medium",
+      "language": "low"
+    }
+  }
 }
 ---
 # 两阶段审查回路

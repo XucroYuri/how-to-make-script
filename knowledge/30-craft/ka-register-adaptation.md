@@ -5,8 +5,24 @@
   "title": "语体与语域适配",
   "kind": "technique",
   "summary": "语言风格要同时匹配人物、媒介、平台、品牌和受众阈值，不能默认所有文本都用一种“看起来顺”的中性语体。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "文本语气要么过于作者化、过于文案化，要么和媒介、品牌、人物关系不匹配。",
   "decision_rules": [
     "先区分这是角色语体、叙述语体、品牌语体还是交互提示语体，不要混为一层。",
@@ -28,8 +44,31 @@
     "文本是否既有风格又不过度装腔",
     "语域边界和禁行区是否被明确写出"
   ],
-  "links": ["ka.medium-commercial", "ka.medium-shortform-video", "ka.dialogue-subtext"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.medium-commercial",
+    "ka.medium-shortform-video",
+    "ka.dialogue-subtext"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "high",
+      "world": "medium",
+      "event": "low",
+      "audience": "high",
+      "language": "primary"
+    }
+  }
 }
 ---
 # 语体与语域适配

@@ -5,8 +5,23 @@
   "title": "具身化文本压力",
   "kind": "technique",
   "summary": "活人感来自身体、处境、时间压力和关系风险如何进入文本，而不是来自额外堆砌情绪形容词。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "人物在文本里只有抽象情绪，没有处境重量，导致戏像在解释感受而不是在经历事情。",
   "decision_rules": [
     "把情绪标签翻译成身体反应、注意力偏移、说话节奏和行动犹豫。",
@@ -28,8 +43,31 @@
     "语言节奏是否被当前压力真实地改变",
     "人物是否像在经历而不是像在描述"
   ],
-  "links": ["ka.conflict-pressure", "ka.scene-function", "ka.dialogue-subtext"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.conflict-pressure",
+    "ka.scene-function",
+    "ka.dialogue-subtext"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "primary",
+      "construct": "medium",
+      "generate": "high"
+    },
+    "certainty": {
+      "certain": "medium",
+      "exploring": "high",
+      "lost": "medium"
+    },
+    "focus": {
+      "character": "high",
+      "world": "low",
+      "event": "high",
+      "audience": "primary",
+      "language": "high"
+    }
+  }
 }
 ---
 # 具身化文本压力

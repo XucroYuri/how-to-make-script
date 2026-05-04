@@ -5,8 +5,27 @@
   "title": "自适应质检镜头选择",
   "kind": "heuristic",
   "summary": "通用质检不应把所有项目都塞进固定 stage 流程，而应按 medium、target contract、delivery pressure 选择 3-6 个最能改变判断的检查镜头。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "character",
+    "structure",
+    "outline",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "专用 checker 往往在自己的任务里很强，但一旦把固定检查层直接推广到所有剧本场景，就会出现有的项目被过检、有的项目漏检，还有的项目被错检。",
   "decision_rules": [
     "按 target contract、medium 和 downstream pressure 选择最小有效 lens stack，而不是默认全开。",
@@ -28,8 +47,31 @@
     "是否避免了过检或漏检",
     "是否把最关键的风险镜头放进了必检层"
   ],
-  "links": ["ka.contract-first-quality-gating", "ka.scenario-factorization", "ka.reference-expansion-balance"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.contract-first-quality-gating",
+    "ka.scenario-factorization",
+    "ka.reference-expansion-balance"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "primary",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "primary",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "medium",
+      "audience": "primary",
+      "language": "low"
+    }
+  }
 }
 ---
 # 自适应质检镜头选择

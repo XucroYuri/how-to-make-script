@@ -5,8 +5,19 @@
   "title": "惊悚类型机制",
   "kind": "genre_pack",
   "summary": "惊悚类型依赖信息控制、威胁逼近和持续不安全感。",
-  "mediums": ["feature_film", "episodic", "short_drama", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "structure", "scene", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "structure",
+    "scene",
+    "adaptation"
+  ],
   "problem": "作品想紧张，但缺少持续威胁和信息差管理。",
   "decision_rules": [
     "让危险持续逼近，而不是偶发跳点。",
@@ -28,8 +39,30 @@
     "信息差是否可追踪",
     "紧张感是否来自局势而非突发音效"
   ],
-  "links": ["ka.exposition-control", "ka.conflict-pressure"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.exposition-control",
+    "ka.conflict-pressure"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "high"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "medium"
+    },
+    "focus": {
+      "character": "high",
+      "world": "medium",
+      "event": "primary",
+      "audience": "primary",
+      "language": "medium"
+    }
+  }
 }
 ---
 # 惊悚类型机制

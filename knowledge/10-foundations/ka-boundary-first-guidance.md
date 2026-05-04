@@ -5,8 +5,24 @@
   "title": "边界优先导向",
   "kind": "principle",
   "summary": "与其假装存在唯一正确创作法，不如先明确哪些是硬边界、哪些是软约束、哪些区域可以大胆探索。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "structure", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "structure",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "系统把大量不同等级的限制混写在一起，结果不是过于保守，就是边界失真。",
   "decision_rules": [
     "先区分 hard boundary 和 soft constraint，再决定探索或收敛策略。",
@@ -28,8 +44,32 @@
     "是否保留了足够的可探索空间",
     "是否避免了把软约束误写成硬规则"
   ],
-  "links": ["ka.exploration-review-separation", "ka.platform-attention-economy", "ka.commissioning-fit", "ka.audience-need-state"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.exploration-review-separation",
+    "ka.platform-attention-economy",
+    "ka.commissioning-fit",
+    "ka.audience-need-state"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "medium"
+    },
+    "focus": {
+      "character": "low",
+      "world": "medium",
+      "event": "medium",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 边界优先导向

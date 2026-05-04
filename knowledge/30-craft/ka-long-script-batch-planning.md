@@ -5,8 +5,19 @@
   "title": "长文本分批规划",
   "kind": "technique",
   "summary": "长剧本不是先粗暴切批再理解结构，而应先识别 scene / beat 组织，再决定批次边界，这样批处理改变的是窗口，不是真相。",
-  "mediums": ["feature_film", "episodic", "animation", "short_drama", "commercial", "branded_film"],
-  "stages": ["outline", "scene", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "animation",
+    "short_drama",
+    "commercial",
+    "branded_film"
+  ],
+  "stages": [
+    "outline",
+    "scene",
+    "adaptation"
+  ],
   "problem": "长文本处理中，批次切分先于结构理解，导致语义断裂、节奏错判和桥接漂移。",
   "decision_rules": [
     "先看 scene 和 beat 的真实边界，再决定批处理边界。",
@@ -28,8 +39,31 @@
     "合并后是否能恢复原有连续性",
     "批处理是否只是窗口优化，而非事实改写"
   ],
-  "links": ["ka.source-span-traceability", "ka.video-generation-shot-economy", "ka.bounded-context-loading"],
-  "source_status": "derived"
+  "links": [
+    "ka.source-span-traceability",
+    "ka.video-generation-shot-economy",
+    "ka.bounded-context-loading"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "primary",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "primary",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "high",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 长文本分批规划

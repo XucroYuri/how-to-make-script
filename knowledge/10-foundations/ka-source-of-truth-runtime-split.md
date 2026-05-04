@@ -5,8 +5,28 @@
   "title": "真源与运行时分层",
   "kind": "heuristic",
   "summary": "长周期创作项目必须区分 source of truth 与 runtime state；否则 human 和 agent 会不断编辑错误的表面层，最终把缓存当真相。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "character",
+    "structure",
+    "outline",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "一旦把可编辑真源、派生缓存、工作流状态和运行时 packet 混在一起，系统就会开始从错误文件继续写作或审查，导致长期漂移和不可追溯。",
   "decision_rules": [
     "为每个项目显式标注哪些文件是 canonical source，哪些只是 runtime state、mirror、cache 或 telemetry。",
@@ -28,8 +48,31 @@
     "每个 derived artifact 是否有清楚的上游来源",
     "人类协作者是否不容易误编辑 runtime surface"
   ],
-  "links": ["ka.canonical-packet-assembly", "ka.phase-entrypoint-handoff", "ka.command-artifact-mapping"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.canonical-packet-assembly",
+    "ka.phase-entrypoint-handoff",
+    "ka.command-artifact-mapping"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 真源与运行时分层

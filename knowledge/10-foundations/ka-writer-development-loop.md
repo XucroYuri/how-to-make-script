@@ -5,8 +5,25 @@
   "title": "编剧成长循环",
   "kind": "framework",
   "summary": "编剧能力不是一次性获取的知识，而是通过诊断、练习、反馈、返修和再写的循环累积出来的。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "学习者知道很多术语和理论，但写作能力没有稳定提升，或一换项目就失去可迁移性。",
   "decision_rules": [
     "先找最短板的失败层，再安排训练顺序，不要同时修所有问题。",
@@ -28,8 +45,32 @@
     "是否包含反馈与返修节奏",
     "阶段目标是否可观察而不是空泛提升"
   ],
-  "links": ["ka.scene-function", "ka.dialogue-subtext", "ka.rewrite-diagnosis", "ka.screenwriting-history-shift"],
-  "source_status": "derived"
+  "links": [
+    "ka.scene-function",
+    "ka.dialogue-subtext",
+    "ka.rewrite-diagnosis",
+    "ka.screenwriting-history-shift"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "high",
+      "construct": "medium",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "medium",
+      "exploring": "high",
+      "lost": "high"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 编剧成长循环

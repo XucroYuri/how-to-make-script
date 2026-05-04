@@ -5,8 +5,26 @@
   "title": "定向复查回路",
   "kind": "workflow_rule",
   "summary": "复查不应默认重跑所有检查层。应优先重跑被修改范围直接影响的 lens，再补一个相邻 lens 检查副作用，只有当 contract 或 invariants 大变时才升级成 full audit。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "structure",
+    "outline",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "很多复查不是因为改动很大，而是因为系统不会限缩范围，只能把整个审查链重跑一遍，既浪费资源，也让团队更难看清这次到底修掉了什么。",
   "decision_rules": [
     "先标记 changed range、changed contract 和 changed invariants。",
@@ -28,8 +46,31 @@
     "是否补了至少一个副作用 lens",
     "是否在需要时诚实升级成 full audit"
   ],
-  "links": ["ka.metrics-handoff-compression", "ka.review-lens-isolation", "ka.command-artifact-mapping"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.metrics-handoff-compression",
+    "ka.review-lens-isolation",
+    "ka.command-artifact-mapping"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "primary",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "primary",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "medium",
+      "language": "low"
+    }
+  }
 }
 ---
 # 定向复查回路

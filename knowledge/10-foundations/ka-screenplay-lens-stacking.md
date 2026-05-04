@@ -5,8 +5,25 @@
   "title": "剧本问题的多镜头拆解",
   "kind": "framework",
   "summary": "“如何创作剧本”这类宽问题不能被一个方法流派吃掉，而应拆成故事发动机、观众认知、媒介容器、开发流程、工业现实、历史边界等多个镜头。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "structure", "outline", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "structure",
+    "outline",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "把“如何创作剧本”错误压缩成单一结构模型、单一格式规则或单一审美路径，导致回答看似完整，实则漏掉真正改变下一步决策的层面。",
   "decision_rules": [
     "先把宽问题拆成故事引擎、观众理解、媒介容器、开发协作、工业环境和历史边界等镜头，再判断哪一层当前最关键。",
@@ -28,8 +45,34 @@
     "是否说清了当前主镜头为什么最重要",
     "是否避免把单一方法包装成普遍真理"
   ],
-  "links": ["ka.audience-need-state", "ka.commissioning-fit", "ka.screenwriting-history-shift", "ka.script-as-coordination-artifact", "ka.viewer-inference-guidance", "ka.screenwriting-deliberate-practice"],
-  "source_status": "curated"
+  "links": [
+    "ka.audience-need-state",
+    "ka.commissioning-fit",
+    "ka.screenwriting-history-shift",
+    "ka.script-as-coordination-artifact",
+    "ka.viewer-inference-guidance",
+    "ka.screenwriting-deliberate-practice"
+  ],
+  "source_status": "curated",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "primary",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "primary",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "primary",
+      "language": "low"
+    }
+  }
 }
 ---
 # 剧本问题的多镜头拆解

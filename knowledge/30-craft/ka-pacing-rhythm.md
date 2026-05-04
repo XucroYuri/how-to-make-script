@@ -5,8 +5,20 @@
   "title": "节奏与韵律",
   "kind": "heuristic",
   "summary": "节奏不是单纯快慢，而是信息、动作、情绪和决策密度的组织方式。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "shortform_video"],
-  "stages": ["structure", "outline", "scene", "rewrite"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "shortform_video"
+  ],
+  "stages": [
+    "structure",
+    "outline",
+    "scene",
+    "rewrite"
+  ],
   "problem": "剧本不是慢，而是没有波形；不是快，而是乱。",
   "decision_rules": [
     "先确认每段的节奏功能，再决定长短。",
@@ -28,8 +40,31 @@
     "转折前后是否有足够蓄力与消化",
     "目标媒介的观看节奏是否被满足"
   ],
-  "links": ["ka.scene-function", "ka.medium-short-drama", "ka.medium-shortform-video"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.scene-function",
+    "ka.medium-short-drama",
+    "ka.medium-shortform-video"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "medium",
+      "world": "low",
+      "event": "primary",
+      "audience": "primary",
+      "language": "medium"
+    }
+  }
 }
 ---
 # 节奏与韵律

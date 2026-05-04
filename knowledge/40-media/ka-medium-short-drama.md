@@ -5,8 +5,16 @@
   "title": "短剧媒介包",
   "kind": "medium_pack",
   "summary": "短剧要求高触发密度、快速关系识别、连续勾连和强钩子设计。",
-  "mediums": ["short_drama"],
-  "stages": ["premise", "structure", "outline", "scene", "rewrite"],
+  "mediums": [
+    "short_drama"
+  ],
+  "stages": [
+    "premise",
+    "structure",
+    "outline",
+    "scene",
+    "rewrite"
+  ],
   "problem": "把长剧节奏直接压缩会导致信息挤爆或钩子失效。",
   "decision_rules": [
     "每个关键段都要同时服务推进与留人。",
@@ -28,8 +36,30 @@
     "钩子是否来自真实冲突",
     "高密度是否仍保持因果清晰"
   ],
-  "links": ["ka.pacing-rhythm", "ka.conflict-pressure"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.pacing-rhythm",
+    "ka.conflict-pressure"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "medium"
+    },
+    "focus": {
+      "character": "high",
+      "world": "low",
+      "event": "primary",
+      "audience": "primary",
+      "language": "medium"
+    }
+  }
 }
 ---
 # 短剧媒介包

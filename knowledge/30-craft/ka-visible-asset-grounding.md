@@ -5,8 +5,20 @@
   "title": "可见资产锚定",
   "kind": "heuristic",
   "summary": "桥接到镜头或 clip 级时，要区分可见人物、画外音人物、可见道具和仅在语义层存在的信息，否则执行层会把文本暗示误当成画面证据。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video"],
-  "stages": ["scene", "adaptation", "rewrite"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video"
+  ],
+  "stages": [
+    "scene",
+    "adaptation",
+    "rewrite"
+  ],
   "problem": "桥接说明把 V.O.、背景设定、隐含道具和实际可见元素混成一层，导致镜头执行失真或资源判断错误。",
   "decision_rules": [
     "先区分可见证据与不可见信息，再写执行说明。",
@@ -28,8 +40,31 @@
     "镜头执行说明是否基于当下证据而非全文脑补",
     "资产列表是否避免了无关噪音"
   ],
-  "links": ["ka.source-span-traceability", "ka.screenplay-to-video-boundary", "ka.multilingual-visual-vocabulary"],
-  "source_status": "derived"
+  "links": [
+    "ka.source-span-traceability",
+    "ka.screenplay-to-video-boundary",
+    "ka.multilingual-visual-vocabulary"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "low",
+      "world": "high",
+      "event": "medium",
+      "audience": "medium",
+      "language": "low"
+    }
+  }
 }
 ---
 # 可见资产锚定

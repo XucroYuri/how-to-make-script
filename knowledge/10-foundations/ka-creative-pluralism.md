@@ -5,8 +5,24 @@
   "title": "创作多路径",
   "kind": "principle",
   "summary": "同一个剧本问题经常存在多条有效路径，仓库应优先呈现 tradeoff，而不是伪装成只有一个正确答案。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "structure", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "structure",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "系统过早把一个局部有效的方案写成全局最优，压缩了创意空间，也掩盖了真实 tradeoff。",
   "decision_rules": [
     "当至少两条路径都满足当前 brief 时，先呈现差异与代价，再考虑是否收敛。",
@@ -28,8 +44,32 @@
     "每条路径的 tradeoff 是否清楚",
     "收敛条件是否可判断"
   ],
-  "links": ["ka.false-universal-warning", "ka.divergence-convergence-loop", "ka.audience-need-state", "ka.commissioning-fit"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.false-universal-warning",
+    "ka.divergence-convergence-loop",
+    "ka.audience-need-state",
+    "ka.commissioning-fit"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "primary",
+      "construct": "medium",
+      "generate": "high"
+    },
+    "certainty": {
+      "certain": "medium",
+      "exploring": "primary",
+      "lost": "medium"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 创作多路径

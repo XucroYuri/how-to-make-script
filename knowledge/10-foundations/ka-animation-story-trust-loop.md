@@ -5,8 +5,18 @@
   "title": "动画 Story Trust 循环",
   "kind": "pattern",
   "summary": "动画开发往往依赖导演、故事、美术和后续生产之间的反复可视化迭代，而不是纯文本房间推进。",
-  "mediums": ["animation"],
-  "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "rewrite"],
+  "mediums": [
+    "animation"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "character",
+    "structure",
+    "outline",
+    "scene",
+    "rewrite"
+  ],
   "problem": "把动画开发当成纯剧本文本工作，忽略 story sketches、视觉开发、reel feedback 对叙事判断的影响。",
   "decision_rules": [
     "动画模式应把 visual development 和 story iteration 当成主循环的一部分，而不是后置附件。",
@@ -28,8 +38,31 @@
     "反馈是否以可视化叙事问题为单位而不只是对白问题",
     "team mode 是否保留了导演或 story lead 的强收束角色"
   ],
-  "links": ["ka.team-topology-selection", "ka.scene-function", "ka.boundary-first-guidance"],
-  "source_status": "curated"
+  "links": [
+    "ka.team-topology-selection",
+    "ka.scene-function",
+    "ka.boundary-first-guidance"
+  ],
+  "source_status": "curated",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "medium",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 动画 Story Trust 循环

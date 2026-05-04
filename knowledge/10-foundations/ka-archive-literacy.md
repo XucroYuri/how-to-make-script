@@ -5,8 +5,24 @@
   "title": "编剧档案素养",
   "kind": "history",
   "summary": "研究 step outline、treatment、批注稿、口述史、未拍项目和版本链，能比只看定稿更真实地理解编剧工作是如何发生的。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "structure", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "structure",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "学习者和 Agent 只研究成片或最终剧本，把大量真实开发、协作和改稿知识都漏掉，导致对创作过程形成失真的想象。",
   "decision_rules": [
     "优先比较同一项目的多个阶段文档，而不是只盯着最后的 polished draft。",
@@ -28,8 +44,33 @@
     "是否说明档案来源和版本状态为什么重要",
     "档案研究是否真正改变了当前的判断，而不是只增加典故"
   ],
-  "links": ["ka.screenwriting-history-shift", "ka.room-artifact-ladder", "ka.source-of-truth-runtime-split", "ka.source-span-traceability", "ka.script-as-coordination-artifact"],
-  "source_status": "curated"
+  "links": [
+    "ka.screenwriting-history-shift",
+    "ka.room-artifact-ladder",
+    "ka.source-of-truth-runtime-split",
+    "ka.source-span-traceability",
+    "ka.script-as-coordination-artifact"
+  ],
+  "source_status": "curated",
+  "posture_relevance": {
+    "source": {
+      "discover": "high",
+      "construct": "medium",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "medium",
+      "exploring": "high",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "low",
+      "world": "high",
+      "event": "medium",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 编剧档案素养

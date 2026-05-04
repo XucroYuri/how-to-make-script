@@ -5,8 +5,20 @@
   "title": "源片段可追溯性",
   "kind": "heuristic",
   "summary": "当剧本要桥接到 shot、clip 或 storyboard 级容器时，最好保留能回指原始文本的 source span 或证据单元，避免下游逐步漂移成另一个故事。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video"],
-  "stages": ["scene", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video"
+  ],
+  "stages": [
+    "scene",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "桥接层在一轮轮转写中不断损失上游证据，最后只剩看似专业的执行语言，却已经偏离原场景意图。",
   "decision_rules": [
     "能保 source span 的地方尽量保，不要全靠摘要二次解释。",
@@ -28,8 +40,31 @@
     "桥接后是否还能辨认原场景功能",
     "摘要和裁决是否没有偷换原文事实"
   ],
-  "links": ["ka.screenplay-to-video-boundary", "ka.video-generation-shot-economy", "ka.source-of-truth-runtime-split"],
-  "source_status": "derived"
+  "links": [
+    "ka.screenplay-to-video-boundary",
+    "ka.video-generation-shot-economy",
+    "ka.source-of-truth-runtime-split"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "high",
+      "event": "medium",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 源片段可追溯性

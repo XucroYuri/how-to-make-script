@@ -5,8 +5,28 @@
   "title": "参考人物型 Subagent 治理",
   "kind": "boundary_rule",
   "summary": "真实人物、公司或创作流派可以作为参考 persona 的灵感来源，但在仓库中应以 craft lens 和 workflow lineage 的方式出现，而不是无边界的直接 impersonation。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "character",
+    "structure",
+    "outline",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "一旦把名编剧 / 名导演直接塞进 subagent 机制，系统很容易从‘借鉴决策逻辑’滑向‘假装这个人本人在说话’，进而把创作参考误做成教条模仿。",
   "decision_rules": [
     "默认用 inspired_by 或 calibrated_reference 两级，不把参考 persona 写成绝对权威。",
@@ -28,8 +48,32 @@
     "persona 是否只作为 lens，而非最终 merge owner",
     "non-dogma note 是否清楚说明它只是参考路径之一"
   ],
-  "links": ["ka.creative-pluralism", "ka.false-universal-warning", "ka.scope-correction", "ka.subagent-cast-composition"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.creative-pluralism",
+    "ka.false-universal-warning",
+    "ka.scope-correction",
+    "ka.subagent-cast-composition"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "medium",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 参考人物型 Subagent 治理

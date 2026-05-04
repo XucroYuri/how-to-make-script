@@ -5,8 +5,25 @@
   "title": "异议保留循环",
   "kind": "heuristic",
   "summary": "高水平团队不会把少数路线和专业反对意见过早消音，而是把它们保存到明确的收敛关口再处理。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "structure", "outline", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "structure",
+    "outline",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "团队表面达成一致很快，但真正有价值的反路径、反例和专业警告被太早抹平。",
   "decision_rules": [
     "把 dissent 当成待编码资产，而不是团队噪音。",
@@ -28,8 +45,31 @@
     "异议是否被编码进后续 asset，而不是停留在口头争执",
     "收敛是否发生在规定关口，而不是被权力或疲劳提前触发"
   ],
-  "links": ["ka.creative-pluralism", "ka.scope-correction", "ka.divergence-convergence-loop"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.creative-pluralism",
+    "ka.scope-correction",
+    "ka.divergence-convergence-loop"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "high",
+      "construct": "medium",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "medium",
+      "exploring": "high",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 异议保留循环

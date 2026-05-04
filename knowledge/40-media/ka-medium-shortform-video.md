@@ -5,8 +5,16 @@
   "title": "短视频脚本媒介包",
   "kind": "medium_pack",
   "summary": "短视频脚本强调极快的识别、前置钩子、压缩表达和平台观看习惯适配。",
-  "mediums": ["shortform_video"],
-  "stages": ["ideation", "premise", "structure", "scene", "rewrite"],
+  "mediums": [
+    "shortform_video"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "structure",
+    "scene",
+    "rewrite"
+  ],
   "problem": "内容有点子，但平台环境下开头抓力不够，完成率低。",
   "decision_rules": [
     "前几秒先解决停留问题，再解决理解问题。",
@@ -28,8 +36,30 @@
     "平台适配是否明确",
     "信息与动作密度是否匹配窗口"
   ],
-  "links": ["ka.medium-commercial", "ka.pacing-rhythm"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.medium-commercial",
+    "ka.pacing-rhythm"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "high",
+      "audience": "primary",
+      "language": "medium"
+    }
+  }
 }
 ---
 # 短视频脚本媒介包

@@ -5,8 +5,28 @@
   "title": "Subagent 上下文预算",
   "kind": "heuristic",
   "summary": "subagent 的价值来自角色专注和上下文克制，而不是共享整个知识仓。每条 lane 都应该有自己的 context budget。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "character",
+    "structure",
+    "outline",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "一旦 subagent 都拿到全量上下文，系统就会失去专业分工带来的清晰度，最终变成多个大而全但同质化的代理互相转述。",
   "decision_rules": [
     "每个 subagent 都必须基于当前 mandate 领取最小 bundle，而不是继承主控上下文。",
@@ -28,8 +48,32 @@
     "共享信息是否通过 packet 明示，而不是隐式扩散",
     "扩容是否真的改变了判断，而不是制造噪音"
   ],
-  "links": ["ka.bounded-context-loading", "ka.context-corrosion-signals", "ka.reference-expansion-balance", "ka.handoff-packet-discipline"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.bounded-context-loading",
+    "ka.context-corrosion-signals",
+    "ka.reference-expansion-balance",
+    "ka.handoff-packet-discipline"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # Subagent 上下文预算

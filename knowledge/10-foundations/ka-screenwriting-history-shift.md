@@ -5,8 +5,24 @@
   "title": "剧本写作的历史变体",
   "kind": "history",
   "summary": "许多被视为普遍规律的剧本写法，其实都带着具体时代的工业条件、发行方式和观看习惯。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "structure", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "structure",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "开发时把经典格式、旧行业经验或单一时代的成功范式误当成跨时代真理，导致判断失真。",
   "decision_rules": [
     "引用历史范式前，先问它服务的是哪种工业条件和观看习惯。",
@@ -28,8 +44,33 @@
     "是否区分了稳定原则和时代性习惯",
     "历史引用是否真正改变了当前判断"
   ],
-  "links": ["ka.platform-attention-economy", "ka.medium-feature-film", "ka.medium-episode", "ka.medium-short-drama", "ka.medium-branching-interactive"],
-  "source_status": "curated"
+  "links": [
+    "ka.platform-attention-economy",
+    "ka.medium-feature-film",
+    "ka.medium-episode",
+    "ka.medium-short-drama",
+    "ka.medium-branching-interactive"
+  ],
+  "source_status": "curated",
+  "posture_relevance": {
+    "source": {
+      "discover": "high",
+      "construct": "medium",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "medium",
+      "exploring": "high",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "low",
+      "world": "high",
+      "event": "medium",
+      "audience": "medium",
+      "language": "low"
+    }
+  }
 }
 ---
 # 剧本写作的历史变体

@@ -5,8 +5,28 @@
   "title": "交接契约纪律",
   "kind": "heuristic",
   "summary": "多智能体协作的关键不是多找几个 specialist，而是每次交接都带着可执行的目标、边界、输入包、输出契约和未决问题。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "character",
+    "structure",
+    "outline",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "任务被拆出去后各写各的，结果回收时无法合并，或 specialist 在错误前提上做了高成本工作。",
   "decision_rules": [
     "每次 handoff 都必须写清目标产物、硬边界、软约束、输入包、停止条件和需要回传的问题。",
@@ -28,8 +48,31 @@
     "不同 lane 是否基于同一事实基线",
     "回收后的结果是否可被主 orchestrator 合并"
   ],
-  "links": ["ka.bounded-context-loading", "ka.boundary-first-guidance", "ka.context-corrosion-signals"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.bounded-context-loading",
+    "ka.boundary-first-guidance",
+    "ka.context-corrosion-signals"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 交接契约纪律

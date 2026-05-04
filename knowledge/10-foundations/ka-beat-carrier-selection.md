@@ -5,8 +5,19 @@
   "title": "Beat 载体选择",
   "kind": "framework",
   "summary": "不是每个项目都适合用同一种 beat 载体；有的适合 beat sheet，有的更适合 sequence ladder、clue ladder、thread map、scene chain 或分支状态图。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "game_narrative", "branching_interactive"],
-  "stages": ["structure", "outline", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "structure",
+    "outline",
+    "adaptation"
+  ],
   "problem": "项目明明需要别的组织视角，却被强行写成同一种 beat sheet，导致信息层级混乱或关键机制缺席。",
   "decision_rules": [
     "先判断当前最需要被看见的是转折、线索、线程、场景功能，还是状态变化。",
@@ -28,8 +39,31 @@
     "是否存在更小、更诚实的结构载体",
     "载体是否没有被格式惯性绑架"
   ],
-  "links": ["ka.structure-family-selection", "ka.causality-chain", "ka.command-artifact-mapping"],
-  "source_status": "derived"
+  "links": [
+    "ka.structure-family-selection",
+    "ka.causality-chain",
+    "ka.command-artifact-mapping"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "primary",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "primary",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "primary",
+      "audience": "medium",
+      "language": "low"
+    }
+  }
 }
 ---
 # Beat 载体选择

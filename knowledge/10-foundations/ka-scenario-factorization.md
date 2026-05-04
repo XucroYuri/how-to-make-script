@@ -5,8 +5,28 @@
   "title": "场景因子化",
   "kind": "decision_heuristic",
   "summary": "剧本创作场景应被拆成多个可组合因子来理解，而不是被一个单一标签或单一成功范式压扁。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "character",
+    "structure",
+    "outline",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "If the repo starts from one dominant label, it will overfit to genre slogans or platform slogans and lose the ability to route real screenplay work, especially in mixed-scenario briefs.",
   "decision_rules": [
     "Classify the scenario by a stack of factors, not by a single headline label.",
@@ -32,8 +52,32 @@
     "Does it preserve at least one viable alternative when the brief is still open?",
     "Does it avoid turning a reference pattern into a universal law?"
   ],
-  "links": ["ka.creative-pluralism", "ka.false-universal-warning", "ka.scope-correction", "ka.boundary-first-guidance"],
-  "source_status": "derived"
+  "links": [
+    "ka.creative-pluralism",
+    "ka.false-universal-warning",
+    "ka.scope-correction",
+    "ka.boundary-first-guidance"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "low",
+      "world": "medium",
+      "event": "high",
+      "audience": "medium",
+      "language": "low"
+    }
+  }
 }
 ---
 # 场景因子化

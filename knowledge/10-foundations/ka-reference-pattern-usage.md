@@ -5,8 +5,26 @@
   "title": "参考范式使用法",
   "kind": "framework",
   "summary": "成功范式样本的价值，不在于给出唯一标准答案，而在于把高概率有效的写法、常见失败写法和背后的判断差异显式化。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "structure", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "structure",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "很多创作者和 Agent 在学习剧本时，要么只拿到抽象原则，不知道如何落地；要么直接把单个成功样本当成唯一模板，导致机械模仿。",
   "decision_rules": [
     "参考范式必须同时提供成功写法、失败对照和差异解释，而不是只给一个看似漂亮的答案。",
@@ -28,8 +46,32 @@
     "是否说明了强样本的成功机制而非只给结论",
     "是否明确写出非唯一范式声明"
   ],
-  "links": ["ka.scenario-factorization", "ka.creative-pluralism", "ka.false-universal-warning", "ka.scope-correction"],
-  "source_status": "derived"
+  "links": [
+    "ka.scenario-factorization",
+    "ka.creative-pluralism",
+    "ka.false-universal-warning",
+    "ka.scope-correction"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "high",
+      "construct": "high",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "medium"
+    },
+    "focus": {
+      "character": "medium",
+      "world": "medium",
+      "event": "high",
+      "audience": "high",
+      "language": "medium"
+    }
+  }
 }
 ---
 # 参考范式使用法

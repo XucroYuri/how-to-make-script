@@ -5,8 +5,21 @@
   "title": "信息揭示控制",
   "kind": "technique",
   "summary": "信息要按戏剧需要分配，而不是按作者知道多少一次性倾倒。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "game_narrative"],
-  "stages": ["premise", "outline", "scene", "dialogue", "rewrite"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "game_narrative"
+  ],
+  "stages": [
+    "premise",
+    "outline",
+    "scene",
+    "dialogue",
+    "rewrite"
+  ],
   "problem": "设定复杂或信息量大时，剧本容易解释过度，节奏变钝。",
   "decision_rules": [
     "只在角色现在必须知道时揭示。",
@@ -28,8 +41,30 @@
     "设定揭示是否服务当前冲突",
     "信息释放顺序是否提升张力"
   ],
-  "links": ["ka.scene-function", "ka.dialogue-subtext"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.scene-function",
+    "ka.dialogue-subtext"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "medium",
+      "world": "medium",
+      "event": "high",
+      "audience": "primary",
+      "language": "high"
+    }
+  }
 }
 ---
 # 信息揭示控制

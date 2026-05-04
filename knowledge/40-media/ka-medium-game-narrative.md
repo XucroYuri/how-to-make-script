@@ -5,8 +5,16 @@
   "title": "游戏叙事媒介包",
   "kind": "medium_pack",
   "summary": "游戏叙事必须同时考虑作者安排与玩家行动体验之间的张力。",
-  "mediums": ["game_narrative"],
-  "stages": ["premise", "structure", "outline", "adaptation", "rewrite"],
+  "mediums": [
+    "game_narrative"
+  ],
+  "stages": [
+    "premise",
+    "structure",
+    "outline",
+    "adaptation",
+    "rewrite"
+  ],
   "problem": "线性剧本逻辑直接移植到游戏，导致玩家能做但不重要，或重要但不能做。",
   "decision_rules": [
     "把玩家行为看作叙事变量，而不是噪音。",
@@ -28,8 +36,30 @@
     "玩家代理感是否被保留",
     "关键节点是否有可玩的表达"
   ],
-  "links": ["ka.character-arc", "ka.medium-branching-interactive"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.character-arc",
+    "ka.medium-branching-interactive"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "high"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "high",
+      "world": "primary",
+      "event": "high",
+      "audience": "high",
+      "language": "low"
+    }
+  }
 }
 ---
 # 游戏叙事媒介包

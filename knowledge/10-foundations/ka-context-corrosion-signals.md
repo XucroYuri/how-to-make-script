@@ -5,8 +5,26 @@
   "title": "上下文腐化信号",
   "kind": "failure_mode",
   "summary": "上下文腐化不是 token 变多本身，而是上下文增量开始削弱 route 清晰度、判断一致性和生成聚焦度。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "structure", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "structure",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "Agent 通常在已经开始被上下文拖垮时，还以为自己只是‘参考更充分了’，结果产物变得更散、更慢、更像总结报告而不是有效创作。 ",
   "decision_rules": [
     "如果新增上下文没有改变下一步动作，却让回答更像摘要而不是决策，视为腐化信号。",
@@ -28,8 +46,31 @@
     "回答是否仍围绕用户请求的最小问题",
     "是否出现无必要的跨媒介或跨阶段混入"
   ],
-  "links": ["ka.bounded-context-loading", "ka.reference-expansion-balance", "ka.scope-correction"],
-  "source_status": "derived"
+  "links": [
+    "ka.bounded-context-loading",
+    "ka.reference-expansion-balance",
+    "ka.scope-correction"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 上下文腐化信号

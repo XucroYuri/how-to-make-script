@@ -5,8 +5,19 @@
   "title": "角色驱动四联体",
   "kind": "framework",
   "summary": "在角色早期开发阶段，欲望、恐惧、价值排序和内在矛盾，比履历信息更能决定人物会怎么选、怎么错、怎么成长。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "character", "rewrite"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "character",
+    "rewrite"
+  ],
   "problem": "人物设定信息很多，但一进入剧情决策就失去稳定驱动力。",
   "decision_rules": [
     "先写角色最想得到什么，再写他最怕失去什么。",
@@ -28,8 +39,31 @@
     "恐惧是否会真实限制欲望路径",
     "矛盾是否足够制造成长或崩塌"
   ],
-  "links": ["ka.character-arc", "ka.conflict-pressure", "ka.theme-pressure"],
-  "source_status": "derived"
+  "links": [
+    "ka.character-arc",
+    "ka.conflict-pressure",
+    "ka.theme-pressure"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "high",
+      "construct": "high",
+      "generate": "primary"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "medium"
+    },
+    "focus": {
+      "character": "primary",
+      "world": "low",
+      "event": "medium",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 角色驱动四联体

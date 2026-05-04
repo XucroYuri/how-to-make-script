@@ -5,8 +5,24 @@
   "title": "剧本作为协调产物",
   "kind": "principle",
   "summary": "剧本不是单纯的文学文本，它还承担开发、协作、融资、制作、交接和版本协调的作用。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "outline", "scene", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "outline",
+    "scene",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "把所有创作问题都压回“再写文本”，忽略当前真正需要推动的是立项、沟通、协作、版本管理还是下游执行准备。",
   "decision_rules": [
     "先判断下一位关键决策者是谁，再决定当前最应该写哪一种产物。",
@@ -28,8 +44,33 @@
     "是否保留了关键的版本和交接信息",
     "是否避免把开发、改稿和制作前准备都压成一种文本形式"
   ],
-  "links": ["ka.commissioning-fit", "ka.room-artifact-ladder", "ka.source-of-truth-runtime-split", "ka.handoff-contract-discipline", "ka.screenplay-to-video-boundary"],
-  "source_status": "curated"
+  "links": [
+    "ka.commissioning-fit",
+    "ka.room-artifact-ladder",
+    "ka.source-of-truth-runtime-split",
+    "ka.handoff-contract-discipline",
+    "ka.screenplay-to-video-boundary"
+  ],
+  "source_status": "curated",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 剧本作为协调产物

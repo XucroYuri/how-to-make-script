@@ -5,8 +5,20 @@
   "title": "剧本与视频生成 brief 的边界",
   "kind": "heuristic",
   "summary": "剧本负责戏剧、人物与场景功能，视频生成 brief 负责把其中一段内容翻译成时长受限、镜头受限、执行受限的可视化约束，不应相互吞并。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video"],
-  "stages": ["scene", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video"
+  ],
+  "stages": [
+    "scene",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "一旦把剧本文本直接压扁成视频提示词，要么戏剧目的丢失，要么生成 brief 过长过杂，既不像剧本，也不像可执行的视觉指令。",
   "decision_rules": [
     "先提取 scene 的戏剧任务、关系压力和非丢不可的信息，再做视觉翻译。",
@@ -28,8 +40,32 @@
     "brief 是否比原剧本更可执行，而不是更混乱",
     "是否明确区分了 screenplay residue 与 video-execution constraints"
   ],
-  "links": ["ka.scene-function", "ka.multilingual-visual-vocabulary", "ka.prompt-delegation-levels", "ka.medium-shortform-video"],
-  "source_status": "derived"
+  "links": [
+    "ka.scene-function",
+    "ka.multilingual-visual-vocabulary",
+    "ka.prompt-delegation-levels",
+    "ka.medium-shortform-video"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "medium",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 剧本与视频生成 brief 的边界

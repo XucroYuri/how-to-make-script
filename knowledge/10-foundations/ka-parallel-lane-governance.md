@@ -5,8 +5,26 @@
   "title": "并行泳道治理",
   "kind": "heuristic",
   "summary": "并行 lane 只有在共享真相包、明确边界和定期回收的条件下才会加速，否则只会把返工提前埋好。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "structure", "outline", "scene", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "structure",
+    "outline",
+    "scene",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "看起来很多 lane 同时推进，实际上事实基线分裂、风格飘移、回收成本暴涨。",
   "decision_rules": [
     "只有彼此依赖已被压缩进 handoff contract 时，任务才适合并行。",
@@ -28,8 +46,31 @@
     "共享真相包是否被持续维护",
     "回收 owner 和 merge 时点是否明确"
   ],
-  "links": ["ka.bounded-context-loading", "ka.reference-expansion-balance", "ka.context-corrosion-signals"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.bounded-context-loading",
+    "ka.reference-expansion-balance",
+    "ka.context-corrosion-signals"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 并行泳道治理

@@ -5,8 +5,25 @@
   "title": "观众推理引导",
   "kind": "research",
   "summary": "观众不会被动接收剧本信息，而是在不断推理角色目标、因果关系、情绪状态与故事契约，写作必须管理这种推理负荷。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "structure", "outline", "scene", "dialogue", "rewrite"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "structure",
+    "outline",
+    "scene",
+    "dialogue",
+    "rewrite"
+  ],
   "problem": "文本只顾隐藏信息、制造气氛或堆事件，却没有照顾观众如何理解、记住和情绪跟进，导致作品看似复杂，实则理解链条断裂。",
   "decision_rules": [
     "把角色目标变化、地点转换、关系翻转和关键物件状态变化当作观众理解边界来写，而不是只当作剧情事实。",
@@ -28,8 +45,34 @@
     "因果链是否允许观众在后续完成拼接",
     "情绪状态是否足够可推理而不是只能靠外部解释"
   ],
-  "links": ["ka.causality-chain", "ka.exposition-control", "ka.audience-need-state", "ka.opening-job-selection", "ka.scene-function", "ka.pacing-rhythm"],
-  "source_status": "curated"
+  "links": [
+    "ka.causality-chain",
+    "ka.exposition-control",
+    "ka.audience-need-state",
+    "ka.opening-job-selection",
+    "ka.scene-function",
+    "ka.pacing-rhythm"
+  ],
+  "source_status": "curated",
+  "posture_relevance": {
+    "source": {
+      "discover": "high",
+      "construct": "medium",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "medium",
+      "exploring": "high",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "medium",
+      "world": "low",
+      "event": "medium",
+      "audience": "primary",
+      "language": "low"
+    }
+  }
 }
 ---
 # 观众推理引导

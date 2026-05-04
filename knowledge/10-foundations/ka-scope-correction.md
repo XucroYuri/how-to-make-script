@@ -5,8 +5,23 @@
   "title": "范围修正",
   "kind": "decision_heuristic",
   "summary": "当一条剧本规则被反例击中时，仓库不应只在“硬扛”与“全盘推翻”之间二选一，而应优先做 scope correction。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "structure", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "structure",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "仓库中的强规则一旦被挑战，维护者或 Agent 很容易走向两个极端：要么继续把它写成普遍规律，要么直接翻成另一条同样粗暴的反向定律。",
   "decision_rules": [
     "先找出原规则中仍然成立的最小核心，再决定如何缩窄它的适用范围。",
@@ -28,8 +43,32 @@
     "是否写明至少一种失效条件或反例上下文",
     "是否说明修正后会影响哪些 route、rubric 或输出"
   ],
-  "links": ["ka.false-universal-warning", "ka.creative-pluralism", "ka.boundary-first-guidance", "ka.exploration-review-separation"],
-  "source_status": "derived"
+  "links": [
+    "ka.false-universal-warning",
+    "ka.creative-pluralism",
+    "ka.boundary-first-guidance",
+    "ka.exploration-review-separation"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "medium"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "medium",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 范围修正

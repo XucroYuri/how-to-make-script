@@ -5,8 +5,25 @@
   "title": "受众需求状态",
   "kind": "framework",
   "summary": "观众不是抽象人口标签，而是带着某种具体情绪任务、观看场景和回报预期进入内容。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "structure", "scene", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "structure",
+    "scene",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "项目知道自己属于什么类型，却不知道观众到底为什么要点开、看下去、看完后记住什么。",
   "decision_rules": [
     "先定义观众此刻来找的需要，再定义年龄圈层或平台标签。",
@@ -28,8 +45,32 @@
     "开头设计是否直接服务这类需求",
     "关键回报是否真的在文本里兑现"
   ],
-  "links": ["ka.story-goal", "ka.pacing-rhythm", "ka.platform-attention-economy", "ka.medium-shortform-video"],
-  "source_status": "derived"
+  "links": [
+    "ka.story-goal",
+    "ka.pacing-rhythm",
+    "ka.platform-attention-economy",
+    "ka.medium-shortform-video"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "high",
+      "construct": "high",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "medium",
+      "world": "low",
+      "event": "medium",
+      "audience": "primary",
+      "language": "low"
+    }
+  }
 }
 ---
 # 受众需求状态

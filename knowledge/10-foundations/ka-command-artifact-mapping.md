@@ -5,8 +5,28 @@
   "title": "阶段到产物的显式映射",
   "kind": "heuristic",
   "summary": "强 domain workflow 往往不是靠一句‘开始写’，而是靠阶段入口与产物面的清晰映射。清楚知道每一步输出什么，会显著降低漂移和返工。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "character",
+    "structure",
+    "outline",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "如果 workflow 只描述抽象阶段，却不说明‘这一步到底会落成什么 artifact’，系统就会越来越依赖口头记忆和隐式上下文，难以交接、复查和批量推进。",
   "decision_rules": [
     "让每个 phase 或入口都映射到一个或一组明确产物，而不是只写‘继续推进’。",
@@ -28,8 +48,31 @@
     "artifact ladder 是否能支持交接与批量推进",
     "是否避免了所有事情都挤进一份大文档"
   ],
-  "links": ["ka.phase-entrypoint-handoff", "ka.source-of-truth-runtime-split", "ka.project-surface-taxonomy"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.phase-entrypoint-handoff",
+    "ka.source-of-truth-runtime-split",
+    "ka.project-surface-taxonomy"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 阶段到产物的显式映射

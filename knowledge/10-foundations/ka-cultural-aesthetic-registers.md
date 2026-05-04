@@ -5,8 +5,23 @@
   "title": "文化美学语汇锚点",
   "kind": "heuristic",
   "summary": "跨语种视觉词汇包里最有价值的不是生硬的国别标签，而是能稳定牵引情绪、时间感、空间质地与人物关系的文化美学锚点。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "scene", "dialogue", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "scene",
+    "dialogue",
+    "adaptation"
+  ],
   "problem": "Agent 在借用日语、韩语、俄语、西语、中文视觉词时，容易把文化概念写成空洞标签或旅游宣传腔，导致气质假、判断浅。",
   "decision_rules": [
     "只保留那些会改变镜头、节奏、质感或人物关系的文化词，不要收集猎奇标签。",
@@ -28,8 +43,32 @@
     "是否避免了地域刻板化与廉价 exoticization",
     "是否把文化美学和场景问题真正扣在了一起"
   ],
-  "links": ["ka.multilingual-visual-vocabulary", "ka.creative-pluralism", "ka.false-universal-warning", "ka.register-adaptation"],
-  "source_status": "derived"
+  "links": [
+    "ka.multilingual-visual-vocabulary",
+    "ka.creative-pluralism",
+    "ka.false-universal-warning",
+    "ka.register-adaptation"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "high",
+      "construct": "medium",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "medium",
+      "exploring": "high",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "medium",
+      "world": "high",
+      "event": "low",
+      "audience": "high",
+      "language": "high"
+    }
+  }
 }
 ---
 # 文化美学语汇锚点

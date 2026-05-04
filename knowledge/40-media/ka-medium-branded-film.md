@@ -5,8 +5,15 @@
   "title": "品牌片媒介包",
   "kind": "medium_pack",
   "summary": "品牌片在叙事与品牌表达之间寻求更高审美与价值感的统一。",
-  "mediums": ["branded_film"],
-  "stages": ["premise", "structure", "scene", "rewrite"],
+  "mediums": [
+    "branded_film"
+  ],
+  "stages": [
+    "premise",
+    "structure",
+    "scene",
+    "rewrite"
+  ],
   "problem": "品牌片容易两头落空：要么像广告，要么像和品牌无关的短片。",
   "decision_rules": [
     "品牌价值应进入角色冲突或叙事情境，而不是后贴标签。",
@@ -28,8 +35,30 @@
     "审美表达是否服务品牌记忆",
     "作品是否兼顾情绪和辨识度"
   ],
-  "links": ["ka.theme-pressure", "ka.medium-commercial"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.theme-pressure",
+    "ka.medium-commercial"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "primary",
+      "language": "medium"
+    }
+  }
 }
 ---
 # 品牌片媒介包

@@ -5,8 +5,26 @@
   "title": "质检 metrics 压缩交接",
   "kind": "workflow_rule",
   "summary": "多镜头质检中的跨层传递应以 metrics、flags 和 scope notes 为主，而不是 findings 原文堆叠，这样才能兼顾信息保留与上下文卫生。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "structure",
+    "outline",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "如果每个 lens 都把 findings 全文传给下游，最终上下文会迅速膨胀，质检层会从多角度诊断退化成‘谁先说了什么谁就赢’的串行污染。",
   "decision_rules": [
     "跨 lens 默认只传 counts、severity ratios、hard-fail flags、changed ranges、open contradictions 和 confidence notes。",
@@ -28,8 +46,31 @@
     "scope 和 confidence 是否被一起保留",
     "交接是否真的减少了上下文腐化"
   ],
-  "links": ["ka.review-lens-isolation", "ka.handoff-packet-discipline", "ka.subagent-context-budgeting"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.review-lens-isolation",
+    "ka.handoff-packet-discipline",
+    "ka.subagent-context-budgeting"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 质检 metrics 压缩交接

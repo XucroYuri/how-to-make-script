@@ -5,8 +5,21 @@
   "title": "开场工作选择",
   "kind": "heuristic",
   "summary": "开场不是钩子菜单，而是要先决定本段最主要承担什么工作：角色承诺、世界规则承诺、问题缺口、情感连接、游戏规则或即时冲突。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video"],
-  "stages": ["premise", "outline", "scene", "rewrite"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video"
+  ],
+  "stages": [
+    "premise",
+    "outline",
+    "scene",
+    "rewrite"
+  ],
   "problem": "开场同时想完成太多事，结果既没抓住人，也没建立真正的故事承诺。",
   "decision_rules": [
     "先决定开场的主工作，再决定副工作，不要默认所有功能都必须同时满载。",
@@ -28,8 +41,31 @@
     "副工作是否没有压垮主工作",
     "开场承诺是否和项目真实引擎一致"
   ],
-  "links": ["ka.scene-function", "ka.exposition-control", "ka.platform-attention-economy"],
-  "source_status": "derived"
+  "links": [
+    "ka.scene-function",
+    "ka.exposition-control",
+    "ka.platform-attention-economy"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "primary"
+    },
+    "focus": {
+      "character": "high",
+      "world": "medium",
+      "event": "high",
+      "audience": "primary",
+      "language": "medium"
+    }
+  }
 }
 ---
 # 开场工作选择

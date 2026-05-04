@@ -5,8 +5,24 @@
   "title": "发散-收敛循环",
   "kind": "framework",
   "summary": "创作不是一路收敛，也不是无止境发散，而是在扩大可行空间和重新收束之间反复切换。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "structure", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "structure",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "创作流程要么过早锁死，要么永远不收口，导致项目既没有探索深度，也没有交付节奏。",
   "decision_rules": [
     "先用发散阶段扩大 option space，再用收敛阶段引入当前最关键的约束。",
@@ -28,8 +44,32 @@
     "收敛是否引用了明确约束而非空泛偏好",
     "项目卡住时是否知道该回退到哪一层"
   ],
-  "links": ["ka.creative-pluralism", "ka.boundary-first-guidance", "ka.exploration-review-separation", "ka.rewrite-diagnosis"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.creative-pluralism",
+    "ka.boundary-first-guidance",
+    "ka.exploration-review-separation",
+    "ka.rewrite-diagnosis"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "primary",
+      "construct": "high",
+      "generate": "high"
+    },
+    "certainty": {
+      "certain": "medium",
+      "exploring": "primary",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "medium",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 发散-收敛循环

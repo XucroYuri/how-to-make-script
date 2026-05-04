@@ -5,8 +5,19 @@
   "title": "人物弧光",
   "kind": "framework",
   "summary": "人物弧光是角色在压力下改变行动逻辑、价值排序或自我认知的轨迹。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "game_narrative", "branching_interactive"],
-  "stages": ["character", "structure", "rewrite"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "character",
+    "structure",
+    "rewrite"
+  ],
   "problem": "角色设定很多，但变化不成立，像被剧情拖着走。",
   "decision_rules": [
     "把弧光写成起始误判、压力暴露、代价升级、选择翻转。",
@@ -28,8 +39,30 @@
     "转变是否由具体代价触发",
     "结尾选择是否回扣开场缺陷"
   ],
-  "links": ["ka.story-goal", "ka.theme-pressure"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.story-goal",
+    "ka.theme-pressure"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "high",
+      "construct": "high",
+      "generate": "primary"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "medium"
+    },
+    "focus": {
+      "character": "primary",
+      "world": "low",
+      "event": "high",
+      "audience": "medium",
+      "language": "low"
+    }
+  }
 }
 ---
 # 人物弧光

@@ -5,8 +5,23 @@
   "title": "伪普遍规律预警",
   "kind": "failure_mode",
   "summary": "剧本知识最常见的错误之一，是把局部成功经验误写成跨媒介、跨时代、跨受众的普遍定律。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "structure", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "structure",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "知识条目表面上很有把握，但真实成立范围比写出来的窄得多，导致误导后续创作与路由。",
   "decision_rules": [
     "当一个规则听起来过于稳定时，先追问它依赖的媒介、平台、产业和历史条件。",
@@ -28,8 +43,32 @@
     "是否考虑了至少一种反例或失效条件",
     "规则强度是否与证据强度匹配"
   ],
-  "links": ["ka.screenwriting-history-shift", "ka.creative-pluralism", "ka.commissioning-fit", "ka.audience-need-state"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.screenwriting-history-shift",
+    "ka.creative-pluralism",
+    "ka.commissioning-fit",
+    "ka.audience-need-state"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "medium",
+      "audience": "medium",
+      "language": "low"
+    }
+  }
 }
 ---
 # 伪普遍规律预警

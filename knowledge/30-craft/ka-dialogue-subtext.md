@@ -5,8 +5,18 @@
   "title": "对白与潜台词",
   "kind": "technique",
   "summary": "好对白不是把想法直接说完，而是在表层话语下保留真正的利益和情绪搏斗。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "branded_film"],
-  "stages": ["scene", "dialogue", "rewrite"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "branded_film"
+  ],
+  "stages": [
+    "scene",
+    "dialogue",
+    "rewrite"
+  ],
   "problem": "对白信息完整但过于直白，声音同质，没有戏剧张力。",
   "decision_rules": [
     "先明确角色此刻真正想得到什么，再决定他表面说什么。",
@@ -28,8 +38,30 @@
     "角色声音是否可辨认",
     "信息揭示是否自然嵌入对抗"
   ],
-  "links": ["ka.conflict-pressure", "ka.exposition-control"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.conflict-pressure",
+    "ka.exposition-control"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "high",
+      "construct": "high",
+      "generate": "primary"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "medium"
+    },
+    "focus": {
+      "character": "primary",
+      "world": "low",
+      "event": "medium",
+      "audience": "high",
+      "language": "primary"
+    }
+  }
 }
 ---
 # 对白与潜台词

@@ -5,8 +5,24 @@
   "title": "探索-审查分离",
   "kind": "framework",
   "summary": "创意探索阶段与后续审查阶段应被明确区分，避免把发散期和放行期混为一谈。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "structure", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "structure",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "系统要么在 ideation 阶段过早自我审查，要么反过来把探索当成最终批准，导致两边都失真。",
   "decision_rules": [
     "探索阶段可暂缓 soft conformity checks，但不能撤下 hard safety boundaries。",
@@ -28,8 +44,32 @@
     "hard boundary 是否在所有阶段持续可见",
     "review gate 是否足以拦住不该进入最终交付的内容"
   ],
-  "links": ["ka.boundary-first-guidance", "ka.creative-pluralism", "ka.audience-need-state", "ka.commissioning-fit"],
-  "source_status": "derived"
+  "links": [
+    "ka.boundary-first-guidance",
+    "ka.creative-pluralism",
+    "ka.audience-need-state",
+    "ka.commissioning-fit"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "primary",
+      "construct": "medium",
+      "generate": "high"
+    },
+    "certainty": {
+      "certain": "medium",
+      "exploring": "primary",
+      "lost": "medium"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 探索-审查分离

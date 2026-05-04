@@ -5,8 +5,21 @@
   "title": "伪 Logline 预警",
   "kind": "heuristic",
   "summary": "很多句子听起来像 logline，但实际上只在贩卖题材气味、设定新奇感或主题姿态，并没有暴露故事发动机。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "adaptation"
+  ],
   "problem": "项目看似有一句话概念，但真正进入开发时，主角动作、阻力来源和持续推进力都不清楚。",
   "decision_rules": [
     "先判断当前句子是在描述故事发动机，还是只是在卖设定气味。",
@@ -28,8 +41,31 @@
     "阻力和 stakes 是否不是靠读者脑补补完",
     "句子是否具有开发级判断价值，而不是只适合市场宣传"
   ],
-  "links": ["ka.story-goal", "ka.conflict-pressure", "ka.reference-expansion-balance"],
-  "source_status": "derived"
+  "links": [
+    "ka.story-goal",
+    "ka.conflict-pressure",
+    "ka.reference-expansion-balance"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "high",
+      "construct": "medium",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "medium",
+      "exploring": "high",
+      "lost": "medium"
+    },
+    "focus": {
+      "character": "medium",
+      "world": "low",
+      "event": "high",
+      "audience": "medium",
+      "language": "low"
+    }
+  }
 }
 ---
 # 伪 Logline 预警

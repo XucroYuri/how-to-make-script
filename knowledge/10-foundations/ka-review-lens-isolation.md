@@ -5,8 +5,27 @@
   "title": "审查镜头隔离",
   "kind": "principle",
   "summary": "多镜头质检时，每个 lens 都应在 bounded brief 下独立判断，避免前一个 lens 的原始 findings 污染后一个 lens。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "character",
+    "structure",
+    "outline",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "一旦前一个审查层的大段结论被直接喂给后一个审查层，后面的 lens 很容易开始重复前面的判断，或者被某个早期偏见拖着跑，失去独立诊断价值。",
   "decision_rules": [
     "每个 lens 只接收 artifact、本 lens 定义、target contract 和压缩后的上游 metrics。",
@@ -28,8 +47,31 @@
     "metrics 是否替代了原始 findings 的大段传递",
     "聚合层是否保留了 lens 间分歧"
   ],
-  "links": ["ka.handoff-packet-discipline", "ka.bounded-context-loading", "ka.context-corrosion-signals"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.handoff-packet-discipline",
+    "ka.bounded-context-loading",
+    "ka.context-corrosion-signals"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "primary",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "medium",
+      "language": "low"
+    }
+  }
 }
 ---
 # 审查镜头隔离

@@ -5,8 +5,15 @@
   "title": "动画剧本媒介包",
   "kind": "medium_pack",
   "summary": "动画需要更自觉地管理视觉可执行性、动作表达和设定转译成本。",
-  "mediums": ["animation"],
-  "stages": ["premise", "structure", "scene", "rewrite"],
+  "mediums": [
+    "animation"
+  ],
+  "stages": [
+    "premise",
+    "structure",
+    "scene",
+    "rewrite"
+  ],
   "problem": "设定可以更自由，但可视化和执行成本常被忽略。",
   "decision_rules": [
     "写清视觉动作逻辑，不把关键戏压给模糊想象。",
@@ -28,8 +35,30 @@
     "设定是否服务戏剧核心",
     "风格和可读性是否平衡"
   ],
-  "links": ["ka.scene-function", "ka.exposition-control"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.scene-function",
+    "ka.exposition-control"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "medium",
+      "world": "high",
+      "event": "medium",
+      "audience": "high",
+      "language": "low"
+    }
+  }
 }
 ---
 # 动画剧本媒介包

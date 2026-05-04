@@ -5,8 +5,27 @@
   "title": "契约优先的质检逻辑",
   "kind": "workflow_rule",
   "summary": "自检不应先从泛泛‘好不好’开始，而应先确认当前 artifact 到底在交付什么 contract。只有 contract 先锁住，后续质量检查才不会漂到错题上。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "character",
+    "structure",
+    "outline",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "很多审查报告看似认真，实际上先审美、后定题，结果把 scene_draft 当 outline 审，把 project surface 当 story page 审，最终给出一堆方向错位的建议。",
   "decision_rules": [
     "先锁定当前正在审的 artifact contract，而不是直接进入泛泛点评。",
@@ -28,8 +47,31 @@
     "是否先做了 contract fit 再做质量判断",
     "是否避免了把错题写得更漂亮"
   ],
-  "links": ["ka.two-stage-review-loop", "ka.scenario-factorization", "ka.boundary-first-guidance"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.two-stage-review-loop",
+    "ka.scenario-factorization",
+    "ka.boundary-first-guidance"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "primary",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "primary",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 契约优先的质检逻辑

@@ -5,8 +5,20 @@
   "title": "因果链",
   "kind": "principle",
   "summary": "强叙事依赖因果推进，而不是一连串彼此无关的漂亮事件。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "structure", "outline", "rewrite"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "structure",
+    "outline",
+    "rewrite"
+  ],
   "problem": "大纲里每个点都单独成立，但连起来像拼盘，没有不可替代的顺序。",
   "decision_rules": [
     "让每个关键事件都由前一个选择或失败触发。",
@@ -28,8 +40,30 @@
     "高潮是否由一连串错误或选择自然累积",
     "角色是否在因果链中承担责任"
   ],
-  "links": ["ka.story-goal", "ka.rewrite-diagnosis"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.story-goal",
+    "ka.rewrite-diagnosis"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "primary",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "primary",
+      "exploring": "high",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "medium",
+      "world": "low",
+      "event": "primary",
+      "audience": "medium",
+      "language": "low"
+    }
+  }
 }
 ---
 # 因果链

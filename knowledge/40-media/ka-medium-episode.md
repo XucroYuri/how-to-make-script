@@ -5,8 +5,16 @@
   "title": "剧集单集媒介包",
   "kind": "medium_pack",
   "summary": "单集既要完成当集体验，也要服务季级或系列级推进。",
-  "mediums": ["episodic"],
-  "stages": ["premise", "structure", "outline", "scene", "rewrite"],
+  "mediums": [
+    "episodic"
+  ],
+  "stages": [
+    "premise",
+    "structure",
+    "outline",
+    "scene",
+    "rewrite"
+  ],
   "problem": "单集要么像被截断的电影，要么像纯填充支线。",
   "decision_rules": [
     "拆分当集闭环和系列推进两条任务线。",
@@ -30,8 +38,30 @@
     "系列推进是否清晰但不过载",
     "结尾钩子是否来自剧情而非硬吊"
   ],
-  "links": ["ka.causality-chain", "ka.scene-function"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.causality-chain",
+    "ka.scene-function"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "high",
+      "world": "medium",
+      "event": "primary",
+      "audience": "high",
+      "language": "low"
+    }
+  }
 }
 ---
 # 剧集单集媒介包

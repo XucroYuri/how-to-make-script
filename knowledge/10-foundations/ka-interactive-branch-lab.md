@@ -5,8 +5,19 @@
   "title": "互动分支实验室",
   "kind": "pattern",
   "summary": "互动叙事团队必须把 narrative、systems、state 和 test loop 放在同一工作流里，而不是先写完故事再补交互。",
-  "mediums": ["game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "structure", "outline", "scene", "rewrite", "adaptation"],
+  "mediums": [
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "structure",
+    "outline",
+    "scene",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "把互动叙事写成线性剧本再强行切分支，导致假选择、状态失真和可玩性崩坏。",
   "decision_rules": [
     "interactive 模式至少并行 narrative lane、systems/state lane、test/qa lane。",
@@ -28,8 +39,31 @@
     "分支设计是否配套 state 与 QA gate",
     "团队模式是否有机制防止 branch explosion"
   ],
-  "links": ["ka.medium-branching-interactive", "ka.scenario-factorization", "ka.boundary-first-guidance"],
-  "source_status": "curated"
+  "links": [
+    "ka.medium-branching-interactive",
+    "ka.scenario-factorization",
+    "ka.boundary-first-guidance"
+  ],
+  "source_status": "curated",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "high"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "high",
+      "audience": "medium",
+      "language": "low"
+    }
+  }
 }
 ---
 # 互动分支实验室

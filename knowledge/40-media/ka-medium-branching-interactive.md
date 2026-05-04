@@ -5,8 +5,15 @@
   "title": "分支互动叙事媒介包",
   "kind": "medium_pack",
   "summary": "分支互动叙事需要把选择、状态、后果和主题统一进同一逻辑系统。",
-  "mediums": ["branching_interactive"],
-  "stages": ["structure", "outline", "adaptation", "rewrite"],
+  "mediums": [
+    "branching_interactive"
+  ],
+  "stages": [
+    "structure",
+    "outline",
+    "adaptation",
+    "rewrite"
+  ],
   "problem": "分支很多但没有意义，或者分支有意义却无法收束。",
   "decision_rules": [
     "每个重要选择都应区分价值取向、资源状态或关系后果。",
@@ -28,8 +35,30 @@
     "状态与后果是否持续追踪",
     "整体分支结构是否可收束"
   ],
-  "links": ["ka.medium-game-narrative", "ka.causality-chain"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.medium-game-narrative",
+    "ka.causality-chain"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "high"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "medium",
+      "world": "medium",
+      "event": "primary",
+      "audience": "high",
+      "language": "low"
+    }
+  }
 }
 ---
 # 分支互动叙事媒介包

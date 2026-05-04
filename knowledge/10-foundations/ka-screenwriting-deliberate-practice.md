@@ -5,8 +5,25 @@
   "title": "编剧的刻意训练",
   "kind": "education",
   "summary": "编剧能力主要通过反复读、写、被反馈、重写、跨容器比较和完整项目练习积累，而不是靠一次性掌握某套理论。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "structure", "scene", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "structure",
+    "scene",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "学习者沉迷理论总结、灵感收集或片段练习，却长期缺少完整产物、真实反馈和重写循环，导致知道很多术语但写作能力增长缓慢。",
   "decision_rules": [
     "把学习路径绑定到真实产物、反馈渠道和返修轮次，而不是只绑定阅读清单。",
@@ -28,8 +45,33 @@
     "是否安排了完整容器练习而不只是在局部打转",
     "是否说明了升级条件，而不是只说“继续多写”"
   ],
-  "links": ["ka.writer-development-loop", "ka.structure-family-selection", "ka.rewrite-diagnosis", "ka.screenwriting-history-shift", "ka.archive-literacy"],
-  "source_status": "curated"
+  "links": [
+    "ka.writer-development-loop",
+    "ka.structure-family-selection",
+    "ka.rewrite-diagnosis",
+    "ka.screenwriting-history-shift",
+    "ka.archive-literacy"
+  ],
+  "source_status": "curated",
+  "posture_relevance": {
+    "source": {
+      "discover": "high",
+      "construct": "medium",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "medium",
+      "exploring": "high",
+      "lost": "high"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 编剧的刻意训练

@@ -5,8 +5,26 @@
   "title": "硬门槛与软评分分离",
   "kind": "evaluation_rule",
   "summary": "高质量质检不应把所有问题都揉成一个平均分。必须先把 hard fail 和 soft weakness 分开，避免严重违约被漂亮局部平均掉。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "structure",
+    "outline",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "如果所有问题都只变成一个总分，团队很容易忽略 contract breach、state break、delivery failure 这类‘一票否决’问题，转而只讨论可打磨的弱项。",
   "decision_rules": [
     "先判定 hard fail，再计算 weighted weakness。",
@@ -28,8 +46,31 @@
     "weighted weakness 是否只承担排序而非掩盖",
     "最终结论是否同时反映 gate 和 score"
   ],
-  "links": ["ka.boundary-first-guidance", "ka.scope-correction", "ka.contract-first-quality-gating"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.boundary-first-guidance",
+    "ka.scope-correction",
+    "ka.contract-first-quality-gating"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "primary",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "primary",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "medium",
+      "language": "low"
+    }
+  }
 }
 ---
 # 硬门槛与软评分分离

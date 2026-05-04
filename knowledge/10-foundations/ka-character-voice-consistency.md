@@ -5,8 +5,24 @@
   "title": "角色声音一致性",
   "kind": "heuristic",
   "summary": "角色声音不是口头禅清单，而是由立场、欲望、策略、身份成本和表达习惯共同形成的可重复语言重心。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["character", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "character",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "人物说话听起来像同一个作者，或一到关键场面就失去原有角色逻辑。",
   "decision_rules": [
     "先定义角色在当前场面最想得到什么、最不愿暴露什么，再谈语言风格。",
@@ -28,8 +44,32 @@
     "声音差异是否来自人物逻辑，而不是表面词汇换皮",
     "高压场景下角色声音是否仍然保持辨识度"
   ],
-  "links": ["ka.dialogue-subtext", "ka.conflict-pressure", "ka.character-arc", "ka.triggered-behavior-profile"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.dialogue-subtext",
+    "ka.conflict-pressure",
+    "ka.character-arc",
+    "ka.triggered-behavior-profile"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "primary",
+      "world": "low",
+      "event": "low",
+      "audience": "medium",
+      "language": "high"
+    }
+  }
 }
 ---
 # 角色声音一致性

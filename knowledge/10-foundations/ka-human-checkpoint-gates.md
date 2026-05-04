@@ -5,8 +5,26 @@
   "title": "人工检查关口",
   "kind": "heuristic",
   "summary": "human-in-the-loop 不是随时来一句“你觉得呢”，而是要在关键风险点设置有明确权限和明确问题的人工关口。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "character", "structure", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "character",
+    "structure",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "人工参与过早会拖慢探索，过晚会放大返工；没有明确 gate 的 human review 往往只会制造泛化意见。",
   "decision_rules": [
     "只在会改变方向、边界、IP 连续性、商业风险或最终批准权的节点上设置人类关口。",
@@ -28,8 +46,31 @@
     "每个 gate 的权限和问题是否明确",
     "人类输入是否被结构化吸收，而不是重新把任务打散"
   ],
-  "links": ["ka.boundary-first-guidance", "ka.scope-correction", "ka.ip-voice-continuity"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.boundary-first-guidance",
+    "ka.scope-correction",
+    "ka.ip-voice-continuity"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 人工检查关口

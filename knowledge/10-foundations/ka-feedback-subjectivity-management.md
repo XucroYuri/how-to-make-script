@@ -5,8 +5,25 @@
   "title": "反馈主观性管理",
   "kind": "heuristic",
   "summary": "剧本反馈天然带主观性，但主观性不等于无效；有效的处理方式是聚类重复信号、翻译底层病灶，并保护仍然成立的创作核心。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["premise", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "premise",
+    "outline",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "创作者要么把每条 note 都当圣旨执行，要么因为反馈彼此矛盾就干脆全部无视，导致改稿失去判断力。",
   "decision_rules": [
     "先区分 note 的表面措辞和它可能指向的底层病灶，再决定是否采纳。",
@@ -28,8 +45,33 @@
     "是否识别出重复信号背后的底层问题",
     "修改建议是否真的对应病因，而不是只回应措辞"
   ],
-  "links": ["ka.dissent-preservation-loop", "ka.scope-correction", "ka.rewrite-diagnosis", "ka.targeted-recheck-loop", "ka.screenplay-lens-stacking"],
-  "source_status": "curated"
+  "links": [
+    "ka.dissent-preservation-loop",
+    "ka.scope-correction",
+    "ka.rewrite-diagnosis",
+    "ka.targeted-recheck-loop",
+    "ka.screenplay-lens-stacking"
+  ],
+  "source_status": "curated",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "medium"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "high",
+      "language": "low"
+    }
+  }
 }
 ---
 # 反馈主观性管理

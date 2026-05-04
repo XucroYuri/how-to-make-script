@@ -5,8 +5,27 @@
   "title": "房间式产物梯子",
   "kind": "heuristic",
   "summary": "高水平团队不是靠一直开会达成一致，而是靠一串可收敛、可回收、可审阅的中间产物逐步逼近成稿。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "character",
+    "structure",
+    "outline",
+    "scene",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "团队讨论很多，但没有共享 artifact ladder，导致观点堆积、版本失控、回顾困难。",
   "decision_rules": [
     "先定义这个 team mode 的 artifact ladder，再安排 parallel lanes 和 review cadence。",
@@ -28,8 +47,31 @@
     "每一层产物是否有对应 owner 和 review gate",
     "团队是否能通过产物而不是抽象记忆维持共享上下文"
   ],
-  "links": ["ka.divergence-convergence-loop", "ka.exploration-review-separation", "ka.scene-function"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.divergence-convergence-loop",
+    "ka.exploration-review-separation",
+    "ka.scene-function"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "medium",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 房间式产物梯子

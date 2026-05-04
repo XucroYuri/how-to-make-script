@@ -5,8 +5,28 @@
   "title": "Subagent 阵容编排",
   "kind": "heuristic",
   "summary": "多智能体创作不是把所有专家都拉进场，而是用最小可用阵容覆盖真实决策压力，并给每个 subagent 清楚的职责、上下文包和退出条件。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "character",
+    "structure",
+    "outline",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "多智能体系统容易因为“专家越多越强”而失控，导致职责重叠、上下文泛滥、收敛速度下降，最后还不如一个清醒的 orchestrator。",
   "decision_rules": [
     "先选必须在场的核心功能角色，再补过程节点，最后才决定是否需要 persona lens。",
@@ -28,8 +48,32 @@
     "角色间是否存在清晰的 authority 和 merge 关系",
     "persona lens 是否被限制在辅助校准而非主导创作"
   ],
-  "links": ["ka.team-topology-selection", "ka.process-node-specialization", "ka.convergence-owner-discipline", "ka.subagent-context-budgeting"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.team-topology-selection",
+    "ka.process-node-specialization",
+    "ka.convergence-owner-discipline",
+    "ka.subagent-context-budgeting"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # Subagent 阵容编排

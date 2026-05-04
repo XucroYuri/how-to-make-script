@@ -5,8 +5,20 @@
   "title": "视频生成镜头经济学",
   "kind": "heuristic",
   "summary": "短时长视频生成最怕多主动作、多主镜头和多主意图竞争，因此桥接层必须主动压缩成单一主动作、单一主镜头逻辑和清楚的不变量。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video"],
-  "stages": ["scene", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video"
+  ],
+  "stages": [
+    "scene",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "一个戏剧上成立的场景，直接进入 4 到 12 秒生成容器后，经常因为动作太多、转折太多、镜头太多而彻底失焦。",
   "decision_rules": [
     "每个短 clip 优先只保一条主动作线和一条主镜头线。",
@@ -28,8 +40,32 @@
     "相机逻辑是否清楚且不过载",
     "不变量是否被明确列出并从正文噪音里分离"
   ],
-  "links": ["ka.screenplay-to-video-boundary", "ka.prompt-delegation-levels", "ka.pacing-rhythm", "ka.medium-commercial"],
-  "source_status": "derived"
+  "links": [
+    "ka.screenplay-to-video-boundary",
+    "ka.prompt-delegation-levels",
+    "ka.pacing-rhythm",
+    "ka.medium-commercial"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "medium",
+      "event": "medium",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # 视频生成镜头经济学

@@ -5,8 +5,25 @@
   "title": "委制适配",
   "kind": "principle",
   "summary": "一个概念是否值得推进，不只取决于它好不好看，也取决于它是否匹配具体的立项、委制、分发和交付逻辑。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["ideation", "premise", "structure", "outline", "rewrite", "adaptation"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "ideation",
+    "premise",
+    "structure",
+    "outline",
+    "rewrite",
+    "adaptation"
+  ],
   "problem": "剧本想法本身有趣，但不知道在真实平台、品牌、片方、工作室或游戏团队语境里该如何被开发和交付。",
   "decision_rules": [
     "先明确是谁在委制、为什么委制、交付什么，再决定创作优先级。",
@@ -28,8 +45,33 @@
     "输出物是否匹配当前开发阶段",
     "创作建议是否考虑了平台和交付现实"
   ],
-  "links": ["ka.platform-attention-economy", "ka.medium-commercial", "ka.medium-branded-film", "ka.medium-episode", "ka.medium-feature-film"],
-  "source_status": "derived"
+  "links": [
+    "ka.platform-attention-economy",
+    "ka.medium-commercial",
+    "ka.medium-branded-film",
+    "ka.medium-episode",
+    "ka.medium-feature-film"
+  ],
+  "source_status": "derived",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "high",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "low",
+      "audience": "primary",
+      "language": "low"
+    }
+  }
 }
 ---
 # 委制适配

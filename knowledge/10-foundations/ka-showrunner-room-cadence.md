@@ -5,8 +5,18 @@
   "title": "Showrunner 房间节奏",
   "kind": "pattern",
   "summary": "TV writers' room 的核心不是多人热闹，而是由 showrunner 驱动的持续分工、反复汇总和生产关联写作。",
-  "mediums": ["episodic", "short_drama"],
-  "stages": ["premise", "character", "structure", "outline", "scene", "rewrite"],
+  "mediums": [
+    "episodic",
+    "short_drama"
+  ],
+  "stages": [
+    "premise",
+    "character",
+    "structure",
+    "outline",
+    "scene",
+    "rewrite"
+  ],
   "problem": "把剧集开发写成 feature 式单线程，或误把 room 理解成无限平权发散，导致 season engine 和 episode breakdown 失控。",
   "decision_rules": [
     "showrunner 负责 season engine、voice ceiling、production reality 和最终收束。",
@@ -28,8 +38,31 @@
     "房间 cadence 是否有清晰的拆分和收束节奏",
     "输出是否匹配当前房间阶段而不是一锅炖"
   ],
-  "links": ["ka.team-topology-selection", "ka.audience-need-state", "ka.conflict-pressure"],
-  "source_status": "curated"
+  "links": [
+    "ka.team-topology-selection",
+    "ka.audience-need-state",
+    "ka.conflict-pressure"
+  ],
+  "source_status": "curated",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "high",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "low",
+      "world": "low",
+      "event": "medium",
+      "audience": "low",
+      "language": "low"
+    }
+  }
 }
 ---
 # Showrunner 房间节奏

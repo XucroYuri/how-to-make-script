@@ -5,8 +5,19 @@
   "title": "改稿诊断",
   "kind": "workflow_fragment",
   "summary": "改稿优先识别病灶层级：概念、结构、场景、对白，避免在错误层级上勤奋。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "game_narrative", "branching_interactive"],
-  "stages": ["rewrite"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "rewrite"
+  ],
   "problem": "改稿时只改句子和局部桥段，却没有解决真正导致失效的结构病灶。",
   "decision_rules": [
     "先判断问题发生在哪一层，再决定改什么。",
@@ -28,8 +39,31 @@
     "建议是否按影响力排序",
     "建议是否对应到可执行修改动作"
   ],
-  "links": ["ka.causality-chain", "ka.scene-function", "ka.dialogue-subtext"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.causality-chain",
+    "ka.scene-function",
+    "ka.dialogue-subtext"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "low",
+      "construct": "primary",
+      "generate": "low"
+    },
+    "certainty": {
+      "certain": "primary",
+      "exploring": "high",
+      "lost": "suppress"
+    },
+    "focus": {
+      "character": "high",
+      "world": "medium",
+      "event": "high",
+      "audience": "high",
+      "language": "high"
+    }
+  }
 }
 ---
 # 改稿诊断

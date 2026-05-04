@@ -5,8 +5,22 @@
   "title": "台词句际节奏",
   "kind": "technique",
   "summary": "对白节奏不是单一速度，而是句长变化、打断机制、语速编码和标点作为节奏工具的综合运用。",
-  "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-  "stages": ["dialogue", "scene", "rewrite"],
+  "mediums": [
+    "feature_film",
+    "episodic",
+    "short_drama",
+    "animation",
+    "commercial",
+    "branded_film",
+    "shortform_video",
+    "game_narrative",
+    "branching_interactive"
+  ],
+  "stages": [
+    "dialogue",
+    "scene",
+    "rewrite"
+  ],
   "problem": "所有台词句长相近、节奏均匀、缺乏打断和迟疑，像在念稿而不是在说话。",
   "decision_rules": [
     "六行以上的对话里，至少两行要打破当前主导句长模式——一句明显更短，一句更长或拖尾。",
@@ -31,8 +45,31 @@
     "打断和停顿是否被使用且不过量",
     "语言节奏是否反映了角色状态而非作者节奏"
   ],
-  "links": ["ka.dialogue-subtext", "ka.pacing-rhythm", "ka.embodied-text-pressure"],
-  "source_status": "synthesized"
+  "links": [
+    "ka.dialogue-subtext",
+    "ka.pacing-rhythm",
+    "ka.embodied-text-pressure"
+  ],
+  "source_status": "synthesized",
+  "posture_relevance": {
+    "source": {
+      "discover": "medium",
+      "construct": "high",
+      "generate": "medium"
+    },
+    "certainty": {
+      "certain": "high",
+      "exploring": "medium",
+      "lost": "low"
+    },
+    "focus": {
+      "character": "primary",
+      "world": "low",
+      "event": "low",
+      "audience": "high",
+      "language": "primary"
+    }
+  }
 }
 ---
 # 台词句际节奏
