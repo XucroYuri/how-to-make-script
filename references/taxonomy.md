@@ -63,6 +63,7 @@
 - `subagent_dispatch_plan`
 - `project_surface_map`
 - `audience_proxy_report`
+- `session_execution_plan`
 
 ## Constraint Families
 - `audience_segment`
@@ -139,6 +140,8 @@
 - `emergence_mode`
 - `collision_template`
 - `creative_pressure`
+- `session_plan_mode`
+- `segment_count`
 - `rating`
 - `franchise_ip_limits`
 - `retention_window`

@@ -34,3 +34,4 @@ Use [`references/output-format-contracts.md`](./output-format-contracts.md) for 
 - `subagent_dispatch_plan`: multi-level dispatch plan with topology, phase ladder, packet rules, context budgets, review loops, and collapse triggers.
 - `project_surface_map`: long-running project surface design showing canonical source, runtime state, packet assembly, phase entrypoints, review surfaces, export surfaces, and edit/sync rules.
 - `audience_proxy_report`: multi-persona progressive viewing simulation report with per-agent state snapshots, consensus concerns, flow-risk points, and mapped rewrite priorities.
+- `session_execution_plan`: ordered multi-segment session plan with per-segment protocol assignments, stop conditions, handoff contracts, and checkpoint markers for cross-stage screenplay work that spans two or more output contracts.

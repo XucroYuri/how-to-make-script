@@ -92,6 +92,14 @@
     "anti_sycophancy_guard": {
       "canonical": "anti_sycophancy_guard",
       "note": "Enforces Anti-Sycophancy Guard in proxy evaluation; blocks diplomatic softening."
+    },
+    "session_plan_mode": {
+      "canonical": "session_plan_mode",
+      "note": "Session execution planning mode; triggers multi-segment decomposition protocol."
+    },
+    "segment_count": {
+      "canonical": "segment_count",
+      "note": "Number of segments in a session execution plan; used by session-execution-plan protocol."
     }
   },
   "detail_keys": {

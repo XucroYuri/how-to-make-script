@@ -2118,5 +2118,30 @@
       "concerns should be stated directly without diplomatic softening",
       "at least one rewrite priority should map to a specific scene position"
     ]
+  },
+  {
+    "id": "fx.session-plan-01",
+    "type": "example_fixture",
+    "query": "我今晚想从 logline 推进到场景草稿，但中间需要先确定结构和角色。帮我做一个三段的执行计划，每段完成后停一下。",
+    "intent": "design",
+    "medium": "feature_film",
+    "stage": "premise",
+    "output": "session_execution_plan",
+    "constraints": {
+      "session_plan_mode": "multi_segment",
+      "route_certainty": "medium",
+      "draft_stage": "premise"
+    },
+    "expected_route": {
+      "skill_id": "skill.context-governor",
+      "protocol_id": "wp.session-execution-plan",
+      "rubric_id": "rb.session-execution-plan"
+    },
+    "key_checks": [
+      "plan should have 3-4 segments max, not the full project roadmap",
+      "each segment must have a stop condition and an output contract",
+      "handoff contracts between segments must be explicit",
+      "at least one checkpoint marker between structure→scene boundary"
+    ]
   }
 ]

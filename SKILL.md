@@ -65,6 +65,7 @@ Before routing any request, perform a lightweight creative posture detection pas
 - Prefer `boundary_map` when the user asks what is absolutely disallowed versus flexibly negotiable.
 - Prefer `scope_correction` when the user challenges a rule, route, or rubric and the right response is to narrow its scope rather than replace it wholesale.
 - Prefer `audience_proxy_report` when the user asks for scene- or draft-level viewing experience simulation, multi-persona reading, attention curve diagnosis, or anti-sycophancy honest feedback on a specific scene or script passage.
+- Prefer `session_execution_plan` when the user's request spans two or more stages (e.g., "from logline to scene draft tonight"), needs multi-stage decomposition, explicit handoff contracts between stages, or the user asks for a session-level work plan rather than a single output.
 - Prefer `research_background_map` for broad theory or background requests; use a `survey_pack` only if breadth remains materially necessary after that route is selected.
 - Prefer one narrow protocol over a broad mixed-context answer.
 
@@ -126,6 +127,7 @@ Stop expansion when one of these is true:
 - For reference-pattern outputs, use original synthetic fragments and say explicitly that they are reference paths, not the only valid creative route.
 - For loading-plan outputs, explain why each expansion step is justified and what should not be loaded yet.
 - For specialized domain outputs, return the artifact-specific required fields only; see the relevant protocol for the field list.
+- For session-execution outputs, return ordered segment list with per-segment protocol/stop-condition/handoff-contract, not a project roadmap.
 
 ## What This Skill Should Prevent
 - loading unrelated theory just because it exists in the repo;
@@ -184,6 +186,7 @@ Stop expansion when one of these is true:
 - `project_surface_map`
 - `quality_gate_report`
 - `audience_proxy_report`
+- `session_execution_plan`
 
 ## Sub-Skills & References
 

@@ -1084,6 +1084,48 @@
       "skill_id": "skill.audience-insight",
       "protocol_id": "wp.audience-proxy-review",
       "rubric_id": "rb.audience-experience"
+    },
+    {
+      "intent": [
+        "design",
+        "diagnose"
+      ],
+      "medium": [
+        "feature_film",
+        "episodic",
+        "short_drama",
+        "animation",
+        "commercial",
+        "branded_film",
+        "shortform_video",
+        "game_narrative",
+        "branching_interactive"
+      ],
+      "stage": [
+        "ideation",
+        "premise",
+        "character",
+        "structure",
+        "outline",
+        "scene",
+        "dialogue",
+        "rewrite",
+        "adaptation"
+      ],
+      "output": [
+        "session_execution_plan"
+      ],
+      "constraint_signals": [
+        "session_plan_mode",
+        "segment_count",
+        "route_certainty"
+      ],
+      "required_constraint_signals": [
+        "session_plan_mode"
+      ],
+      "skill_id": "skill.context-governor",
+      "protocol_id": "wp.session-execution-plan",
+      "rubric_id": "rb.session-execution-plan"
     }
   ]
 }

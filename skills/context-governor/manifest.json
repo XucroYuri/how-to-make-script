@@ -7,7 +7,7 @@
     "intents": ["discover", "design", "diagnose", "adapt"],
     "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
     "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
-    "outputs": ["context_loading_plan"]
+    "outputs": ["context_loading_plan", "session_execution_plan"]
   },
   "protocol_id": "wp.context-loading-plan",
   "rubric_ids": ["rb.context-loading-plan"],
