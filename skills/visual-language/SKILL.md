@@ -25,6 +25,23 @@ Typical cases:
 - The pack should not be a whole dictionary.
 - Cultural terms should be tied to executable visual consequences, not used as decorative labels.
 
+## Posture-Adaptive Guidance
+
+**When `certainty = lost`:**
+Ask: "What is the single image in this scene that you most want the viewer to carry away?" One target image is enough to anchor a visual vocabulary pack. Do not ask for a full locale and term-class selection.
+
+**When `source = discover`:**
+Start from atmosphere, not from terminology. "What does this world feel like at its most itself — weight, light, texture, pace?" Let the sensory description select the cultural-aesthetic anchors.
+
+**When `source = construct`:**
+Apply the full workflow: receiving context → working language → term classes → prompt-delegation guidance → misuse warnings → return task-specific pack. The pack should improve execution, not display vocabulary breadth.
+
+**When `focus = world`:**
+World-consistent visual vocabulary is the primary concern. Cultural-aesthetic anchors should reflect the world's internal rules, not just its geographic origin.
+
+**When `focus = language`:**
+Visual language and verbal register are adjacent. When language focus is active, check whether visual vocabulary is creating tonal consistency or tonal contradiction with the dialogue register.
+
 ## References
 - `wp.visual-language-pack`
 - `ka.multilingual-visual-vocabulary`

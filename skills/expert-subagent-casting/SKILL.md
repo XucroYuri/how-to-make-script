@@ -19,6 +19,23 @@ Use this skill when the user is not just asking for a team mode, but for the act
 - Keep persona lenses bounded. They pressure decisions; they do not replace route, protocol, rubric, or hard boundaries.
 - Prefer smaller casts with explicit composition rules over bigger casts with overlapping mandates.
 
+## Posture-Adaptive Guidance
+
+**When `certainty = lost`:**
+Ask: "What is the one thing you cannot decide without another perspective?" A single capability gap is enough to seed the cast. Do not produce a full roster.
+
+**When `certainty = exploring`:**
+Offer two cast options: minimum viable (2-3 roles) and expanded (4-5 roles). State what each cast can and cannot cover. Let the user select.
+
+**When `certainty = certain`:**
+Apply the full workflow: primary problem → smallest viable core cast → process nodes → persona lenses → authority map → trim order. Persona lenses are advisory only unless explicitly scoped otherwise.
+
+**When `focus = character`:**
+Character-layer problems benefit from a character-authenticity specialist and an audience-proxy lens. Suppres heavy infrastructure roles (context budget manager, convergence owner) unless the project scale demands them.
+
+**When `focus = event`:**
+Structure-layer problems benefit from a structure specialist and a causality checker. Audience-response simulation is a useful secondary lens, not a primary one.
+
 ## References
 - `wp.expert-subagent-cast`
 - `ka.subagent-cast-composition`

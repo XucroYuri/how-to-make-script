@@ -18,6 +18,23 @@ Use this skill to keep screenplay development from collapsing into one answer to
 - Paths must be meaningfully different, not cosmetic rewrites of the same direction.
 - Explain why more than one route remains valid at this stage.
 
+## Posture-Adaptive Guidance
+
+**When `certainty = exploring`:**
+Primary activation context. Generate 2-5 genuinely different paths. State what each path optimises, sacrifices, and assumes. Explain why more than one route remains valid.
+
+**When `certainty = lost`:**
+Do not generate five paths. Ask: "Which direction feels most alive to you right now, even if it's wrong?" One path that excites is better than five paths that don't. Let the writer pick the wrong one confidently.
+
+**When `certainty = certain`:**
+Path exploration is unusual when certainty is high. If routed here, the user is testing their certainty, not escaping it. Surface the strongest counterargument to their chosen path before validating it.
+
+**When `source = discover`:**
+Primary activation context. Keep paths loose and sensory: "Path A feels like a pressure cooker. Path B feels like a long walk that turns into a sprint." Make the trade-offs felt, not just listed.
+
+**When `source = construct`:**
+Make the trade-offs structural: what must be true about the outline for each path to work? Convergence triggers should be specific enough to use as design gates.
+
 ## References
 - `wp.path-options`
 - `ka.creative-pluralism`

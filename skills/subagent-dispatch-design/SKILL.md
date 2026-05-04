@@ -19,6 +19,23 @@ Use this skill when the user asks how screenplay subagents should be orchestrate
 - Prefer two-stage review where under-building and over-building are both costly.
 - Keep persona lanes advisory unless the plan explicitly says otherwise.
 
+## Posture-Adaptive Guidance
+
+**When `certainty = lost`:**
+Ask: "Which part of the work cannot proceed until someone else finishes — and who is that someone?" One dependency bottleneck is the seed of a dispatch plan. Do not produce a full topology yet.
+
+**When `certainty = certain`:**
+Apply the full workflow: confirm route and cast → select topology → define packet flow and merge ownership → define review loops, human gates, and context budgets → return plan with collapse triggers.
+
+**When `certainty = exploring`:**
+Offer two topology options: a tighter sequential chain (lower parallelism, lower merge risk) and a wider parallel ring (higher throughput, higher convergence complexity). State the deciding factor.
+
+**When `source = construct`:**
+Primary activation context for this skill. Dispatch design is fundamentally a construct-mode activity: every topology decision is a structural choice with explicit cost and benefit.
+
+**When `focus = event`:**
+For event-layer screenplay work, the dispatch plan should reflect the narrative sequence: earlier structural decisions constrain later scene decisions. Topology should respect this dependency order.
+
 ## References
 - `wp.subagent-dispatch-plan`
 - `ka.subagent-context-budgeting`

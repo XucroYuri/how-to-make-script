@@ -21,6 +21,23 @@ Use this skill when the request is about designing a screenplay team workflow, a
 - If the user needs a concrete expert roster, route onward to `expert_subagent_cast`.
 - If the user needs live scheduling or review-order design, route onward to `subagent_dispatch_plan`.
 
+## Posture-Adaptive Guidance
+
+**When `certainty = lost`:**
+Ask: "What is the one handoff in this project you are most worried about dropping?" One critical handoff point is the seed of a team design. Do not produce a full team blueprint yet.
+
+**When `certainty = certain`:**
+Apply the full workflow: identify real-world workflow family → choose team mode and coordination model → define roles, lane boundaries, synthesis cadence, and handoff packets → mark human gates → return executable blueprint.
+
+**When `certainty = exploring`:**
+Present two team configurations: one optimised for creative divergence (keeps dissent alive longer), one optimised for convergence speed. State what each costs.
+
+**When `source = construct`:**
+Primary activation context. A team blueprint is a construct-mode deliverable: roles, lanes, and handoffs must be specific enough to execute, not inspirational enough to admire.
+
+**When `focus = character` or `focus = language`:**
+Creative specialisation at the character or language layer often benefits from a bounded specialist lane, not from full-room collaboration. Suggest a smaller team with a defined character/language expert role rather than a full writers' room.
+
 ## References
 - `wp.team-workflow-blueprint`
 - `ka.team-topology-selection`

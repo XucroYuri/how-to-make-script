@@ -25,6 +25,23 @@ Use this skill when the user asks about agent-skill design, loading strategy, co
 - If the real problem is resumable continuity, prefer a checkpoint artifact over a wider bundle.
 - Treat expression guidance as an adjunct bundle, not as a reason to pre-load every nearby style example.
 
+## Posture-Adaptive Guidance
+
+**When `certainty = lost`:**
+Skip the loading plan. Ask: "What is the one thing you actually need to know or produce right now?" Route to the narrowest possible answer first. A loading plan is only useful once the destination is clear.
+
+**When `certainty = exploring`:**
+Use `compare_pack` mode: lock the primary route, then load one rival route or one contrastive boundary layer. Do not expand to `survey_pack` unless the user explicitly asks for breadth.
+
+**When `certainty = certain`:**
+Use `focus_pack` or `route_kernel`. Stop expansion as soon as the next asset would not change the answer quality.
+
+**When `source = discover`:**
+Prioritise possibility-expanding assets. Suppress loading of hard constraints and evaluation rubrics until the route is stable.
+
+**When `source = construct`:**
+Apply full loading discipline: lock route → choose mode → define mandatory bundle → define expansion queue → state stop conditions.
+
 ## References
 - `wp.context-loading-plan`
 - `references/background-bundles.json`

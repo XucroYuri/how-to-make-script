@@ -19,6 +19,23 @@ Use this skill when the user asks broad questions like "how to create a screenpl
 - The map should help the user decide what to load next, not replace every narrower screenplay workflow.
 - Broad research support should stay plural and scoped, not collapse into one doctrine.
 
+## Posture-Adaptive Guidance
+
+**When `certainty = lost`:**
+Ask: "What is the one question you cannot move forward without answering?" A single research question is more useful than a broad background map. Use the answer to select the single most relevant background bundle.
+
+**When `source = discover`:**
+Present the research as open terrain, not as a settled canon. Surface the most generative unresolved debates, not just the stable findings. Uncertainty is a research asset here.
+
+**When `source = construct`:**
+Select one background bundle and summarise: most stable findings → local conditions → active disagreements → callable atoms → recommended next route. Keep the answer bounded.
+
+**When `certainty = exploring`:**
+Factor the broad question into two or three research lenses before selecting any bundle. Do not pre-collapse the topic into one doctrine.
+
+**When `focus = world`:**
+Research background is often used to ground world-building in historical, social, or scientific fact. Prioritise source-cluster assets that provide constraint material, not just atmosphere.
+
 ## References
 - `wp.research-background-map`
 - `references/background-bundles.json`

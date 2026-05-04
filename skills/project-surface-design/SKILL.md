@@ -20,6 +20,23 @@ Use this skill when the user asks how a screenplay project should persist state,
 - Prefer explicit human-edit policy over silent assumptions.
 - If resumable continuity matters, place checkpoint surfaces explicitly instead of leaving them as implicit notes.
 
+## Posture-Adaptive Guidance
+
+**When `certainty = lost`:**
+Ask: "Where are you most afraid of accidentally overwriting something important?" The answer usually locates the source-of-truth gap. Do not produce a full surface map until that fear is named.
+
+**When `source = construct`:**
+Primary activation context. Apply the full workflow: canonical source → runtime state → entrypoints → handoffs → packet assembly → review surfaces → export surfaces → sync rules → drift risks.
+
+**When `certainty = exploring`:**
+Offer two surface architectures: one optimised for solo long-form work, one optimised for team handoffs. State the critical difference in edit policy and drift risk.
+
+**When `focus = world`:**
+Long-form world-consistency problems are often project-surface problems in disguise: canonical world rules are being silently overwritten in runtime drafts. Locate the drift source before fixing the rules.
+
+**When `focus = event`:**
+Episodic and serial projects often suffer from arc-budget drift between surface layers. Checkpoint surfaces and canon-vs-hypothesis boundaries are the highest-value elements of the map.
+
 ## References
 - `wp.project-surface-map`
 - `ka.source-of-truth-runtime-split`

@@ -19,6 +19,23 @@ Use this skill when the story engine exists but needs compression and clarity.
 - Prefer concrete nouns and active verbs.
 - If the current idea is still a false logline, rewrite the engine before polishing the sentence.
 
+## Posture-Adaptive Guidance
+
+**When `certainty = lost`:**
+Ask: "Who is most trapped by this situation — and what do they want out of it that they can't have?" One character under pressure is the engine. Do not ask about genre or structure yet.
+
+**When `source = discover`:**
+Do not optimise the sentence first. Surface the engine: "What force is pushing this character toward a decision they cannot avoid?" Once the engine is clear, compression follows naturally.
+
+**When `source = construct`:**
+Apply the full workflow: protagonist → goal → obstacle → stakes. Check whether the current sentence is a real story engine or a polished concept shell. Remove abstract filler.
+
+**When `certainty = exploring`:**
+Offer two logline versions: one that foregrounds external pressure, one that foregrounds internal contradiction. State what each version implies about the story's engine.
+
+**When `focus = character`:**
+The most useful logline question here is: "What does this character believe about themselves that the story will disprove?" Protagonist psychology is the engine, not the plot.
+
 ## References
 - `wp.logline-premise`
 - `ka.story-goal`

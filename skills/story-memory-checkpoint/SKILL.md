@@ -20,6 +20,23 @@ Use this skill when the user needs to pause and resume a long screenplay project
 - Keep it short enough to replace a broad reload.
 - Do not turn the checkpoint into a prose summary of the whole story.
 
+## Posture-Adaptive Guidance
+
+**When `certainty = lost`:**
+Ask: "What is the last thing you were certain about in this story before you got lost?" One confirmed story truth is the right starting point for a checkpoint. Do not produce a full state compression — produce one anchor first.
+
+**When `certainty = certain`:**
+Apply the full checkpoint workflow: lock span → compress current state → record unresolved promises and invariants → separate dual-track rhythms → return with next safe entrypoint and drift warnings.
+
+**When `focus = event`:**
+Event-layer checkpoints should record: what has already been spent (turns, reveals, escalations) and what arc budget remains. Do not retell the plot; record the pressure-state.
+
+**When `focus = character`:**
+Character-layer checkpoints should record: active wants, outstanding lies, unresolved wounds, and open relationship debts. These are the continuity liabilities that cause drift in resumed work.
+
+**When `focus = world`:**
+World-layer checkpoints should record: which world rules have been explicitly established, which have been implied but not confirmed, and which remain unset and thus canonically open.
+
 ## References
 - `wp.story-memory-checkpoint`
 - `ka.story-memory-checkpoint`

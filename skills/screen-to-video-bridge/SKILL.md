@@ -27,6 +27,23 @@ Typical cases:
 - The brief should not replace the screenplay.
 - Tool details belong only when they change execution decisions.
 
+## Posture-Adaptive Guidance
+
+**When `certainty = lost`:**
+Ask: "What is the single most important visual moment in this material — the one image that cannot be lost in translation?" One anchor image is enough to build the brief. Do not ask for a full source summary.
+
+**When `source = construct`:**
+Primary activation context. Apply the full workflow: identify source container → preserve source spans → extract dramatic function → decide clip vs. clip chain → choose main action and camera logic per clip → return layered brief with invariants and avoid rules.
+
+**When `certainty = certain`:**
+Apply full output contract strictly. The brief must not replace the screenplay. Tool-specific details belong only when they change execution decisions materially.
+
+**When `focus = world`:**
+Visual grounding in world-specific assets (locations, objects, light qualities) is the primary concern. Invariants should include world-consistent visual markers, not just character appearance.
+
+**When `focus = audience`:**
+The downstream execution audience — model prompt consumer or previz team — is the real audience here. Calibrate specificity to what they need to make decisions, not to what is interesting about the source.
+
 ## References
 - `wp.screen-to-video-brief`
 - `ka.screenplay-to-video-boundary`

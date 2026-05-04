@@ -19,6 +19,23 @@ Use this skill when the user asks for success patterns, reference scenes, contra
 - Samples should be original synthetic examples, not quotations or close imitations of specific copyrighted scripts.
 - If no single pattern family dominates, return multiple reference directions instead of a fake canonical answer.
 
+## Posture-Adaptive Guidance
+
+**When `certainty = lost`:**
+Ask: "What problem are you trying to solve in this scene or beat?" One specific failure state is enough to find a useful reference pattern. Do not ask for a full scenario brief first.
+
+**When `source = discover`:**
+Lead with the failure contrast: "Here is a version that doesn't work — and here is why." The negative example often teaches faster than the positive one for writers in discovery mode.
+
+**When `source = construct`:**
+Apply the full workflow: classify scenario → pick pattern family → strong sample → weaker contrast → mechanism analysis → non-dogma boundary note.
+
+**When `focus = event`:**
+Pattern references are most useful for event-layer problems: opening hooks, midpoint turns, reveal mechanics, escalation logic. Load the scenario-factorization atom first.
+
+**When `focus = language`:**
+For language-layer problems, show voice rather than structure. A reference that demonstrates register, rhythm, and subtext is more useful than a beat-structure sample.
+
 ## References
 - `wp.pattern-reference-pack`
 - `ka.reference-pattern-usage`

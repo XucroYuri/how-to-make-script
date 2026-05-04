@@ -18,6 +18,23 @@ Use this skill when a rule, rubric, route, or knowledge claim has been challenge
 - Do not replace one universal with its opposite mirror-universal.
 - If no surviving core exists, say so explicitly and escalate to full replacement instead of faking a scope correction.
 
+## Posture-Adaptive Guidance
+
+**When `certainty = lost`:**
+Ask: "What is the narrowest version of the claim that you still believe is true?" One surviving core is enough to begin. Do not attempt a full scope correction until that narrow claim is articulated.
+
+**When `certainty = exploring`:**
+Primary activation context. Surface both the valid core and the counterexample cleanly. The most useful scope correction leaves the writer with something more precise, not something more complicated.
+
+**When `source = construct`:**
+Apply the full workflow: identify challenged claim → preserve smallest surviving core → name failure context and boundary condition → return revised scope with downstream update implications.
+
+**When `source = discover`:**
+Treat scope correction as a discovery: "What is this rule actually good for?" Let the counterexample lead to a smaller, truer claim rather than forcing a premature conclusion.
+
+**When `focus = event`:**
+Event-layer scope corrections most often involve structure claims that are medium-specific being applied universally. Anchor the correction to the specific medium and stage where the rule holds.
+
 ## References
 - `wp.scope-correction`
 - `ka.scope-correction`
