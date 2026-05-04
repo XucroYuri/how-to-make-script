@@ -4,8 +4,16 @@
   "type": "workflow_protocol",
   "title": "编剧成长路径协议",
   "goal": "根据学习者当前失败层、目标媒介和目标水平，输出一条可执行的 learning_path。",
-  "input_contract": ["writer maturity", "sample weakness", "target medium", "target level", "available time"],
-  "output_contract": ["learning_path"],
+  "input_contract": [
+    "writer maturity",
+    "sample weakness",
+    "target medium",
+    "target level",
+    "available time"
+  ],
+  "output_contract": [
+    "learning_path"
+  ],
   "preconditions": [
     "至少能描述当前阶段和目标方向",
     "允许用阶段性训练替代一次性全面提升"
@@ -24,10 +32,20 @@
     "每个阶段都有具体产物与反馈方式",
     "下一轮训练的优先级已经清楚，不再停留在泛化建议"
   ],
-  "rubrics": ["rb.learning-path"],
-  "linked_atoms": ["ka.writer-development-loop", "ka.screenwriting-history-shift", "ka.scene-function", "ka.rewrite-diagnosis", "ka.screenwriting-deliberate-practice", "ka.archive-literacy"],
-  "budget_class": "M",
-  "mandatory_atom_count": 6,
+  "rubrics": [
+    "rb.learning-path"
+  ],
+  "linked_atoms": [
+    "ka.archive-literacy",
+    "ka.cross-protocol-referral-edges",
+    "ka.rewrite-diagnosis",
+    "ka.scene-function",
+    "ka.screenwriting-deliberate-practice",
+    "ka.screenwriting-history-shift",
+    "ka.writer-development-loop"
+  ],
+  "budget_class": "L",
+  "mandatory_atom_count": 7,
   "expansion_allowed": true
 }
 ---

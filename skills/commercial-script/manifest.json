@@ -33,7 +33,8 @@
     "ka.medium-commercial",
     "ka.medium-branded-film",
     "ka.medium-shortform-video",
-    "ka.scene-function"
+    "ka.scene-function",
+    "ka.cross-protocol-referral-edges"
   ],
   "fallback_behavior": "Collapse the brief to one primary message and one support message if the message stack is too broad.",
   "default_loading_mode": "focus_pack",

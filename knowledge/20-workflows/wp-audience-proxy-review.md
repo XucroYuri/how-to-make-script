@@ -39,15 +39,16 @@
     "rb.audience-experience"
   ],
   "linked_atoms": [
-    "ka.audience-proxy-personas",
     "ka.audience-need-state",
-    "ka.pacing-rhythm",
-    "ka.scene-function",
+    "ka.audience-proxy-personas",
+    "ka.cross-protocol-referral-edges",
     "ka.opening-job-selection",
-    "ka.platform-attention-economy"
+    "ka.pacing-rhythm",
+    "ka.platform-attention-economy",
+    "ka.scene-function"
   ],
   "budget_class": "L",
-  "mandatory_atom_count": 6,
+  "mandatory_atom_count": 7,
   "expansion_allowed": true
 }
 ---

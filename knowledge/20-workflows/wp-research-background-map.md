@@ -4,10 +4,18 @@
   "type": "workflow_protocol",
   "title": "研究背景图协议",
   "goal": "针对宽问题、理论支撑请求或 Agent Skill 设计请求，输出一份 research_background_map，明确问题镜头、稳定研究发现、来源簇、可调用知识资产和后续最值得进入的路线。",
-  "input_contract": ["broad screenplay question", "research ask", "agent-skill design ask", "constraints", "none"],
-  "output_contract": ["research_background_map"],
+  "input_contract": [
+    "broad screenplay question",
+    "research ask",
+    "agent-skill design ask",
+    "constraints",
+    "none"
+  ],
+  "output_contract": [
+    "research_background_map"
+  ],
   "budget_class": "L",
-  "mandatory_atom_count": 9,
+  "mandatory_atom_count": 10,
   "expansion_allowed": true,
   "preconditions": [
     "用户明确要的是理论支撑、全景研究、背景信息或多角度梳理，而不是直接写一个剧本产物",
@@ -29,8 +37,21 @@
     "至少说明一个不该被误当成普遍真理的局部规则",
     "没有把研究背景误写成单一方法教条"
   ],
-  "rubrics": ["rb.research-background-map"],
-  "linked_atoms": ["ka.screenplay-lens-stacking", "ka.viewer-inference-guidance", "ka.script-as-coordination-artifact", "ka.screenwriting-deliberate-practice", "ka.feedback-subjectivity-management", "ka.archive-literacy", "ka.audience-need-state", "ka.commissioning-fit", "ka.screenwriting-history-shift"]
+  "rubrics": [
+    "rb.research-background-map"
+  ],
+  "linked_atoms": [
+    "ka.archive-literacy",
+    "ka.audience-need-state",
+    "ka.commissioning-fit",
+    "ka.cross-protocol-referral-edges",
+    "ka.feedback-subjectivity-management",
+    "ka.screenplay-lens-stacking",
+    "ka.screenwriting-deliberate-practice",
+    "ka.screenwriting-history-shift",
+    "ka.script-as-coordination-artifact",
+    "ka.viewer-inference-guidance"
+  ]
 }
 ---
 # 研究背景图协议

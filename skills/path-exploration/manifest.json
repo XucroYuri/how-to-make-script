@@ -36,7 +36,8 @@
     "ka.creative-pluralism",
     "ka.divergence-convergence-loop",
     "ka.false-universal-warning",
-    "ka.boundary-first-guidance"
+    "ka.boundary-first-guidance",
+    "ka.cross-protocol-referral-edges"
   ],
   "fallback_behavior": "If the brief is too vague to generate contrasted paths, first lock one core problem or invariant and then branch from that anchor.",
   "default_loading_mode": "compare_pack",

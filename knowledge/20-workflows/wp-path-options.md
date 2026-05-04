@@ -36,13 +36,14 @@
     "rb.path-options"
   ],
   "linked_atoms": [
+    "ka.boundary-first-guidance",
     "ka.creative-pluralism",
+    "ka.cross-protocol-referral-edges",
     "ka.divergence-convergence-loop",
-    "ka.false-universal-warning",
-    "ka.boundary-first-guidance"
+    "ka.false-universal-warning"
   ],
   "budget_class": "M",
-  "mandatory_atom_count": 4,
+  "mandatory_atom_count": 5,
   "expansion_allowed": true
 }
 ---

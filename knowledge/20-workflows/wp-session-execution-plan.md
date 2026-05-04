@@ -4,9 +4,20 @@
   "type": "workflow_protocol",
   "title": "会话执行规划协议",
   "goal": "当一个用户请求横跨两个以上阶段或输出合同时，把它分解为有序的段落序列，为每个段落指定协议、停止条件和交接合同，避免 Agent 在跨阶段任务中丢失方向或过度加载。",
-  "input_contract": ["logline", "premise", "outline", "beat_sheet", "scene_card"],
-  "output_contract": ["session_execution_plan"],
-  "preconditions": ["用户请求明确横跨两个或以上阶段", "至少可以锁定两个连续的 output 目标"],
+  "input_contract": [
+    "logline",
+    "premise",
+    "outline",
+    "beat_sheet",
+    "scene_card"
+  ],
+  "output_contract": [
+    "session_execution_plan"
+  ],
+  "preconditions": [
+    "用户请求明确横跨两个或以上阶段",
+    "至少可以锁定两个连续的 output 目标"
+  ],
   "steps": [
     "判断请求是否真的跨越两个以上阶段——如果不是，退出本协议，用常规单路由处理。",
     "把任务分解为有序段落列表，每段包含：stage（阶段）、output（输出合同）、protocol_id（使用的协议）、stop_condition（完成标准）。",
@@ -24,10 +35,17 @@
     "每个段落间的交接合同已写清楚",
     "计划段落数 ≤ 5"
   ],
-  "rubrics": ["rb.session-execution-plan"],
-  "linked_atoms": ["ka.creative-posture-certainty", "ka.bounded-context-loading", "ka.story-memory-checkpoint"],
+  "rubrics": [
+    "rb.session-execution-plan"
+  ],
+  "linked_atoms": [
+    "ka.bounded-context-loading",
+    "ka.creative-posture-certainty",
+    "ka.cross-protocol-referral-edges",
+    "ka.story-memory-checkpoint"
+  ],
   "budget_class": "M",
-  "mandatory_atom_count": 3,
+  "mandatory_atom_count": 4,
   "expansion_allowed": false
 }
 ---

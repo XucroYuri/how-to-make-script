@@ -44,15 +44,16 @@
     "rb.subagent-dispatch-plan"
   ],
   "linked_atoms": [
-    "ka.subagent-context-budgeting",
     "ka.convergence-owner-discipline",
-    "ka.two-stage-review-loop",
+    "ka.cross-protocol-referral-edges",
     "ka.handoff-packet-discipline",
     "ka.parallel-lane-governance",
-    "ka.team-topology-selection"
+    "ka.subagent-context-budgeting",
+    "ka.team-topology-selection",
+    "ka.two-stage-review-loop"
   ],
-  "budget_class": "M",
-  "mandatory_atom_count": 6,
+  "budget_class": "L",
+  "mandatory_atom_count": 7,
   "expansion_allowed": true
 }
 ---

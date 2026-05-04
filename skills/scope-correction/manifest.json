@@ -38,7 +38,8 @@
     "ka.scope-correction",
     "ka.false-universal-warning",
     "ka.creative-pluralism",
-    "ka.boundary-first-guidance"
+    "ka.boundary-first-guidance",
+    "ka.cross-protocol-referral-edges"
   ],
   "fallback_behavior": "If the challenged claim is too vague, first identify the exact statement and one concrete failure context before attempting to narrow it.",
   "default_loading_mode": "focus_pack",

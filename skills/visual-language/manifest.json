@@ -37,7 +37,8 @@
     "ka.multilingual-visual-vocabulary",
     "ka.cultural-aesthetic-registers",
     "ka.prompt-delegation-levels",
-    "ka.register-adaptation"
+    "ka.register-adaptation",
+    "ka.cross-protocol-referral-edges"
   ],
   "fallback_behavior": "If the user really needs a video-generation-ready bridge instead of a vocabulary pack, switch to the screen-to-video bridge route.",
   "default_loading_mode": "focus_pack",

@@ -44,15 +44,16 @@
     "rb.expert-subagent-cast"
   ],
   "linked_atoms": [
-    "ka.subagent-cast-composition",
+    "ka.convergence-owner-discipline",
+    "ka.cross-protocol-referral-edges",
     "ka.process-node-specialization",
     "ka.reference-persona-governance",
+    "ka.subagent-cast-composition",
     "ka.subagent-context-budgeting",
-    "ka.convergence-owner-discipline",
     "ka.team-topology-selection"
   ],
-  "budget_class": "M",
-  "mandatory_atom_count": 6,
+  "budget_class": "L",
+  "mandatory_atom_count": 7,
   "expansion_allowed": true
 }
 ---

@@ -27,7 +27,8 @@
   "linked_atoms": [
     "ka.dialogue-subtext",
     "ka.exposition-control",
-    "ka.conflict-pressure"
+    "ka.conflict-pressure",
+    "ka.cross-protocol-referral-edges"
   ],
   "fallback_behavior": "Send the request back to scene-writing if the real problem is weak scene conflict.",
   "default_loading_mode": "focus_pack",

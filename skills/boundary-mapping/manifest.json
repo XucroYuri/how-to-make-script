@@ -37,7 +37,8 @@
     "ka.boundary-first-guidance",
     "ka.exploration-review-separation",
     "ka.platform-attention-economy",
-    "ka.commissioning-fit"
+    "ka.commissioning-fit",
+    "ka.cross-protocol-referral-edges"
   ],
   "fallback_behavior": "If the user mixes every constraint together, first separate persistent hard boundaries from phase-specific soft constraints before recommending action.",
   "default_loading_mode": "compare_pack",

@@ -40,11 +40,12 @@
     "rb.quality-gate-report"
   ],
   "linked_atoms": [
-    "ka.contract-first-quality-gating",
     "ka.adaptive-quality-lens-selection",
-    "ka.review-lens-isolation",
-    "ka.metrics-handoff-compression",
+    "ka.causality-chain",
+    "ka.contract-first-quality-gating",
     "ka.hard-gate-soft-score-separation",
+    "ka.metrics-handoff-compression",
+    "ka.review-lens-isolation",
     "ka.targeted-recheck-loop"
   ],
   "fallback_behavior": "If the user mainly needs story-layer rewrite prioritization, route back to rewrite_report instead of forcing a multi-lens quality gate.",

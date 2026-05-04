@@ -1,12 +1,10 @@
 # 渐进式披露策略
 
-仓库不能把所有高级能力都在普通请求的第一步里摊开。
-
-目标应该是能力逐级升级，不是永远最大化出场。
+定义仓库能力逐级披露规则。需控制"向用户暴露多少高级能力"非"加载多少上下文"时读本文。保普通请求不被全高级表面一次性淹没。
 
 ## 披露梯度
 
-### Level 1. 核心剧本输出物
+### Level 1. 核心剧本
 - `logline`
 - `premise`
 - `synopsis`
@@ -19,9 +17,9 @@
 - `commercial_script`
 - `interactive_branch_map`
 
-当用户只是要下一个创作输出物时，先停在这里。
+用户只要一创作输出时停此。
 
-### Level 2. 适配与校准层
+### Level 2. 适配与校准
 - `audience_fit_note`
 - `development_brief`
 - `learning_path`
@@ -29,9 +27,9 @@
 - `visual_language_pack`
 - `screen_to_video_brief`
 
-只有当下一步决策真的依赖受众、行业、作者成长、角色声音、多语种视觉沟通、下游视觉衔接约束时，才往上升。
+仅下步真依赖受众、行业、作者成长、角色声、多语视觉沟通、下游视觉衔接时才升。
 
-### Level 3. 发散与诊断表面
+### Level 3. 发散与诊断
 - `rewrite_report`
 - `quality_gate_report`
 - `path_options`
@@ -39,31 +37,31 @@
 - `scope_correction`
 - `pattern_reference_pack`
 
-当用户真正要的是挑战、对比、自检、复查、边界澄清、加载策略，而不是「继续写」，才进入这一层。
+用户真要挑战、对比、自检、复查、边界澄清、加载策略非"继续写"时入此。
 
-### Level 4. 协作设计层
+### Level 4. 协作设计
 - `team_workflow_blueprint`
 - `expert_subagent_cast`
 
-只有当 workflow 结构、专家组合、审查次序会实质改变下一步决策时，才进入这一层。
+仅 workflow 结构、专家组合、审查序实质改下步决策时入。
 
-### Level 5. 长周期项目治理层
+### Level 5. 长周期治理
 - `project_surface_map`（内部输出）
 
-只有当问题已经不是「下一稿怎么写」，而是「哪里是单一来源、哪里是运行状态、handoff 和 export 怎么分层」时，才升到这一层。
+仅问题已非"下稿怎么写"而是"单源在哪、运行态在哪、handoff 与 export 怎分层"时升。
 
 ## 升级规则
 
-- 不能因为仓库里「有这个能力」就默认升级。
-- 只有当不升级会导致下一步错误、危险或收益很低时，才升级。
-- 用户只要一个 artifact，不要轻易返回 team blueprint。
-- 用户只是要一版 draft，不要强行塞 reference pack。
+- 不因仓库"有这能力"默认升。
+- 仅不升致下步错、危或收益很低才升。
+- 用户只要一 artifact 别轻易回 team blueprint。
+- 用户只要一版 draft 别强塞 reference pack。
 
 ## 降级规则
 
-如果当前 route 升级过头了：
-- 收回到真正会改变下一步决策的最小 artifact。
-- 最多保留一个邻接 lens。
-- 解释为什么更大的 surface 没必要。
+route 升过头：
+- 收至真改下步的最小 artifact。
+- 至多保一邻接 lens。
+- 释为何更大 surface 不必。
 
-所以「渐进式披露」不是形式上的体验优化，而是防止 context 膨胀、协作表演化、用户学习成本上升的质量控制机制。
+"渐进式披露"非形式体验优化，是防 context 膨胀、协作表演化、用户学成本上升的质量控制。

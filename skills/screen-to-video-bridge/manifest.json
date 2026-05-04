@@ -38,7 +38,8 @@
     "ka.multilingual-visual-vocabulary",
     "ka.source-span-traceability",
     "ka.long-script-batch-planning",
-    "ka.visible-asset-grounding"
+    "ka.visible-asset-grounding",
+    "ka.cross-protocol-referral-edges"
   ],
   "fallback_behavior": "If the request is still about screenplay writing rather than bridge construction, stay on the original route and attach bridge notes only when downstream execution really needs them.",
   "default_loading_mode": "focus_pack",

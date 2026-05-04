@@ -33,13 +33,14 @@
     "rb.commercial-script"
   ],
   "linked_atoms": [
-    "ka.medium-commercial",
+    "ka.cross-protocol-referral-edges",
     "ka.medium-branded-film",
+    "ka.medium-commercial",
     "ka.medium-shortform-video",
     "ka.scene-function"
   ],
   "budget_class": "M",
-  "mandatory_atom_count": 4,
+  "mandatory_atom_count": 5,
   "expansion_allowed": true
 }
 ---

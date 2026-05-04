@@ -45,15 +45,16 @@
     "rb.quality-gate-report"
   ],
   "linked_atoms": [
-    "ka.contract-first-quality-gating",
     "ka.adaptive-quality-lens-selection",
-    "ka.review-lens-isolation",
-    "ka.metrics-handoff-compression",
+    "ka.causality-chain",
+    "ka.contract-first-quality-gating",
     "ka.hard-gate-soft-score-separation",
+    "ka.metrics-handoff-compression",
+    "ka.review-lens-isolation",
     "ka.targeted-recheck-loop"
   ],
-  "budget_class": "M",
-  "mandatory_atom_count": 6,
+  "budget_class": "L",
+  "mandatory_atom_count": 7,
   "expansion_allowed": true
 }
 ---

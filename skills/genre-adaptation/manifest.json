@@ -38,7 +38,9 @@
     "ka.genre-comedy",
     "ka.medium-feature-film",
     "ka.medium-commercial",
-    "ka.medium-branching-interactive"
+    "ka.medium-branching-interactive",
+    "ka.cross-protocol-referral-edges",
+    "ka.genre-pack-factorization"
   ],
   "fallback_behavior": "Reduce adaptation scope and preserve the core conflict first if the target promise breaks the engine.",
   "default_loading_mode": "focus_pack",

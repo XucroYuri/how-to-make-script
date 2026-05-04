@@ -36,13 +36,14 @@
     "rb.scene-draft"
   ],
   "linked_atoms": [
+    "ka.character-arc",
     "ka.collision-prompts",
     "ka.conflict-pressure",
-    "ka.scene-function",
-    "ka.character-arc"
+    "ka.cross-protocol-referral-edges",
+    "ka.scene-function"
   ],
   "budget_class": "M",
-  "mandatory_atom_count": 4,
+  "mandatory_atom_count": 5,
   "expansion_allowed": true
 }
 ---

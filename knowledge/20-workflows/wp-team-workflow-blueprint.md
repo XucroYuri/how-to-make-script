@@ -43,15 +43,17 @@
     "rb.team-workflow-blueprint"
   ],
   "linked_atoms": [
-    "ka.team-topology-selection",
+    "ka.cross-protocol-referral-edges",
+    "ka.dissent-preservation-loop",
     "ka.handoff-contract-discipline",
     "ka.human-checkpoint-gates",
-    "ka.room-artifact-ladder",
     "ka.parallel-lane-governance",
-    "ka.dissent-preservation-loop"
+    "ka.room-artifact-ladder",
+    "ka.team-mode-recipes",
+    "ka.team-topology-selection"
   ],
-  "budget_class": "M",
-  "mandatory_atom_count": 6,
+  "budget_class": "L",
+  "mandatory_atom_count": 8,
   "expansion_allowed": true
 }
 ---

@@ -4,8 +4,16 @@
   "type": "workflow_protocol",
   "title": "结构 / Beat / 大纲协议",
   "goal": "把 premise 扩展为可因果推进的 beat sheet、outline 或 treatment。",
-  "input_contract": ["premise", "character notes", "world rules"],
-  "output_contract": ["beat_sheet", "outline", "treatment"],
+  "input_contract": [
+    "premise",
+    "character notes",
+    "world rules"
+  ],
+  "output_contract": [
+    "beat_sheet",
+    "outline",
+    "treatment"
+  ],
   "preconditions": [
     "主角目标与主要阻力已明确"
   ],
@@ -26,10 +34,24 @@
     "所有关键节点存在前因后果",
     "目标媒介需要的大纲粒度已达到"
   ],
-  "rubrics": ["rb.outline"],
-  "linked_atoms": ["ka.story-goal", "ka.causality-chain", "ka.pacing-rhythm", "ka.structure-family-selection", "ka.beat-carrier-selection", "ka.dual-track-rhythm", "ka.serial-arc-budgeting", "ka.medium-feature-film", "ka.medium-episode", "ka.medium-short-drama"],
+  "rubrics": [
+    "rb.outline"
+  ],
+  "linked_atoms": [
+    "ka.beat-carrier-selection",
+    "ka.causality-chain",
+    "ka.cross-protocol-referral-edges",
+    "ka.dual-track-rhythm",
+    "ka.medium-episode",
+    "ka.medium-feature-film",
+    "ka.medium-short-drama",
+    "ka.pacing-rhythm",
+    "ka.serial-arc-budgeting",
+    "ka.story-goal",
+    "ka.structure-family-selection"
+  ],
   "budget_class": "L",
-  "mandatory_atom_count": 10,
+  "mandatory_atom_count": 11,
   "expansion_allowed": true
 }
 ---

@@ -4,9 +4,17 @@
   "type": "workflow_protocol",
   "title": "减法修改协议",
   "goal": "通过系统性的删除检查，从场景草稿中移除冗余节拍、声明性台词和功能性重复的场景，直到删除任何剩余内容都会破坏叙事的基本连续性。",
-  "input_contract": ["scene_draft","screenplay_draft"],
-  "output_contract": ["scene_draft","screenplay_draft"],
-  "preconditions": ["已有可评审的场景或剧本草稿"],
+  "input_contract": [
+    "scene_draft",
+    "screenplay_draft"
+  ],
+  "output_contract": [
+    "scene_draft",
+    "screenplay_draft"
+  ],
+  "preconditions": [
+    "已有可评审的场景或剧本草稿"
+  ],
   "steps": [
     "逐场检查：删除所有\"声明性台词\"——角色直接说出的情感总结或情节解释（\"我很生气\"\"你知道自从五年前...\"）。",
     "逐节检查：删除所有没有改变任何状态的段落——前面是什么样后面还是什么样。",
@@ -23,10 +31,17 @@
     "剩余动作序列能只用摄影机可识别的方式进行追踪",
     "信息通过行为和物传递，而非通过声明传递"
   ],
-  "rubrics": ["rb.subtractive-pass"],
-  "linked_atoms": ["ka.scene-function","ka.specificity-pressure","ka.exposition-control"],
+  "rubrics": [
+    "rb.subtractive-pass"
+  ],
+  "linked_atoms": [
+    "ka.cross-protocol-referral-edges",
+    "ka.exposition-control",
+    "ka.scene-function",
+    "ka.specificity-pressure"
+  ],
   "budget_class": "M",
-  "mandatory_atom_count": 3,
+  "mandatory_atom_count": 4,
   "expansion_allowed": false
 }
 ---

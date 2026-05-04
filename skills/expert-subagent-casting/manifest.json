@@ -45,7 +45,8 @@
     "ka.reference-persona-governance",
     "ka.subagent-context-budgeting",
     "ka.convergence-owner-discipline",
-    "ka.team-topology-selection"
+    "ka.team-topology-selection",
+    "ka.cross-protocol-referral-edges"
   ],
   "fallback_behavior": "If the user only needs a high-level team mode, return to team_workflow_blueprint. If the user only needs one screenplay artifact, keep the main route and attach a lightweight cast note.",
   "default_loading_mode": "focus_pack",

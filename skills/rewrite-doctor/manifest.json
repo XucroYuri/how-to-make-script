@@ -4,15 +4,38 @@
   "description": "Diagnose screenplay problems and prioritize rewrite actions by leverage.",
   "entrypoint": "skills/rewrite-doctor/SKILL.md",
   "supports": {
-    "intents": ["diagnose", "polish"],
-    "mediums": ["feature_film", "episodic", "short_drama", "animation"],
-    "stages": ["rewrite"],
-    "outputs": ["rewrite_report"]
+    "intents": [
+      "diagnose",
+      "polish"
+    ],
+    "mediums": [
+      "feature_film",
+      "episodic",
+      "short_drama",
+      "animation"
+    ],
+    "stages": [
+      "rewrite"
+    ],
+    "outputs": [
+      "rewrite_report"
+    ]
   },
   "protocol_id": "wp.rewrite-doctor",
-  "rubric_ids": ["rb.rewrite-report"],
+  "rubric_ids": [
+    "rb.rewrite-report"
+  ],
   "default_loading_mode": "focus_pack",
-  "linked_atoms": ["ka.rewrite-diagnosis", "ka.causality-chain", "ka.scene-function", "ka.dialogue-subtext", "ka.feedback-subjectivity-management"],
+  "linked_atoms": [
+    "ka.rewrite-diagnosis",
+    "ka.causality-chain",
+    "ka.scene-function",
+    "ka.dialogue-subtext",
+    "ka.feedback-subjectivity-management",
+    "ka.cross-protocol-referral-edges",
+    "ka.setup-and-payoff",
+    "ka.weak-opening-diagnosis"
+  ],
   "adjunct_bundles": {},
   "fallback_to_skill_id": null,
   "fallback_behavior": "Report uncertainty and return only the highest-confidence risks if the sample is too small."

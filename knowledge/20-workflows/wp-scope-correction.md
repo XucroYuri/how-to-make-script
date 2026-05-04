@@ -38,13 +38,14 @@
     "rb.scope-correction"
   ],
   "linked_atoms": [
-    "ka.scope-correction",
-    "ka.false-universal-warning",
+    "ka.boundary-first-guidance",
     "ka.creative-pluralism",
-    "ka.boundary-first-guidance"
+    "ka.cross-protocol-referral-edges",
+    "ka.false-universal-warning",
+    "ka.scope-correction"
   ],
   "budget_class": "M",
-  "mandatory_atom_count": 4,
+  "mandatory_atom_count": 5,
   "expansion_allowed": true
 }
 ---

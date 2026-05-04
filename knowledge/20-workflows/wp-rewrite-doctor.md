@@ -4,8 +4,15 @@
   "type": "workflow_protocol",
   "title": "改稿诊断协议",
   "goal": "输出按层级排序、可执行的 rewrite report。",
-  "input_contract": ["draft", "outline", "scene set", "dialogue excerpt"],
-  "output_contract": ["rewrite_report"],
+  "input_contract": [
+    "draft",
+    "outline",
+    "scene set",
+    "dialogue excerpt"
+  ],
+  "output_contract": [
+    "rewrite_report"
+  ],
   "preconditions": [
     "存在至少一个可诊断的已有文本"
   ],
@@ -22,10 +29,21 @@
   "stop_conditions": [
     "报告已包含层级诊断、优先级和具体动作"
   ],
-  "rubrics": ["rb.rewrite-report"],
-  "linked_atoms": ["ka.rewrite-diagnosis", "ka.causality-chain", "ka.scene-function", "ka.dialogue-subtext", "ka.feedback-subjectivity-management"],
-  "budget_class": "M",
-  "mandatory_atom_count": 5,
+  "rubrics": [
+    "rb.rewrite-report"
+  ],
+  "linked_atoms": [
+    "ka.causality-chain",
+    "ka.cross-protocol-referral-edges",
+    "ka.dialogue-subtext",
+    "ka.feedback-subjectivity-management",
+    "ka.rewrite-diagnosis",
+    "ka.scene-function",
+    "ka.setup-and-payoff",
+    "ka.weak-opening-diagnosis"
+  ],
+  "budget_class": "L",
+  "mandatory_atom_count": 8,
   "expansion_allowed": true
 }
 ---

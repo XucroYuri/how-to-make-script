@@ -37,18 +37,22 @@
     "对白回合都有表演承载，且不触发中文机械语症硬失败"
   ],
   "rubrics": [
-    "rb.scene-draft"
+    "rb.scene-draft",
+    "rb.screenplay-draft"
   ],
   "linked_atoms": [
-    "ka.scene-function",
-    "ka.conflict-pressure",
-    "ka.exposition-control",
     "ka.character-voice-consistency",
+    "ka.cinematic-prose-register",
+    "ka.conflict-pressure",
+    "ka.cross-protocol-referral-edges",
     "ka.embodied-text-pressure",
-    "ka.cinematic-prose-register"
+    "ka.exposition-control",
+    "ka.scene-function",
+    "ka.setup-and-payoff",
+    "ka.verbal-rhythm"
   ],
-  "budget_class": "M",
-  "mandatory_atom_count": 6,
+  "budget_class": "L",
+  "mandatory_atom_count": 9,
   "expansion_allowed": true
 }
 ---

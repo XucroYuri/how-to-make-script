@@ -4,8 +4,16 @@
   "type": "workflow_protocol",
   "title": "创意发现协议",
   "goal": "把模糊想法收敛为可进入剧本开发的 premise。",
-  "input_contract": ["raw idea", "theme fragment", "image prompt", "market brief", "none"],
-  "output_contract": ["premise"],
+  "input_contract": [
+    "raw idea",
+    "theme fragment",
+    "image prompt",
+    "market brief",
+    "none"
+  ],
+  "output_contract": [
+    "premise"
+  ],
   "preconditions": [
     "允许先从模糊灵感开始",
     "至少能说明目标媒介或应用场景"
@@ -24,10 +32,18 @@
     "premise 已能说明角色、目标、阻力、代价",
     "下一步最适合进入 logline、character 或 commercial 开发"
   ],
-  "rubrics": ["rb.logline"],
-  "linked_atoms": ["ka.story-goal", "ka.conflict-pressure", "ka.theme-pressure", "ka.screenplay-lens-stacking"],
+  "rubrics": [
+    "rb.logline"
+  ],
+  "linked_atoms": [
+    "ka.conflict-pressure",
+    "ka.cross-protocol-referral-edges",
+    "ka.screenplay-lens-stacking",
+    "ka.story-goal",
+    "ka.theme-pressure"
+  ],
   "budget_class": "M",
-  "mandatory_atom_count": 4,
+  "mandatory_atom_count": 5,
   "expansion_allowed": true
 }
 ---

@@ -42,13 +42,13 @@
   ],
   "linked_atoms": [
     "ka.team-topology-selection",
-    "ka.handoff-packet-discipline",
     "ka.team-mode-recipes",
     "ka.handoff-contract-discipline",
     "ka.human-checkpoint-gates",
     "ka.parallel-lane-governance",
     "ka.room-artifact-ladder",
-    "ka.dissent-preservation-loop"
+    "ka.dissent-preservation-loop",
+    "ka.cross-protocol-referral-edges"
   ],
   "fallback_behavior": "If the user only needs a single deliverable, return to the primary screenplay route and optionally attach a lightweight team recommendation.",
   "default_loading_mode": "focus_pack",

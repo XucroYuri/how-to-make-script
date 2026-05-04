@@ -4,8 +4,15 @@
   "type": "workflow_protocol",
   "title": "角色与世界观协议",
   "goal": "建立能产生持续冲突的角色动力和世界约束。",
-  "input_contract": ["premise", "logline", "world fragment"],
-  "output_contract": ["premise", "synopsis"],
+  "input_contract": [
+    "premise",
+    "logline",
+    "world fragment"
+  ],
+  "output_contract": [
+    "premise",
+    "synopsis"
+  ],
   "preconditions": [
     "已有主概念和大致媒介"
   ],
@@ -24,10 +31,21 @@
     "角色缺陷与世界压力形成闭环",
     "结构设计所需的关键关系已清楚"
   ],
-  "rubrics": ["rb.character-world"],
-  "linked_atoms": ["ka.character-arc", "ka.theme-pressure", "ka.exposition-control", "ka.character-drive-quartet", "ka.capability-friction-balance", "ka.triggered-behavior-profile", "ka.viewer-inference-guidance"],
+  "rubrics": [
+    "rb.character-world"
+  ],
+  "linked_atoms": [
+    "ka.capability-friction-balance",
+    "ka.character-arc",
+    "ka.character-drive-quartet",
+    "ka.cross-protocol-referral-edges",
+    "ka.exposition-control",
+    "ka.theme-pressure",
+    "ka.triggered-behavior-profile",
+    "ka.viewer-inference-guidance"
+  ],
   "budget_class": "L",
-  "mandatory_atom_count": 7,
+  "mandatory_atom_count": 8,
   "expansion_allowed": true
 }
 ---

@@ -39,7 +39,8 @@
     "ka.commissioning-fit",
     "ka.platform-attention-economy",
     "ka.audience-need-state",
-    "ka.screenwriting-history-shift"
+    "ka.screenwriting-history-shift",
+    "ka.cross-protocol-referral-edges"
   ],
   "fallback_behavior": "If commissioning inputs are incomplete, provide a baseline strategy plus one alternative for a different release logic.",
   "default_loading_mode": "focus_pack",

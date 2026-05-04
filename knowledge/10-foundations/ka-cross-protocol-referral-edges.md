@@ -51,9 +51,8 @@
   ],
   "links": [
     "ka.bounded-context-loading",
-    "wp.audience-proxy-review",
-    "wp.quality-gate-report",
-    "wp.session-execution-plan"
+    "ka.contract-first-quality-gating",
+    "ka.audience-proxy-personas"
   ],
   "source_status": "synthesized"
 }

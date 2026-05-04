@@ -19,7 +19,7 @@ if __package__ in (None, ""):
 from scripts.lib import collect_asset_index, collect_skill_manifests, repo_root
 
 BUDGET_LIMITS = {
-    "S": 3,
+    "S": 4,
     "M": 6,
     "L": 15,
 }

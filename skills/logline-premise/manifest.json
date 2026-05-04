@@ -4,15 +4,38 @@
   "description": "Compress a script concept into a strong logline or premise.",
   "entrypoint": "skills/logline-premise/SKILL.md",
   "supports": {
-    "intents": ["design", "draft"],
-    "mediums": ["feature_film", "episodic", "short_drama", "animation"],
-    "stages": ["premise"],
-    "outputs": ["logline", "premise"]
+    "intents": [
+      "design",
+      "draft"
+    ],
+    "mediums": [
+      "feature_film",
+      "episodic",
+      "short_drama",
+      "animation"
+    ],
+    "stages": [
+      "premise"
+    ],
+    "outputs": [
+      "logline",
+      "premise"
+    ]
   },
   "protocol_id": "wp.logline-premise",
-  "rubric_ids": ["rb.logline"],
+  "rubric_ids": [
+    "rb.logline"
+  ],
   "default_loading_mode": "focus_pack",
-  "linked_atoms": ["ka.story-goal", "ka.conflict-pressure", "ka.causality-chain", "ka.false-logline-warning", "ka.viewer-inference-guidance"],
+  "linked_atoms": [
+    "ka.story-goal",
+    "ka.conflict-pressure",
+    "ka.causality-chain",
+    "ka.false-logline-warning",
+    "ka.viewer-inference-guidance",
+    "ka.cross-protocol-referral-edges",
+    "ka.genre-pack-factorization"
+  ],
   "adjunct_bundles": {},
   "fallback_to_skill_id": null,
   "fallback_behavior": "Fall back to idea discovery before compressing if the concept is still fuzzy."

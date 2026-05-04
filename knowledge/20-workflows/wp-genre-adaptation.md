@@ -37,15 +37,17 @@
     "rb.adaptation"
   ],
   "linked_atoms": [
-    "ka.genre-thriller",
-    "ka.genre-romance",
+    "ka.cross-protocol-referral-edges",
     "ka.genre-comedy",
-    "ka.medium-feature-film",
+    "ka.genre-pack-factorization",
+    "ka.genre-romance",
+    "ka.genre-thriller",
+    "ka.medium-branching-interactive",
     "ka.medium-commercial",
-    "ka.medium-branching-interactive"
+    "ka.medium-feature-film"
   ],
-  "budget_class": "M",
-  "mandatory_atom_count": 6,
+  "budget_class": "L",
+  "mandatory_atom_count": 8,
   "expansion_allowed": true
 }
 ---

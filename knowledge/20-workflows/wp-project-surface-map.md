@@ -4,8 +4,18 @@
   "type": "workflow_protocol",
   "title": "项目工作流表面图协议",
   "goal": "根据媒介、阶段、协作方式和长期创作压力，输出一份 project_surface_map，明确 source of truth、runtime state、canonical packet、phase entrypoints、review surfaces、export surfaces 和 sync rules。",
-  "input_contract": ["project brief", "medium", "stage", "team mode or subagent need", "constraints", "human editing assumptions", "downstream execution assumptions"],
-  "output_contract": ["project_surface_map"],
+  "input_contract": [
+    "project brief",
+    "medium",
+    "stage",
+    "team mode or subagent need",
+    "constraints",
+    "human editing assumptions",
+    "downstream execution assumptions"
+  ],
+  "output_contract": [
+    "project_surface_map"
+  ],
   "preconditions": [
     "用户需要设计长期创作工作流或持久化表面层，而不是只要一次性文本产物",
     "已知项目主要媒介或工作容器",
@@ -31,10 +41,22 @@
     "human-edit policy 和 drift risks 已明确",
     "surface map 能支撑长期推进，而不是只解释一次性操作"
   ],
-  "rubrics": ["rb.project-surface-map"],
-  "linked_atoms": ["ka.source-of-truth-runtime-split", "ka.canonical-packet-assembly", "ka.phase-entrypoint-handoff", "ka.command-artifact-mapping", "ka.subagent-context-budgeting", "ka.script-as-coordination-artifact", "ka.archive-literacy", "ka.story-memory-checkpoint"],
+  "rubrics": [
+    "rb.project-surface-map"
+  ],
+  "linked_atoms": [
+    "ka.archive-literacy",
+    "ka.canonical-packet-assembly",
+    "ka.command-artifact-mapping",
+    "ka.cross-protocol-referral-edges",
+    "ka.phase-entrypoint-handoff",
+    "ka.script-as-coordination-artifact",
+    "ka.source-of-truth-runtime-split",
+    "ka.story-memory-checkpoint",
+    "ka.subagent-context-budgeting"
+  ],
   "budget_class": "L",
-  "mandatory_atom_count": 8,
+  "mandatory_atom_count": 9,
   "expansion_allowed": true
 }
 ---

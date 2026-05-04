@@ -42,7 +42,8 @@
     "ka.reference-pattern-usage",
     "ka.scenario-factorization",
     "ka.creative-pluralism",
-    "ka.false-universal-warning"
+    "ka.false-universal-warning",
+    "ka.cross-protocol-referral-edges"
   ],
   "fallback_behavior": "If the request is too broad, first lock the smallest creative problem that actually needs a reference pack before selecting examples.",
   "default_loading_mode": "teaching_pack",

@@ -44,16 +44,17 @@
     "rb.screen-to-video-brief"
   ],
   "linked_atoms": [
-    "ka.screenplay-to-video-boundary",
-    "ka.video-generation-shot-economy",
-    "ka.prompt-delegation-levels",
-    "ka.multilingual-visual-vocabulary",
-    "ka.source-span-traceability",
+    "ka.cross-protocol-referral-edges",
     "ka.long-script-batch-planning",
+    "ka.multilingual-visual-vocabulary",
+    "ka.prompt-delegation-levels",
+    "ka.screenplay-to-video-boundary",
+    "ka.source-span-traceability",
+    "ka.video-generation-shot-economy",
     "ka.visible-asset-grounding"
   ],
   "budget_class": "L",
-  "mandatory_atom_count": 7,
+  "mandatory_atom_count": 8,
   "expansion_allowed": true
 }
 ---

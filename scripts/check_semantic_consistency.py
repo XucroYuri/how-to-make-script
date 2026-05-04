@@ -159,15 +159,17 @@ def check_semantic_consistency(root: Path) -> Dict[str, Any]:
         missing_outputs = sorted(set(protocol["output_contract"]) - set(manifest["supports"]["outputs"]))
         if missing_outputs:
             errors.append(f"{entrypoint}: manifest outputs missing protocol contracts {missing_outputs}")
+        # Check union of all rubrics covers all protocol outputs
+        all_rubric_outputs = set()
         for rubric_id in manifest["rubric_ids"]:
             rubric = rubric_map.get(rubric_id)
-            if rubric is None:
-                continue
-            uncovered = sorted(set(protocol["output_contract"]) - set(rubric["applies_to"]))
-            if uncovered:
-                errors.append(
-                    f"{entrypoint}: rubric {rubric_id!r} does not cover protocol outputs {uncovered}"
-                )
+            if rubric is not None:
+                all_rubric_outputs.update(rubric["applies_to"])
+        uncovered_outputs = sorted(set(protocol["output_contract"]) - all_rubric_outputs)
+        if uncovered_outputs and manifest["rubric_ids"]:
+            errors.append(
+                f"{entrypoint}: rubrics {manifest['rubric_ids']} do not cover protocol outputs {uncovered_outputs}"
+            )
 
     for manifest in internal_manifests:
         skill_id = manifest["id"]

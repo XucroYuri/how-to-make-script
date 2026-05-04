@@ -24,7 +24,8 @@
   },
   "protocol_id": "wp.scene-writing",
   "rubric_ids": [
-    "rb.scene-draft"
+    "rb.scene-draft",
+    "rb.screenplay-draft"
   ],
   "linked_atoms": [
     "ka.scene-function",
@@ -32,7 +33,10 @@
     "ka.exposition-control",
     "ka.character-voice-consistency",
     "ka.embodied-text-pressure",
-    "ka.cinematic-prose-register"
+    "ka.cinematic-prose-register",
+    "ka.cross-protocol-referral-edges",
+    "ka.setup-and-payoff",
+    "ka.verbal-rhythm"
   ],
   "fallback_behavior": "Merge, delete, or redesign the scene if it does not change the situation, or rebuild the beat carriers if the draft slips into bare dialogue or writerly prose.",
   "default_loading_mode": "focus_pack",

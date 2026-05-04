@@ -44,13 +44,14 @@
   ],
   "linked_atoms": [
     "ka.character-voice-consistency",
-    "ka.ip-voice-continuity",
-    "ka.register-adaptation",
+    "ka.cross-protocol-referral-edges",
+    "ka.dialogue-subtext",
     "ka.embodied-text-pressure",
-    "ka.dialogue-subtext"
+    "ka.ip-voice-continuity",
+    "ka.register-adaptation"
   ],
   "budget_class": "M",
-  "mandatory_atom_count": 5,
+  "mandatory_atom_count": 6,
   "expansion_allowed": true
 }
 ---

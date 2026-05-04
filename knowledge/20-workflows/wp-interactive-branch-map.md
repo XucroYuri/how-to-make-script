@@ -34,13 +34,14 @@
     "rb.interactive-branch-map"
   ],
   "linked_atoms": [
-    "ka.medium-game-narrative",
-    "ka.medium-branching-interactive",
     "ka.causality-chain",
+    "ka.cross-protocol-referral-edges",
+    "ka.medium-branching-interactive",
+    "ka.medium-game-narrative",
     "ka.theme-pressure"
   ],
   "budget_class": "M",
-  "mandatory_atom_count": 4,
+  "mandatory_atom_count": 5,
   "expansion_allowed": true
 }
 ---

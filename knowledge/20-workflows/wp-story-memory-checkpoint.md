@@ -4,10 +4,19 @@
   "type": "workflow_protocol",
   "title": "故事记忆检查点协议",
   "goal": "输出一份 story_memory_checkpoint，把当前故事推进所需的最小状态压缩成可续写、可交接、可检查的 continuity-safe 包，而不是重新搬运全文。",
-  "input_contract": ["current draft span or outline span", "medium", "current phase", "active continuity concerns", "handoff or resume reason", "constraints"],
-  "output_contract": ["story_memory_checkpoint"],
+  "input_contract": [
+    "current draft span or outline span",
+    "medium",
+    "current phase",
+    "active continuity concerns",
+    "handoff or resume reason",
+    "constraints"
+  ],
+  "output_contract": [
+    "story_memory_checkpoint"
+  ],
   "budget_class": "M",
-  "mandatory_atom_count": 5,
+  "mandatory_atom_count": 6,
   "expansion_allowed": true,
   "preconditions": [
     "任务具有长篇、分集、多轮改稿、多协作者或跨会话继续写作的压力",
@@ -31,8 +40,17 @@
     "内容足以支撑下一轮安全续写或 handoff，但明显短于原始材料",
     "已经明确哪些只是临时工作假设，不可误写成 canon"
   ],
-  "rubrics": ["rb.story-memory-checkpoint"],
-  "linked_atoms": ["ka.story-memory-checkpoint", "ka.dual-track-rhythm", "ka.serial-arc-budgeting", "ka.room-artifact-ladder", "ka.script-as-coordination-artifact"]
+  "rubrics": [
+    "rb.story-memory-checkpoint"
+  ],
+  "linked_atoms": [
+    "ka.cross-protocol-referral-edges",
+    "ka.dual-track-rhythm",
+    "ka.room-artifact-ladder",
+    "ka.script-as-coordination-artifact",
+    "ka.serial-arc-budgeting",
+    "ka.story-memory-checkpoint"
+  ]
 }
 ---
 # 故事记忆检查点协议

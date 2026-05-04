@@ -38,9 +38,10 @@ Gate against the output contract strictly. Hard fails are non-negotiable. Weight
 Audience experience is a valid quality lens but is suppressed in quality-gating unless the output contract is explicitly `audience_fit_note`. Use the audience lens to surface dropout risk and hook strength, not as a general quality proxy.
 
 ## References
-- `wp.quality-gate-report`
-- `ka.contract-first-quality-gating`
 - `ka.adaptive-quality-lens-selection`
-- `ka.review-lens-isolation`
+- `ka.causality-chain`
+- `ka.contract-first-quality-gating`
 - `ka.hard-gate-soft-score-separation`
+- `ka.review-lens-isolation`
 - `rb.quality-gate-report`
+- `wp.quality-gate-report`

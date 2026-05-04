@@ -40,12 +40,13 @@
   ],
   "linked_atoms": [
     "ka.audience-proxy-personas",
-    "ka.scene-function",
     "ka.conflict-pressure",
+    "ka.cross-protocol-referral-edges",
+    "ka.scene-function",
     "ka.specificity-pressure"
   ],
   "budget_class": "L",
-  "mandatory_atom_count": 4,
+  "mandatory_atom_count": 5,
   "expansion_allowed": true
 }
 ---

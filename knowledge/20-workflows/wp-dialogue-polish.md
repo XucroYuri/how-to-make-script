@@ -33,12 +33,13 @@
     "rb.dialogue"
   ],
   "linked_atoms": [
+    "ka.conflict-pressure",
+    "ka.cross-protocol-referral-edges",
     "ka.dialogue-subtext",
-    "ka.exposition-control",
-    "ka.conflict-pressure"
+    "ka.exposition-control"
   ],
   "budget_class": "S",
-  "mandatory_atom_count": 3,
+  "mandatory_atom_count": 4,
   "expansion_allowed": true
 }
 ---

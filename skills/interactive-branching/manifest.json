@@ -30,7 +30,8 @@
     "ka.medium-game-narrative",
     "ka.medium-branching-interactive",
     "ka.causality-chain",
-    "ka.theme-pressure"
+    "ka.theme-pressure",
+    "ka.cross-protocol-referral-edges"
   ],
   "fallback_behavior": "Reduce branch count and increase state significance if branches multiply without meaning.",
   "default_loading_mode": "focus_pack",

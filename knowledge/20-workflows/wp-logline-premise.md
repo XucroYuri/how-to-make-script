@@ -4,8 +4,15 @@
   "type": "workflow_protocol",
   "title": "Logline / Premise 协议",
   "goal": "把故事引擎压缩成高可读、高判断力的 logline 或 premise。",
-  "input_contract": ["story concept", "premise", "character idea"],
-  "output_contract": ["logline", "premise"],
+  "input_contract": [
+    "story concept",
+    "premise",
+    "character idea"
+  ],
+  "output_contract": [
+    "logline",
+    "premise"
+  ],
   "preconditions": [
     "已具备主角与核心冲突轮廓"
   ],
@@ -24,10 +31,20 @@
     "logline 可独立成立",
     "premise 能明确后续结构开发方向"
   ],
-  "rubrics": ["rb.logline"],
-  "linked_atoms": ["ka.story-goal", "ka.conflict-pressure", "ka.causality-chain", "ka.false-logline-warning", "ka.viewer-inference-guidance"],
-  "budget_class": "M",
-  "mandatory_atom_count": 5,
+  "rubrics": [
+    "rb.logline"
+  ],
+  "linked_atoms": [
+    "ka.causality-chain",
+    "ka.conflict-pressure",
+    "ka.cross-protocol-referral-edges",
+    "ka.false-logline-warning",
+    "ka.genre-pack-factorization",
+    "ka.story-goal",
+    "ka.viewer-inference-guidance"
+  ],
+  "budget_class": "L",
+  "mandatory_atom_count": 7,
   "expansion_allowed": true
 }
 ---

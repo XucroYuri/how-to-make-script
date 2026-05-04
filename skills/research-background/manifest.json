@@ -4,15 +4,54 @@
   "description": "Return a bounded, callable research background map for broad screenplay-creation questions and theory-support requests.",
   "entrypoint": "skills/research-background/SKILL.md",
   "supports": {
-    "intents": ["discover", "design", "diagnose"],
-    "mediums": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"],
-    "stages": ["ideation", "premise", "character", "structure", "outline", "scene", "dialogue", "rewrite", "adaptation"],
-    "outputs": ["research_background_map"]
+    "intents": [
+      "discover",
+      "design",
+      "diagnose"
+    ],
+    "mediums": [
+      "feature_film",
+      "episodic",
+      "short_drama",
+      "animation",
+      "commercial",
+      "branded_film",
+      "shortform_video",
+      "game_narrative",
+      "branching_interactive"
+    ],
+    "stages": [
+      "ideation",
+      "premise",
+      "character",
+      "structure",
+      "outline",
+      "scene",
+      "dialogue",
+      "rewrite",
+      "adaptation"
+    ],
+    "outputs": [
+      "research_background_map"
+    ]
   },
   "protocol_id": "wp.research-background-map",
-  "rubric_ids": ["rb.research-background-map"],
+  "rubric_ids": [
+    "rb.research-background-map"
+  ],
   "default_loading_mode": "focus_pack",
-  "linked_atoms": ["ka.screenplay-lens-stacking", "ka.viewer-inference-guidance", "ka.script-as-coordination-artifact", "ka.screenwriting-deliberate-practice", "ka.feedback-subjectivity-management", "ka.archive-literacy", "ka.audience-need-state", "ka.commissioning-fit", "ka.screenwriting-history-shift"],
+  "linked_atoms": [
+    "ka.screenplay-lens-stacking",
+    "ka.viewer-inference-guidance",
+    "ka.script-as-coordination-artifact",
+    "ka.screenwriting-deliberate-practice",
+    "ka.feedback-subjectivity-management",
+    "ka.archive-literacy",
+    "ka.audience-need-state",
+    "ka.commissioning-fit",
+    "ka.screenwriting-history-shift",
+    "ka.cross-protocol-referral-edges"
+  ],
   "adjunct_bundles": {},
   "fallback_to_skill_id": null,
   "fallback_behavior": "If the user actually needs a concrete screenplay artifact, switch to the narrow route and attach only the smallest relevant research note."

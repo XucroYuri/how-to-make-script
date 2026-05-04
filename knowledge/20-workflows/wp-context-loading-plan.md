@@ -4,8 +4,17 @@
   "type": "workflow_protocol",
   "title": "上下文加载计划协议",
   "goal": "在正式生成前，输出一份 context_loading_plan，明确当前请求应加载哪些核心资产、哪些候选扩展、为何扩展，以及何时必须停止扩容。",
-  "input_contract": ["request", "route candidate", "output target", "constraints", "explicit depth ask", "none"],
-  "output_contract": ["context_loading_plan"],
+  "input_contract": [
+    "request",
+    "route candidate",
+    "output target",
+    "constraints",
+    "explicit depth ask",
+    "none"
+  ],
+  "output_contract": [
+    "context_loading_plan"
+  ],
   "preconditions": [
     "用户请求涉及 Agent Skill 设计、加载策略、复杂教学、比较性创作，或当前 route 存在明显不确定性",
     "至少可以锁定一个候选 output 或 creative problem"
@@ -28,10 +37,19 @@
     "每个 optional reference 都带有清楚的 expansion trigger",
     "至少写出两个 context-corrosion signals 或 stop rules"
   ],
-  "rubrics": ["rb.context-loading-plan"],
-  "linked_atoms": ["ka.bounded-context-loading", "ka.reference-expansion-balance", "ka.context-corrosion-signals", "ka.scenario-factorization", "ka.story-memory-checkpoint"],
+  "rubrics": [
+    "rb.context-loading-plan"
+  ],
+  "linked_atoms": [
+    "ka.bounded-context-loading",
+    "ka.context-corrosion-signals",
+    "ka.cross-protocol-referral-edges",
+    "ka.reference-expansion-balance",
+    "ka.scenario-factorization",
+    "ka.story-memory-checkpoint"
+  ],
   "budget_class": "M",
-  "mandatory_atom_count": 5,
+  "mandatory_atom_count": 6,
   "expansion_allowed": true
 }
 ---
