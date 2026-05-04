@@ -186,7 +186,5 @@ Full descriptions in `references/supported-outputs.md`. Format contracts in `ref
 | `references/supported-outputs.md` | All 29 output descriptions (ZH) |
 | `references/output-format-contracts.md` | Format contracts for machine-checked outputs |
 | `references/skill-directory.md` | Complete sub-skill index |
-| `docs/agent-quick-reference.md` | Agent quick-reference card (EN) |
-| `docs/agent-quick-reference-zh.md` | Agent quick-reference card (ZH) |
 | `docs/context-loading-policy.md` | Loading mode details and expansion rules |
 | `knowledge/00-ontology/` | Conceptual maps and taxonomies |

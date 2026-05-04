@@ -40,6 +40,14 @@ It root SKILL.md loads this at runtime only when needed, not at entry.
 ### Long-Horizon Governance
 - [`skills/story-memory-checkpoint/SKILL.md`](../skills/story-memory-checkpoint/SKILL.md)
 
+### Internal Infrastructure
+These skills support the routing, loading, and collaboration infrastructure. They are not directly routable from user-facing entrypoints.
+
+- **context-governor** — manages context loading budget and expansion gating (skills/context-governor/SKILL.md)
+- **project-surface-design** — designs project surface maps and navigation structures (skills/project-surface-design/SKILL.md)
+- **subagent-dispatch-design** — designs expert subagent dispatch plans (skills/subagent-dispatch-design/SKILL.md)
+- **team-workflow-design** — designs team collaboration workflows and blueprints (skills/team-workflow-design/SKILL.md)
+
 ## Primary References
 
 ### Core Route Contracts
