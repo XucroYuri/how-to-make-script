@@ -31,7 +31,7 @@ def iter_surface_files(root: Path, patterns: Iterable[str], excludes: Iterable[s
 
 def check_canonical_terms(root: Path) -> Dict[str, Any]:
     root = root.resolve()
-    register = load_json(root / "references" / "canonical-term-register.json")
+    register = load_json(root / "docs" / "shared" / "canonical-term-register.json")
     rules = register.get("forbidden_terms", [])
 
     errors: List[str] = []

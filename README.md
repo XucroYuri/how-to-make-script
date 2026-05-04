@@ -284,7 +284,7 @@ The system is designed so that every step is auditable. You can see which route 
 
 ### Challenge or improve the repo
 
-1. [Community Operations](./docs/community-operations.md)
+1. [Community Operations](./docs/shared/community-operations.md)
 2. [Contributing](./CONTRIBUTING.md)
 3. Open the lightest useful thread in [GitHub Discussions](https://github.com/XucroYuri/how-to-make-script/discussions)
 
@@ -347,10 +347,9 @@ The repository spans the full range of screenplay work, from first idea to final
 **For contributors**
 
 - [Contributing Guide](./CONTRIBUTING.md)
-- [Canonical Term Policy](./docs/canonical-term-policy.md)
-- [Community Operations](./docs/community-operations.md)
+- [Canonical Term Policy](./docs/shared/canonical-term-policy.md)
+- [Community Operations](./docs/shared/community-operations.md)
 - [Support Ladder](./SUPPORT.md)
-- [Roadmap](./docs/roadmap.md)
 - [Changelog](./CHANGELOG.md)
 
 ## Community
@@ -387,7 +386,7 @@ The repository is a usable research-first, agent-ready screenplay monorepo.
 
 **Next-stage roadmap:** executable runtime planning; stricter router governance; deeper genre/medium/case-study layers; stronger quality presets and cross-artifact checks; systematic human-in-the-loop conversion; bilingual maturity.
 
-Detailed TODO list: [Roadmap](./docs/roadmap.md)
+Detailed TODO list: see `docs/shared/` for maintainer documentation.
 
 ---
 

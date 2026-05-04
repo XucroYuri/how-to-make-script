@@ -257,22 +257,6 @@
     "notes": "英文输入 + 明确的短视频广告打磨"
   },
   {
-    "id": "nl-018",
-    "query": "我该加载哪些素材来写好这场戏？",
-    "expected_classification": {
-      "intent": "design",
-      "medium": "AMBIGUOUS",
-      "stage": "AMBIGUOUS",
-      "output": "context_loading_plan"
-    },
-    "expected_behavior": "should_route_or_ask",
-    "expected_route": {
-      "skill_id": "skill.context-governor",
-      "protocol_id": "wp.context-loading-plan"
-    },
-    "notes": "context_loading_plan 路由明确，但需要更多场景信息"
-  },
-  {
     "id": "nl-019",
     "query": "先别写，帮我检查一下这部动画长片的质量，用质量门禁报告",
     "expected_classification": {
@@ -319,22 +303,6 @@
       "protocol_id": "wp.voice-style-guide"
     },
     "notes": "明确的语音风格校准请求"
-  },
-  {
-    "id": "nl-022",
-    "query": "不知道这个项目文件该怎么组织，什么是可以改的什么是自动生成的",
-    "expected_classification": {
-      "intent": "design",
-      "medium": "AMBIGUOUS",
-      "stage": "ideation",
-      "output": "project_surface_map"
-    },
-    "expected_behavior": "should_route",
-    "expected_route": {
-      "skill_id": "skill.project-surface-design",
-      "protocol_id": "wp.project-surface-map"
-    },
-    "notes": "项目表面映射请求明确"
   },
   {
     "id": "nl-023",

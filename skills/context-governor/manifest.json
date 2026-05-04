@@ -1,6 +1,7 @@
 {
   "id": "skill.context-governor",
   "name": "context-governor",
+  "surface": "internal",
   "description": "Plan bounded context loading for screenplay generation without sacrificing relevant reference quality.",
   "entrypoint": "skills/context-governor/SKILL.md",
   "supports": {

@@ -98,7 +98,7 @@ If a report is still too broad, maintainers should narrow it rather than let it 
 
 ## Content Requirements
 - Every structured asset must satisfy its schema in [`schemas/`](schemas).
-- Every new ID must be unique and follow the policy in [`references/id-policy.md`](references/id-policy.md).
+- Every new ID must be unique and follow the policy in [`docs/shared/id-policy.md`](docs/shared/id-policy.md).
 - Every cross-link must resolve to a real asset ID.
 - Every protocol must declare input and output contracts.
 - Every rubric must include hard-fail rules and rewrite actions.

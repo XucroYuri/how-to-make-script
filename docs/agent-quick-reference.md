@@ -1,48 +1,62 @@
 # Agent Quick Reference
 
-Use this card when you need fast, low-risk routing and loading decisions.
+A one-page card that helps you make fast, sound decisions without overthinking or overloading.
 
-## 1) Route first, always
+## Start Every Request the Same Way: Route First
 
-Choose route dimensions in this order:
+Before you write a single word of the response, figure out where this request belongs. The dimensions matter in this order because each one narrows the next:
 
-1. `intent` (`discover`, `design`, `draft`, `polish`, `diagnose`, `adapt`)
-2. `medium`
-3. `stage`
-4. `output`
-5. `constraints`
+1. **What's the creative intent?** Is the user discovering, designing, drafting, polishing, diagnosing, or adapting? This is the biggest fork — a discovery request needs open questions, a polish request needs precise checking.
+2. **What medium?** Feature film, episodic, commercial, interactive... each has its own dramatic logic and you can't use one medium's rules for another.
+3. **What stage?** Ideation needs expansion, outline needs structure, dialogue needs ear and subtext. Where they are determines what tool fits.
+4. **What output?** Pick from the 33 defined output contracts. Don't invent a blended format — one clear artifact is better than a frankenstein of three.
+5. **What constraints?** Genre, tone, duration, audience, budget, platform, language register... These break ties when two outputs look equally viable.
 
-## 2) Route selection rule
+If the request is genuinely ambiguous, ask one question — the one whose answer would change the route. Not three questions. Not a form. One.
 
-- Start from the `intent x medium x stage x output` matrix.
-- Use `constraints` as a tie-breaker or loading trigger when outputs are near neighbors.
-- If the request is ambiguous, map boundaries first (hard/soft) and return minimal clarifying questions that can change route/output.
-- If multiple outputs remain viable, preserve plurality with `path_options` rather than forcing a single answer.
+When multiple valid paths exist, don't force convergence. Offer `path_options` with tradeoffs. The user picks; you don't guess.
 
-## 3) Loading mode ladder
+## How Much Context to Load: The Ladder
 
-- `route_kernel`: minimal route-safe context.
-- `focus_pack`: route + primary workflow + required atoms + one rubric.
-- `compare_pack`: add one rival or contrast boundary when needed.
-- `teaching_pack`: route + one reference pack/atlas + one contrast aid.
-- `survey_pack`: only explicit broad research/learning requests.
+You don't need the whole library. Start at the bottom and climb only when the next rung would actually change the answer.
 
-## 4) Stop expansion when
+```mermaid
+graph TD
+    A[route_kernel<br/>Minimum route-safe context] -->|"Need to produce an artifact?"| B[focus_pack<br/>+ primary protocol + required atoms + rubric]
+    B -->|"Need alternatives or contrast?"| C[compare_pack<br/>+ one rival route or boundary contrast]
+    B -->|"Teaching or explanation?"| D[teaching_pack<br/>+ scenario atlas + one contrast aid]
+    C -->|"Still not enough?"| E[survey_pack<br/>Broad research — only for explicit requests]
+    D -->|"Still not enough?"| E
+```
 
-- route is stable and output contract is fixed;
-- the next context chunk does not change route, output contract, or self-check quality;
-- the response is drifting toward repo summary instead of request resolution;
-- primary bundle already includes one route anchor, one primary reference, and one contrast when needed.
+- **route_kernel**: Just enough to verify the route is correct. The navigation system, nothing more.
+- **focus_pack**: Your default for most requests. One protocol, its required atoms, one rubric. Clean and focused.
+- **compare_pack**: Add a contrast when the user is weighing options, checking boundaries, or asking "why this and not that."
+- **teaching_pack**: Add the scenario atlas and a contrast aid when the user wants to understand the logic, not just get the output.
+- **survey_pack**: Only when someone explicitly asks for a broad survey. Even then, anchor it on a declared background bundle.
 
-## 5) Lens loading shortcuts
+## When to Stop Expanding
 
-- Reality lens: only when requested for audience, platform, industry, commissioning, business model, or writer-growth mismatch.
-- Expression lens: only when output is `voice_style_guide` or constraints request explicit tonal/continuity control.
-- Visual bridge: only when output is `visual_language_pack` / `screen_to_video_brief` or explicit visual handoff needs.
-- Team/runtime lens: only when request is collaboration design or runtime orchestration.
+Stop loading more context the moment any of these is true:
 
-## 6) Mandatory output discipline
+- The route is locked and the output contract won't change.
+- The next chunk of context would only repeat what's already loaded.
+- Your thinking is drifting toward "here's what else is in the repo" rather than solving the actual request.
+- You already have one route anchor, one primary reference, and one contrast or edge case when needed.
 
-- Keep outputs in the requested contract format.
-- Attach a compact rubric-based self-check.
-- If constraints change route or output contract, reload from the constrained bundle only when necessary.
+If the answer isn't getting better with more context, the problem isn't lack of context — you're probably loading the wrong thing, not too little of it.
+
+## When to Load Specialized Lenses
+
+These lenses are powerful but narrow. Load them only when they'd actually change the outcome:
+
+- **Reality lens**: Load when the request involves audience dynamics, platform constraints, commissioning context, business model, or writer-growth patterns. Skip it for pure craft questions.
+- **Expression lens**: Load when producing a `voice_style_guide` or when tonal/continuity/register constraints are explicit in the request.
+- **Visual bridge**: Load for `visual_language_pack`, `screen_to_video_brief`, or explicit cross-medium handoff needs.
+- **Team lens**: Load only when the request is about designing collaboration — not for normal single-artifact generation.
+
+## Output Discipline
+
+- Produce exactly the output format requested. No blended artifacts.
+- Attach a short rubric-based self-check at the end. The user should know what passed, what's borderline, and what might come next.
+- If constraints shift mid-work and change the route or contract, reload only what the new constraints require. Don't restart from scratch.

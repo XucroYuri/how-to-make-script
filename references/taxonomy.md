@@ -53,17 +53,13 @@
 - `boundary_map`
 - `scope_correction`
 - `pattern_reference_pack`
-- `context_loading_plan`
 - `story_memory_checkpoint`
 - `voice_style_guide`
 - `visual_language_pack`
 - `screen_to_video_brief`
 - `team_workflow_blueprint`
 - `expert_subagent_cast`
-- `subagent_dispatch_plan`
-- `project_surface_map`
 - `audience_proxy_report`
-- `session_execution_plan`
 
 ## Constraint Families
 - `audience_segment`

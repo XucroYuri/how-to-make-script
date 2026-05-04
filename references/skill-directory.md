@@ -22,7 +22,6 @@ It root SKILL.md loads this at runtime only when needed, not at entry.
 - [`skills/development-strategy/SKILL.md`](../skills/development-strategy/SKILL.md)
 - [`skills/writer-development/SKILL.md`](../skills/writer-development/SKILL.md)
 - [`skills/research-background/SKILL.md`](../skills/research-background/SKILL.md)
-- [`skills/context-governor/SKILL.md`](../skills/context-governor/SKILL.md)
 - [`skills/voice-style-calibration/SKILL.md`](../skills/voice-style-calibration/SKILL.md)
 - [`skills/visual-language/SKILL.md`](../skills/visual-language/SKILL.md)
 - [`skills/screen-to-video-bridge/SKILL.md`](../skills/screen-to-video-bridge/SKILL.md)
@@ -37,11 +36,9 @@ It root SKILL.md loads this at runtime only when needed, not at entry.
 ### Collaboration And Orchestration
 - [`skills/team-orchestration/SKILL.md`](../skills/team-orchestration/SKILL.md)
 - [`skills/expert-subagent-casting/SKILL.md`](../skills/expert-subagent-casting/SKILL.md)
-- [`skills/subagent-dispatch-design/SKILL.md`](../skills/subagent-dispatch-design/SKILL.md)
 
 ### Long-Horizon Governance
 - [`skills/story-memory-checkpoint/SKILL.md`](../skills/story-memory-checkpoint/SKILL.md)
-- [`skills/project-surface-design/SKILL.md`](../skills/project-surface-design/SKILL.md)
 
 ## Primary References
 
@@ -49,10 +46,10 @@ It root SKILL.md loads this at runtime only when needed, not at entry.
 - [`references/taxonomy.md`](taxonomy.md)
 - [`references/routing-policy.md`](routing-policy.md)
 - [`references/background-bundles.json`](background-bundles.json)
-- [`references/constraint-key-register.json`](constraint-key-register.json)
-- [`references/id-policy.md`](id-policy.md)
+- [`docs/shared/constraint-key-register.json`](../docs/shared/constraint-key-register.json)
+- [`docs/shared/id-policy.md`](../docs/shared/id-policy.md)
 - [`docs/content-model.md`](../docs/content-model.md)
-- [`docs/semantic-governance.md`](../docs/semantic-governance.md)
+- [`docs/semantic-governance.md`](../docs/shared/semantic-governance.md)
 - [`docs/progressive-disclosure-policy.md`](../docs/progressive-disclosure-policy.md)
 
 ### Loading And Comparison Controls
@@ -79,6 +76,4 @@ It root SKILL.md loads this at runtime only when needed, not at entry.
 
 ### External Grounding And Source Maps
 - [`docs/reference-project-lessons.md`](../docs/reference-project-lessons.md)
-- [`docs/source-map-reference-projects.md`](../docs/source-map-reference-projects.md)
 - [`docs/reality-lenses.md`](../docs/reality-lenses.md)
-- [`docs/source-map-real-world.md`](../docs/source-map-real-world.md)

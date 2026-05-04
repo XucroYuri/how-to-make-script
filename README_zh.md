@@ -304,7 +304,7 @@ flowchart LR
 
 ### 想提问题、提反驳、改仓库
 
-1. [社区运营策略](./docs/community-operations-zh.md)
+1. [社区运营策略](./docs/shared/community-operations-zh.md)
 2. [贡献说明](./CONTRIBUTING.md)
 3. 去 [Discussions](https://github.com/XucroYuri/how-to-make-script/discussions) 选合适入口
 
@@ -371,10 +371,9 @@ flowchart LR
 **面向贡献者**
 
 - [贡献说明](./CONTRIBUTING.md)
-- [Canonical 术语治理策略](./docs/canonical-term-policy-zh.md)
-- [社区运营策略](./docs/community-operations-zh.md)
+- [Canonical 术语治理策略](./docs/shared/canonical-term-policy-zh.md)
+- [社区运营策略](./docs/shared/community-operations-zh.md)
 - [支持入口梯度](./SUPPORT.md)
-- [Roadmap](./docs/roadmap-zh.md)
 - [Changelog](./CHANGELOG.md)
 
 ---
@@ -415,7 +414,7 @@ flowchart LR
 
 **下一阶段方向：** 可执行 runtime planning；更严格的 router 治理；更深入的 genre/medium/case-study 知识层；更强的 quality preset 和跨工件检查；更成熟的人类反馈转资产机制；双语文档完善度。
 
-高细粒度 TODO：[Roadmap](./docs/roadmap-zh.md)
+高细粒度 TODO：详见 `docs/shared/` 维护者文档。
 
 ---
 

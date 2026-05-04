@@ -12,7 +12,6 @@
 
 配套阅读：
 
-- [`source-map-screenplay-creation-research.md`](./source-map-screenplay-creation-research.md)
 - [`reality-lenses.md`](./reality-lenses.md)
 - [`epistemic-stance.md`](./epistemic-stance.md)
 

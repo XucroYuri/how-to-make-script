@@ -3,7 +3,7 @@
   "id": "rb.audience-experience",
   "type": "evaluation_rubric",
   "title": "Audience Experience Rubric",
-  "applies_to": ["scene_draft", "screenplay_draft", "audience_proxy_report"],
+  "applies_to": ["scene_draft", "screenplay_draft", "audience_fit_note", "audience_proxy_report"],
   "dimensions": [
     {"name": "entry_pull", "question": "代理进入场景的前 30 秒内，是否产生了继续看的理由"},
     {"name": "patience_curve", "question": "patience 曲线是否持续有涨有跌，而不是单调下滑"},

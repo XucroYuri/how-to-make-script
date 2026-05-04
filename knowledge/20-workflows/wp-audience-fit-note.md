@@ -12,7 +12,8 @@
     "none"
   ],
   "output_contract": [
-    "audience_fit_note"
+    "audience_fit_note",
+    "audience_proxy_report"
   ],
   "preconditions": [
     "至少知道目标媒介或发布场景",

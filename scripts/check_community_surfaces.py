@@ -13,11 +13,11 @@ from scripts.lib import repo_root
 
 
 REQUIRED_DOCS = (
-    "docs/community-feedback-loop.md",
-    "docs/community-feedback-loop-zh.md",
-    "docs/community-triage-loop.md",
-    "docs/community-operations.md",
-    "docs/community-operations-zh.md",
+    "docs/shared/community-feedback-loop.md",
+    "docs/shared/community-feedback-loop-zh.md",
+    "docs/shared/community-triage-loop.md",
+    "docs/shared/community-operations.md",
+    "docs/shared/community-operations-zh.md",
 )
 
 REQUIRED_LABELS = {
@@ -38,18 +38,18 @@ def check_community_surfaces(root: Path) -> Dict[str, Any]:
     root = root.resolve()
     errors: List[str] = []
 
-    discussion_map_path = root / "references" / "discussion-surface-map.json"
-    label_taxonomy_path = root / "references" / "community-label-taxonomy.json"
+    discussion_map_path = root / ".github" / "discussion-surface-map.json"
+    label_taxonomy_path = root / ".github" / "community-label-taxonomy.json"
     config_path = root / ".github" / "ISSUE_TEMPLATE" / "config.yml"
 
     if not discussion_map_path.exists():
-        errors.append("references/discussion-surface-map.json: missing")
+        errors.append(".github/discussion-surface-map.json: missing")
         discussion_map: Dict[str, Any] = {"categories": []}
     else:
         discussion_map = json.loads(discussion_map_path.read_text(encoding="utf-8"))
 
     if not label_taxonomy_path.exists():
-        errors.append("references/community-label-taxonomy.json: missing")
+        errors.append(".github/community-label-taxonomy.json: missing")
         label_taxonomy: Dict[str, Any] = {"labels": []}
     else:
         label_taxonomy = json.loads(label_taxonomy_path.read_text(encoding="utf-8"))
@@ -67,10 +67,10 @@ def check_community_surfaces(root: Path) -> Dict[str, Any]:
     for category in discussion_map.get("categories", []):
         slug = category.get("slug")
         if not isinstance(slug, str) or not slug:
-            errors.append("references/discussion-surface-map.json: category missing slug")
+            errors.append(".github/discussion-surface-map.json: category missing slug")
             continue
         if slug in category_slugs:
-            errors.append(f"references/discussion-surface-map.json: duplicate slug {slug!r}")
+            errors.append(f".github/discussion-surface-map.json: duplicate slug {slug!r}")
         category_slugs.append(slug)
 
         if category.get("form_expected"):
@@ -92,22 +92,22 @@ def check_community_surfaces(root: Path) -> Dict[str, Any]:
     for label in labels:
         name = label.get("name")
         if not isinstance(name, str) or not name:
-            errors.append("references/community-label-taxonomy.json: label missing name")
+            errors.append(".github/community-label-taxonomy.json: label missing name")
             continue
         if name in label_names:
-            errors.append(f"references/community-label-taxonomy.json: duplicate label {name!r}")
+            errors.append(f".github/community-label-taxonomy.json: duplicate label {name!r}")
         label_names.append(name)
         for key in ("color", "description", "group"):
             if not isinstance(label.get(key), str) or not label[key]:
                 errors.append(
-                    "references/community-label-taxonomy.json: "
+                    ".github/community-label-taxonomy.json: "
                     f"label {name!r} missing {key!r}"
                 )
 
     missing_required_labels = sorted(REQUIRED_LABELS - set(label_names))
     for name in missing_required_labels:
         errors.append(
-            f"references/community-label-taxonomy.json: missing required label {name!r}"
+            f".github/community-label-taxonomy.json: missing required label {name!r}"
         )
 
     return {

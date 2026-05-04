@@ -26,7 +26,6 @@ def validate_subagent_registries(root: Path) -> Dict[str, Any]:
     expert = _load_json(root / "references/expert-subagent-library.json")
     topology = _load_json(root / "references/subagent-topology-matrix.json")
     team_matrix = _load_json(root / "references/team-mode-matrix.json")
-    team_profiles = _load_json(root / "references/team-workflow-modes.json")
     base_roles = _load_json(root / "references/agent-team-roles.json")
 
     archetypes = expert["archetypes"]
@@ -36,14 +35,6 @@ def validate_subagent_registries(root: Path) -> Dict[str, Any]:
     cast_template_ids = _collect_ids(cast_templates)
     topology_ids = _collect_ids(topology["topologies"])
     base_role_ids = _collect_ids(base_roles["roles"])
-    team_mode_ids = _collect_ids(team_matrix["modes"])
-    team_profile_ids = _collect_ids(team_profiles["modes"])
-
-    if team_profiles.get("canonical_registry") != "references/team-mode-matrix.json":
-        errors.append("references/team-workflow-modes.json: canonical_registry must point to references/team-mode-matrix.json")
-
-    if team_matrix.get("mode_profile_registry") != "references/team-workflow-modes.json":
-        errors.append("references/team-mode-matrix.json: mode_profile_registry must point to references/team-workflow-modes.json")
 
     if team_matrix["handoff_packet_fields"] != topology["packet_fields"]:
         errors.append("references/team-mode-matrix.json: handoff_packet_fields must match references/subagent-topology-matrix.json packet_fields")
@@ -65,29 +56,15 @@ def validate_subagent_registries(root: Path) -> Dict[str, Any]:
                 errors.append(f"references/expert-subagent-library.json: unknown persona ref '{ref}' in template {template['id']}")
 
     for mode in team_matrix["modes"]:
-        profile_id = mode.get("profile_id")
-        if profile_id and profile_id not in team_profile_ids:
-            errors.append(f"references/team-mode-matrix.json: unknown profile_id '{profile_id}' in mode {mode['id']}")
         for ref in mode.get("recommended_cast_templates", []):
             if ref not in cast_template_ids:
                 errors.append(f"references/team-mode-matrix.json: unknown cast template '{ref}' in mode {mode['id']}")
         for ref in mode.get("recommended_dispatch_topologies", []):
             if ref not in topology_ids:
                 errors.append(f"references/team-mode-matrix.json: unknown topology '{ref}' in mode {mode['id']}")
-
-    for mode in team_profiles["modes"]:
-        canonical_mode_id = mode.get("canonical_mode_id")
-        if canonical_mode_id not in team_mode_ids:
-            errors.append(f"references/team-workflow-modes.json: unknown canonical_mode_id '{canonical_mode_id}' in mode {mode['id']}")
-        for ref in mode.get("recommended_cast_templates", []):
-            if ref not in cast_template_ids:
-                errors.append(f"references/team-workflow-modes.json: unknown cast template '{ref}' in mode {mode['id']}")
-        for ref in mode.get("recommended_dispatch_topologies", []):
-            if ref not in topology_ids:
-                errors.append(f"references/team-workflow-modes.json: unknown topology '{ref}' in mode {mode['id']}")
         for ref in mode.get("recommended_persona_candidates", []):
             if ref not in persona_ids:
-                errors.append(f"references/team-workflow-modes.json: unknown persona '{ref}' in mode {mode['id']}")
+                errors.append(f"references/team-mode-matrix.json: unknown persona '{ref}' in mode {mode['id']}")
 
     return {
       "errors": sorted(errors),
@@ -96,7 +73,6 @@ def validate_subagent_registries(root: Path) -> Dict[str, Any]:
           "cast_template_count": len(cast_templates),
           "topology_count": len(topology["topologies"]),
           "team_mode_count": len(team_matrix["modes"]),
-          "team_profile_count": len(team_profiles["modes"]),
       },
     }
 

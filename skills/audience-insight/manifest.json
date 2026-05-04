@@ -35,7 +35,8 @@
   },
   "protocol_id": "wp.audience-fit-note",
   "rubric_ids": [
-    "rb.audience-fit"
+    "rb.audience-fit",
+    "rb.audience-experience"
   ],
   "linked_atoms": [
     "ka.audience-need-state",

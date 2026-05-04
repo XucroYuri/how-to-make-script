@@ -92,7 +92,7 @@ def check_semantic_consistency(root: Path) -> Dict[str, Any]:
     skill_text = (root / "SKILL.md").read_text(encoding="utf-8")
     taxonomy_path = root / "references" / "taxonomy.md"
     supported_outputs_path = root / "references" / "supported-outputs.md"
-    constraint_register = load_json(root / "references" / "constraint-key-register.json")
+    constraint_register = load_json(root / "docs" / "shared" / "constraint-key-register.json")
 
     root_outputs = parse_root_outputs(skill_text)
     root_subskills = parse_root_subskills(skill_text, root)
@@ -100,21 +100,26 @@ def check_semantic_consistency(root: Path) -> Dict[str, Any]:
     taxonomy_outputs = parse_taxonomy_section(taxonomy_path, "Outputs")
     taxonomy_constraints = parse_constraint_families(taxonomy_path)
 
-    protocol_outputs: Set[str] = set()
     protocol_map: Dict[str, Dict[str, Any]] = {}
     rubric_map: Dict[str, Dict[str, Any]] = {}
     for asset in assets:
         if asset["type"] == "workflow_protocol":
             protocol_map[asset["id"]] = asset
-            protocol_outputs.update(asset["output_contract"])
         if asset["type"] == "evaluation_rubric":
             rubric_map[asset["id"]] = asset
 
-    route_outputs = {output for route in router["routes"] for output in route["output"]}
-    fixture_outputs = {fixture["output"] for fixture in fixtures}
-
     public_manifests = [manifest for manifest in manifests if manifest.get("surface", "public") == "public"]
     internal_manifests = [manifest for manifest in manifests if manifest.get("surface") == "internal"]
+
+    # Only include outputs from protocols linked to public skills
+    public_protocol_ids = {m.get("protocol_id") for m in public_manifests if m.get("protocol_id")}
+    protocol_outputs: Set[str] = set()
+    for pid in public_protocol_ids:
+        if pid in protocol_map:
+            protocol_outputs.update(protocol_map[pid]["output_contract"])
+
+    route_outputs = {output for route in router["routes"] for output in route["output"]}
+    fixture_outputs = {fixture["output"] for fixture in fixtures}
     public_manifest_outputs = {
         output for manifest in public_manifests for output in manifest["supports"]["outputs"]
     }
@@ -220,13 +225,13 @@ def check_semantic_consistency(root: Path) -> Dict[str, Any]:
         canonical = payload.get("canonical")
         if canonical not in taxonomy_constraints:
             errors.append(
-                f"references/constraint-key-register.json: alias {key!r} points to unknown canonical family {canonical!r}"
+                f"docs/shared/constraint-key-register.json: alias {key!r} points to unknown canonical family {canonical!r}"
             )
     for key, payload in detail_keys.items():
         family = payload.get("family")
         if family not in taxonomy_constraints:
             errors.append(
-                f"references/constraint-key-register.json: detail key {key!r} points to unknown family {family!r}"
+                f"docs/shared/constraint-key-register.json: detail key {key!r} points to unknown family {family!r}"
             )
 
     allowed_constraint_keys = set(taxonomy_constraints) | set(aliases) | set(detail_keys)

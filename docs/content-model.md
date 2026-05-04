@@ -113,15 +113,12 @@ It should also preserve productive disagreement by giving the repository places 
 
 For the current reality-grounding layer, pair this file with:
 - [`docs/reality-lenses.md`](./reality-lenses.md)
-- [`docs/source-map-real-world.md`](./source-map-real-world.md)
 - [`docs/epistemic-stance.md`](./epistemic-stance.md)
 - [`docs/exploration-vs-review.md`](./exploration-vs-review.md)
 - [`docs/scenario-atlas.md`](./scenario-atlas.md)
 - [`docs/context-loading-policy.md`](./context-loading-policy.md)
-- [`docs/semantic-governance.md`](./semantic-governance.md)
+- [`docs/shared/semantic-governance.md`](./shared/semantic-governance.md)
 - [`docs/progressive-disclosure-policy.md`](./progressive-disclosure-policy.md)
-- [`docs/private-reference-distillation-policy.md`](./private-reference-distillation-policy.md)
-- [`docs/source-map-screenplay-methods.md`](./source-map-screenplay-methods.md)
+- [`docs/shared/private-reference-distillation-policy.md`](./shared/private-reference-distillation-policy.md)
 - [`docs/how-to-create-a-screenplay-research.md`](./how-to-create-a-screenplay-research.md)
 - [`docs/how-to-create-a-screenplay-research-zh.md`](./how-to-create-a-screenplay-research-zh.md)
-- [`docs/source-map-screenplay-creation-research.md`](./source-map-screenplay-creation-research.md)

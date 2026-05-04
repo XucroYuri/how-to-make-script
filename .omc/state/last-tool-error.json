@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"ls scripts/check_fixture_suite.py scripts/check_community_surfaces.py scripts/check_subagent_registries.py 2>&1\",\"description\":\"Check which optional validators exist\"}",
+  "error": "Exit code 1\nls: scripts/check_fixture_suite.py: No such file or directory\nscripts/check_community_surfaces.py\nscripts/check_subagent_registries.py\n\nls: scripts/check_fixture_suite.py: No such file or directory\nscripts/check_community_surfaces.py\nscripts/check_subagent_registries.py",
+  "timestamp": "2026-05-04T20:26:29.849Z",
+  "retry_count": 7
+}

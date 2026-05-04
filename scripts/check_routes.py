@@ -54,7 +54,7 @@ def check_routes(root: Path) -> Dict[str, Any]:
     root = root.resolve()
     router_matrix = load_router_matrix(root)
     fixtures = collect_fixtures(root)
-    register = load_json(root / "references" / "constraint-key-register.json")
+    register = load_json(root / "docs" / "shared" / "constraint-key-register.json")
     errors: List[str] = []
 
     for fixture in fixtures:

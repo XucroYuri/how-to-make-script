@@ -604,48 +604,6 @@
     },
     {
       "intent": [
-        "discover",
-        "design",
-        "diagnose",
-        "adapt"
-      ],
-      "medium": [
-        "feature_film",
-        "episodic",
-        "short_drama",
-        "animation",
-        "commercial",
-        "branded_film",
-        "shortform_video",
-        "game_narrative",
-        "branching_interactive"
-      ],
-      "stage": [
-        "ideation",
-        "premise",
-        "character",
-        "structure",
-        "outline",
-        "scene",
-        "dialogue",
-        "rewrite",
-        "adaptation"
-      ],
-      "output": [
-        "context_loading_plan"
-      ],
-      "constraint_signals": [
-        "loading_mode",
-        "reference_depth",
-        "route_certainty"
-      ],
-      "required_constraint_signals": [],
-      "skill_id": "skill.context-governor",
-      "protocol_id": "wp.context-loading-plan",
-      "rubric_id": "rb.context-loading-plan"
-    },
-    {
-      "intent": [
         "design",
         "diagnose",
         "adapt"
@@ -839,50 +797,6 @@
     },
     {
       "intent": [
-        "discover",
-        "design",
-        "adapt",
-        "diagnose"
-      ],
-      "medium": [
-        "feature_film",
-        "episodic",
-        "short_drama",
-        "animation",
-        "commercial",
-        "branded_film",
-        "shortform_video",
-        "game_narrative",
-        "branching_interactive"
-      ],
-      "stage": [
-        "ideation",
-        "premise",
-        "character",
-        "structure",
-        "outline",
-        "scene",
-        "dialogue",
-        "rewrite",
-        "adaptation"
-      ],
-      "output": [
-        "subagent_dispatch_plan"
-      ],
-      "constraint_signals": [
-        "dispatch_topology",
-        "convergence_owner",
-        "context_budget",
-        "team_mode",
-        "parallelism_budget"
-      ],
-      "required_constraint_signals": [],
-      "skill_id": "skill.subagent-dispatch-design",
-      "protocol_id": "wp.subagent-dispatch-plan",
-      "rubric_id": "rb.subagent-dispatch-plan"
-    },
-    {
-      "intent": [
         "design",
         "draft",
         "diagnose",
@@ -920,48 +834,6 @@
       "skill_id": "skill.story-memory-checkpoint",
       "protocol_id": "wp.story-memory-checkpoint",
       "rubric_id": "rb.story-memory-checkpoint"
-    },
-    {
-      "intent": [
-        "discover",
-        "design",
-        "adapt"
-      ],
-      "medium": [
-        "feature_film",
-        "episodic",
-        "short_drama",
-        "animation",
-        "commercial",
-        "branded_film",
-        "shortform_video",
-        "game_narrative",
-        "branching_interactive"
-      ],
-      "stage": [
-        "ideation",
-        "premise",
-        "structure",
-        "outline",
-        "rewrite",
-        "adaptation"
-      ],
-      "output": [
-        "project_surface_map"
-      ],
-      "constraint_signals": [
-        "project_horizon",
-        "phase_focus",
-        "truth_surface_policy",
-        "runtime_surface_policy",
-        "packet_strategy",
-        "traceability_level",
-        "edit_policy"
-      ],
-      "required_constraint_signals": [],
-      "skill_id": "skill.project-surface-design",
-      "protocol_id": "wp.project-surface-map",
-      "rubric_id": "rb.project-surface-map"
     },
     {
       "intent": [
@@ -1084,48 +956,6 @@
       "skill_id": "skill.audience-insight",
       "protocol_id": "wp.audience-proxy-review",
       "rubric_id": "rb.audience-experience"
-    },
-    {
-      "intent": [
-        "design",
-        "diagnose"
-      ],
-      "medium": [
-        "feature_film",
-        "episodic",
-        "short_drama",
-        "animation",
-        "commercial",
-        "branded_film",
-        "shortform_video",
-        "game_narrative",
-        "branching_interactive"
-      ],
-      "stage": [
-        "ideation",
-        "premise",
-        "character",
-        "structure",
-        "outline",
-        "scene",
-        "dialogue",
-        "rewrite",
-        "adaptation"
-      ],
-      "output": [
-        "session_execution_plan"
-      ],
-      "constraint_signals": [
-        "session_plan_mode",
-        "segment_count",
-        "route_certainty"
-      ],
-      "required_constraint_signals": [
-        "session_plan_mode"
-      ],
-      "skill_id": "skill.context-governor",
-      "protocol_id": "wp.session-execution-plan",
-      "rubric_id": "rb.session-execution-plan"
     }
   ]
 }

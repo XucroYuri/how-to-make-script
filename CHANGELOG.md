@@ -8,7 +8,7 @@
 - Added three new knowledge atoms: `ka.creative-posture-source`, `ka.creative-posture-certainty`, `ka.creative-posture-focus`.
 - Added Posture Sync step to root `SKILL.md` (runs before route selection).
 - Added nine Posture-Adaptive Response Rules to root skill.
-- Extended `constraint-key-register.json` with `posture_mode` canonical family and aliases.
+- Extended `docs/shared/constraint-key-register.json` with `posture_mode` canonical family and aliases.
 - Extended `constraint-taxonomy.md` and `references/taxonomy.md` with Creative Posture Constraints section.
 
 **A2 — Posture-weighted atom loading (2026-05-05)**

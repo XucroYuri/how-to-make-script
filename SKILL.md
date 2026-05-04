@@ -67,8 +67,6 @@ Sometimes a rule, route, or rubric needs adjusting to fit your particular case�
 
 For scene or script passages where you want honest audience simulation, multi-persona reading, attention curve diagnosis, or anti-sycophancy feedback without flattery, `audience_proxy_report` gives you that progressive viewing experience with per-agent snapshots and mapped rewrite priorities.
 
-When your request spans several stages—like going from logline all the way to a scene draft in one sitting, or needing multi-stage decomposition with explicit handoff contracts—`session_execution_plan` lays out the ordered segments, per-segment protocols, stop conditions, and checkpoint markers so we don't lose the thread.
-
 If you're looking to cut, trim, remove redundancy, or "make it shorter/tighter" from an existing scene or draft, subtractive editing protocols are the right, focused tool.
 
 Broad theory or background questions usually start with a focused `research_background_map` rather than jumping straight to a huge survey pack. I only use the broader survey mode when explicit breadth is still necessary after that.
@@ -178,18 +176,14 @@ These are the standard, machine-checked output contracts I support. Each has a d
 - `boundary_map`
 - `scope_correction`
 - `pattern_reference_pack`
-- `context_loading_plan`
 - `story_memory_checkpoint`
 - `voice_style_guide`
 - `visual_language_pack`
 - `screen_to_video_brief`
 - `team_workflow_blueprint`
 - `expert_subagent_cast`
-- `subagent_dispatch_plan`
-- `project_surface_map`
 - `quality_gate_report`
 - `audience_proxy_report`
-- `session_execution_plan`
 
 Exact formats, field lists, and validation rules live in the output contract definitions and golden example artifacts.
 

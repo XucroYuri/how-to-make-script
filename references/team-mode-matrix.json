@@ -1,9 +1,8 @@
 {
   "version": 1,
-  "purpose": "Machine-readable registry for screenplay team modes, topologies, handoff packets, and review gates.",
+  "purpose": "Machine-readable registry for screenplay team modes, topologies, handoff packets, and review gates. Merged with descriptive mode profiles formerly in team-workflow-modes.json.",
   "expert_subagent_registry": "references/expert-subagent-library.json",
   "dispatch_topology_registry": "references/subagent-topology-matrix.json",
-  "mode_profile_registry": "references/team-workflow-modes.json",
   "handoff_packet_fields": [
     "route_id",
     "output_contract",
@@ -52,87 +51,146 @@
   "modes": [
     {
       "id": "feature_dev_pod",
-      "profile_id": "feature_development_pod",
+      "label": "Feature Development Pod",
       "real_world_analog": "feature film development chain",
+      "primary_mediums": ["feature_film", "animation"],
+      "use_when": "A feature needs concentrated authorship with a small high-trust team and deliberate external checkpoints.",
       "recommended_topology": "hybrid_room",
       "best_for": ["feature_film", "adaptation-heavy feature rewrite", "high-stakes pitch and rewrite"],
-      "roles": ["showrunner_orchestrator", "story_architect", "market_and_commissioning_strategist", "script_doctor", "continuity_reviewer"],
+      "roles": ["room_captain", "story_architect", "development_producer", "continuity_keeper", "human_decision_owner"],
       "recommended_cast_templates": ["cast.feature-premise-chamber"],
       "recommended_dispatch_topologies": ["orchestrator_specialist_ring", "fresh_task_review_loop"],
-      "parallel_lanes": ["premise/structure alternatives", "market-fit and commissioning pressure", "rewrite-risk mapping"],
-      "synthesis_nodes": ["page-one mandate", "rewrite lock", "pre-production handoff"],
+      "recommended_persona_candidates": ["persona.prestige-moral-collision", "persona.high-concept-clockwork", "persona.poetic-observational-minimalism"],
+      "parallel_lanes": ["concept_engine", "character_and_theme", "market_and_festival_positioning"],
+      "synthesis_nodes": ["engine lock", "market positioning gate", "outline gate", "rewrite acceptance gate"],
       "human_review_points": ["rights/IP mandate", "producer-director rewrite approval", "final development brief sign-off"],
-      "artifact_chain": ["premise", "treatment", "outline", "rewrite_report", "development_brief"]
+      "artifact_chain": ["feature premise slate", "development memo", "beat ladder", "outline", "scene packet", "rewrite hit list"],
+      "decision_gates": ["engine lock", "market positioning gate", "outline gate", "rewrite acceptance gate"],
+      "failure_modes": ["small team becomes blind to counterexamples", "producer reality and writer intention drift", "rewrite loop lacks evidence"],
+      "source_basis": [
+        "https://www.wga.org/contracts/contracts/mba/summary-of-the-2023-wga-mba",
+        "https://openai.github.io/openai-agents-python/multi_agent/"
+      ],
+      "non_dogma_note": "This mode is intentionally smaller than a room, but still needs explicit dissent preservation."
     },
     {
       "id": "showrunner_room",
-      "profile_id": "showrunner_room",
+      "label": "Showrunner Room",
       "real_world_analog": "TV writers' room",
+      "primary_mediums": ["episodic", "short_drama"],
+      "use_when": "Serialized episodic work needs a repeatable engine, room-level breaking, and strong notes intake.",
       "recommended_topology": "supervisor_tree",
       "best_for": ["episodic", "season-engine work", "ensemble and multi-episode planning"],
-      "roles": ["showrunner_orchestrator", "season_arc_designer", "episode_breaker", "character_voice_editor", "production_reality_reviewer"],
+      "roles": ["showrunner_orchestrator", "room_captain", "story_architect", "character_lead", "continuity_keeper", "audience_strategy_lead", "human_decision_owner"],
       "recommended_cast_templates": ["cast.prestige-room-core"],
       "recommended_dispatch_topologies": ["writers_room_tree", "debate_then_merge_board"],
-      "parallel_lanes": ["season arc", "episode beats", "character continuity"],
-      "synthesis_nodes": ["room break", "season-engine check", "episode handoff"],
+      "recommended_persona_candidates": ["persona.prestige-moral-collision", "persona.high-concept-clockwork", "persona.romantic-verbal-precision"],
+      "parallel_lanes": ["season_engine", "episode_breaks", "character_threads", "notes_intake"],
+      "synthesis_nodes": ["season engine lock", "episode break lock", "tone and continuity gate", "production rewrite gate"],
       "human_review_points": ["showrunner approval", "network/platform note pass", "production rewrite approval"],
-      "artifact_chain": ["premise", "beat_sheet", "outline", "scene_card", "dialogue_polish"]
+      "artifact_chain": ["series thesis memo", "season engine sheet", "episode break boards", "episode outlines", "drafts", "revision grid"],
+      "decision_gates": ["season engine lock", "episode break lock", "tone and continuity gate", "production rewrite gate"],
+      "failure_modes": ["room never converges", "episode logic drifts", "notes override the engine"],
+      "source_basis": [
+        "https://www.wga.org/contracts/contracts/mba/summary-of-the-2023-wga-mba",
+        "https://www.wga.org/members/employment-resources/writers-deal-hub/staff-size-guide",
+        "https://www.shondaland.com/shondaland-series/shondaland-bridgerton-behind-the-scenes/a60702896/bridgerton-showrunner-jess-brownell/"
+      ],
+      "non_dogma_note": "Not every series needs a large room. Smaller pods can still use this mode's artifact ladder."
     },
     {
       "id": "animation_story_trust",
-      "profile_id": "animation_story_trust",
+      "label": "Animation Story Trust",
       "real_world_analog": "animation story department",
+      "primary_mediums": ["animation", "feature_film"],
+      "use_when": "Story is iterated through peer review, research, visual storytelling, and repeated sequence-level feedback.",
       "recommended_topology": "hybrid_room",
       "best_for": ["animation", "visual storytelling iteration", "director-led story refinement"],
-      "roles": ["director_orchestrator", "story_logic_designer", "visual_story_lane", "character_voice_editor", "production_feasibility_reviewer"],
+      "roles": ["room_captain", "story_architect", "visual_story_partner", "character_lead", "continuity_keeper", "human_decision_owner"],
       "recommended_cast_templates": ["cast.animation-story-loop"],
       "recommended_dispatch_topologies": ["dual_track_story_visual", "debate_then_merge_board"],
-      "parallel_lanes": ["story logic", "visual storytelling", "feasibility"],
-      "synthesis_nodes": ["story reel review", "director story pitch", "production handoff"],
+      "recommended_persona_candidates": ["persona.animation-humanist-visual", "persona.poetic-observational-minimalism", "persona.kinetic-pop-energy"],
+      "parallel_lanes": ["story_reel", "world_research", "sequence_problem_solving", "mythology_integrity"],
+      "synthesis_nodes": ["core story gate", "story trust review", "world research sync", "sequence lock"],
       "human_review_points": ["director approval", "story trust review", "production feasibility gate"],
-      "artifact_chain": ["premise", "outline", "scene_card", "voice_style_guide", "rewrite_report"]
+      "artifact_chain": ["story premise sheet", "sequence reel notes", "story room packet", "visual beat boards", "revised sequence passes"],
+      "decision_gates": ["core story gate", "story trust review", "world research sync", "sequence lock"],
+      "failure_modes": ["peer review becomes taste pile-on", "mythology expands without story gain", "visual and narrative lanes drift apart"],
+      "source_basis": [
+        "https://thewaltdisneycompany.com/news/disneytoon-executive-on-the-animation-studio-behind-the-pirate-fairy-and-planes-fire-rescue/"
+      ],
+      "non_dogma_note": "Story trust is a review culture, not a permission to keep every decision open forever."
     },
     {
       "id": "brand_content_studio",
-      "profile_id": "campaign_strike_team",
+      "label": "Campaign Strike Team",
       "real_world_analog": "agency plus production partner branded-content team",
+      "primary_mediums": ["commercial", "branded_film", "shortform_video"],
+      "use_when": "A campaign must move fast across formats, test variants, and still protect strategic message integrity.",
       "recommended_topology": "hybrid_room",
       "best_for": ["commercial", "branded_film", "shortform_video", "campaign-linked scripts"],
-      "roles": ["creative_director_orchestrator", "story_lane", "brand_guardian", "distribution_strategist", "conversion_reviewer"],
+      "roles": ["room_captain", "brand_platform_strategist", "scene_specialist", "audience_strategy_lead", "development_producer", "human_decision_owner"],
       "recommended_cast_templates": ["cast.brand-campaign-strike"],
       "recommended_dispatch_topologies": ["variant_strike_grid", "orchestrator_specialist_ring"],
-      "parallel_lanes": ["creative concept", "brand fit", "platform/distribution fit"],
-      "synthesis_nodes": ["brand-story merge", "platform cutdown plan", "final review board"],
+      "recommended_persona_candidates": ["persona.luxury-restraint-brand-film", "persona.kinetic-pop-energy"],
+      "parallel_lanes": ["core_message", "variant_generation", "platform_adaptation", "performance_review"],
+      "synthesis_nodes": ["message lock", "variant shortlist gate", "brand fit gate", "performance rewrite gate"],
       "human_review_points": ["client approval", "brand-safety gate", "campaign deployment approval"],
-      "artifact_chain": ["audience_fit_note", "development_brief", "commercial_script", "voice_style_guide"]
+      "artifact_chain": ["campaign message memo", "script matrix", "variant board", "test plan", "revision shortlist"],
+      "decision_gates": ["message lock", "variant shortlist gate", "brand fit gate", "performance rewrite gate"],
+      "failure_modes": ["variant volume outruns strategic judgment", "premium tone drifts into fake-premium language", "platform edits destroy message singularity"],
+      "source_basis": [
+        "https://www.wk.com/work/three-pony/",
+        "https://business.google.com/en-all/think/search-and-video/taxfix-veo-youtube-ai-first/"
+      ],
+      "non_dogma_note": "A strike team should stay fast, but speed is useless if it drops brand fit and testing discipline."
     },
     {
       "id": "interactive_branch_lab",
-      "profile_id": "interactive_narrative_cell",
+      "label": "Interactive Narrative Cell",
       "real_world_analog": "interactive narrative plus systems plus QA loop",
+      "primary_mediums": ["game_narrative", "branching_interactive"],
+      "use_when": "Narrative must be designed together with systems, quests, audio, and implementation constraints.",
       "recommended_topology": "supervisor_tree",
       "best_for": ["game_narrative", "branching_interactive", "stateful adaptation"],
-      "roles": ["narrative_director_orchestrator", "branch_designer", "state_system_designer", "voice_continuity_editor", "qa_path_reviewer"],
+      "roles": ["room_captain", "interactive_systems_narrative", "story_architect", "continuity_keeper", "audience_strategy_lead", "human_decision_owner"],
       "recommended_cast_templates": ["cast.interactive-choice-triangle"],
       "recommended_dispatch_topologies": ["branch_state_triangle", "fresh_task_review_loop"],
-      "parallel_lanes": ["branch design", "state logic", "test visibility"],
-      "synthesis_nodes": ["branch map review", "state consistency check", "playability gate"],
+      "recommended_persona_candidates": ["persona.branching-systemic-choice", "persona.high-concept-clockwork"],
+      "parallel_lanes": ["branch_logic", "quest_and_state_design", "dialogue_and_vo", "implementation_review"],
+      "synthesis_nodes": ["branch logic gate", "state clarity gate", "playability gate", "VO and implementation gate"],
       "human_review_points": ["narrative direction approval", "scope control gate", "final playability approval"],
-      "artifact_chain": ["premise", "interactive_branch_map", "outline", "voice_style_guide", "rewrite_report"]
+      "artifact_chain": ["narrative systems brief", "branch map", "state table", "quest packet", "implementation notes", "test feedback grid"],
+      "decision_gates": ["branch logic gate", "state clarity gate", "playability gate", "VO and implementation gate"],
+      "failure_modes": ["story assumes film timing", "narrative and systems drift", "dialogue becomes functional NPC output"],
+      "source_basis": [
+        "https://news.ubisoft.com/en-gb/article/7m412GLSbfkaT0YheRYLVG/what-is-narrative-design",
+        "https://news.ubisoft.com/en-us/article/1yMR91cFZCtrN7McYV4oeD/how-assassins-creed-odysseys-story-creator-mode-actually-works"
+      ],
+      "non_dogma_note": "Interactive narrative cells need system empathy more than pure script volume."
     },
     {
       "id": "franchise_continuity_board",
-      "profile_id": "franchise_continuity_board",
+      "label": "Franchise Continuity Board",
       "real_world_analog": "franchise continuity and approval board",
+      "primary_mediums": ["feature_film", "episodic", "animation", "game_narrative", "branching_interactive", "branded_film"],
+      "use_when": "Existing IP, lore, or persona continuity is a first-order risk and must be guarded explicitly.",
       "recommended_topology": "review_board",
       "best_for": ["feature_film", "episodic", "animation", "game_narrative", "branching_interactive", "branded_film"],
       "roles": ["room_captain", "continuity_keeper", "story_architect", "character_lead", "human_decision_owner"],
       "recommended_cast_templates": ["cast.franchise-continuity-board"],
       "recommended_dispatch_topologies": ["orchestrator_specialist_ring", "fresh_task_review_loop"],
-      "parallel_lanes": ["canon-anchor audit", "new-story fit", "voice/persona continuity"],
-      "synthesis_nodes": ["canon lock", "continuity risk merge", "adaptation approval"],
+      "recommended_persona_candidates": ["persona.prestige-moral-collision", "persona.romantic-verbal-precision", "persona.animation-humanist-visual"],
+      "parallel_lanes": ["canon_anchor_audit", "new_story_fit", "voice_and_persona_continuity"],
+      "synthesis_nodes": ["canon lock", "voice continuity gate", "adaptation approval gate"],
       "human_review_points": ["canon approval", "character identity approval", "final adaptation sign-off"],
-      "artifact_chain": ["canon anchor sheet", "continuity risk register", "voice_style_guide", "adaptation board", "approval notes"]
+      "artifact_chain": ["canon anchor sheet", "continuity risk register", "voice guide", "adaptation board", "approval notes"],
+      "decision_gates": ["canon lock", "voice continuity gate", "adaptation approval gate"],
+      "failure_modes": ["surface imitation replaces deep continuity", "new material breaks world rules", "approval comes too late"],
+      "source_basis": [
+        "https://thewaltdisneycompany.com/news/disneytoon-executive-on-the-animation-studio-behind-the-pirate-fairy-and-planes-fire-rescue/"
+      ],
+      "non_dogma_note": "A continuity board should defend identity, not forbid invention."
     }
   ]
 }

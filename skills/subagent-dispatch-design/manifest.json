@@ -1,6 +1,7 @@
 {
   "id": "skill.subagent-dispatch-design",
   "name": "subagent-dispatch-design",
+  "surface": "internal",
   "description": "Design multi-level dispatch plans for screenplay subagents with bounded loading, handoffs, reviews, and human gates.",
   "entrypoint": "skills/subagent-dispatch-design/SKILL.md",
   "supports": {

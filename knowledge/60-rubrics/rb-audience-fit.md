@@ -3,7 +3,7 @@
   "id": "rb.audience-fit",
   "type": "evaluation_rubric",
   "title": "Audience Fit Rubric",
-  "applies_to": ["audience_fit_note"],
+  "applies_to": ["audience_fit_note", "audience_proxy_report"],
   "dimensions": [
     {"name": "segment_clarity", "question": "主受众是否具体到足以指导写法，而不是泛化人群标签"},
     {"name": "need_state", "question": "是否说清观众为什么会点开、继续看、看完后要得到什么"},

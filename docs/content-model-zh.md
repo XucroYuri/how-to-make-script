@@ -116,12 +116,10 @@ JSON frontmatter 是面向机器的契约，Markdown 正文是面向人类的说
 关于当前的现实锚定层，请把本文与以下文档配套阅读：
 
 - [`docs/reality-lenses-zh.md`](./reality-lenses-zh.md)
-- [`docs/source-map-real-world.md`](./source-map-real-world.md)
 - [`docs/epistemic-stance-zh.md`](./epistemic-stance-zh.md)
 - [`docs/exploration-vs-review.md`](./exploration-vs-review.md)
 - [`docs/scenario-atlas-zh.md`](./scenario-atlas-zh.md)
 - [`docs/context-loading-policy-zh.md`](./context-loading-policy-zh.md)
-- [`docs/semantic-governance-zh.md`](./semantic-governance-zh.md)
+- [`docs/shared/semantic-governance-zh.md`](./shared/semantic-governance-zh.md)
 - [`docs/progressive-disclosure-policy-zh.md`](./progressive-disclosure-policy-zh.md)
-- [`docs/private-reference-distillation-policy-zh.md`](./private-reference-distillation-policy-zh.md)
-- [`docs/source-map-screenplay-methods-zh.md`](./source-map-screenplay-methods-zh.md)
+- [`docs/shared/private-reference-distillation-policy-zh.md`](./shared/private-reference-distillation-policy-zh.md)

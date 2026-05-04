@@ -1,0 +1,439 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1777914121616,
+  "projectRoot": "/Volumes/SSD/Code/01-cinema-production/how-to-make-script",
+  "techStack": {
+    "languages": [
+      {
+        "name": "Python",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "pyproject.toml"
+        ]
+      }
+    ],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": "PYTHONPATH=/Volumes/SSD/Code/01-cinema-production/how-to-make-script uv run pytest tests/ -x -q 2>&1 | tail -30",
+    "lintCommand": "ruff check",
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "docs",
+      "examples",
+      "scripts",
+      "tests"
+    ],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 66,
+      "lastAccessed": 1777914121606,
+      "keyFiles": [
+        "adaptive-quality-checking-zh.md",
+        "adaptive-quality-checking.md",
+        "agent-quick-reference-zh.md",
+        "agent-quick-reference.md",
+        "agent-skill-evaluation-zh.md"
+      ]
+    },
+    "examples": {
+      "path": "examples",
+      "purpose": "Example code",
+      "fileCount": 1,
+      "lastAccessed": 1777914121606,
+      "keyFiles": []
+    },
+    "knowledge": {
+      "path": "knowledge",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1777914121606,
+      "keyFiles": []
+    },
+    "references": {
+      "path": "references",
+      "purpose": null,
+      "fileCount": 23,
+      "lastAccessed": 1777914121607,
+      "keyFiles": [
+        "agent-team-roles.json",
+        "background-bundles.json",
+        "canonical-term-register.json",
+        "check-lens-matrix.json",
+        "community-label-taxonomy.json"
+      ]
+    },
+    "schemas": {
+      "path": "schemas",
+      "purpose": "Schema definitions",
+      "fileCount": 7,
+      "lastAccessed": 1777914121607,
+      "keyFiles": [
+        "background-bundle.schema.json",
+        "evaluation-rubric.schema.json",
+        "example-fixture.schema.json",
+        "knowledge-atom.schema.json",
+        "output-format-contracts.schema.json"
+      ]
+    },
+    "scripts": {
+      "path": "scripts",
+      "purpose": "Build/utility scripts",
+      "fileCount": 18,
+      "lastAccessed": 1777914121607,
+      "keyFiles": [
+        "__init__.py",
+        "check_background_bundles.py",
+        "check_canonical_terms.py",
+        "check_community_surfaces.py",
+        "check_forbidden_paths.py"
+      ]
+    },
+    "skills": {
+      "path": "skills",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1777914121607,
+      "keyFiles": []
+    },
+    "tests": {
+      "path": "tests",
+      "purpose": "Test files",
+      "fileCount": 17,
+      "lastAccessed": 1777914121608,
+      "keyFiles": [
+        "test_all_phases.py",
+        "test_check_background_bundles.py",
+        "test_check_canonical_terms.py",
+        "test_check_community_surfaces.py",
+        "test_check_forbidden_paths.py"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "SKILL.md",
+      "accessCount": 39,
+      "lastAccessed": 1777926138389,
+      "type": "file"
+    },
+    {
+      "path": "scripts/check_semantic_consistency.py",
+      "accessCount": 24,
+      "lastAccessed": 1777926156885,
+      "type": "file"
+    },
+    {
+      "path": "references/skill-directory.md",
+      "accessCount": 22,
+      "lastAccessed": 1777926076526,
+      "type": "file"
+    },
+    {
+      "path": "",
+      "accessCount": 22,
+      "lastAccessed": 1777926162097,
+      "type": "directory"
+    },
+    {
+      "path": "references/router-matrix.json",
+      "accessCount": 19,
+      "lastAccessed": 1777925581990,
+      "type": "file"
+    },
+    {
+      "path": "README.md",
+      "accessCount": 18,
+      "lastAccessed": 1777925854547,
+      "type": "file"
+    },
+    {
+      "path": "references/supported-outputs.md",
+      "accessCount": 18,
+      "lastAccessed": 1777926168205,
+      "type": "file"
+    },
+    {
+      "path": "references/taxonomy.md",
+      "accessCount": 13,
+      "lastAccessed": 1777925790171,
+      "type": "file"
+    },
+    {
+      "path": "README_zh.md",
+      "accessCount": 12,
+      "lastAccessed": 1777925854672,
+      "type": "file"
+    },
+    {
+      "path": "knowledge",
+      "accessCount": 11,
+      "lastAccessed": 1777921617750,
+      "type": "directory"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "accessCount": 11,
+      "lastAccessed": 1777926038282,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/20-workflows/wp-scene-writing.md",
+      "accessCount": 9,
+      "lastAccessed": 1777924824678,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/20-workflows/wp-audience-proxy-review.md",
+      "accessCount": 9,
+      "lastAccessed": 1777926181215,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/10-foundations/ka-audience-proxy-personas.md",
+      "accessCount": 7,
+      "lastAccessed": 1777924810659,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/30-craft/ka-dialogue-subtext.md",
+      "accessCount": 7,
+      "lastAccessed": 1777924824933,
+      "type": "file"
+    },
+    {
+      "path": "skills/context-governor/manifest.json",
+      "accessCount": 7,
+      "lastAccessed": 1777925562423,
+      "type": "file"
+    },
+    {
+      "path": "tests/test_check_loading_budget.py",
+      "accessCount": 6,
+      "lastAccessed": 1777921536419,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/20-workflows/wp-emergence-conditioner.md",
+      "accessCount": 6,
+      "lastAccessed": 1777922878118,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/20-workflows/wp-iterative-draft-pipeline.md",
+      "accessCount": 6,
+      "lastAccessed": 1777922878147,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/20-workflows/wp-session-execution-plan.md",
+      "accessCount": 6,
+      "lastAccessed": 1777922893964,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/20-workflows/wp-quality-gate-report.md",
+      "accessCount": 6,
+      "lastAccessed": 1777924824697,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/10-foundations/ka-collision-prompts.md",
+      "accessCount": 6,
+      "lastAccessed": 1777924858229,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/30-craft/ka-weak-opening-diagnosis.md",
+      "accessCount": 5,
+      "lastAccessed": 1777920756521,
+      "type": "file"
+    },
+    {
+      "path": "tests/test_all_phases.py",
+      "accessCount": 5,
+      "lastAccessed": 1777921536544,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/10-foundations/ka-creative-posture-source.md",
+      "accessCount": 5,
+      "lastAccessed": 1777925113572,
+      "type": "file"
+    },
+    {
+      "path": "skills/audience-insight/manifest.json",
+      "accessCount": 5,
+      "lastAccessed": 1777926330280,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/60-rubrics/rb-audience-experience.md",
+      "accessCount": 5,
+      "lastAccessed": 1777926368233,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/10-foundations/ka-cross-protocol-referral-edges.md",
+      "accessCount": 4,
+      "lastAccessed": 1777921331657,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/30-craft/ka-specificity-pressure.md",
+      "accessCount": 4,
+      "lastAccessed": 1777924824973,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/30-craft/ka-scene-function.md",
+      "accessCount": 4,
+      "lastAccessed": 1777924825016,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/60-rubrics/rb-scene-draft.md",
+      "accessCount": 4,
+      "lastAccessed": 1777924838880,
+      "type": "file"
+    },
+    {
+      "path": "scripts/validate_assets.py",
+      "accessCount": 4,
+      "lastAccessed": 1777925286853,
+      "type": "file"
+    },
+    {
+      "path": "schemas/knowledge-atom.schema.json",
+      "accessCount": 4,
+      "lastAccessed": 1777925302290,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/60-rubrics/rb-audience-fit.md",
+      "accessCount": 4,
+      "lastAccessed": 1777926368109,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/10-foundations/ka-audience-need-state.md",
+      "accessCount": 3,
+      "lastAccessed": 1777924810363,
+      "type": "file"
+    },
+    {
+      "path": "skills/quality-gating/SKILL.md",
+      "accessCount": 3,
+      "lastAccessed": 1777924829009,
+      "type": "file"
+    },
+    {
+      "path": "skills/scene-writing/SKILL.md",
+      "accessCount": 3,
+      "lastAccessed": 1777924829014,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/10-foundations/ka-creative-posture-certainty.md",
+      "accessCount": 3,
+      "lastAccessed": 1777925113563,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/10-foundations/ka-creative-posture-focus.md",
+      "accessCount": 3,
+      "lastAccessed": 1777925113591,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/30-craft/ka-embodied-text-pressure.md",
+      "accessCount": 2,
+      "lastAccessed": 1777918224621,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/60-rubrics/rb-session-execution-plan.md",
+      "accessCount": 2,
+      "lastAccessed": 1777919331987,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/10-foundations/ka-story-goal.md",
+      "accessCount": 2,
+      "lastAccessed": 1777924810438,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/10-foundations/ka-character-arc.md",
+      "accessCount": 2,
+      "lastAccessed": 1777924810460,
+      "type": "file"
+    },
+    {
+      "path": "skills/idea-discovery/SKILL.md",
+      "accessCount": 2,
+      "lastAccessed": 1777924828545,
+      "type": "file"
+    },
+    {
+      "path": "skills/rewrite-doctor/SKILL.md",
+      "accessCount": 2,
+      "lastAccessed": 1777924829035,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/60-rubrics/rb-quality-gate-report.md",
+      "accessCount": 2,
+      "lastAccessed": 1777924839186,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/30-craft/ka-pacing-rhythm.md",
+      "accessCount": 2,
+      "lastAccessed": 1777924866987,
+      "type": "file"
+    },
+    {
+      "path": "scripts/remove_posture_relevance.py",
+      "accessCount": 1,
+      "lastAccessed": 1777918004418,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/30-craft/ka-cinematic-prose-register.md",
+      "accessCount": 1,
+      "lastAccessed": 1777918223735,
+      "type": "file"
+    },
+    {
+      "path": "knowledge/20-workflows/wp-context-loading-plan.md",
+      "accessCount": 1,
+      "lastAccessed": 1777919236516,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

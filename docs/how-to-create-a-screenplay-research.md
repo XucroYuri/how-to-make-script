@@ -12,7 +12,6 @@ It is a synthesis layer built from public education programs, guild and archive 
 
 Pair this file with:
 
-- [`source-map-screenplay-creation-research.md`](./source-map-screenplay-creation-research.md)
 - [`reality-lenses.md`](./reality-lenses.md)
 - [`epistemic-stance.md`](./epistemic-stance.md)
 

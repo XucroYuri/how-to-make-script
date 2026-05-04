@@ -1,6 +1,7 @@
 {
   "id": "skill.project-surface-design",
   "name": "project-surface-design",
+  "surface": "internal",
   "description": "Design screenplay project surfaces with canonical source, runtime state, packet assembly, review surfaces, and export surfaces.",
   "entrypoint": "skills/project-surface-design/SKILL.md",
   "supports": {
