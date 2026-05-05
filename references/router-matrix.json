@@ -654,7 +654,9 @@
         "animation",
         "commercial",
         "branded_film",
-        "shortform_video"
+        "shortform_video",
+        "game_narrative",
+        "branching_interactive"
       ],
       "stage": [
         "scene",

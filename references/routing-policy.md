@@ -123,12 +123,24 @@ flowchart TD
 ### 视觉语言
 
 - 多语言镜头语言、文化特定视觉词汇、跨语言视觉交接 → `visual_language_pack`。
+- 游戏过场动画、互动叙事的视觉语言设计也走这条路。游戏叙事和互动媒介的场景视觉沟通需求与其他媒介没有本质区别——只是「画面感」的锚定方式不同。
 - 剧本到视频生成、预可视化桥接 → `screen_to_video_brief`。不要用场景或广告写作路由替代。
 
 ### 连续性与记忆
 
 - 中断恢复、房间交接、连续性压缩、长文本状态保持 → `story_memory_checkpoint`。
 - 正常剧本输出中，当真实问题是可恢复的连续性而非理论缺失 → 用有边界的 `story_memory_checkpoint`，不要不加限制地扩展上下文。
+
+### 多角色弧线汇总
+
+当用户要求「总结所有角色的弧线」或「对比不同人物的成长轨迹」时，没有专用的单路由。这是一个组合需求的典型案例：
+
+1. **如果已有 checkpoint**：加载最新的 `story_memory_checkpoint`，从中提取角色状态快照，然后按 `rb.character-world` 的维度组织对比（不必走完整的 character-world 协议，只需要用它的评判框架）。
+2. **如果没有 checkpoint**：先产出一个轻量 `story_memory_checkpoint`（锁住当前状态），再从中提取角色汇总。
+3. **如果只需要最核心 2-3 个角色**：走 `character-world` 协议，用 `focus_characters` 约束锁住范围。不要做全量角色分析。
+4. **如果需要同类型中的角色弧线对比**（例如「这两个侦探角色的弧线有什么不同」）：走 `pattern_reference_pack` → `compare_pack` 加载模式。
+
+关键原则：多角色弧线汇总不是一个新的输出类型——它是把 `story_memory_checkpoint`（状态压缩）和 `character-world`（角色评判框架）组合使用的场景。不要因为它没有专属路由就去造一个新路由。
 
 ### 团队协作
 
