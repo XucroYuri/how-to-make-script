@@ -108,7 +108,7 @@ flowchart TD
 | **经典场景** | "500万预算，45天周期，能拍什么" | "这个科幻故事太大了，怎么缩小" |
 | **误用风险** | 把生产边界当成故事范围修正 | 把故事范围修正当成生产边界管理 |
 
-记住这条规则：**生产约束 → `boundary_map` / 声明收窄 → `scope_correction`**。如果用户同时有生产约束和范围收窄需求，优先用 `boundary_map` 建框架，然后把 `scope_correction` 作为下一步（在有框架的前提下收窄故事范围）。
+**生产约束 → `boundary_map` / 声明收窄 → `scope_correction`**。两者并存时，先用 `boundary_map` 建框架，再用 `scope_correction` 收窄。
 
 ### 质量把关
 
@@ -275,6 +275,8 @@ flowchart TD
 5. **上步产物传递**。在 E2E 链中加载新协议时，必须包含"上步产物摘要"。Agent 应在开始新步骤前简要回顾前一步产出了什么，再进入新协议。
 
    **示例**："Based on the premise we just developed（protagonist: retired firefighter, goal: reclaim his reputation, obstacle: official cover-up, stakes: his daughter's custody hearing in 30 days），let me now design the character world..."
+
+   **中文示例**："基于我们刚确立的前提（主角：退休消防员；目标：恢复名誉；障碍：官方掩盖；风险：女儿三十天后的抚养权听证会），现在来设计人物世界……"
 
    **传递要求**：
    - 摘要只需列出关键锁定项（protagonist、goal、obstacle、stakes、genre promise、已锁的风格或媒介约束），不需要全文搬运。

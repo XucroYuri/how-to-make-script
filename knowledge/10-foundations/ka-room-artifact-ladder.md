@@ -57,8 +57,8 @@
 ---
 # 房间式产物梯子
 
-顶级团队看起来像是在“共同讨论出作品”，但真正起作用的通常不是讨论本身，而是讨论被压进了哪一层中间产物。没有 artifact ladder，room 很快就会变成口头协商现场：谁记得什么、谁以为已经定了什么，全靠记忆和气势。
+顶级团队看起来像是在“共同讨论出作品”，但真正起作用的通常不是讨论本身，而是讨论被压进了哪一层中间产物。没有产物梯子（`artifact ladder`），room 很快就会变成口头协商现场：谁记得什么、谁以为已经定了什么，全靠记忆和气势。
 
-一个健康的 artifact ladder 可以很轻，但不能没有。它可能是 premise slate、series engine memo、episode beat board、sequence reel、campaign script matrix、branch state map、rewrite hit list。名字可以不同，但作用相同：它让团队知道“此刻我们到底在推进哪一层”。
+一个健康的 artifact ladder 可以很轻，但不能没有。它可能是前提清单（`premise slate`）、系列引擎备忘（`series engine memo`）、分集节拍板（`episode beat board`）、段落卷（`sequence reel`）、营销脚本矩阵（`campaign script matrix`）、分支状态地图（`branch state map`）、修改要点清单（`rewrite hit list`）。名字可以不同，但作用相同：它让团队知道“此刻我们到底在推进哪一层”。
 
 对多智能体系统来说，这层尤其重要。因为 Agent 之间没法像真人那样共享模糊默契，只能共享可指认的中间产物。没有梯子，协作就只剩下互相转述。

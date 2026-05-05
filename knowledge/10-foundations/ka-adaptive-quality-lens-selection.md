@@ -57,8 +57,8 @@
 ---
 # 自适应质检镜头选择
 
-同样叫“检查”，短剧 hook、互动分支、品牌片脚本、voice guide、screen-to-video brief、team workflow blueprint 审的根本不是同一种东西。
+同样叫“检查”，短剧 hook、互动分支、品牌片脚本、声音风格指南（`voice guide`）、剧本到视频桥接文件（`screen-to-video brief`）、团队工作流蓝图（`team workflow blueprint`）审的根本不是同一种东西。
 
-这就是为什么当前仓库不应该照搬一个固定线性 stage 流程，而应该引入可选 lens stack。对 narrative scene，可能最该看的是 contract fit、dramatic mechanics、continuity、voice；对互动分支，更关键的是 agency、state continuity、convergence control；对 team 或 project surface，则应该把 handoff、packet、edit policy、delivery surfaces 拉到前面。
+这就是为什么当前仓库不应该照搬一个固定线性 stage 流程，而应该引入可选 lens stack。对 narrative scene，可能最该看的是合同符合度（`contract fit`）、戏剧力学（`dramatic mechanics`）、continuity、voice；对互动分支，更关键的是 agency、state continuity、收敛控制（`convergence control`）；对 team 或 project surface，则应该把 handoff、packet、编辑策略（`edit policy`）、交付面（`delivery surfaces`）拉到前面。
 
 通用，不等于统一。真正强的通用层，是统一抽象而不是统一 checklist。

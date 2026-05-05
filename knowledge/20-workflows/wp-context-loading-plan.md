@@ -57,7 +57,7 @@
 
 这个协议的核心不是把加载策略写得多复杂，而是把”为什么现在只加载这些”和”为什么现在不该再加更多”都说清楚。
 
-对当前仓库来说，最大的系统风险不是知识不够，而是加载没有分级。没有 loading plan，Agent 很容易在 route 已经够清楚的情况下继续加 scenario atlas、reference pack、reality lens、background docs、邻近 protocol，最后把自己拖进 summary 模式。
+对当前仓库来说，最大的系统风险不是知识不够，而是加载没有分级。没有加载计划（`loading plan`），Agent 很容易在 route 已经够清楚的情况下继续加场景图谱（`scenario atlas`）、参考包（`reference pack`）、现实镜头（`reality lens`）、背景文档（`background docs`）、邻近 protocol，最后把自己拖进 summary 模式。
 
-这个协议保护的是生成质量。它把”路由””扩容””停止”三个动作分开，让 Agent 保持专业但不僵化的 balance。
+这个协议保护的是生成质量。它把”路由””扩容””停止”三个动作分开，让 Agent 保持专业但不僵化的平衡（`balance`）。
 当问题只是”下次继续写时别丢状态”，最好的答案往往不是再加载五份相邻资产，而是先产出一个可恢复的检查点。

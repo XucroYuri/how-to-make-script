@@ -61,6 +61,6 @@
 
 很多多智能体系统失败，不是因为专家不够，而是因为所有专家最后都变成了“同一个大模型读了更多东西”。这会让 lane 看上去很多，实际上每个 lane 都在重复理解同一批上下文。
 
-真正的 subagent 设计，应该像真实团队分工一样：谁只拿 premise slate，谁只拿当前 scene packet，谁只拿 audience fit note，谁只拿 continuity anchors。不是信息越多越专业，而是信息越贴 mandate 越专业。
+真正的 subagent 设计，应该像真实团队分工一样：谁只拿前提清单（`premise slate`），谁只拿当前场景信息包（`scene packet`），谁只拿受众匹配评估（`audience fit note`），谁只拿连续性锚点（`continuity anchors`）。不是信息越多越专业，而是信息越贴任务授权（`mandate`）越专业。
 
-在这个仓库里，context budget 不只是性能问题，也是创作质量问题。角色越清晰，加载越克制，subagent 才越像真实的专业角色，而不是另一个隐形 root skill。
+在这个仓库里，上下文预算（`context budget`）不只是性能问题，也是创作质量问题。角色越清晰，加载越克制，subagent 才越像真实的专业角色，而不是另一个隐形根技能（`root skill`）。

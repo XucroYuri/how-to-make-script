@@ -62,8 +62,8 @@
 
 这个协议把"多层检查、隔离视角、聚合诊断、复查设计"这些做法吸收进来，而不是把某个专用 checker 的固定流程原样复制到所有场景。
 
-当前仓库需要一个更通用的审查层：能审 narrative、commercial、interactive，也能审 voice guide、visual pack、screen-to-video brief，还能审 team workflow、subagent dispatch、project surface 这类治理型 artifact。这意味着它不能默认用同一套检查顺序，更不能假装所有 artifact 都要生成一个"标准化终稿"。
+当前仓库需要一个更通用的审查层：能审 narrative、commercial、interactive，也能审声音风格指南（`voice guide`）、视觉语言包（`visual pack`）、剧本到视频桥接文件（`screen-to-video brief`），还能审团队工作流（`team workflow`）、子代理调度（`subagent dispatch`）、项目视图（`project surface`）这类治理型 artifact。这意味着它不能默认用同一套检查顺序，更不能假装所有 artifact 都要生成一个"标准化终稿"。
 
-`quality_gate_report` 的任务是给出一份适配当前场景的审查诊断：哪些 lens 应该启用、哪些是 hard fail、哪些只是弱项、最该先修什么、改完之后该怎么定向复查。
+`quality_gate_report` 的任务是给出一份适配当前场景的审查诊断：哪些检查视角（`lens`）应该启用、哪些是硬失败项（`hard fail`）、哪些只是弱项、最该先修什么、改完之后该怎么定向复查。
 
 基本顺序很简单：先看 target contract 自己的 rubric 或 hard gate，再用共享 lens matrix 补充跨场景的质量镜头。这样就不会把所有检查都混成一个新大一统模式。
