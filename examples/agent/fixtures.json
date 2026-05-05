@@ -2113,5 +2113,129 @@
     },
     "notes": "English query routing parity. Should route identically to Chinese equivalent — same skill, protocol, rubric.. English query routing parity. Should route identically to Chinese equivalent.",
     "expected_behavior": "english_routing_parity"
+  },
+  {
+    "id": "fx.edge-11",
+    "type": "edge_fixture",
+    "query": "你好",
+    "intent": "discover",
+    "medium": "feature_film",
+    "stage": "ideation",
+    "output": "path_options",
+    "constraints": {},
+    "expected_route": {
+      "skill_id": "skill.path-exploration",
+      "protocol_id": "wp.path-options",
+      "rubric_id": "rb.path-options"
+    },
+    "notes": "Pure greeting. Should not produce any screenplay artifact. Should introduce itself briefly, then prompt for next action.",
+    "expected_behavior": "greeting_no_artifact"
+  },
+  {
+    "id": "fx.edge-12",
+    "type": "edge_fixture",
+    "query": "你能做什么？",
+    "intent": "discover",
+    "medium": "feature_film",
+    "stage": "ideation",
+    "output": "path_options",
+    "constraints": {},
+    "expected_route": {
+      "skill_id": "skill.path-exploration",
+      "protocol_id": "wp.path-options",
+      "rubric_id": "rb.path-options"
+    },
+    "notes": "Capability discovery. Should list output categories briefly, not generate any artifact. Should invite user to pick a starting point.",
+    "expected_behavior": "capability_listing_only"
+  },
+  {
+    "id": "fx.edge-13",
+    "type": "edge_fixture",
+    "query": "我不确定该写电影还是剧集，能帮我分析一下吗？",
+    "intent": "discover",
+    "medium": "feature_film",
+    "stage": "ideation",
+    "output": "path_options",
+    "constraints": {},
+    "expected_route": {
+      "skill_id": "skill.path-exploration",
+      "protocol_id": "wp.path-options",
+      "rubric_id": "rb.path-options"
+    },
+    "notes": "Medium indecision. Should offer path_options comparing feature film vs episodic for their idea, with tradeoffs.",
+    "expected_behavior": "medium_comparison"
+  },
+  {
+    "id": "fx.edge-14",
+    "type": "edge_fixture",
+    "query": "What can you help me with?",
+    "intent": "discover",
+    "medium": "feature_film",
+    "stage": "ideation",
+    "output": "path_options",
+    "constraints": {},
+    "expected_route": {
+      "skill_id": "skill.path-exploration",
+      "protocol_id": "wp.path-options",
+      "rubric_id": "rb.path-options"
+    },
+    "notes": "English capability discovery. Same as fx.edge-12 but in English. Should respond equivalently.",
+    "expected_behavior": "capability_listing_only"
+  },
+  {
+    "id": "fx.edge-15",
+    "type": "edge_fixture",
+    "query": "我的剧本被平台拒绝了，但没说原因。帮我看看怎么回事。",
+    "intent": "discover",
+    "medium": "feature_film",
+    "stage": "premise",
+    "output": "path_options",
+    "constraints": {
+      "pain": "rejection"
+    },
+    "expected_route": {
+      "skill_id": "skill.path-exploration",
+      "protocol_id": "wp.path-options",
+      "rubric_id": "rb.path-options"
+    },
+    "notes": "Rejection without reason. Should NOT default to rewrite-doctor. Should ask about rejection type (market vs text quality), then route accordingly.",
+    "expected_behavior": "rejection_type_clarification_first"
+  },
+  {
+    "id": "fx.edge-16",
+    "type": "edge_fixture",
+    "query": "。。。",
+    "intent": "discover",
+    "medium": "feature_film",
+    "stage": "ideation",
+    "output": "premise",
+    "constraints": {},
+    "expected_route": {
+      "skill_id": "skill.idea-discovery",
+      "protocol_id": "wp.idea-discovery",
+      "rubric_id": "rb.logline"
+    },
+    "notes": "Pure punctuation input. Should NOT generate any artifact. Should ask \"I need a bit more to go on\" or equivalent.",
+    "expected_behavior": "no_artifact_from_punctuation"
+  },
+  {
+    "id": "fx.edge-17",
+    "type": "edge_fixture",
+    "query": "帮我把这个故事同时写成R级动作片和PG-13家庭版。",
+    "intent": "design",
+    "medium": "feature_film",
+    "stage": "premise",
+    "output": "path_options",
+    "constraints": {
+      "genre": "action",
+      "creative_problem": "contradictory_audience_ratings"
+    },
+    "expected_route": {
+      "skill_id": "skill.path-exploration",
+      "protocol_id": "wp.path-options",
+      "rubric_id": "rb.path-options"
+    },
+    "notes": "Audience contradiction: R-rated action vs PG-13 family. Should flag the contradiction and ask which to prioritize, produce path_options.",
+    "expected_behavior": "contradiction_detection"
   }
 ]

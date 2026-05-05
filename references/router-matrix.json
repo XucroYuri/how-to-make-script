@@ -284,6 +284,7 @@
       "intent": [
         "design",
         "draft",
+        "diagnose",
         "adapt"
       ],
       "medium": [
@@ -956,6 +957,39 @@
       "skill_id": "skill.audience-insight",
       "protocol_id": "wp.audience-proxy-review",
       "rubric_id": "rb.audience-experience"
+    },
+    {
+      "intent": [
+        "diagnose"
+      ],
+      "medium": [
+        "feature_film",
+        "episodic",
+        "short_drama",
+        "animation",
+        "commercial",
+        "branded_film",
+        "shortform_video",
+        "game_narrative",
+        "branching_interactive"
+      ],
+      "stage": [
+        "rewrite"
+      ],
+      "output": [
+        "quality_gate_report"
+      ],
+      "constraint_signals": [
+        "audit_scope",
+        "lens_focus"
+      ],
+      "required_constraint_signals": [
+        "lens_focus"
+      ],
+      "skill_id": "skill.quality-gating",
+      "protocol_id": "wp.quality-gate-report",
+      "rubric_id": "rb.quality-gate-report",
+      "_meta": "Objectivity meta-check. Runs quality-gating with lens_focus=[objectivity, consistency] on Agent's own prior evaluation output. Use only when user asks to audit the Agent itself for bias."
     }
   ]
 }

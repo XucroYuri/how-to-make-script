@@ -29,6 +29,12 @@ def check_route_overlaps(root: Path) -> Dict[str, Any]:
             stage = _overlap(left["stage"], right["stage"])
             output = _overlap(left["output"], right["output"])
             if intent and medium and stage and output:
+                # Required constraint signals disambiguate routes.
+                # If either route requires a signal the other doesn't, they can coexist.
+                left_req = set(left.get("required_constraint_signals", []))
+                right_req = set(right.get("required_constraint_signals", []))
+                if left_req != right_req or (left_req and right_req and left_req != right_req):
+                    continue
                 left_signals = sorted(left.get("constraint_signals", []))
                 right_signals = sorted(right.get("constraint_signals", []))
                 errors.append(
