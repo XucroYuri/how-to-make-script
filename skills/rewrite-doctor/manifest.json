@@ -36,7 +36,13 @@
     "ka.setup-and-payoff",
     "ka.weak-opening-diagnosis"
   ],
-  "adjunct_bundles": {},
+  "adjunct_bundles": {
+    "subtractive-pass": {
+      "trigger": "overwriting_detected",
+      "mode": "smallest_adjunct",
+      "protocol_id": "wp.subtractive-pass"
+    }
+  },
   "fallback_to_skill_id": null,
   "fallback_behavior": "Report uncertainty and return only the highest-confidence risks if the sample is too small."
 }

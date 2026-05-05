@@ -45,6 +45,11 @@
     "reality-lens": {
       "trigger": "audience_segment",
       "mode": "smallest_adjunct"
+    },
+    "session-execution-plan": {
+      "trigger": "multi_stage_request",
+      "mode": "smallest_adjunct",
+      "protocol_id": "wp.session-execution-plan"
     }
   },
   "fallback_to_skill_id": null,

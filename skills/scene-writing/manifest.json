@@ -47,6 +47,16 @@
     "expression-lens": {
       "trigger": "voice_target",
       "mode": "smallest_adjunct"
+    },
+    "emergence-conditioner": {
+      "trigger": "creative_emergence",
+      "mode": "smallest_adjunct",
+      "protocol_id": "wp.emergence-conditioner"
+    },
+    "iterative-draft-pipeline": {
+      "trigger": "iterative_refinement",
+      "mode": "smallest_adjunct",
+      "protocol_id": "wp.iterative-draft-pipeline"
     }
   },
   "fallback_to_skill_id": null
