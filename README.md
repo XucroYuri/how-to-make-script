@@ -26,27 +26,12 @@
   </a>
 </p>
 
-<p align="center">
-  <code>screenwriting</code>
-  <code>agent skill</code>
-  <code>workflow protocols</code>
-  <code>quality gates</code>
-  <code>human-in-the-loop</code>
-</p>
-
-<p align="center">
-  <a href="#60-second-example">See an Example</a> &bull;
-  <a href="#quick-start">Install as a Skill</a> &bull;
-  <a href="#docs-by-goal">Browse by Goal</a> &bull;
-  <a href="https://github.com/XucroYuri/how-to-make-script/discussions">Challenge a Claim</a>
-</p>
-
 > Not a prompt dump. Not a single-method gospel. Not a UI-first product.
 > Durable creative infrastructure for screenplay work: routable knowledge, clear workflow contracts, reusable review logic, and community-driven correction loops.
 
 ---
 
-## 60-Second Example
+## Quick Example
 
 **Request**
 
@@ -56,13 +41,7 @@ Turn this idea into a feature-film beat sheet:
 is forced back to her mining hometown to investigate an old case."
 ```
 
-**Selected route**
-
-| Layer | Selection |
-| --- | --- |
-| Skill | [`skill.structure-beat`](./skills/structure-beat/SKILL.md) |
-| Protocol | [`wp.structure-beat-outline`](./knowledge/20-workflows/wp-structure-beat-outline.md) |
-| Review | [`rb.outline`](./knowledge/60-rubrics/rb-outline.md) + optional [`quality_gate_report`](./knowledge/20-workflows/wp-quality-gate-report.md) |
+**Selected route** → [`skill.structure-beat`](./skills/structure-beat/SKILL.md) + [`wp.structure-beat-outline`](./knowledge/20-workflows/wp-structure-beat-outline.md)
 
 **Artifact excerpt**
 
@@ -73,144 +52,21 @@ is forced back to her mining hometown to investigate an old case."
 - Midpoint turn: She learns her own silence helped protect the cover-up.
 ```
 
-Full example chain:
-
-- [Request](./examples/golden/feature-drama/request.md)
-- [Artifact](./examples/golden/feature-drama/artifact.md)
-- [Quick route examples](./examples/agent/quickstart.json)
-
-## Why This Approach Works
-
-Screenwriting work isn't just "write a scene" or "give me feedback." It depends on where you are in the process, what kind of story you're telling, and what you actually need next. This repository understands that context matters.
-
-When you ask for help, the system figures out what you actually need by looking at:
-
-- **Your intent** — Are you discovering, structuring, drafting, or reviewing?
-- **Your medium** — Feature film, commercial, interactive, or something else?
-- **Where you are in the process** — Early ideation, mid-draft, or polishing?
-- **What output format makes sense** — A beat sheet? Scene cards? A rewrite diagnosis?
-
-It loads just enough knowledge to help — not the entire library. Then it applies structured review so you get honest feedback, not softened praise. The process is designed to create the unexpected, structurally coherent scenes that emerge from creative pressure, not just correct-by-checklist results.
-
-And when you disagree or something feels off, you can challenge it. Your feedback becomes part of the next iteration.
-
-## Real Moments Where This Helps
-
-**You've got a vague idea.** You know the emotional core but haven't figured out the shape yet. You need help turning it into a logline, premise, or beat sheet — something concrete you can work with.
-
-**You've written a scene that feels flat.** You want honest feedback without the "it's good but maybe try..." dance. You want to know where the scene loses momentum and what to do about it.
-
-**You're staring at three different directions** for the next act and can't decide which one earns its keep. You need to see the tradeoffs clearly before committing.
-
-**You're building an agent workflow** and need explicit contracts: what gets passed between steps, where quality gates sit, and how handoffs stay clean when things change.
-
-**You're reviewing someone else's draft** and want structured rubrics instead of relying on taste alone. Or you're teaching and need clear criteria that students can apply to their own work.
-
-**You've got a sprawling story** and need to track continuity without losing the thread. Or you're switching between writing sessions and want a clean handoff point.
-
-## Who Will Find This Useful
-
-This repository is built for people who want reusable systems, not magic prompts.
-
-**Writers and story developers** — You get durable reference materials, clear structure, and self-check tools that survive beyond a single chat session. No more losing the thread when context resets.
-
-**Agent builders and workflow designers** — You get explicit routing logic, bounded knowledge loading, reusable contracts, and machine-readable registries. Everything is designed to compose cleanly.
-
-**Script reviewers and educators** — You get rubrics, failure contrasts, and challengeable heuristics. Review criteria are explicit and debatable, not hidden in taste judgments.
-
-**Multi-agent system designers** — You get team orchestration patterns, dispatch plans, handoff contracts, and role-aware coordination. Everything you need to design collaborative workflows.
-
-This may not be the best fit if you're looking for a single magic prompt that works for everything. The design assumes screenplay work is plural — there are many valid approaches, and context determines which one serves you. This is also a repository-first system, not a hosted UI product. You install it locally and work with the knowledge directly.
+Full chain: [request](./examples/golden/feature-drama/request.md) · [artifact](./examples/golden/feature-drama/artifact.md) · [more examples](./examples/agent/quickstart.json)
 
 ---
 
-## Quick Start
+## What This Is
 
-### 1. Browse a real example
+This repository isn't a prompt library or a single-method writing course. It's durable, composable screenwriting infrastructure built for both humans and LLM agents.
 
-- [Feature drama golden request](./examples/golden/feature-drama/request.md)
-- [Feature drama golden artifact](./examples/golden/feature-drama/artifact.md)
-- [Narrative reference pack](./examples/reference-packs/narrative-pattern-pack.md)
-- [Commercial reference pack](./examples/reference-packs/commercial-pattern-pack.md)
+It classifies your request by **intent, medium, stage, and desired output**, then loads only the relevant knowledge — protocol, rubric, and reference atoms — to produce a structured artifact. It self-checks before handing you the result. When you push back, your feedback becomes better assets for the next run.
 
-### 2. Install as a skill
+If you're a writer: it's a structured development and review toolkit. If you're building agent workflows: it's explicit routing logic with bounded loading and machine-readable contracts.
 
-Clone the latest version from GitHub first, then point your tool at that local checkout:
+---
 
-```bash
-git clone https://github.com/XucroYuri/how-to-make-script.git ~/.local/share/how-to-make-script
-# Later updates:
-git -C ~/.local/share/how-to-make-script pull --ff-only
-```
-
-<details>
-<summary>Codex</summary>
-
-Use the absolute path of the cloned repository, for example `/Users/<you>/.local/share/how-to-make-script`.
-
-```toml
-[[skills.config]]
-path = "/Users/<you>/.local/share/how-to-make-script"
-enabled = true
-```
-</details>
-
-<details>
-<summary>Claude Code</summary>
-
-```bash
-mkdir -p ~/.claude/skills
-ln -sfn ~/.local/share/how-to-make-script ~/.claude/skills/how-to-make-script
-```
-</details>
-
-<details>
-<summary>OpenCode</summary>
-
-```bash
-mkdir -p ~/.config/opencode/skills
-ln -sfn ~/.local/share/how-to-make-script ~/.config/opencode/skills/how-to-make-script
-```
-</details>
-
-<details>
-<summary>Gemini CLI</summary>
-
-Clone `https://github.com/XucroYuri/how-to-make-script.git` into any shared skills directory your Gemini CLI setup recognizes, then register that local checkout as the extension root.
-</details>
-
-<details>
-<summary>OpenClaw</summary>
-
-Clone `https://github.com/XucroYuri/how-to-make-script.git` into the skills directory your OpenClaw setup scans, or symlink `~/.local/share/how-to-make-script` into that directory, then keep the runtime entrypoint at the repo root so `SKILL.md` stays the entrypoint.
-</details>
-
-### 3. Verify repository health
-
-<details>
-<summary>Run validation locally</summary>
-
-```bash
-python3 scripts/validate_assets.py
-python3 scripts/check_semantic_consistency.py
-python3 scripts/check_background_bundles.py
-python3 scripts/check_routes.py
-python3 scripts/check_route_overlaps.py
-python3 scripts/check_subagent_registries.py
-python3 scripts/check_community_surfaces.py
-python3 scripts/check_links.py
-python3 scripts/check_forbidden_paths.py
-python3 scripts/check_canonical_terms.py
-python3 scripts/check_question_todos.py
-python3 scripts/check_golden_artifact_formats.py
-python3 scripts/run_fixture_suite.py
-python3 -m unittest discover -s tests -v
-```
-</details>
-
-## How The System Works
-
-The diagram below shows the flow from request to artifact to improvement. At each step, the system classifies what you need, loads the minimum useful knowledge, generates an artifact, and applies quality gates before offering it to you.
+## How It Works
 
 <p align="center">
   <img src="./docs/assets/readme-hero.svg" alt="how-to-make-script architecture overview" width="100%" />
@@ -228,162 +84,95 @@ flowchart LR
     G -.->|"next run"| S
 ```
 
-Here's what each step actually does:
+---
 
-1. **Preflight sync** — Makes sure you're working against the latest committed knowledge, so nothing has drifted since the last validated state.
+## Install & Use
 
-2. **Classify the request** — The system parses your intent (discover? structure? draft? review?), medium, creative stage, and desired output. This determines the route.
+```bash
+git clone https://github.com/XucroYuri/how-to-make-script.git ~/.local/share/how-to-make-script
+# Updates: git -C ~/.local/share/how-to-make-script pull --ff-only
+```
 
-3. **Load a bounded bundle** — Instead of dumping the entire repository, it loads only the protocol, rubric, and atoms relevant to your route. This keeps responses focused and relevant.
+<details>
+<summary>Claude Code</summary>
 
-4. **Generate the artifact** — The protocol guides generation. The system writes to a defined output format with clear structure.
+```bash
+mkdir -p ~/.claude/skills
+ln -sfn ~/.local/share/how-to-make-script ~/.claude/skills/how-to-make-script
+```
+</details>
 
-5. **Self-check before you see it** — A rubric-based quality gate runs first. If something fails a hard check, the system flags it and recommends corrections.
+<details>
+<summary>Codex</summary>
 
-6. **Human feedback closes the loop** — Your disagreement, counterexample, or field note becomes an improvement signal. Assets evolve through use.
+```toml
+[[skills.config]]
+path = "/Users/<you>/.local/share/how-to-make-script"
+enabled = true
+```
+</details>
 
-The system is designed so that every step is auditable. You can see which route was chosen, which knowledge was loaded, and why. And you can challenge any of it.
-
-## Calling From Another Agent
-
-- Start at [`SKILL.md`](./SKILL.md) for the root orchestration contract.
-- Use [`references/supported-outputs.md`](./references/supported-outputs.md) to choose the smallest appropriate output instead of inventing a blended artifact.
-- Use [`references/output-format-contracts.md`](./references/output-format-contracts.md) when you need the minimum Markdown handoff shape for golden artifacts.
-- Use [`references/router-matrix.json`](./references/router-matrix.json) and [`references/routing-policy.md`](./references/routing-policy.md) to understand route selection and constraint signals.
-- Use `research_background_map` for broad "how to create a screenplay" or theory-support requests.
-- Use `story_memory_checkpoint` when the real need is resumable continuity or handoff-safe state.
+Other platforms (Gemini CLI, OpenCode, OpenClaw): same pattern — clone locally, point your tool at the checkout. See [`SKILL.md`](./SKILL.md) for the root entrypoint.
 
 ---
 
-## Find Your Entry Point
+## What's Inside
 
-### Writers and reviewers
-
-1. [Narrative Pattern Pack](./examples/reference-packs/narrative-pattern-pack.md)
-2. [Adaptive Quality Checking](./docs/adaptive-quality-checking.md)
-3. [Supported Outputs](./references/supported-outputs.md)
-
-### Agent and workflow developers
-
-1. [Content Model](./docs/content-model.md)
-2. [Routing Policy](./references/routing-policy.md) + [Router Matrix](./references/router-matrix.json)
-3. [Supported Outputs](./references/supported-outputs.md) + [Context Loading Policy](./docs/context-loading-policy.md)
-
-### Broad or theory-heavy questions
-
-1. [How To Create A Screenplay Research](./docs/how-to-create-a-screenplay-research.md)
-2. [Research Background Workflow](./knowledge/20-workflows/wp-research-background-map.md)
-3. Narrow into the next output route instead of staying in survey mode
-
-### Pause, resume, or hand off long-form work
-
-1. [Story Memory Checkpoint](./knowledge/20-workflows/wp-story-memory-checkpoint.md)
-2. [Project Surface Architecture](./docs/project-surface-architecture.md) if the problem is really long-horizon design
-
-### Challenge or improve the repo
-
-1. [Contributing](./CONTRIBUTING.md)
-2. Open the lightest useful thread in [GitHub Discussions](https://github.com/XucroYuri/how-to-make-script/discussions)
-
-## Repository At A Glance
-
-| Surface | Scope |
+| Surface | Count |
 | --- | --- |
-| Root skill | [`SKILL.md`](./SKILL.md) — routing, loading, and output discipline |
-| Output contracts | `33` routeable outputs in [`supported-outputs.md`](./references/supported-outputs.md) |
-| Skill folders | `29` folders in [`skills/`](./skills) |
-| Structured assets | `108` atoms + `33` protocols + `31` rubrics |
-| Route fixtures | `98` fixtures in [`fixtures.json`](./examples/agent/fixtures.json) |
-| Knowledge base | `185` Markdown files in [`knowledge/`](./knowledge) |
-| Examples | `39` files across golden flows, fixtures, and reference packs |
-| Validation | `18` scripts in [`scripts/`](./scripts) |
-| Tests | `17` modules in [`tests/`](./tests) |
+| Sub-skills | 29 in [`skills/`](./skills) |
+| Output types | 30 in [`supported-outputs.md`](./references/supported-outputs.md) |
+| Knowledge atoms | 114 in [`knowledge/`](./knowledge) |
+| Workflow protocols | 33 in [`knowledge/20-workflows/`](./knowledge/20-workflows) |
+| Evaluation rubrics | 31 in [`knowledge/60-rubrics/`](./knowledge/60-rubrics) |
+| Route fixtures | 119 in [`fixtures.json`](./examples/agent/fixtures.json) |
+| Knowledge .md files | 189 in [`knowledge/`](./knowledge) |
+| Validation scripts | 19 in [`scripts/`](./scripts) |
+| Test modules | 19 in [`tests/`](./tests) |
+| Golden examples | 10 flows in [`examples/golden/`](./examples/golden) |
+| Reference packs | 10 in [`examples/reference-packs/`](./examples/reference-packs) |
+| Bilingual docs | 17 pairs in [`docs/`](./docs) |
 
-## What the System Covers
+**Writing & development** — logline, premise, beat sheet, outline, scene draft, screenplay draft, dialogue polish
 
-The repository spans the full range of screenplay work, from first idea to final handoff.
+**Review & correction** — rewrite diagnosis, quality gates, scope correction, boundary maps
 
-**Writing and development** — narrative screenwriting, commercial/branded scripting, interactive/branching narrative, premise through rewrite
+**Platform-specific** — commercial scripts, branded film scripts, interactive branch maps
 
-**Review and correction** — rewrite diagnosis, quality gates, targeted recheck, boundary maps, scope correction
+**Expression & downstream** — voice style guides, visual language packs, screenplay-to-video briefs
 
-**Research and continuity** — broad theory support, resumable story-memory checkpoints, bounded loading, route-aware research bundles
-
-**Expression and downstream** — character/IP/brand voice calibration, multilingual visual language, screenplay-to-video bridge
-
-**Team and system design** — writers' room blueprints, expert subagent casting, dispatch topology, handoff design, project-surface architecture
-
-## Quality Guarantees
-
-- Schemas, registries, routes, and fixtures validated before completeness claims
-- Routes tested for correct output contracts and overlap risk
-- Fixtures exercise narrative, commercial, interactive, and systems workflows
-- Community surfaces checked so issue and discussion routing stays fresh
-- Forbidden local workspace leakage blocked in index and history (denylist in [`.gitignore`](./.gitignore) + [`check_forbidden_paths.py`](./scripts/check_forbidden_paths.py))
-- Human disagreement treated as a source of regression tests, rubrics, and scope corrections
+**Team & system** — team workflow blueprints, expert subagent casting, handoff protocols
 
 ---
 
-## Docs By Goal
+## Where to Go Next
 
-**For writers**
+**For writers** — [golden examples](./examples/golden) · [supported outputs](./references/supported-outputs.md) · [narrative reference pack](./examples/reference-packs/narrative-pattern-pack.md) · [adaptive quality checking](./docs/adaptive-quality-checking.md)
 
-- [Scenario Atlas](./docs/scenario-atlas.md)
-- [Adaptive Quality Checking](./docs/adaptive-quality-checking.md)
-- [Pattern Reference Packs](./examples/reference-packs)
-- [Character Voice Reference Pack](./examples/reference-packs/character-voice-reference-pack.md)
+**For agent builders** — [`SKILL.md`](./SKILL.md) (root orchestration) · [router matrix](./references/router-matrix.json) · [routing policy](./references/routing-policy.md) · [context loading policy](./docs/context-loading-policy.md) · [content model](./docs/content-model.md)
 
-**For agent builders**
+**For contributors** — [contributing guide](./CONTRIBUTING.md) · [support ladder](./SUPPORT.md) · [changelog](./CHANGELOG.md)
 
-- [Content Model](./docs/content-model.md)
-- [Context Loading Policy](./docs/context-loading-policy.md)
-- [Project Surface Architecture](./docs/project-surface-architecture.md)
-- [Multi-Agent Screenplay Architecture](./docs/multi-agent-screenplay-architecture.md)
+---
 
-**For contributors**
-
-- [Contributing Guide](./CONTRIBUTING.md)
-- [Support Ladder](./SUPPORT.md)
-- [Changelog](./CHANGELOG.md)
-
-## Community
+## Community & Status
 
 This project grows through high-signal disagreement.
 
 | Channel | Use for |
 | --- | --- |
-| [Discussions](https://github.com/XucroYuri/how-to-make-script/discussions) | Questions, rebuttals, rival paths, field notes |
-| [Issue forms](./.github/ISSUE_TEMPLATE) | Concrete route, rubric, asset, or governance changes |
-| [Support](./SUPPORT.md) | Support ladder |
+| [Discussions](https://github.com/XucroYuri/how-to-make-script/discussions) | Questions, rebuttals, field notes, rival paths |
+| [Issues](./.github/ISSUE_TEMPLATE) | Concrete route, rubric, or asset changes |
 | [Security](./SECURITY.md) | Private vulnerability reporting |
 
-Good first contributions:
+**Current:** Usable research-first screenplay monorepo. Strong routing, loading, and quality-gating infrastructure. Broad narrative/commercial/interactive coverage.
 
-- Challenge one claim that feels too broad
-- Add one counterexample or field note that changes scope
-- Improve one example, rubric explanation, or doc path
-- Reproduce one route mismatch and turn it into a fixture
+**Open gaps:** Runtime execution not yet implemented. Bundle-planner enforcement incomplete. Edge-case fixture depth uneven. Some genre/stage-specific knowledge still thin. Discussion-to-asset conversion remains manual.
 
-## Project Status
-
-The repository is a usable research-first, agent-ready screenplay monorepo.
-
-**Current emphasis:** narrative, commercial, and interactive screenplay work; research and continuity layers; voice/visual/video layers; team orchestration and project surfaces; adaptive quality gating with human-in-the-loop iteration.
-
-**Open gaps:**
-
-- Collaboration blueprints are mature, but live runtime execution is not yet implemented
-- Bounded loading is well documented, but bundle-planner enforcement is incomplete
-- Route coverage is broad, but edge-case fixture depth is uneven across similar outputs
-- Knowledge coverage is broad, but genre-specific and stage-level depth is thin in several areas
-- Community intake exists, but discussion-to-asset conversion still relies on manual effort
-
-**Next-stage roadmap:** executable runtime planning; stricter router governance; deeper genre/medium/case-study layers; stronger quality presets and cross-artifact checks; systematic human-in-the-loop conversion; bilingual maturity.
-
-Detailed TODO list: see `docs/shared/` for maintainer documentation.
+Good first contributions: challenge an overly broad claim, add a counterexample, improve a doc path, or turn a route mismatch into a fixture.
 
 ---
 
-## Standards And Metadata
+## Standards & Metadata
 
-[Contributing](./CONTRIBUTING.md) &bull; [Code of Conduct](./CODE_OF_CONDUCT.md) &bull; [Support](./SUPPORT.md) &bull; [Security](./SECURITY.md) &bull; [Citation](./CITATION.cff) &bull; [License](./LICENSE)
+[Contributing](./CONTRIBUTING.md) · [Code of Conduct](./CODE_OF_CONDUCT.md) · [Support](./SUPPORT.md) · [Security](./SECURITY.md) · [Citation](./CITATION.cff) · [License](./LICENSE)
