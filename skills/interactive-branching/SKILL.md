@@ -36,6 +36,9 @@ Character-state tracking is what makes interactive branching feel coherent. Ensu
 
 ## References
 - `wp.interactive-branch-map`
+- `rb.interactive-branch-map`
+- `ka.causality-chain`
+- `ka.cross-protocol-referral-edges`
 - `ka.medium-branching-interactive`
 - `ka.medium-game-narrative`
-- `rb.interactive-branch-map`
+- `ka.theme-pressure`

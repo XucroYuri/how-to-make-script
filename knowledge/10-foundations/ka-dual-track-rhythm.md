@@ -14,10 +14,15 @@
     "branching_interactive"
   ],
   "stages": [
+    "ideation",
+    "premise",
+    "character",
     "structure",
     "outline",
     "scene",
-    "rewrite"
+    "dialogue",
+    "rewrite",
+    "adaptation"
   ],
   "problem": "作者常把节奏理解成单一快慢表，结果要么外部情节很忙但人物内在停滞，要么情绪层很浓但故事外部没有推进力。",
   "decision_rules": [

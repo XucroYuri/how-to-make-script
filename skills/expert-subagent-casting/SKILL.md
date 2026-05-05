@@ -38,8 +38,11 @@ Structure-layer problems benefit from a structure specialist and a causality che
 
 ## References
 - `wp.expert-subagent-cast`
-- `ka.subagent-cast-composition`
+- `rb.expert-subagent-cast`
+- `ka.convergence-owner-discipline`
+- `ka.cross-protocol-referral-edges`
 - `ka.process-node-specialization`
 - `ka.reference-persona-governance`
+- `ka.subagent-cast-composition`
 - `ka.subagent-context-budgeting`
-- `rb.expert-subagent-cast`
+- `ka.team-topology-selection`

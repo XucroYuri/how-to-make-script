@@ -37,6 +37,9 @@ Present two development paths: one that optimises for platform fit, one that opt
 
 ## References
 - `wp.development-brief`
-- `ka.commissioning-fit`
-- `ka.platform-attention-economy`
 - `rb.development-brief`
+- `ka.audience-need-state`
+- `ka.commissioning-fit`
+- `ka.cross-protocol-referral-edges`
+- `ka.platform-attention-economy`
+- `ka.screenwriting-history-shift`

@@ -38,7 +38,11 @@ For event-layer screenplay work, the dispatch plan should reflect the narrative 
 
 ## References
 - `wp.subagent-dispatch-plan`
-- `ka.subagent-context-budgeting`
-- `ka.convergence-owner-discipline`
-- `ka.two-stage-review-loop`
 - `rb.subagent-dispatch-plan`
+- `ka.convergence-owner-discipline`
+- `ka.cross-protocol-referral-edges`
+- `ka.handoff-packet-discipline`
+- `ka.parallel-lane-governance`
+- `ka.subagent-context-budgeting`
+- `ka.team-topology-selection`
+- `ka.two-stage-review-loop`

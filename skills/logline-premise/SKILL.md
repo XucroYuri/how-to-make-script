@@ -38,8 +38,11 @@ The most useful logline question here is: "What does this character believe abou
 
 ## References
 - `wp.logline-premise`
-- `ka.story-goal`
-- `ka.conflict-pressure`
-- `ka.false-logline-warning`
-- `ka.viewer-inference-guidance`
 - `rb.logline`
+- `ka.causality-chain`
+- `ka.conflict-pressure`
+- `ka.cross-protocol-referral-edges`
+- `ka.false-logline-warning`
+- `ka.genre-pack-factorization`
+- `ka.story-goal`
+- `ka.viewer-inference-guidance`

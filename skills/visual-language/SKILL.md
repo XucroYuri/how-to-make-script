@@ -44,8 +44,9 @@ Visual language and verbal register are adjacent. When language focus is active,
 
 ## References
 - `wp.visual-language-pack`
-- `ka.multilingual-visual-vocabulary`
-- `ka.cultural-aesthetic-registers`
-- `ka.prompt-delegation-levels`
 - `rb.visual-language-pack`
-
+- `ka.cross-protocol-referral-edges`
+- `ka.cultural-aesthetic-registers`
+- `ka.multilingual-visual-vocabulary`
+- `ka.prompt-delegation-levels`
+- `ka.register-adaptation`

@@ -14,10 +14,12 @@
     "shortform_video"
   ],
   "stages": [
+    "premise",
     "structure",
     "outline",
     "scene",
-    "rewrite"
+    "rewrite",
+    "adaptation"
   ],
   "problem": "剧本不是慢，而是没有波形；不是快，而是乱。",
   "decision_rules": [

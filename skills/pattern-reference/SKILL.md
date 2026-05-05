@@ -38,6 +38,9 @@ For language-layer problems, show voice rather than structure. A reference that 
 
 ## References
 - `wp.pattern-reference-pack`
-- `ka.reference-pattern-usage`
-- `ka.creative-pluralism`
 - `rb.pattern-reference-pack`
+- `ka.creative-pluralism`
+- `ka.cross-protocol-referral-edges`
+- `ka.false-universal-warning`
+- `ka.reference-pattern-usage`
+- `ka.scenario-factorization`

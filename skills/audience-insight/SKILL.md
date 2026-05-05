@@ -37,6 +37,9 @@ Translate character-layer work into audience-perception questions: "When this ch
 
 ## References
 - `wp.audience-fit-note`
-- `ka.audience-need-state`
-- `ka.platform-attention-economy`
 - `rb.audience-fit`
+- `ka.audience-need-state`
+- `ka.commissioning-fit`
+- `ka.cross-protocol-referral-edges`
+- `ka.pacing-rhythm`
+- `ka.platform-attention-economy`

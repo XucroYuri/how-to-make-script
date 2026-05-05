@@ -46,10 +46,12 @@ The downstream execution audience — model prompt consumer or previz team — i
 
 ## References
 - `wp.screen-to-video-brief`
-- `ka.screenplay-to-video-boundary`
-- `ka.video-generation-shot-economy`
-- `ka.prompt-delegation-levels`
-- `ka.source-span-traceability`
-- `ka.long-script-batch-planning`
-- `ka.visible-asset-grounding`
 - `rb.screen-to-video-brief`
+- `ka.cross-protocol-referral-edges`
+- `ka.long-script-batch-planning`
+- `ka.multilingual-visual-vocabulary`
+- `ka.prompt-delegation-levels`
+- `ka.screenplay-to-video-boundary`
+- `ka.source-span-traceability`
+- `ka.video-generation-shot-economy`
+- `ka.visible-asset-grounding`

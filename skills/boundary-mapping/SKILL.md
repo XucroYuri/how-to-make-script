@@ -37,6 +37,9 @@ World-consistency constraints often masquerade as boundary questions. Check whet
 
 ## References
 - `wp.boundary-map`
-- `ka.boundary-first-guidance`
-- `ka.exploration-review-separation`
 - `rb.boundary-map`
+- `ka.boundary-first-guidance`
+- `ka.commissioning-fit`
+- `ka.cross-protocol-referral-edges`
+- `ka.exploration-review-separation`
+- `ka.platform-attention-economy`

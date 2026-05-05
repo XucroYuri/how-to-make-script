@@ -15,6 +15,7 @@
     "branching_interactive"
   ],
   "stages": [
+    "ideation",
     "premise",
     "structure",
     "outline",

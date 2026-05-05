@@ -36,7 +36,11 @@ Start from the character whose need is driving the idea. "Who wants something so
 
 ## References
 - `wp.idea-discovery`
-- `ka.story-goal`
-- `ka.conflict-pressure`
-- `ka.screenplay-lens-stacking`
 - `rb.logline`
+- `ka.conflict-pressure`
+- `ka.creative-posture-focus`
+- `ka.creative-posture-source`
+- `ka.cross-protocol-referral-edges`
+- `ka.screenplay-lens-stacking`
+- `ka.story-goal`
+- `ka.theme-pressure`

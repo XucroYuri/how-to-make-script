@@ -37,6 +37,9 @@ Event-layer scope corrections most often involve structure claims that are mediu
 
 ## References
 - `wp.scope-correction`
-- `ka.scope-correction`
-- `ka.false-universal-warning`
 - `rb.scope-correction`
+- `ka.boundary-first-guidance`
+- `ka.creative-pluralism`
+- `ka.cross-protocol-referral-edges`
+- `ka.false-universal-warning`
+- `ka.scope-correction`

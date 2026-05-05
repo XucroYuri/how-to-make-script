@@ -33,15 +33,14 @@
     "rb.adaptation"
   ],
   "linked_atoms": [
-    "ka.genre-thriller",
-    "ka.genre-romance",
-    "ka.genre-comedy",
-    "ka.reactive-comedy-loop",
-    "ka.medium-feature-film",
-    "ka.medium-commercial",
-    "ka.medium-branching-interactive",
     "ka.cross-protocol-referral-edges",
-    "ka.genre-pack-factorization"
+    "ka.genre-comedy",
+    "ka.genre-pack-factorization",
+    "ka.genre-romance",
+    "ka.genre-thriller",
+    "ka.medium-branching-interactive",
+    "ka.medium-commercial",
+    "ka.medium-feature-film"
   ],
   "fallback_behavior": "Reduce adaptation scope and preserve the core conflict first if the target promise breaks the engine.",
   "default_loading_mode": "focus_pack",

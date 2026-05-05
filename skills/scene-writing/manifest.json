@@ -29,17 +29,16 @@
     "rb.subtractive-pass"
   ],
   "linked_atoms": [
-    "ka.scene-function",
-    "ka.conflict-pressure",
-    "ka.exposition-control",
     "ka.character-voice-consistency",
-    "ka.embodied-text-pressure",
     "ka.cinematic-prose-register",
-    "ka.cross-protocol-referral-edges",
-    "ka.setup-and-payoff",
-    "ka.verbal-rhythm",
     "ka.collision-prompts",
-    "ka.specificity-pressure"
+    "ka.conflict-pressure",
+    "ka.cross-protocol-referral-edges",
+    "ka.embodied-text-pressure",
+    "ka.exposition-control",
+    "ka.scene-function",
+    "ka.setup-and-payoff",
+    "ka.verbal-rhythm"
   ],
   "fallback_behavior": "Merge, delete, or redesign the scene if it does not change the situation, or rebuild the beat carriers if the draft slips into bare dialogue or writerly prose.",
   "default_loading_mode": "focus_pack",

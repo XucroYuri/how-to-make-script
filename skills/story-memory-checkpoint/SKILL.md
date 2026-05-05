@@ -7,6 +7,38 @@ description: Use when a screenplay project needs resumable continuity compressio
 
 Use this skill when the user needs to pause and resume a long screenplay project, hand current story state to another agent or human, or preserve continuity without reloading a whole draft or room archive.
 
+### When to Auto-Suggest a Checkpoint
+
+Agent should proactively suggest a checkpoint at E2E stage transitions between these stages:
+
+- `idea` → `premise`（story engine about to be committed）
+- `premise` → `character`（character continuity needs locking before world-building）
+- `character` → `structure`（story engine may shift when plot form takes over）
+- `structure` → `scene`（character and event continuity must be locked before writing pages）
+- Any pause or handoff in a multi-step pipeline
+
+Do not auto-suggest checkpoints for single-step requests or trivial continuations. A checkpoint is warranted when losing state would cost meaningful re-work.
+
+### What a Minimal Checkpoint Contains
+
+A minimal `story_memory_checkpoint` must include:
+
+1. **Current stage**: which stage the project is at（idea / premise / character / structure / scene / dialogue / polish）
+2. **Locked decisions**: what has been committed and should not be reopened without explicit intent
+3. **Open questions**: what is unresolved and must be carried forward as pending debt
+4. **Next planned step**: which stage comes next, with the entry surface（e.g., "beat sheet → scene draft for Act II opening"）
+
+For serial or long-form work, also include arc-budget spend and remaining high-value turns.
+
+### How to Resume from a Checkpoint
+
+When reloading from a checkpoint:
+
+- Load only the state fields needed for the next step — do not reload the full project context.
+- Begin by confirming the locked decisions are still valid（e.g., "We left off with the protagonist as a retired firefighter, goal: reclaim reputation, obstacle: official cover-up. Does this still hold?"）
+- Surface any open questions that the next step must resolve before proceeding.
+- If the checkpoint is stale（e.g., user provides new information that contradicts a locked decision）, flag the conflict before resuming.
+
 ## Workflow
 1. Lock the covered span and the checkpoint purpose.
 2. Compress current story state instead of retelling the plot.
@@ -39,8 +71,10 @@ World-layer checkpoints should record: which world rules have been explicitly es
 
 ## References
 - `wp.story-memory-checkpoint`
-- `ka.story-memory-checkpoint`
-- `ka.dual-track-rhythm`
-- `ka.serial-arc-budgeting`
-- `ka.room-artifact-ladder`
 - `rb.story-memory-checkpoint`
+- `ka.cross-protocol-referral-edges`
+- `ka.dual-track-rhythm`
+- `ka.room-artifact-ladder`
+- `ka.script-as-coordination-artifact`
+- `ka.serial-arc-budgeting`
+- `ka.story-memory-checkpoint`

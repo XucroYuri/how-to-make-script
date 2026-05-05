@@ -17,7 +17,11 @@
     "premise",
     "structure",
     "outline",
-    "rewrite"
+    "character",
+    "scene",
+    "dialogue",
+    "rewrite",
+    "adaptation"
   ],
   "problem": "大纲里每个点都单独成立，但连起来像拼盘，没有不可替代的顺序。",
   "decision_rules": [

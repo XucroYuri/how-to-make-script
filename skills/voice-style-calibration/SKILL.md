@@ -37,8 +37,10 @@ Voice is character psychology made audible. Before calibrating register, confirm
 
 ## References
 - `wp.voice-style-guide`
+- `rb.voice-style-guide`
 - `ka.character-voice-consistency`
+- `ka.cross-protocol-referral-edges`
+- `ka.dialogue-subtext`
+- `ka.embodied-text-pressure`
 - `ka.ip-voice-continuity`
 - `ka.register-adaptation`
-- `ka.embodied-text-pressure`
-- `rb.voice-style-guide`

@@ -27,12 +27,14 @@
   ],
   "default_loading_mode": "focus_pack",
   "linked_atoms": [
-    "ka.rewrite-diagnosis",
     "ka.causality-chain",
-    "ka.scene-function",
-    "ka.dialogue-subtext",
-    "ka.feedback-subjectivity-management",
     "ka.cross-protocol-referral-edges",
+    "ka.dialogue-subtext",
+    "ka.dual-track-rhythm",
+    "ka.feedback-subjectivity-management",
+    "ka.pacing-rhythm",
+    "ka.rewrite-diagnosis",
+    "ka.scene-function",
     "ka.setup-and-payoff",
     "ka.weak-opening-diagnosis"
   ],

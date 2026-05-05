@@ -38,6 +38,8 @@ Subtext is character psychology made audible. Rewrite from the character's wound
 
 ## References
 - `wp.dialogue-polish`
+- `rb.dialogue`
+- `ka.conflict-pressure`
+- `ka.cross-protocol-referral-edges`
 - `ka.dialogue-subtext`
 - `ka.exposition-control`
-- `rb.dialogue`

@@ -39,11 +39,13 @@ Episodic and serial projects often suffer from arc-budget drift between surface 
 
 ## References
 - `wp.project-surface-map`
-- `ka.source-of-truth-runtime-split`
-- `ka.canonical-packet-assembly`
-- `ka.phase-entrypoint-handoff`
-- `ka.command-artifact-mapping`
-- `ka.script-as-coordination-artifact`
-- `ka.archive-literacy`
-- `ka.story-memory-checkpoint`
 - `rb.project-surface-map`
+- `ka.archive-literacy`
+- `ka.canonical-packet-assembly`
+- `ka.command-artifact-mapping`
+- `ka.cross-protocol-referral-edges`
+- `ka.phase-entrypoint-handoff`
+- `ka.script-as-coordination-artifact`
+- `ka.source-of-truth-runtime-split`
+- `ka.story-memory-checkpoint`
+- `ka.subagent-context-budgeting`

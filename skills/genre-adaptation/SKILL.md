@@ -7,6 +7,20 @@ description: Use when the user wants to retune a story for another genre, medium
 
 Use this skill to preserve the engine while changing the promise surface.
 
+## Pre-Adaptation Extraction
+
+When the source material is not already a screenplay or structured story document, extract a dramatic premise before entering adaptation workflow. This step is **not** adaptation — it is premise-finding from unstructured source material.
+
+- **When source is non-narrative**（novel, essay, song lyrics, painting, news article）: extract the dramatic premise first（protagonist + goal + obstacle + stakes). Do not skip directly to adaptation decisions before the dramatic engine is clear.
+- **When source is a poem**: identify emotional rhythm and imagery as potential dramatic anchors. Poems rarely contain explicit protagonists or goals — let the emotional movement and sensory imagery suggest where dramatic tension might live.
+- **When source is news**: identify the human conflict behind the facts. News reports events; drama needs desire, fear, and institutional pressure. Extract the human story beneath the headline, not the headline itself.
+- **When source has no identifiable premise**（abstract poem, purely conceptual prose, atmospheric artwork）: say so honestly. Do not manufacture a false dramatic premise to fill a gap. Offer `path_options`:
+  - Try a different entry point（e.g., pick one image or moment from the source and build outward）
+  - Ask the user for a character or situation to anchor the adaptation
+  - Flag that the source may work better as a tonal reference than as a narrative source
+
+Once a premise is extracted（or the impossibility is honestly flagged）, proceed to the adaptation workflow below.
+
 ## Workflow
 1. Identify the non-negotiable core.
 2. Map the target genre or medium promises.
@@ -38,6 +52,12 @@ Voice continuity is the highest-risk surface in adaptation. Lock the voice ancho
 
 ## References
 - `wp.genre-adaptation`
-- `ka.genre-thriller`
-- `ka.genre-romance`
 - `rb.outline`
+- `ka.cross-protocol-referral-edges`
+- `ka.genre-comedy`
+- `ka.genre-pack-factorization`
+- `ka.genre-romance`
+- `ka.genre-thriller`
+- `ka.medium-branching-interactive`
+- `ka.medium-commercial`
+- `ka.medium-feature-film`

@@ -40,13 +40,10 @@
   ],
   "linked_atoms": [
     "ka.audience-need-state",
-    "ka.platform-attention-economy",
     "ka.commissioning-fit",
+    "ka.cross-protocol-referral-edges",
     "ka.pacing-rhythm",
-    "ka.audience-proxy-personas",
-    "ka.opening-job-selection",
-    "ka.scene-function",
-    "ka.cross-protocol-referral-edges"
+    "ka.platform-attention-economy"
   ],
   "fallback_behavior": "If the audience is underspecified, infer one primary segment and one adjacent segment, then report confidence and risk.",
   "default_loading_mode": "focus_pack",

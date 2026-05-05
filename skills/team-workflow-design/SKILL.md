@@ -39,9 +39,12 @@ Audience-response feedback loops should be explicit in the workflow design. If a
 
 ## References
 - `wp.team-workflow-blueprint`
-- `ka.team-topology-selection`
+- `rb.team-workflow-blueprint`
+- `ka.cross-protocol-referral-edges`
+- `ka.dissent-preservation-loop`
 - `ka.handoff-contract-discipline`
 - `ka.human-checkpoint-gates`
-- `ka.room-artifact-ladder`
 - `ka.parallel-lane-governance`
-- `rb.team-workflow-blueprint`
+- `ka.room-artifact-ladder`
+- `ka.team-mode-recipes`
+- `ka.team-topology-selection`

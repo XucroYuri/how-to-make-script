@@ -36,14 +36,16 @@
     "ka.causality-chain",
     "ka.cross-protocol-referral-edges",
     "ka.dialogue-subtext",
+    "ka.dual-track-rhythm",
     "ka.feedback-subjectivity-management",
+    "ka.pacing-rhythm",
     "ka.rewrite-diagnosis",
     "ka.scene-function",
     "ka.setup-and-payoff",
     "ka.weak-opening-diagnosis"
   ],
   "budget_class": "L",
-  "mandatory_atom_count": 8,
+  "mandatory_atom_count": 10,
   "expansion_allowed": true
 }
 ---

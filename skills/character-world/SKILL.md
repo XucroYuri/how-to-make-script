@@ -41,10 +41,12 @@ Lead with world-rule design: what rules create unavoidable pressure for this cha
 
 ## References
 - `wp.character-world`
-- `ka.character-arc`
-- `ka.theme-pressure`
-- `ka.character-drive-quartet`
+- `rb.character-world`
 - `ka.capability-friction-balance`
+- `ka.character-arc`
+- `ka.character-drive-quartet`
+- `ka.cross-protocol-referral-edges`
+- `ka.exposition-control`
+- `ka.theme-pressure`
 - `ka.triggered-behavior-profile`
 - `ka.viewer-inference-guidance`
-- `rb.character-world`

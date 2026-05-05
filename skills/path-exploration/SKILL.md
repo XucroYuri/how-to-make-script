@@ -37,6 +37,9 @@ Make the trade-offs structural: what must be true about the outline for each pat
 
 ## References
 - `wp.path-options`
-- `ka.creative-pluralism`
-- `ka.divergence-convergence-loop`
 - `rb.path-options`
+- `ka.boundary-first-guidance`
+- `ka.creative-pluralism`
+- `ka.cross-protocol-referral-edges`
+- `ka.divergence-convergence-loop`
+- `ka.false-universal-warning`

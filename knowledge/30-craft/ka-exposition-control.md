@@ -15,6 +15,7 @@
   ],
   "stages": [
     "premise",
+    "character",
     "outline",
     "scene",
     "dialogue",

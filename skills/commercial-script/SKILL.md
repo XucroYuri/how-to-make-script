@@ -38,6 +38,9 @@ Register control matters more in commercial work than in any other medium. Premi
 
 ## References
 - `wp.commercial-script`
+- `rb.commercial-script`
+- `ka.cross-protocol-referral-edges`
+- `ka.medium-branded-film`
 - `ka.medium-commercial`
 - `ka.medium-shortform-video`
-- `rb.commercial-script`
+- `ka.scene-function`

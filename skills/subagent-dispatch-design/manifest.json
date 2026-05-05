@@ -42,12 +42,13 @@
     "rb.subagent-dispatch-plan"
   ],
   "linked_atoms": [
-    "ka.subagent-context-budgeting",
     "ka.convergence-owner-discipline",
-    "ka.two-stage-review-loop",
+    "ka.cross-protocol-referral-edges",
     "ka.handoff-packet-discipline",
     "ka.parallel-lane-governance",
-    "ka.team-topology-selection"
+    "ka.subagent-context-budgeting",
+    "ka.team-topology-selection",
+    "ka.two-stage-review-loop"
   ],
   "fallback_behavior": "If the user only needs a team mode or cast, return to team_workflow_blueprint or expert_subagent_cast. If the work is effectively single-threaded, keep one owner plus one review gate.",
   "default_loading_mode": "focus_pack",

@@ -40,6 +40,12 @@ Creative specialisation at the character or language layer often benefits from a
 
 ## References
 - `wp.team-workflow-blueprint`
-- `ka.team-topology-selection`
-- `ka.handoff-packet-discipline`
 - `rb.team-workflow-blueprint`
+- `ka.cross-protocol-referral-edges`
+- `ka.dissent-preservation-loop`
+- `ka.handoff-contract-discipline`
+- `ka.human-checkpoint-gates`
+- `ka.parallel-lane-governance`
+- `ka.room-artifact-ladder`
+- `ka.team-mode-recipes`
+- `ka.team-topology-selection`

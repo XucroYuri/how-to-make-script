@@ -42,12 +42,14 @@
     "rb.team-workflow-blueprint"
   ],
   "linked_atoms": [
-    "ka.team-topology-selection",
+    "ka.cross-protocol-referral-edges",
+    "ka.dissent-preservation-loop",
     "ka.handoff-contract-discipline",
     "ka.human-checkpoint-gates",
-    "ka.room-artifact-ladder",
     "ka.parallel-lane-governance",
-    "ka.dissent-preservation-loop"
+    "ka.room-artifact-ladder",
+    "ka.team-mode-recipes",
+    "ka.team-topology-selection"
   ],
   "fallback_behavior": "If the user only needs a single artifact, return to the primary screenplay route and add team notes only when collaboration constraints materially change execution.",
   "default_loading_mode": "focus_pack",

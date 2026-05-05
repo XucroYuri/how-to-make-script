@@ -39,9 +39,32 @@ Most "scene problems" are causality problems one level up. Ask: "What should thi
 **When `focus = language`:**
 Restrict diagnosis to line-level: rhythm, register, subtext, and voice separation. Do not drift into structure or character-arc notes unless they are directly causing the language failure.
 
+## Cross-Layer Diagnosis
+
+When a problem spans multiple layers（e.g., pacing affects both structure AND scene level）, do not force a single-layer diagnosis:
+
+- **Acknowledge the cross-layer nature**. Name which layers are involved and how they interact. For example: "This pacing issue originates at the structure layer（Act II is 15 beats too long）but manifests at the scene layer（scenes 22-28 all run 30% longer than their dramatic weight justifies）."
+- **Address both layers**. A structure problem that creates scene-level symptoms cannot be fixed by scene-level edits alone. Provide the structural fix AND the scene-level cleanup.
+- **Prioritize the root cause first**. If the structure layer caused the scene layer to drift, fix the structure first. Surface the scene-level fixes as a second pass, not as the primary intervention.
+
+### Pacing Rhythm Awareness
+
+When diagnosing pacing problems, consider rhythm across both event and emotional tracks:
+
+- Refer to `ka.pacing-rhythm` for beat-level tempo control — where to accelerate, where to breathe.
+- Refer to `ka.dual-track-rhythm` for the interaction between external pressure rhythm（plot events）and internal rhythm（character emotional/psychological state）. Pacing failures often come from one track overwhelming the other, not from absolute speed.
+- Ask: "Is this scene slow, or is it failing to alternate between external and internal rhythm?" A scene can feel slow even at high event density if the emotional rhythm is absent.
+
 ## References
 - `wp.rewrite-doctor`
-- `ka.rewrite-diagnosis`
-- `ka.causality-chain`
-- `ka.feedback-subjectivity-management`
 - `rb.rewrite-report`
+- `ka.causality-chain`
+- `ka.cross-protocol-referral-edges`
+- `ka.dialogue-subtext`
+- `ka.dual-track-rhythm`
+- `ka.feedback-subjectivity-management`
+- `ka.pacing-rhythm`
+- `ka.rewrite-diagnosis`
+- `ka.scene-function`
+- `ka.setup-and-payoff`
+- `ka.weak-opening-diagnosis`

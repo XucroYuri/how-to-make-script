@@ -49,8 +49,15 @@ Audience experience is the primary concern. Ask: "At the end of this scene, what
 
 ## References
 - `wp.scene-writing`
-- `ka.scene-function`
-- `ka.conflict-pressure`
-- `ka.opening-job-selection`
 - `rb.scene-draft`
 - `rb.screenplay-draft`
+- `ka.character-voice-consistency`
+- `ka.cinematic-prose-register`
+- `ka.collision-prompts`
+- `ka.conflict-pressure`
+- `ka.cross-protocol-referral-edges`
+- `ka.embodied-text-pressure`
+- `ka.exposition-control`
+- `ka.scene-function`
+- `ka.setup-and-payoff`
+- `ka.verbal-rhythm`

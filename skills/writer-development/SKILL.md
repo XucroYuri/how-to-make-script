@@ -37,8 +37,11 @@ If the writer's focus is on character or language, their learning path should ce
 
 ## References
 - `wp.writer-development-path`
-- `ka.writer-development-loop`
-- `ka.screenwriting-history-shift`
-- `ka.screenwriting-deliberate-practice`
-- `ka.archive-literacy`
 - `rb.learning-path`
+- `ka.archive-literacy`
+- `ka.cross-protocol-referral-edges`
+- `ka.rewrite-diagnosis`
+- `ka.scene-function`
+- `ka.screenwriting-deliberate-practice`
+- `ka.screenwriting-history-shift`
+- `ka.writer-development-loop`

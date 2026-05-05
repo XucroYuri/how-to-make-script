@@ -44,10 +44,15 @@ Structure serves character transformation. Ask at each major beat: "What has thi
 
 ## References
 - `wp.structure-beat-outline`
-- `ka.causality-chain`
-- `ka.pacing-rhythm`
-- `ka.structure-family-selection`
-- `ka.beat-carrier-selection`
-- `ka.dual-track-rhythm`
-- `ka.serial-arc-budgeting`
 - `rb.outline`
+- `ka.beat-carrier-selection`
+- `ka.causality-chain`
+- `ka.cross-protocol-referral-edges`
+- `ka.dual-track-rhythm`
+- `ka.medium-episode`
+- `ka.medium-feature-film`
+- `ka.medium-short-drama`
+- `ka.pacing-rhythm`
+- `ka.serial-arc-budgeting`
+- `ka.story-goal`
+- `ka.structure-family-selection`

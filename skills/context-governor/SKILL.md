@@ -45,8 +45,10 @@ Apply full loading discipline: lock route → choose mode → define mandatory b
 ## References
 - `wp.context-loading-plan`
 - `references/background-bundles.json`
-- `ka.bounded-context-loading`
-- `ka.reference-expansion-balance`
-- `ka.context-corrosion-signals`
-- `ka.story-memory-checkpoint`
 - `rb.context-loading-plan`
+- `ka.bounded-context-loading`
+- `ka.context-corrosion-signals`
+- `ka.cross-protocol-referral-edges`
+- `ka.reference-expansion-balance`
+- `ka.scenario-factorization`
+- `ka.story-memory-checkpoint`
