@@ -11,7 +11,8 @@
     "platform constraint"
   ],
   "output_contract": [
-    "commercial_script"
+    "commercial_script",
+    "branded_film_script"
   ],
   "preconditions": [
     "已知核心卖点或品牌任务"

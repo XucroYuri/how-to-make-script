@@ -510,6 +510,27 @@
     ]
   },
   {
+    "id": "fx.commercial-11",
+    "type": "example_fixture",
+    "query": "给这个手机品牌做一个品牌长片脚本，要偏纪录片风格。",
+    "intent": "design",
+    "medium": "branded_film",
+    "stage": "structure",
+    "output": "branded_film_script",
+    "constraints": {
+      "tone": "documentary"
+    },
+    "expected_route": {
+      "skill_id": "skill.commercial-script",
+      "protocol_id": "wp.commercial-script",
+      "rubric_id": "rb.commercial-script"
+    },
+    "key_checks": [
+      "brand should integrate into story organically",
+      "no explicit CTA required"
+    ]
+  },
+  {
     "id": "fx.interactive-01",
     "type": "example_fixture",
     "query": "把废土营地的互动游戏想法收敛成 premise。",
@@ -584,9 +605,9 @@
       "source_medium": "short_drama"
     },
     "expected_route": {
-      "skill_id": "skill.interactive-branching",
-      "protocol_id": "wp.interactive-branch-map",
-      "rubric_id": "rb.interactive-branch-map"
+      "skill_id": "skill.genre-adaptation",
+      "protocol_id": "wp.genre-adaptation",
+      "rubric_id": "rb.adaptation"
     },
     "key_checks": [
       "adaptation should create meaningful branches",
@@ -639,7 +660,7 @@
     "id": "fx.interactive-07",
     "type": "example_fixture",
     "query": "重写这个互动剧情地图，让选择后果更明显。",
-    "intent": "adapt",
+    "intent": "diagnose",
     "medium": "branching_interactive",
     "stage": "adaptation",
     "output": "interactive_branch_map",
@@ -1965,9 +1986,9 @@
       "target_genre": "interactive"
     },
     "expected_route": {
-      "skill_id": "skill.interactive-branching",
-      "protocol_id": "wp.interactive-branch-map",
-      "rubric_id": "rb.interactive-branch-map"
+      "skill_id": "skill.genre-adaptation",
+      "protocol_id": "wp.genre-adaptation",
+      "rubric_id": "rb.adaptation"
     },
     "notes": "Two conflicting media in one query. Should produce path_options or process sequentially, not merge both into one output.. also wants shortform commercial version — should produce path_options or process sequentially",
     "expected_behavior": "sequential_or_path_options"
@@ -2313,5 +2334,171 @@
     },
     "notes": "Code-switched query (EN + ZH mixed). Should route identically to a single-language equivalent — same skill, protocol, rubric. Should handle both languages fluently in response, matching whichever the user primarily uses.",
     "expected_behavior": "code_switched_routing_parity"
+  },
+  {
+    "id": "fx.edge-22",
+    "type": "edge_fixture",
+    "query": "我脑子一片空白，什么都想不出来。",
+    "intent": "discover",
+    "medium": "feature_film",
+    "stage": "ideation",
+    "output": "premise",
+    "constraints": {},
+    "expected_route": {
+      "skill_id": "skill.idea-discovery",
+      "protocol_id": "wp.idea-discovery",
+      "rubric_id": "rb.logline"
+    },
+    "notes": "Posture: certainty=lost, focus=none. Should soften checks, lead with invitation. Offer one small step — NOT a full artifact.",
+    "expected_behavior": "soft_invitation_with_one_step"
+  },
+  {
+    "id": "fx.edge-23",
+    "type": "edge_fixture",
+    "query": "刚才那个 premise 写得不错，但调子太轻松了——这是个悲剧。重写吧。",
+    "intent": "draft",
+    "medium": "feature_film",
+    "stage": "premise",
+    "output": "premise",
+    "constraints": {
+      "tone": "tragedy",
+      "creative_problem": "route_retention_with_constraint_delta"
+    },
+    "expected_route": {
+      "skill_id": "skill.logline-premise",
+      "protocol_id": "wp.logline-premise",
+      "rubric_id": "rb.logline"
+    },
+    "notes": "Multi-turn: should retain prior route (logline-premise), detect tone constraint delta, incrementally reload tone-related atoms only. Not restart from zero.",
+    "expected_behavior": "route_retention_with_constraint_delta"
+  },
+  {
+    "id": "fx.edge-24",
+    "type": "edge_fixture",
+    "query": "asdfghjkl qwertyuiop 1234567890",
+    "intent": "discover",
+    "medium": "feature_film",
+    "stage": "ideation",
+    "output": "premise",
+    "constraints": {},
+    "expected_route": {
+      "skill_id": "skill.idea-discovery",
+      "protocol_id": "wp.idea-discovery",
+      "rubric_id": "rb.logline"
+    },
+    "notes": "Nonsense input. Should say \"I need a bit more to go on\" — NOT generate any artifact.",
+    "expected_behavior": "no_artifact_generation"
+  },
+  {
+    "id": "fx.edge-25",
+    "type": "edge_fixture",
+    "query": "写个科幻爱情故事，但也要有恐怖元素。",
+    "intent": "design",
+    "medium": "feature_film",
+    "stage": "premise",
+    "output": "premise",
+    "constraints": {
+      "genre": "sci_fi"
+    },
+    "expected_route": {
+      "skill_id": "skill.logline-premise",
+      "protocol_id": "wp.logline-premise",
+      "rubric_id": "rb.logline"
+    },
+    "notes": "Three genres competing. Should flag ambiguity and ask ONE question about which genre is the primary engine, not silently pick one.",
+    "expected_behavior": "ask_genre_priority_question"
+  },
+  {
+    "id": "fx.edge-26",
+    "type": "edge_fixture",
+    "query": "三天之内给我120页剧本。",
+    "intent": "draft",
+    "medium": "feature_film",
+    "stage": "scene",
+    "output": "screenplay_draft",
+    "constraints": {
+      "creative_problem": "impossible_timeline"
+    },
+    "expected_route": {
+      "skill_id": "skill.scene-writing",
+      "protocol_id": "wp.scene-writing",
+      "rubric_id": "rb.screenplay-draft"
+    },
+    "notes": "Impossible timeline. Should flag constraint, offer practical path (beat sheet + first 10 pages). NOT silently generate a low-quality 120-page script.",
+    "expected_behavior": "flag_impossible_constraint_offer_practical"
+  },
+  {
+    "id": "fx.edge-27",
+    "type": "edge_fixture",
+    "query": "我也不确定——可能是个穿越故事，也可能是平行宇宙，说不定两者都有。你觉得呢？",
+    "intent": "discover",
+    "medium": "feature_film",
+    "stage": "ideation",
+    "output": "premise",
+    "constraints": {
+      "creative_problem": "time_travel_or_multiverse"
+    },
+    "expected_route": {
+      "skill_id": "skill.idea-discovery",
+      "protocol_id": "wp.idea-discovery",
+      "rubric_id": "rb.logline"
+    },
+    "notes": "Posture: source=exploratory, certainty=exploring. Should expand possibilities before constraining, offer path_options with tradeoffs.",
+    "expected_behavior": "expand_possibilities_with_tradeoffs"
+  },
+  {
+    "id": "fx.edge-28",
+    "type": "edge_fixture",
+    "query": "帮我写个东西。",
+    "intent": "discover",
+    "medium": "feature_film",
+    "stage": "ideation",
+    "output": "premise",
+    "constraints": {},
+    "expected_route": {
+      "skill_id": "skill.idea-discovery",
+      "protocol_id": "wp.idea-discovery",
+      "rubric_id": "rb.logline"
+    },
+    "notes": "Zero domain signal — '东西' is maximally vague, no indication this is a screenwriting request. Should NOT force-classify as screenwriting. Should ask '你需要我帮你写什么样的东西？' before committing to the screenwriting domain. Expected_route is a fallback only.",
+    "expected_behavior": "out_of_domain_or_deep_clarification"
+  },
+  {
+    "id": "fx.edge-29",
+    "type": "edge_fixture",
+    "query": "asdfghjkl 电影剧本 改写",
+    "intent": "adapt",
+    "medium": "feature_film",
+    "stage": "adaptation",
+    "output": "premise",
+    "constraints": {
+      "creative_problem": "noise_plus_partial_signal"
+    },
+    "expected_route": {
+      "skill_id": "skill.genre-adaptation",
+      "protocol_id": "wp.genre-adaptation",
+      "rubric_id": "rb.adaptation"
+    },
+    "notes": "Noise + partial signal: 'asdfghjkl' is garbage, but '电影剧本 改写' contains valid routing signals. Classifier should filter noise and route on '电影剧本 改写'. Should NOT hallucinate meaning from the noise or refuse entirely. Expected_route reflects noise-filtered signal.",
+    "expected_behavior": "noise_filtered_routing"
+  },
+  {
+    "id": "fx.edge-30",
+    "type": "edge_fixture",
+    "query": "根据诊断结果，重写这场戏。",
+    "intent": "draft",
+    "medium": "feature_film",
+    "stage": "scene",
+    "output": "scene_draft",
+    "constraints": {
+      "creative_problem": "diagnose_to_act_chain"
+    },
+    "expected_route": {
+      "skill_id": "skill.scene-writing",
+      "protocol_id": "wp.scene-writing",
+      "rubric_id": "rb.scene-draft"
+    },
+    "notes": "Diagnose → Act chain: user references prior diagnosis output as basis for rewrite. Per routing-policy.md: intent change (diagnose→draft) normally triggers full reload, but this is a special case — the diagnosis findings ARE locked constraints. Should carry forward failure pattern, root cause, and prioritized actions from the prior rewrite_report as implicit constraints into the scene_draft.",
+    "expected_behavior": "diagnosis_output_as_locked_constraint"
   }
 ]

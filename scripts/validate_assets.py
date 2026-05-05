@@ -107,7 +107,7 @@ def validate_repository(root: Path) -> Dict[str, Any]:
 
     for fixture in fixtures:
         route = fixture["expected_route"]
-        if "skill_id" not in route:
+        if not route or "skill_id" not in route:
             continue
         if route["skill_id"] not in skill_ids:
             errors.append(f"{relative_path(root, fixture['_path'])}: fixture uses unknown skill '{route['skill_id']}'")

@@ -158,5 +158,69 @@
       "commercial script should reflect audience need state",
       "handoff between insight and script should preserve audience constraints"
     ]
+  },
+  {
+    "id": "e2e.medium-change-interactive",
+    "name": "Feature Film to Interactive Game Medium Change",
+    "description": "Cross-medium chain: wuxia idea -> outline -> adapt to interactive game with branch map",
+    "steps": [
+      {
+        "step": 1,
+        "query": "我想写一个武侠故事，主角是一个被逐出师门的剑客",
+        "expected_route": {
+          "intent": "discover",
+          "medium": "feature_film",
+          "stage": "ideation",
+          "output": "premise",
+          "skill_id": "skill.idea-discovery",
+          "protocol_id": "wp.idea-discovery",
+          "rubric_id": "rb.logline"
+        },
+        "handoff": {
+          "locked_facts": ["genre = wuxia", "protagonist = exiled swordsman"],
+          "open_questions": ["specific stakes", "antagonist"]
+        }
+      },
+      {
+        "step": 2,
+        "query": "帮我写大纲",
+        "expected_route": {
+          "intent": "design",
+          "medium": "feature_film",
+          "stage": "outline",
+          "output": "outline",
+          "skill_id": "skill.structure-beat",
+          "protocol_id": "wp.structure-beat-outline",
+          "rubric_id": "rb.outline"
+        },
+        "handoff": {
+          "locked_facts": ["wuxia outline", "scene sequence", "emotional arc"],
+          "open_questions": ["interactive design viability"]
+        }
+      },
+      {
+        "step": 3,
+        "query": "改成互动游戏吧，帮我设计分支图",
+        "expected_route": {
+          "intent": "adapt",
+          "medium": "game_narrative",
+          "stage": "adaptation",
+          "output": "interactive_branch_map",
+          "skill_id": "skill.genre-adaptation",
+          "protocol_id": "wp.genre-adaptation",
+          "rubric_id": "rb.adaptation"
+        },
+        "handoff": {
+          "locked_facts": ["wuxia world", "exiled swordsman arc", "branching decision points"],
+          "open_questions": ["player agency model"]
+        }
+      }
+    ],
+    "key_checks": [
+      "medium change (feature_film -> game_narrative) should trigger route upgrade per routing-policy",
+      "character and world state should be preserved across medium change",
+      "protocol should handle the adaptation-specific output (interactive_branch_map)",
+      "step 3 should use the now-fixed wp.genre-adaptation protocol which lists interactive_branch_map in output_contract"
+    ]
   }
 ]

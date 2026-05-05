@@ -3,7 +3,7 @@
   "id": "rb.adaptation",
   "type": "evaluation_rubric",
   "title": "Adaptation Rubric",
-  "applies_to": ["premise", "treatment", "outline", "scene_draft"],
+  "applies_to": ["premise", "treatment", "outline", "scene_draft", "interactive_branch_map"],
   "dimensions": [
     {"name": "engine_preservation", "question": "原始核心引擎是否仍然成立，而不是只剩表面元素"},
     {"name": "target_promise_fit", "question": "目标类型或媒介承诺是否真的进入了结构、场景或表达层"},

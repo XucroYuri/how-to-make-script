@@ -19,6 +19,15 @@
       ]
     },
     {
+      "output": "branded_film_script",
+      "title_includes": "Branded Film Script",
+      "required_sections": [
+        {"heading": "Narrative Arc", "min_items": 3},
+        {"heading": "Key Sequences", "min_items": 4},
+        {"heading": "Brand Integration Points", "min_items": 2}
+      ]
+    },
+    {
       "output": "interactive_branch_map",
       "title_includes": "Interactive Branch Map",
       "required_sections": [
@@ -133,6 +142,41 @@
         {"heading": "Stability Classification", "min_items": 2},
         {"heading": "Callable Resources", "min_items": 2},
         {"heading": "Loading Boundaries", "min_items": 1}
+      ]
+    },
+    {
+      "output": "dialogue_polish",
+      "title_includes": "Dialogue Polish",
+      "required_sections": [
+        {"heading": "Target Lines", "min_items": 3},
+        {"heading": "Subtext Benchmarks", "min_items": 2},
+        {"heading": "Voice Adjustments", "min_items": 2},
+        {"heading": "Rhythm Notes", "min_items": 1}
+      ]
+    },
+    {
+      "output": "premise",
+      "title_includes": "Premise",
+      "required_sections": [
+        {"heading": "Core Concept", "min_items": 1},
+        {"heading": "Audience Promise", "min_items": 2},
+        {"heading": "Tone Pledge", "min_items": 2}
+      ]
+    },
+    {
+      "output": "logline",
+      "title_includes": "Logline",
+      "required_sections": [
+        {"heading": "Story Engine", "min_items": 1},
+        {"heading": "Stakes Statement", "min_items": 1}
+      ]
+    },
+    {
+      "output": "outline",
+      "title_includes": "Outline",
+      "required_sections": [
+        {"heading": "Scene Sequence", "min_items": 6},
+        {"heading": "Emotional Arc", "min_items": 2}
       ]
     }
   ]

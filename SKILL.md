@@ -146,9 +146,15 @@ When the request contains internal contradictions ("3D IMAX short film with no b
 
 When a conversation spans multiple turns:
 
-- **Keep the route in working memory.** If the user says "改一下开头" (fix the opening), reuse the previous route's skill/protocol/rubric.
-- **If constraints change** (e.g., "actually this should be a short film"), reload only what the new constraints require. Don't restart from zero.
-- **When in doubt**, confirm the route upgrade: "要我把这个改成短片格式吗？" (Should I adapt this to short film format?)
+- **Route retention**: When the user references prior work (e.g., "改一下开头" / fix the opening), lock the previous turn's skill_id, protocol_id, and rubric_id. Do NOT re-classify from scratch.
+- **Constraint delta detection**: Compare the new turn's explicit constraints against the previous turn's. Only reload atoms that the delta demands. Example: if only `tone` changed, reload tone-related craft atoms but keep structure/world/character atoms.
+- **Incremental reload**: When reloading, retain all atoms that still apply. Add only the new ones. Removed atoms should be explicitly logged (e.g., "Dropping ka.genre-comedy because tone constraint changed to tragedy").
+- **Upgrade vs replace**: If the user changes medium (e.g., "actually this should be a short film"), this is a route UPGRADE — new protocol + new atoms, but preserve character/world state. If they change intent (e.g., "actually I want to diagnose, not draft"), this is a route REPLACE — new protocol + new rubric + full reload.
+- **Implicit constraints from prior output**: The prior artifact ITSELF is a constraint. If the user says "keep the same characters but change the setting," the prior character names, traits, and relationships are implicit constraints that must be carried forward.
+- **3-turn example**:
+  - Turn 1: "写一个科幻长片的premise" → route: idea-discovery, output: premise
+  - Turn 2: "把这个改成电视剧" → Route UPGRADE: medium changes feature_film→episodic, reload medium atom, retain premise craft atoms, re-generate premise for episodic format
+  - Turn 3: "太黑暗了——调子再轻松点" → Constraint DELTA: tone constraint added, incrementally load ka.tone-writing-moves, retain route. No restart.
 
 ## Stop Conditions
 
@@ -194,6 +200,7 @@ Full descriptions in `references/supported-outputs.md`. Format contracts in `ref
 
 ### Commercial and short-form
 - `commercial_script`
+- `branded_film_script`
 
 ### Interactive narrative
 - `interactive_branch_map`
@@ -212,11 +219,11 @@ Full descriptions in `references/supported-outputs.md`. Format contracts in `ref
 - `pattern_reference_pack`
 
 ### Continuity and memory
-- `story_memory_checkpoint`
+- `story_memory_checkpoint`：支持增量更新，每次保存仅改变受影响的字段，合并策略为 delta patch 而非 full replace
 
 ### Style and visual language
 - `voice_style_guide`
-- `visual_language_pack`
+- `visual_language_pack`：支持将视觉风格转化为可拍摄镜头表（shot list），含镜头类型、构图逻辑、运动方向
 - `screen_to_video_brief`
 
 ### Team and collaboration
@@ -224,7 +231,7 @@ Full descriptions in `references/supported-outputs.md`. Format contracts in `ref
 - `expert_subagent_cast`
 
 ### Audience simulation
-- `audience_proxy_report`
+- `audience_proxy_report`：内置 5 种观众人格库，每种人格有独特的注意力分配模式与失效敏感点
 
 ## Quick Reference: Key Files
 

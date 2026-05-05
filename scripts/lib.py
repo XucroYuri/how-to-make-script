@@ -82,6 +82,26 @@ def collect_fixtures(root: Path) -> List[Dict[str, Any]]:
     return fixtures
 
 
+def collect_nl_routing_bench(root: Path) -> List[Dict[str, Any]]:
+    bench_path = root / ROOT_DIR_NAMES["examples"] / "agent" / "nl-routing-bench.json"
+    payload = load_json(bench_path)
+    entries: List[Dict[str, Any]] = []
+    for item in payload:
+        item["_path"] = str(bench_path)
+        entries.append(item)
+    return entries
+
+
+def collect_e2e_journeys(root: Path) -> List[Dict[str, Any]]:
+    journeys_path = root / ROOT_DIR_NAMES["examples"] / "agent" / "e2e-journeys.json"
+    payload = load_json(journeys_path)
+    journeys: List[Dict[str, Any]] = []
+    for item in payload:
+        item["_path"] = str(journeys_path)
+        journeys.append(item)
+    return journeys
+
+
 def load_router_matrix(root: Path) -> Dict[str, Any]:
     return load_json(root / ROOT_DIR_NAMES["references"] / "router-matrix.json")
 

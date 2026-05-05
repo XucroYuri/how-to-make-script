@@ -243,11 +243,14 @@ def check_semantic_consistency(root: Path) -> Dict[str, Any]:
                 errors.append(
                     f"examples/agent/fixtures.json: fixture {fixture['id']} uses unknown constraint key {key!r}"
                 )
-        rubric = rubric_map.get(fixture["expected_route"]["rubric_id"])
-        if rubric is not None and fixture["output"] not in set(rubric["applies_to"]):
+        expected = fixture.get("expected_route")
+        if not expected:
+            continue
+        rubric = rubric_map.get(expected["rubric_id"])
+        if rubric is not None and fixture.get("output") and fixture["output"] not in set(rubric["applies_to"]):
             errors.append(
                 "examples/agent/fixtures.json: "
-                f"fixture {fixture['id']} expects rubric {fixture['expected_route']['rubric_id']!r} "
+                f"fixture {fixture['id']} expects rubric {expected['rubric_id']!r} "
                 f"which does not apply to output {fixture['output']!r}"
             )
 

@@ -14,7 +14,8 @@
     "premise",
     "treatment",
     "outline",
-    "scene_draft"
+    "scene_draft",
+    "interactive_branch_map"
   ],
   "preconditions": [
     "已有可被改造的故事材料"
@@ -38,16 +39,20 @@
   ],
   "linked_atoms": [
     "ka.cross-protocol-referral-edges",
+    "ka.genre-action",
     "ka.genre-comedy",
+    "ka.genre-family",
+    "ka.genre-horror",
     "ka.genre-pack-factorization",
     "ka.genre-romance",
+    "ka.genre-satire",
     "ka.genre-thriller",
     "ka.medium-branching-interactive",
     "ka.medium-commercial",
     "ka.medium-feature-film"
   ],
   "budget_class": "L",
-  "mandatory_atom_count": 8,
+  "mandatory_atom_count": 12,
   "expansion_allowed": true
 }
 ---

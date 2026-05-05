@@ -3,7 +3,7 @@
   "id": "rb.commercial-script",
   "type": "evaluation_rubric",
   "title": "Commercial Script Rubric",
-  "applies_to": ["commercial_script"],
+  "applies_to": ["commercial_script", "branded_film_script"],
   "dimensions": [
     {"name": "message", "question": "核心信息是否单一明确"},
     {"name": "attention", "question": "开头是否具备停留力"},

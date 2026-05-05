@@ -67,4 +67,5 @@ When diagnosing pacing problems, consider rhythm across both event and emotional
 - `ka.rewrite-diagnosis`
 - `ka.scene-function`
 - `ka.setup-and-payoff`
+- `ka.act-two-diagnosis`
 - `ka.weak-opening-diagnosis`

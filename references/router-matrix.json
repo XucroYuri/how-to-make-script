@@ -14,7 +14,8 @@
         "branded_film",
         "shortform_video",
         "game_narrative",
-        "branching_interactive"
+        "branching_interactive",
+        "documentary"
       ],
       "stage": [
         "ideation"
@@ -66,7 +67,8 @@
         "feature_film",
         "episodic",
         "short_drama",
-        "animation"
+        "animation",
+        "documentary"
       ],
       "stage": [
         "premise"
@@ -94,7 +96,8 @@
         "feature_film",
         "episodic",
         "short_drama",
-        "animation"
+        "animation",
+        "documentary"
       ],
       "stage": [
         "character"
@@ -122,7 +125,8 @@
         "feature_film",
         "episodic",
         "short_drama",
-        "animation"
+        "animation",
+        "documentary"
       ],
       "stage": [
         "structure",
@@ -151,7 +155,8 @@
         "feature_film",
         "episodic",
         "short_drama",
-        "animation"
+        "animation",
+        "documentary"
       ],
       "stage": [
         "scene"
@@ -178,7 +183,8 @@
         "feature_film",
         "episodic",
         "short_drama",
-        "animation"
+        "animation",
+        "documentary"
       ],
       "stage": [
         "scene"
@@ -204,7 +210,8 @@
         "feature_film",
         "episodic",
         "short_drama",
-        "animation"
+        "animation",
+        "documentary"
       ],
       "stage": [
         "dialogue"
@@ -231,7 +238,8 @@
         "feature_film",
         "episodic",
         "short_drama",
-        "animation"
+        "animation",
+        "documentary"
       ],
       "stage": [
         "rewrite"
@@ -267,7 +275,8 @@
         "rewrite"
       ],
       "output": [
-        "commercial_script"
+        "commercial_script",
+        "branded_film_script"
       ],
       "constraint_signals": [
         "platform",
@@ -284,8 +293,7 @@
       "intent": [
         "design",
         "draft",
-        "diagnose",
-        "adapt"
+        "diagnose"
       ],
       "medium": [
         "game_narrative",
@@ -322,7 +330,8 @@
         "branded_film",
         "shortform_video",
         "game_narrative",
-        "branching_interactive"
+        "branching_interactive",
+        "documentary"
       ],
       "stage": [
         "adaptation"
@@ -331,7 +340,8 @@
         "premise",
         "treatment",
         "outline",
-        "scene_draft"
+        "scene_draft",
+        "interactive_branch_map"
       ],
       "constraint_signals": [
         "source_medium",
@@ -358,7 +368,8 @@
         "branded_film",
         "shortform_video",
         "game_narrative",
-        "branching_interactive"
+        "branching_interactive",
+        "documentary"
       ],
       "stage": [
         "premise",
@@ -395,7 +406,8 @@
         "branded_film",
         "shortform_video",
         "game_narrative",
-        "branching_interactive"
+        "branching_interactive",
+        "documentary"
       ],
       "stage": [
         "premise",
@@ -433,7 +445,8 @@
         "branded_film",
         "shortform_video",
         "game_narrative",
-        "branching_interactive"
+        "branching_interactive",
+        "documentary"
       ],
       "stage": [
         "ideation",
@@ -468,7 +481,8 @@
         "branded_film",
         "shortform_video",
         "game_narrative",
-        "branching_interactive"
+        "branching_interactive",
+        "documentary"
       ],
       "stage": [
         "ideation",
@@ -504,7 +518,8 @@
         "branded_film",
         "shortform_video",
         "game_narrative",
-        "branching_interactive"
+        "branching_interactive",
+        "documentary"
       ],
       "stage": [
         "structure",
@@ -540,7 +555,8 @@
         "branded_film",
         "shortform_video",
         "game_narrative",
-        "branching_interactive"
+        "branching_interactive",
+        "documentary"
       ],
       "stage": [
         "premise",
@@ -578,7 +594,8 @@
         "branded_film",
         "shortform_video",
         "game_narrative",
-        "branching_interactive"
+        "branching_interactive",
+        "documentary"
       ],
       "stage": [
         "ideation",
@@ -618,7 +635,8 @@
         "branded_film",
         "shortform_video",
         "game_narrative",
-        "branching_interactive"
+        "branching_interactive",
+        "documentary"
       ],
       "stage": [
         "character",
@@ -656,7 +674,8 @@
         "branded_film",
         "shortform_video",
         "game_narrative",
-        "branching_interactive"
+        "branching_interactive",
+        "documentary"
       ],
       "stage": [
         "scene",
@@ -689,7 +708,8 @@
         "animation",
         "commercial",
         "branded_film",
-        "shortform_video"
+        "shortform_video",
+        "documentary"
       ],
       "stage": [
         "scene",
@@ -727,7 +747,8 @@
         "branded_film",
         "shortform_video",
         "game_narrative",
-        "branching_interactive"
+        "branching_interactive",
+        "documentary"
       ],
       "stage": [
         "ideation",
@@ -770,7 +791,8 @@
         "branded_film",
         "shortform_video",
         "game_narrative",
-        "branching_interactive"
+        "branching_interactive",
+        "documentary"
       ],
       "stage": [
         "ideation",
@@ -811,7 +833,8 @@
         "short_drama",
         "animation",
         "game_narrative",
-        "branching_interactive"
+        "branching_interactive",
+        "documentary"
       ],
       "stage": [
         "ideation",
@@ -853,7 +876,8 @@
         "branded_film",
         "shortform_video",
         "game_narrative",
-        "branching_interactive"
+        "branching_interactive",
+        "documentary"
       ],
       "stage": [
         "ideation",
@@ -895,7 +919,8 @@
         "branded_film",
         "shortform_video",
         "game_narrative",
-        "branching_interactive"
+        "branching_interactive",
+        "documentary"
       ],
       "stage": [
         "premise",
@@ -938,7 +963,8 @@
         "branded_film",
         "shortform_video",
         "game_narrative",
-        "branching_interactive"
+        "branching_interactive",
+        "documentary"
       ],
       "stage": [
         "scene",
@@ -973,7 +999,8 @@
         "branded_film",
         "shortform_video",
         "game_narrative",
-        "branching_interactive"
+        "branching_interactive",
+        "documentary"
       ],
       "stage": [
         "rewrite"

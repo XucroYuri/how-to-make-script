@@ -48,6 +48,169 @@
         "Do not expand beyond this bundle unless the next asset changes the next decision materially.",
         "If the user's real need becomes a concrete artifact, exit the bundle and route to the narrower workflow."
       ]
+    },
+    {
+      "id": "bg.chinese-genre-foundations",
+      "title": "Chinese Genre Foundations",
+      "summary": "Background bundle for Chinese genre screenwriting: suspense (悬疑), wuxia (武侠), thriller (惊悚), and their craft intersections.",
+      "scope_tags": [
+        "chinese_genre",
+        "suspense",
+        "wuxia",
+        "genre_craft",
+        "eastern_narrative"
+      ],
+      "docs": ["docs/how-to-create-a-screenplay-research-zh.md"],
+      "linked_atoms": [
+        "ka.genre-suspense",
+        "ka.genre-wuxia",
+        "ka.genre-thriller",
+        "ka.causality-chain",
+        "ka.exposition-control",
+        "ka.conflict-pressure",
+        "ka.structure-family-selection"
+      ],
+      "primary_outputs": ["premise", "outline", "beat_sheet"],
+      "preferred_loading_modes": ["focus_pack", "teaching_pack"],
+      "constraint_families": ["genre", "language_register"],
+      "when_to_load": [
+        "User requests Chinese genre screenwriting (悬疑, 武侠, 惊悚) and needs genre-specific craft guidance.",
+        "User asks about differences between Chinese genre conventions and Western genre conventions.",
+        "A genre adaptation or cross-cultural rewrite requires Chinese genre knowledge."
+      ],
+      "stop_rules": [
+        "Do not load for non-Chinese genre requests.",
+        "Do not expand beyond the three genre atoms unless the user explicitly requests broader genre survey.",
+        "If the user's real need is a concrete artifact, exit the bundle and route to the narrower workflow."
+      ]
+    },
+    {
+      "id": "bg.shortform-platform-production",
+      "title": "Shortform Platform Production",
+      "summary": "Production background for shortform video scripts: platform-specific constraints (Douyin, Reels/TikTok), hook strategies, and format adaptation.",
+      "scope_tags": [
+        "shortform_video",
+        "douyin",
+        "reels",
+        "platform_production",
+        "hook_design"
+      ],
+      "docs": ["docs/screenplay-to-video-bridge.md"],
+      "linked_atoms": [
+        "ka.medium-shortform-video",
+        "ka.platform-douyin",
+        "ka.platform-reels",
+        "ka.medium-commercial",
+        "ka.pacing-rhythm"
+      ],
+      "primary_outputs": ["commercial_script", "branded_film_script", "scene_draft"],
+      "preferred_loading_modes": ["focus_pack", "compare_pack"],
+      "constraint_families": ["platform", "duration", "format"],
+      "when_to_load": [
+        "User requests shortform video scripts for specific platforms (抖音, Reels, TikTok).",
+        "A commercial script needs platform-specific hook and format optimization.",
+        "User is adapting longform content to shortform platform format."
+      ],
+      "stop_rules": [
+        "Do not load for non-shortform requests.",
+        "Do not load all platform atoms if only one platform is targeted.",
+        "Stop after platform-specific atoms; do not expand to full commercial workflow unless needed."
+      ]
+    },
+    {
+      "id": "bg.adaptation-cross-medium",
+      "title": "Cross-Medium Adaptation",
+      "summary": "Adaptation strategy bundle: cross-medium transformation (film\u2194game\u2194interactive\u2194documentary), engine preservation, and genre adaptation techniques.",
+      "scope_tags": [
+        "adaptation",
+        "cross_medium",
+        "engine_preservation",
+        "genre_adaptation",
+        "interactive"
+      ],
+      "docs": ["docs/how-to-create-a-screenplay-research.md"],
+      "linked_atoms": [
+        "ka.medium-documentary",
+        "ka.causality-chain",
+        "ka.structure-family-selection",
+        "ka.exposition-control"
+      ],
+      "primary_outputs": ["premise", "treatment", "outline", "interactive_branch_map"],
+      "preferred_loading_modes": ["focus_pack", "compare_pack"],
+      "constraint_families": ["source_medium", "genre", "tone"],
+      "when_to_load": [
+        "User requests adaptation from one medium to another (film\u2192game, game\u2192interactive, etc.).",
+        "User asks how to preserve core story engine across medium boundaries.",
+        "A documentary or interactive adaptation requires specific medium constraint knowledge."
+      ],
+      "stop_rules": [
+        "Do not load for same-medium rewrites or polish requests.",
+        "Do not expand to full genre survey unless the user requests multi-genre comparison.",
+        "If adaptation direction is unclear, ask clarifying question before loading."
+      ]
+    },
+    {
+      "id": "bg.rewrite-systematic",
+      "title": "Systematic Rewrite Toolkit",
+      "summary": "Rewrite and polish toolkit: diagnosis workflows, tone-to-writing-moves mapping, rubrics for rewrite/quality gate, and incremental improvement strategies.",
+      "scope_tags": [
+        "rewrite",
+        "polish",
+        "diagnosis",
+        "tone_craft",
+        "quality_gate"
+      ],
+      "docs": ["docs/adaptive-quality-checking.md"],
+      "linked_atoms": [
+        "ka.tone-writing-moves",
+        "ka.pacing-rhythm",
+        "ka.exposition-control",
+        "ka.dialogue-subtext"
+      ],
+      "primary_outputs": ["rewrite_report", "dialogue_polish", "quality_gate_report"],
+      "preferred_loading_modes": ["focus_pack", "compare_pack"],
+      "constraint_families": ["tone", "failure_layer", "format"],
+      "when_to_load": [
+        "User requests rewrite, polish, or diagnosis of existing script pages.",
+        "User says dialogue feels flat, pacing is off, or tone is inconsistent.",
+        "A quality gate check or systematic rewrite requires structured diagnosis tools."
+      ],
+      "stop_rules": [
+        "Do not load for first-draft generation requests.",
+        "Do not expand to full craft survey; limit to tone + pacing + exposition + dialogue subtext.",
+        "If rewrite scope is unclear, narrow to one dimension first."
+      ]
+    },
+    {
+      "id": "bg.team-collaboration",
+      "title": "Team Collaboration & Multi-Agent Workflows",
+      "summary": "Multi-agent and team collaboration workflows: expert subagent casting, team workflow design, story memory checkpoints for cross-agent handoff.",
+      "scope_tags": [
+        "team_collaboration",
+        "multi_agent",
+        "checkpoint",
+        "subagent",
+        "orchestration"
+      ],
+      "docs": ["docs/multi-agent-screenplay-architecture.md"],
+      "linked_atoms": [
+        "ka.screenplay-lens-stacking",
+        "ka.script-as-coordination-artifact",
+        "ka.feedback-subjectivity-management"
+      ],
+      "primary_outputs": ["team_workflow_blueprint", "expert_subagent_cast", "story_memory_checkpoint"],
+      "preferred_loading_modes": ["focus_pack", "teaching_pack"],
+      "constraint_families": ["creative_problem", "format"],
+      "when_to_load": [
+        "User asks about multi-agent screenwriting, writer's room simulation, or team collaboration design.",
+        "A project requires checkpoint-based continuity across multiple agents or sessions.",
+        "User wants to design expert subagent dispatch for complex screenplay projects."
+      ],
+      "stop_rules": [
+        "Do not load for single-artifact, single-agent generation requests.",
+        "Do not expand to full team topology unless the user explicitly requests team design.",
+        "If the user's real need is a single artifact, use the narrowest workflow."
+      ]
     }
   ]
 }

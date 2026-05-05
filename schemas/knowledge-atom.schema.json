@@ -27,7 +27,7 @@
       "minItems": 1,
       "items": {
         "type": "string",
-        "enum": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive"]
+        "enum": ["feature_film", "episodic", "short_drama", "animation", "commercial", "branded_film", "shortform_video", "game_narrative", "branching_interactive", "documentary"]
       }
     },
     "stages": {

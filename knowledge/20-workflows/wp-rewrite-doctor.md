@@ -42,10 +42,11 @@
     "ka.rewrite-diagnosis",
     "ka.scene-function",
     "ka.setup-and-payoff",
+    "ka.act-two-diagnosis",
     "ka.weak-opening-diagnosis"
   ],
   "budget_class": "L",
-  "mandatory_atom_count": 10,
+  "mandatory_atom_count": 11,
   "expansion_allowed": true
 }
 ---

@@ -14,7 +14,8 @@ Use this skill when the script must sell, persuade, or create a branded memory.
 4. If the brief hinges on tone, define the brand register before writing copy.
 
 ## Output Contract
-- `commercial_script`: a short, conversion-aware script for ad, branded film, or shortform use.
+- `commercial_script`: a short, conversion-aware script for ads, CTV, and hard-sell commercial use. Requires CTA.
+- `branded_film_script`: a narrative-first brand story script for branded films and documentary-style brand content. No CTA required — brand integrates through story.
 - Keep the message singular unless the brief explicitly calls for a message stack.
 - Optimize for recall, platform fit, and a believable action prompt.
 - Premium or trust-heavy tone should be grounded in lived moments, not luxury filler language.

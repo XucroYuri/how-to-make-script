@@ -37,6 +37,16 @@
 - 文档必须让核心信息、执行流程、行动呼声三部分各自独立可识别，不能互相淹没。
 - 机器检查要求：`Core Message` 最少 3 条，`Shot Flow` 最少 4 条，`CTA` 最少 1 条。
 
+### `branded_film_script`
+
+- H1 标题必须包含 `Branded Film Script`。
+- 必填 H2 章节：
+  - `Narrative Arc`（叙事弧线）
+  - `Key Sequences`（关键序列）
+  - `Brand Integration Points`（品牌融合点）
+- 品牌价值必须进入角色冲突或叙事情境，而非后贴标签。允许更强的情感与美学，但保持品牌方向。
+- 机器检查要求：`Narrative Arc` 最少 3 条，`Key Sequences` 最少 4 条，`Brand Integration Points` 最少 2 条。
+
 ### `interactive_branch_map`
 
 - H1 标题必须包含 `Interactive Branch Map`。
@@ -167,6 +177,45 @@
 - Stability Classification 必须区分稳定发现、局部经验、历史条件和开放争议，不把局部经验包装成普适结论。
 - Callable Resources 必须列出可调用的 atom、source map 和后续 route，不能只做阅读摘要。
 - 机器检查要求：`Research Lenses` 最少 3 条，`Stability Classification` 最少 2 条，`Callable Resources` 最少 2 条，`Loading Boundaries` 最少 1 条。
+
+### `dialogue_polish`
+
+- H1 标题必须包含 `Dialogue Polish`。
+- 必填 H2 章节：
+  - `Target Lines`（目标台词）
+  - `Subtext Benchmarks`（潜台词基准）
+  - `Voice Adjustments`（声音调整）
+  - `Rhythm Notes`（节奏注释）
+- 文档必须暴露每句台词的表面意思与实际意思的差异，以及声音分离是否可追踪。
+- 机器检查要求：`Target Lines` 最少 3 条，`Subtext Benchmarks` 最少 2 条，`Voice Adjustments` 最少 2 条，`Rhythm Notes` 最少 1 条。
+
+### `premise`
+
+- H1 标题必须包含 `Premise`。
+- 必填 H2 章节：
+  - `Core Concept`（核心概念）
+  - `Audience Promise`（观众承诺）
+  - `Tone Pledge`（调性承诺）
+- 文档必须说清"给谁看"和"调性承诺"，比 logline 多氛围感和观众指向。
+- 机器检查要求：`Core Concept` 最少 1 条，`Audience Promise` 最少 2 条，`Tone Pledge` 最少 2 条。
+
+### `logline`
+
+- H1 标题必须包含 `Logline`。
+- 必填 H2 章节：
+  - `Story Engine`（故事引擎）
+  - `Stakes Statement`（利害陈述）
+- 文档必须在一句话内暴露主角、目标、障碍与利害关系。
+- 机器检查要求：`Story Engine` 最少 1 条，`Stakes Statement` 最少 1 条。
+
+### `outline`
+
+- H1 标题必须包含 `Outline`。
+- 必填 H2 章节：
+  - `Scene Sequence`（场景序列）
+  - `Emotional Arc`（情感弧线）
+- 文档必须按时间顺序列出每个场景的目的与内容要点。
+- 机器检查要求：`Scene Sequence` 最少 6 条，`Emotional Arc` 最少 2 条。
 
 ## 范围说明
 

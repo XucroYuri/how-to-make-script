@@ -29,6 +29,7 @@
 - `shortform_video`
 - `game_narrative`
 - `branching_interactive`
+- `documentary`
 
 ## Outputs
 - `logline`
@@ -44,6 +45,7 @@
 - `rewrite_report`
 - `quality_gate_report`
 - `commercial_script`
+- `branded_film_script`
 - `interactive_branch_map`
 - `audience_fit_note`
 - `development_brief`

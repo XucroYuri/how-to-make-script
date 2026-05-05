@@ -1,0 +1,6 @@
+{
+  "skill_id": "skill.rewrite-doctor",
+  "protocol_id": "wp.rewrite-doctor",
+  "rubric_id": "rb.rewrite-report",
+  "output": "rewrite_report"
+}

@@ -18,8 +18,13 @@ class GoldenArtifactFormatTest(unittest.TestCase):
             sorted(report["coverage"]["outputs"]),
             [
                 "beat_sheet",
+                "branded_film_script",
                 "commercial_script",
+                "dialogue_polish",
                 "interactive_branch_map",
+                "outline",
+                "premise",
+                "rewrite_report",
                 "scene_draft",
                 "screenplay_draft",
             ],
@@ -27,11 +32,16 @@ class GoldenArtifactFormatTest(unittest.TestCase):
         self.assertEqual(
             sorted(report["coverage"]["examples"]),
             [
+                "branded-film-script",
                 "commercial-launch",
+                "dialogue-polish",
+                "documentary-premise",
                 "feature-drama",
                 "feature-scene",
                 "feature-screenplay",
                 "interactive-quest",
+                "rewrite-report",
+                "suspense-outline",
             ],
         )
 

@@ -25,7 +25,8 @@
       "premise",
       "treatment",
       "outline",
-      "scene_draft"
+      "scene_draft",
+      "interactive_branch_map"
     ]
   },
   "protocol_id": "wp.genre-adaptation",
@@ -34,9 +35,13 @@
   ],
   "linked_atoms": [
     "ka.cross-protocol-referral-edges",
+    "ka.genre-action",
     "ka.genre-comedy",
+    "ka.genre-family",
+    "ka.genre-horror",
     "ka.genre-pack-factorization",
     "ka.genre-romance",
+    "ka.genre-satire",
     "ka.genre-thriller",
     "ka.medium-branching-interactive",
     "ka.medium-commercial",

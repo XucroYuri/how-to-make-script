@@ -1,28 +1,74 @@
 {
   "type": "object",
-  "required": ["id", "type", "query", "intent", "medium", "stage", "output", "constraints", "expected_route"],
+  "required": [
+    "id",
+    "type",
+    "query",
+    "intent",
+    "medium",
+    "stage",
+    "output",
+    "constraints",
+    "expected_route"
+  ],
   "properties": {
-    "id": {"type": "string"},
-    "type": {"enum": ["example_fixture", "edge_fixture"]},
-    "query": {"type": "string"},
-    "intent": {"type": "string"},
-    "medium": {"type": "string"},
-    "stage": {"type": "string"},
-    "output": {"type": "string"},
-    "constraints": {"type": "object"},
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "example_fixture",
+        "edge_fixture"
+      ]
+    },
+    "query": {
+      "type": "string"
+    },
+    "intent": {
+      "type": "string"
+    },
+    "medium": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "string"
+    },
+    "output": {
+      "type": "string"
+    },
+    "constraints": {
+      "type": "object"
+    },
     "expected_route": {
       "type": "object",
-      "required": ["skill_id", "protocol_id", "rubric_id"],
+      "required": [
+        "skill_id",
+        "protocol_id",
+        "rubric_id"
+      ],
       "properties": {
-        "skill_id": {"type": "string"},
-        "protocol_id": {"type": "string"},
-        "rubric_id": {"type": "string"}
+        "skill_id": {
+          "type": "string"
+        },
+        "protocol_id": {
+          "type": "string"
+        },
+        "rubric_id": {
+          "type": "string"
+        }
       }
     },
-    "notes": {"type": "string"},
-    "expected_behavior": {"type": "string"},
-    "key_checks": {"type": "array", "items": {"type": "string"}}
+    "notes": {
+      "type": "string"
+    },
+    "expected_behavior": {
+      "type": "string"
+    },
+    "key_checks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
   }
 }
-
-

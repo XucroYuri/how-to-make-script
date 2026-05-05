@@ -22,7 +22,8 @@
       "rewrite"
     ],
     "outputs": [
-      "commercial_script"
+      "commercial_script",
+      "branded_film_script"
     ]
   },
   "protocol_id": "wp.commercial-script",
