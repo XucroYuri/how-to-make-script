@@ -25,7 +25,8 @@
   "protocol_id": "wp.scene-writing",
   "rubric_ids": [
     "rb.scene-draft",
-    "rb.screenplay-draft"
+    "rb.screenplay-draft",
+    "rb.subtractive-pass"
   ],
   "linked_atoms": [
     "ka.scene-function",

@@ -11,7 +11,7 @@
     "outputs": ["context_loading_plan", "session_execution_plan"]
   },
   "protocol_id": "wp.context-loading-plan",
-  "rubric_ids": ["rb.context-loading-plan"],
+  "rubric_ids": ["rb.context-loading-plan", "rb.session-execution-plan"],
   "default_loading_mode": "focus_pack",
   "linked_atoms": ["ka.bounded-context-loading", "ka.reference-expansion-balance", "ka.context-corrosion-signals", "ka.scenario-factorization", "ka.story-memory-checkpoint", "ka.creative-posture-certainty", "ka.cross-protocol-referral-edges"],
   "adjunct_bundles": {},

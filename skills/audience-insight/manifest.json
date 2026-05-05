@@ -51,5 +51,6 @@
   "fallback_behavior": "If the audience is underspecified, infer one primary segment and one adjacent segment, then report confidence and risk.",
   "default_loading_mode": "focus_pack",
   "adjunct_bundles": {},
-  "fallback_to_skill_id": null
+  "fallback_to_skill_id": null,
+  "notes": "Dual-protocol skill: protocol_id=wp.audience-fit-note for audience_fit_note output; router additionally maps audience_proxy_report output via wp.audience-proxy-review. linked_atoms is the union of both protocols' requirements."
 }
