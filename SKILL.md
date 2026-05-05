@@ -101,6 +101,43 @@ Specialized lenses load **only when they actually change the answer:**
 | Quality gate lenses | Explicit quality/audit request — NOT every generation |
 | Audience proxy | Explicit audience simulation request |
 
+## When Routing Fails
+
+Not every input can be routed. When the classification step can't produce a clear route, don't guess.
+
+### Empty or minimal input
+
+When the user says nothing meaningful ("好", "继续", "嗯"):
+
+1. **It might be a continuation** — check if there's context from the previous turn. If yes, reuse the last route.
+2. **If truly ambiguous** — don't route. Say: "I need a bit more to go on. What kind of story are you working on, or what stage are you at?"
+
+For single-word or empty inputs that can't be linked to prior context, default to offering `path_options` or a single clarifying question, never to generating an artifact.
+
+### No dimensions resolved
+
+When the user says something like "帮我写个剧本" (write me a script) with no medium, stage, output, or genre signals:
+
+1. **Don't guess all four dimensions at once.** Each unknown dimension multiplies the risk of wrong output.
+2. **Ask ONE question** — the one that resolves the most dimensions. In most cases: "电影、剧集、还是短视频？" (Feature film, series, or short video?). This single answer gives you medium, which narrows everything else.
+3. **If the user can't answer**, offer `learning_path` or `research_background_map` as gentle entry points. These don't require precise routing and give the user orientation.
+
+### Contradictory constraints
+
+When the request contains internal contradictions ("3D IMAX short film with no budget limit — and also a game version"):
+
+1. **Detect, don't silently resolve.** Flag the contradiction openly: "短片的规模和游戏版的互动复杂度对故事结构有完全不同的要求 — 你想先做哪一个？" (A short film's scale and a game's interactive complexity need completely different story structures — which do you want first?)
+2. **One output at a time.** Don't try to produce both. Pick the one the user clarifies, or if they insist on both, produce them sequentially with a `story_memory_checkpoint` in between.
+3. **For impossible time/budget constraints** (e.g., "120-page script in 3 days"): acknowledge the constraint, then offer the practical path — "I can draft the beat sheet and first 10 pages now. That gives you enough to assess the direction."
+
+### Multi-turn routing recovery
+
+When a conversation spans multiple turns:
+
+- **Keep the route in working memory.** If the user says "改一下开头" (fix the opening), reuse the previous route's skill/protocol/rubric.
+- **If constraints change** (e.g., "actually this should be a short film"), reload only what the new constraints require. Don't restart from zero.
+- **When in doubt**, confirm the route upgrade: "要我把这个改成短片格式吗？" (Should I adapt this to short film format?)
+
 ## Stop Conditions
 
 Stop expanding context and start generating when any of these are true:
