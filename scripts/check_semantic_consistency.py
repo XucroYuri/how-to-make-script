@@ -19,7 +19,7 @@ SUBSKILL_RE = re.compile(r"^- \[`([^`]+)`\]\(([^)]+)\)", re.MULTILINE)
 
 def parse_root_outputs(skill_text: str) -> Set[str]:
     # Support old, transitional, and current output section headers
-    for header in ("## Default Output Contracts", "## The Deliverables I Can Produce", "## Deliverables (29 Output Contracts)"):
+    for header in ("## Default Output Contracts", "## The Deliverables I Can Produce", "## Deliverables (29 Output Contracts)", "## 我能帮你做什么"):
         try:
             start = skill_text.index(header)
             break
