@@ -58,6 +58,12 @@ def check_routes(root: Path) -> Dict[str, Any]:
     errors: List[str] = []
 
     for fixture in fixtures:
+        # Edge fixtures may not have all routing dimensions; skip route matching
+        if fixture.get("type") == "edge_fixture" and not all(
+            fixture.get(k) for k in ("intent", "medium", "stage", "output")
+        ):
+            continue
+
         matches = [route for route in router_matrix["routes"] if match_route(register, route, fixture)]
         if not matches:
             errors.append(f"{fixture['id']}: no route matched")
@@ -81,7 +87,11 @@ def check_routes(root: Path) -> Dict[str, Any]:
         else:
             match = matches[0]
         expected = fixture["expected_route"]
+        if not expected:
+            continue
         for key in ("skill_id", "protocol_id", "rubric_id"):
+            if key not in expected:
+                continue
             if match[key] != expected[key]:
                 errors.append(
                     f"{fixture['id']}: expected {key}={expected[key]!r}, got {match[key]!r}"

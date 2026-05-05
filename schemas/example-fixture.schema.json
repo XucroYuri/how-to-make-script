@@ -1,20 +1,9 @@
 {
   "type": "object",
-  "required": [
-    "id",
-    "type",
-    "query",
-    "intent",
-    "medium",
-    "stage",
-    "output",
-    "constraints",
-    "expected_route",
-    "key_checks"
-  ],
+  "required": ["id", "type", "query", "intent", "medium", "stage", "output", "constraints", "expected_route"],
   "properties": {
     "id": {"type": "string"},
-    "type": {"const": "example_fixture"},
+    "type": {"enum": ["example_fixture", "edge_fixture"]},
     "query": {"type": "string"},
     "intent": {"type": "string"},
     "medium": {"type": "string"},
@@ -30,7 +19,10 @@
         "rubric_id": {"type": "string"}
       }
     },
-    "key_checks": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+    "notes": {"type": "string"},
+    "expected_behavior": {"type": "string"},
+    "key_checks": {"type": "array", "items": {"type": "string"}}
   }
 }
+
 

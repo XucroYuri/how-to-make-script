@@ -1935,5 +1935,183 @@
       "remaining content must maintain narrative continuity",
       "every surviving line should pass the 'if I could remove it I would' test"
     ]
+  },
+  {
+    "id": "fx.edge-01",
+    "type": "edge_fixture",
+    "query": "帮我写个剧本。",
+    "intent": "discover",
+    "medium": "feature_film",
+    "stage": "ideation",
+    "output": "premise",
+    "constraints": {},
+    "expected_route": {
+      "skill_id": "skill.idea-discovery",
+      "protocol_id": "wp.idea-discovery",
+      "rubric_id": "rb.logline"
+    },
+    "notes": "Fully ambiguous query. Should ask ONE clarifying question (medium) before routing, or fallback to idea-discovery with generic narrative default.",
+    "expected_behavior": "ask_clarification_or_fallback"
+  },
+  {
+    "id": "fx.edge-02",
+    "type": "edge_fixture",
+    "query": "把这个大纲改成互动电影，同时也给抖音写个30秒广告版。",
+    "intent": "adapt",
+    "medium": "branching_interactive",
+    "stage": "adaptation",
+    "output": "interactive_branch_map",
+    "constraints": {
+      "target_genre": "interactive"
+    },
+    "expected_route": {
+      "skill_id": "skill.interactive-branching",
+      "protocol_id": "wp.interactive-branch-map",
+      "rubric_id": "rb.interactive-branch-map"
+    },
+    "notes": "Two conflicting media in one query. Should produce path_options or process sequentially, not merge both into one output.. also wants shortform commercial version — should produce path_options or process sequentially",
+    "expected_behavior": "sequential_or_path_options"
+  },
+  {
+    "id": "fx.edge-03",
+    "type": "edge_fixture",
+    "query": "好",
+    "intent": "discover",
+    "medium": "feature_film",
+    "stage": "ideation",
+    "output": "premise",
+    "constraints": {},
+    "expected_route": {
+      "skill_id": "skill.idea-discovery",
+      "protocol_id": "wp.idea-discovery",
+      "rubric_id": "rb.logline"
+    },
+    "notes": "Empty/minimal input. Should check prior turn for context; if none, ask 'I need more to go on. What are you working on?'",
+    "expected_behavior": "context_recovery_or_clarify"
+  },
+  {
+    "id": "fx.edge-04",
+    "type": "edge_fixture",
+    "query": "把这首诗改写成电影剧本：'春天，十个海子全部复活'",
+    "intent": "adapt",
+    "medium": "feature_film",
+    "stage": "adaptation",
+    "output": "treatment",
+    "constraints": {
+      "source_medium": "poem"
+    },
+    "expected_route": {
+      "skill_id": "skill.genre-adaptation",
+      "protocol_id": "wp.genre-adaptation",
+      "rubric_id": "rb.adaptation"
+    },
+    "notes": "Poetry source — needs premise extraction before adaptation. Genre-adaptation protocol should flag that poem has no narrative engine, extract emotional/dramatic anchors first.",
+    "expected_behavior": "premise_extraction_first"
+  },
+  {
+    "id": "fx.edge-05",
+    "type": "edge_fixture",
+    "query": "三天之内帮我写完一部120页的电影剧本，明天就要交",
+    "intent": "draft",
+    "medium": "feature_film",
+    "stage": "scene",
+    "output": "scene_draft",
+    "constraints": {},
+    "expected_route": {
+      "skill_id": "skill.scene-writing",
+      "protocol_id": "wp.scene-writing",
+      "rubric_id": "rb.scene-draft"
+    },
+    "notes": "Impossible time constraint. Should acknowledge constraint honestly and offer practical path: beat sheet + first 10 pages, enough to assess direction.. Impossible time constraint (3 days, 120 pages). Should acknowledge honestly and offer practical path.",
+    "expected_behavior": "constraint_feasibility_warning"
+  },
+  {
+    "id": "fx.edge-06",
+    "type": "edge_fixture",
+    "query": "我是新编剧，不知道从哪里开始。动画、电影、网剧都想试试。",
+    "intent": "discover",
+    "medium": "feature_film",
+    "stage": "ideation",
+    "output": "learning_path",
+    "constraints": {
+      "pain": "getting_started"
+    },
+    "expected_route": {
+      "skill_id": "skill.writer-development",
+      "protocol_id": "wp.writer-development-path",
+      "rubric_id": "rb.learning-path"
+    },
+    "notes": "New writer, lost certainty, multi-medium interest. Should offer learning_path with structured approach rather than forcing one medium.. New writer, lost certainty, multi-medium interest",
+    "expected_behavior": "teaching_path_over_generation"
+  },
+  {
+    "id": "fx.edge-07",
+    "type": "edge_fixture",
+    "query": "帮我把这个故事做大一点。",
+    "intent": "design",
+    "medium": "feature_film",
+    "stage": "premise",
+    "output": "path_options",
+    "constraints": {},
+    "expected_route": {
+      "skill_id": "skill.path-exploration",
+      "protocol_id": "wp.path-options",
+      "rubric_id": "rb.path-options"
+    },
+    "notes": "Scope expansion (not reduction). Should NOT route to scope_correction. Should offer expansion paths via path_options or route to next writing stage.. Scope expansion (not reduction). Should NOT route to scope_correction.",
+    "expected_behavior": "expansion_not_scope_correction"
+  },
+  {
+    "id": "fx.edge-08",
+    "type": "edge_fixture",
+    "query": "我的剧本节奏太慢了，帮我看看到底是结构问题还是单场戏的问题。",
+    "intent": "diagnose",
+    "medium": "feature_film",
+    "stage": "rewrite",
+    "output": "rewrite_report",
+    "constraints": {
+      "pain": "pacing"
+    },
+    "expected_route": {
+      "skill_id": "skill.rewrite-doctor",
+      "protocol_id": "wp.rewrite-doctor",
+      "rubric_id": "rb.rewrite-report"
+    },
+    "notes": "Cross-layer pacing diagnosis. Should acknowledge pacing spans both structure and scene layers, address both, not force single-layer diagnosis.. Cross-layer pacing diagnosis. Should address both structure and scene layers.",
+    "expected_behavior": "cross_layer_diagnosis"
+  },
+  {
+    "id": "fx.edge-09",
+    "type": "edge_fixture",
+    "query": "你刚才写的那个premise，角色动机改一下。",
+    "intent": "design",
+    "medium": "feature_film",
+    "stage": "premise",
+    "output": "premise",
+    "constraints": {},
+    "expected_route": {
+      "skill_id": "skill.logline-premise",
+      "protocol_id": "wp.logline-premise",
+      "rubric_id": "rb.logline"
+    },
+    "notes": "Multi-turn continuation. Should reuse previous route and artifact. '你刚才写的' signals prior turn dependency.. Multi-turn continuation. Should reuse previous route. Prior turn dependency signaled by \"你刚才写的\".",
+    "expected_behavior": "prior_turn_route_reuse"
+  },
+  {
+    "id": "fx.edge-10",
+    "type": "edge_fixture",
+    "query": "I have a vague idea about a chef who loses his sense of taste. Help me develop it.",
+    "intent": "discover",
+    "medium": "feature_film",
+    "stage": "ideation",
+    "output": "premise",
+    "constraints": {},
+    "expected_route": {
+      "skill_id": "skill.idea-discovery",
+      "protocol_id": "wp.idea-discovery",
+      "rubric_id": "rb.logline"
+    },
+    "notes": "English query routing parity. Should route identically to Chinese equivalent — same skill, protocol, rubric.. English query routing parity. Should route identically to Chinese equivalent.",
+    "expected_behavior": "english_routing_parity"
   }
 ]

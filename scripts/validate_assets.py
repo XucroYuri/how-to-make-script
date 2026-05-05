@@ -107,11 +107,13 @@ def validate_repository(root: Path) -> Dict[str, Any]:
 
     for fixture in fixtures:
         route = fixture["expected_route"]
+        if "skill_id" not in route:
+            continue
         if route["skill_id"] not in skill_ids:
             errors.append(f"{relative_path(root, fixture['_path'])}: fixture uses unknown skill '{route['skill_id']}'")
-        if route["protocol_id"] not in protocol_ids:
+        if route.get("protocol_id") and route["protocol_id"] not in protocol_ids:
             errors.append(f"{relative_path(root, fixture['_path'])}: fixture uses unknown protocol '{route['protocol_id']}'")
-        if route["rubric_id"] not in rubric_ids:
+        if route.get("rubric_id") and route["rubric_id"] not in rubric_ids:
             errors.append(f"{relative_path(root, fixture['_path'])}: fixture uses unknown rubric '{route['rubric_id']}'")
 
     return {

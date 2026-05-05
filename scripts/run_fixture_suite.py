@@ -22,9 +22,9 @@ def run_fixture_suite(root: Path) -> Dict[str, Any]:
     golden_format_report = check_golden_artifact_formats(root)
     fixtures = collect_fixtures(root)
 
-    media = sorted({fixture["medium"] for fixture in fixtures})
-    stages = sorted({fixture["stage"] for fixture in fixtures})
-    outputs = sorted({fixture["output"] for fixture in fixtures})
+    media = sorted({fixture["medium"] for fixture in fixtures if fixture.get("medium")})
+    stages = sorted({fixture["stage"] for fixture in fixtures if fixture.get("stage")})
+    outputs = sorted({fixture["output"] for fixture in fixtures if fixture.get("output")})
 
     golden_errors = []
     golden_root = root / "examples" / "golden"
