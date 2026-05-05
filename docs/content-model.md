@@ -135,6 +135,5 @@ Pair this file with the following docs for the full picture:
 - [Context Loading Policy](./context-loading-policy.md)
 - [Semantic Governance](./shared/semantic-governance.md)
 - [Progressive Disclosure Policy](./progressive-disclosure-policy.md)
-- [Private Reference Distillation Policy](./shared/private-reference-distillation-policy.md)
 - [How to Create a Screenplay Research (EN)](./how-to-create-a-screenplay-research.md)
 - [How to Create a Screenplay Research (ZH)](./how-to-create-a-screenplay-research-zh.md)

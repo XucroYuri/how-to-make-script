@@ -94,4 +94,3 @@
 
 - [`wp.project-surface-map`](../knowledge/20-workflows/wp-project-surface-map.md)
 - [`rb.project-surface-map`](../knowledge/60-rubrics/rb-project-surface-map.md)
-- [`docs/reference-project-lessons-zh.md`](./reference-project-lessons-zh.md)

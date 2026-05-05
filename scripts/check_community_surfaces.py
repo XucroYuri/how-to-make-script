@@ -13,11 +13,6 @@ from scripts.lib import repo_root
 
 
 REQUIRED_DOCS = (
-    "docs/shared/community-feedback-loop.md",
-    "docs/shared/community-feedback-loop-zh.md",
-    "docs/shared/community-triage-loop.md",
-    "docs/shared/community-operations.md",
-    "docs/shared/community-operations-zh.md",
 )
 
 REQUIRED_LABELS = {

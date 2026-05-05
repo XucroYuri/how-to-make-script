@@ -139,4 +139,3 @@ route 定后，protocol 是 AI 行为主驱动层。每 protocol 须声明其依
 - [上下文加载策略](./context-loading-policy-zh.md)
 - [语义治理](./shared/semantic-governance-zh.md)
 - [渐进披露策略](./progressive-disclosure-policy-zh.md)
-- [私有参考蒸馏策略](./shared/private-reference-distillation-policy-zh.md)

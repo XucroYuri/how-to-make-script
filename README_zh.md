@@ -285,9 +285,8 @@ flowchart LR
 
 ### Agent / 工作流开发者
 
-1. [架构说明](./docs/architecture-zh.md)
-2. [内容模型](./docs/content-model-zh.md)
-3. [路由策略](./references/routing-policy.md) + [router matrix](./references/router-matrix.json)
+1. [内容模型](./docs/content-model-zh.md)
+2. [路由策略](./references/routing-policy.md) + [router matrix](./references/router-matrix.json)
 4. [输出契约](./references/supported-outputs.md) + [上下文加载策略](./docs/context-loading-policy-zh.md)
 
 ### 问题比较宏观、偏理论或偏背景研究
