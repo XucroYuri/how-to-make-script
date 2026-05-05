@@ -1,23 +1,23 @@
 # 内容模型
 
-定义仓库知识架构——可复用剧本知识如何组织为文件、AI 助手如何加载、仓库如何在无单一大脑前提下保持一致。需理解四种核心资产类型、输出契约或发现层运作方式时读本文。
+本文定义仓库的知识架构。四种核心资产、一组输出契约、一个发现层，让仓库在无单一大脑的前提下保持一致性。
 
-四种核心资产、一组输出契约、一个发现层：
+## 整体关系
 
 ```mermaid
 graph TD
-    subgraph 核心资产
+    subgraph "核心资产（knowledge/）"
         KA[knowledge_atom<br/>单一理论、规则或决策启发]
-        WP[workflow_protocol<br/>将多个 atom 组装为目标输出]
-        ER[evaluation_rubric<br/>将定性判断转化为具体核查维度]
-        EF[example_fixture<br/>可测试的请求 + 预期 route]
+        WP[workflow_protocol<br/>将 atom 组装为目标输出]
+        ER[evaluation_rubric<br/>将品味判断转为具体检查项]
+        EF[example_fixture<br/>可测试的请求 + 预期路由]
     end
 
-    subgraph 输出契约
-        OC[一等公民工件<br/>如 audience_fit_note、<br/>development_brief 等]
+    subgraph "输出契约"
+        OC[一等公民工件<br/>audience_fit_note、development_brief、<br/>voice_style_guide 等 15 种]
     end
 
-    subgraph 发现层
+    subgraph "发现层"
         QB[问题积压表<br/>哪些缺口需要新资产]
     end
 
@@ -25,116 +25,100 @@ graph TD
     WP -->|指定| ER
     WP -->|产出| OC
     EF -->|测试| WP
-    QB -->|将缺口转化为| KA
-    QB -->|将缺口转化为| WP
-    QB -->|将缺口转化为| ER
-    QB -->|将缺口转化为| EF
+    QB -->|填补| KA
+    QB -->|填补| WP
+    QB -->|填补| ER
+    QB -->|填补| EF
 ```
 
 ## 文件格式
 
-每可复用知识单元是带 JSON frontmatter 的 Markdown：
+每份可复用知识是一个带 JSON frontmatter 的 Markdown 文件：
 
 ```markdown
 ---
 {
   "id": "ka.story-goal",
   "type": "knowledge_atom",
-  "title": "故事目标",
-  "...": "..."
+  "title": "故事目标"
 }
 ---
-# Human-readable body
+# 人读正文
 ```
 
-JSON frontmatter 是机器契约——助手查、加载、关联资产用。Markdown 正文面向人。两者须一致。
+JSON frontmatter 是机器契约——助手扫描它来查找、加载和关联资产。Markdown 正文面向人。两者必须一致。
 
-优势：GitHub 直读、人易编辑、Python 工具链依赖轻、助手可扫描 frontmatter 选择性加载。
+这个格式刻意保持简单：GitHub 上直接可读、人工好编辑、工具链无重依赖。
 
-## 资产类型
+## 四种核心资产
 
 ### knowledge_atom
 
-最小可复用写作单元。一 atom 只表一事：理论、策略、规则、失败模式或决策启发。
+最小的可复用创作单元。一个 atom 只装一件事：一个理论、一个策略、一条规则、一种失败模式或一个决策启发。
 
-atom 应够具体以驱动明确判断，也够窄以避免牵无关负担。若涉多松散概念，拆分。
+atom 要够具体以驱动单次判断，也够窄以避免拖入无关内容。如果涵盖多个松散关联的概念，拆开。
 
 ### workflow_protocol
 
-稳定创作工作流契约。定义多 atom 如何组合为目标输出。答四问：输入、输出、步骤、停时。
+稳定的创作工作流契约。定义多个 atom 如何组合成一个目标输出。回答四问：输入什么、输出什么、分几步、何时停止。
 
-route 定后，protocol 是 AI 行为主驱动层。每 protocol 须声明其依赖 rubric 与 linked atom。
+路由确定后，protocol 是 agent 行为的主驱动。每个 protocol 必须声明其依赖的 rubric 和关联的 atom。
 
 ### evaluation_rubric
 
-将定性品味判断转可执行审查维度与硬失败规则。好 rubric 让改策具体非模糊。须够紧凑，应答阶段直用自查清单。
+将定性品味判断转为可执行的审查维度和硬失败规则。好的 rubric 让修改决策具体而非模糊。必须紧凑到能在回答阶段直接用作自查清单。
 
 ### example_fixture
 
-编码真实请求及应走 route。fixture 服务回归检查——测 route 选择力，非仅内容生成。每 fixture 须声明预期 route。
+编码一个真实用户请求及其应走的路由。fixture 服务路由选择测试，而非仅测内容生成。每个 fixture 必须声明预期路由。
 
 ## 输出契约
 
-一等公民工件类型，protocol 产出结构化输出。列此让助手直推这些逻辑，非藏于泛文。
+这些是 protocol 可产出的结构化输出。列在这里让 agent 能直接推理它们，而非将逻辑藏在散文中。
 
-- `audience_fit_note`
-- `development_brief`
-- `learning_path`
-- `research_background_map`
-- `path_options`
-- `boundary_map`
-- `scope_correction`
-- `pattern_reference_pack`
-- `story_memory_checkpoint`
-- `voice_style_guide`
-- `visual_language_pack`
-- `screen_to_video_brief`
-- `team_workflow_blueprint`
-- `expert_subagent_cast`
-- `quality_gate_report`
-
-这些契约使助手能明推受众需求、委托语境与作者成长，非模糊处理。使仓库能表多路径并存、边界逻辑与对照教学，非假所有好答案能压为一规范工件。
-
-各契约职责：
-- 表达契约：让声音、语域与连续性成为明确质量维度。
-- 视觉语言契约：理顺跨语言镜头词汇。
-- 屏幕到视频桥接层：分离剧本写作与下游制作语法。
-- 团队契约：建模多智能体协作。
-- 专家阵容契约：允许有限范围专家子代理，不膨胀为永久团队。
-- 质量关卡契约：实现自适应自审。
-- 研究背景契约：让剧本理论需求成为一等公民。
-
-注册表驱动背景包存 `references/` 非 `knowledge/`。非第五种核心资产，是机器可检查文档包，映广研究领域至可调 atom、输出与加载规则。
+| 契约 | 用途 |
+|---|---|
+| `audience_fit_note` | 内容与受众需求匹配 |
+| `development_brief` | 先定开发策略再写正文 |
+| `learning_path` | 将编剧成长结构为可检查的练习路径 |
+| `path_options` | 展示多条有效创作方向 |
+| `boundary_map` | 区分硬边界与可谈判空间 |
+| `scope_correction` | 收窄过度泛化的主张而不删除它 |
+| `pattern_reference_pack` | 为特定任务打包参考模式 |
+| `story_memory_checkpoint` | 保存故事状态并做版本化 |
+| `voice_style_guide` | 使声音、语域和连续性明确 |
+| `visual_language_pack` | 处理跨语言镜头词汇 |
+| `screen_to_video_brief` | 桥接剧本写作与下游制作 |
+| `team_workflow_blueprint` | 建模多 agent 协作结构 |
+| `expert_subagent_cast` | 定义有界专家子代理 |
+| `quality_gate_report` | 交接前运行自适应自检 |
+| `research_background_map` | 将大范围理论请求映射到可调用的 atom |
 
 ## 资产规则
 
-- 每资产须有稳定 `id`。
-- 每被链 `id` 须解至现存资产。
-- 每 protocol 须声明 rubrics 与 linked atoms。
-- 每 fixture 须声明预期 route。
-- 资产无法自验则继拆至可验。
-- 输出依赖受众、行业、历史或作者成长约束时，编入 protocol 与 fixture 约束，不写临时提示。
-- 规则非普遍真理时，编其前提、边界条件或 rival route，不限藏文。
-- 挑战削弱 claim 但未毁核心，优先 scope correction，不删 claim 或翻新绝对论。
-- 参考样本用于教学，须配失败对照与 non-dogma 注记，避仓库悄将样本当模板。
-- 请求复杂，明决加载量，不默扩内容包。
-
-内容模型优化有界加载、route 稳定性与可重复输出行为。也为高质量分歧留空间——仓库需 rival path、待定边界与反例驱修正。
+- 每项资产必须有稳定的 `id`。
+- 每个被引用的 `id` 必须解析到存在的资产。
+- 每个 protocol 必须声明其 rubric 和关联 atom。
+- 每个 fixture 必须声明其预期路由。
+- 如果资产无法自动验证，继续拆分直到可以。
+- 如果产出依赖受众、行业、历史或作者成长约束，编入 protocol 和 fixture 约束，而非散落在临时提示文本中。
+- 如果规则不是普遍真理，编入其前提、边界条件或 rival route。
+- 如果挑战削弱了某个主张但没摧毁其核心，优先 scope_correction，而非删除它或翻转成新的绝对论断。
+- 参考样本用于教学时，配上失败对照组和 non-dogma 注释。
+- 请求复杂时，明确决定加载多少上下文，而非默认扩大内容包。
 
 ## 发现层：问题积压表
 
-增资产前先查问题积压表。发现层，非唯一真源。将缺口导向四明确结果：新 atom、新 protocol、新 rubric、新 fixture 或案例说明。
+新增资产前，先查问题积压表。它将缺口导向四种具体结果：新 atom、新 protocol、新 rubric 或新 fixture。
 
 - [面向助手的 intake](./socratic-question-backlog-en.md)
 - [面向实践者的 intake](./socratic-question-backlog-zh.md)
 
 ## 配套文档
 
-与以下配读可得全图：
-
 - [现实透镜](./reality-lenses-zh.md)
 - [认识论立场](./epistemic-stance-zh.md)
-- [探索与审查](./exploration-vs-review.md)
+- [探索与评审](./exploration-vs-review.md)
 - [场景图谱](./scenario-atlas-zh.md)
 - [上下文加载策略](./context-loading-policy-zh.md)
 - [语义治理](./shared/semantic-governance-zh.md)
