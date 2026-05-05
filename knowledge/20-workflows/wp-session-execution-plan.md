@@ -44,7 +44,7 @@
     "ka.cross-protocol-referral-edges",
     "ka.story-memory-checkpoint"
   ],
-  "budget_class": "M",
+  "budget_class": "S",
   "mandatory_atom_count": 4,
   "expansion_allowed": false
 }

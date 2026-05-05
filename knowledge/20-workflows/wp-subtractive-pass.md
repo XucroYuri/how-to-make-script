@@ -40,7 +40,7 @@
     "ka.scene-function",
     "ka.specificity-pressure"
   ],
-  "budget_class": "M",
+  "budget_class": "S",
   "mandatory_atom_count": 4,
   "expansion_allowed": false
 }
