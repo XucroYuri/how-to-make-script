@@ -7,7 +7,7 @@
 ## 治理规则
 
 1. 一个公开概念尽量只有一个主名称。
-2. 公开 prose 的命名应遵守 [`docs/canonical-term-policy-zh.md`](./canonical-term-policy-zh.md) 和 [`docs/shared/canonical-term-register.json`](./canonical-term-register.json)。
+2. 公开 prose 的命名应遵守 [`docs/shared/canonical-term-register.json`](./canonical-term-register.json)。
 3. 旧叫法可以保留，但必须通过明确的 alias 或 detail-key register 保留。
 4. `public` skill surface 必须能被路由，也必须能从 root skill 找到。
 5. 内部辅助 skill 可以存在，但必须声明 `surface: internal`。

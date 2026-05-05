@@ -7,7 +7,7 @@ The goal of this policy is simple: the same concept should not silently mean dif
 ## Governance Rules
 
 1. One public concept should have one primary name.
-2. Public prose naming should follow [`docs/canonical-term-policy.md`](./canonical-term-policy.md) and [`docs/shared/canonical-term-register.json`](./canonical-term-register.json).
+2. Public prose naming should follow [`docs/shared/canonical-term-register.json`](./canonical-term-register.json).
 3. Legacy shorthand can survive, but only through an explicit alias or detail-key register.
 4. Public skill surfaces must be routeable and visible from the root skill.
 5. Internal helper skills may exist, but they must be marked `surface: internal`.

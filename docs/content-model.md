@@ -122,7 +122,7 @@ The content model is optimized for bounded loading, route stability, and repeata
 Before creating new assets, check the question backlog. It is a discovery layer, not a source of truth. Its job is to turn gaps into one of four concrete outcomes: a new atom, a new protocol, a new rubric, or a new fixture or case note.
 
 - [Agent-facing intake](./socratic-question-backlog-en.md)
-- [Practitioner-facing intake](./socratic-question-backlog.md)
+- [Practitioner-facing intake](./socratic-question-backlog-zh.md)
 
 ## Related Documents
 

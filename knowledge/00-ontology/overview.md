@@ -9,7 +9,6 @@
 - `40-media`: medium-specific constraints and affordances.
 - `50-genre`: reusable genre mechanics.
 - `60-rubrics`: quality review frameworks.
-- `70-case-studies`: worked examples and interpretation notes.
 
 Structured assets in this repository are machine-checked. Narrative explanation and discussion live in Markdown bodies; reusable metadata lives in JSON frontmatter.
 

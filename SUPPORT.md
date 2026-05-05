@@ -39,7 +39,6 @@ Use:
 
 - [CONTRIBUTING.md](./CONTRIBUTING.md)
 - [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)
-- [docs/community-operations.md](./docs/shared/community-operations.md)
 
 ## Maintainer Contact
 

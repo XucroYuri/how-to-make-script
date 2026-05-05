@@ -303,9 +303,8 @@ flowchart LR
 
 ### 想提问题、提反驳、改仓库
 
-1. [社区运营策略](./docs/shared/community-operations-zh.md)
-2. [贡献说明](./CONTRIBUTING.md)
-3. 去 [Discussions](https://github.com/XucroYuri/how-to-make-script/discussions) 选合适入口
+1. [贡献说明](./CONTRIBUTING.md)
+2. 去 [Discussions](https://github.com/XucroYuri/how-to-make-script/discussions) 选合适入口
 
 ---
 
@@ -361,7 +360,6 @@ flowchart LR
 
 **面向 Agent builder**
 
-- [架构说明](./docs/architecture-zh.md)
 - [内容模型](./docs/content-model-zh.md)
 - [上下文加载策略](./docs/context-loading-policy-zh.md)
 - [项目视图架构](./docs/project-surface-architecture-zh.md)
@@ -370,8 +368,6 @@ flowchart LR
 **面向贡献者**
 
 - [贡献说明](./CONTRIBUTING.md)
-- [Canonical 术语治理策略](./docs/shared/canonical-term-policy-zh.md)
-- [社区运营策略](./docs/shared/community-operations-zh.md)
 - [支持入口梯度](./SUPPORT.md)
 - [Changelog](./CHANGELOG.md)
 

@@ -82,5 +82,4 @@ These skills support the routing, loading, and collaboration infrastructure. The
 - [`docs/project-surface-architecture.md`](../docs/project-surface-architecture.md)
 
 ### External Grounding And Source Maps
-- [`docs/reference-project-lessons.md`](../docs/reference-project-lessons.md)
 - [`docs/reality-lenses.md`](../docs/reality-lenses.md)

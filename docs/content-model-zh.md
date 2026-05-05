@@ -126,7 +126,7 @@ route 定后，protocol 是 AI 行为主驱动层。每 protocol 须声明其依
 增资产前先查问题积压表。发现层，非唯一真源。将缺口导向四明确结果：新 atom、新 protocol、新 rubric、新 fixture 或案例说明。
 
 - [面向助手的 intake](./socratic-question-backlog-en.md)
-- [面向实践者的 intake](./socratic-question-backlog.md)
+- [面向实践者的 intake](./socratic-question-backlog-zh.md)
 
 ## 配套文档
 

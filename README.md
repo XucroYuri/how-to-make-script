@@ -265,10 +265,9 @@ The system is designed so that every step is auditable. You can see which route 
 
 ### Agent and workflow developers
 
-1. [Architecture](./docs/architecture.md)
-2. [Content Model](./docs/content-model.md)
-3. [Routing Policy](./references/routing-policy.md) + [Router Matrix](./references/router-matrix.json)
-4. [Supported Outputs](./references/supported-outputs.md) + [Context Loading Policy](./docs/context-loading-policy.md)
+1. [Content Model](./docs/content-model.md)
+2. [Routing Policy](./references/routing-policy.md) + [Router Matrix](./references/router-matrix.json)
+3. [Supported Outputs](./references/supported-outputs.md) + [Context Loading Policy](./docs/context-loading-policy.md)
 
 ### Broad or theory-heavy questions
 
@@ -283,9 +282,8 @@ The system is designed so that every step is auditable. You can see which route 
 
 ### Challenge or improve the repo
 
-1. [Community Operations](./docs/shared/community-operations.md)
-2. [Contributing](./CONTRIBUTING.md)
-3. Open the lightest useful thread in [GitHub Discussions](https://github.com/XucroYuri/how-to-make-script/discussions)
+1. [Contributing](./CONTRIBUTING.md)
+2. Open the lightest useful thread in [GitHub Discussions](https://github.com/XucroYuri/how-to-make-script/discussions)
 
 ## Repository At A Glance
 
@@ -337,7 +335,6 @@ The repository spans the full range of screenplay work, from first idea to final
 
 **For agent builders**
 
-- [Architecture](./docs/architecture.md)
 - [Content Model](./docs/content-model.md)
 - [Context Loading Policy](./docs/context-loading-policy.md)
 - [Project Surface Architecture](./docs/project-surface-architecture.md)
@@ -346,8 +343,6 @@ The repository spans the full range of screenplay work, from first idea to final
 **For contributors**
 
 - [Contributing Guide](./CONTRIBUTING.md)
-- [Canonical Term Policy](./docs/shared/canonical-term-policy.md)
-- [Community Operations](./docs/shared/community-operations.md)
 - [Support Ladder](./SUPPORT.md)
 - [Changelog](./CHANGELOG.md)
 
