@@ -43,6 +43,9 @@
     "ka.platform-attention-economy",
     "ka.commissioning-fit",
     "ka.pacing-rhythm",
+    "ka.audience-proxy-personas",
+    "ka.opening-job-selection",
+    "ka.scene-function",
     "ka.cross-protocol-referral-edges"
   ],
   "fallback_behavior": "If the audience is underspecified, infer one primary segment and one adjacent segment, then report confidence and risk.",
