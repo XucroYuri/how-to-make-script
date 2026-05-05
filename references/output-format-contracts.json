@@ -59,6 +59,81 @@
         "av_labels": ["VFX", "SFX", "BGM"],
         "beat_requires_performance": true
       }
+    },
+    {
+      "output": "quality_gate_report",
+      "title_includes": "Quality Gate Report",
+      "required_sections": [
+        {"heading": "Target Contract & Scope", "min_items": 2},
+        {"heading": "Selected Lenses & Rationale", "min_items": 3},
+        {"heading": "Hard Fails", "min_items": 1},
+        {"heading": "Weighted Weaknesses", "min_items": 1},
+        {"heading": "Correction Ladder", "min_items": 2},
+        {"heading": "Recheck Plan", "min_items": 1}
+      ]
+    },
+    {
+      "output": "rewrite_report",
+      "title_includes": "Rewrite Report",
+      "required_sections": [
+        {"heading": "Failure Layer", "min_items": 1},
+        {"heading": "Root Symptoms", "min_items": 2},
+        {"heading": "Prioritized Actions", "min_items": 2},
+        {"heading": "Classification", "min_items": 2}
+      ]
+    },
+    {
+      "output": "audience_proxy_report",
+      "title_includes": "Audience Proxy Report",
+      "required_sections": [
+        {"heading": "Proxy State Snapshots", "min_items": 2},
+        {"heading": "Consensus Concerns", "min_items": 1},
+        {"heading": "High-Value Scenes", "min_items": 1},
+        {"heading": "Dropout Risks", "min_items": 1},
+        {"heading": "Modification Priorities", "min_items": 1}
+      ]
+    },
+    {
+      "output": "voice_style_guide",
+      "title_includes": "Voice Style Guide",
+      "required_sections": [
+        {"heading": "Voice Anchors", "min_items": 2},
+        {"heading": "Lived Pressure", "min_items": 2},
+        {"heading": "Register Envelope", "min_items": 2},
+        {"heading": "Continuity Anchors", "min_items": 1},
+        {"heading": "Creative Range", "min_items": 1}
+      ]
+    },
+    {
+      "output": "visual_language_pack",
+      "title_includes": "Visual Language Pack",
+      "required_sections": [
+        {"heading": "Task Scope", "min_items": 2},
+        {"heading": "Selected Terms", "min_items": 3},
+        {"heading": "Cultural Notes", "min_items": 1},
+        {"heading": "Misread Alerts", "min_items": 1}
+      ]
+    },
+    {
+      "output": "screen_to_video_brief",
+      "title_includes": "Screen To Video Brief",
+      "required_sections": [
+        {"heading": "Source Spans", "min_items": 1},
+        {"heading": "Clip Chain", "min_items": 1},
+        {"heading": "Invariants/Avoid Rules", "min_items": 2},
+        {"heading": "Duration Boundaries", "min_items": 1},
+        {"heading": "Source Traceability", "min_items": 1}
+      ]
+    },
+    {
+      "output": "research_background_map",
+      "title_includes": "Research Background Map",
+      "required_sections": [
+        {"heading": "Research Lenses", "min_items": 3},
+        {"heading": "Stability Classification", "min_items": 2},
+        {"heading": "Callable Resources", "min_items": 2},
+        {"heading": "Loading Boundaries", "min_items": 1}
+      ]
     }
   ]
 }
