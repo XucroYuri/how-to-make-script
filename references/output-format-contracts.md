@@ -196,7 +196,7 @@
   - `Core Concept`（核心概念）
   - `Audience Promise`（观众承诺）
   - `Tone Pledge`（调性承诺）
-- 文档必须说清"给谁看"和"调性承诺"，比 logline 多氛围感和观众指向。
+- 文档必须说清"给谁看"和"调性承诺"，比一句话梗概（`logline`）多氛围感和观众指向。
 - 机器检查要求：`Core Concept` 最少 1 条，`Audience Promise` 最少 2 条，`Tone Pledge` 最少 2 条。
 
 ### `logline`

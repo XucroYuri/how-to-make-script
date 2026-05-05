@@ -102,15 +102,15 @@
 
 **「我有个感觉，但还说不清楚」**
 
-一个模糊的点子、一个人物的影子、一段想要表达的情绪。你不确定这是个故事还是只是个氛围。这时候可以让它帮你把「感觉」变成 logline、premise，或者先打出几条可能的走向。不是给你一个答案，而是给你几个可比较的方向。
+一个模糊的点子、一个人物的影子、一段想要表达的情绪。你不确定这是个故事还是只是个氛围。这时候可以让它帮你把「感觉」变成一句话梗概（`logline`）、核心前提（`premise`），或者先打出几条可能的走向。不是给你一个答案，而是给你几个可比较的方向。
 
 **「我写了一场戏，但总觉得哪里不对」**
 
 场景写完了，自己也说不上哪不对劲。节奏？信息密度？人物的动作？还是整体的戏剧张力？交给 audience proxy，它会模拟几个不同类型的观众来「看」这场戏，给出真诚的体验反馈，而不是外交辞令式的打分。你能看到「耐心开始流失」「人物动机不透明」「情感距离太远」这类具体感受，而不是笼统的「需要改进」。
 
-**「我需要从 logline 推进到场景草稿」**
+**「我需要从一句话梗概（`logline`）推进到场景草稿」**
 
-你知道故事大概是什么，但不知道该怎么结构化地展开。系统会按你选择的媒介和阶段，给你对应的 beat sheet 框架、outline 协议、场景生成指引——不是死板的模板，而是可调整的工具。你可以在多个方案之间切换，看哪条路更适合你的素材。
+你知道故事大概是什么，但不知道该怎么结构化地展开。系统会按你选择的媒介和阶段，给你对应的节拍表（`beat_sheet`）框架、大纲（`outline`）协议、场景生成指引——不是死板的模板，而是可调整的工具。你可以在多个方案之间切换，看哪条路更适合你的素材。
 
 **「我想打破 LLM 老爱写的那一套」**
 
@@ -122,7 +122,7 @@
 
 **「我想停下来，下次还能接得住」**
 
-长篇写作里，中间歇笔是常态。但歇太久，状态就断了。用 story memory checkpoint，把当前状态、关键未解问题、人物关系、情绪基调都记下来。下次回来快速恢复，而不是从头再读一遍。
+长篇写作里，中间歇笔是常态。但歇太久，状态就断了。用故事记忆检查点（`story_memory_checkpoint`），把当前状态、关键未解问题、人物关系、情绪基调都记下来。下次回来快速恢复，而不是从头再读一遍。
 
 ---
 
@@ -260,7 +260,7 @@ flowchart LR
 
 生成完成果以后，按之前定义的评分标准做一次自检，看看有没有明显问题。然后把成果交给你，由你来决定接受、修改还是指出哪里不对。
 
-你的反馈不会白费。系统会把这些人类输入收集起来，作为下一次迭代的素材——rubric 可以更精准，fixture 可以更丰富，边界可以更清晰。
+你的反馈不会白费。系统会把这些人类输入收集起来，作为下一次迭代的素材——评估标准（`rubric`）可以更精准，测试用例（`fixture`）可以更丰富，边界可以更清晰。
 
 ---
 
@@ -269,7 +269,7 @@ flowchart LR
 - 先从 [`SKILL.md`](./SKILL.md) 看核心控制契约
 - 用 [`references/supported-outputs.md`](./references/supported-outputs.md) 选择最小可用输出，不要自己发明模糊的输出类型
 - 需要看 golden 示例的最小 Markdown 交付形状时，用 [`references/output-format-contracts.md`](./references/output-format-contracts.md)
-- 用 [`references/router-matrix.json`](./references/router-matrix.json) 和 [`references/routing-policy.md`](./references/routing-policy.md) 查看 route 和 constraint 信号
+- 用 [`references/router-matrix.json`](./references/router-matrix.json) 和 [`references/routing-policy.md`](./references/routing-policy.md) 查看路由（`route`）和约束（`constraint`）信号
 - 用户问「如何创作剧本」等宽泛问题时，使用 `research_background_map`，不要硬塞成某个具体写作产物
 - 实际需求是「下次还能安全续写」或「要交接当前状态」时，优先使用 `story_memory_checkpoint`，不要扩大上下文包
 
@@ -293,7 +293,7 @@ flowchart LR
 
 1. [如何创作剧本研究总览](./docs/how-to-create-a-screenplay-research-zh.md)
 2. [research background 协议](./knowledge/20-workflows/wp-research-background-map.md)
-3. 确定下一步该往哪个更具体的 output route 收敛
+3. 确定下一步该往哪个更具体的产出路由（`output route`）收敛
 
 ### 需要暂停写作、续写或交接长篇状态
 
@@ -325,7 +325,7 @@ flowchart LR
 
 ## 核心功能
 
-**创作与开发** — 叙事剧本、商业/品牌脚本、互动/分支叙事、premise 到 rewrite 全阶段
+**创作与开发** — 叙事剧本、商业/品牌脚本、互动/分支叙事、前提（`premise`）到改写（`rewrite`）全阶段
 
 **诊断与纠偏** — 改稿诊断、质量把关、定向复查、路由失败排查、边界映射、范围纠正
 
@@ -344,7 +344,7 @@ flowchart LR
 - narrative / commercial / interactive 都有样例和 fixture
 - community surface 有专项检查，避免入口失效
 - 本地工具痕迹被禁止进入 index 和历史（denylist 在 [`.gitignore`](./.gitignore) + [`check_forbidden_paths.py`](./scripts/check_forbidden_paths.py)）
-- 人类反驳不是噪音，而是后续 rubric、fixture、scope correction 的来源
+- 人类反驳不是噪音，而是后续评估标准（`rubric`）、测试用例（`fixture`）、范围修正（`scope_correction`）的来源
 
 ---
 
@@ -379,7 +379,7 @@ flowchart LR
 | 渠道 | 用途 |
 | --- | --- |
 | [Discussions](https://github.com/XucroYuri/how-to-make-script/discussions) | 问题澄清、开放反驳、替代路径、field note |
-| [Issue Forms](./.github/ISSUE_TEMPLATE) | 能指出具体文件、具体结论、具体 route、具体 rubric 的情况 |
+| [Issue Forms](./.github/ISSUE_TEMPLATE) | 能指出具体文件、具体结论、具体路由（`route`）、具体评估标准（`rubric`）的情况 |
 | [Support](./SUPPORT.md) | 支持入口梯度 |
 | [Security](./SECURITY.md) | 处理私密安全问题 |
 

@@ -180,6 +180,19 @@ Stop expanding context and start generating when any of these are true:
 
 If adding more context doesn't improve the answer, the problem isn't too little context — it's the wrong context.
 
+## 中文交互语言规则
+
+当用户的初始输入为中文，或明确要求使用中文交互时，遵守以下规则：
+
+1. **全程使用纯中文交互。** 所有面向用户的回复、描述、建议、诊断、产出物说明，均使用中文表达。不产出中英混杂的文本。
+2. **术语处理：**
+   - 系统内部标识符（如 `skill.idea-discovery`、`wp.rewrite-doctor`、`ka.causality-chain`）在面向用户时不直接暴露。如必须引用，使用"中文描述（`English ID`）"格式。
+   - 产出物名称（如 `logline`、`premise`、`beat_sheet`）在中文文本中首次出现时，使用"中文名（`English`）"括注格式，如"一句话梗概（`logline`）"。后续可直接使用反引号包裹的系统 ID。
+   - 通用英文术语（如 feedback、draft、route）使用对应的中文表达：反馈、草稿、路由。
+3. **示例对话中的用户输入**可以保留原始语言（用户可能中英混杂），但 Agent 的回复必须为纯中文。
+4. **知识库内容**为内部资产，其中英混杂不影响最终输出。Agent 在加载知识库后，需将内容转化为纯中文再呈现给用户。
+5. **英文用户不受影响。** 当用户使用英文时，所有规则保持英文交互。
+
 ## Output Discipline
 
 - Produce the exact format requested. No hybrid formats.
@@ -207,7 +220,7 @@ If adding more context doesn't improve the answer, the problem isn't too little 
 
 ### 搭建骨架：给故事做结构
 - `beat_sheet` — 关键叙事节拍序列。什么时候发生什么事，每次怎么改变局面。
-- `outline` — 分集或分场大纲。比 beat sheet 细，比 scene draft 粗。
+- `outline` — 分集或分场大纲。比节拍表（`beat_sheet`）细，比场景草稿（`scene_draft`）粗。
 - `scene_card` — 单场戏卡片：这场的功能、冲突、变化点。
 
 ### 进入写作：出稿子
