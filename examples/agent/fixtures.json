@@ -2128,7 +2128,7 @@
       "protocol_id": "wp.path-options",
       "rubric_id": "rb.path-options"
     },
-    "notes": "Pure greeting. Should not produce any screenplay artifact. Should introduce itself briefly, then prompt for next action.",
+    "notes": "Pure greeting. Per SKILL.md Greeting protocol: NO route should match directly. After greeting introduction, fallback routing may offer path_options. Expected_route here reflects only the fallback path — the primary behavior is greeting_no_artifact.",
     "expected_behavior": "greeting_no_artifact"
   },
   {
@@ -2145,7 +2145,7 @@
       "protocol_id": "wp.path-options",
       "rubric_id": "rb.path-options"
     },
-    "notes": "Capability discovery. Should list output categories briefly, not generate any artifact. Should invite user to pick a starting point.",
+    "notes": "Capability discovery. Per SKILL.md: NO direct route — falls through to greeting protocol. Should list output categories briefly, never generate an artifact. Expected_route is the fallback, not a direct match. Should invite user to pick a starting point.",
     "expected_behavior": "capability_listing_only"
   },
   {
@@ -2179,7 +2179,7 @@
       "protocol_id": "wp.path-options",
       "rubric_id": "rb.path-options"
     },
-    "notes": "English capability discovery. Same as fx.edge-12 but in English. Should respond equivalently.",
+    "notes": "English capability discovery. Same as fx.edge-12 but in English. Per SKILL.md: NO direct route — falls through to greeting protocol. Expected_route is the fallback.",
     "expected_behavior": "capability_listing_only"
   },
   {
@@ -2215,7 +2215,7 @@
       "protocol_id": "wp.idea-discovery",
       "rubric_id": "rb.logline"
     },
-    "notes": "Pure punctuation input. Should NOT generate any artifact. Should ask \"I need a bit more to go on\" or equivalent.",
+    "notes": "Pure punctuation input. Per SKILL.md 'Empty or minimal input': should NOT generate any artifact. Should check prior turn context; if none, ask for more input. Expected_route is the fallback path only.",
     "expected_behavior": "no_artifact_from_punctuation"
   },
   {
@@ -2237,5 +2237,81 @@
     },
     "notes": "Audience contradiction: R-rated action vs PG-13 family. Should flag the contradiction and ask which to prioritize, produce path_options.",
     "expected_behavior": "contradiction_detection"
+  },
+  {
+    "id": "fx.edge-18",
+    "type": "edge_fixture",
+    "query": "我想拍一部《阿凡达》级别的科幻史诗，预算只有10万人民币，三个月拍完。",
+    "intent": "design",
+    "medium": "feature_film",
+    "stage": "premise",
+    "output": "path_options",
+    "constraints": {
+      "creative_problem": "impossible_budget_and_timeline",
+      "hard_boundaries": "budget_100k_timeline_3months"
+    },
+    "expected_route": {
+      "skill_id": "skill.path-exploration",
+      "protocol_id": "wp.path-options",
+      "rubric_id": "rb.path-options"
+    },
+    "notes": "Impossible budget AND timeline constraint. Per routing-policy.md constraint feasibility gating: should flag the impossibility honestly, offer practical alternatives (e.g., beat sheet + first 10 pages for the feasible version). Should NOT silently produce an artifact that ignores constraints.",
+    "expected_behavior": "constraint_feasibility_warning"
+  },
+  {
+    "id": "fx.edge-19",
+    "type": "edge_fixture",
+    "query": "帮我写一个Python爬虫脚本，抓取豆瓣电影Top 250的数据。",
+    "intent": "discover",
+    "medium": "feature_film",
+    "stage": "ideation",
+    "output": "path_options",
+    "constraints": {},
+    "expected_route": {
+      "skill_id": "skill.path-exploration",
+      "protocol_id": "wp.path-options",
+      "rubric_id": "rb.path-options"
+    },
+    "notes": "Out-of-domain request (Python coding, not screenwriting). Should politely indicate this is a screenwriting skill and redirect. The expected_route is a fallback — the primary behavior should be graceful redirection, not artifact generation.",
+    "expected_behavior": "out_of_domain_redirect"
+  },
+  {
+    "id": "fx.edge-20",
+    "type": "edge_fixture",
+    "query": "把《哈利波特与魔法石》改编成12集中国网剧，保留原角色名但改成中国背景。",
+    "intent": "adapt",
+    "medium": "episodic",
+    "stage": "adaptation",
+    "output": "premise",
+    "constraints": {
+      "creative_problem": "licensed_ip_adaptation",
+      "hard_boundaries": "copyright_concern"
+    },
+    "expected_route": {
+      "skill_id": "skill.genre-adaptation",
+      "protocol_id": "wp.genre-adaptation",
+      "rubric_id": "rb.adaptation"
+    },
+    "notes": "Licensed IP adaptation request. The skill can handle the adaptation mechanics (Chinese background, 12-episode format) as a creative exercise, but should note that adaptation rights must be secured for production. Focus on structure and genre adaptation techniques without endorsing unlicensed production.",
+    "expected_behavior": "adaptation_with_rights_note"
+  },
+  {
+    "id": "fx.edge-21",
+    "type": "edge_fixture",
+    "query": "I need a logline for my new suspense thriller 关于一个黑客 who discovers her own memory 被人篡改过。",
+    "intent": "design",
+    "medium": "feature_film",
+    "stage": "premise",
+    "output": "logline",
+    "constraints": {
+      "genre": "thriller"
+    },
+    "expected_route": {
+      "skill_id": "skill.logline-premise",
+      "protocol_id": "wp.logline-premise",
+      "rubric_id": "rb.logline"
+    },
+    "notes": "Code-switched query (EN + ZH mixed). Should route identically to a single-language equivalent — same skill, protocol, rubric. Should handle both languages fluently in response, matching whichever the user primarily uses.",
+    "expected_behavior": "code_switched_routing_parity"
   }
 ]
