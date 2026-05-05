@@ -36,7 +36,9 @@
     "ka.cinematic-prose-register",
     "ka.cross-protocol-referral-edges",
     "ka.setup-and-payoff",
-    "ka.verbal-rhythm"
+    "ka.verbal-rhythm",
+    "ka.collision-prompts",
+    "ka.specificity-pressure"
   ],
   "fallback_behavior": "Merge, delete, or redesign the scene if it does not change the situation, or rebuild the beat carriers if the draft slips into bare dialogue or writerly prose.",
   "default_loading_mode": "focus_pack",
