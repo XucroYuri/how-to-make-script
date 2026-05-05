@@ -67,9 +67,3 @@
 `quality_gate_report` 的任务是给出一份适配当前场景的审查诊断：哪些 lens 应该启用、哪些是 hard fail、哪些只是弱项、最该先修什么、改完之后该怎么定向复查。
 
 基本顺序很简单：先看 target contract 自己的 rubric 或 hard gate，再用共享 lens matrix 补充跨场景的质量镜头。这样就不会把所有检查都混成一个新大一统模式。
-
-## TODOs：待回答问题
-
-- [ ] 是否需要为不同 team mode 增加专门的 quality-gate bundle？
-- [ ] 某些 high-pressure 场景下，quality gate 是否应自动要求 human checkpoint？
-- [ ] 对纯概念级 artifact，weighted weakness 是否需要不同的表达粒度？

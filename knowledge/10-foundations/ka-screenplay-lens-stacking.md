@@ -65,10 +65,3 @@
 这个原子的作用，就是提醒 Agent 和协作者：当问题宽到“如何创作剧本”这个级别时，先拆镜头比先给答案更重要。
 
 如果当前其实卡在 audience promise，却直接套结构表；或者其实卡在 development artifact，却直接开始写场景；或者其实卡在媒介容器，却继续按 feature film 习惯给建议，最后都会让建议看起来专业、用起来失效。
-
-## TODOs：待回答问题
-
-- [ ] 这套镜头拆解是否还缺少 performance、sound design、editing anticipation 等更下游镜头？
-- [ ] 不同 level 的用户是否需要不同默认镜头顺序，例如新手先从 engine 开始，职业用户先从 commissioning 开始？
-- [ ] 哪些剧本问题最容易因为镜头错位而被误诊？
-- [ ] 在实际运行里，系统应如何判断某个镜头只该做背景提示，而不该扩大为主路线？

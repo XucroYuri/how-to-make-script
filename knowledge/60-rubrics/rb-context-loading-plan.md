@@ -32,10 +32,3 @@
 好的 loading plan 应该像一个控制台，而不是一个购物清单。它不是把想看的都列进来，而是把最该先看的、可以后看的、根本不该看的分开。
 
 如果一个 plan 只会说“这些也相关、那些也可能有用”，却不能告诉 Agent 什么时候应该停，那它本质上还是在鼓励上下文腐化。
-
-## TODOs：待回答问题
-
-- [ ] rubric 是否需要显式检查 compare_pack、teaching_pack 和 survey_pack 的边界？
-- [ ] 是否应要求每个 loading mode 都给一个典型 bundle 大小示例？
-- [ ] 对 rewrite / diagnose 场景，rubric 是否应更严格惩罚过度扩容？
-- [ ] 哪些 stop condition 最适合转成 fixture 里的 key check？

@@ -67,10 +67,3 @@
 `project_surface_map` 就是解决这个问题的。它不是在设计 UI 也不是在设计 CLI，而是在设计一个长期可运转的创作表面层：人和 Agent 该看什么、改什么、导出什么、审查什么。对长周期项目来说，这里面还应该包含”检查点放在哪”：什么时候要产出可恢复的状态，而不是让下一轮继续靠全量回读。
 
 如果未来仓库要继续往 runtime planner 走，这一层会变成必要基础，而不是可有可无的附录。
-
-## TODOs：待回答问题
-
-- [ ] 不同 medium 是否需要不同默认 surface template？
-- [ ] canonical packet 默认是否需要可导出，还是只在 debug / review 模式下导出？
-- [ ] review surface 是否应该进一步拆成 craft、continuity、compliance、delivery 四类？
-- [ ] export surface 是否应把 human-facing 与 tool-facing 交付分开？

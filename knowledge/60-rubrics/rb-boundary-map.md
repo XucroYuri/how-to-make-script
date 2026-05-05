@@ -30,10 +30,3 @@
 # Boundary Map Rubric
 
 boundary_map 的目标不是让团队更保守，而是让团队更分得清哪些东西真的不能碰，哪些只是别太早自我审查。这个 rubric 就是在看这件事有没有被说清。
-
-## TODOs：待回答问题
-
-- [ ] 哪些团队文化会系统性地把 soft constraint 误当成 hard boundary，是否需要单独案例支持？
-- [ ] 某些项目若从一开始就必须满足品牌或发行要求，rubric 是否需要媒介 / 业务特化版本？
-- [ ] boundary_map 是否还应加入“当前最值得探索的一块”这样的正向维度？
-- [ ] 对 Agent 使用场景，是否要强制 boundary_map 标出 “not final approval” 提示？

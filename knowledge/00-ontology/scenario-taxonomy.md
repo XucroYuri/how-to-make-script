@@ -85,11 +85,3 @@ Typical families include:
 - `60-rubrics` owns quality checks for the outputs those routes produce.
 
 The scenario taxonomy is therefore a bridge layer. It helps the repo say what kind of problem it is looking at before it decides what kind of answer to generate.
-
-## TODOs: Questions To Keep Open
-
-- [ ] Which additional scenario families still need their own reference cards?
-- [ ] Are there requests that should be classified primarily by business goal rather than by medium?
-- [ ] Which mixed scenarios are common enough to deserve their own first-class family?
-- [ ] When should a scenario split into two cards instead of being described by one hybrid signature?
-- [ ] Which scenario families should be attached to future case studies first?

@@ -30,10 +30,3 @@
 # Path Options Rubric
 
 path_options 最容易假的地方，是看起来给了多个方案，实际上只是同一个方案换了几种包装。这个 rubric 的作用，就是逼多路径真正变成多路径，而不是机械追求条数。
-
-## TODOs：待回答问题
-
-- [ ] 对短时探索会话，是否应允许 path_options 只有 2 条，但要求更高差异度？
-- [ ] 哪些 tradeoff 维度最应该标准化，例如 audience、production、platform、style、budget？
-- [ ] 当用户其实早就偏向某条路径时，rubric 应如何防止另外几条路径沦为陪衬？
-- [ ] 是否需要为跨媒介 path_options 增加额外维度来检查容器转换质量？

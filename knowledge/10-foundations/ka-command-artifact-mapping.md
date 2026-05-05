@@ -63,10 +63,3 @@
 对剧本项目来说，这种清楚非常值钱。你知道 `/创作方案` 产出的是故事骨架，`/目录` 产出的是分集目录，`/自检` 产出的是质量审查，那么交接、批量推进和返工优先级就会自然清晰很多。
 
 仓库不一定要复制命令行形态，但应该学习这种“阶段 -> artifact surface”的思维。
-
-## TODOs：待回答问题
-
-- [ ] 当前仓库有哪些 workflow 还缺少清楚的 artifact ladder？
-- [ ] 哪些 output contract 其实适合作为 phase artifact，而不是直接给最终用户的终局产物？
-- [ ] 不同媒介的 artifact ladder 差异，是否值得沉淀为 machine-readable registry？
-- [ ] 对未来 runtime planner 来说，哪些 artifact 应优先拥有 export surface？

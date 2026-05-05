@@ -54,11 +54,3 @@
 真正有用的多路径不是列出三版同义改写，而是让每条路径改变押注点。比如一条押人物关系，一条押高概念引擎，一条押平台留存，一条押互动参与。只有这样，比较才有意义。对窄问题，2 条真正不同的路径可能比 4 条假多样更有价值。
 
 一旦 path_options 做对了，后续收敛就不再是凭感觉，而是基于 tradeoff 的选择。
-
-## TODOs：待回答问题
-
-- [ ] 什么时候 path_options 最适合只给 3 条，什么时候应扩到 5 条？
-- [ ] 对高约束 brief，仓库如何防止 path_options 变成形式上的多样性？
-- [ ] 不同媒介下，路径差异最应该落在 premise、structure 还是 audience payoff 层？
-- [ ] 哪些用户其实并不需要 path_options，而需要直接进入 boundary_map 或 development_brief？
-- [ ] path_options 是否需要一个轻量版，用于时间极紧的探索会话？

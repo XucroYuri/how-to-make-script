@@ -62,11 +62,3 @@
 一个健康的 artifact ladder 可以很轻，但不能没有。它可能是 premise slate、series engine memo、episode beat board、sequence reel、campaign script matrix、branch state map、rewrite hit list。名字可以不同，但作用相同：它让团队知道“此刻我们到底在推进哪一层”。
 
 对多智能体系统来说，这层尤其重要。因为 Agent 之间没法像真人那样共享模糊默契，只能共享可指认的中间产物。没有梯子，协作就只剩下互相转述。
-
-## TODOs：待回答问题
-
-- [ ] narrative、commercial、interactive 三大类项目，artifact ladder 是否应分别冻结一套默认骨架？
-- [ ] 对短周期 campaign 或短剧高速开发，哪些中间产物可以合并，哪些绝不能跳过？
-- [ ] 当团队已有现成 DCC、看板或编剧室工具时，仓库中的 artifact ladder 应如何与外部工具映射？
-- [ ] 是否需要单独增加“room packet / note packet / revision packet”这类更细粒度产物契约？
-- [ ] 在强作者主导项目里，artifact ladder 是否应更短，但 gate 更硬？

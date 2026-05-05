@@ -41,9 +41,3 @@
 
 好的 bridge 会让你看得出原 scene 的戏剧作用，也看得出这份 brief 为什么更适合进入视频生成或 previz 链路。
 现在这套 rubric 还要求它尽量可追溯。否则一旦下游执行偏掉，就很难知道偏差是来自上游、来自桥接裁决，还是来自执行层。
-
-## TODOs：待回答问题
-
-- [ ] 当 bridge 明确是给真人拍摄前的 previz 用，而不是给生成模型用，`clip_economy` 权重是否需要调整？
-- [ ] 商业广告与叙事情绪戏在 `dramatic_fidelity` 的判断上，是否需要不同的基准？
-- [ ] 对长场景拆链后，这份 rubric 是否需要新增“chain continuity”维度？

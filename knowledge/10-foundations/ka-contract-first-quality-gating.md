@@ -62,9 +62,3 @@
 一个 `scene_draft` 应该先看场景功能、冲突和变化是否成立；一个 `screen_to_video_brief` 应该先看 clip 级不变量、桥接粒度和执行风险；一个 `project_surface_map` 则首先要看真源、运行态、handoff 和导出面有没有分清。题目都不同，检查入口当然不能混。
 
 所以这个仓库的通用质检层必须先做 contract fit。只有题对了，后面的表达、节奏、完成度、自检分数才有意义。
-
-## TODOs：待回答问题
-
-- [ ] 哪些用户请求最容易把 `rewrite_report` 和 `quality_gate_report` 混为一谈？
-- [ ] 当用户只给局部片段但要求全局判断时，contract-first 逻辑应如何限缩结论强度？
-- [ ] 某些 hybrid artifact 同时服务人和工具时，contract 应如何分主次？

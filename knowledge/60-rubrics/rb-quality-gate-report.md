@@ -42,9 +42,3 @@
 3. 查完之后能推动下一步，而不是制造更多模糊争论。
 
 它的价值不在“像不像一个全面报告”，而在“有没有把场景适配、gate 逻辑和复查路径做实”。
-
-## TODOs：待回答问题
-
-- [ ] 对只做 lens-targeted audit 的报告，rubric 是否应单独降低 full coverage 要求？
-- [ ] 某些 exploratory artifact 是否需要更宽松的 hard-fail 集？
-- [ ] 是否需要为 commercial / interactive / governance artifact 加不同权重模板？

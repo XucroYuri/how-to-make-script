@@ -62,11 +62,3 @@
 第一阶段解决的是：有没有按题目做、有没有越界、有没有漏项、有没有把一个 mode 误当另一个 mode。第二阶段才去看：做得够不够稳、结构是否优雅、组合是否合理、表达是否会在真实流程里出事。
 
 这条原则对 repo 本身的知识资产开发也成立。只要任务是“新增协议 / 新增 skill / 新增 route / 新增拓扑”，就不该把“看起来写得不错”和“真的符合设计目标”混成一个 review。
-
-## TODOs：待回答问题
-
-- [ ] 哪些任务必须强制两阶段 review，哪些任务可以降级成单 review？
-- [ ] spec reviewer 是否需要独立于 quality reviewer 的默认角色池？
-- [ ] 当任务主要是 docs / knowledge 资产时，quality review 的重点应该如何定义？
-- [ ] 两阶段 review 的结果是否应进入 future fixture 或 case-study 层？
-- [ ] 某些 high-risk route 是否还需要第三阶段的 final convergence audit？

@@ -61,9 +61,3 @@
 剧本仓库里的 quality gate 也一样。`state continuity` 断裂、`target contract` 错位、`delivery handoff` 完全不可用，这些都不该被漂亮的对白、好看的句子或者部分精彩桥段平均掉。平均分是帮助排序的，不是帮助掩盖的。
 
 所以这里借用的是专用 checker 的 gate 思维，但抽象成更通用的规则：先 gate，后 score。
-
-## TODOs：待回答问题
-
-- [ ] 哪些 output contract 需要更严格的 hard-fail 集，而哪些更适合宽松 gate？
-- [ ] 是否需要为不同 medium 单独定义一票否决项？
-- [ ] 当项目明确处于 exploration 阶段时，哪些 hard gate 仍然必须保留？

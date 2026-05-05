@@ -64,11 +64,3 @@
 真正的 subagent 设计，应该像真实团队分工一样：谁只拿 premise slate，谁只拿当前 scene packet，谁只拿 audience fit note，谁只拿 continuity anchors。不是信息越多越专业，而是信息越贴 mandate 越专业。
 
 在这个仓库里，context budget 不只是性能问题，也是创作质量问题。角色越清晰，加载越克制，subagent 才越像真实的专业角色，而不是另一个隐形 root skill。
-
-## TODOs：待回答问题
-
-- [ ] 是否需要把不同 subagent 的默认 loading tier 固化为 machine-readable policy？
-- [ ] 哪些跨 lane 的共享信息最容易误伤创造力，最应该被压缩进 packet？
-- [ ] 如果某个 subagent 连续两轮都要求扩容，系统应默认它不适配当前 lane 吗？
-- [ ] human gate 节点是否也应该有明确的 context budget，而不是默认看全量？
-- [ ] 如何在保留反例和 dissent 的同时，避免 compare_pack 被滥用成全局扩容借口？

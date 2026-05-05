@@ -61,11 +61,3 @@
 
 这个协议保护的是生成质量。它把”路由””扩容””停止”三个动作分开，让 Agent 保持专业但不僵化的 balance。
 当问题只是”下次继续写时别丢状态”，最好的答案往往不是再加载五份相邻资产，而是先产出一个可恢复的检查点。
-
-## TODOs：待回答问题
-
-- [ ] 默认 loading modes 是否还需要再细分为 narrative/commercial/interactive 三套？
-- [ ] context_loading_plan 是否应该支持显式的 token budget 或 bundle budget？
-- [ ] 对创意延伸型请求，何时该从 compare_pack 升到 teaching_pack 或 survey_pack？
-- [ ] 是否需要单独记录”必须禁止同时加载”的冲突资产组合？
-- [ ] 什么时候 route certainty 足够低，应该先追问而不是制定 loading plan？

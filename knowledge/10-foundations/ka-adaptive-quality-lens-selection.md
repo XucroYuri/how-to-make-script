@@ -62,9 +62,3 @@
 这就是为什么当前仓库不应该照搬一个固定线性 stage 流程，而应该引入可选 lens stack。对 narrative scene，可能最该看的是 contract fit、dramatic mechanics、continuity、voice；对互动分支，更关键的是 agency、state continuity、convergence control；对 team 或 project surface，则应该把 handoff、packet、edit policy、delivery surfaces 拉到前面。
 
 通用，不等于统一。真正强的通用层，是统一抽象而不是统一 checklist。
-
-## TODOs：待回答问题
-
-- [ ] 哪些 artifact family 需要独立 bundle，而不是继续并入更大类？
-- [ ] 当前 repo 哪些 output 仍然缺少足够清楚的 default lens stack？
-- [ ] 什么条件下应该强制从 targeted audit 升级成 full audit？

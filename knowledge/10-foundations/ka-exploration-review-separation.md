@@ -60,11 +60,3 @@
 探索-审查分离的核心不是取消约束，而是改变它们进场的时机。比如品牌风格、平台优化、市场熟悉度这些 soft constraint，很多时候可以后置；但安全、伤害、隐私、非法剥削这类 hard boundary 不能离场。
 
 这条原则尤其适合 Agent，因为系统天生倾向于把每一次输出都伪装成最终答案。仓库需要显式告诉它：不是每次都要立刻“放行”，很多时候先发散，后 review，才是更成熟的工作方式。
-
-## TODOs：待回答问题
-
-- [ ] 哪些用户请求应该默认被判定为 exploration，而不是 review？
-- [ ] 对高风险商业发布项目，探索阶段可放松的 soft constraint 会不会更少？
-- [ ] 互动叙事的 exploration 与 review 是否需要额外的 state / player impact gate？
-- [ ] 哪些团队流程最容易把“探索性草案”误拿去当最终交付？
-- [ ] 如何让 Agent 在输出里显式标注“这是 exploration candidate，不是 final approval”？

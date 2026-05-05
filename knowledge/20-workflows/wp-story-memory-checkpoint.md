@@ -64,10 +64,3 @@
 - room 已经讨论出很多东西，但不值得每次都重读所有原始材料。
 
 对当前仓库来说，这个协议还有额外价值：它提供了一种比”继续加载更多文档”更健康的连续性管理手段。也就是说，当真正的问题是 continuity-safe handoff 时，最优解往往不是扩 context，而是产出 checkpoint。
-
-## TODOs：待回答问题
-
-- [ ] checkpoint 是否需要区分”作者自己恢复写作”和”交给别的 Agent/人”的两种模板？
-- [ ] 在互动叙事里，状态变量和剧情记忆是否应分成两个层？
-- [ ] 哪些项目需要每一集都有 checkpoint，哪些项目只在 major turn 后做 checkpoint 即可？
-- [ ] checkpoint 是否要显式标注”若只回看一处 source，优先回看哪里”？

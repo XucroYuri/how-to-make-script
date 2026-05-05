@@ -65,11 +65,3 @@
 
 对 Agent Skill 来说，这也是把”多智能体”从口号变成约束的方法。没有角色、handoff、gate 和 artifact ladder，多 agent 只是多上下文噪音。
 如果 blueprint 已经选好了 mode，但还需要回答”这次具体让哪些专家和 persona 进场”以及”这些 subagent 怎么排班和 review”，就不该继续把所有细节塞回 blueprint，而该交给 `expert_subagent_cast` 和 `subagent_dispatch_plan`。
-
-## TODOs：待回答问题
-
-- [ ] `team_workflow_blueprint` 是否应该拆成”模式选择版”和”执行部署版”两个层级？
-- [ ] 当用户希望同时运行 agent team 和真实 human team 时，蓝图是否需要双轨角色图？
-- [ ] blueprint 是否需要直接生成 meeting cadence / room agenda / async board 模板？
-- [ ] 哪些项目最值得提供 primary mode + backup mode，而不是只给一条主路线？
-- [ ] 当团队资源极少时，仓库应如何判断哪些角色可以折叠，哪些绝不能折叠？

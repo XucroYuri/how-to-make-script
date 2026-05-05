@@ -37,10 +37,3 @@
 一份好的 `expert_subagent_cast`，不是让人看着觉得“阵容豪华”，而是让人清楚知道：这套阵容为什么值得存在、为什么不会互相打架、为什么不会把系统拖回上下文噪音。
 
 它最怕两种失败：一种是“只有创作专家，没有流程纪律”；另一种是“只有名家气质，没有真实职责”。前者会失控，后者会变成漂亮但空的 cosplay。
-
-## TODOs：待回答问题
-
-- [ ] rubric 是否应按 medium 或 team mode 提供不同权重版本？
-- [ ] cast_economy 是否需要和 token / latency 成本显式挂钩？
-- [ ] 当阵容故意保留互相冲突的 persona lens 时，rubric 如何区分健康 tension 与无效内耗？
-- [ ] 是否应该单独检查“review node 是否过早进入 ideation”？

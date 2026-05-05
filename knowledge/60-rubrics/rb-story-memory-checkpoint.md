@@ -34,9 +34,3 @@
 一个好的 checkpoint 不在于“总结得很全面”，而在于“下一轮真的能继续写”。
 
 如果它只是把故事讲了一遍，却没有告诉协作者现在到底处在哪个状态、什么东西不能漂、下一步从哪切进去最安全，那它就还不算检查点，只算复盘。
-
-## TODOs：待回答问题
-
-- [ ] 是否需要按 feature / episodic / interactive 分不同权重？
-- [ ] compression_fidelity 是否应增加更明确的篇幅或字段上限建议？
-- [ ] 对 review handoff 和 draft resume，两种 checkpoint 的 hard fail 是否应该不同？

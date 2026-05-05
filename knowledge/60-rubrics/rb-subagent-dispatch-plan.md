@@ -37,10 +37,3 @@
 好的调度计划，不只是“怎么多开几个 agent”，而是“怎么让系统在复杂情况下仍然不乱”。如果一份 `subagent_dispatch_plan` 看起来很酷，但没有 merge owner、没有 packet、没有 gate、没有 collapse 规则，那它只是并行幻想。
 
 真正专业的调度，应该既能跑得快，也能在必要时收得回来。它要解释的不只是“怎么展开”，还要解释“怎么停”“怎么换模式”“怎么避免 context rot”。
-
-## TODOs：待回答问题
-
-- [ ] rubric 是否需要单独检查“persona lane 误伤主路由”的风险？
-- [ ] 对 repo 研发型 dispatch，是否应该要求更强的 two-stage review 纪律？
-- [ ] 哪些 topology 的 fallback 应该固定写进 matrix，而不是临时判断？
-- [ ] human gate 过密与过稀各自的典型失败，是否值得沉淀成 fixture？

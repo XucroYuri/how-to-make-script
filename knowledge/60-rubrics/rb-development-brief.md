@@ -30,10 +30,3 @@
 # Development Brief Rubric
 
 development brief 的价值不在于“说得全面”，而在于帮助团队少走弯路。这个 rubric 的核心就是问：这份 brief 到底能不能指导下一步真实开发。
-
-## TODOs：待回答问题
-
-- [ ] 如果项目还没有明确委制方，这份 rubric 是否需要一个 independent baseline 模式？
-- [ ] 对品牌项目和影视项目，风险项的分类维度是否应该不同？
-- [ ] brief 中多大比例应该谈创作，多大比例应该谈开发与交付，是否需要更细的经验边界？
-- [ ] 当项目策略必须在多个窗口并行时，rubric 应如何判断 brief 是否仍然清晰？

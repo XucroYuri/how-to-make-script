@@ -54,11 +54,3 @@
 很多项目一上来就卡住，不是因为想法太少，而是因为约束没有分级。品牌、平台、审美、市场、团队偏好、风险判断全挤成一团，最后创意还没展开就先被自己压死了。边界地图就是用来拆这团线。
 
 做得好的 boundary_map，能让团队把争论从”到底能不能写”转成”现在先写到哪、后面在哪一关再收”。
-
-## TODOs：待回答问题
-
-- [ ] `boundary_map` 是否需要按 narrative / commercial / interactive 做不同模版？
-- [ ] 在高度监管或高风险分发环境中，哪些 soft constraint 会前移成 route-critical constraint？
-- [ ] 对品牌项目来说，brand consistency 何时只是 soft constraint，何时接近 hard boundary？
-- [ ] 用户若明确想打破某个惯例，系统应如何区分”必要突破”与”误判风险”？
-- [ ] boundary_map 是否应与 development_brief 联动，形成一前一后的工作组合？

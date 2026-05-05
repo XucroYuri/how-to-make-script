@@ -33,9 +33,3 @@
 用于判断改编、类型适配和跨媒介适配是否真的成立。
 
 这套 rubric 的重点不是“变得不像原来”，也不是“尽量不动原来”，而是看当前版本能不能既保住核心引擎，又真正兑现新的承诺。
-
-## TODOs：待回答问题
-
-- [ ] 哪些改编本质上已经越过 adaptation，进入 new development，需要单独出口？
-- [ ] 当原作优势恰好与目标媒介节奏冲突时，engine_preservation 和 target_promise_fit 应如何取舍？
-- [ ] 对 IP 连续性极强的项目，是否需要再补一层 continuity-specific hard fail？

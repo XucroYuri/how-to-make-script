@@ -69,11 +69,3 @@
 6. 下一次最安全的恢复入口在哪里。
 
 如果这一层做得好，后续写作不需要每次回读全量材料；如果这一层做得差，项目越大，模型和人都会越依赖“重新读一遍”，最后把连续性管理变成上下文堆砌。
-
-## TODOs：待回答问题
-
-- [ ] 什么体量的项目才值得显式建立 checkpoint cadence，而不是临时手工记要点？
-- [ ] feature、episodic、interactive 三类项目的 checkpoint 字段是否应该有不同默认模板？
-- [ ] 哪些信息适合进入 checkpoint，哪些信息更适合只留在 canonical source 而不进入 handoff 包？
-- [ ] 一个 checkpoint 多长还算“压缩成功”，多长就已经退化成重新搬运原文？
-- [ ] 是否需要单独区分 writing checkpoint、room checkpoint、review checkpoint 三种契约？

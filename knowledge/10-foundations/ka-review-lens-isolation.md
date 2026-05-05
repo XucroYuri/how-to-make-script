@@ -62,9 +62,3 @@
 如果 `contract_fit`、`voice`、`execution_feasibility`、`delivery_handoff` 全都共享同一大段 findings，上下文只会越来越脏。最后得到的不是多镜头质检，而是一个长上下文自我强化回路。
 
 所以这个仓库的通用质检层要借的是“镜头隔离”，不是“固定 stage 数”。
-
-## TODOs：待回答问题
-
-- [ ] 对哪些 high-risk lens，是否应完全禁止接收任何上游 metrics，只看原 artifact？
-- [ ] lens 间冲突是否需要单独的 conflict summary schema？
-- [ ] 某些 targeted audit 是否可以退化成单 lens，不必走聚合层？

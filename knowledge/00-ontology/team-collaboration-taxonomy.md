@@ -63,11 +63,3 @@ These are not the only valid modes. They are the first set of reusable operating
 
 The team layer answers the collaboration family.
 The subagent layer answers the concrete roster and dispatch structure.
-
-## TODOs: Questions To Keep Open
-
-- [ ] Which current screenplay workflows still need their own first-class team mode?
-- [ ] Should future versions distinguish human-only, agent-only, and human-agent hybrid rooms as separate topologies?
-- [ ] Which collaboration failures should become regression fixtures rather than staying only in docs?
-- [ ] When should a complex task use one team mode versus a hybrid of two modes?
-- [ ] Which team modes need separate variants for indie, studio, and platform-first development?

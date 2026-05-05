@@ -61,9 +61,3 @@
 这要求复查默认是 range-limited 的。你修的是对白口吻，就优先回查 `expression_integrity`，再补一个最容易被牵连的 `contract_fit` 或 `continuity_invariants`；你改的是 branch map 收束逻辑，就回查 `mechanics_pressure` 和 `continuity_invariants`；只有当主 contract 被改了，才升级成 full audit。
 
 这样质检层才不会变成另一个拖慢开发的重型流程。
-
-## TODOs：待回答问题
-
-- [ ] 哪些变更最容易伪装成小修，实际已经应该升级 full audit？
-- [ ] 对 team workflow 和 project surface 这类治理型 artifact，邻接 lens 应如何选？
-- [ ] 是否需要把 `changed range` 标准化成 machine-readable 字段？

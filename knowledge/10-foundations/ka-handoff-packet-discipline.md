@@ -63,10 +63,3 @@
 对这个仓库来说，handoff packet 应该是 bounded loading 在团队协作层的延伸。它的作用不是记录一切，而是保护下一步决策的清晰度。一个好的交接包会告诉下游：当前假设是什么、已经加载了哪些 bundle、还有哪些开放问题、置信度如何、推荐交给谁、是否必须让人看一眼。
 
 这样多角色协作才不会越来越像仓库摘要竞赛，而是像真实的专业分工。
-
-## TODOs：待回答问题
-
-- [ ] handoff packet 是否需要按不同 team mode 允许不同字段集？
-- [ ] 对高并行场景，是否应加入 conflict summary 字段来显式记录 lane 间冲突？
-- [ ] 什么时候 handoff 最好改成 review-board 汇总，而不是继续多站串行传递？
-- [ ] 是否需要把 token budget 或 bundle budget 纳入 handoff packet 本身？
