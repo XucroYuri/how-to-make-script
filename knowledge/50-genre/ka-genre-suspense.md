@@ -17,8 +17,8 @@
     "premise",
     "structure",
     "scene",
-    "adaptation",
-    "rewrite"
+    "rewrite",
+    "adaptation"
   ],
   "problem": "悬疑故事线索堆了很多，但观众要么提前猜到结局，要么觉得被欺骗——缺乏公平感。",
   "decision_rules": [

@@ -8,8 +8,8 @@
   "mediums": [
     "episodic",
     "short_drama",
-    "branching_interactive",
-    "game_narrative"
+    "game_narrative",
+    "branching_interactive"
   ],
   "stages": [
     "premise",
@@ -40,9 +40,9 @@
     "本集闭环与系列推进是否形成预算上的互补关系"
   ],
   "links": [
+    "ka.causality-chain",
     "ka.medium-episode",
-    "ka.medium-short-drama",
-    "ka.causality-chain"
+    "ka.medium-short-drama"
   ],
   "source_status": "synthesized"
 }

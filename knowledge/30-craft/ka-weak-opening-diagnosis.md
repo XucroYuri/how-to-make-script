@@ -6,7 +6,7 @@
   "kind": "diagnostic",
   "summary": "识别并修复剧本开场最常见的五种失效模式，使第一场景立即建立人物欲望与冲突。",
   "mediums": ["feature_film","episodic","short_drama","animation","commercial","branded_film","shortform_video","game_narrative","branching_interactive"],
-  "stages": ["ideation","premise","scene","structure","rewrite"],
+  "stages": ["ideation","premise","structure","scene","rewrite"],
   "problem": "开场缺乏即时冲突，导致观众注意力在建立投入感之前就已流失。",
   "decision_rules": [
     "第一步：定位第一个'有什么不对劲'的时刻——如果它不在第1页，开场就有问题。",
@@ -32,7 +32,7 @@
     "开场场景的最后一个动作或台词，是否制造了一个需要被回答的问题？",
     "主角是否在第一场景中做出了一个揭示其欲望或恐惧的具体行动？"
   ],
-  "links": ["ka.opening-job-selection","ka.scene-function","ka.audience-need-state","ka.platform-attention-economy"],
+  "links": ["ka.audience-need-state","ka.opening-job-selection","ka.platform-attention-economy","ka.scene-function"],
   "source_status": "synthesized"
 }
 ---

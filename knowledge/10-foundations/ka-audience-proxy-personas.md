@@ -17,10 +17,10 @@
     "branching_interactive"
   ],
   "stages": [
-    "scene",
+    "structure",
     "outline",
-    "rewrite",
-    "structure"
+    "scene",
+    "rewrite"
   ],
   "problem": "形式检查表告诉你剧本是否符合规则，但无法告诉你真实观众坐在那里看完这场戏后处于什么状态。两种评价系统回答不同的问题，本原子覆盖后者。",
   "decision_rules": [

@@ -11,8 +11,8 @@
   "stages": [
     "structure",
     "outline",
-    "adaptation",
-    "rewrite"
+    "rewrite",
+    "adaptation"
   ],
   "problem": "分支很多但没有意义，或者分支有意义却无法收束。",
   "decision_rules": [
@@ -36,8 +36,8 @@
     "整体分支结构是否可收束"
   ],
   "links": [
-    "ka.medium-game-narrative",
-    "ka.causality-chain"
+    "ka.causality-chain",
+    "ka.medium-game-narrative"
   ],
   "source_status": "synthesized"
 }

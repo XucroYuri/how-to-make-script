@@ -9,16 +9,16 @@
     "feature_film",
     "episodic",
     "short_drama",
-    "game_narrative",
-    "animation"
+    "animation",
+    "game_narrative"
   ],
   "stages": [
     "premise",
     "character",
     "structure",
     "scene",
-    "adaptation",
-    "rewrite"
+    "rewrite",
+    "adaptation"
   ],
   "problem": "武侠故事有武无侠——打斗很多但人物没有道德抉择，或武功体系随意、缺乏内在逻辑。",
   "decision_rules": [

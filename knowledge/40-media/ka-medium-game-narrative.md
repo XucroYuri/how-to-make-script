@@ -12,8 +12,8 @@
     "premise",
     "structure",
     "outline",
-    "adaptation",
-    "rewrite"
+    "rewrite",
+    "adaptation"
   ],
   "problem": "线性剧本逻辑直接移植到游戏，导致玩家能做但不重要，或重要但不能做。",
   "decision_rules": [

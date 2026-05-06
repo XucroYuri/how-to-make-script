@@ -33,7 +33,7 @@
     "是否存在至少两个'不可逆'场景——角色做出了再也无法收回的选择？",
     "每条副线是否在第二幕中至少与主线交叉了两次且产生了实质影响？"
   ],
-  "links": ["ka.causality-chain","ka.conflict-pressure","ka.structure-family-selection","ka.pacing-rhythm","ka.scene-function"],
+  "links": ["ka.causality-chain","ka.conflict-pressure","ka.pacing-rhythm","ka.scene-function","ka.structure-family-selection"],
   "source_status": "synthesized"
 }
 ---

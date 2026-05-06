@@ -42,8 +42,8 @@
   ],
   "links": [
     "ka.character-voice-consistency",
-    "ka.embodied-text-pressure",
-    "ka.conflict-pressure"
+    "ka.conflict-pressure",
+    "ka.embodied-text-pressure"
   ],
   "source_status": "synthesized"
 }

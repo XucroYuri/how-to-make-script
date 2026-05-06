@@ -17,8 +17,8 @@
     "structure",
     "scene",
     "dialogue",
-    "adaptation",
-    "rewrite"
+    "rewrite",
+    "adaptation"
   ],
   "problem": "动作场面密集但缺乏风险升级和因果驱动，奇观与人物脱节。",
   "decision_rules": [

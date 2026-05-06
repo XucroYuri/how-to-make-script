@@ -15,9 +15,9 @@
   ],
   "stages": [
     "premise",
+    "character",
     "structure",
     "outline",
-    "character",
     "scene",
     "dialogue",
     "rewrite",
@@ -45,8 +45,8 @@
     "角色是否在因果链中承担责任"
   ],
   "links": [
-    "ka.story-goal",
-    "ka.rewrite-diagnosis"
+    "ka.rewrite-diagnosis",
+    "ka.story-goal"
   ],
   "source_status": "synthesized"
 }

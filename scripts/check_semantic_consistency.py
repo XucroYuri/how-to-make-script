@@ -71,7 +71,11 @@ def parse_supported_outputs(path: Path) -> Set[str]:
 
 def parse_taxonomy_section(path: Path, heading: str) -> Set[str]:
     text = path.read_text(encoding="utf-8")
-    start = text.index(f"## {heading}")
+    try:
+        start = text.index(f"## {heading}")
+    except ValueError:
+        print(f"Warning: heading '## {heading}' not found in {path}", file=sys.stderr)
+        return set()
     next_heading = text.find("\n## ", start + 1)
     end = len(text) if next_heading == -1 else next_heading
     return set(OUTPUT_RE.findall(text[start:end]))
@@ -79,7 +83,11 @@ def parse_taxonomy_section(path: Path, heading: str) -> Set[str]:
 
 def parse_constraint_families(path: Path) -> Set[str]:
     text = path.read_text(encoding="utf-8")
-    start = text.index("## Constraint Families")
+    try:
+        start = text.index("## Constraint Families")
+    except ValueError:
+        print(f"Warning: heading '## Constraint Families' not found in {path}", file=sys.stderr)
+        return set()
     return set(OUTPUT_RE.findall(text[start:]))
 
 

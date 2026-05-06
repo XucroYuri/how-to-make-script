@@ -12,9 +12,6 @@ if __package__ in (None, ""):
 from scripts.lib import repo_root
 
 
-REQUIRED_DOCS = (
-)
-
 REQUIRED_LABELS = {
     "needs-triage",
     "type:challenge",
@@ -52,10 +49,6 @@ def check_community_surfaces(root: Path) -> Dict[str, Any]:
     config_text = config_path.read_text(encoding="utf-8") if config_path.exists() else ""
     if not config_text:
         errors.append(".github/ISSUE_TEMPLATE/config.yml: missing or empty")
-
-    for doc in REQUIRED_DOCS:
-        if not (root / doc).exists():
-            errors.append(f"{doc}: missing")
 
     category_slugs: List[str] = []
     expected_discussion_template_count = 0
@@ -110,7 +103,7 @@ def check_community_surfaces(root: Path) -> Dict[str, Any]:
         "category_count": len(category_slugs),
         "discussion_template_count": expected_discussion_template_count,
         "label_count": len(label_names),
-        "doc_count": sum(1 for doc in REQUIRED_DOCS if (root / doc).exists()),
+        "doc_count": 0,
     }
 
 

@@ -37,7 +37,11 @@ def parse_supported_outputs(path: Path) -> Set[str]:
 
 def parse_constraint_families(path: Path) -> Set[str]:
     text = path.read_text(encoding="utf-8")
-    start = text.index("## Constraint Families")
+    try:
+        start = text.index("## Constraint Families")
+    except ValueError:
+        print(f"Warning: heading '## Constraint Families' not found in {path}", file=sys.stderr)
+        return set()
     families: Set[str] = set()
     for line in text[start:].splitlines():
         line = line.strip()

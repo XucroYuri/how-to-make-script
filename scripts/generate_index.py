@@ -24,7 +24,7 @@ def build_index(root: Path) -> Dict[str, Any]:
         "evaluation_rubric": [],
     }
 
-    for asset in assets:
+    for asset in sorted(assets, key=lambda x: x["id"]):
         asset_index[asset["type"]].append(
             {
                 "id": asset["id"],

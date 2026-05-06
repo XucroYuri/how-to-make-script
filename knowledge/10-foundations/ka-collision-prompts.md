@@ -6,7 +6,7 @@
   "kind": "generative",
   "summary": "提供压缩性碰撞情境，迫使涌现式戏剧写作而非可预测的情节推演。",
   "mediums": ["feature_film","episodic","short_drama","animation","commercial","branded_film","shortform_video","game_narrative","branching_interactive"],
-  "stages": ["ideation","premise","scene","character","structure"],
+  "stages": ["ideation","premise","character","structure","scene"],
   "problem": "LLM在缺乏压缩力的情况下生成可预测场景，本原子提供结构性碰撞压力以激活涌现。",
   "decision_rules": [
     "处于生成姿态模式时，用碰撞模板替代空白起点",
@@ -38,7 +38,7 @@
     "碰撞是否揭示了一个单靠对话无法揭示的角色本质",
     "移除这个碰撞条件是否会让场景变得更容易写但也更空洞"
   ],
-  "links": ["ka.conflict-pressure","ka.scene-function","ka.story-goal","ka.character-arc"],
+  "links": ["ka.character-arc","ka.conflict-pressure","ka.scene-function","ka.story-goal"],
   "source_status": "synthesized"
 }
 ---
