@@ -41,7 +41,8 @@
     "ka.register-adaptation",
     "ka.embodied-text-pressure",
     "ka.dialogue-subtext",
-    "ka.cross-protocol-referral-edges"
+    "ka.cross-protocol-referral-edges",
+    "ka.tone-writing-moves"
   ],
   "fallback_behavior": "If the user actually wants a finished draft, return to the primary drafting route and load this guide as an expression-lens adjunct.",
   "default_loading_mode": "focus_pack",

@@ -52,6 +52,8 @@ Structure serves character transformation. Ask at each major beat: "What has thi
 - `ka.medium-episode`
 - `ka.medium-feature-film`
 - `ka.medium-short-drama`
+- `ka.medium-animation`
+- `ka.medium-documentary`
 - `ka.pacing-rhythm`
 - `ka.serial-arc-budgeting`
 - `ka.story-goal`

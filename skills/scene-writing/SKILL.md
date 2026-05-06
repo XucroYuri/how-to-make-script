@@ -61,3 +61,5 @@ Audience experience is the primary concern. Ask: "At the end of this scene, what
 - `ka.scene-function`
 - `ka.setup-and-payoff`
 - `ka.verbal-rhythm`
+- `ka.medium-animation`
+- `ka.reactive-comedy-loop`

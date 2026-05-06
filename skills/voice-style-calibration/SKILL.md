@@ -44,3 +44,4 @@ Voice is character psychology made audible. Before calibrating register, confirm
 - `ka.embodied-text-pressure`
 - `ka.ip-voice-continuity`
 - `ka.register-adaptation`
+- `ka.tone-writing-moves`

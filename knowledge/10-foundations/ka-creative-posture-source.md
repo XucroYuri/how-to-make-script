@@ -72,6 +72,6 @@
 
 来源模式直接影响知识原子的加载优先级：
 
-- Discover 模式：优先加载可能性探索类原子（如 `ka.path-options`、`ka.idea-discovery-signal`），延迟加载硬性结构规则
-- Construct 模式：优先加载结构约束类原子（如 `ka.causality-chain`、`ka.structure-beat`），精确匹配当前 stage
+- Discover 模式：优先加载可能性探索类原子（如 `ka.divergence-convergence-loop`、`ka.exploration-review-separation`），延迟加载硬性结构规则
+- Construct 模式：优先加载结构约束类原子（如 `ka.causality-chain`、`ka.structure-family-selection`、`ka.beat-carrier-selection`），精确匹配当前 stage
 - Generate 模式：优先加载角色碰撞、信息不对称、涌现触发类原子

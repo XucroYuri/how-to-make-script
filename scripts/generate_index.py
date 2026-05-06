@@ -117,13 +117,12 @@ EXPRESSION_LENS_ATOMS: Dict[str, List[str]] = {
 
 def build_runtime_index(root: Path) -> Dict[str, Any]:
     root = root.resolve()
-    from scripts.lib import load_router_matrix, load_json
+    from scripts.lib import load_router_matrix
 
     router_matrix = load_router_matrix(root)
     _, assets, manifests, _ = collect_asset_index(root)
 
     manifest_by_id = {m["id"]: m for m in manifests}
-    asset_by_id = {a["id"]: a for a in assets}
 
     # A1: route_lookup — output -> intent -> medium -> stage -> route info
     route_lookup: Dict[str, Any] = {}

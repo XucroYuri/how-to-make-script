@@ -48,10 +48,11 @@
     "ka.dialogue-subtext",
     "ka.embodied-text-pressure",
     "ka.ip-voice-continuity",
-    "ka.register-adaptation"
+    "ka.register-adaptation",
+    "ka.tone-writing-moves"
   ],
-  "budget_class": "M",
-  "mandatory_atom_count": 6,
+  "budget_class": "L",
+  "mandatory_atom_count": 7,
   "expansion_allowed": true
 }
 ---

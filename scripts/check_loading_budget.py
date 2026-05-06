@@ -16,7 +16,7 @@ import sys
 if __package__ in (None, ""):
     sys.path.append(str(Path(__file__).resolve().parents[1]))
 
-from scripts.lib import collect_asset_index, collect_skill_manifests, repo_root
+from scripts.lib import collect_asset_index, repo_root
 
 BUDGET_LIMITS = {
     "S": 4,

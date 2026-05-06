@@ -62,6 +62,8 @@ Voice continuity is the highest-risk surface in adaptation. Lock the voice ancho
 - `ka.genre-romance`
 - `ka.genre-satire`
 - `ka.genre-thriller`
+- `ka.genre-suspense`
+- `ka.genre-wuxia`
 - `ka.medium-branching-interactive`
 - `ka.medium-commercial`
 - `ka.medium-feature-film`

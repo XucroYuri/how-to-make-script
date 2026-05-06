@@ -43,7 +43,9 @@
     "ka.commissioning-fit",
     "ka.cross-protocol-referral-edges",
     "ka.pacing-rhythm",
-    "ka.platform-attention-economy"
+    "ka.platform-attention-economy",
+    "ka.platform-douyin",
+    "ka.platform-reels"
   ],
   "fallback_behavior": "If the audience is underspecified, infer one primary segment and one adjacent segment, then report confidence and risk.",
   "default_loading_mode": "focus_pack",

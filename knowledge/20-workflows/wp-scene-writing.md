@@ -49,10 +49,12 @@
     "ka.exposition-control",
     "ka.scene-function",
     "ka.setup-and-payoff",
-    "ka.verbal-rhythm"
+    "ka.verbal-rhythm",
+    "ka.medium-animation",
+    "ka.reactive-comedy-loop"
   ],
   "budget_class": "L",
-  "mandatory_atom_count": 9,
+  "mandatory_atom_count": 11,
   "expansion_allowed": true
 }
 ---

@@ -43,3 +43,5 @@ Translate character-layer work into audience-perception questions: "When this ch
 - `ka.cross-protocol-referral-edges`
 - `ka.pacing-rhythm`
 - `ka.platform-attention-economy`
+- `ka.platform-douyin`
+- `ka.platform-reels`

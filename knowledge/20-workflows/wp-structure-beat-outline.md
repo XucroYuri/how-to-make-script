@@ -45,13 +45,15 @@
     "ka.medium-episode",
     "ka.medium-feature-film",
     "ka.medium-short-drama",
+    "ka.medium-animation",
+    "ka.medium-documentary",
     "ka.pacing-rhythm",
     "ka.serial-arc-budgeting",
     "ka.story-goal",
     "ka.structure-family-selection"
   ],
   "budget_class": "L",
-  "mandatory_atom_count": 11,
+  "mandatory_atom_count": 13,
   "expansion_allowed": true
 }
 ---

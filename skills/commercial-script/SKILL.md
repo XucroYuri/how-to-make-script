@@ -45,3 +45,5 @@ Register control matters more in commercial work than in any other medium. Premi
 - `ka.medium-commercial`
 - `ka.medium-shortform-video`
 - `ka.scene-function`
+- `ka.platform-douyin`
+- `ka.platform-reels`

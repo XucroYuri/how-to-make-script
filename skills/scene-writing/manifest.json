@@ -38,7 +38,9 @@
     "ka.exposition-control",
     "ka.scene-function",
     "ka.setup-and-payoff",
-    "ka.verbal-rhythm"
+    "ka.verbal-rhythm",
+    "ka.medium-animation",
+    "ka.reactive-comedy-loop"
   ],
   "fallback_behavior": "Merge, delete, or redesign the scene if it does not change the situation, or rebuild the beat carriers if the draft slips into bare dialogue or writerly prose.",
   "default_loading_mode": "focus_pack",

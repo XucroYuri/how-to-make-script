@@ -41,10 +41,12 @@
     "ka.commissioning-fit",
     "ka.cross-protocol-referral-edges",
     "ka.pacing-rhythm",
-    "ka.platform-attention-economy"
+    "ka.platform-attention-economy",
+    "ka.platform-douyin",
+    "ka.platform-reels"
   ],
-  "budget_class": "M",
-  "mandatory_atom_count": 5,
+  "budget_class": "L",
+  "mandatory_atom_count": 7,
   "expansion_allowed": true
 }
 ---
