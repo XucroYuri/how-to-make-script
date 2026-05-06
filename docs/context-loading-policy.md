@@ -130,6 +130,26 @@ If the load is too thin:
 If continuity pressure is the only reason the bundle keeps growing:
 - Create or refresh a story memory checkpoint instead of widening again
 
+## Deterministic Load Order
+
+To maximize LLM prompt cache hit rate across requests, atoms within each loading pack MUST be emitted in a canonical, deterministic order. This ensures that any two requests loading the same set of atoms produce identical prompt prefix bytes, enabling cache sharing even across different routes.
+
+**Canonical emission sequence per pack:**
+
+1. Protocol body (the selected `wp.*.md` file)
+2. Primary rubric (the first `rb.*` listed in the protocol's `rubrics`)
+3. Linked atoms — in **alphabetical order** by `ka.*` ID
+4. Optional lenses — in **alphabetical order** by lens ID
+5. Adjunct bundles — if triggered, loaded after the main pack, in alphabetical order by bundle ID
+
+**Supporting invariants** (enforced by CI and schema):
+
+- All atom `mediums` and `stages` arrays are in schema-enum order
+- All protocol `linked_atoms` arrays are alphabetically sorted
+- Script-generated output (indexes, manifests) uses `sorted()` for deterministic serialization
+
+**Rationale:** Claude prompt caching operates on prefix matching. When the same bytes appear at the same position in the prompt across multiple requests, subsequent requests get cache hits for the entire shared prefix. Non-deterministic ordering (e.g., loading `ka.scene-function` before `ka.conflict-pressure` in one request but after in another) breaks prefix matching and causes cache misses even when the same knowledge atoms are loaded.
+
 ## Operating Summary
 
 The right bundle is the smallest bundle that still lets the model explain the route, justify the decision, and generate a useful answer.

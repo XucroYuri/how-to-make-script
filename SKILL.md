@@ -5,7 +5,14 @@ description: Root orchestration skill for screenplay creation. Routes by intent-
 
 # How To Make Script
 
-Route-first screenplay Agent Skill. Classify the request, load only what's needed, produce the exact output contract requested. No theory dumps, no one-size-fits-all advice.
+Route-first screenplay Agent Skill. Classify the request, load only what\'s needed, produce the exact output contract requested. No theory dumps, no one-size-fits-all advice.
+
+<!-- CACHE DETERMINISM INVARIANTS:
+  All knowledge atom frontmatter arrays (mediums, stages) are in schema-enum order.
+  All workflow protocol linked_atoms arrays are alphabetically sorted.
+  Canonical load order per route: protocol → rubric → linked_atoms (alpha) → optional lenses (alpha by id).
+  This ordering ensures deterministic prompt prefixes for LLM cache hit maximization.
+-->
 
 ## Quick Start
 
