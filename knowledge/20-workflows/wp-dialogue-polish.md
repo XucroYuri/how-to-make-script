@@ -40,7 +40,7 @@
   ],
   "budget_class": "S",
   "mandatory_atom_count": 4,
-  "expansion_allowed": true
+  "expansion_allowed": false
 }
 ---
 # 对白打磨协议

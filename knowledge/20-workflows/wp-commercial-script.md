@@ -38,9 +38,9 @@
     "ka.medium-branded-film",
     "ka.medium-commercial",
     "ka.medium-shortform-video",
-    "ka.scene-function",
     "ka.platform-douyin",
-    "ka.platform-reels"
+    "ka.platform-reels",
+    "ka.scene-function"
   ],
   "budget_class": "L",
   "mandatory_atom_count": 7,

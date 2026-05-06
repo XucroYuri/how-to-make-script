@@ -50,7 +50,7 @@
   ],
   "budget_class": "M",
   "mandatory_atom_count": 6,
-  "expansion_allowed": true
+  "expansion_allowed": false
 }
 ---
 # 上下文加载计划协议

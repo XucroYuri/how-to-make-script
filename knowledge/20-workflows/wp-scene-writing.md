@@ -47,11 +47,11 @@
     "ka.cross-protocol-referral-edges",
     "ka.embodied-text-pressure",
     "ka.exposition-control",
+    "ka.medium-animation",
+    "ka.reactive-comedy-loop",
     "ka.scene-function",
     "ka.setup-and-payoff",
-    "ka.verbal-rhythm",
-    "ka.medium-animation",
-    "ka.reactive-comedy-loop"
+    "ka.verbal-rhythm"
   ],
   "budget_class": "L",
   "mandatory_atom_count": 11,

@@ -36,11 +36,11 @@
     "ka.cross-protocol-referral-edges",
     "ka.embodied-text-pressure",
     "ka.exposition-control",
+    "ka.medium-animation",
+    "ka.reactive-comedy-loop",
     "ka.scene-function",
     "ka.setup-and-payoff",
-    "ka.verbal-rhythm",
-    "ka.medium-animation",
-    "ka.reactive-comedy-loop"
+    "ka.verbal-rhythm"
   ],
   "fallback_behavior": "Merge, delete, or redesign the scene if it does not change the situation, or rebuild the beat carriers if the draft slips into bare dialogue or writerly prose.",
   "default_loading_mode": "focus_pack",

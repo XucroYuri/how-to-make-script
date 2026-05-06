@@ -33,6 +33,7 @@
     "rb.rewrite-report"
   ],
   "linked_atoms": [
+    "ka.act-two-diagnosis",
     "ka.causality-chain",
     "ka.cross-protocol-referral-edges",
     "ka.dialogue-subtext",
@@ -42,7 +43,6 @@
     "ka.rewrite-diagnosis",
     "ka.scene-function",
     "ka.setup-and-payoff",
-    "ka.act-two-diagnosis",
     "ka.weak-opening-diagnosis"
   ],
   "budget_class": "L",

@@ -17,7 +17,7 @@
   ],
   "budget_class": "M",
   "mandatory_atom_count": 6,
-  "expansion_allowed": true,
+  "expansion_allowed": false,
   "preconditions": [
     "任务具有长篇、分集、多轮改稿、多协作者或跨会话继续写作的压力",
     "至少能识别一个当前阶段边界、handoff 场景或恢复写作场景"
