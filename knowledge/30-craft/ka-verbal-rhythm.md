@@ -17,8 +17,8 @@
     "branching_interactive"
   ],
   "stages": [
-    "dialogue",
     "scene",
+    "dialogue",
     "rewrite"
   ],
   "problem": "所有台词句长相近、节奏均匀、缺乏打断和迟疑，像在念稿而不是在说话。",

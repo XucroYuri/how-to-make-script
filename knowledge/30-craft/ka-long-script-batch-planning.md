@@ -8,8 +8,8 @@
   "mediums": [
     "feature_film",
     "episodic",
-    "animation",
     "short_drama",
+    "animation",
     "commercial",
     "branded_film"
   ],

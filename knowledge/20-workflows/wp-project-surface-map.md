@@ -50,13 +50,14 @@
     "ka.command-artifact-mapping",
     "ka.cross-protocol-referral-edges",
     "ka.phase-entrypoint-handoff",
+    "ka.project-surface-taxonomy",
     "ka.script-as-coordination-artifact",
     "ka.source-of-truth-runtime-split",
     "ka.story-memory-checkpoint",
     "ka.subagent-context-budgeting"
   ],
   "budget_class": "L",
-  "mandatory_atom_count": 9,
+  "mandatory_atom_count": 10,
   "expansion_allowed": true
 }
 ---

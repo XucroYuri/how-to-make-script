@@ -16,8 +16,8 @@
   ],
   "stages": [
     "scene",
-    "adaptation",
-    "rewrite"
+    "rewrite",
+    "adaptation"
   ],
   "problem": "桥接说明把 V.O.、背景设定、隐含道具和实际可见元素混成一层，导致镜头执行失真或资源判断错误。",
   "decision_rules": [

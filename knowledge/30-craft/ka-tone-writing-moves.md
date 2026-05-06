@@ -18,10 +18,10 @@
     "documentary"
   ],
   "stages": [
+    "premise",
     "scene",
     "dialogue",
-    "rewrite",
-    "premise"
+    "rewrite"
   ],
   "problem": "知道要什么'调性'，但不知道怎么在文字层面做出来——写出来的东西调性是平的，或者调性靠形容词硬贴而非写作本身承载。",
   "decision_rules": [

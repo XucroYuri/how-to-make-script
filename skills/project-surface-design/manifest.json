@@ -44,6 +44,7 @@
     "ka.command-artifact-mapping",
     "ka.cross-protocol-referral-edges",
     "ka.phase-entrypoint-handoff",
+    "ka.project-surface-taxonomy",
     "ka.script-as-coordination-artifact",
     "ka.source-of-truth-runtime-split",
     "ka.story-memory-checkpoint",

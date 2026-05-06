@@ -6,12 +6,12 @@
   "kind": "technique",
   "summary": "反应式喜剧的稳定笑感通常来自一个清楚回路：刺激进入，角色按其性格过度反应，行动升级，最后被自己的反应反噬。",
   "mediums": [
-    "animation",
+    "feature_film",
     "episodic",
     "short_drama",
-    "shortform_video",
+    "animation",
     "commercial",
-    "feature_film"
+    "shortform_video"
   ],
   "stages": [
     "premise",
