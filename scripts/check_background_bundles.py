@@ -13,6 +13,8 @@ from scripts.lib import (
     collect_asset_index,
     load_json,
     load_schemas,
+    parse_constraint_families,
+    parse_supported_outputs,
     relative_path,
     repo_root,
     validate_schema,
@@ -20,34 +22,6 @@ from scripts.lib import (
 
 
 LOADING_MODES = {"route_kernel", "focus_pack", "compare_pack", "teaching_pack", "survey_pack"}
-
-
-def parse_supported_outputs(path: Path) -> Set[str]:
-    outputs: Set[str] = set()
-    for line in path.read_text(encoding="utf-8").splitlines():
-        line = line.strip()
-        # Old format: "- `output_name`: description"
-        if line.startswith("- `") and "`:" in line:
-            outputs.add(line.split("`", 2)[1])
-        # New format: "### `output_name`"
-        elif line.startswith("### `") and line.endswith("`"):
-            outputs.add(line[5:-1])
-    return outputs
-
-
-def parse_constraint_families(path: Path) -> Set[str]:
-    text = path.read_text(encoding="utf-8")
-    try:
-        start = text.index("## Constraint Families")
-    except ValueError:
-        print(f"Warning: heading '## Constraint Families' not found in {path}", file=sys.stderr)
-        return set()
-    families: Set[str] = set()
-    for line in text[start:].splitlines():
-        line = line.strip()
-        if line.startswith("- `") and line.endswith("`"):
-            families.add(line.split("`", 2)[1])
-    return families
 
 
 def check_background_bundles(root: Path) -> Dict[str, Any]:

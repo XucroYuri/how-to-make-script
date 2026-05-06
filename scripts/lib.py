@@ -2,7 +2,8 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Tuple
+import sys
+from typing import Any, Dict, Iterable, List, Set, Tuple
 
 
 ROOT_DIR_NAMES = {
@@ -166,6 +167,36 @@ def validate_schema(instance: Any, schema: Dict[str, Any], path: str = "$") -> L
         errors.append(f"{path}: expected one of {schema['enum']}, got {instance!r}")
 
     return errors
+
+
+def parse_supported_outputs(path: Path) -> Set[str]:
+    """Parse output IDs from references/supported-outputs.md."""
+    outputs: Set[str] = set()
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        # Old format: "- `output_name`: description"
+        if line.startswith("- `") and "`:" in line:
+            outputs.add(line.split("`", 2)[1])
+        # New format: "### `output_name`"
+        elif line.startswith("### `") and line.endswith("`"):
+            outputs.add(line[5:-1])
+    return outputs
+
+
+def parse_constraint_families(path: Path) -> Set[str]:
+    """Parse constraint family IDs from the Constraint Families section of taxonomy.md."""
+    text = path.read_text(encoding="utf-8")
+    try:
+        start = text.index("## Constraint Families")
+    except ValueError:
+        print(f"Warning: heading '## Constraint Families' not found in {path}", file=sys.stderr)
+        return set()
+    families: Set[str] = set()
+    for line in text[start:].splitlines():
+        line = line.strip()
+        if line.startswith("- `") and line.endswith("`"):
+            families.add(line.split("`", 2)[1])
+    return families
 
 
 def collect_asset_index(root: Path) -> Tuple[Dict[str, Dict[str, Any]], List[Dict[str, Any]], List[Dict[str, Any]], List[Dict[str, Any]]]:

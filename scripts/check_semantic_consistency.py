@@ -10,7 +10,7 @@ import sys
 if __package__ in (None, ""):
     sys.path.append(str(Path(__file__).resolve().parents[1]))
 
-from scripts.lib import collect_asset_index, load_json, load_router_matrix, repo_root
+from scripts.lib import collect_asset_index, load_json, load_router_matrix, parse_constraint_families, parse_supported_outputs, repo_root
 
 
 OUTPUT_RE = re.compile(r"^- `([^`]+)`", re.MULTILINE)
@@ -56,19 +56,6 @@ def parse_root_subskills(skill_text: str, root: Path | None = None) -> Set[str]:
     return set()
 
 
-def parse_supported_outputs(path: Path) -> Set[str]:
-    outputs: Set[str] = set()
-    for line in path.read_text(encoding="utf-8").splitlines():
-        line = line.strip()
-        # Old format: "- `output_name`: description"
-        if line.startswith("- `") and "`:" in line:
-            outputs.add(line.split("`", 2)[1])
-        # New format: "### `output_name`"
-        elif line.startswith("### `") and line.endswith("`"):
-            outputs.add(line[5:-1])
-    return outputs
-
-
 def parse_taxonomy_section(path: Path, heading: str) -> Set[str]:
     text = path.read_text(encoding="utf-8")
     try:
@@ -79,16 +66,6 @@ def parse_taxonomy_section(path: Path, heading: str) -> Set[str]:
     next_heading = text.find("\n## ", start + 1)
     end = len(text) if next_heading == -1 else next_heading
     return set(OUTPUT_RE.findall(text[start:end]))
-
-
-def parse_constraint_families(path: Path) -> Set[str]:
-    text = path.read_text(encoding="utf-8")
-    try:
-        start = text.index("## Constraint Families")
-    except ValueError:
-        print(f"Warning: heading '## Constraint Families' not found in {path}", file=sys.stderr)
-        return set()
-    return set(OUTPUT_RE.findall(text[start:]))
 
 
 def check_semantic_consistency(root: Path) -> Dict[str, Any]:
