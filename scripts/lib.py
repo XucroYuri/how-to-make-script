@@ -28,7 +28,14 @@ def repo_root(from_path: Path | None = None) -> Path:
 
 
 def load_json(path: Path) -> Any:
-    return json.loads(path.read_text(encoding="utf-8"))
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        raise FileNotFoundError(f"Required file not found: {path.resolve()}")
+    except json.JSONDecodeError as exc:
+        raise json.JSONDecodeError(
+            f"Invalid JSON in {path.resolve()}: {exc.msg}", exc.doc, exc.pos
+        ) from exc
 
 
 def parse_markdown_asset(path: Path) -> Dict[str, Any]:
@@ -42,7 +49,12 @@ def parse_markdown_asset(path: Path) -> Dict[str, Any]:
 
     frontmatter = text[4:second]
     body = text[second + 5 :].lstrip("\n")
-    metadata = json.loads(frontmatter)
+    try:
+        metadata = json.loads(frontmatter)
+    except json.JSONDecodeError as exc:
+        raise json.JSONDecodeError(
+            f"Invalid JSON frontmatter in {path.resolve()}: {exc.msg}", exc.doc, exc.pos
+        ) from exc
     metadata["_body"] = body
     metadata["_path"] = str(path)
     return metadata

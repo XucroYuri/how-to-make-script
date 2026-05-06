@@ -1,8 +1,9 @@
-"""Unit tests for scripts/lib.py core functions: validate_schema and parse_markdown_asset."""
+"""Unit tests for scripts/lib.py core functions: validate_schema, parse_markdown_asset, and load_json."""
+import json
 import unittest
 from pathlib import Path
 
-from scripts.lib import parse_markdown_asset, validate_schema
+from scripts.lib import load_json, parse_markdown_asset, validate_schema
 
 
 class ValidateSchemaTest(unittest.TestCase):
@@ -234,6 +235,48 @@ class ParseMarkdownAssetTest(unittest.TestCase):
             result = parse_markdown_asset(p)
             self.assertEqual(result["a"], 1)
             self.assertEqual(result["_body"], "")
+        finally:
+            p.unlink()
+
+    def test_malformed_frontmatter_json(self):
+        p = Path(__file__).with_name("_test_bad_json.md")
+        p.write_text('---\n{not valid json}\n---\n# Body\n', encoding="utf-8")
+        try:
+            with self.assertRaises(json.JSONDecodeError) as ctx:
+                parse_markdown_asset(p)
+            self.assertIn("Invalid JSON frontmatter", str(ctx.exception))
+            self.assertIn(str(p.resolve()), str(ctx.exception))
+        finally:
+            p.unlink()
+
+
+class LoadJsonTest(unittest.TestCase):
+    """Tests for JSON file loading with helpful error messages."""
+
+    def test_load_valid_json(self):
+        p = Path(__file__).with_name("_test_data.json")
+        p.write_text('{"key": "value"}', encoding="utf-8")
+        try:
+            result = load_json(p)
+            self.assertEqual(result, {"key": "value"})
+        finally:
+            p.unlink()
+
+    def test_load_missing_file(self):
+        p = Path("/nonexistent/path/definitely/not/there.json")
+        with self.assertRaises(FileNotFoundError) as ctx:
+            load_json(p)
+        self.assertIn("Required file not found", str(ctx.exception))
+        self.assertIn(str(p.resolve()), str(ctx.exception))
+
+    def test_load_malformed_json(self):
+        p = Path(__file__).with_name("_test_bad.json")
+        p.write_text("{not json}", encoding="utf-8")
+        try:
+            with self.assertRaises(json.JSONDecodeError) as ctx:
+                load_json(p)
+            self.assertIn("Invalid JSON in", str(ctx.exception))
+            self.assertIn(str(p.resolve()), str(ctx.exception))
         finally:
             p.unlink()
 
