@@ -176,3 +176,8 @@ Good first contributions: challenge an overly broad claim, add a counterexample,
 ## Standards & Metadata
 
 [Contributing](./CONTRIBUTING.md) · [Code of Conduct](./CODE_OF_CONDUCT.md) · [Support](./SUPPORT.md) · [Security](./SECURITY.md) · [Citation](./CITATION.cff) · [License](./LICENSE)
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=XucroYuri/how-to-make-script&type=Date)](https://star-history.com/#XucroYuri/how-to-make-script&Date)
+
