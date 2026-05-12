@@ -176,3 +176,8 @@ enabled = true
 ## 仓库标准与元信息
 
 [贡献说明](./CONTRIBUTING.md) · [行为准则](./CODE_OF_CONDUCT.md) · [支持入口](./SUPPORT.md) · [安全问题](./SECURITY.md) · [引用格式](./CITATION.cff) · [许可证](./LICENSE)
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=XucroYuri/how-to-make-script&type=Date)](https://star-history.com/#XucroYuri/how-to-make-script&Date)
+
