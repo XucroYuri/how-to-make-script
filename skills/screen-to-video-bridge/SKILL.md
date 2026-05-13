@@ -1,6 +1,6 @@
 ---
 name: screen-to-video-bridge
-description: Use when the user needs to translate screenplay material into a bounded, generation-ready or previz-ready video brief.
+description: 需要将剧本素材转化为受限的、可用于生成或预可视化的视频摘要时使用。
 ---
 
 # Screen To Video Bridge

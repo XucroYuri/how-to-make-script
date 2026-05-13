@@ -1,6 +1,6 @@
 ---
 name: subagent-dispatch-design
-description: Use when the user needs a concrete multi-level dispatch plan for screenplay subagents, not just a list of roles.
+description: 需要具体的多层剧本子代理调度计划（而非仅角色列表）时使用。
 ---
 
 # Subagent Dispatch Design

@@ -1,6 +1,6 @@
 ---
 name: team-workflow-design
-description: Use when the user needs a screenplay collaboration blueprint across humans, agents, or hybrid teams.
+description: 需要跨人类、代理或混合团队的剧本协作蓝图时使用。
 ---
 
 # Team Workflow Design

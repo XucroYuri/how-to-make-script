@@ -1,6 +1,6 @@
 ---
 name: boundary-mapping
-description: Use when the user needs a clear map of hard boundaries, soft constraints, and later review gates.
+description: 需要明确的硬边界、软约束和后期审查门控地图时使用。
 ---
 
 # Boundary Mapping

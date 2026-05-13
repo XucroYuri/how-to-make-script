@@ -1,6 +1,6 @@
 ---
 name: how-to-make-script
-description: Root orchestration skill for screenplay creation. Routes by intent-medium-stage-output-constraints, loads minimal protocols + rubrics + atoms. Covers narrative, commercial, and interactive scripts.
+description: 剧本创作根编排技能。按意图-媒介-阶段-输出-约束进行路由，加载最小化协议+规范+原子组件。覆盖叙事、商业和交互式剧本。
 ---
 
 # How To Make Script

@@ -1,6 +1,6 @@
 ---
 name: scope-correction
-description: Use when a challenged screenplay claim should be narrowed, scoped, or split instead of being defended as universal.
+description: 当受到质疑的剧本主张应被收窄、限定或拆分而非作为普适原则辩护时使用。
 ---
 
 # Scope Correction

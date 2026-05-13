@@ -1,6 +1,6 @@
 ---
 name: path-exploration
-description: Use when the user should see multiple viable creative paths before converging to one route.
+description: 需要在收敛到一条路线前查看多个可行的创作路径时使用。
 ---
 
 # Path Exploration

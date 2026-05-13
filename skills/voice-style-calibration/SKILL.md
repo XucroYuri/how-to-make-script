@@ -1,6 +1,6 @@
 ---
 name: voice-style-calibration
-description: Use when the user needs a voice style guide for character, IP, brand, or interaction-specific writing.
+description: 需要为角色、IP、品牌或交互特定写作提供语音风格指南时使用。
 ---
 
 # Voice Style Calibration

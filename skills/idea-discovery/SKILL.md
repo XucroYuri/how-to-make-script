@@ -1,6 +1,6 @@
 ---
 name: idea-discovery
-description: Use when the user has only a rough idea, image, theme, or situation and needs a premise worth developing.
+description: 仅有粗略想法、图像、主题或情境，需要提炼出值得开发的立意时使用。
 ---
 
 # Idea Discovery

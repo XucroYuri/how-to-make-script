@@ -1,6 +1,6 @@
 ---
 name: context-governor
-description: Use when the task needs a bounded context-loading plan before generation or when the current loading strategy risks context corrosion.
+description: 任务需要在生成前制定受限的上下文加载计划，或当前加载策略有上下文腐蚀风险时使用。
 ---
 
 # Context Governor

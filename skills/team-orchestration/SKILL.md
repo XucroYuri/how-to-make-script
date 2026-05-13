@@ -1,6 +1,6 @@
 ---
 name: team-orchestration
-description: Use when the user needs a multi-agent or hybrid screenplay collaboration blueprint rather than a single drafting pass.
+description: 需要多代理或人机混合的剧本协作蓝图（而非单一草拟遍数）时使用。
 ---
 
 # Team Orchestration

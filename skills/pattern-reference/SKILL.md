@@ -1,6 +1,6 @@
 ---
 name: pattern-reference
-description: Use when the user wants a scenario-specific screenplay reference pack with a strong sample, failure contrast, and explanation.
+description: 需要场景特定的剧本参考包，包含成功范例、失败对比和说明时使用。
 ---
 
 # Pattern Reference

@@ -1,6 +1,6 @@
 ---
 name: expert-subagent-casting
-description: Use when the user needs a concrete cast of screenplay subagents, including functional specialists, process nodes, and optional reference-persona lenses.
+description: 需要具体分配剧本子代理角色，包括功能专家、流程节点和可选参考人设视角时使用。
 ---
 
 # Expert Subagent Casting

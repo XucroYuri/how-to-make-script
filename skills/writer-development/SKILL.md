@@ -1,6 +1,6 @@
 ---
 name: writer-development
-description: Use when the user asks for a structured screenwriter growth plan tied to project goals.
+description: 需要与项目目标挂钩的结构化编剧成长计划时使用。
 ---
 
 # Writer Development

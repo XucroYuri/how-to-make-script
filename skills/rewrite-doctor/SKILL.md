@@ -1,6 +1,6 @@
 ---
 name: rewrite-doctor
-description: Use when the user needs a script doctor style diagnosis and rewrite priorities.
+description: 需要剧本医生式的诊断和改写优先级排序时使用。
 ---
 
 # Rewrite Doctor

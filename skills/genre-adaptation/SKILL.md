@@ -1,6 +1,6 @@
 ---
 name: genre-adaptation
-description: Use when the user wants to retune a story for another genre, medium, or audience promise.
+description: 需要将故事调整为另一种类型、媒介或受众承诺时使用。
 ---
 
 # Genre Adaptation

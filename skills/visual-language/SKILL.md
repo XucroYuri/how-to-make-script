@@ -1,6 +1,6 @@
 ---
 name: visual-language
-description: Use when the user needs multilingual film vocabulary, cross-lingual shot language, or a task-specific visual language pack.
+description: 需要多语种电影词汇、跨语言镜头语言或任务特定的视觉语言包时使用。
 ---
 
 # Visual Language

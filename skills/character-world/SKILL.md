@@ -1,6 +1,6 @@
 ---
 name: character-world
-description: Use when the user needs stronger characters, relationships, or world rules before outlining.
+description: 在大纲前需要更强的角色、关系或世界观规则时使用。
 ---
 
 # Character World

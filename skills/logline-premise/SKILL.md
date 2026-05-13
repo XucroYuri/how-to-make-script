@@ -1,6 +1,6 @@
 ---
 name: logline-premise
-description: Use when the user needs a clear logline or premise for a narrative script idea.
+description: 需要为叙事剧本创意提供清晰的一句话梗概或立意时使用。
 ---
 
 # Logline Premise

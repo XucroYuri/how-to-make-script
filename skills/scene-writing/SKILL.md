@@ -1,6 +1,6 @@
 ---
 name: scene-writing
-description: Use when the user needs a scene card or a drafted scene.
+description: 需要场景卡或起草好的场景时使用。
 ---
 
 # Scene Writing

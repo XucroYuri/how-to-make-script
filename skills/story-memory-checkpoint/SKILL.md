@@ -1,6 +1,6 @@
 ---
 name: story-memory-checkpoint
-description: Use when a screenplay project needs resumable continuity compression or handoff-safe state instead of full-context reload.
+description: 剧本项目需要可恢复的连续性压缩或交接安全状态（而非全量上下文重载）时使用。
 ---
 
 # Story Memory Checkpoint

@@ -1,6 +1,6 @@
 ---
 name: development-strategy
-description: Use when the user needs a commissioning-aware development brief before writing full drafts.
+description: 在写完整草稿前需要面向委制方的开发简报时使用。
 ---
 
 # Development Strategy

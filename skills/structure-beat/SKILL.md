@@ -1,6 +1,6 @@
 ---
 name: structure-beat
-description: Use when the user needs beats, sequences, or a full outline.
+description: 需要节拍表、序列或完整大纲时使用。
 ---
 
 # Structure Beat

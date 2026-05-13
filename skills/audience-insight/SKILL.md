@@ -1,6 +1,6 @@
 ---
 name: audience-insight
-description: Use when the user needs a concrete audience-fit diagnosis or target-segment note before drafting.
+description: 在起草前需要具体的受众匹配诊断或目标段落说明时使用。
 ---
 
 # Audience Insight

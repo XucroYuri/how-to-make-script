@@ -1,6 +1,6 @@
 ---
 name: quality-gating
-description: Use when the user needs an adaptive screenplay quality gate, targeted audit, preflight check, or recheck plan rather than a normal rewrite diagnosis.
+description: 需要自适应剧本质量门控、定向审计、预检或复核计划（而非普通改写诊断）时使用。
 ---
 
 # Quality Gating

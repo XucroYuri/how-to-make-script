@@ -1,6 +1,6 @@
 ---
 name: commercial-script
-description: Use when the user needs ad, brand, or shortform conversion-oriented scripting.
+description: 需要广告、品牌或短视频转化导向的脚本时使用。
 ---
 
 # Commercial Script

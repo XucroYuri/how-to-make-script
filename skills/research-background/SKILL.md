@@ -1,6 +1,6 @@
 ---
 name: research-background
-description: Use when the user wants a broad screenplay-theory or research-support map rather than an immediate screenplay artifact.
+description: 需要广泛的剧本理论或研究支持地图（而非即时剧本产出）时使用。
 ---
 
 # Research Background

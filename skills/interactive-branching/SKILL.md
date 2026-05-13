@@ -1,6 +1,6 @@
 ---
 name: interactive-branching
-description: Use when the user needs a branching choice structure or interactive narrative map.
+description: 需要分支选择结构或交互式叙事地图时使用。
 ---
 
 # Interactive Branching

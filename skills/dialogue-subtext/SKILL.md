@@ -1,6 +1,6 @@
 ---
 name: dialogue-subtext
-description: Use when the user wants dialogue rewritten for stronger voice and subtext.
+description: 需要改写对话以强化角色声音和潜台词时使用。
 ---
 
 # Dialogue Subtext

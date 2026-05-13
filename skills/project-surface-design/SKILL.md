@@ -1,6 +1,6 @@
 ---
 name: project-surface-design
-description: Use when the user needs a long-running screenplay project surface design with source-of-truth, runtime state, packet assembly, review surfaces, and export surfaces.
+description: 需要为长期剧本项目设计项目界面，包含真相源、运行时状态、数据包组装、审查面和导出面时使用。
 ---
 
 # Project Surface Design
